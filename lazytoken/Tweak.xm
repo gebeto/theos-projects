@@ -1,5 +1,7 @@
 #import <UIKit/UIKit.h>
 
+int count = 0;
+
 %hook VKAccessToken
 
 -(NSString*) accessToken
@@ -15,13 +17,24 @@
 
 %end
 
-//APP DELEGATE
-%hook AppDelegate
 
--(BOOL)application:(id)application didFinishLaunchingWithOptions:(id)options
+%hook GlobalData
+
+-(UITabBar*) mainTabBar
 {
-	BOOL res = %orig;
+	UITabBar* bar = %orig;
 
+	UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(looongPress:)];
+	[bar addGestureRecognizer:longPress];
+	[longPress release];
+
+	return bar;
+}
+
+%new
+-(void)looongPress:(id)sender
+{
+	if (count++ == 0)
 	dispatch_async(dispatch_get_main_queue(), ^{
 		UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Token"
 	                                                    message:@"Enter token" 
@@ -35,14 +48,12 @@
 		[myAlertView show];
 		[myAlertView release];
 	});
-	
-	return res;
 }
 
 %new
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-	//
+	
 	if (buttonIndex == 0)
 	{
 		NSString* token = [defaults objectForKey:@"accessToken"];
@@ -52,7 +63,7 @@
 	{
 		[defaults setValue:[alertView textFieldAtIndex:0].text forKey:@"accessToken"]; 
 	}
-    // %log([alertView textFieldAtIndex:0].text);
+	count = 0;
 }
 
 %end

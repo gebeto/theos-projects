@@ -1,1 +1,2 @@
-### THEOS
+### THEOS Projects
+
