@@ -1,4 +1,4 @@
-### VK Messages Lock
+# VK Messages Lock
 
 ## Функционал
 - [x] Пароль "1111" на все диалоги
