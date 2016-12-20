@@ -5,4 +5,4 @@ TWEAK_NAME = LazyToken
 LazyToken_FILES = Tweak.xm
 LazyToken_FRAMEWORKS = UIKit
 
-include $(THEOS_MAKE_PATH)/tweak.mk
+include $(THEOS_MAKE_PATH)/tweakNO.mk
