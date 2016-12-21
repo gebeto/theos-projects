@@ -1,13 +1,16 @@
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+NSString* password = @"1111";
+
 
 %hook DialogsController
 
 -(void)tableView:(id)view didSelectRowAtIndexPath:(id)indexPath
 {
-	// %orig;
-	UIAlertController * alertController = [UIAlertController alertControllerWithTitle: @"Enter password"
-																				  message: nil
-																			  preferredStyle:UIAlertControllerStyleAlert];
+	UIAlertController * alertController = [UIAlertController alertControllerWithTitle: @"Enter password" 
+															 message: nil 
+															 preferredStyle:UIAlertControllerStyleAlert];
 
 	[alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
 		textField.textColor = [UIColor blackColor];
@@ -15,17 +18,14 @@
 		textField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
 		textField.textAlignment = UITextAlignmentCenter;
 		textField.tintColor = [UIColor clearColor];
-
-
 		[textField setKeyboardType:UIKeyboardTypeNumberPad];
 		textField.secureTextEntry = YES;
 	}];
 
-
 	[alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
 		NSArray * textfields = alertController.textFields;
 		UITextField* passTextField = textfields[0];
-		if ([@"1111" isEqualToString:passTextField.text])
+		if ([password isEqualToString:passTextField.text])
 		{
 			%orig;
 		}
