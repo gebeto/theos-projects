@@ -1,0 +1,9 @@
+Package: com.slaviknychkalo.lingvohack
+Name: Lingvo Hack
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: SlavikNychkalo
+Author: SlavikNychkalo
+Section: Tweaks

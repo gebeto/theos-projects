@@ -1,0 +1,10 @@
+Package: com.slaviknychkalo.instalikesidselector
+Name: InstaLikesIDSelector
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: SlavikNychkalo
+Author: SlavikNychkalo
+Section: Tweaks
+Version: 0.0.1-26+debug
+Installed-Size: 280

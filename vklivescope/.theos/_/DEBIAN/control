@@ -1,0 +1,10 @@
+Package: com.yourcompany.vklivescope
+Name: VKLiveScope
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: U-shaManPC\shaMan
+Author: U-shaManPC\shaMan
+Section: Tweaks
+Version: 0.0.1-3+debug
+Installed-Size: 117
