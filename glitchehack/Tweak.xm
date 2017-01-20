@@ -19,28 +19,24 @@
 
 %end
 
-%hook AppState
+%hook GlitchShop
 
--(BOOL)filterPack1Unlocked
+-(bool) videoEditingEnabled
 {
 	return TRUE;
 }
 
--(void) setFilterPack1Unlocked:(BOOL)arg
+-(bool) liveEditingEnabled
 {
-	%orig(TRUE);
+	return TRUE;
 }
 
--(void) setUseHighResolution:(BOOL)arg
+-(bool) useHighResolution
 {
-	%orig(TRUE);
+	return TRUE;
 }
 
-%end
-
-%hook GlitchShop
-
--(bool) videoEditingEnabled
+-(BOOL)filterPack1Unlocked
 {
 	return TRUE;
 }
