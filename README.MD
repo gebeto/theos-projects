@@ -1,5 +1,5 @@
-# ios-apps-hacks
-Hack Tweaks for iOS apps
+# Theos Projects
+Hacks and Tweaks for iOS apps
 
 # APPS
  - [x] Mimo: Learn how to code through interactive tutorials and quizzes!
