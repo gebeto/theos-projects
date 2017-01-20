@@ -1,0 +1,10 @@
+Package: com.slaviknychkalo.glitchehack
+Name: Glitche Hack
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: SlavikNychaklo
+Author: SlavikNychaklo
+Section: Tweaks
+Version: 0.0.1-1+debug
+Installed-Size: 121
