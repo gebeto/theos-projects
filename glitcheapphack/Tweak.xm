@@ -1,3 +1,5 @@
+#import <UIKit/UIKit.h>
+
 %hook AppDelegate
 
 -(BOOL)application:(id)arg1 didFinishLaunchingWithOptions:(id)arg2
@@ -32,5 +34,35 @@
 {
 	return true;
 }
+
+%end
+
+
+%hook MediaTypeSelectionViewController
+
+-(id) btnCamera
+{
+	UIButton* res = %orig;
+	
+	res.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+	res.titleLabel.textAlignment = NSTextAlignmentCenter;
+	[res setTitle:[res.titleLabel.text stringByAppendingString:@"\n\ncracked by Slavik Nychkalo"] forState:UIControlStateNormal];
+
+	return res;
+}
+
+
+-(id) btnVideo
+{
+	UIButton* res = %orig;
+
+	res.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+	res.titleLabel.textAlignment = NSTextAlignmentCenter;
+	[res setTitle:[res.titleLabel.text stringByAppendingString:@"\n\ncracked by Slavik Nychkalo"] forState:UIControlStateNormal];
+
+	return res;
+}
+
+
 
 %end

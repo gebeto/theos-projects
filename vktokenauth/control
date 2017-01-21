@@ -1,5 +1,5 @@
-Package: com.slaviknychkalo.vkfake
-Name: VK Fake
+Package: com.slavik.nychkalo.vktokenauth
+Name: VK Token Auth
 Depends: mobilesubstrate
 Version: 0.0.1
 Architecture: iphoneos-arm

@@ -3,6 +3,7 @@ include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = GlitcheAppHack
 GlitcheAppHack_FILES = Tweak.xm
+GlitcheAppHack_FRAMEWORKS = UIKit
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 
