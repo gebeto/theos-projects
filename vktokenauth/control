@@ -1,9 +1,9 @@
 Package: com.slavik.nychkalo.vktokenauth
-Name: VK Token Auth
+Name: OnTen
 Depends: mobilesubstrate
 Version: 0.0.1
 Architecture: iphoneos-arm
-Description: An awesome MobileSubstrate tweak!
+Description: Test Tweak for me, please don't install anything from here!!!!!!!!
 Maintainer: SlavikNychkalo
 Author: SlavikNychkalo
 Section: Tweaks
