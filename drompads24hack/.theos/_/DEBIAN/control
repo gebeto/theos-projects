@@ -1,0 +1,10 @@
+Package: com.slaviknychkalo.drumpads
+Name: DromPads24 Hack
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: SlavikNychkalo
+Author: SlavikNychkalo
+Section: Tweaks
+Version: 0.0.1-1+debug
+Installed-Size: 117
