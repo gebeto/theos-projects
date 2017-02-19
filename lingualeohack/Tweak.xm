@@ -1,16 +1,20 @@
 #import <UIKit/UIKit.h>
 
+
+static BOOL PremiumSwitch = NO;
+
+
 %hook LLNavigationController
 
 - (void)viewDidLoad
 {
-    %orig;
-    UILabel *scoreLabel = [[UILabel alloc ] initWithFrame:CGRectMake(5,20,[[UIApplication sharedApplication] keyWindow].bounds.size.width,13)];
-    scoreLabel.textColor = [UIColor whiteColor];
-    scoreLabel.textAlignment = NSTextAlignmentCenter;
-    scoreLabel.font = [UIFont fontWithName:@"Arial Rounded MT Bold" size:(12.0)];
-    scoreLabel.text = @"Hacked By Slavik Nychkalo";
-    [[[UIApplication sharedApplication] keyWindow] addSubview:scoreLabel];
+	%orig;
+	UILabel *scoreLabel = [[UILabel alloc ] initWithFrame:CGRectMake(5,20,[[UIApplication sharedApplication] keyWindow].bounds.size.width,13)];
+	scoreLabel.textColor = [UIColor whiteColor];
+	scoreLabel.textAlignment = NSTextAlignmentCenter;
+	scoreLabel.font = [UIFont fontWithName:@"Arial Rounded MT Bold" size:(12.0)];
+	scoreLabel.text = @"Hacked By Slavik Nychkalo";
+	[[[UIApplication sharedApplication] keyWindow] addSubview:scoreLabel];
 }
 
 %end
@@ -21,44 +25,76 @@
 
 -(bool) isGold
 {
-	return YES;
+	if (PremiumSwitch)
+	{
+		return YES;
+	}
+	return %orig;
 }
 
 -(bool) isPlatinum
 {
-	return YES;
+	if (PremiumSwitch)
+	{
+		return YES;
+	}
+	return %orig;
 }
 
 -(bool) ll_grammarAvailable
 {
-	return YES;
+	if (PremiumSwitch)
+	{
+		return YES;
+	}
+	return %orig;
 }
 
 -(bool) isEnoughMeatballsForWordCount:(long long) count
 {
-	return YES;
+	if (PremiumSwitch)
+	{
+		return YES;
+	}
+	return %orig;
 }
 
 -(id) meatballs
 {
-	id res = %orig;
-	%log(res);
-	return @100000;
+	if (PremiumSwitch)
+	{
+		return @100000;
+	}
+	return %orig;
 }
 
 -(id) satietyPoints
 {
-	id res = %orig;
-	%log(res);
-	return @100000;
+	if (PremiumSwitch)
+	{
+		return @100000;
+	}
+	return %orig;
 }
 
 
-// -(bool) isSatietyFull
-// {
-// 	return YES;
-// }
-
 %end
 
+
+
+static void loadPrefs()
+{
+	NSMutableDictionary *prefs = [[NSMutableDictionary alloc] initWithContentsOfFile:@"/var/mobile/Library/Preferences/com.yourcompany.linguakeohacksettings.plist"];
+	if(prefs)
+	{
+		PremiumSwitch = ( [prefs objectForKey:@"PremiumSwitch"] ? [[prefs objectForKey:@"PremiumSwitch"] boolValue] : PremiumSwitch );
+	}
+	[prefs release];
+}
+
+%ctor 
+{
+	CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.yourcompany.linguakeohacksettings/settingschanged"), NULL, CFNotificationSuspensionBehaviorCoalesce);
+	loadPrefs();
+}
 
