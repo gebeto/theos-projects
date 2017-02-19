@@ -16,6 +16,7 @@
 %end
 
 
+
 %hook LLUserInfo
 
 -(bool) isGold
@@ -33,9 +34,31 @@
 	return YES;
 }
 
--(bool) isEnoughMetaballsForWordCount:(long long) count
+-(bool) isEnoughMeatballsForWordCount:(long long) count
 {
 	return YES;
 }
 
+-(id) meatballs
+{
+	id res = %orig;
+	%log(res);
+	return @100000;
+}
+
+-(id) satietyPoints
+{
+	id res = %orig;
+	%log(res);
+	return @100000;
+}
+
+
+// -(bool) isSatietyFull
+// {
+// 	return YES;
+// }
+
 %end
+
+

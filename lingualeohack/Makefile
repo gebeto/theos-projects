@@ -7,3 +7,5 @@ LingualeoHack_FRAMEWORKS = UIKit
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 
+SUBPROJECTS += linguakeohacksettings
+include $(THEOS_MAKE_PATH)/aggregate.mk
