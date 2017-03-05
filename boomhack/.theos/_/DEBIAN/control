@@ -1,0 +1,10 @@
+Package: com.slaviknychkalo.boom
+Name: BOOM Hack
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: SlavikNychkalo
+Author: SlavikNychkalo
+Section: Tweaks
+Version: 0.0.1-134+debug
+Installed-Size: 117

@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
 
 
-static BOOL PremiumSwitch = NO;
+static BOOL SatietySwitch = NO;
 
 
 %hook LLNavigationController
@@ -25,43 +25,27 @@ static BOOL PremiumSwitch = NO;
 
 -(bool) isGold
 {
-	if (PremiumSwitch)
-	{
-		return YES;
-	}
-	return %orig;
+	return YES;
 }
 
 -(bool) isPlatinum
 {
-	if (PremiumSwitch)
-	{
-		return YES;
-	}
-	return %orig;
+	return YES;
 }
 
 -(bool) ll_grammarAvailable
 {
-	if (PremiumSwitch)
-	{
-		return YES;
-	}
-	return %orig;
+	return YES;
 }
 
 -(bool) isEnoughMeatballsForWordCount:(long long) count
 {
-	if (PremiumSwitch)
-	{
-		return YES;
-	}
-	return %orig;
+	return YES;
 }
 
 -(id) meatballs
 {
-	if (PremiumSwitch)
+	if (SatietySwitch)
 	{
 		return @100000;
 	}
@@ -70,7 +54,7 @@ static BOOL PremiumSwitch = NO;
 
 -(id) satietyPoints
 {
-	if (PremiumSwitch)
+	if (SatietySwitch)
 	{
 		return @100000;
 	}
@@ -87,7 +71,7 @@ static void loadPrefs()
 	NSMutableDictionary *prefs = [[NSMutableDictionary alloc] initWithContentsOfFile:@"/var/mobile/Library/Preferences/com.yourcompany.linguakeohacksettings.plist"];
 	if(prefs)
 	{
-		PremiumSwitch = ( [prefs objectForKey:@"PremiumSwitch"] ? [[prefs objectForKey:@"PremiumSwitch"] boolValue] : PremiumSwitch );
+		SatietySwitch = ( [prefs objectForKey:@"SatietySwitch"] ? [[prefs objectForKey:@"SatietySwitch"] boolValue] : SatietySwitch );
 	}
 	[prefs release];
 }

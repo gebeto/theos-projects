@@ -1,0 +1,10 @@
+Package: com.slaviknychkalo.vkmessagedecoder
+Name: VK Message Decoder
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: Tweak for Decode and Encode messages in VK.
+Maintainer: SlavikNychkalo
+Author: SlavikNychkalo
+Section: Tweaks
+Version: 0.0.1-145+debug
+Installed-Size: 308

@@ -18,9 +18,9 @@
 			<key>defaults</key>
 			<string>com.yourcompany.linguakeohacksettings</string>
 			<key>key</key>
-			<string>PremiumSwitch</string>
+			<string>SatietySwitch</string>
 			<key>label</key>
-			<string>Премиум</string>
+			<string>Максимум сытость Лео</string>
 		</dict>
 		<dict>
 			<key>cell</key>

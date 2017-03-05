@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>entry</key>
+<!-- 	<dict>
+		<key>bundle</key>			<string>VKMessageDecoderPrefs</string>
+		<key>cell</key>				<string>PSLinkCell</string>
+		<key>detail</key>			<string>VMDRootListController</string>
+		<key>icon</key>		 		<string>icon.png</string>
+		<key>isController</key>		<true/>
+		<key>label</key> 			<string>VK Message Decoder</string>
+	</dict> -->
+	<dict>
+		<key>bundle</key>		<string>VKMessageDecoderPrefs</string>
+		<key>cell</key>			<string>PSSwitchCell</string>
+		<key>default</key>		<true/>
+		<key>defaults</key>		<string>com.slaviknychkalo.vkmessagedecoderprefs</string>
+		<key>key</key>			<string>Enable</string>
+		<key>detail</key>		<string>VMDRootListController</string>
+		<key>icon</key>		 	<string>VKMessageDecoderPrefs.png</string>
+		<key>isController</key>	<true/>
+		<key>label</key>		<string>VK Messages Decoder</string>
+	</dict>
+</dict>
+</plist>

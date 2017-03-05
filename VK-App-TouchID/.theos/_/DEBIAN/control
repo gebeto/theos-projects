@@ -1,0 +1,10 @@
+Package: com.slaviknychkalo.vktouchid
+Name: VK Touch ID
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: Lock some functions like Send Message and Set a Like in VK App!
+Maintainer: SlavikNychkalo
+Author: SlavikNychkalo
+Section: Tweaks
+Version: 0.0.1-117+debug
+Installed-Size: 316
