@@ -33,9 +33,7 @@
 	if (res[@"online"]) {
 		res[@"online"] = @"API.account.setOffline()";
 	}
-
 	// %log(res);
-
 	return res;
 }
 
@@ -58,6 +56,15 @@
 
 %hook VKExecuteBuilder
 
-
+-(NSMutableString*) c
+{
+	NSMutableString* res = %orig;
+	// [res replaceOccurrencesOfString:@"SOME SHIT"
+ //                          withString:@"SOME NEW SHIT"
+ //                             options:NSLiteralSearch
+ //                               range:NSMakeRange(0, res.length)];
+	%log(res);
+	return res;
+}
 
 %end
