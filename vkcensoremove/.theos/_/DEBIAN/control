@@ -1,10 +1,10 @@
-Package: com.yourcompany.vkcensoremove
+Package: com.skaiknychkalo.vkcensoremove
 Name: VKCensoRemove
 Depends: mobilesubstrate
 Architecture: iphoneos-arm
 Description: An awesome MobileSubstrate tweak!
-Maintainer: U-shaManPC\shaMan
-Author: U-shaManPC\shaMan
+Maintainer: SlavikNychkalo
+Author: SlavikNychkalo
 Section: Tweaks
-Version: 0.0.1-1+debug
+Version: 0.0.1-45+debug
 Installed-Size: 117
