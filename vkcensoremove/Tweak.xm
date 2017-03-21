@@ -6,14 +6,10 @@
 {
 	NSMutableDictionary *customData = process.mutableCopy;
     NSMutableDictionary *grp =  [(NSMutableDictionary*)customData[@"grp"] mutableCopy];
-    NSMutableDictionary *cover =  [(NSMutableDictionary*)grp[@"cover"] mutableCopy];
 	
-	// NSLog(@"GRP %@", grp);
-	// NSLog(@"COVER %@", cover);
-	
+	// NSLog(@"GRP %@", grp);	
 	grp[@"is_adult"] = 0;
 
-	grp[@"cover"] = cover;
     customData[@"grp"] = grp;
 	
 	BOOL res = %orig(customData, context);
@@ -37,12 +33,12 @@
 	return res;
 }
 
-// -(NSString*) method
-// {
-// 	id res = %orig;
-// 	%log(res);
-// 	return res;
-// }
+-(NSString*) method
+{
+	id res = %orig;
+	%log(res);
+	return res;
+}
 
 // -(NSMutableArray*) vars
 // {
@@ -60,11 +56,46 @@
 {
 	NSMutableString* res = %orig;
 	// [res replaceOccurrencesOfString:@"SOME SHIT"
- //                          withString:@"SOME NEW SHIT"
- //                             options:NSLiteralSearch
- //                               range:NSMakeRange(0, res.length)];
-	%log(res);
+ 	//						withString:@"SOME NEW SHIT"
+ 	//						options:NSLiteralSearch
+ 	//						range:NSMakeRange(0, res.length)];
+	// %log(res);
 	return res;
 }
 
 %end
+
+
+%hook VKRequestArgsBuilder
+
+// -(NSMutableDictionary*) args
+// {
+// 	NSMutableDictionary* res = %orig;
+// 	%log(res);
+// 	return res;
+// }
+
+%end
+
+
+%hook VKRequest
+
+-(NSDictionary*) parameters
+{
+	NSDictionary* res = %orig;
+	%log(res);
+	[res setObject:@"" forKey:@"type"];
+	%log(res);
+	return res;
+}
+
+-(NSString*) method
+{
+	NSString* res = %orig;
+	%log(res);
+	return res;
+}
+
+
+%end
+
