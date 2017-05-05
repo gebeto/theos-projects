@@ -1,10 +1,10 @@
-Package: com.slaviknychkalo.zvooq
-Name: Zvooq Hack
+Package: com.slaviknychkalo.instaauto
+Name: Instagram Req AutoSub
 Depends: mobilesubstrate
 Architecture: iphoneos-arm
 Description: An awesome MobileSubstrate tweak!
 Maintainer: SlavikNychkalo
 Author: SlavikNychkalo
 Section: Tweaks
-Version: 0.0.1-1+debug
+Version: 0.0.1-7+debug
 Installed-Size: 117

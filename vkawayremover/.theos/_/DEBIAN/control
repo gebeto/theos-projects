@@ -1,10 +1,10 @@
-Package: com.slaviknychkalo.zvooq
-Name: Zvooq Hack
+Package: com.slaviknychkalo.vkaway
+Name: VK Away Remover
 Depends: mobilesubstrate
 Architecture: iphoneos-arm
 Description: An awesome MobileSubstrate tweak!
 Maintainer: SlavikNychkalo
 Author: SlavikNychkalo
 Section: Tweaks
-Version: 0.0.1-1+debug
+Version: 0.0.1-8+debug
 Installed-Size: 117
