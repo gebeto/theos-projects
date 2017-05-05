@@ -1,10 +1,10 @@
-Package: com.slaviknychkalo.lazytool2unlimited
-Name: LazyTool2 Unlimited
+Package: com.slaviknychkalo.shelly
+Name: Shelly Hack
 Depends: mobilesubstrate
 Architecture: iphoneos-arm
 Description: An awesome MobileSubstrate tweak!
 Maintainer: SlavikNychkalo
 Author: SlavikNychkalo
 Section: Tweaks
-Version: 0.0.1-11+debug
-Installed-Size: 124
+Version: 0.0.1-1+debug
+Installed-Size: 120

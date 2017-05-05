@@ -1,1 +1,1 @@
-{ Filter = { Bundles = ( "ru.ishmv.lazyplayer4" ); }; }
+{ Filter = { Bundles = ( "com.lazy.iaudiosound" ); }; }
