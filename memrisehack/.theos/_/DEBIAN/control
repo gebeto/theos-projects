@@ -1,0 +1,10 @@
+Package: com.slaviknychkalo.memrise
+Name: MemriseHack
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: SlavikNychkalo
+Author: SlavikNychkalo
+Section: Tweaks
+Version: 0.0.1-3+debug
+Installed-Size: 117
