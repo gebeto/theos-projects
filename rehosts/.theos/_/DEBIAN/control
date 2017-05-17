@@ -1,0 +1,11 @@
+Package: com.yourcompany.rehosts
+Name: ReHosts
+Depends: 
+Architecture: iphoneos-arm
+Description: An awesome tool of some sort!!
+Maintainer: SlavikNychkalo
+Author: SlavikNychkalo
+Section: System
+Tag: role::hacker
+Version: 0.0.1-19+debug
+Installed-Size: 132
