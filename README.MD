@@ -14,5 +14,6 @@ Hacks and Tweaks for iOS apps
  - [X] VSCO
  - [X] InstaLikes User changer
  - [X] Lingvo
+ - [X] ReHosts Console App
 
 
