@@ -1,0 +1,10 @@
+Package: com.slaviknychkalo.vkmobileinfo
+Name: VKMobile Info
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: SlavikNychkalo
+Author: SlavikNychkalo
+Section: Tweaks
+Version: 0.0.1-13+debug
+Installed-Size: 121
