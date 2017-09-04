@@ -1,4 +1,4 @@
-export $THEOS_DEVICE_IP=192.168.0.101
+export THEOS_DEVICE_IP=192.168.0.102
 include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = VKAppCache
