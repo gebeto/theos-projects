@@ -1,10 +1,10 @@
 Package: com.slaviknychkalo.vkvideourls
-Name: VK Video URL
+Name: VKVideoURLS
 Depends: mobilesubstrate
 Architecture: iphoneos-arm
 Description: An awesome MobileSubstrate tweak!
 Maintainer: SlavikNychkalo
 Author: SlavikNychkalo
 Section: Tweaks
-Version: 0.0.1-14+debug
-Installed-Size: 120
+Version: 0.0.1-57+debug
+Installed-Size: 121

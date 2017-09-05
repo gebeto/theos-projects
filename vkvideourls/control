@@ -1,5 +1,5 @@
 Package: com.slaviknychkalo.vkvideourls
-Name: VK Video URL
+Name: VKVideoURLS
 Depends: mobilesubstrate
 Version: 0.0.1
 Architecture: iphoneos-arm
