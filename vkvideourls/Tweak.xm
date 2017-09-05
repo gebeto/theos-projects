@@ -1,26 +1,5 @@
 #import <UIKit/UIKit.h>
-// #import <Foundation/Foundation.h>
 #import "VideoPlayer.h"
-
-// %hook AppDelegate
-
-// -(BOOL)application:(id)arg1 didFinishLaunchingWithOptions:(id)arg2
-// {
-// 	BOOL result = %orig(arg1, arg2);
-// 	dispatch_async(dispatch_get_main_queue(), ^{
-// 		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"CRACKED!"
-// 												 	message:@"Cracked by Slavik Nychkalo"
-// 												 	delegate:nil
-// 												 	cancelButtonTitle:@"Thanks!"
-// 												 	otherButtonTitles:nil];
-// 		[alert show];
-// 		[alert release];
-// 	});
-// 	return result;
-// }
-
-// %end
-
 
 
 %hook VideoPlayer
@@ -28,12 +7,6 @@
 - (void)play:(id)arg1 {
   %log(@"HELLO WORLD!!!!");
   %orig;
-}
-
--(NSString*) link {
-	NSString* res = %orig;
-	%log(res);
-	return res;
 }
 
 -(UIButton*) play {
@@ -67,17 +40,30 @@
 %new
 - (void)longPress:(UILongPressGestureRecognizer*)gesture {
 	if ( gesture.state == UIGestureRecognizerStateBegan ) {
-		UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-		pasteboard.string = [[self mp] contentURL].absoluteString;
+		// UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+		// pasteboard.string = [[self mp] contentURL].absoluteString;
 		dispatch_async(dispatch_get_main_queue(), ^{
-			UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Скопировано"
+			UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Действия"
 														message:[[self mp] contentURL].absoluteString
-														delegate:nil
+														delegate:self
 														cancelButtonTitle:@"Шпасибо блять!"
-														otherButtonTitles:nil];
+														otherButtonTitles:@"Открыть VLC", @"Скопировать", nil];
 			[alert show];
 			[alert release];
 		});
+    }
+}
+
+%new
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 0) {
+    }
+    else if (buttonIndex == 1) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[@"vlc://" stringByAppendingString:[[self mp] contentURL].absoluteString]]];
+    }
+    else if (buttonIndex == 2) {
+        UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+		pasteboard.string = [[self mp] contentURL].absoluteString;
     }
 }
 
