@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSString, NSArray;
+@class NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface ProfileContentBlock : XXUnknownSuperclass {
@@ -23,7 +23,7 @@ __attribute__((visibility("hidden")))
 +(id)audio;
 +(id)market;
 +(id)type:(int)type;
+-(void).cxx_destruct;
 -(id)initWithType:(int)type;
--(void)dealloc;
 @end
 

@@ -15,8 +15,8 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) VKGeo* geo;
 +(id)simpleGeoWithGeo:(id)geo;
+-(void).cxx_destruct;
 -(Class)rendererClass;
 -(id)initWithGeo:(id)geo;
--(void)dealloc;
 @end
 

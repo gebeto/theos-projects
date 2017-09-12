@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "VKImageFilter.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKImageFilter.h"
 
 @class NSMutableArray, NSString;
 

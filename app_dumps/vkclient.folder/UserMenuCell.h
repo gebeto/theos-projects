@@ -7,7 +7,7 @@
 
 #import "TitleMenuCell.h"
 
-@class VKMImageView, UIButton;
+@class UIButton, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface UserMenuCell : TitleMenuCell {
@@ -17,6 +17,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIButton* photo;
 @property(retain, nonatomic) VKMImageView* image;
 +(id)image:(id)image statId:(id)anId title:(id)title select:(id)select;
+-(void).cxx_destruct;
 -(void)renderUser:(id)user;
 -(void)layoutSubviews;
 -(void)setHighlighted:(BOOL)highlighted;

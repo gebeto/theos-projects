@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "VKImage.h"
 #import "VKDomain.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
+#import "VKImage.h"
 
 @class NSMutableDictionary, NSString;
 
@@ -22,6 +22,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(assign, nonatomic) float ratio;
 @property(retain, nonatomic) NSMutableDictionary* variants;
+-(void).cxx_destruct;
 -(id)thumbnailUrl;
 -(id)messagesPlaceholder;
 -(XXStruct_UOIMaD)messagesRenderType;
@@ -32,6 +33,5 @@ __attribute__((visibility("hidden")))
 -(id)thumbnailVariant;
 -(id)pickVariantForSize:(CGSize)size;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class UIView, MultitappedSegmentedControl;
@@ -17,8 +17,8 @@ __attribute__((visibility("hidden")))
 }
 @property(readonly, retain, nonatomic) MultitappedSegmentedControl* segmentedControl;
 @property(readonly, retain, nonatomic) UIView* separator;
+-(void).cxx_destruct;
 -(id)createSubviews;
 -(id)initWithFrame:(CGRect)frame;
--(void)dealloc;
 @end
 

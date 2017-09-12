@@ -7,12 +7,12 @@
 
 #import "UITextViewDelegate.h"
 #import "DraggableAttachment.h"
-#import "ColorPaletteViewDelegate.h"
-#import "vkclient-Structs.h"
-#import "KeyboardAppearanceEventHandler.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
+#import "KeyboardAppearanceEventHandler.h"
+#import "ColorPaletteViewDelegate.h"
 
-@class KeyboardAppearanceObserver, UIView, ExtendedHitTestTextView, GUIView, StoryEditorDraggableAttachmentsContainerView, NSString;
+@class StoryEditorDraggableAttachmentsContainerView, UIView, KeyboardAppearanceObserver, NSString, ExtendedHitTestTextView, GUIView;
 @protocol StoryEditorEditableTextAttachmentDelegate;
 
 __attribute__((visibility("hidden")))

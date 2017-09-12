@@ -18,7 +18,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL settingAvailable;
 @property(retain, nonatomic) NSString* value;
 @property(retain, nonatomic) NSString* settingName;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

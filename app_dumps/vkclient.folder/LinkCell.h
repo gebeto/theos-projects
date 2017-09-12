@@ -15,6 +15,7 @@ __attribute__((visibility("hidden")))
 }
 @property(readonly, retain, nonatomic) ImageAttachmentView* attachment;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)prepareForReuse;
 -(void)dealloc;

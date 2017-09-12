@@ -16,8 +16,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKPlace* result;
 @property(retain, nonatomic) VKPlace* target;
 +(int)domainType;
+-(void).cxx_destruct;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
--(void)dealloc;
 @end
 

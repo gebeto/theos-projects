@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKMController, NSArray;
+@class NSArray, VKMController;
 
 __attribute__((visibility("hidden")))
 @interface Wizard : XXUnknownSuperclass {

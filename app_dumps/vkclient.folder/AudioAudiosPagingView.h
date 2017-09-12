@@ -5,18 +5,18 @@
  * Source: (null)
  */
 
-#import "UICollectionViewDelegate.h"
-#import "vkclient-Structs.h"
-#import "UICollectionViewDataSource.h"
-#import "PageCellWithTableViewDidSelectAudioDelegate.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "PageCellWithTableViewDidSelectAudioDelegate.h"
+#import "UICollectionViewDelegate.h"
+#import "UICollectionViewDataSource.h"
 
-@class UICollectionView, AudioAudiosBlock, NSString;
-@protocol VKMNavDelegate;
+@class NSString, UICollectionView, AudioAudiosBlock;
+@protocol AudioCellDelegate;
 
 __attribute__((visibility("hidden")))
 @interface AudioAudiosPagingView : XXUnknownSuperclass <UICollectionViewDataSource, UICollectionViewDelegate, PageCellWithTableViewDidSelectAudioDelegate> {
-	id<VKMNavDelegate> _navDelegate;
+	id<AudioCellDelegate> _delegate;
 	AudioAudiosBlock* _audioBlock;
 	UICollectionView* _collectionView;
 }
@@ -26,7 +26,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) UICollectionView* collectionView;
 @property(retain, nonatomic) AudioAudiosBlock* audioBlock;
-@property(assign, nonatomic) __weak id<VKMNavDelegate> navDelegate;
+@property(assign, nonatomic) __weak id<AudioCellDelegate> delegate;
 +(float)height;
 -(void).cxx_destruct;
 -(void)pageCellWithTableView:(id)tableView didSelectAudio:(id)audio;

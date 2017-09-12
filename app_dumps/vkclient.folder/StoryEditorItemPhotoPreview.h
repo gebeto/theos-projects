@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "StoryEditorItemPreview.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "StoryEditorItemPreview.h"
 
-@class StoryEditorItemPhoto, NSString;
+@class NSString, StoryEditorItemPhoto;
 
 __attribute__((visibility("hidden")))
 @interface StoryEditorItemPhotoPreview : XXUnknownSuperclass <StoryEditorItemPreview> {

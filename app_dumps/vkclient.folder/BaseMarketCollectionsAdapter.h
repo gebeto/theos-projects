@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 #import "MarketCollectionsAdapter.h"
 
-@class UICollectionView, MarketModel, VKMCollectionController, NSString, GroupedCollectionViewLayout;
+@class GroupedCollectionViewLayout, VKMCollectionController, NSString, UICollectionView, MarketModel;
 @protocol MarketCollectionsControllerDefaults;
 
 __attribute__((visibility("hidden")))

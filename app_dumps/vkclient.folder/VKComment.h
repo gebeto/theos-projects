@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKDomain.h"
 
-@class VKCommentIdentity, VKText, VKAttachmentsRender, VKAttachments, NSString, NSNumber;
+@class VKAttachmentsRender, VKAttachments, VKCommentIdentity, VKText, NSNumber, NSString;
 @protocol VKSource, VKThumbnailable;
 
 __attribute__((visibility("hidden")))
@@ -23,6 +23,7 @@ __attribute__((visibility("hidden")))
 	VKAttachments* _attachments;
 	NSNumber* _reply_to_user;
 	NSNumber* _reply_to_comment;
+	NSString* _name_dat;
 	NSString* _reply_name_dat;
 	VKDomain<VKThumbnailable>* _feedbackParent;
 	VKAttachmentsRender* _attachmentsRender;
@@ -38,6 +39,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKAttachmentsRender* attachmentsRender;
 @property(retain, nonatomic) VKDomain<VKThumbnailable>* feedbackParent;
 @property(retain, nonatomic) NSString* reply_name_dat;
+@property(retain, nonatomic) NSString* name_dat;
 @property(retain, nonatomic) NSNumber* reply_to_comment;
 @property(retain, nonatomic) NSNumber* reply_to_user;
 @property(assign, nonatomic) BOOL can_edit;
@@ -49,6 +51,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKCommentIdentity* iden;
 +(id)commentromFeedback:(id)feedback parentIdentity:(id)identity overrideOwner:(id)owner;
 +(int)domainCommentType;
+-(void).cxx_destruct;
 -(void)updateLikes:(id)likes user:(BOOL)user;
 -(id)commentStatus;
 -(void)acceptSources:(id)sources;
@@ -57,6 +60,5 @@ __attribute__((visibility("hidden")))
 -(BOOL)valid;
 -(Class)rendererClass;
 -(void)domainOnEditCopy:(id)copy;
--(void)dealloc;
 @end
 

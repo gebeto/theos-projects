@@ -13,6 +13,7 @@ __attribute__((visibility("hidden")))
 	id _updated;
 }
 @property(copy, nonatomic) id updated;
+-(void).cxx_destruct;
 -(void)addPlaylist:(id)playlist source:(id)source builder:(id)builder;
 -(void)handleReorderAudioPlaylists:(id)playlists :(id)arg2;
 -(void)handleUpdateAudioPlaylistCover:(id)cover :(id)arg2;
@@ -22,6 +23,5 @@ __attribute__((visibility("hidden")))
 -(void)handleFollowAudioPlaylist:(id)playlist :(id)arg2;
 -(void)registerForEvents:(id)events;
 -(void)update:(id)update;
--(void)dealloc;
 @end
 

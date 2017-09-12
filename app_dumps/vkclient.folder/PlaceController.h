@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "VKMTableController.h"
+#import "VKClient-Structs.h"
 
-@class UITableViewCell, UILabel, VKMImageView, MapViewCell, UIView, PlaceModel, VKMGroupedCell;
+@class MapViewCell, PlaceModel, UITableViewCell, UIView, UILabel, VKMCell, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface PlaceController : VKMTableController {
@@ -19,12 +19,12 @@ __attribute__((visibility("hidden")))
 	UILabel* _checkinsCount;
 	UIView* _checkinsHost;
 	MapViewCell* _cellMap;
-	VKMGroupedCell* _cellCheckins;
+	VKMCell* _cellCheckins;
 	UITableViewCell* _cellAction;
 }
 @property(retain, nonatomic) PlaceModel* model;
 @property(retain, nonatomic) UITableViewCell* cellAction;
-@property(retain, nonatomic) VKMGroupedCell* cellCheckins;
+@property(retain, nonatomic) VKMCell* cellCheckins;
 @property(retain, nonatomic) MapViewCell* cellMap;
 @property(retain, nonatomic) UIView* checkinsHost;
 @property(retain, nonatomic) UILabel* checkinsCount;
@@ -32,6 +32,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UILabel* placeActiity;
 @property(retain, nonatomic) UILabel* placeTitle;
 @property(retain, nonatomic) VKMImageView* image;
+-(void).cxx_destruct;
 -(void)tableView:(id)view didSelectRowAtIndexPath:(id)indexPath;
 -(id)tableView:(id)view cellForRowAtIndexPath:(id)indexPath;
 -(float)tableView:(id)view heightForRowAtIndexPath:(id)indexPath;

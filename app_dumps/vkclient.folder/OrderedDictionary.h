@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSMutableArray, NSMutableDictionary;
+@class NSMutableDictionary, NSMutableArray;
 
 @interface OrderedDictionary : XXUnknownSuperclass {
 	NSMutableDictionary* _dictionary;

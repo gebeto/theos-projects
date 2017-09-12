@@ -5,13 +5,13 @@
  * Source: (null)
  */
 
-#import "UIViewControllerAnimatedTransitioning.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "UIViewControllerInteractiveTransitioning.h"
+#import "UIViewControllerAnimatedTransitioning.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class VKMScrollViewController, UIView, NSString;
-@protocol UIViewControllerContextTransitioning, VKVideoPlayerHolder, VideoPlayerFromFullScreenTransitionVideoViewDestination;
+@protocol UIViewControllerContextTransitioning, VideoPlayerFromFullScreenTransitionVideoViewDestination, VKVideoPlayerHolder;
 
 __attribute__((visibility("hidden")))
 @interface VideoPlayerFromFullScreenTransitionAnimationController : XXUnknownSuperclass <UIViewControllerAnimatedTransitioning, UIViewControllerInteractiveTransitioning> {

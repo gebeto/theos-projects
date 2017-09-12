@@ -5,7 +5,6 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "VKStory.h"
 #import "VKPhotoSized.h"
 

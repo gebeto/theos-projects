@@ -5,16 +5,17 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
+#import "CommentSourcePickerDelegate.h"
+#import "ExtraInputPanelViewDelegate.h"
 #import "UITextViewDelegate.h"
 #import "UIGestureRecognizerDelegate.h"
 #import "VKMLiveController.h"
-#import "ExtraInputPanelViewDelegate.h"
 
-@class WrapAttachmentsLayout, DetailMoreCell, DetailModel, VKHUD, ExtraInputPanelView, UIRefreshControl, CommentEditContext, NSString, DocsSketchUploadEditAttachment, UITapGestureRecognizer, UIActivityIndicatorView;
+@class CommentEditContext, UIRefreshControl, DetailMoreCell, WrapAttachmentsLayout, AdminInputPanelView, NSNumber, UITapGestureRecognizer, CommentPostSourceModel, VKHUD, DetailModel, NSArray, UIActivityIndicatorView, NSString, DocsSketchUploadEditAttachment;
 
 __attribute__((visibility("hidden")))
-@interface DetailController : VKMLiveController <UITextViewDelegate, ExtraInputPanelViewDelegate, UIGestureRecognizerDelegate> {
+@interface DetailController : VKMLiveController <UITextViewDelegate, ExtraInputPanelViewDelegate, UIGestureRecognizerDelegate, CommentSourcePickerDelegate> {
 	BOOL keyboard;
 	float offset;
 	unsigned textMin;
@@ -23,7 +24,7 @@ __attribute__((visibility("hidden")))
 	BOOL _forceInput;
 	DetailMoreCell* _more;
 	UIActivityIndicatorView* _loading;
-	ExtraInputPanelView* _inputPanel;
+	AdminInputPanelView* _inputPanel;
 	UITapGestureRecognizer* _gesture;
 	CommentEditContext* _context;
 	WrapAttachmentsLayout* _attachmentsLayout;
@@ -31,6 +32,9 @@ __attribute__((visibility("hidden")))
 	float _inputPanelBottomOffset;
 	VKHUD* _graffitiUploadingHud;
 	DocsSketchUploadEditAttachment* _graffitiUploadEditAttachment;
+	CommentPostSourceModel* _commentPostModel;
+	NSArray* _commentSources;
+	NSNumber* _savedCommentSenderId;
 }
 @property(readonly, copy) NSString* debugDescription;
 @property(readonly, copy) NSString* description;
@@ -38,6 +42,9 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(assign, nonatomic) BOOL forceInput;
 @property(retain, nonatomic) DetailModel* model;
+@property(retain, nonatomic) NSNumber* savedCommentSenderId;
+@property(retain, nonatomic) NSArray* commentSources;
+@property(retain, nonatomic) CommentPostSourceModel* commentPostModel;
 @property(retain, nonatomic) DocsSketchUploadEditAttachment* graffitiUploadEditAttachment;
 @property(retain, nonatomic) VKHUD* graffitiUploadingHud;
 @property(assign, nonatomic) float inputPanelBottomOffset;
@@ -45,9 +52,11 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) WrapAttachmentsLayout* attachmentsLayout;
 @property(retain, nonatomic) CommentEditContext* context;
 @property(retain, nonatomic) UITapGestureRecognizer* gesture;
-@property(retain, nonatomic) ExtraInputPanelView* inputPanel;
+@property(retain, nonatomic) AdminInputPanelView* inputPanel;
 @property(retain, nonatomic) UIActivityIndicatorView* loading;
 @property(retain, nonatomic) DetailMoreCell* more;
+-(void).cxx_destruct;
+-(void)commentSourcePickerController:(id)controller didSelectSource:(id)source;
 -(void)setInputPanelHidden:(BOOL)hidden;
 -(BOOL)isInputPanelHidden;
 -(BOOL)tableView:(id)view shouldHighlightRowAtIndexPath:(id)indexPath;
@@ -72,7 +81,12 @@ __attribute__((visibility("hidden")))
 -(void)actionActions:(id)actions;
 -(void)fillActions;
 -(void)sendFreeStandingAttachmentDomain:(id)domain additionalContextSetup:(id)setup;
+-(void)resetInputPanelReply;
+-(void)actionReplyTo:(id)to;
+-(void)setInputPanelCommentSender:(id)sender;
+-(void)actionPickSender:(id)sender;
 -(void)actionSendInline:(id)anInline;
+-(void)prepareForSendingWithContext:(id)context;
 -(BOOL)VKMRoute:(id)route context:(id)context;
 -(void)gestureAttachmentsTapped:(id)tapped;
 -(void)extraInputPanelViewDidAttemptToSend:(id)extraInputPanelView;
@@ -104,7 +118,11 @@ __attribute__((visibility("hidden")))
 -(void)animate:(double)animate options:(unsigned)options bottom:(BOOL)bottom;
 -(void)updateSend;
 -(void)updateForNewTextIsAutocomplete:(BOOL)newTextIsAutocomplete;
+-(id)commentSenderIdsFilter;
+-(BOOL)allowAllCommentSenders;
+-(void)updateCommentSender;
 -(void)model:(id)model updated:(id)updated;
+-(void)modelLoadingChanged:(id)changed;
 -(id)setupInput:(BOOL)input;
 -(void)dealloc;
 -(id)initWithMain:(id)main andModel:(id)model;

@@ -6,11 +6,11 @@
  */
 
 #import "UITextViewDelegate.h"
-#import "UIScrollViewDelegate.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "UIScrollViewDelegate.h"
 
-@class VKPPProcessingOperation, VKPPModel, VKPPAssetImageView, UITextView, NSString, AVPlayerLayer, UIImageView;
+@class UITextView, AVPlayerLayer, VKPPProcessingOperation, VKPPModel, VKPPAssetImageView, UIImageView, NSString;
 
 @interface VKPPPageView : XXUnknownSuperclass <UITextViewDelegate, UIScrollViewDelegate> {
 	BOOL skipScroll;

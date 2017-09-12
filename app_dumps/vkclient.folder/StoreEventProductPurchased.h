@@ -22,6 +22,6 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL handleQuite;
 @property(retain, nonatomic) VKStoreProduct* product;
 +(int)domainType;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

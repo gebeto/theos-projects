@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "VKMImageLoaderDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKMImageLoaderDelegate.h"
 
-@class NSMutableArray, VKMLoadedImage, NSMutableDictionary, NSString, NSArray;
+@class NSMutableDictionary, NSMutableArray, NSString, NSArray, VKMLoadedImage;
 @protocol MultiImageLoaderDelegate;
 
 __attribute__((visibility("hidden")))
@@ -23,11 +23,12 @@ __attribute__((visibility("hidden")))
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
-@property(assign, nonatomic) id<MultiImageLoaderDelegate> delegate;
+@property(assign, nonatomic) __weak id<MultiImageLoaderDelegate> delegate;
 @property(retain, nonatomic) NSArray* urls;
 @property(retain, nonatomic) VKMLoadedImage* lastDiscardableObject;
 @property(retain, nonatomic) NSMutableDictionary* resultImagesOrNils;
 @property(retain, nonatomic) NSMutableArray* loaders;
+-(void).cxx_destruct;
 -(void)clear;
 -(void)reuse;
 -(void)cancel;

@@ -24,6 +24,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSEntityDescription* user;
 @property(retain, nonatomic) NSManagedObjectContext* context;
 @property(readonly, copy, nonatomic) NSNumber* owner;
+-(void).cxx_destruct;
 -(void)merge:(id)merge;
 -(void)fetchTest;
 -(void)updateTest;
@@ -53,7 +54,6 @@ __attribute__((visibility("hidden")))
 -(BOOL)save;
 -(void)exec:(id)exec complete:(id)complete;
 -(void)useContext:(id)context;
--(void)dealloc;
 -(id)initWithQueue:(id)queue owner:(id)owner;
 @end
 

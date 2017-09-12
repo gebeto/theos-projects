@@ -14,12 +14,12 @@ __attribute__((visibility("hidden")))
 	NSString* _text;
 }
 @property(retain, nonatomic) NSString* text;
+-(void).cxx_destruct;
 -(id)placeholderText;
 -(id)tooShortFormatKey;
 -(unsigned)textLengthMax;
 -(unsigned)textLengthMin;
 -(id)title;
 -(Class)editControllerClass;
--(void)dealloc;
 @end
 

@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "Component5Controller.h"
-#import "vkclient-Structs.h"
-#import "UICollectionViewDataSource.h"
+#import "VKClient-Structs.h"
 #import "UICollectionViewDelegateFlowLayout.h"
+#import "Component5Controller.h"
+#import "UICollectionViewDataSource.h"
 
-@class ReusableViewsPool, NSString, UICollectionViewComponent;
+@class ReusableViewsPool, UICollectionViewComponent, NSString;
 
 __attribute__((visibility("hidden")))
 @interface UICollectionViewComponentController : Component5Controller <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource> {

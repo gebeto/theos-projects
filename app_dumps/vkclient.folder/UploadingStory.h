@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class StoryIdentity, StoryUploadOperation, KVOObserver, StoryUploadContext;
+@class KVOObserver, StoryUploadOperation, StoryIdentity, StoryUploadContext;
 
 __attribute__((visibility("hidden")))
 @interface UploadingStory : XXUnknownSuperclass {

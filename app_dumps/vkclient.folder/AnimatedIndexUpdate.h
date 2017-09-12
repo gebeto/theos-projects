@@ -7,7 +7,7 @@
 
 #import "IndexUpdate.h"
 
-@class NSIndexPath, NSMutableDictionary;
+@class NSMutableDictionary, NSIndexPath;
 
 __attribute__((visibility("hidden")))
 @interface AnimatedIndexUpdate : IndexUpdate {
@@ -16,6 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSIndexPath* scrollPathAnimated;
 @property(retain, nonatomic) NSMutableDictionary* updates;
+-(void).cxx_destruct;
 -(void)replaceRowInsertionsWithReloads;
 -(BOOL)tableShouldReload;
 -(void)applyForCollectionView:(id)collectionView shouldReload:(BOOL)reload reload:(id)reload3;
@@ -24,7 +25,6 @@ __attribute__((visibility("hidden")))
 -(void)update:(int)update rows:(id)rows animation:(int)animation;
 -(int)changes;
 -(void)add:(id)add key:(id)key sections:(BOOL)sections;
--(void)dealloc;
 -(id)init;
 @end
 

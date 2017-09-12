@@ -5,19 +5,19 @@
  * Source: (null)
  */
 
-#import "VKGroupedItem.h"
+#import "VKRenderable.h"
 
 @class NSString;
 
 __attribute__((visibility("hidden")))
-@interface VKProfileItemData : VKGroupedItem {
+@interface VKProfileItemData : VKRenderable {
 	NSString* _title;
 	NSString* _data;
 }
 @property(retain, nonatomic) NSString* data;
 @property(retain, nonatomic) NSString* title;
 +(id)title:(id)title data:(id)data;
+-(void).cxx_destruct;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

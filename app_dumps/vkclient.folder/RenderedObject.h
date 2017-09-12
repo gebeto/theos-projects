@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
 @class RenderLayout, Component5Node;
 
@@ -27,7 +27,7 @@ __attribute__((visibility("hidden")))
 +(id)object:(id)object withSize:(CGSize)size;
 +(id)object:(id)object withRenderLayout:(id)renderLayout;
 +(id)object:(id)object withNode:(id)node;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)initWithObject:(id)object size:(CGSize)size;
 -(id)initWithObject:(id)object renderLayout:(id)layout;
 -(id)initWithObject:(id)object node:(id)node;

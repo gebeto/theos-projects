@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class MOScrollPagingMediator, UIColor;
+@class UIColor, MOScrollPagingMediator;
 
 __attribute__((visibility("hidden")))
 @interface PageControlComponentState : XXUnknownSuperclass {

@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "Model.h"
 #import "TimerTargetDelegate.h"
+#import "Model.h"
 
 @class TimerTarget, NSString;
 
@@ -19,6 +19,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) TimerTarget* timer;
+-(void).cxx_destruct;
 -(id)fakeUsers;
 -(id)fakeUser;
 -(void)timerTargetFired:(id)fired;

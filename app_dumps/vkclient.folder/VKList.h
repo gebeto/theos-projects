@@ -17,6 +17,6 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSArray* items;
 @property(assign, nonatomic) int count;
 +(id)parsed:(id)parsed item:(id)item;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

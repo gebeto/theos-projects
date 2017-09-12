@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "UICollectionViewComponentState.h"
-#import "vkclient-Structs.h"
 
 @class MOScrollPagingMediator, NSArray;
 
@@ -17,6 +17,6 @@ __attribute__((visibility("hidden")))
 }
 @property(copy, nonatomic) NSArray* photos;
 @property(retain, nonatomic) MOScrollPagingMediator* mediator;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

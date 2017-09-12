@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UILabel, UIFont, UIColor;
+@class UIFont, UIColor, UILabel;
 @protocol MBContactPickerModelProtocol;
 
 __attribute__((visibility("hidden")))

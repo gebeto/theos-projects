@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "VKMGroupedCell.h"
+#import "VKMCell.h"
 
 
 __attribute__((visibility("hidden")))
-@interface SearchPeopleFiltersOptionCell : VKMGroupedCell {
+@interface SearchPeopleFiltersOptionCell : VKMCell {
 }
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
 @end

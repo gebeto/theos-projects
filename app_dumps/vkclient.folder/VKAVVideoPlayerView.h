@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class AVAsset, AVPlayerItem, AVPlayer, NSObject, NSURL, AVPlayerLayer;
+@class NSURL, AVPlayerLayer, AVAsset, AVPlayerItem, NSObject, AVPlayer;
 @protocol VKVideoPlayerViewDelegate, OS_dispatch_queue;
 
 __attribute__((visibility("hidden")))

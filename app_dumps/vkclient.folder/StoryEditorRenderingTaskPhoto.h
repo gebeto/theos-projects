@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "StoryEditorRenderingTask.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "StoryEditorRenderingTask.h"
 
-@class NSString, NSURL;
+@class NSURL, NSString;
 
 __attribute__((visibility("hidden")))
 @interface StoryEditorRenderingTaskPhoto : XXUnknownSuperclass <StoryEditorRenderingTask> {

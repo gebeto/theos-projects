@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
 @class NSString;
 
@@ -16,6 +16,7 @@ __attribute__((visibility("hidden")))
 	NSString* _path;
 }
 @property(readonly, copy, nonatomic) NSString* path;
+-(void).cxx_destruct;
 -(BOOL)batchArray:(id)array writer:(id)writer sql:(id)sql;
 -(BOOL)batch:(id)batch writer:(id)writer sql:(id)sql;
 -(id)queryArray:(Class)array reader:(id)reader ctx:(void*)ctx sql:(id)sql;
@@ -36,7 +37,6 @@ __attribute__((visibility("hidden")))
 -(BOOL)close;
 -(BOOL)open;
 -(sqlite3*)db;
--(void)dealloc;
 -(id)initWithPath:(id)path;
 @end
 

@@ -7,7 +7,7 @@
 
 #import "MTRGSection.h"
 
-@class MTRGImageData, NSString;
+@class NSString, MTRGImageData;
 
 @interface MTRGFullscreenSliderSection : MTRGSection {
 	MTRGImageData* _closeIconHd;

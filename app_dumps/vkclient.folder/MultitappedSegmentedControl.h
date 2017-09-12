@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UIColor, NSMutableArray, NSArray;
+@class NSMutableArray, UIColor, NSArray;
 
 __attribute__((visibility("hidden")))
 @interface MultitappedSegmentedControl : XXUnknownSuperclass {
@@ -23,6 +23,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) unsigned selectedIndex;
 @property(copy, nonatomic) NSArray* buttons;
 @property(readonly, retain, nonatomic) NSMutableArray* controlSegments;
+-(void).cxx_destruct;
 -(void)drawRect:(CGRect)rect;
 -(void)setSegment:(id)segment atIndex:(unsigned)index;
 -(void)layoutSubviews;
@@ -35,7 +36,6 @@ __attribute__((visibility("hidden")))
 -(void)customizeView;
 -(id)buttonBackgroundColorForSelected:(BOOL)selected;
 -(id)createSubviews;
--(void)dealloc;
 -(void)setSegments:(id)segments;
 -(id)initWithFrame:(CGRect)frame segments:(id)segments;
 -(id)initWithFrame:(CGRect)frame;

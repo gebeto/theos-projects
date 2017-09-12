@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "UICollectionViewDelegate.h"
-#import "vkclient-Structs.h"
-#import "UICollectionViewDataSource.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "UICollectionViewDelegate.h"
+#import "UICollectionViewDataSource.h"
 
-@class UILabel, UICollectionViewFlowLayout, UICollectionView, ProfileContentBlock, HighlightableButtonWithDisclosureImage, NSString;
+@class UICollectionViewFlowLayout, UILabel, ProfileContentBlock, NSString, UICollectionView, HighlightableButtonWithDisclosureImage;
 @protocol VKProfileContentBlockViewDelegate;
 
 __attribute__((visibility("hidden")))
@@ -27,11 +27,12 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) ProfileContentBlock* contentBlock;
-@property(assign, nonatomic) id<VKProfileContentBlockViewDelegate> delegate;
+@property(assign, nonatomic) __weak id<VKProfileContentBlockViewDelegate> delegate;
 @property(retain, nonatomic) HighlightableButtonWithDisclosureImage* showAllButton;
 @property(retain, nonatomic) UILabel* titleLabel;
 @property(retain, nonatomic) UICollectionViewFlowLayout* layout;
 @property(retain, nonatomic) UICollectionView* collectionView;
+-(void).cxx_destruct;
 -(void)collectionView:(id)view didSelectItemAtIndexPath:(id)indexPath;
 -(id)collectionView:(id)view cellForItemAtIndexPath:(id)indexPath;
 -(id)collectionView:(id)view audioCellAtIndexPath:(id)indexPath;
@@ -42,6 +43,5 @@ __attribute__((visibility("hidden")))
 -(CGSize)sizeThatFits:(CGSize)fits;
 -(void)actionShowAll:(id)all;
 -(id)initWithFrame:(CGRect)frame;
--(void)dealloc;
 @end
 

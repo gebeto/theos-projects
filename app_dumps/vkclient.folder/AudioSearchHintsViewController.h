@@ -5,14 +5,15 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKMLiveController.h"
-#import "vkclient-Structs.h"
 
 
 __attribute__((visibility("hidden")))
 @interface AudioSearchHintsViewController : VKMLiveController {
 }
 -(void)tableView:(id)view willDisplayCell:(id)cell forRowAtIndexPath:(id)indexPath;
+-(float)tableView:(id)view heightForHeaderInSection:(int)section;
 -(id)VKMScrollViewIndexFromModel:(id)model;
 @end
 

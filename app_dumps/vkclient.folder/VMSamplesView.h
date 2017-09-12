@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSMutableArray, UIImage, NSArray;
+@class UIImage, NSMutableArray, NSArray;
 
 __attribute__((visibility("hidden")))
 @interface VMSamplesView : XXUnknownSuperclass {

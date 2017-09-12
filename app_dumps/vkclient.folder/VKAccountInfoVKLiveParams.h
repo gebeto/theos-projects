@@ -16,7 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSString* store_url;
 @property(retain, nonatomic) NSString* scheme;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

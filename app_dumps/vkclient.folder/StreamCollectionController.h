@@ -5,14 +5,14 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "UICollectionViewDelegate.h"
-#import "UICollectionViewDelegateFlowLayout.h"
-#import "UICollectionViewDataSource.h"
 #import "ModelObserver.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
+#import "UICollectionViewDelegateFlowLayout.h"
+#import "UICollectionViewDelegate.h"
+#import "UICollectionViewDataSource.h"
 
-@class UICollectionView, ScrollSpeed, NSString, ListModel;
+@class ListModel, ScrollSpeed, NSString, UICollectionView;
 @protocol VKMNavDelegate;
 
 __attribute__((visibility("hidden")))
@@ -29,12 +29,13 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 @property(readonly, retain, nonatomic) ListModel* model;
-@property(readonly, assign, nonatomic) id<VKMNavDelegate> delegate;
+@property(readonly, assign, nonatomic) __weak id<VKMNavDelegate> delegate;
 @property(assign, nonatomic) BOOL expanded;
 @property(readonly, retain, nonatomic) ScrollSpeed* speed;
 @property(readonly, assign, nonatomic) Class cellClass;
 @property(retain, nonatomic) UICollectionView* collection;
 +(id)cellClasses;
+-(void).cxx_destruct;
 -(id)configureCell:(id)cell atIndexPath:(id)indexPath withModelItem:(id)modelItem;
 -(void)collectionView:(id)view willDisplayCell:(id)cell forItemAtIndexPath:(id)indexPath;
 -(id)collectionView:(id)view cellForItemAtIndexPath:(id)indexPath;

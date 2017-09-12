@@ -5,20 +5,20 @@
  * Source: (null)
  */
 
-#import "VKMGroupedCell.h"
+#import "VKMCell.h"
 
 @class UILabel, VKRangeSlider;
 
 __attribute__((visibility("hidden")))
-@interface SearchPeopleFiltersAgeRangeCell : VKMGroupedCell {
+@interface SearchPeopleFiltersAgeRangeCell : VKMCell {
 	VKRangeSlider* _slider;
 	UILabel* _valueLabel;
 }
 @property(retain, nonatomic) UILabel* valueLabel;
 @property(retain, nonatomic) VKRangeSlider* slider;
+-(void).cxx_destruct;
 -(void)updateLabelText;
 -(void)sliderValueChanged:(id)changed;
--(void)dealloc;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
 @end
 

@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "VKMImageLoaderDelegate.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKMImageLoaderDelegate.h"
 
-@class VKMImageView, ExtrasBadgeView, ExtrasTabBarItem, NSString;
+@class ExtrasTabBarItem, NSString, ExtrasBadgeView, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface ExtrasTabBarButton : XXUnknownSuperclass <VKMImageLoaderDelegate> {
@@ -25,6 +25,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKMImageView* imageView;
 @property(retain, nonatomic) ExtrasBadgeView* badge;
 +(void)initialize;
+-(void).cxx_destruct;
 -(void)setSelected:(BOOL)selected;
 -(id)accessibilityLabel;
 -(void)loader:(id)loader complete:(id)complete;

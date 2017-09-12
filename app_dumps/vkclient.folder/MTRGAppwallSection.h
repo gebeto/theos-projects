@@ -7,7 +7,7 @@
 
 #import "MTRGSection.h"
 
-@class MTRGImageData, NSMutableDictionary, NSString;
+@class NSMutableDictionary, MTRGImageData, NSString;
 
 @interface MTRGAppwallSection : MTRGSection {
 	BOOL _hasNotification;

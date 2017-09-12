@@ -8,7 +8,7 @@
 #import "RoundedProgressOverlayViewDelegate.h"
 #import "VKMCell.h"
 
-@class VKTimeout, UILabel, VKMImageView, RoundedProgressOverlayView, VideoUploadEditAttachment, NSString, NSByteCountFormatter;
+@class VKTimeout, VideoUploadEditAttachment, UILabel, RoundedProgressOverlayView, NSString, NSByteCountFormatter, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface VideoUploadCell : VKMCell <RoundedProgressOverlayViewDelegate> {
@@ -34,6 +34,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UILabel* videoTitleLabel;
 @property(readonly, retain, nonatomic) VKMImageView* thumbnailView;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)progressViewDidCancel:(id)progressView;
 -(void)detach;
 -(void)observeValueForKeyPath:(id)keyPath ofObject:(id)object change:(id)change context:(void*)context;

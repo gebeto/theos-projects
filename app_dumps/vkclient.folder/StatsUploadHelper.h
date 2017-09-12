@@ -21,10 +21,10 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) id executeConfigurationBlock;
 +(void)uploadWithSession:(id)session;
 +(id)helperForSession:(id)session;
+-(void).cxx_destruct;
 -(void)handleExecuteSuccessWithData:(id)data;
 -(void)handleExecuteFailure;
 -(void)configureExectuteBuilder:(id)builder;
 -(id)initWithSession:(id)session;
--(void)dealloc;
 @end
 

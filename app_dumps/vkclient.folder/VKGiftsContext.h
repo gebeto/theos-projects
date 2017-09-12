@@ -21,7 +21,7 @@ __attribute__((visibility("hidden")))
 +(id)withDialogId:(id)dialogId;
 +(id)withChatId:(id)chatId;
 +(id)withUserId:(id)userId;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)withStatContext:(id)statContext;
 @end
 

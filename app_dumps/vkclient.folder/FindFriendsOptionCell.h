@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "VKMCell.h"
 #import "CLLocationManagerDelegate.h"
+#import "VKMCell.h"
 
 @class CLLocationManager, NSString;
 
@@ -20,6 +20,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) CLLocationManager* locationManager;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)locationManager:(id)manager didChangeAuthorizationStatus:(int)status;
 -(void)searchPeople;
 -(void)nearbySearchShowScreen;

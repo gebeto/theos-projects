@@ -18,11 +18,11 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UIImageView* verifiedIconView;
 @property(retain, nonatomic) UIButton* inviteButton;
 @property(retain, nonatomic) UIImageView* checkmarkImageView;
+-(void).cxx_destruct;
 -(void)joinGroup:(id)group;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)showCheckmarkAnimated;
 -(void)prepareForReuse;
--(void)dealloc;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
 @end
 

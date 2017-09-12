@@ -5,51 +5,51 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "VKMController.h"
+#import "VKClient-Structs.h"
 #import "StickersPickerViewControllerDelegate.h"
 #import "StoryEditorDraggableAttachmentsContainerViewDelegate.h"
 #import "StoryEditorEditableTextAttachmentDelegate.h"
+#import "VKMController.h"
 
-@class StoryStatContext, UIView, StoryEditorNavigationBar, UIBarButtonItem, StoryEditorDraggableAttachmentsContainerView, UIButton, NSString, SketchView, TransparentToolbar, UIImageView;
-@protocol StoryEditorItem, StoryEditorItemPreview, StoryEditorPreviewViewControllerDelegate;
+@class UIBarButtonItem, UIButton, SketchView, StoryEditorDraggableAttachmentsContainerView, StoryEditorNavigationBar, UIView, VKMask, UIImageView, NSString, TransparentToolbar, StoryStatContext;
+@protocol StoryEditorPreviewViewControllerDelegate, StoryEditorItem, StoryEditorItemPreview;
 
 __attribute__((visibility("hidden")))
 @interface StoryEditorPreviewViewController : VKMController <StoryEditorEditableTextAttachmentDelegate, StoryEditorDraggableAttachmentsContainerViewDelegate, StickersPickerViewControllerDelegate> {
 	id<StoryEditorPreviewViewControllerDelegate> _delegate;
 	StoryEditorNavigationBar* _customNavigationBar;
+	UIButton* _continueButton;
+	TransparentToolbar* _editActionsBottomToolbar;
+	VKMask* _mask;
 	StoryStatContext* _storyStatsContext;
 	UIView<StoryEditorItemPreview>* _preview;
 	id<StoryEditorItem> _item;
 	UIImageView* _topScrimImageView;
 	UIImageView* _bottomScrimImageView;
 	SketchView* _sketchView;
-	UIImageView* _renderedSketchImageView;
 	StoryEditorDraggableAttachmentsContainerView* _attachmentsContainerView;
 	UIBarButtonItem* _saveToCameraRollButtonItem;
 	UIButton* _muteButton;
-	TransparentToolbar* _editActionsBottomToolbar;
 	UIBarButtonItem* _addStickerButtonItem;
 	UIBarButtonItem* _addTextButtonItem;
 	UIBarButtonItem* _addGraffitiButtonItem;
 	UIBarButtonItem* _addMusicButtonItem;
-	UIButton* _continueButton;
 }
 @property(readonly, copy) NSString* debugDescription;
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
-@property(assign, nonatomic) __weak id<StoryEditorPreviewViewControllerDelegate> delegate;
+@property(retain, nonatomic) VKMask* mask;
+@property(retain, nonatomic) TransparentToolbar* editActionsBottomToolbar;
 @property(retain, nonatomic) UIButton* continueButton;
+@property(assign, nonatomic) __weak id<StoryEditorPreviewViewControllerDelegate> delegate;
 @property(retain, nonatomic) UIBarButtonItem* addMusicButtonItem;
 @property(retain, nonatomic) UIBarButtonItem* addGraffitiButtonItem;
 @property(retain, nonatomic) UIBarButtonItem* addTextButtonItem;
 @property(retain, nonatomic) UIBarButtonItem* addStickerButtonItem;
-@property(retain, nonatomic) TransparentToolbar* editActionsBottomToolbar;
 @property(retain, nonatomic) UIButton* muteButton;
 @property(retain, nonatomic) UIBarButtonItem* saveToCameraRollButtonItem;
 @property(retain, nonatomic) StoryEditorDraggableAttachmentsContainerView* attachmentsContainerView;
-@property(retain, nonatomic) UIImageView* renderedSketchImageView;
 @property(retain, nonatomic) SketchView* sketchView;
 @property(retain, nonatomic) UIImageView* bottomScrimImageView;
 @property(retain, nonatomic) UIImageView* topScrimImageView;

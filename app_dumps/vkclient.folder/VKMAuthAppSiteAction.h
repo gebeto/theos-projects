@@ -7,7 +7,7 @@
 
 #import "VKMSiteAction.h"
 
-@class NSString, NSURL;
+@class NSURL, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKMAuthAppSiteAction : VKMSiteAction {
@@ -21,10 +21,10 @@ __attribute__((visibility("hidden")))
 +(BOOL)ensureAuthorizeURL:(id)url;
 +(BOOL)handleAuthErrors:(id)errors;
 +(BOOL)isAuthorizeAppURL:(id)url;
+-(void).cxx_destruct;
 -(BOOL)webView:(id)view shouldStartLoadWithRequest:(id)request navigationType:(int)type;
 -(void)cancel;
 -(id)targetURL;
 -(void)handleCompleteAuth:(id)auth;
--(void)dealloc;
 @end
 

@@ -7,7 +7,7 @@
 
 #import "Renderer.h"
 
-@class VKWallMode, UISegmentedControl, UIButton;
+@class VKWallMode, UIButton, UISegmentedControl;
 
 __attribute__((visibility("hidden")))
 @interface WallModeRenderer : Renderer {
@@ -22,6 +22,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UISegmentedControl* segment;
 @property(retain, nonatomic) UIButton* composeButton;
 +(void)prepareLayout:(id)layout;
+-(void).cxx_destruct;
 -(void)actionButton:(id)button;
 -(BOOL)toggledFilter;
 -(void)updateToggle;
@@ -32,6 +33,5 @@ __attribute__((visibility("hidden")))
 -(id)wallController;
 -(void)renderCell:(id)cell;
 -(void)setupCell:(id)cell;
--(void)dealloc;
 @end
 

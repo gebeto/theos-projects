@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "RenderLayout.h"
+#import "VKClient-Structs.h"
 
 @class VKRenderedText;
 
@@ -15,6 +15,6 @@ __attribute__((visibility("hidden")))
 	VKRenderedText* _textRender;
 }
 @property(retain) VKRenderedText* textRender;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

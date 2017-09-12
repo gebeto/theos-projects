@@ -6,7 +6,7 @@
  */
 
 #import "BaseMarketCollectionsAdapter.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 
 
 __attribute__((visibility("hidden")))

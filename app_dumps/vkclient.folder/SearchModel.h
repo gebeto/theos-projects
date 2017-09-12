@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
+#import "ListModel.h"
 #import "SearchModel.h"
 #import "NSObject.h"
-#import "ListModel.h"
 
-@class SearchModelContext, NSString, NSArray;
+@class SearchModelContext, NSArray, NSString;
 
 @protocol SearchModel <NSObject>
 @property(readonly, assign, nonatomic) int searchRenderContext;
@@ -36,6 +36,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) SearchModelContext* lastContext;
 @property(assign, nonatomic) int searchScope;
 @property(copy, nonatomic) NSString* searchQuery;
+-(void).cxx_destruct;
 -(void)clearResults;
 -(void)searchWithScope:(int)scope;
 -(void)searchWithQuery:(id)query;
@@ -45,6 +46,5 @@ __attribute__((visibility("hidden")))
 -(id)parameters:(id)parameters;
 -(id)method;
 -(id)withRenderContext:(int)renderContext;
--(void)dealloc;
 @end
 

@@ -7,7 +7,7 @@
 
 #import "VKRenderable.h"
 
-@class NSString, NSNumber;
+@class NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKCurrency : VKRenderable {
@@ -18,7 +18,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSNumber* id;
 +(id)currencyWithID:(id)anId name:(id)name;
 +(void)load;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

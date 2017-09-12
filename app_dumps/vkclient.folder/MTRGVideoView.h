@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class MTRGVideoData, AVPlayerItem, AVPlayer, AVURLAsset, NSURL;
+@class NSURL, AVPlayerItem, MTRGVideoData, AVPlayer, AVURLAsset;
 @protocol MTRGVideoViewDelegate;
 
 @interface MTRGVideoView : XXUnknownSuperclass {

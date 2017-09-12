@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKMBrowserController, NSURL;
+@class NSURL, VKMBrowserController;
 
 __attribute__((visibility("hidden")))
 @interface VKMBrowserTarget : XXUnknownSuperclass {
@@ -18,6 +18,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL simpleChrome;
 @property(retain, nonatomic) NSURL* url;
 @property(assign, nonatomic) VKMBrowserController* weakBrowser;
+-(void).cxx_destruct;
 -(void)fillShareActions:(id)actions;
 -(BOOL)canShare;
 -(id)targetURL;
@@ -26,6 +27,5 @@ __attribute__((visibility("hidden")))
 -(void)render;
 -(void)stop;
 -(void)load;
--(void)dealloc;
 @end
 

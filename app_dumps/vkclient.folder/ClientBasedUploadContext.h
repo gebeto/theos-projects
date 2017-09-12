@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSDictionary, UploadBatchContext, VKClient, NSNumber, NSString, NSURL;
+@class NSURL, VKClient, NSNumber, NSDictionary, NSString, UploadBatchContext;
 
 __attribute__((visibility("hidden")))
 @interface ClientBasedUploadContext : XXUnknownSuperclass {
@@ -29,6 +29,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKClient* client;
 @property(retain, nonatomic) id result;
 +(id)contextWithClient:(id)client;
+-(void).cxx_destruct;
 -(void)cleanTemporaryFiles;
 -(id)createTemporaryFileURLWithExtension:(id)extension;
 -(BOOL)handleResultServerData:(id)data uploadData:(id)data2 saveData:(id)data3;

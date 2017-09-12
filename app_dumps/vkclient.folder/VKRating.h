@@ -16,7 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSNumber* reviews;
 @property(retain, nonatomic) NSNumber* stars;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

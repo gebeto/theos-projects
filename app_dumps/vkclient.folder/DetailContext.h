@@ -7,7 +7,7 @@
 
 #import "ModelContext.h"
 
-@class NSMutableSet, VKLikesPreview, NSArray, VKItemDetail;
+@class VKLikesPreview, VKItemDetail, NSArray, NSMutableSet;
 
 __attribute__((visibility("hidden")))
 @interface DetailContext : ModelContext {
@@ -34,12 +34,12 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int commentsPage;
 @property(assign, nonatomic) int commentsOffset;
 @property(assign, nonatomic) int commentsTotal;
+-(void).cxx_destruct;
 -(BOOL)deleted;
 -(BOOL)loaded;
 -(void)markDeleted;
 -(void)markUpdated;
 -(void)spawnCopy:(id)copy;
 -(id)init;
--(void)dealloc;
 @end
 

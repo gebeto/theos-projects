@@ -5,7 +5,6 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "DomainEditAttachment.h"
 
 @class VKPhoto;
@@ -16,6 +15,6 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKPhoto* domain;
 -(float)domainAttachmentImageRatio;
 -(void)renderView:(id)view;
--(id)createViewForStyle:(XXStruct_9zIMjA)style;
+-(id)createViewForStyle:(id)style;
 @end
 

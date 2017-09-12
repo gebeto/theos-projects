@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKDomainDerived.h"
-#import "vkclient-Structs.h"
 
 
 __attribute__((visibility("hidden")))

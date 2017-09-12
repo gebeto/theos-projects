@@ -7,7 +7,7 @@
 
 #import "MTRGAbstractDataProvider.h"
 
-@class CTTelephonyNetworkInfo, MTRGGCNetworkReachability, NSString;
+@class MTRGGCNetworkReachability, CTTelephonyNetworkInfo, NSString;
 
 @interface MTRGNetworkDataProvider : MTRGAbstractDataProvider {
 	NSString* _connectionValue;

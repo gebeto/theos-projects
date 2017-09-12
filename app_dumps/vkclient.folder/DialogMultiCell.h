@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "MultiImageLoaderDelegate.h"
+#import "VKClient-Structs.h"
 #import "NewDialogCell.h"
 
-@class VKMMultiLoader, NSString, UIImageView;
+@class UIImageView, NSString, VKMMultiLoader;
 
 __attribute__((visibility("hidden")))
 @interface DialogMultiCell : NewDialogCell <MultiImageLoaderDelegate> {
@@ -23,6 +23,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(readonly, retain, nonatomic) UIImageView* multi;
 @property(readonly, retain, nonatomic) VKMMultiLoader* multiloader;
+-(void).cxx_destruct;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)multiImageLoader:(id)loader complete:(id)complete;
 -(void)loadDialogImage:(double)image;

@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "UIBarPositioningDelegate.h"
+#import "VKClient-Structs.h"
 
 
 @protocol UISearchBarDelegate <UIBarPositioningDelegate>

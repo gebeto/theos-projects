@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKMController.h"
 
 @class UIViewController;
@@ -15,6 +15,7 @@ __attribute__((visibility("hidden")))
 	UIViewController* _currentViewController;
 }
 @property(retain, nonatomic) UIViewController* currentViewController;
+-(void).cxx_destruct;
 -(id)childViewControllerForStatusBarHidden;
 -(id)childViewControllerForStatusBarStyle;
 -(void)observeValueForKeyPath:(id)keyPath ofObject:(id)object change:(id)change context:(void*)context;

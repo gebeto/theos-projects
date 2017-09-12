@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "VKMController.h"
+#import "VKClient-Structs.h"
 #import "MessageRendererDelegate.h"
+#import "VKMController.h"
 
-@class UIScrollView, VKMessage, NSString, NSNumber, MessageRenderer;
+@class MessageRenderer, UIScrollView, VKMessage, NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface MessageController : VKMController <MessageRendererDelegate> {
@@ -26,6 +26,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSNumber* did;
 @property(retain, nonatomic) UIScrollView* scroll;
 @property(retain, nonatomic) MessageRenderer* renderer;
+-(void).cxx_destruct;
 -(void)actionDialog:(id)dialog;
 -(id)VKMControllerStatsRef;
 -(id)messageNavigation;

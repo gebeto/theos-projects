@@ -7,7 +7,7 @@
 
 #import "VKDomainDerived.h"
 
-@class VKPoll, VKPollAnswer;
+@class VKPollAnswer, VKPoll;
 
 __attribute__((visibility("hidden")))
 @interface VKPollAnswerInPoll : VKDomainDerived {
@@ -16,8 +16,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKPollAnswer* answer;
 @property(retain, nonatomic) VKPoll* domain;
 +(id)poll:(id)poll answer:(id)answer;
+-(void).cxx_destruct;
 -(BOOL)answered;
 -(BOOL)active;
--(void)dealloc;
 @end
 

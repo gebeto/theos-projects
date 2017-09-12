@@ -7,7 +7,7 @@
 
 #import "ItemModel.h"
 
-@class VKStoreProduct, NSNumber, VKGiftsContext, VKGiftsCatalogItem, NSArray;
+@class VKGiftsContext, VKStoreProduct, NSNumber, NSArray, VKGiftsCatalogItem;
 
 __attribute__((visibility("hidden")))
 @interface GiftsSendModel : ItemModel {
@@ -26,6 +26,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKGiftsCatalogItem* targetGiftItem;
 +(id)availableUsersWithData:(id)data owner:(id)owner;
 +(id)checkGiftTargetRequestForUsers:(id)users orChat:(id)chat withProductId:(id)productId;
+-(void).cxx_destruct;
 -(void)handleBalance:(id)balance :(id)arg2;
 -(void)registerForEvents:(id)events;
 -(id)process:(id)process context:(id)context;
@@ -33,6 +34,5 @@ __attribute__((visibility("hidden")))
 -(id)withStickersId:(id)stickersId;
 -(id)withGiftItem:(id)giftItem;
 -(id)withContext:(id)context;
--(void)dealloc;
 @end
 

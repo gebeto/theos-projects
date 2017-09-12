@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class UIButton, UIActivityIndicatorView;
@@ -21,10 +21,10 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic, getter=isButtonHidden) BOOL buttonHidden;
 @property(retain, nonatomic) UIActivityIndicatorView* activity;
 @property(retain, nonatomic) UIButton* button;
+-(void).cxx_destruct;
 -(void)setButtonHidden:(BOOL)hidden animated:(BOOL)animated;
 -(id)hitTest:(CGPoint)test withEvent:(id)event;
 -(void)layoutSubviews;
 -(id)initWithFrame:(CGRect)frame;
--(void)dealloc;
 @end
 

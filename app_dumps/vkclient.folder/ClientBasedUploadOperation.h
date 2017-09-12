@@ -14,10 +14,10 @@ __attribute__((visibility("hidden")))
 	ClientBasedUploadContext* _context;
 }
 @property(retain, nonatomic) ClientBasedUploadContext* context;
+-(void).cxx_destruct;
 -(void)phaseSaveServer:(id)server upload:(id)upload;
 -(void)phaseUploadServer:(id)server;
 -(id)client;
 -(void)runAsync;
--(void)dealloc;
 @end
 

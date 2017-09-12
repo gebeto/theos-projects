@@ -6,8 +6,8 @@
  */
 
 #import "NSCopying.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
 @class UIColor, NSAttributedString;
 

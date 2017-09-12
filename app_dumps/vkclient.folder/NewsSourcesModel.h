@@ -16,6 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) Index* groups;
 @property(retain, nonatomic) Index* users;
+-(void).cxx_destruct;
 -(void)handleBan:(id)ban :(id)arg2;
 -(void)registerForEvents:(id)events;
 -(id)countKeyForMode:(unsigned)mode;
@@ -23,6 +24,5 @@ __attribute__((visibility("hidden")))
 -(unsigned)modes;
 -(id)updatedIndex:(id)index data:(id)data context:(id)context;
 -(id)requestForContext:(id)context;
--(void)dealloc;
 @end
 

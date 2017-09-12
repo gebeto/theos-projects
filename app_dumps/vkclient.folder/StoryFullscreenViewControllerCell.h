@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "ViewControllerCollectionViewCell.h"
 
 @class StoryFullscreenViewController;

@@ -5,13 +5,13 @@
  * Source: (null)
  */
 
-#import "VKMImageView.h"
-#import "UIGestureRecognizerDelegate.h"
-#import "vkclient-Structs.h"
 #import "VKThumbnailView.h"
+#import "UIGestureRecognizerDelegate.h"
+#import "VKClient-Structs.h"
+#import "VKMImageView.h"
 
-@class VKDomain, UIImage, NSString, UITapGestureRecognizer;
-@protocol ThumbnailViewDelegate, VKThumbnailable;
+@class UIImage, UITapGestureRecognizer, VKDomain, NSString;
+@protocol VKThumbnailable, ThumbnailViewDelegate;
 
 __attribute__((visibility("hidden")))
 @interface ThumbnailView : VKMImageView <UIGestureRecognizerDelegate, VKThumbnailView> {
@@ -25,13 +25,13 @@ __attribute__((visibility("hidden")))
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
-@property(assign, nonatomic) id<ThumbnailViewDelegate> delegate;
+@property(assign, nonatomic) __weak id<ThumbnailViewDelegate> delegate;
 @property(retain, nonatomic) UITapGestureRecognizer* recognizer;
 @property(assign, nonatomic) int renderedSize;
 @property(retain, nonatomic) VKDomain<VKThumbnailable>* domain;
+-(void).cxx_destruct;
 -(id)navDelegate;
 -(void)tapped:(id)tapped;
--(void)dealloc;
 -(id)initWithFrame:(CGRect)frame;
 @end
 

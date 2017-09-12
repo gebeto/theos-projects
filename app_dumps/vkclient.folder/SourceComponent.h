@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "Component5.h"
+#import "VKClient-Structs.h"
 
 
 __attribute__((visibility("hidden")))
@@ -16,6 +16,8 @@ __attribute__((visibility("hidden")))
 +(id)sourceOnline:(id)online lastSeen:(id)seen textStyle:(id)style whiteOnline:(BOOL)online4;
 +(id)sourceOnline:(id)online lastSeen:(id)seen;
 +(id)componentByAddingOptionsToComponent:(id)component sideInsets:(UIEdgeInsets)insets optionsHandler:(id)handler;
++(id)combineSourceComponent:(id)component withOptionsComponent:(id)optionsComponent sideInsets:(UIEdgeInsets)insets;
++(id)optionsComponentWithHandler:(id)handler;
 +(id)source:(id)source status:(id)status;
 +(id)source:(id)source status:(id)status avatarSize:(float)size;
 +(id)statusForSource:(id)source status:(id)status;

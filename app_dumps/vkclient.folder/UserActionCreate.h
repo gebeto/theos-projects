@@ -19,7 +19,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) EditContext* context;
 @property(copy, nonatomic) id block;
 +(id)identity:(id)identity context:(id)context animated:(BOOL)animated block:(id)block;
+-(void).cxx_destruct;
 -(void)runInContext:(id)context;
--(void)dealloc;
 @end
 

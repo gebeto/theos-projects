@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "EditAttachment.h"
 
 @class UIImage;
@@ -17,9 +17,9 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) UIImage* image;
 @property(assign, nonatomic) CLLocationCoordinate2D coord;
+-(void).cxx_destruct;
 -(void)updateCoordinate:(CLLocationCoordinate2D)coordinate image:(id)image;
 -(void)renderView:(id)view;
--(id)createViewForStyle:(XXStruct_9zIMjA)style;
--(void)dealloc;
+-(id)createViewForStyle:(id)style;
 @end
 

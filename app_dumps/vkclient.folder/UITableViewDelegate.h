@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "UIScrollViewDelegate.h"
+#import "VKClient-Structs.h"
 #import "NSObject.h"
-#import "vkclient-Structs.h"
+#import "UIScrollViewDelegate.h"
 
 
 @protocol UITableViewDelegate <NSObject, UIScrollViewDelegate>

@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSDictionary, NSDate, IndexUpdate;
+@class IndexUpdate, NSDate, NSDictionary;
 
 __attribute__((visibility("hidden")))
 @interface ModelContext : XXUnknownSuperclass {
@@ -29,9 +29,9 @@ __attribute__((visibility("hidden")))
 +(id)spawn:(id)spawn;
 +(id)spawn:(id)spawn setup:(id)setup;
 +(id)spawn:(id)spawn handle:(id)handle;
+-(void).cxx_destruct;
 -(void)offsetCount:(int)count;
 -(void)spawnCopy:(id)copy;
 -(void)spawnSetup:(id)setup;
--(void)dealloc;
 @end
 

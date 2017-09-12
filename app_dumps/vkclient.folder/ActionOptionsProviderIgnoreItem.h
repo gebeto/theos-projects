@@ -15,8 +15,8 @@ __attribute__((visibility("hidden")))
 }
 @property(readonly, assign, nonatomic) VKIdentity* item;
 +(id)item:(id)item;
+-(void).cxx_destruct;
 -(void)fillOptionsForBuilder:(id)builder context:(id)context;
 -(id)initWithItem:(id)item;
--(void)dealloc;
 @end
 

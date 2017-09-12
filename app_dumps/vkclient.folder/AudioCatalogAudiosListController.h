@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKMLiveController.h"
 
 
@@ -14,6 +14,7 @@ __attribute__((visibility("hidden")))
 }
 -(void)actionShowMore:(id)more;
 -(id)tableView:(id)view cellForRowAtIndexPath:(id)indexPath;
+-(id)VKMControllerStatsRef;
 -(int)VKMLiveAudioContext;
 @end
 

@@ -5,13 +5,13 @@
  * Source: (null)
  */
 
-#import "UITextFieldDelegate.h"
 #import "ConfirmationCodeHandler.h"
-#import "SignupController.h"
-#import "vkclient-Structs.h"
 #import "TimerTargetDelegate.h"
+#import "VKClient-Structs.h"
+#import "SignupController.h"
+#import "UITextFieldDelegate.h"
 
-@class UILabel, TimerTarget, UIButton, UITextField, NSString;
+@class TimerTarget, UIButton, UITextField, UILabel, NSString;
 
 __attribute__((visibility("hidden")))
 @interface SignupConfirmController : SignupController <TimerTargetDelegate, UITextFieldDelegate, ConfirmationCodeHandler> {
@@ -32,6 +32,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UILabel* footerLabel;
 @property(retain, nonatomic) TimerTarget* target;
 @property(retain, nonatomic) UITextField* codeField;
+-(void).cxx_destruct;
 -(float)tableView:(id)view heightForFooterInSection:(int)section;
 -(id)tableView:(id)view viewForHeaderInSection:(int)section;
 -(float)tableView:(id)view heightForHeaderInSection:(int)section;

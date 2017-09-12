@@ -5,19 +5,19 @@
  * Source: (null)
  */
 
-#import "VKMGroupedCell.h"
+#import "VKMCell.h"
 
 @class UILabel;
 
 __attribute__((visibility("hidden")))
-@interface ProfileItemContentCell : VKMGroupedCell {
+@interface ProfileItemContentCell : VKMCell {
 	UILabel* _badge;
 }
 @property(retain, nonatomic) UILabel* badge;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)layoutSubviews;
--(void)dealloc;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
 @end
 

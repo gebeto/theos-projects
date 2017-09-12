@@ -24,8 +24,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* first_name_ins;
 @property(retain, nonatomic) NSString* last_name_dat;
 @property(retain, nonatomic) NSString* first_name_dat;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
 -(id)casedName:(int)name;
--(void)dealloc;
 @end
 

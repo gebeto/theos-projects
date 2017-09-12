@@ -5,17 +5,17 @@
  * Source: (null)
  */
 
+#import <XXUnknownSuperclass.h> // Unknown library
 #import "UIAlertViewDelegate.h"
 #import "ActionDialogProvider.h"
-#import <XXUnknownSuperclass.h> // Unknown library
 
 @class NSMutableArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface BlocksAlertView : XXUnknownSuperclass <ActionDialogProvider, UIAlertViewDelegate> {
-	id _cancel;
-	id _dismiss;
 	NSMutableArray* _blocks;
+	id _dismiss;
+	id _cancel;
 }
 @property(readonly, copy) NSString* debugDescription;
 @property(readonly, copy) NSString* description;
@@ -26,6 +26,7 @@ __attribute__((visibility("hidden")))
 +(id)title:(id)title message:(id)message cancel:(id)cancel block:(id)block;
 +(id)showAlertViewWithTitle:(id)title message:(id)message style:(int)style cancelButtonTitle:(id)title4 otherButtonTitles:(id)titles dismiss:(id)dismiss cancel:(id)cancel;
 +(id)showAlertViewWithTitle:(id)title message:(id)message cancelButtonTitle:(id)title3 otherButtonTitles:(id)titles dismiss:(id)dismiss cancel:(id)cancel;
+-(void).cxx_destruct;
 -(void)alertView:(id)view willDismissWithButtonIndex:(int)buttonIndex;
 -(void)showInViewController:(id)viewController;
 -(id)dialogTextFieldAtIndex:(int)index;
@@ -36,6 +37,5 @@ __attribute__((visibility("hidden")))
 -(void)setCancelButtonWithTitle:(id)title block:(id)block;
 -(id)initWithTitle:(id)title message:(id)message;
 -(id)initWithTitle:(id)title;
--(void)dealloc;
 @end
 

@@ -15,10 +15,11 @@ __attribute__((visibility("hidden")))
 	id<TimerTargetDelegate> _delegate;
 	NSTimer* _strongTimer;
 }
-@property(assign, nonatomic) id<TimerTargetDelegate> delegate;
+@property(assign, nonatomic) __weak id<TimerTargetDelegate> delegate;
 @property(retain, nonatomic) NSTimer* strongTimer;
 +(id)scheduledTimerTargetWithTimeInterval:(double)timeInterval repeats:(BOOL)repeats;
 +(id)timerTarget:(id)target;
+-(void).cxx_destruct;
 -(void)invalidate;
 -(void)fireTimer;
 -(void)dealloc;

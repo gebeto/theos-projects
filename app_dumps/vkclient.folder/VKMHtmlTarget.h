@@ -15,11 +15,11 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSString* html;
 +(id)targetWithHTML:(id)html;
+-(void).cxx_destruct;
 -(void)reload;
 -(id)targetURL;
 -(id)title;
 -(void)stop;
 -(void)load;
--(void)dealloc;
 @end
 

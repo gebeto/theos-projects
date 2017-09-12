@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UILabel, UIView, NSString;
+@class UIView, UILabel, NSString;
 
 __attribute__((visibility("hidden")))
 @interface MarketGallerySectionHeader : XXUnknownSuperclass {
@@ -21,13 +21,13 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) NSString* title;
 @property(readonly, retain, nonatomic) UIView* separator;
 @property(readonly, retain, nonatomic) UILabel* titleLabel;
+-(void).cxx_destruct;
 -(id)labelAttributedTextWithTitle:(id)title numberOfItems:(unsigned)items;
 -(void)layoutSubviews;
 -(void)bindTitleLabelText;
 -(void)setOpaque:(BOOL)opaque;
 -(void)setBackgroundColor:(id)color;
 -(id)createSubviews;
--(void)dealloc;
 -(id)initWithFrame:(CGRect)frame;
 @end
 

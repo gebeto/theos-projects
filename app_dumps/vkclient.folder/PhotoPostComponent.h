@@ -11,6 +11,6 @@
 __attribute__((visibility("hidden")))
 @interface PhotoPostComponent : Component5 {
 }
-+(id)photoPost:(id)post owner:(BOOL)owner displayText:(BOOL)text expanded:(id)expanded options:(id)options;
++(id)photoPost:(id)post owner:(BOOL)owner displayText:(BOOL)text extra:(id)extra options:(id)options;
 @end
 

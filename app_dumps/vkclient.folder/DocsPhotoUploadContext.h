@@ -15,8 +15,8 @@ __attribute__((visibility("hidden")))
 }
 @property(retain) VKPPAssetData* assetData;
 +(id)docsPhotoContextWithSession:(id)session assetData:(id)data;
+-(void).cxx_destruct;
 -(void)loadUploadData:(id)data;
 -(void)makeThumbnail;
--(void)dealloc;
 @end
 

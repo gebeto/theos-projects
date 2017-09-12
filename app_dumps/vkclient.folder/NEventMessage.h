@@ -15,8 +15,8 @@ __attribute__((visibility("hidden")))
 }
 @property(readonly, retain, nonatomic) VKMessage* message;
 +(id)eventWithMessage:(id)message inDialog:(id)dialog;
+-(void).cxx_destruct;
 -(id)eventText:(id)text;
 -(id)eventSource:(id)source;
--(void)dealloc;
 @end
 

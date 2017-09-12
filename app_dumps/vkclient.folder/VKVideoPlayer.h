@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKVideoPlayerState, AVPlayerItem, AVPlayer, VideoContainerView, NSObject, NSTimer, KVOObserver, AVURLAsset, NSString, NSURL;
-@protocol VideoPlayStats, VKVideoPlayerHolder, OS_dispatch_queue;
+@class NSURL, KVOObserver, AVPlayerItem, VKVideoPlayerState, NSObject, NSTimer, NSString, AVURLAsset, AVPlayer, VideoContainerView;
+@protocol VKVideoPlayerHolder, OS_dispatch_queue, VideoPlayStats;
 
 __attribute__((visibility("hidden")))
 @interface VKVideoPlayer : XXUnknownSuperclass {

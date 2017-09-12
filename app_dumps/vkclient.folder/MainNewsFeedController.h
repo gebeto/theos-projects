@@ -6,10 +6,10 @@
  */
 
 #import "NewsFeedController.h"
+#import "VKClient-Structs.h"
 #import "MainNewsFeedModelObserver.h"
-#import "vkclient-Structs.h"
 
-@class PopupWindow, UIView, MainNewsFeedModel, NewsFeedPostCreationButton, NewsFeedPostAndStoryCreationButtonBar, NSString, FreshNewsButton, StoryFeedPreviewViewController;
+@class MainNewsFeedModel, NewsFeedPostCreationButton, NewsFeedPostAndStoryCreationButtonBar, FreshNewsButton, UIView, NSString, PopupWindow, StoryFeedPreviewViewController;
 
 __attribute__((visibility("hidden")))
 @interface MainNewsFeedController : NewsFeedController <MainNewsFeedModelObserver> {
@@ -33,6 +33,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NewsFeedPostAndStoryCreationButtonBar* storyAndPostCreationButtonBar;
 @property(retain, nonatomic) StoryFeedPreviewViewController* storyPreviewBarViewController;
 @property(retain, nonatomic) FreshNewsButton* freshNewsPanel;
+-(void).cxx_destruct;
 -(void)notificationActivity:(id)activity;
 -(id)VKMControllerStatsRef;
 -(int)VKMLiveAudioContext;

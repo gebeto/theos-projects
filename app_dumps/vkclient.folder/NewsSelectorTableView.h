@@ -6,6 +6,7 @@
  */
 
 #import "VKSelectorTableView.h"
+#import "VKClient-Structs.h"
 
 
 __attribute__((visibility("hidden")))

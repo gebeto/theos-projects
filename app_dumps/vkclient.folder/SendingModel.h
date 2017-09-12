@@ -7,7 +7,7 @@
 
 #import "StoreUpdateModel.h"
 
-@class AttachmentsContainer, NSOperationQueue, NSMutableArray, NSMutableDictionary, NSNumber, MessagesModel;
+@class NSMutableDictionary, NSOperationQueue, AttachmentsContainer, NSMutableArray, MessagesModel, NSNumber;
 
 __attribute__((visibility("hidden")))
 @interface SendingModel : StoreUpdateModel {
@@ -26,6 +26,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) NSMutableArray* sending;
 @property(readonly, retain, nonatomic) NSMutableDictionary* sent;
 @property(readonly, retain, nonatomic) NSNumber* did;
+-(void).cxx_destruct;
 -(void)sendMessage:(id)message completionBlock:(id)block;
 -(void)sendMessage:(id)message;
 -(void)observeValueForKeyPath:(id)keyPath ofObject:(id)object change:(id)change context:(void*)context;

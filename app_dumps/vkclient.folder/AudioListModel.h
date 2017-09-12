@@ -14,6 +14,7 @@ __attribute__((visibility("hidden")))
 	VKAudioPlaylist* _playlist;
 }
 @property(retain, nonatomic) VKAudioPlaylist* playlist;
+-(void).cxx_destruct;
 -(id)updatedIndex:(id)index data:(id)data context:(id)context;
 -(id)request:(int)request count:(int)count;
 -(id)process:(id)process;
@@ -21,6 +22,5 @@ __attribute__((visibility("hidden")))
 -(id)countKey;
 -(id)setupSearch;
 -(id)setupPlaylist:(id)playlist;
--(void)dealloc;
 @end
 

@@ -15,6 +15,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) VKMDateFormatterImpl* impl;
 +(id)sharedFormatter;
+-(void).cxx_destruct;
 -(void)reset;
 -(void)localeChange:(id)change;
 -(void)timeChange:(id)change;

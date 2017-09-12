@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "VKMController.h"
+#import "VKClient-Structs.h"
 #import "MKMapViewDelegate.h"
+#import "VKMController.h"
 
-@class UIToolbar, MKMapView, UIBarButtonItem, CLLocationManager, NSString, SimpleMapAnnotation;
+@class UIBarButtonItem, MKMapView, SimpleMapAnnotation, CLLocationManager, NSString, UIToolbar;
 
 __attribute__((visibility("hidden")))
 @interface MapViewController : VKMController <MKMapViewDelegate> {
@@ -19,7 +19,7 @@ __attribute__((visibility("hidden")))
 	int state;
 	BOOL init;
 	CLLocationCoordinate2D initLocation;
-	int thumbSize;
+	int _thumbSize;
 	CLLocationManager* _locationManager;
 	MKMapView* _map;
 	UIToolbar* _toolbar;
@@ -40,6 +40,7 @@ __attribute__((visibility("hidden")))
 +(id)mapViewForSelectionWithThumbSize:(int)thumbSize handler:(id)handler;
 +(id)mapViewForCoordinateString:(id)coordinateString;
 +(id)mapViewForCoordinate:(CLLocationCoordinate2D)coordinate;
+-(void).cxx_destruct;
 -(void)mapView:(id)view annotationView:(id)view2 didChangeDragState:(unsigned)state fromOldState:(unsigned)oldState;
 -(id)mapView:(id)view viewForAnnotation:(id)annotation;
 -(void)mapView:(id)view didUpdateUserLocation:(id)location;

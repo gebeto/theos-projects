@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "VKTextPage.h"
 #import "VKDomain.h"
+#import "VKTextPage.h"
 
 @class VKPageContent, NSString;
 
@@ -24,9 +24,9 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKPageContent* text;
 @property(assign, nonatomic) unsigned date;
 +(id)note:(id)note owner:(id)owner;
+-(void).cxx_destruct;
 -(id)URLForTextPage;
 -(Class)rendererClass;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

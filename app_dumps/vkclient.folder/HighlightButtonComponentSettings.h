@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class NSAttributedString, UIImage;
+@class UIImage, NSAttributedString;
 
 __attribute__((visibility("hidden")))
 @interface HighlightButtonComponentSettings : XXUnknownSuperclass {

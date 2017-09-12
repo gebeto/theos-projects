@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKSnippetRating, UIImage, NSString, VKSnippetButton;
+@class UIImage, VKSnippetButton, VKSnippetRating, NSString;
 @protocol VKImage, SnippetStats;
 
 __attribute__((visibility("hidden")))

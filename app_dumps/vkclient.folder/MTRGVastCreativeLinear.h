@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSMutableArray, MTRGVastTimeInterval, NSArray;
+@class MTRGVastTimeInterval, NSMutableArray, NSArray;
 
 @interface MTRGVastCreativeLinear : XXUnknownSuperclass {
 	NSMutableArray* _mediafiles;

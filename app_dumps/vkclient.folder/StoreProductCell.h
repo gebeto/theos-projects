@@ -15,6 +15,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) VKMImageView* image;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)layoutSubviews;
 -(void)prepareForReuse;

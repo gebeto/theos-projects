@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "UITextFieldDelegate.h"
 #import "UITextViewDelegate.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKMScrollViewController.h"
+#import "UITextFieldDelegate.h"
 
-@class UILabel, NSNumberFormatter, VKMImageView, UIScrollView, MOTextView, UIView, UIButton, UITextField, NSString, UIImageView;
+@class MOTextView, UIButton, UITextField, NSNumberFormatter, UILabel, UIScrollView, UIView, UIImageView, NSString, VKMImageView;
 @protocol VKSource;
 
 __attribute__((visibility("hidden")))

@@ -11,6 +11,8 @@
 __attribute__((visibility("hidden")))
 @interface FileUtils : XXUnknownSuperclass {
 }
++(id)generateRandomTemporaryDirectoryFilePathForURL:(id)url;
++(BOOL)removeItemAtPathIfExists:(id)pathIfExists;
 +(long long)sizeOfFileAtURL:(id)url;
 +(BOOL)ensureDirectoryPath:(id)path attributes:(id)attributes;
 +(BOOL)addSkipBackupAttributeToItemAtURL:(id)url;

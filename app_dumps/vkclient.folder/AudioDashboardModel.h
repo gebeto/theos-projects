@@ -16,12 +16,14 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) AudioPlaylistsInlineModel* playlistsModel;
 @property(retain, nonatomic) AudioDashboardModelContext* lastContext;
 +(id)with:(id)with;
+-(void).cxx_destruct;
 -(void)fillActionsForBuilder:(id)builder audio:(id)audio;
 -(void)handleDeleteAudio:(id)audio :(id)arg2;
 -(void)handleAddAudiosToPlaylist:(id)playlist :(id)arg2;
 -(void)handleAddAudio:(id)audio :(id)arg2;
 -(void)registerForEvents:(id)events;
 -(void)handlePlaylistsModelUpdated:(id)updated;
+-(id)createShuffleButton;
 -(id)createAddPlaylistButton;
 -(id)createPlaylistsDomain;
 -(int)resultForRequestResponse:(id)requestResponse;

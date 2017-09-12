@@ -16,9 +16,9 @@ __attribute__((visibility("hidden")))
 }
 @property(copy, nonatomic) id blockRange;
 @property(retain, nonatomic) NSRegularExpression* regexp;
+-(void).cxx_destruct;
 -(id)rangeIdKey:(id)key;
 -(id)range:(id)range;
 -(id)regexp:(id)regexp parameter:(id)parameter;
--(void)dealloc;
 @end
 

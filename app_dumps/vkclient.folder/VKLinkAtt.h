@@ -5,14 +5,20 @@
  * Source: (null)
  */
 
+#import "VKAttachment.h"
 #import "VKDomainDerived.h"
 
-@class VKLink;
+@class NSString, VKLink;
 
 __attribute__((visibility("hidden")))
-@interface VKLinkAtt : VKDomainDerived {
+@interface VKLinkAtt : VKDomainDerived <VKAttachment> {
 }
+@property(readonly, copy) NSString* debugDescription;
+@property(readonly, copy) NSString* description;
+@property(readonly, assign) Class superclass;
+@property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) VKLink* domain;
+-(id)attachmentButtonTitle;
 -(id)attachmentIco;
 -(id)attachmentImage;
 -(id)attachmentStatus:(BOOL)status;

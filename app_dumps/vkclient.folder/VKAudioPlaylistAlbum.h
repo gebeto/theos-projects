@@ -6,7 +6,7 @@
  */
 
 #import "VKDomain.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 
 @class VKAudioThumb, NSString;
 
@@ -17,8 +17,8 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) VKAudioThumb* thumb;
 @property(retain, nonatomic) NSString* title;
+-(void).cxx_destruct;
 -(id)pickSingleImageUrlForSize:(CGSize)size scale:(float)scale;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

@@ -7,7 +7,7 @@
 
 #import "VKDomainDerived.h"
 
-@class NSString, VKStoreStockItem;
+@class VKStoreStockItem, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKStoreStockSubscriptionItem : VKDomainDerived {
@@ -17,8 +17,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* terms_url;
 @property(retain, nonatomic) NSString* management_url;
 @property(retain, nonatomic) VKStoreStockItem* domain;
+-(void).cxx_destruct;
 -(Class)cellClass;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

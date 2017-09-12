@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "MultiImageLoaderDelegate.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 #import "TextKitLabelInteractiveDefaultBehaviorDelegate.h"
 
-@class UILabel, TextKitLabelInteractive, VKMImageView, UIView, VKMMultiImagePlaylistLoader, TextKitLabelInteractiveDefaultBehavior, UIButton, NSString, NSNumber;
+@class UIButton, UIColor, UIView, TextKitLabelInteractive, UILabel, VKMMultiImagePlaylistLoader, TextKitLabelInteractiveDefaultBehavior, NSNumber, NSString, VKMImageView;
 @protocol VKMNavDelegate;
 
 __attribute__((visibility("hidden")))
@@ -20,6 +20,7 @@ __attribute__((visibility("hidden")))
 	UIButton* _editCoverButton;
 	UIButton* _artistButton;
 	UIButton* _button;
+	UIButton* _editButton;
 	UIButton* _moreButton;
 	UIButton* _expandButton;
 	NSNumber* _artistOwnerId;
@@ -32,23 +33,26 @@ __attribute__((visibility("hidden")))
 	UIView* _separatorLine;
 	TextKitLabelInteractiveDefaultBehavior* _labelInteractiveDelegate;
 	VKMMultiImagePlaylistLoader* _multiloader;
+	UIColor* _overlayColor;
 	NSString* _artistString;
 }
 @property(readonly, copy) NSString* debugDescription;
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
-@property(assign, nonatomic) id<VKMNavDelegate> navDelegate;
+@property(assign, nonatomic) __weak id<VKMNavDelegate> navDelegate;
 @property(assign, nonatomic) int artistNavType;
 @property(retain, nonatomic) NSNumber* artistOwnerId;
 @property(retain, nonatomic) UIButton* expandButton;
 @property(retain, nonatomic) UIButton* moreButton;
+@property(retain, nonatomic) UIButton* editButton;
 @property(retain, nonatomic) UIButton* button;
 @property(retain, nonatomic) UIButton* artistButton;
 @property(retain, nonatomic) UIButton* editCoverButton;
 @property(retain, nonatomic) VKMImageView* cover;
 @property(retain, nonatomic) NSString* artistString;
 @property(readonly, assign, nonatomic, getter=isExpanded) BOOL expanded;
+@property(readonly, retain, nonatomic) UIColor* overlayColor;
 @property(readonly, retain, nonatomic) VKMMultiImagePlaylistLoader* multiloader;
 @property(retain, nonatomic) TextKitLabelInteractiveDefaultBehavior* labelInteractiveDelegate;
 @property(retain, nonatomic) UIView* separatorLine;
@@ -56,6 +60,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UILabel* dateLabel;
 @property(retain, nonatomic) UILabel* infoLabel;
 @property(retain, nonatomic) UILabel* titleLabel;
+-(void).cxx_destruct;
 -(void)multiImageLoader:(id)loader complete:(id)complete;
 -(id)currentNavDelegate;
 -(void)setEditCoverVisible:(BOOL)visible animated:(BOOL)animated;

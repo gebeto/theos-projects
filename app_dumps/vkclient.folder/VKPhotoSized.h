@@ -6,7 +6,7 @@
  */
 
 #import "VKPhoto.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "NSObject.h"
 #import "VKPhotoSized.h"
 

@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "TouchHighlightControl.h"
-#import "vkclient-Structs.h"
 
-@class UIView, UIColor;
+@class UIColor, UIView;
 
 __attribute__((visibility("hidden")))
 @interface DimmingButton : TouchHighlightControl {

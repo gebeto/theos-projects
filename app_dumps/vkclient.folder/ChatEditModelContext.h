@@ -28,7 +28,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL participant;
 @property(assign, nonatomic) BOOL inviter;
 @property(assign, nonatomic) BOOL admin;
--(void)dealloc;
+-(void).cxx_destruct;
 -(void)spawnCopy:(id)copy;
 @end
 

@@ -18,6 +18,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) GiftsStatContext* stats_context;
 @property(retain, nonatomic) VKUser* target_user;
 @property(retain, nonatomic) NSNumber* user_id;
+-(void).cxx_destruct;
 -(id)withStatsContext:(id)statsContext;
 -(void)handleGiftAdd:(id)add :(id)arg2;
 -(void)handleGiftDelete:(id)aDelete :(id)arg2;
@@ -29,6 +30,5 @@ __attribute__((visibility("hidden")))
 -(BOOL)shouldLoad:(id)load;
 -(id)countKey;
 -(id)withUser:(id)user;
--(void)dealloc;
 @end
 

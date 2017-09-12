@@ -8,7 +8,7 @@
 #import "Renderer.h"
 #import "TextKitLabelInteractiveDefaultBehaviorDelegate.h"
 
-@class GiftSendItemRenderable, TextKitLabelInteractiveDefaultBehavior, NSString;
+@class TextKitLabelInteractiveDefaultBehavior, NSString, GiftSendItemRenderable;
 
 __attribute__((visibility("hidden")))
 @interface GiftSendItemRenderer : Renderer <TextKitLabelInteractiveDefaultBehaviorDelegate> {

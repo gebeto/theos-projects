@@ -7,7 +7,7 @@
 
 #import "Component5.h"
 
-@class NSAttributedString, VKIdentity;
+@class VKIdentity, NSAttributedString;
 
 __attribute__((visibility("hidden")))
 @interface BasicExpandableTextComponent : Component5 {

@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSString, NSNumber, NSArray;
+@class NSNumber, NSString, NSArray;
 
 __attribute__((visibility("hidden")))
 @interface VKWebAppLinkInfo : XXUnknownSuperclass {
@@ -20,6 +20,6 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSArray* queryItems;
 @property(retain, nonatomic) NSNumber* ownerId;
 @property(retain, nonatomic) NSNumber* appId;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

@@ -6,7 +6,6 @@
  */
 
 #import "VKMLiveController.h"
-#import "vkclient-Structs.h"
 
 
 __attribute__((visibility("hidden")))

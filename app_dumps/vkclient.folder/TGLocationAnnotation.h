@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "MKAnnotation.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
+#import "MKAnnotation.h"
 
 @class NSDictionary, NSString;
 

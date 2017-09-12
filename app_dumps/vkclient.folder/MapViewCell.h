@@ -5,15 +5,16 @@
  * Source: (null)
  */
 
-#import "VKMGroupedCell.h"
+#import "VKMCell.h"
 
 @class MKMapView;
 
 __attribute__((visibility("hidden")))
-@interface MapViewCell : VKMGroupedCell {
+@interface MapViewCell : VKMCell {
 	MKMapView* _mapView;
 }
 @property(retain, nonatomic) MKMapView* mapView;
+-(void).cxx_destruct;
 -(void)dealloc;
 @end
 

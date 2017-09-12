@@ -16,6 +16,6 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKIdentity* identity;
 +(id)identity:(id)identity;
 +(id)identity:(id)identity source:(id)source item:(id)item;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

@@ -8,7 +8,7 @@
 #import "UIGestureRecognizerDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UILabel, UIView, VMPushToTalkThumbView, UIButton, NSString;
+@class UIButton, VMPushToTalkThumbView, UILabel, UIView, NSString;
 @protocol VMPushToTalkDelegate;
 
 __attribute__((visibility("hidden")))

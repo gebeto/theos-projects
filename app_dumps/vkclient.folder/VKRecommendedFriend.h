@@ -20,7 +20,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKPhoto* photo;
 @property(retain, nonatomic) NSString* descr;
 @property(retain, nonatomic) VKUser* user;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

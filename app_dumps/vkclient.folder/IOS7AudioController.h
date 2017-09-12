@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "AudioController.h"
 
 @class UIView, UIImageView;
@@ -17,6 +17,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) UIView* hostView;
 @property(retain, nonatomic) UIImageView* cover;
+-(void).cxx_destruct;
 -(void)notificationArtwork:(id)artwork;
 -(void)update;
 -(void)attach:(id)attach;

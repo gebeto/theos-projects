@@ -6,9 +6,10 @@
  */
 
 #import "NewsSectionCellDelegate.h"
+#import "VKClient-Structs.h"
 #import "VKMLiveController.h"
 
-@class NewsSectionsModel, NSString;
+@class NSString, NewsSectionsModel;
 
 __attribute__((visibility("hidden")))
 @interface NewsSectionsController : VKMLiveController <NewsSectionCellDelegate> {

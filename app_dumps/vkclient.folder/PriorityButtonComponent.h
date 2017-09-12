@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "Component5.h"
+#import "VKClient-Structs.h"
 
 @class PriorityButtonComponentState;
 

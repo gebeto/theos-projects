@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "WizardStepInfo.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "WizardStepInfo.h"
 
 @class MainModel, NSString;
 

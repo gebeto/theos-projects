@@ -8,7 +8,7 @@
 #import "PhotoUploadContext.h"
 #import "DomainEvent.h"
 
-@class NSString, VKIdentity;
+@class VKIdentity, NSString;
 
 __attribute__((visibility("hidden")))
 @interface AlbumPhotoUploadContext : PhotoUploadContext <DomainEvent> {
@@ -22,10 +22,10 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* caption;
 @property(retain, nonatomic) VKIdentity* album;
 +(int)domainType;
+-(void).cxx_destruct;
 -(BOOL)handleResultServerData:(id)data uploadData:(id)data2 saveData:(id)data3;
 -(id)requestForSaving:(id)saving;
 -(id)uploadBodyFieldName;
 -(id)requestForUploadServer;
--(void)dealloc;
 @end
 

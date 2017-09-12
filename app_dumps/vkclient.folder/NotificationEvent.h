@@ -26,7 +26,7 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) NSAttributedString* atext;
 @property(copy, nonatomic) NSString* image;
 @property(copy, nonatomic) NSString* imageURL;
+-(void).cxx_destruct;
 -(id)controlerForEvent:(id)event;
--(void)dealloc;
 @end
 

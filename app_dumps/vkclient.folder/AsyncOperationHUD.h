@@ -6,7 +6,7 @@
  */
 
 #import "VKHUD.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 
 @class AsyncOperation;
 
@@ -18,6 +18,7 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) id handler;
 @property(assign, nonatomic) BOOL tracksProgress;
 @property(retain, nonatomic) AsyncOperation* op;
+-(void).cxx_destruct;
 -(id)withHandler:(id)handler;
 -(id)initWithFrame:(CGRect)frame;
 -(void)startAsync:(id)async progress:(BOOL)progress;

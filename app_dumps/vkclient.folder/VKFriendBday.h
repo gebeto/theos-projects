@@ -7,7 +7,7 @@
 
 #import "VKDomainDerived.h"
 
-@class StatContext, VKFriend;
+@class VKFriend, StatContext;
 
 __attribute__((visibility("hidden")))
 @interface VKFriendBday : VKDomainDerived {
@@ -17,7 +17,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL today;
 @property(retain, nonatomic) StatContext* stat_context;
 @property(retain, nonatomic) VKFriend* domain;
+-(void).cxx_destruct;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

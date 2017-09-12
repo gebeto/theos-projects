@@ -6,8 +6,8 @@
  */
 
 #import "NSCopying.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
 @class PriceRange;
 
@@ -17,10 +17,10 @@ __attribute__((visibility("hidden")))
 }
 @property(readonly, retain, nonatomic) PriceRange* priceRange;
 +(id)filterWithPriceRange:(id)priceRange;
+-(void).cxx_destruct;
 -(unsigned)hash;
 -(BOOL)isEqual:(id)equal;
 -(id)copyWithZone:(NSZone*)zone;
--(void)dealloc;
 -(id)initWithPriceRange:(id)priceRange;
 @end
 

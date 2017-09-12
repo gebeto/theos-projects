@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "PopupWindowController.h"
-#import "vkclient-Structs.h"
 #import "VKMController.h"
 
-@class PopupWindow, PopupWindowView, NSString;
+@class NSString, PopupWindow, PopupWindowView;
 
 __attribute__((visibility("hidden")))
 @interface VKSubscriptionSuccessPopupViewController : VKMController <PopupWindowController> {

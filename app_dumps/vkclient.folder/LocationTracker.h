@@ -18,9 +18,9 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) LocationStat* lastLocationStat;
 @property(retain, nonatomic) VKTimeout* timeout;
 @property(retain, nonatomic) CLLocationManager* locationManager;
+-(void).cxx_destruct;
 -(void)storeLastLocationStat:(id)stat;
 -(id)locationStat;
 -(id)initWithUpdateTimeout:(double)updateTimeout;
--(void)dealloc;
 @end
 

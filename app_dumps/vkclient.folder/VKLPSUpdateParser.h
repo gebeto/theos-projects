@@ -20,9 +20,9 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSNumber* owner;
 @property(retain, nonatomic) NSArray* updates;
 +(BOOL)hasAttachments:(id)attachments;
+-(void).cxx_destruct;
 -(void)accept:(id)accept context:(id)context;
 -(id)senderUIDFromLPS:(id)lps fullFlags:(unsigned)flags att:(id)att;
--(void)dealloc;
 -(id)initWithUpdates:(id)updates owner:(id)owner;
 @end
 

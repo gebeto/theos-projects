@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "VKGroupedItem.h"
+#import "VKRenderable.h"
 
 @class NSString;
 
 __attribute__((visibility("hidden")))
-@interface VKProfileItemText : VKGroupedItem {
+@interface VKProfileItemText : VKRenderable {
 	int _action;
 	NSString* _ico;
 	NSString* _data;
@@ -21,7 +21,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* ico;
 @property(assign, nonatomic) int action;
 +(id)ico:(id)ico data:(id)data action:(int)action;
+-(void).cxx_destruct;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

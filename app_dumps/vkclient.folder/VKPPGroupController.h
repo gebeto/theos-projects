@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "UIImagePickerControllerDelegate.h"
 #import "UINavigationControllerDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 #import "VKPPAlbumsListDelegate.h"
+#import "UIImagePickerControllerDelegate.h"
 
-@class VKPPThumbsCollectionView, VKPPModel, VKPPSinglePhotoViewController, NSString, VKPPNoAccessView;
+@class VKPPNoAccessView, VKPPThumbsCollectionView, VKPPModel, VKPPSinglePhotoViewController, NSString;
 
 @interface VKPPGroupController : XXUnknownSuperclass <UIImagePickerControllerDelegate, UINavigationControllerDelegate, VKPPAlbumsListDelegate> {
 	BOOL _fullScreen;

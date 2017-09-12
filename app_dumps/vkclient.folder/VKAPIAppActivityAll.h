@@ -17,7 +17,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign, nonatomic) unsigned count;
 @property(readonly, retain, nonatomic) NSNumber* appID;
 +(id)allActivitiesWithCount:(unsigned)count appID:(id)anId;
+-(void).cxx_destruct;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

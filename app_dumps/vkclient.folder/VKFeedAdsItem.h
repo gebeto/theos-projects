@@ -5,13 +5,13 @@
  * Source: (null)
  */
 
-#import "VKImage.h"
 #import "VKSourceStatus.h"
 #import "VKDomain.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
+#import "VKImage.h"
 #import "VKSource.h"
 
-@class NSMutableDictionary, VKPost, NSNumber, NSString, VKAdData, NSArray;
+@class NSMutableDictionary, VKPost, VKAdData, NSNumber, NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKFeedAdsItem : VKDomain <VKSource, VKImage, VKSourceStatus> {
@@ -72,6 +72,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int ads_type;
 +(id)linkIcon;
 +(void)initialize;
+-(void).cxx_destruct;
 -(BOOL)disclosure;
 -(id)linkText;
 -(int)statusMask;
@@ -87,6 +88,5 @@ __attribute__((visibility("hidden")))
 -(int)pickSizeForRatio:(float)ratio width:(float)width height:(float)height;
 -(void)acceptSources:(id)sources;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

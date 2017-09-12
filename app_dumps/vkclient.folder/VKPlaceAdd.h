@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "VKRenderable.h"
 #import "VKPlaceDescription.h"
+#import "VKRenderable.h"
 
 @class NSString;
 
@@ -21,9 +21,9 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(assign, nonatomic) BOOL searching;
 @property(retain, nonatomic) NSString* address;
+-(void).cxx_destruct;
 -(id)placeDescription;
 -(id)placeTitle;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

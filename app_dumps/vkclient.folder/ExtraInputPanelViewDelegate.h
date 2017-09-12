@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "VKMNavDelegate.h"
 #import "InputPanelViewDelegate.h"
+#import "VKMNavDelegate.h"
 
 
 @protocol ExtraInputPanelViewDelegate <VKMNavDelegate, InputPanelViewDelegate>

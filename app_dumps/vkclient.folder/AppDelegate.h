@@ -7,10 +7,10 @@
 
 #import "MainControllerDelegate.h"
 #import "UIApplicationDelegate.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UIWindow, LandingPageController, NSString, VKCountersUpdater, NSData, VKMMainController, NSURL;
+@class NSURL, NSData, VKCountersUpdater, VKMMainController, LandingPageController, NSString, UIWindow;
 
 __attribute__((visibility("hidden")))
 @interface AppDelegate : XXUnknownSuperclass <UIApplicationDelegate, MainControllerDelegate> {
@@ -35,6 +35,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSURL* pendingURL;
 @property(retain, nonatomic) VKCountersUpdater* counter;
 @property(retain, nonatomic) NSData* apnsToken;
+-(void).cxx_destruct;
 -(void)mainControllerLogout;
 -(void)login:(id)login startup:(BOOL)startup;
 -(BOOL)interceptURL:(id)url;
@@ -51,6 +52,5 @@ __attribute__((visibility("hidden")))
 -(void)application:(id)application performActionForShortcutItem:(id)shortcutItem completionHandler:(id)handler;
 -(BOOL)application:(id)application openURL:(id)url sourceApplication:(id)application3 annotation:(id)annotation;
 -(BOOL)application:(id)application didFinishLaunchingWithOptions:(id)options;
--(void)dealloc;
 @end
 

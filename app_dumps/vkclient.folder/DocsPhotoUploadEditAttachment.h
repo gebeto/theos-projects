@@ -5,7 +5,6 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "UploadEditAttachment.h"
 
 @class DocsPhotoUploadContext;
@@ -16,6 +15,6 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) DocsPhotoUploadContext* context;
 -(float)defaultAttachmentRenderHeight;
 -(float)domainAttachmentImageRatio;
--(id)createViewForStyle:(XXStruct_9zIMjA)style;
+-(id)createViewForStyle:(id)style;
 @end
 

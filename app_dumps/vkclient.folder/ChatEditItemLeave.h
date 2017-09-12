@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "VKGroupedItem.h"
+#import "VKRenderable.h"
 
 
 __attribute__((visibility("hidden")))
-@interface ChatEditItemLeave : VKGroupedItem {
+@interface ChatEditItemLeave : VKRenderable {
 	BOOL _participant;
 }
 @property(assign, nonatomic) BOOL participant;

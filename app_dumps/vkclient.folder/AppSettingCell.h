@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "VKMImageLoaderDelegate.h"
 #import "VKMCell.h"
+#import "VKMImageLoaderDelegate.h"
 
 @class VKMImageLoader, NSString;
 
@@ -20,6 +20,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(readonly, retain, nonatomic) VKMImageLoader* loader;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)layoutSubviews;
 -(void)prepareForReuse;

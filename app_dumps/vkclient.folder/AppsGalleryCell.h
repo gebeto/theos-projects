@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
+#import "VKMCell.h"
 #import "UICollectionViewDelegate.h"
 #import "UICollectionViewDataSource.h"
-#import "VKMCell.h"
-#import "vkclient-Structs.h"
 
-@class UICollectionViewFlowLayout, UICollectionView, NSString, AppsListDomain;
+@class UICollectionViewFlowLayout, AppsListDomain, NSString, UICollectionView;
 
 __attribute__((visibility("hidden")))
 @interface AppsGalleryCell : VKMCell <UICollectionViewDelegate, UICollectionViewDataSource> {
@@ -26,6 +26,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UICollectionView* gallery;
 +(void)prerender:(id)prerender;
 +(Class)sizedApplicationCellClass:(Class)aClass;
+-(void).cxx_destruct;
 -(void)collectionView:(id)view didSelectItemAtIndexPath:(id)indexPath;
 -(id)itemAtIndexPath:(id)indexPath;
 -(id)applyItem:(id)item routingDelegate:(id)delegate toCell:(id)cell;
@@ -34,7 +35,6 @@ __attribute__((visibility("hidden")))
 -(int)collectionView:(id)view numberOfItemsInSection:(int)section;
 -(void)registerApplicationCellClass:(Class)aClass;
 -(id)createSubviews;
--(void)dealloc;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
 @end
 

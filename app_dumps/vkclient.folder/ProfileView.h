@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UILabel, UIScrollView, VKMImageView, VKProfileContentBlockView, UIView, ProfileCoverImageView, NSMutableArray, UIButton, PhotoStreamController, SeparatorWithBorders, UIImageView;
+@class Component5HostView, NSMutableArray, UIButton, ProfileCoverImageView, UIView, UIScrollView, UILabel, UIImageView, VKProfileContentBlockView, VKMImageView, PhotoStreamController;
 
 __attribute__((visibility("hidden")))
 @interface ProfileView : XXUnknownSuperclass {
@@ -38,8 +38,10 @@ __attribute__((visibility("hidden")))
 	UIView* _footer;
 	UIView* _separatorAppButton;
 	UIButton* _appButton;
-	SeparatorWithBorders* _separatorMarket;
-	SeparatorWithBorders* _temporaryPostPanelSeparator;
+	Component5HostView* _appWidgetView;
+	UIView* _separatorWidgetButton;
+	UIView* _separatorMarket;
+	UIView* _temporaryPostPanelSeparator;
 }
 @property(retain, nonatomic) VKProfileContentBlockView* mainSectionView;
 @property(retain, nonatomic) PhotoStreamController* stream;
@@ -48,8 +50,10 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL cover;
 @property(assign, nonatomic) BOOL skipAnimation;
 @property(assign, nonatomic) BOOL shortMode;
-@property(retain, nonatomic) SeparatorWithBorders* temporaryPostPanelSeparator;
-@property(retain, nonatomic) SeparatorWithBorders* separatorMarket;
+@property(retain, nonatomic) UIView* temporaryPostPanelSeparator;
+@property(retain, nonatomic) UIView* separatorMarket;
+@property(retain, nonatomic) UIView* separatorWidgetButton;
+@property(retain, nonatomic) Component5HostView* appWidgetView;
 @property(retain, nonatomic) UIButton* appButton;
 @property(retain, nonatomic) UIView* separatorAppButton;
 @property(retain, nonatomic) UIView* footer;
@@ -70,6 +74,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIButton* buttonInfo;
 @property(retain, nonatomic) UIImageView* verified;
 @property(retain, nonatomic) VKMImageView* photo;
+-(void).cxx_destruct;
 -(void)actionProfileAppButton:(id)button;
 -(void)actionProfileViewAllPhotos:(id)photos;
 -(void)actionPostPlace:(id)place;
@@ -81,7 +86,7 @@ __attribute__((visibility("hidden")))
 -(void)actionInfo:(id)info;
 -(void)actionProfilePhoto:(id)photo;
 -(id)hostController;
--(float)renderProfile:(id)profile user:(BOOL)user owner:(BOOL)owner mainSection:(id)section;
+-(float)renderProfile:(id)profile user:(BOOL)user owner:(BOOL)owner mainSection:(id)section appWidget:(id)widget;
 -(float)renderProfile:(id)profile user:(BOOL)user owner:(BOOL)owner;
 -(void)dealloc;
 @end

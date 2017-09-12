@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class UIRefreshControl;
@@ -15,8 +15,8 @@ __attribute__((visibility("hidden")))
 	UIRefreshControl* _bottomRefreshControl;
 }
 @property(retain, nonatomic) UIRefreshControl* bottomRefreshControl;
+-(void).cxx_destruct;
 -(float)_rubberBandOffsetForOffset:(float)offset maxOffset:(float)offset2 minOffset:(float)offset3 range:(float)range outside:(BOOL*)outside;
--(void)dealloc;
 -(id)initWithFrame:(CGRect)frame style:(int)style;
 @end
 

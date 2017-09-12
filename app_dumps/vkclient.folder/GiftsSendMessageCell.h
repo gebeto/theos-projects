@@ -6,8 +6,8 @@
  */
 
 #import "UITextViewDelegate.h"
+#import "VKClient-Structs.h"
 #import "VKMCell.h"
-#import "vkclient-Structs.h"
 
 @class PlaceholderTextView, NSString;
 
@@ -21,9 +21,9 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) PlaceholderTextView* textDescription;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)resignTextView:(id)view;
 -(BOOL)textView:(id)view shouldChangeTextInRange:(NSRange)range replacementText:(id)text;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
--(void)dealloc;
 @end
 

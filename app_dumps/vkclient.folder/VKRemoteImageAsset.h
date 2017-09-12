@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "VKRemoteAsset.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class NSString, NSURL;
+@class NSURL, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKRemoteImageAsset : XXUnknownSuperclass <VKRemoteAsset> {

@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "VKImage.h"
-#import "VKDomain.h"
-#import "vkclient-Structs.h"
 #import "VKPhotoEdit.h"
+#import "VKDomain.h"
+#import "VKClient-Structs.h"
+#import "VKImage.h"
 
-@class VKPrivacySetting, VKPhoto, NSMutableDictionary, NSNumber, NSString;
+@class NSMutableDictionary, VKPhoto, VKPrivacySetting, NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKPhotoAlbum : VKDomain <VKPhotoEdit, VKImage> {
@@ -55,6 +55,7 @@ __attribute__((visibility("hidden")))
 +(id)userAlbum:(id)album owner:(id)owner;
 +(id)systemAlbum:(int)album ownerId:(id)anId nameGen:(id)gen nameIns:(id)ins;
 +(id)photoAlbumWithId:(id)anId ownerId:(id)anId2;
+-(void).cxx_destruct;
 -(BOOL)isEqualToAlbum:(id)album;
 -(id)userAlbumIdentity;
 -(BOOL)canContainPhotoIdentity:(id)identity;
@@ -73,6 +74,5 @@ __attribute__((visibility("hidden")))
 -(BOOL)process:(id)process context:(id)context;
 -(Class)rendererClass;
 -(void)domainOnEditCopy:(id)copy;
--(void)dealloc;
 @end
 

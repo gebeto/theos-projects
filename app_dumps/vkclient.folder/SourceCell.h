@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "BaseUserCell.h"
 #import "MultiImageLoaderDelegate.h"
+#import "BaseUserCell.h"
 
-@class VKMMultiLoader, NSString;
+@class NSString, VKMMultiLoader;
 
 __attribute__((visibility("hidden")))
 @interface SourceCell : BaseUserCell <MultiImageLoaderDelegate> {
@@ -19,6 +19,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 @property(readonly, retain, nonatomic) VKMMultiLoader* multiloader;
+-(void).cxx_destruct;
 -(void)multiImageLoader:(id)loader complete:(id)complete;
 -(void)renderDialog:(id)dialog expectedReuse:(double)reuse;
 -(void)attach:(id)attach expectedReuse:(double)reuse;

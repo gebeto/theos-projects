@@ -7,7 +7,7 @@
 
 #import "VKDomain.h"
 
-@class VKAPIApp, VKUser, NSString, NSNumber;
+@class VKAPIApp, VKUser, NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKAPIAppRequest : VKDomain {
@@ -33,8 +33,8 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int type;
 @property(retain, nonatomic) NSNumber* app_id;
 +(void)initialize;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
 -(Class)rendererClass;
--(void)dealloc;
 @end
 

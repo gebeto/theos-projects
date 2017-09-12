@@ -16,9 +16,9 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) VKWikiPage* item;
 @property(retain, nonatomic) id<VKTextPage> target;
+-(void).cxx_destruct;
 -(void)loadPage:(id)page;
 -(id)process:(id)process context:(id)context;
 -(id)request;
--(void)dealloc;
 @end
 

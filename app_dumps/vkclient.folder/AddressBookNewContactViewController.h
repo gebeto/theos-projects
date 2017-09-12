@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "ABUnknownPersonViewControllerDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "ABUnknownPersonViewControllerDelegate.h"
 
 @class ABUnknownPersonViewController, NSString;
 
@@ -20,11 +20,11 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) ABUnknownPersonViewController* legacyPersonViewController;
 +(id)contactViewControllerWithPhone:(id)phone;
+-(void).cxx_destruct;
 -(BOOL)unknownPersonViewController:(id)controller shouldPerformDefaultActionForPerson:(void*)person property:(int)property identifier:(int)identifier;
 -(void)unknownPersonViewController:(id)controller didResolveToPerson:(void*)person;
 -(void)actionDismiss:(id)dismiss;
 -(void)viewWillAppear:(BOOL)view;
 -(id)initWithPerson:(void*)person;
--(void)dealloc;
 @end
 

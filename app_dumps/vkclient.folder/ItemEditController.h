@@ -6,12 +6,12 @@
  */
 
 #import "UITextViewDelegate.h"
-#import "vkclient-Structs.h"
+#import "EditController.h"
+#import "VKClient-Structs.h"
 #import "UITableViewDelegate.h"
 #import "UITableViewDataSource.h"
-#import "EditController.h"
 
-@class UILabel, ItemEditContext, UITextView, UITableView, UITextField, NSString;
+@class UITableView, UITextView, UITextField, ItemEditContext, UILabel, NSString;
 
 __attribute__((visibility("hidden")))
 @interface ItemEditController : EditController <UITableViewDataSource, UITableViewDelegate, UITextViewDelegate> {
@@ -40,6 +40,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UITableView* tableView;
 @property(assign, nonatomic) BOOL privacy;
 +(id)main:(id)main context:(id)context;
+-(void).cxx_destruct;
 -(void)tableView:(id)view didSelectRowAtIndexPath:(id)indexPath;
 -(void)loadPrivacyObjectsIfRequired;
 -(id)tableView:(id)view cellForRowAtIndexPath:(id)indexPath;

@@ -6,10 +6,10 @@
  */
 
 #import "NSCopying.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class NSSet, VKPost;
+@class VKPost, FeedItemExtra;
 @protocol FeedPostInteractionStats, ActionOptionsProvider;
 
 __attribute__((visibility("hidden")))
@@ -20,9 +20,9 @@ __attribute__((visibility("hidden")))
 	id<ActionOptionsProvider> _optionsHandler;
 	id<FeedPostInteractionStats> _postStats;
 	unsigned _repostLevel;
-	NSSet* _expandedPosts;
+	FeedItemExtra* _extra;
 }
-@property(retain, nonatomic) NSSet* expandedPosts;
+@property(retain, nonatomic) FeedItemExtra* extra;
 @property(assign, nonatomic, getter=isDetail) BOOL detail;
 @property(readonly, assign, nonatomic) unsigned repostLevel;
 @property(readonly, assign, nonatomic, getter=isRepost) BOOL repost;
@@ -30,7 +30,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) id<ActionOptionsProvider> optionsHandler;
 @property(retain, nonatomic) VKPost* parentPost;
 @property(retain, nonatomic) VKPost* post;
-+(id)stateForPost:(id)post detail:(BOOL)detail expandedPosts:(id)posts;
++(id)stateForPost:(id)post detail:(BOOL)detail extra:(id)extra;
 -(void).cxx_destruct;
 -(id)copyWithZone:(NSZone*)zone;
 -(id)stateForRepost:(id)repost;

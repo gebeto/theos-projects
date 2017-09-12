@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "MBContactPickerModelProtocol.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "MBContactPickerModelProtocol.h"
 
 @class UIImage, NSString;
 

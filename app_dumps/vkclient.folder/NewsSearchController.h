@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "UISearchBarDelegate.h"
 #import "VKMLiveController.h"
-#import "vkclient-Structs.h"
 
 @class SearchModelUpdater, NSString;
 
@@ -21,6 +21,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) SearchModelUpdater* searchUpdater;
+-(void).cxx_destruct;
 -(void)didDismissSearchController:(id)controller;
 -(BOOL)VKMRoute:(id)route context:(id)context;
 -(void)model:(id)model updated:(id)updated;
@@ -31,6 +32,5 @@ __attribute__((visibility("hidden")))
 -(void)viewWillAppear:(BOOL)view;
 -(void)viewDidLoad;
 -(int)VKMTableSearchMode;
--(void)dealloc;
 @end
 

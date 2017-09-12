@@ -20,7 +20,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) id<VKSelectorOption> chatSettingsOption;
 @property(readonly, retain, nonatomic) id<VKSelectorOption> toggleNotificationsOption;
 @property(readonly, retain, nonatomic) id<VKSelectorOption> attachmentsOption;
+-(void).cxx_destruct;
 -(id)initWithAttachmentsOption:(id)attachmentsOption toggleNotificationsOption:(id)option chatSettingsOption:(id)option3 clearHistoryOption:(id)option4;
--(void)dealloc;
 @end
 

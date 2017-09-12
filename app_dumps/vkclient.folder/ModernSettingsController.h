@@ -7,47 +7,48 @@
 
 #import "BaseSettingsController.h"
 #import "TimePickerControllerDelegate.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 
-@class UILabel, VKMImageView, VKButtonExtraTouchArea, VKMGroupedCell, NSString;
+@class UILabel, VKMCell, NSString, VKButtonExtraTouchArea, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface ModernSettingsController : BaseSettingsController <TimePickerControllerDelegate> {
 	VKMImageView* _image;
 	UILabel* _name;
 	VKButtonExtraTouchArea* _editButton;
-	VKMGroupedCell* _cellNotifications;
-	VKMGroupedCell* _cellDontDisturb;
-	VKMGroupedCell* _cellHelp;
-	VKMGroupedCell* _cellGeneral;
-	VKMGroupedCell* _cellAccount;
-	VKMGroupedCell* _cellPrivacy;
-	VKMGroupedCell* _cellBlacklist;
-	VKMGroupedCell* _cellLogout;
-	VKMGroupedCell* _cellBalance;
-	VKMGroupedCell* _cellSubscriptions;
-	VKMGroupedCell* _cellP2P;
-	VKMGroupedCell* _cellAbout;
+	VKMCell* _cellNotifications;
+	VKMCell* _cellDontDisturb;
+	VKMCell* _cellHelp;
+	VKMCell* _cellGeneral;
+	VKMCell* _cellAccount;
+	VKMCell* _cellPrivacy;
+	VKMCell* _cellBlacklist;
+	VKMCell* _cellLogout;
+	VKMCell* _cellBalance;
+	VKMCell* _cellSubscriptions;
+	VKMCell* _cellP2P;
+	VKMCell* _cellAbout;
 }
 @property(readonly, copy) NSString* debugDescription;
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
-@property(retain, nonatomic) VKMGroupedCell* cellAbout;
-@property(retain, nonatomic) VKMGroupedCell* cellP2P;
-@property(retain, nonatomic) VKMGroupedCell* cellSubscriptions;
-@property(retain, nonatomic) VKMGroupedCell* cellBalance;
-@property(retain, nonatomic) VKMGroupedCell* cellLogout;
-@property(retain, nonatomic) VKMGroupedCell* cellBlacklist;
-@property(retain, nonatomic) VKMGroupedCell* cellPrivacy;
-@property(retain, nonatomic) VKMGroupedCell* cellAccount;
-@property(retain, nonatomic) VKMGroupedCell* cellGeneral;
-@property(retain, nonatomic) VKMGroupedCell* cellHelp;
-@property(retain, nonatomic) VKMGroupedCell* cellDontDisturb;
-@property(retain, nonatomic) VKMGroupedCell* cellNotifications;
+@property(retain, nonatomic) VKMCell* cellAbout;
+@property(retain, nonatomic) VKMCell* cellP2P;
+@property(retain, nonatomic) VKMCell* cellSubscriptions;
+@property(retain, nonatomic) VKMCell* cellBalance;
+@property(retain, nonatomic) VKMCell* cellLogout;
+@property(retain, nonatomic) VKMCell* cellBlacklist;
+@property(retain, nonatomic) VKMCell* cellPrivacy;
+@property(retain, nonatomic) VKMCell* cellAccount;
+@property(retain, nonatomic) VKMCell* cellGeneral;
+@property(retain, nonatomic) VKMCell* cellHelp;
+@property(retain, nonatomic) VKMCell* cellDontDisturb;
+@property(retain, nonatomic) VKMCell* cellNotifications;
 @property(retain, nonatomic) VKButtonExtraTouchArea* editButton;
 @property(retain, nonatomic) UILabel* name;
 @property(retain, nonatomic) VKMImageView* image;
+-(void).cxx_destruct;
 -(void)actionVersion:(id)version;
 -(void)openProfileEditing:(id)editing;
 -(void)tableView:(id)view didSelectRowAtIndexPath:(id)indexPath;

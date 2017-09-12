@@ -6,10 +6,10 @@
  */
 
 #import "VKMessage.h"
-#import "NSObject.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "NSObject.h"
 
-@class VKText, NSDictionary, MOCTRender, VKAttachments, RenderLayout, NSNumber, NSString, NSArray;
+@class RenderLayout, MOCTRender, VKAttachments, NSNumber, VKText, NSString, NSArray, NSDictionary;
 
 @protocol VKMessage <NSObject>
 -(void)updatedFromMessage:(id)message;
@@ -70,6 +70,7 @@ __attribute__((visibility("hidden")))
 +(id)messageWithDialogData:(id)dialogData owner:(id)owner;
 +(id)messageWithStoreData:(id)storeData owner:(id)owner;
 +(id)messageCopy:(id)copy;
+-(void).cxx_destruct;
 -(id)sketchDoc;
 -(BOOL)isSketchMessage;
 -(id)messageActionUserId;
@@ -82,6 +83,5 @@ __attribute__((visibility("hidden")))
 -(void)setGiftsOwner:(id)owner;
 -(BOOL)isAudioMessage;
 -(void)parseAttachments:(id)attachments source:(id)source;
--(void)dealloc;
 @end
 

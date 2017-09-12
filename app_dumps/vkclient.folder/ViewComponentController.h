@@ -7,7 +7,7 @@
 
 #import "Component5Controller.h"
 
-@class UIView, ViewComponent;
+@class ViewComponent, UIView;
 
 __attribute__((visibility("hidden")))
 @interface ViewComponentController : Component5Controller {

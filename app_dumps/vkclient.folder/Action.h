@@ -16,13 +16,16 @@ __attribute__((visibility("hidden")))
 	id _target;
 	BarButtonBuilder* _buttonBuilder;
 	id _complete;
+	NSString* _track_code;
 }
+@property(copy, nonatomic) NSString* track_code;
 @property(copy, nonatomic) id complete;
 @property(retain, nonatomic) BarButtonBuilder* buttonBuilder;
 @property(retain, nonatomic) id target;
 @property(retain, nonatomic) NSString* picto;
 @property(retain, nonatomic) NSString* title;
 +(id)target:(id)target;
+-(void).cxx_destruct;
 -(void)fireInContext:(id)context;
 -(void)runInContext:(id)context;
 -(id)fullTitle;
@@ -31,6 +34,5 @@ __attribute__((visibility("hidden")))
 -(id)withButton:(id)button;
 -(id)withPicto:(id)picto;
 -(id)withTitle:(id)title;
--(void)dealloc;
 @end
 

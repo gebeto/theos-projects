@@ -14,6 +14,6 @@ __attribute__((visibility("hidden")))
 	NSArray* _urls;
 }
 @property(copy, nonatomic) NSArray* urls;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

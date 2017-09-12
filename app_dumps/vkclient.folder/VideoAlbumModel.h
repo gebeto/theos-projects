@@ -14,6 +14,7 @@ __attribute__((visibility("hidden")))
 	VideoAlbumContext* _albumContext;
 }
 @property(retain, nonatomic) VideoAlbumContext* albumContext;
+-(void).cxx_destruct;
 -(BOOL)isSameModel:(id)model;
 -(id)addNewVideoItem;
 -(void)handleLastItem:(id)item;
@@ -32,6 +33,5 @@ __attribute__((visibility("hidden")))
 -(id)updatedIndex:(id)index data:(id)data context:(id)context;
 -(id)request:(int)request count:(int)count;
 -(id)countKey;
--(void)dealloc;
 @end
 

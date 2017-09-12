@@ -6,9 +6,9 @@
  */
 
 #import "BaseSectionedSettingsController.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 
-@class UITableViewCell, SettingsSection;
+@class SettingsSection, UITableViewCell;
 
 __attribute__((visibility("hidden")))
 @interface ModernAccountSettings : BaseSectionedSettingsController {
@@ -18,21 +18,27 @@ __attribute__((visibility("hidden")))
 	UITableViewCell* _cellShortname;
 	UITableViewCell* _cellOnlyMyPosts;
 	UITableViewCell* _cellCommentsEnabled;
+	UITableViewCell* _cellCommunityComments;
 	UITableViewCell* _cellLoading;
 	SettingsSection* _wallSettingsSection;
 }
 @property(retain, nonatomic) SettingsSection* wallSettingsSection;
 @property(retain, nonatomic) UITableViewCell* cellLoading;
+@property(retain, nonatomic) UITableViewCell* cellCommunityComments;
 @property(retain, nonatomic) UITableViewCell* cellCommentsEnabled;
 @property(retain, nonatomic) UITableViewCell* cellOnlyMyPosts;
 @property(retain, nonatomic) UITableViewCell* cellShortname;
 @property(retain, nonatomic) UITableViewCell* cellPassword;
 @property(retain, nonatomic) UITableViewCell* cellEmail;
 @property(retain, nonatomic) UITableViewCell* cellPhoneNumber;
+-(void).cxx_destruct;
 -(void)switchOnlyMyPosts:(id)posts;
+-(void)switchAdminCommentsEnabled:(id)enabled;
 -(void)switchCommentsEnabled:(id)enabled;
+-(void)showCommunityCommentsOptions;
 -(void)showWallPostsOptions;
 -(void)tableView:(id)view didSelectRowAtIndexPath:(id)indexPath;
+-(BOOL)customizeFooterForSection:(unsigned)section;
 -(void)render;
 -(void)resetSections;
 -(void)reload;

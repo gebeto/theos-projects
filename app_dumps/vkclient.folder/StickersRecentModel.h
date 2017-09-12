@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKClient, VKStats, NSString, NSArray;
+@class VKClient, VKStats, NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface StickersRecentModel : XXUnknownSuperclass {
@@ -21,11 +21,11 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* baseURL;
 @property(readonly, retain, nonatomic) VKClient* client;
 @property(readonly, retain, nonatomic) VKStats* stats;
+-(void).cxx_destruct;
 -(void)touch;
 -(void)handleSentSticker:(id)sticker baseURL:(id)url;
 -(void)_store;
 -(void)_load;
--(void)dealloc;
 -(id)initWithStats:(id)stats andClient:(id)client;
 @end
 

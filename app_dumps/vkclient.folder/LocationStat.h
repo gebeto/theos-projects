@@ -19,7 +19,7 @@ __attribute__((visibility("hidden")))
 +(id)statWithLocationNotDetermined;
 +(id)statWithLocationDenied;
 +(id)statWithLocation:(id)location;
+-(void).cxx_destruct;
 -(id)initWithStatus:(int)status location:(id)location;
--(void)dealloc;
 @end
 

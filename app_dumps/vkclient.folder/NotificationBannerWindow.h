@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
 @class UIView;
 @protocol NotificationBannerWindowDelegate;
@@ -19,8 +19,9 @@ __attribute__((visibility("hidden")))
 	id<NotificationBannerWindowDelegate> _displayDelegate;
 	UIView* _contentView;
 }
-@property(assign, nonatomic) id<NotificationBannerWindowDelegate> displayDelegate;
+@property(assign, nonatomic) __weak id<NotificationBannerWindowDelegate> displayDelegate;
 @property(retain, nonatomic) UIView* contentView;
+-(void).cxx_destruct;
 -(id)hitTest:(CGPoint)test withEvent:(id)event;
 -(void)panGestureRecognized:(id)recognized;
 -(void)hideImmediatly:(BOOL)immediatly;

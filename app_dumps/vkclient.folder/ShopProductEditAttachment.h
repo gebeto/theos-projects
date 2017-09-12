@@ -5,7 +5,6 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "DomainEditAttachment.h"
 
 @class VKShopProduct;
@@ -18,6 +17,6 @@ __attribute__((visibility("hidden")))
 +(id)attachmentForDomain:(id)domain enableDeletion:(BOOL)deletion;
 -(float)domainAttachmentImageRatio;
 -(void)renderView:(id)view;
--(id)createViewForStyle:(XXStruct_9zIMjA)style;
+-(id)createViewForStyle:(id)style;
 @end
 

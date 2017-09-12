@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSMutableSet, NSMutableDictionary;
+@class NSMutableDictionary, NSMutableSet;
 
 __attribute__((visibility("hidden")))
 @interface DomainEventObserver : XXUnknownSuperclass {

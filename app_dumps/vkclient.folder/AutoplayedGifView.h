@@ -6,10 +6,10 @@
  */
 
 #import "VKMGifLoaderDelegate.h"
+#import "VKClient-Structs.h"
 #import "AutoplayedBaseView.h"
-#import "vkclient-Structs.h"
 
-@class VKMGifLoader, UIView, NSString;
+@class UIView, VKMGifLoader, NSString;
 
 __attribute__((visibility("hidden")))
 @interface AutoplayedGifView : AutoplayedBaseView <VKMGifLoaderDelegate> {

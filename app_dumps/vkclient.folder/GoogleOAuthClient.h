@@ -20,6 +20,7 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) id handler;
 @property(retain, nonatomic) AFHTTPClient* httpClient;
 +(id)sharedClient;
+-(void).cxx_destruct;
 -(void)loadContactsUsingAuthorization:(id)authorization completion:(id)completion;
 -(void)authorizeForContactsAccessWithCompletion:(id)completion;
 -(void)performRequest:(id)request completion:(id)completion;
@@ -29,6 +30,5 @@ __attribute__((visibility("hidden")))
 -(void)obtainAuthorizationCodeWithScopes:(id)scopes completion:(id)completion;
 -(BOOL)handleOpenUrl:(id)url;
 -(id)init;
--(void)dealloc;
 @end
 

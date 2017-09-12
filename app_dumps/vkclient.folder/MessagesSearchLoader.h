@@ -20,9 +20,9 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKUser* host;
 @property(readonly, retain, nonatomic) NSNumber* owner;
 @property(readonly, retain, nonatomic) NSString* query;
+-(void).cxx_destruct;
 -(id)processResultsInBackground:(id)background data:(id)data;
 -(id)requestForOffset:(int)offset count:(int)count success:(id)success failure:(id)failure;
--(void)dealloc;
 -(id)initWithMain:(id)main owner:(id)owner andQuery:(id)query;
 @end
 

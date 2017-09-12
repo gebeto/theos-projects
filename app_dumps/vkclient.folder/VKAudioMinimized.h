@@ -18,6 +18,6 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) unsigned trackNumber;
 @property(readonly, retain, nonatomic) VKAudio* domain;
 +(id)from:(id)from trackNumber:(unsigned)number showArtist:(BOOL)artist;
--(Class)rendererClass;
+-(Class)cellClass;
 @end
 

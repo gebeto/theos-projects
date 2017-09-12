@@ -12,7 +12,6 @@ __attribute__((visibility("hidden")))
 @interface SelectorCell : XXUnknownSuperclass {
 }
 -(void)badgeValue:(int)value;
--(void)dealloc;
 -(void)prepareForReuse;
 -(id)initWithReuseIdentifier:(id)reuseIdentifier;
 @end

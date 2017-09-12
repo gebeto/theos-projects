@@ -18,12 +18,12 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSSet* availableStickersIds;
 @property(retain, nonatomic) NSDictionary* stickersForKey;
 @property(copy, nonatomic) NSString* baseURL;
+-(void).cxx_destruct;
 -(id)availableStickersIdsForStickersIds:(id)stickersIds;
 -(id)suggestedStickersIdsForText:(id)text recentStickersIds:(id)ids;
 -(id)stickersIdsForText:(id)text;
 -(id)keyForText:(id)text;
 -(id)signinficantTextForText:(id)text;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

@@ -15,9 +15,9 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSNumber* targetId;
 +(int)domainType;
+-(void).cxx_destruct;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
 -(BOOL)actionShowsSuccessConfirmation;
--(void)dealloc;
 @end
 

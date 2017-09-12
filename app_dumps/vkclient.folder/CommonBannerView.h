@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class UILabel, VKMImageView, UIButton;
+@class UIButton, UILabel, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface CommonBannerView : XXUnknownSuperclass {
@@ -21,6 +21,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKMImageView* thumb;
 @property(retain, nonatomic) UILabel* bannerText;
 +(id)commonBannerView;
+-(void).cxx_destruct;
 -(void)render:(id)render;
 -(void)layoutSubviews;
 -(void)dealloc;

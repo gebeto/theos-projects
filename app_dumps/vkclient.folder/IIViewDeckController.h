@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "UIGestureRecognizerDelegate.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UIView, UIPanGestureRecognizer, UIColor, NSMutableArray, UIButton, UIBezierPath, UIViewController, NSString, NSArray;
+@class UIButton, NSMutableArray, UIColor, UIView, NSString, NSArray, UIPanGestureRecognizer, UIBezierPath, UIViewController;
 @protocol IIViewDeckControllerDelegate;
 
 __attribute__((visibility("hidden")))
@@ -81,7 +81,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIViewController* rightController;
 @property(retain, nonatomic) UIViewController* leftController;
 @property(retain, nonatomic) UIViewController* centerController;
-@property(assign, nonatomic) id<IIViewDeckControllerDelegate> delegate;
+@property(assign, nonatomic) __weak id<IIViewDeckControllerDelegate> delegate;
 @property(readonly, assign, nonatomic) UIView* slidingControllerView;
 @property(retain, nonatomic) UIView* centerView;
 @property(retain, nonatomic) UIButton* centerTapper;
@@ -96,6 +96,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign, nonatomic) CGRect referenceBounds;
 @property(retain, nonatomic) UIView* referenceView;
 +(void)initialize;
+-(void).cxx_destruct;
 -(id)childViewControllerForStatusBarHidden;
 -(id)childViewControllerForStatusBarStyle;
 -(BOOL)hidesBottomBarWhenPushed;

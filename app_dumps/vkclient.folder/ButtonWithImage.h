@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "TouchHighlightButton.h"
 
 @class UIFont;
@@ -17,12 +17,12 @@ __attribute__((visibility("hidden")))
 }
 @property(assign, nonatomic) float titleImageSpace;
 @property(retain, nonatomic) UIFont* titleFont;
+-(void).cxx_destruct;
 -(CGSize)sizeThatFits:(CGSize)fits;
 -(void)didMoveToSuperview;
 -(CGSize)intrinsicContentSize;
 -(CGRect)imageRectForContentRect:(CGRect)contentRect;
 -(CGRect)titleRectForContentRect:(CGRect)contentRect;
--(void)dealloc;
 -(id)initWithFrame:(CGRect)frame titleImageSpace:(float)space titleFont:(id)font;
 @end
 

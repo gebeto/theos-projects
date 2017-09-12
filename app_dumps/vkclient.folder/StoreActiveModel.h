@@ -7,7 +7,7 @@
 
 #import "LoadingModel.h"
 
-@class StoreActiveModelContext, NSDictionary, NSNumber;
+@class NSNumber, StoreActiveModelContext, NSDictionary;
 @protocol ModelCacheHandler;
 
 __attribute__((visibility("hidden")))
@@ -24,6 +24,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int productType;
 @property(retain, nonatomic) StoreActiveModelContext* lastContext;
 +(void)activate:(BOOL)activate product:(id)product context:(id)context fromManageController:(BOOL)manageController;
+-(void).cxx_destruct;
 -(void)updateNewItemsIfNeeded:(BOOL)needed;
 -(void)updateWithProduct:(id)product;
 -(void)handleActivate:(id)activate :(id)arg2;
@@ -39,6 +40,5 @@ __attribute__((visibility("hidden")))
 -(id)requestForContext:(id)context;
 -(id)spawnContext:(id)context;
 -(id)withProductType:(int)productType;
--(void)dealloc;
 @end
 

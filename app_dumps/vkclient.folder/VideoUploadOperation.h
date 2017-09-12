@@ -8,7 +8,7 @@
 #import "ClientBasedUploadOperation.h"
 #import "VideoUploadTaskDelegate.h"
 
-@class ClientBasedUploadContext, NSString, NSURLSessionTask;
+@class NSURLSessionTask, ClientBasedUploadContext, NSString;
 @protocol IVideoUploadContext;
 
 __attribute__((visibility("hidden")))
@@ -27,6 +27,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) NSURLSessionTask* thumbTask;
 @property(retain, nonatomic) id responseData;
 @property(retain, nonatomic) id serverData;
+-(void).cxx_destruct;
 -(void)notifyUploadState:(int)state;
 -(id)videoUploadTaskLocalTaskTargetOwnerId:(id)anId;
 -(void)videoUploadTask:(id)task totalBytesSent:(long long)sent totalBytesExpected:(long long)expected;
@@ -35,6 +36,5 @@ __attribute__((visibility("hidden")))
 -(void)uploadThumb:(id)thumb;
 -(void)cancel;
 -(void)phaseUploadServer:(id)server;
--(void)dealloc;
 @end
 

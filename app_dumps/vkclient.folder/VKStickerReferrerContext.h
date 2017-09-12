@@ -18,7 +18,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int source;
 +(id)contextSuggestionWithKeyword:(id)keyword;
 +(id)contextKeyboard;
+-(void).cxx_destruct;
 -(id)stringRepresentation;
--(void)dealloc;
 @end
 

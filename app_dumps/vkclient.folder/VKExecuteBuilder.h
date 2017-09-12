@@ -15,6 +15,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSMutableString* c;
 +(id)builder;
+-(void).cxx_destruct;
 -(id)counters:(id)counters;
 -(id)key:(id)key req:(id)req;
 -(id):(id)arg1 req:(id)req;
@@ -28,6 +29,5 @@ __attribute__((visibility("hidden")))
 -(id)buildWithReturnValue:(id)returnValue;
 -(id)buildWithArgs:(id)args;
 -(id)build;
--(void)dealloc;
 @end
 

@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "StyleSheet.h"
+#import "VKClient-Structs.h"
 
 @class TextStyle;
 
@@ -20,6 +20,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) TextStyle* secondaryButtonTitleTextStyle;
 @property(retain, nonatomic) TextStyle* primaryButtonTitleTextStyle;
 @property(retain, nonatomic) TextStyle* snippetButtonTitleTextStyle;
+@property(retain, nonatomic) TextStyle* mentionTextStyle;
 @property(retain, nonatomic) TextStyle* linkTextStyle;
 @property(retain, nonatomic) TextStyle* recommendationsTitleTextStyle;
 @property(retain, nonatomic) TextStyle* profileNameTextStyle;

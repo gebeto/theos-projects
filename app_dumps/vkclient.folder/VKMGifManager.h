@@ -5,14 +5,14 @@
  * Source: (null)
  */
 
-#import "VKAVGifConverterDelegate.h"
 #import "NSURLSessionDataDelegate.h"
-#import "NSURLSessionDelegate.h"
-#import "vkclient-Structs.h"
-#import <XXUnknownSuperclass.h> // Unknown library
 #import "NSCacheDelegate.h"
+#import "NSURLSessionDelegate.h"
+#import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
+#import "VKAVGifConverterDelegate.h"
 
-@class VKSession, NSCache, NSMutableDictionary, NSString, NSObject, NSURLSession;
+@class NSMutableDictionary, VKSession, NSURLSession, NSCache, NSString, NSObject;
 @protocol OS_dispatch_queue;
 
 __attribute__((visibility("hidden")))

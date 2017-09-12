@@ -6,6 +6,7 @@
  */
 
 #import "BaseSettingsController.h"
+#import "VKClient-Structs.h"
 
 
 __attribute__((visibility("hidden")))
@@ -17,11 +18,11 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int selected;
 +(void)testAlertStyle:(id)style;
 +(id)alertStyleName:(int)name;
+-(void).cxx_destruct;
 -(void)tableView:(id)view didSelectRowAtIndexPath:(id)indexPath;
 -(id)tableView:(id)view cellForRowAtIndexPath:(id)indexPath;
 -(int)tableView:(id)view numberOfRowsInSection:(int)section;
 -(int)numberOfSectionsInTableView:(id)tableView;
 -(void)viewDidLoad;
--(void)dealloc;
 @end
 

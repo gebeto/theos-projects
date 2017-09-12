@@ -20,8 +20,8 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL hasUploaded;
 @property(assign, nonatomic) BOOL forceAlbums;
 @property(retain, nonatomic) NSNumber* ownerId;
+-(void).cxx_destruct;
 -(void)enumerateSections:(id)sections;
 -(BOOL)hasSelection;
--(void)dealloc;
 @end
 

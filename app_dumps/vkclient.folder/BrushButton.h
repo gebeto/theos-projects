@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UIView, UIColor, UIImageView;
+@class UIColor, UIView, UIImageView;
 
 __attribute__((visibility("hidden")))
 @interface BrushButton : XXUnknownSuperclass {

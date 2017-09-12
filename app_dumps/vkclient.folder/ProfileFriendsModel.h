@@ -7,7 +7,7 @@
 
 #import "MultiIndexModel.h"
 
-@class Index, NSPredicate, NSNumber, NSArray;
+@class NSPredicate, Index, NSNumber, NSArray;
 
 __attribute__((visibility("hidden")))
 @interface ProfileFriendsModel : MultiIndexModel {
@@ -34,6 +34,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) Index* friends;
 @property(retain, nonatomic) Index* allFriends;
 @property(retain, nonatomic) NSArray* friendsSorted;
+-(void).cxx_destruct;
 -(void)handleDeleteRequests:(id)requests :(id)arg2;
 -(void)handleFriend:(id)aFriend :(id)arg2;
 -(void)updateRequestsCount:(int)count removeUserId:(id)anId :(id)arg3;
@@ -52,7 +53,6 @@ __attribute__((visibility("hidden")))
 -(BOOL)showRequests;
 -(BOOL)hostAllFriends;
 -(id)countKey;
--(void)dealloc;
 -(id)predicate:(id)predicate;
 -(id)onlyOfIDs:(id)ids;
 @end

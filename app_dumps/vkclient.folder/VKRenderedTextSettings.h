@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "VKRenderedTextSettingsWriter.h"
 #import "NSCopying.h"
-#import "vkclient-Structs.h"
+#import "VKRenderedTextSettingsWriter.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
 
 __attribute__((visibility("hidden")))

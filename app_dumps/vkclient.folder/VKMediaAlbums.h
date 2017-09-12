@@ -8,7 +8,7 @@
 #import "VKDomainDerived.h"
 #import "VKTitleable.h"
 
-@class NSString, NSNumber;
+@class NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKMediaAlbums : VKDomainDerived <VKTitleable> {
@@ -22,9 +22,9 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL video;
 @property(retain, nonatomic) NSNumber* oid;
 +(id)owner:(id)owner video:(BOOL)video;
+-(void).cxx_destruct;
 -(BOOL)disclosure;
 -(id)title;
 -(Class)rendererClass;
--(void)dealloc;
 @end
 

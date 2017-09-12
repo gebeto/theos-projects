@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UILabel, TouchHighlightButton, UIFont, UIColor, UIImage, NSString, UIImageView;
+@class UIFont, UIImage, UIColor, UILabel, UIImageView, TouchHighlightButton, NSString;
 
 __attribute__((visibility("hidden")))
 @interface EmptyStateView : XXUnknownSuperclass {

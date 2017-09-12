@@ -10,6 +10,7 @@
 
 @protocol CameraManagerDelegate <NSObject>
 @optional
+-(void)cameraManager:(id)manager changedMaskLoaded:(BOOL)loaded;
 -(void)cameraManager:(id)manager didFinishRecordingToOutputFileAtURL:(id)url error:(id)error;
 -(void)cameraManager:(id)manager didStarRecordingToOutputFileAtURL:(id)url;
 -(void)cameraManager:(id)manager didFailCapturePhotoWithError:(id)error;

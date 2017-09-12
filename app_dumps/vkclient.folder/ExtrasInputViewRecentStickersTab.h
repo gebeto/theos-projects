@@ -8,7 +8,7 @@
 #import "ExtrasInputViewStickersTab.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class StickerSelectionView, ExtrasTabBarItem, StickersRecentModel, NSString, NSArray;
+@class ExtrasTabBarItem, NSString, NSArray, StickerSelectionView, StickersRecentModel;
 
 __attribute__((visibility("hidden")))
 @interface ExtrasInputViewRecentStickersTab : XXUnknownSuperclass <ExtrasInputViewStickersTab> {
@@ -29,12 +29,12 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) ExtrasTabBarItem* tabBarItem;
 @property(readonly, retain, nonatomic) StickersRecentModel* model;
 +(id)tabWithRecentStickersModel:(id)recentStickersModel;
+-(void).cxx_destruct;
 -(id)stickerSelectionViewBaseUrl:(id)url;
 -(id)stickerSelectionViewStickerIds:(id)ids;
 -(void)reloadIfNeeded;
 -(void)setNeedsReload;
 -(id)init;
 -(id)initWithRecentStickersModel:(id)recentStickersModel;
--(void)dealloc;
 @end
 

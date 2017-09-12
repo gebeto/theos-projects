@@ -5,31 +5,45 @@
  * Source: (null)
  */
 
-#import "UITextFieldDelegate.h"
-#import "vkclient-Structs.h"
 #import "VKMTableController.h"
+#import "VKClient-Structs.h"
+#import "UITextFieldDelegate.h"
+#import "MOCTLabelDelegate.h"
 
-@class SexSelectionSegmentedControl, ProfileInfoModel, VKProfileInfo, NSString, UIDatePicker, ProfilePhotoAndNameCell;
+@class UITableViewHeaderFooterView, UIDatePicker, VKProfileInfo, SexSelectionSegmentedControl, ProfilePhotoAndNameCell, NSString, ProfileInfoModel, MOCTLabel;
 
 __attribute__((visibility("hidden")))
-@interface ProfileInfoEditController : VKMTableController <UITextFieldDelegate> {
+@interface ProfileInfoEditController : VKMTableController <UITextFieldDelegate, MOCTLabelDelegate> {
 	BOOL datePickerVisible;
 	VKProfileInfo* _profileInfo;
 	ProfilePhotoAndNameCell* _cellPhotoAndName;
 	SexSelectionSegmentedControl* _sexControl;
 	UIDatePicker* _datePicker;
+	MOCTLabel* _relationshipSectionFooterLabel;
+	UITableViewHeaderFooterView* _relationshipSectionFooter;
 }
 @property(readonly, copy) NSString* debugDescription;
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) ProfileInfoModel* model;
+@property(retain, nonatomic) UITableViewHeaderFooterView* relationshipSectionFooter;
+@property(retain, nonatomic) MOCTLabel* relationshipSectionFooterLabel;
 @property(retain, nonatomic) UIDatePicker* datePicker;
 @property(retain, nonatomic) SexSelectionSegmentedControl* sexControl;
 @property(retain, nonatomic) ProfilePhotoAndNameCell* cellPhotoAndName;
 @property(retain, nonatomic) VKProfileInfo* profileInfo;
 +(BOOL)validProfileInfo:(id)info;
+-(void).cxx_destruct;
+-(void)moctlabel:(id)moctlabel linkClicked:(id)clicked;
+-(void)handleRelationConfirmationWithPartnerURL:(id)partnerURL;
+-(void)updateRelationshipSectionFooter;
+-(BOOL)selectedNewRelationPartner;
+-(BOOL)selectedSomeoneFromRelationRequests;
+-(BOOL)shouldShowRelationshipSectionFooter;
 -(void)tableView:(id)view didSelectRowAtIndexPath:(id)indexPath;
+-(id)tableView:(id)view viewForFooterInSection:(int)section;
+-(float)tableView:(id)view heightForFooterInSection:(int)section;
 -(id)tableView:(id)view cellForRowAtIndexPath:(id)indexPath;
 -(BOOL)tableView:(id)view shouldHighlightRowAtIndexPath:(id)indexPath;
 -(id)tableView:(id)view titleForFooterInSection:(int)section;
@@ -57,6 +71,5 @@ __attribute__((visibility("hidden")))
 -(BOOL)dark;
 -(void)viewDidLoad;
 -(int)VKMTableStyle;
--(void)dealloc;
 @end
 

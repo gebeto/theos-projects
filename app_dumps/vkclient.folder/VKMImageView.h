@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "VKMImageLoaderDelegate.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKMImageLoaderDelegate.h"
 
-@class UIColor, UIImage, VKMImageLoader, NSString, NSNumber;
+@class UIImage, VKMImageLoader, UIColor, NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKMImageView : XXUnknownSuperclass <VKMImageLoaderDelegate> {
@@ -34,6 +34,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIImage* placeholder;
 @property(readonly, retain, nonatomic) VKMImageLoader* loader;
 @property(retain, nonatomic) UIColor* vkm_originalBackgroundColor;
+-(void).cxx_destruct;
 -(void)render:(id)render filter:(id)filter reuse:(double)reuse;
 -(void)render:(id)render type:(XXStruct_UOIMaD)type reuse:(double)reuse;
 -(void)clear;

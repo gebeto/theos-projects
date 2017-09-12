@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSOperation, VKMLoadedImage, NSNumber, NSString;
+@class NSOperation, NSNumber, NSString, VKMLoadedImage;
 @protocol VKMImageLoaderDelegate;
 
 __attribute__((visibility("hidden")))
@@ -22,7 +22,7 @@ __attribute__((visibility("hidden")))
 	id<VKMImageLoaderDelegate> _delegate;
 	VKMLoadedImage* _lastDiscardableObject;
 }
-@property(assign, nonatomic) id<VKMImageLoaderDelegate> delegate;
+@property(assign, nonatomic) __weak id<VKMImageLoaderDelegate> delegate;
 @property(assign, nonatomic) BOOL cached;
 @property(assign) float progress;
 @property(retain) NSOperation* operation;
@@ -31,6 +31,7 @@ __attribute__((visibility("hidden")))
 @property(retain) NSString* localUrl;
 @property(retain) NSString* url;
 @property(retain, nonatomic) VKMLoadedImage* lastDiscardableObject;
+-(void).cxx_destruct;
 -(void)clear;
 -(void)reuse;
 -(void)cancel;

@@ -23,10 +23,10 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) NSArray* cellRenderers;
 +(id)rendererWithDefaultRenderer:(id)defaultRenderer;
 +(id)rendererWithCellRenderers:(id)cellRenderers;
+-(void).cxx_destruct;
 -(id)collectionView:(id)view cellForObject:(id)object atIndexPath:(id)indexPath;
 -(void)registerToCollectionView:(id)collectionView;
 -(BOOL)canRenderObject:(id)object;
 -(id)initWithCellRenderers:(id)cellRenderers;
--(void)dealloc;
 @end
 

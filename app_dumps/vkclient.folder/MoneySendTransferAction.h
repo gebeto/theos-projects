@@ -7,24 +7,26 @@
 
 #import "ModelAction.h"
 
-@class NSString, NSNumber, NSURL;
+@class NSURL, NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface MoneySendTransferAction : ModelAction {
 	NSNumber* _recipient;
 	NSNumber* _amount;
 	NSString* _message;
+	NSString* _currency;
 	NSURL* _redirectUrl;
 }
 @property(copy, nonatomic) NSURL* redirectUrl;
+@property(readonly, copy, nonatomic) NSString* currency;
 @property(readonly, copy, nonatomic) NSString* message;
 @property(readonly, assign, nonatomic) NSNumber* amount;
 @property(readonly, assign, nonatomic) NSNumber* recipient;
 +(int)domainType;
-+(id)recipient:(id)recipient amount:(id)amount message:(id)message;
++(id)recipient:(id)recipient amount:(id)amount message:(id)message currency:(id)currency;
 -(void).cxx_destruct;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
--(id)initWithRecipient:(id)recipient amount:(id)amount message:(id)message;
+-(id)initWithRecipient:(id)recipient amount:(id)amount message:(id)message currency:(id)currency;
 @end
 

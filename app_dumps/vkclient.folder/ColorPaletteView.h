@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "UICollectionViewDelegate.h"
-#import "vkclient-Structs.h"
-#import "UICollectionViewDataSource.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "UICollectionViewDelegate.h"
+#import "UICollectionViewDataSource.h"
 
-@class UICollectionView, NSIndexPath, NSString, NSArray;
+@class NSIndexPath, NSString, UICollectionView, NSArray;
 @protocol ColorPaletteViewDelegate;
 
 __attribute__((visibility("hidden")))

@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UIColor, Component5, UIImage;
+@class UIImage, Component5, UIColor;
 
 __attribute__((visibility("hidden")))
 @interface ImageDecorationComponentState : XXUnknownSuperclass {

@@ -7,7 +7,7 @@
 
 #import "VKMCell.h"
 
-@class UILabel, VKMImageView, UIButton, VKAPIAppWithActionButton, NSString;
+@class VKAPIAppWithActionButton, UIButton, UILabel, NSString, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface AppWithActionCell : VKMCell {
@@ -24,12 +24,12 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UILabel* title;
 @property(readonly, retain, nonatomic) VKMImageView* appIcon;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)prepareForReuse;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)layoutSubviews;
 -(void)actionButtonTapped;
 -(id)createSubviews;
--(void)dealloc;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
 @end
 

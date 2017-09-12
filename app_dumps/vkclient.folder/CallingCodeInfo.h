@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSSet, NSMutableArray, NSString;
+@class NSMutableArray, NSSet, NSString;
 
 __attribute__((visibility("hidden")))
 @interface CallingCodeInfo : XXUnknownSuperclass {

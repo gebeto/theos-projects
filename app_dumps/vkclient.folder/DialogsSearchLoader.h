@@ -16,9 +16,9 @@ __attribute__((visibility("hidden")))
 }
 @property(retain) NSSet* exclude;
 @property(readonly, retain, nonatomic) NSString* query;
+-(void).cxx_destruct;
 -(id)processResultsInBackground:(id)background data:(id)data;
 -(id)requestForOffset:(int)offset count:(int)count success:(id)success failure:(id)failure;
--(void)dealloc;
 -(id)initWithMain:(id)main andQuery:(id)query;
 @end
 

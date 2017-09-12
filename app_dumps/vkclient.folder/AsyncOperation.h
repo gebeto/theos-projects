@@ -23,6 +23,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL resultSuccess;
 @property(retain) id<Cancellable> operation;
 @property(readonly, assign, nonatomic) float progress;
+-(void).cxx_destruct;
 -(void)runAsync;
 -(BOOL)asyncOpCheckCancelInPhase:(id)phase;
 -(void)asyncOpProgress:(float)progress;

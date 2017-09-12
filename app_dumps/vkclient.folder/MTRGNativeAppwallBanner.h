@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class MTRGImageData, UIColor, NSNumber, NSString;
+@class UIColor, NSNumber, MTRGImageData, NSString;
 
 @interface MTRGNativeAppwallBanner : XXUnknownSuperclass {
 	BOOL _hasNotification;

@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSManagedObjectContext, NSManagedObjectModel, NSString;
+@class NSManagedObjectContext, NSString, NSManagedObjectModel;
 
 @interface MRTrackerDBHelper : XXUnknownSuperclass {
 	NSString* _trackerId;

@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKClient, NSString, NSArray;
+@class VKClient, VKMask, NSString, NSArray;
 @protocol StoryEditorRenderingTask;
 
 __attribute__((visibility("hidden")))
@@ -22,7 +22,9 @@ __attribute__((visibility("hidden")))
 	id<StoryEditorRenderingTask> _renderingTask;
 	NSString* _fileName;
 	NSString* _fieldName;
+	VKMask* _mask;
 }
+@property(retain, nonatomic) VKMask* mask;
 @property(assign, nonatomic) BOOL saveRenderingResultToCameraRoll;
 @property(readonly, copy, nonatomic) NSString* fieldName;
 @property(readonly, copy, nonatomic) NSString* fileName;

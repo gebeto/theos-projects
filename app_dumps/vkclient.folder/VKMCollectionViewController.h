@@ -5,13 +5,13 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "UICollectionViewDelegate.h"
-#import "VKMScrollViewController.h"
+#import "VKClient-Structs.h"
 #import "UICollectionViewDelegateFlowLayout.h"
+#import "VKMScrollViewController.h"
+#import "UICollectionViewDelegate.h"
 #import "UICollectionViewDataSource.h"
 
-@class UICollectionView, ReusableViewsPool, NSString;
+@class ReusableViewsPool, NSString, UICollectionView;
 @protocol VKMCollectionViewCellRenderer;
 
 __attribute__((visibility("hidden")))
@@ -27,6 +27,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) id<VKMCollectionViewCellRenderer> collectionViewRenderer;
 @property(retain, nonatomic) ReusableViewsPool* pool;
 @property(retain, nonatomic) UICollectionView* collectionView;
+-(void).cxx_destruct;
 -(void)VKMScrollViewSetFooter:(id)footer;
 -(id)setupTeaserViewConfig:(id)config;
 -(CGSize)collectionView:(id)view layout:(id)layout sizeForItemAtIndexPath:(id)indexPath;
@@ -45,6 +46,5 @@ __attribute__((visibility("hidden")))
 -(id)VKMCollectionViewWithLayout:(id)layout;
 -(id)VKMCollectionViewRenderer;
 -(id)VKMCollectionViewLayout;
--(void)dealloc;
 @end
 

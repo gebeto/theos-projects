@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class VKPPBadge, UIButton, NSString;
+@class UIButton, VKPPBadge, NSString;
 
 __attribute__((visibility("hidden")))
 @interface BadgedBarButtonItem : XXUnknownSuperclass {
@@ -22,7 +22,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIButton* button;
 @property(retain, nonatomic) VKPPBadge* badge;
 +(id)badgedButton:(id)button target:(id)target action:(SEL)action width:(float)width;
+-(void).cxx_destruct;
 -(void)useBadgeNumber:(int)number;
--(void)dealloc;
 @end
 

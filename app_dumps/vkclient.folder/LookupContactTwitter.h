@@ -14,7 +14,7 @@ __attribute__((visibility("hidden")))
 	TwitterClient* _twitterClient;
 }
 @property(retain, nonatomic) TwitterClient* twitterClient;
+-(void).cxx_destruct;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

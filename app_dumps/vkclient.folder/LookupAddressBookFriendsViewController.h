@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "LookupFriendsViewController.h"
 
 @class LookupAddressbookTeaserViewController;
@@ -15,10 +15,10 @@ __attribute__((visibility("hidden")))
 	LookupAddressbookTeaserViewController* _lookupTeaserViewController;
 }
 @property(retain, nonatomic) LookupAddressbookTeaserViewController* lookupTeaserViewController;
+-(void).cxx_destruct;
 -(void)actionTeaserButton:(id)button;
 -(void)VKMScrollViewUpdateTeaserViewInsets;
 -(void)VKMScrollViewUpdateTeaserView;
 -(BOOL)VKMScrollViewShouldShowTeaser;
--(void)dealloc;
 @end
 

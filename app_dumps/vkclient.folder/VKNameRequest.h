@@ -20,9 +20,9 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* last_name;
 @property(retain, nonatomic) NSString* first_name;
 @property(assign, nonatomic) int status;
+-(void).cxx_destruct;
 -(BOOL)isEqual:(id)equal;
 -(BOOL)canCancel;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

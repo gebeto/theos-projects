@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "LoadingModel.h"
 
-@class TopicModelContext, NSNumber;
+@class NSNumber, TopicModelContext;
 
 __attribute__((visibility("hidden")))
 @interface TopicModel : LoadingModel {
@@ -21,6 +21,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSNumber* tid;
 @property(retain, nonatomic) TopicModelContext* lastContext;
 +(id)topicComments:(id)comments tid:(id)tid bottom:(BOOL)bottom offset:(int)offset count:(int)count;
+-(void).cxx_destruct;
 -(void)handleEdit:(id)edit :(id)arg2;
 -(void)handleAdd:(id)add :(id)arg2;
 -(void)handleDelete:(id)aDelete :(id)arg2;
@@ -35,6 +36,5 @@ __attribute__((visibility("hidden")))
 -(id)setupOffset:(int)offset;
 -(id)setupTopic:(id)topic;
 -(id)setupTid:(id)tid owner:(id)owner;
--(void)dealloc;
 @end
 

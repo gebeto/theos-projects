@@ -16,6 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) Index* onlyFriends;
 @property(retain, nonatomic) Index* allMembers;
+-(void).cxx_destruct;
 -(void)resetToMode:(unsigned)mode;
 -(id)countKeyForMode:(unsigned)mode;
 -(id)indexForMode:(unsigned)mode;
@@ -25,6 +26,5 @@ __attribute__((visibility("hidden")))
 -(BOOL)shouldLoad:(id)load;
 -(id)spawnContext:(id)context;
 -(id)countKey;
--(void)dealloc;
 @end
 

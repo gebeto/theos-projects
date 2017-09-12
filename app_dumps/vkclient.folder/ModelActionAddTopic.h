@@ -18,8 +18,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* text;
 @property(retain, nonatomic) VKTopic* target;
 +(int)domainType;
+-(void).cxx_destruct;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
--(void)dealloc;
 @end
 

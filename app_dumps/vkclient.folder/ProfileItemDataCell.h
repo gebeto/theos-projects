@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "VKMGroupedCell.h"
+#import "VKMCell.h"
 
 @class UILabel;
 
 __attribute__((visibility("hidden")))
-@interface ProfileItemDataCell : VKMGroupedCell {
+@interface ProfileItemDataCell : VKMCell {
 	UILabel* _title;
 	UILabel* _itemDataText;
 }
@@ -18,8 +18,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UILabel* title;
 +(void)prerender:(id)prerender;
 +(void)initialize;
+-(void).cxx_destruct;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
--(void)dealloc;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
 @end
 

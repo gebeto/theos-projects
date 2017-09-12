@@ -16,6 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) Index* all;
 @property(retain, nonatomic) Index* online;
+-(void).cxx_destruct;
 -(void)handleFavorites:(id)favorites :(id)arg2;
 -(id)removeFavorite:(id)favorite updateBuilder:(id)builder;
 -(id)addFavorite:(id)favorite updateBuilder:(id)builder;
@@ -28,6 +29,5 @@ __attribute__((visibility("hidden")))
 -(id)updatedIndex:(id)index data:(id)data context:(id)context;
 -(id)requestForContext:(id)context;
 -(id)countKey;
--(void)dealloc;
 @end
 

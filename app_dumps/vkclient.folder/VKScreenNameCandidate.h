@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSString, NSURL;
+@class NSURL, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKScreenNameCandidate : XXUnknownSuperclass {
@@ -20,6 +20,6 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSURL* url;
 @property(retain, nonatomic) NSString* query;
 @property(retain, nonatomic) NSString* screen_name;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

@@ -7,7 +7,7 @@
 
 #import "VKMCell.h"
 
-@class UILabel, AudioPlaylistsInlineDomain, UIView, UIButton;
+@class UIButton, UILabel, UIView, AudioPlaylistsInlineDomain;
 
 __attribute__((visibility("hidden")))
 @interface AudioPlaylistsCell : VKMCell {
@@ -20,11 +20,11 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UIButton* showAllButton;
 @property(readonly, retain, nonatomic) UILabel* titleLabel;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)prepareForReuse;
 -(void)layoutSubviews;
 -(void)actionShowAll:(id)all;
 -(id)createSubviews;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
--(void)dealloc;
 @end
 

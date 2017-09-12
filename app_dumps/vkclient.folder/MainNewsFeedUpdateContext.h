@@ -24,8 +24,8 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign, nonatomic) int awayTime;
 +(id)startTime:(unsigned)time;
 +(id)awayTime:(int)time position:(int)position postIdentity:(id)identity;
+-(void).cxx_destruct;
 -(id)initWithStartTime:(unsigned)startTime;
 -(id)initWithAwayTime:(int)awayTime position:(int)position postIdentity:(id)identity;
--(void)dealloc;
 @end
 

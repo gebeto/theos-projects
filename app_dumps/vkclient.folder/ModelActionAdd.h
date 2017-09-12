@@ -15,6 +15,6 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) VKDomain* added;
 @property(retain, nonatomic) VKDomain* target;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

@@ -15,10 +15,10 @@ __attribute__((visibility("hidden")))
 	id _layoutBlock;
 	id<LayoutAwareViewDelegate> _layoutDelegate;
 }
-@property(assign, nonatomic) id<LayoutAwareViewDelegate> layoutDelegate;
+@property(assign, nonatomic) __weak id<LayoutAwareViewDelegate> layoutDelegate;
 @property(copy, nonatomic) id layoutBlock;
 @property(assign, nonatomic) /*function-pointer*/ void* layoutFunc;
+-(void).cxx_destruct;
 -(void)layoutSubviews;
--(void)dealloc;
 @end
 

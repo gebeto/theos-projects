@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class Index, NSString, NSArray;
+@class Index, NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface IndexSearchOperation : XXUnknownSuperclass {
@@ -20,6 +20,6 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSArray* results;
 @property(retain, nonatomic) NSString* query;
 @property(retain, nonatomic) Index* index;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

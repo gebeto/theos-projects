@@ -15,8 +15,8 @@ __attribute__((visibility("hidden")))
 }
 @property(copy, nonatomic) NSString* key;
 +(id)idenWithKey:(id)key;
+-(void).cxx_destruct;
 -(BOOL)isEqualToIdentity:(id)identity;
 -(BOOL)isEqual:(id)equal;
--(void)dealloc;
 @end
 

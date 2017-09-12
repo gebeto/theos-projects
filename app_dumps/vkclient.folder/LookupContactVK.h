@@ -7,7 +7,7 @@
 
 #import "VKRenderable.h"
 
-@class VKUser, VKCity, NSNumber, NSString;
+@class VKCity, NSNumber, VKUser, NSString;
 
 __attribute__((visibility("hidden")))
 @interface LookupContactVK : VKRenderable {
@@ -30,10 +30,10 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL request_sent;
 @property(assign, nonatomic) BOOL verified;
 @property(retain, nonatomic) VKUser* user;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
 -(Class)cellClass;
 -(BOOL)isEqualIdentity:(id)identity;
 -(id)description;
--(void)dealloc;
 @end
 

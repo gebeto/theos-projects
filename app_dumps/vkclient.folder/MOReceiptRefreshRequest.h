@@ -20,9 +20,9 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(copy, nonatomic) id block;
 +(void)refreshRequestWithBlock:(id)block;
+-(void).cxx_destruct;
 -(void)request:(id)request didFailWithError:(id)error;
 -(void)requestDidFinish:(id)request;
 -(void)productsRequest:(id)request didReceiveResponse:(id)response;
--(void)dealloc;
 @end
 

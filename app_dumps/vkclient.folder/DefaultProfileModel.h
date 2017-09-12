@@ -17,6 +17,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) ProfileModelContext* lastContext;
 @property(retain, nonatomic) id completedItem;
 @property(retain, nonatomic) Index* profileInfoIndex;
+-(void).cxx_destruct;
 -(id)recreateProfileIndex:(id)index;
 -(void)renderProfileInfo;
 -(id)componentForContentItem:(id)contentItem;
@@ -25,6 +26,5 @@ __attribute__((visibility("hidden")))
 -(id)componentForObject:(id)object withContext:(id)context;
 -(id)updatedIndex:(id)index data:(id)data context:(id)context;
 -(id)spawnContext:(id)context;
--(void)dealloc;
 @end
 

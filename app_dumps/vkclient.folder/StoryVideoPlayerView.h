@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class StoryVideoPlayer, KVOObserver, VKAVPlayerLayerView;
+@class KVOObserver, VKAVPlayerLayerView, StoryVideoPlayer;
 
 __attribute__((visibility("hidden")))
 @interface StoryVideoPlayerView : XXUnknownSuperclass {

@@ -15,6 +15,6 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) VKDomain* domain;
 +(id)from:(id)from;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

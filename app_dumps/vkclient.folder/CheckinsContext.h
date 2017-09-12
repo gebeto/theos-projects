@@ -14,7 +14,7 @@ __attribute__((visibility("hidden")))
 	NSMutableSet* _userIds;
 }
 @property(retain, nonatomic) NSMutableSet* userIds;
+-(void).cxx_destruct;
 -(void)spawnCopy:(id)copy;
--(void)dealloc;
 @end
 

@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "VideoPlayStats.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VideoPlayStats.h"
 
-@class VKSession, NSString, StatsRef, VKIdentity;
+@class VKSession, StatsRef, VKIdentity, NSString;
 
 __attribute__((visibility("hidden")))
 @interface GifPlayStats : XXUnknownSuperclass <VideoPlayStats> {
@@ -24,6 +24,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign, nonatomic) VKIdentity* iden;
 @property(readonly, assign, nonatomic) VKSession* session;
 +(id)session:(id)session gif:(id)gif ref:(id)ref;
+-(void).cxx_destruct;
 -(void)toggleFullscreen:(BOOL)fullscreen;
 -(void)toggleVolume:(BOOL)volume;
 -(void)progress:(double)progress;
@@ -32,6 +33,5 @@ __attribute__((visibility("hidden")))
 -(void)pause;
 -(void)play:(BOOL)play;
 -(id)initWithSession:(id)session gif:(id)gif ref:(id)ref;
--(void)dealloc;
 @end
 

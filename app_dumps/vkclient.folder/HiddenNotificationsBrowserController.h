@@ -16,7 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(copy, nonatomic) id completeBlock;
 @property(assign, nonatomic) id<VKMNavDelegate> navDelegate;
+-(void).cxx_destruct;
 -(void)finish:(BOOL)finish;
--(void)dealloc;
 @end
 

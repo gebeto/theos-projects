@@ -22,10 +22,10 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int type;
 @property(retain, nonatomic) NSNumber* appID;
 +(int)domainType;
+-(void).cxx_destruct;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
 -(BOOL)disableHUD;
 -(BOOL)actionShowsSuccessConfirmation;
--(void)dealloc;
 @end
 

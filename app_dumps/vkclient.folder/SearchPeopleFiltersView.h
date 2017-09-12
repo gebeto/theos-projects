@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class UILabel, UIView;
@@ -18,18 +18,18 @@ __attribute__((visibility("hidden")))
 	UILabel* _filtersDescriptionLabel;
 	UIView* _parametersButtonContainer;
 }
-@property(assign, nonatomic) id<SearchPeopleFiltersViewDelegate> delegate;
+@property(assign, nonatomic) __weak id<SearchPeopleFiltersViewDelegate> delegate;
 @property(retain, nonatomic) UIView* parametersButtonContainer;
 @property(retain, nonatomic) UILabel* filtersDescriptionLabel;
 @property(retain, nonatomic) UIView* parametersDisplayContainer;
 +(float)heightWithDescription:(id)description width:(float)width;
+-(void).cxx_destruct;
 -(void)didClearFilter:(id)filter;
 -(void)setFilterDescription:(id)description;
 -(void)setShowingDescription:(BOOL)description animated:(BOOL)animated;
 -(BOOL)isShowingDescription;
 -(void)makeParametersDisplay;
 -(void)makeParametersButtonContainer;
--(void)dealloc;
 -(id)initWithFrame:(CGRect)frame;
 @end
 

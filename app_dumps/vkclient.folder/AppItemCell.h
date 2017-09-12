@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "AppItemCellWithSize.h"
-#import "vkclient-Structs.h"
 #import "VKMCollectionCell.h"
 
-@class VKAPIAppWithRequests, VKMImageView, VKPPBadge, NSString;
+@class VKAPIAppWithRequests, VKPPBadge, NSString, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface AppItemCell : VKMCollectionCell <AppItemCellWithSize> {
@@ -27,6 +27,7 @@ __attribute__((visibility("hidden")))
 +(float)interitemSpace;
 +(UIEdgeInsets)sectionInset;
 +(CGSize)cellSize;
+-(void).cxx_destruct;
 -(void)setHighlighted:(BOOL)highlighted;
 -(id)imageURLStringForApplication:(id)application;
 -(XXStruct_UOIMaD)imageType;
@@ -34,7 +35,6 @@ __attribute__((visibility("hidden")))
 -(void)prepareForReuse;
 -(CGRect)applicationImageFrame;
 -(id)createSubviews;
--(void)dealloc;
 -(id)initWithFrame:(CGRect)frame;
 @end
 

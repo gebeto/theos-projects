@@ -15,6 +15,6 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSNumber* source_id;
 +(id)source:(id)source;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

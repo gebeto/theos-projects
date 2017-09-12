@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSString, NSArray;
+@class NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface SectionItemsGroup : XXUnknownSuperclass {
@@ -17,7 +17,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, copy, nonatomic) NSArray* items;
 @property(readonly, copy, nonatomic) NSString* title;
 +(id)groupWithTitle:(id)title items:(id)items;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)initWithTitle:(id)title items:(id)items;
 @end
 

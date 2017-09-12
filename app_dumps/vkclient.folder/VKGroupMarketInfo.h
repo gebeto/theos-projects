@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKWikiPage, PriceRange, NSNumber, VKCurrency;
+@class VKWikiPage, PriceRange, VKCurrency, NSNumber;
 
 __attribute__((visibility("hidden")))
 @interface VKGroupMarketInfo : XXUnknownSuperclass {
@@ -25,7 +25,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) VKCurrency* currency;
 @property(readonly, retain, nonatomic) NSNumber* contactID;
 +(id)parse:(id)parse;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)initWithDictionary:(id)dictionary;
 @end
 

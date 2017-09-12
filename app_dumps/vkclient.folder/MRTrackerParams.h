@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSNumber, NSString, NSArray;
+@class NSNumber, NSArray, NSString;
 
 @interface MRTrackerParams : XXUnknownSuperclass {
 	BOOL _trackLaunch;

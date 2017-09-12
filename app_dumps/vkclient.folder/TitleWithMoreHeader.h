@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class HighlightableButtonWithDisclosureImage, NSString;
+@class NSString, HighlightableButtonWithDisclosureImage;
 
 __attribute__((visibility("hidden")))
 @interface TitleWithMoreHeader : XXUnknownSuperclass {
@@ -18,10 +18,10 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) NSString* moreButtonTitle;
 @property(copy, nonatomic) NSString* title;
 @property(readonly, retain, nonatomic) HighlightableButtonWithDisclosureImage* moreButton;
+-(void).cxx_destruct;
 -(void)layoutSubviews;
 -(id)buttonImage;
 -(void)buttonTapped;
 -(id)initWithReuseIdentifier:(id)reuseIdentifier;
--(void)dealloc;
 @end
 

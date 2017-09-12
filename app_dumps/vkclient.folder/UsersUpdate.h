@@ -7,7 +7,7 @@
 
 #import "StoreUpdate.h"
 
-@class ActivityUpdate, NSSet;
+@class NSSet, ActivityUpdate;
 
 __attribute__((visibility("hidden")))
 @interface UsersUpdate : StoreUpdate {
@@ -17,6 +17,6 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) ActivityUpdate* activity;
 @property(retain, nonatomic) NSSet* updated;
 +(id)update;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

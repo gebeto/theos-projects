@@ -7,7 +7,7 @@
 
 #import "VKRenderable.h"
 
-@class UIImage, NSString, NSArray;
+@class UIImage, NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface LookupContactOther : VKRenderable {
@@ -26,8 +26,8 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) NSString* lastName;
 @property(copy, nonatomic) NSString* firstName;
 @property(copy, nonatomic) NSString* subtitle;
+-(void).cxx_destruct;
 -(id)fullName;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

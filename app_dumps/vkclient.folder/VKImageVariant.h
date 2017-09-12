@@ -22,8 +22,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* src;
 +(id)variantForType:(int)type src:(id)src;
 +(id)parsePhotoVariant:(id)variant;
+-(void).cxx_destruct;
 -(float)ratio;
 -(id)description;
--(void)dealloc;
 @end
 

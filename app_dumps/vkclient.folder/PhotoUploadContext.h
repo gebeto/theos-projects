@@ -7,7 +7,7 @@
 
 #import "UploadContext.h"
 
-@class VKPPAssetData, NSNumber;
+@class NSNumber, VKPPAssetData;
 
 __attribute__((visibility("hidden")))
 @interface PhotoUploadContext : UploadContext {
@@ -19,10 +19,10 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSNumber* forceDimension;
 @property(retain) VKPPAssetData* assetData;
 +(id)photoContextWithSession:(id)session assetData:(id)data;
+-(void).cxx_destruct;
 -(void)loadUploadData:(id)data;
 -(void)willUseImage:(id)image;
 -(BOOL)forceHighQuality;
 -(void)makeThumbnail;
--(void)dealloc;
 @end
 

@@ -6,6 +6,7 @@
  */
 
 #import "Component5.h"
+#import "VKClient-Structs.h"
 
 
 __attribute__((visibility("hidden")))

@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKMCell.h"
 
 @class UILabel, VKMImageView;
@@ -20,6 +20,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UILabel* subtitleLabel;
 @property(readonly, retain, nonatomic) UILabel* titleLabel;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)layoutSubviews;
 -(void)prepareForReuse;
 -(float)spaceBetweenImageAndLabel;

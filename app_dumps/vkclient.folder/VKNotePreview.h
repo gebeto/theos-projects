@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "VKDomainDerived.h"
 #import "VKAttachment.h"
+#import "VKDomainDerived.h"
 
-@class NSString, VKNote;
+@class VKNote, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKNotePreview : VKDomainDerived <VKAttachment> {

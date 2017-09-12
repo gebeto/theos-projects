@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "VKAPTabViewControllerProtocol.h"
 #import "VKP2PViewController.h"
+#import "VKClient-Structs.h"
+#import "VKAPTabViewControllerProtocol.h"
 
 @class UIButton, NSString;
 

@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "Renderer.h"
+#import "VKClient-Structs.h"
 
 @class VKGroupInvite;
 

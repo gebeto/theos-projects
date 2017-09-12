@@ -20,7 +20,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int height;
 @property(assign, nonatomic) int width;
 @property(copy, nonatomic) NSString* src;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

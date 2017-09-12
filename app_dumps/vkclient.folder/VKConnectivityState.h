@@ -16,10 +16,10 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSDate* disconnected;
 @property(retain, nonatomic) NSDate* activated;
+-(void).cxx_destruct;
 -(BOOL)isBeforeConnectionLost:(id)lost;
 -(void)captureDisconnected;
 -(void)captureActivated;
 -(void)log;
--(void)dealloc;
 @end
 

@@ -16,7 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSNumber* appID;
 @property(retain, nonatomic) id from;
+-(void).cxx_destruct;
 -(void)spawnCopy:(id)copy;
--(void)dealloc;
 @end
 

@@ -7,7 +7,7 @@
 
 #import "VKDomainDerived.h"
 
-@class VKDialog, VKUser, StatsRef, NSString, NSArray;
+@class StatsRef, VKUser, NSArray, NSString, VKDialog;
 
 __attribute__((visibility("hidden")))
 @interface VKDialogTarget : VKDomainDerived {
@@ -31,9 +31,9 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL input;
 @property(retain, nonatomic) VKUser* user;
 @property(retain, nonatomic) VKDialog* domain;
+-(void).cxx_destruct;
 -(id)setupRef:(id)ref;
 -(id)setupFromPush;
 -(id)setupRefreshMulti;
--(void)dealloc;
 @end
 

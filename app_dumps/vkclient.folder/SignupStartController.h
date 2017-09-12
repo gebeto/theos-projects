@@ -5,25 +5,32 @@
  * Source: (null)
  */
 
-#import "UITextFieldDelegate.h"
 #import "UIWebViewDelegate.h"
-#import "MOCTLabelDelegate.h"
+#import "VKClient-Structs.h"
 #import "SignupController.h"
-#import "vkclient-Structs.h"
+#import "UITextFieldDelegate.h"
+#import "MOCTLabelDelegate.h"
 
-@class SexSelectionSegmentedControl, NSString, ProfilePhotoAndNameCell;
+@class UIDatePicker, UITextField, SexSelectionSegmentedControl, ProfilePhotoAndNameCell, NSString, NSDate;
 
 __attribute__((visibility("hidden")))
 @interface SignupStartController : SignupController <UITextFieldDelegate, MOCTLabelDelegate, UIWebViewDelegate> {
 	ProfilePhotoAndNameCell* _profileCell;
 	SexSelectionSegmentedControl* _sexControl;
+	UITextField* _dateOfBirthField;
+	UIDatePicker* _dateOfBirthPicker;
+	NSDate* _selectedDateOfBirth;
 }
 @property(readonly, copy) NSString* debugDescription;
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
+@property(retain, nonatomic) NSDate* selectedDateOfBirth;
+@property(retain, nonatomic) UIDatePicker* dateOfBirthPicker;
+@property(retain, nonatomic) UITextField* dateOfBirthField;
 @property(retain, nonatomic) SexSelectionSegmentedControl* sexControl;
 @property(retain, nonatomic) ProfilePhotoAndNameCell* profileCell;
+-(void).cxx_destruct;
 -(BOOL)webView:(id)view shouldStartLoadWithRequest:(id)request navigationType:(int)type;
 -(void)moctlabel:(id)moctlabel linkClicked:(id)clicked;
 -(id)tableView:(id)view viewForFooterInSection:(int)section;
@@ -31,18 +38,19 @@ __attribute__((visibility("hidden")))
 -(float)tableView:(id)view heightForHeaderInSection:(int)section;
 -(id)tableView:(id)view titleForHeaderInSection:(int)section;
 -(float)tableView:(id)view heightForRowAtIndexPath:(id)indexPath;
+-(BOOL)textField:(id)field shouldChangeCharactersInRange:(NSRange)range replacementString:(id)string;
 -(BOOL)textFieldShouldReturn:(id)textField;
 -(void)notifyIncorrectFields:(id)fields;
 -(void)actionName:(id)name;
 -(void)actionPhoto:(id)photo;
 -(void)usePhotoAsset:(id)asset;
 -(void)actionSex:(id)sex;
+-(void)actionBirthdayChanged:(id)changed;
 -(void)actionNext:(id)next;
 -(void)validate;
 -(void)read;
 -(void)render;
 -(void)viewWillAppear:(BOOL)view;
 -(void)viewDidLoad;
--(void)dealloc;
 @end
 

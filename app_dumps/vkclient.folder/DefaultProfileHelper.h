@@ -8,7 +8,7 @@
 #import <XXUnknownSuperclass.h> // Unknown library
 #import "ProfileModelHelper.h"
 
-@class NSString, DefaultProfileModel;
+@class DefaultProfileModel, NSString;
 @protocol VKProfile;
 
 __attribute__((visibility("hidden")))
@@ -25,6 +25,7 @@ __attribute__((visibility("hidden")))
 +(id)textAttributes;
 +(id)titleAttributes;
 +(id)withModel:(id)model item:(id)item;
+-(void).cxx_destruct;
 -(id)addStatusAudio:(id)audio atSection:(id)section;
 -(id)text:(id)text attributes:(id)attributes detector:(BOOL)detector;
 -(id)text:(id)text attributes:(id)attributes;
@@ -34,6 +35,5 @@ __attribute__((visibility("hidden")))
 -(id)title:(id)title;
 -(id)createProfileSections;
 -(id)generateInfoIndex;
--(void)dealloc;
 @end
 

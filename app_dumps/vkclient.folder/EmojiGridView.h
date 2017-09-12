@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class UIImageView, NSArray;
@@ -24,6 +24,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) float minimumHorizontalSpacing;
 @property(retain, nonatomic) UIImageView* imageView;
 @property(retain, nonatomic) NSArray* emojis;
+-(void).cxx_destruct;
 -(CGRect)frameForEmojiAtIndexPath:(id)indexPath;
 -(id)emojiAtPoint:(CGPoint)point;
 -(id)indexPathForEmojiAtPoint:(CGPoint)point;
@@ -35,6 +36,5 @@ __attribute__((visibility("hidden")))
 -(XXStruct_0R9wYB)dimensionsForWidth:(float)width;
 -(XXStruct_0R9wYB)currentDimensions;
 -(id)initWithFrame:(CGRect)frame;
--(void)dealloc;
 @end
 

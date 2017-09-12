@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 
@@ -34,13 +34,15 @@ __attribute__((visibility("hidden")))
 +(void)hint:(id)hint;
 +(id)labelWithText:(id)text textColor:(id)color font:(id)font;
 +(id)actionButtonOfPriority:(unsigned)priority title:(id)title target:(id)target action:(SEL)action;
-+(XXStruct_Xx1ZfA)actionButtonPropertiesOfPriority:(unsigned)priority;
++(id)actionButtonPropertiesOfPriority:(unsigned)priority;
 +(id)actionButtonFont;
 +(void)addLightBlurBackgroundForView:(id)view;
 +(id)lightBlurView;
 +(id)searchBarWithDarkStyle:(BOOL)darkStyle;
 +(id)menuSectionHeader:(id)header;
 +(id)sectionHeaderLabel:(CGRect)label;
++(id)sectionSeparator;
++(id)sectionSeparator:(id)separator borders:(id)borders;
 +(id)separator:(id)separator host:(id)host bottom:(BOOL)bottom;
 +(id)separator:(id)separator host:(id)host bottom:(BOOL)bottom nohighlight:(BOOL)nohighlight inset:(float)inset;
 +(id)blueSelectedBackground;

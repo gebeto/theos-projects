@@ -16,6 +16,6 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) VKGroup* group;
 @property(readonly, retain, nonatomic) VKMarketCollection* domain;
 +(id)from:(id)from group:(id)group;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

@@ -18,7 +18,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSNumber* before;
 @property(retain, nonatomic) VKIdentity* target;
 +(id)reorderActionClass:(Class)aClass itemClass:(Class)aClass2 index:(id)index from:(id)from to:(id)to identity:(id)identity;
+-(void).cxx_destruct;
 -(BOOL)actionShowsSuccessConfirmation;
--(void)dealloc;
 @end
 

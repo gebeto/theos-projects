@@ -8,7 +8,7 @@
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class VKPhotosListAttach, VKIdentity, NSArray;
-@protocol SnippetStats, PhotoStats, AudioStats, VKSource;
+@protocol SnippetStats, PhotoStats, VKSource, AudioStats;
 
 __attribute__((visibility("hidden")))
 @interface VKAttachments2 : XXUnknownSuperclass {

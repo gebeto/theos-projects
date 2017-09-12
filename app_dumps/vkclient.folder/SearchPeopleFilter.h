@@ -6,8 +6,8 @@
  */
 
 #import "NSCopying.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
 @class VKCountry, VKCity, NSString;
 
@@ -29,11 +29,11 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int status;
 @property(copy, nonatomic) NSString* queryString;
 +(id)emptyFilter;
+-(void).cxx_destruct;
 -(BOOL)isEqualToFilter:(id)filter;
 -(BOOL)hasParameters;
 -(BOOL)isEmptyFilter;
 -(id)copyWithZone:(NSZone*)zone;
--(void)dealloc;
 -(id)detailedDescription;
 @end
 

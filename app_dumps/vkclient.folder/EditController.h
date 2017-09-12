@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKMController.h"
 
 @class EditContext;
@@ -17,6 +17,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) EditContext* context;
 +(id)main:(id)main context:(id)context;
+-(void).cxx_destruct;
 -(void)VKMEditDataChanged:(BOOL)changed;
 -(int)VKMEditDataState;
 -(void)buttonConfirm:(id)confirm;
@@ -27,6 +28,5 @@ __attribute__((visibility("hidden")))
 -(BOOL)dark;
 -(void)viewWillAppear:(BOOL)view;
 -(void)viewDidLoad;
--(void)dealloc;
 @end
 

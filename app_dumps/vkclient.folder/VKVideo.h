@@ -5,13 +5,13 @@
  * Source: (null)
  */
 
-#import "VKChildDomain.h"
-#import "VKImage.h"
+#import "VKClient-Structs.h"
 #import "VKSourceStatus.h"
-#import "vkclient-Structs.h"
 #import "VKDomain.h"
+#import "VKImage.h"
+#import "VKChildDomain.h"
 
-@class NSDictionary, VKPrivacySetting, VKText, VKDoc, NSMutableDictionary, NSNumber, NSString, VKIdentity, VKAdData, NSArray;
+@class VKPrivacySetting, NSMutableDictionary, VKAdData, VKDoc, VKIdentity, NSNumber, VKText, NSArray, NSDictionary, NSString;
 @protocol VKSource;
 
 __attribute__((visibility("hidden")))
@@ -108,6 +108,7 @@ __attribute__((visibility("hidden")))
 +(id)videoFromDoc:(id)doc;
 +(id)emptyVideoForUploadTo:(id)to;
 +(void)initialize;
+-(void).cxx_destruct;
 -(void)offsetComments:(int)comments;
 -(void)updateReposts:(int)reposts user:(BOOL)user;
 -(void)updateLikes:(id)likes user:(BOOL)user;
@@ -134,6 +135,5 @@ __attribute__((visibility("hidden")))
 -(void)domainOnEditCreate;
 -(void)domainOnEditCopy:(id)copy;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

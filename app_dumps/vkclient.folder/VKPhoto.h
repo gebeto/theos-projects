@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "VKBrowsableImage.h"
 #import "VKSourceStatus.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
+#import "VKBrowsableImage.h"
 #import "VKDomain.h"
 
-@class VKText, VKPhotoTags, VKUser, VKPhotoDetails, NSMutableDictionary, NSString, NSNumber;
+@class NSMutableDictionary, VKPhotoTags, VKPhotoDetails, VKUser, VKText, NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKPhoto : VKDomain <VKBrowsableImage, VKSourceStatus> {
@@ -62,6 +62,7 @@ __attribute__((visibility("hidden")))
 +(id)fakePhoto:(id)photo;
 +(id)placeholderPhoto;
 +(void)load;
+-(void).cxx_destruct;
 -(BOOL)isVideo;
 -(int)statusMask;
 -(id)statusForSource:(id)source;
@@ -84,6 +85,5 @@ __attribute__((visibility("hidden")))
 -(void)domainOnEditCopy:(id)copy;
 -(id)init;
 -(BOOL)isEqual:(id)equal;
--(void)dealloc;
 @end
 

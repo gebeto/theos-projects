@@ -16,7 +16,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, copy, nonatomic) NSArray* friends;
 @property(readonly, retain, nonatomic) VKAPIApp* domain;
 +(id)from:(id)from withFriends:(id)friends;
+-(void).cxx_destruct;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

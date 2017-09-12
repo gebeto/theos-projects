@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class StoryHighlightableSourceView, EmptyStateView, StoryVideoPlayerView, UIView, UIButton, StoryFullscreenPhotoImageView, KVOObserver, UIVisualEffectView, StoryFullscreenProgressView, VideoPlayerErrorOverlayView, UIImageView, StoryFullscreenFooterView;
+@class KVOObserver, UIButton, EmptyStateView, VideoPlayerErrorOverlayView, StoryVideoPlayerView, StoryFullscreenPhotoImageView, UIView, UIVisualEffectView, UIImageView, StoryFullscreenProgressView, StoryFullscreenFooterView, StoryHighlightableSourceView;
 @protocol AnimatingIndicator;
 
 __attribute__((visibility("hidden")))

@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "UISearchBarDelegate.h"
-#import "VKMLiveController.h"
 #import "SearchPeopleFilterContainer.h"
-#import "vkclient-Structs.h"
+#import "VKMLiveController.h"
 
 @class UISearchBar, SearchPeopleModel, NSString;
 
@@ -22,6 +22,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) UISearchBar* searchBar;
 @property(retain, nonatomic) SearchPeopleModel* model;
+-(void).cxx_destruct;
 -(void)searchBarSearchButtonClicked:(id)clicked;
 -(void)searchBarCancelButtonClicked:(id)clicked;
 -(void)searchBarTextDidEndEditing:(id)searchBarText;
@@ -37,6 +38,5 @@ __attribute__((visibility("hidden")))
 -(void)viewWillAppear:(BOOL)view;
 -(void)viewDidLoad;
 -(BOOL)VKMLiveSearchHandleCell:(id)cell select:(BOOL)select;
--(void)dealloc;
 @end
 

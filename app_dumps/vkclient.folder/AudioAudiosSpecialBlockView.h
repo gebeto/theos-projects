@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UILabel, UIView, AudioAudiosSpecialBlock, UIButton, NSArray;
+@class UIButton, UIView, UILabel, NSArray, AudioAudiosSpecialBlock;
 @protocol VKMNavDelegate;
 
 __attribute__((visibility("hidden")))

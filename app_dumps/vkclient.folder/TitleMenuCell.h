@@ -15,11 +15,11 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) UIButton* badge;
 +(id)image:(id)image statId:(id)anId title:(id)title select:(id)select;
+-(void).cxx_destruct;
 -(void)badgeTarget:(id)target selector:(SEL)selector;
 -(void)setBadgeValue:(unsigned)value;
 -(void)setSelected:(BOOL)selected animated:(BOOL)animated;
 -(void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated;
 -(void)updateShadow;
--(void)dealloc;
 @end
 

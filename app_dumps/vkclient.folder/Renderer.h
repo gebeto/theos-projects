@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "ThumbnailViewDelegate.h"
 #import "ModelObserver.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "ThumbnailViewDelegate.h"
 
-@class UIView, VKMRendererCell, NSString, NSArray;
+@class VKMRendererCell, UIView, NSString, NSArray;
 @protocol VKMNavDelegate;
 
 __attribute__((visibility("hidden")))
@@ -29,7 +29,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int context;
 @property(assign, nonatomic) VKMRendererCell* weakCell;
 @property(retain, nonatomic) id domain;
-@property(assign, nonatomic) id<VKMNavDelegate> delegate;
+@property(assign, nonatomic) __weak id<VKMNavDelegate> delegate;
 @property(retain, nonatomic) NSArray* views;
 @property(retain, nonatomic) UIView* host;
 @property(retain, nonatomic) NSArray* elements;
@@ -39,6 +39,7 @@ __attribute__((visibility("hidden")))
 +(id)rendererElements;
 +(void)build:(id)build;
 +(void)prepareLayout:(id)layout;
+-(void).cxx_destruct;
 -(void)thumbnailView:(id)view selected:(id)selected;
 -(void)model:(id)model willStartLoadingWithContext:(id)context;
 -(void)modelLoadingChanged:(id)changed;

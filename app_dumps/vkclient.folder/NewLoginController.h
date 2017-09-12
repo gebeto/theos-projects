@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "UITextFieldDelegate.h"
 #import "ConfirmationCodeHandler.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
+#import "UITextFieldDelegate.h"
 
-@class UIButton, UITextField, AuthModel, NSString;
+@class AuthModel, UIButton, UITextField, NSString;
 
 __attribute__((visibility("hidden")))
 @interface NewLoginController : XXUnknownSuperclass <UITextFieldDelegate, ConfirmationCodeHandler> {
@@ -28,6 +28,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIButton* forgot;
 @property(retain, nonatomic) UITextField* password;
 @property(retain, nonatomic) UITextField* phone;
+-(void).cxx_destruct;
+-(void)showSaveCredentialSavingDialogIfNeededWithLogin:(id)login password:(id)password completion:(id)completion;
 -(BOOL)textFieldShouldReturn:(id)textField;
 -(BOOL)handleConfirmationCode:(id)code;
 -(void)actionLogin:(id)login;
@@ -42,6 +44,5 @@ __attribute__((visibility("hidden")))
 -(void)viewWillAppear:(BOOL)view;
 -(void)viewDidLoad;
 -(unsigned)supportedInterfaceOrientations;
--(void)dealloc;
 @end
 

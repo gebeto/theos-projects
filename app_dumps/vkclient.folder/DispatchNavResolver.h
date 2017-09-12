@@ -15,8 +15,8 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSMutableDictionary* dispatch;
 +(id)resolver;
+-(void).cxx_destruct;
 -(BOOL)route:(id)route context:(id)context;
 -(void)registerRoutes:(id)routes;
--(void)dealloc;
 @end
 

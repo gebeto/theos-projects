@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "VKImage.h"
 #import "VKDomain.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
+#import "VKImage.h"
 
 @class NSMutableDictionary, NSNumber, NSString;
 
@@ -29,6 +29,7 @@ __attribute__((visibility("hidden")))
 +(id)prepareForSendingSticker:(id)sendingSticker baseURL:(id)url referenceImage:(id)image;
 +(id)stickerWithId:(id)anId image:(id)image baseURL:(id)url ratio:(float)ratio;
 +(void)initialize;
+-(void).cxx_destruct;
 -(id)thumbnailUrl;
 -(id)messagesPlaceholder;
 -(XXStruct_UOIMaD)messagesRenderType;
@@ -38,6 +39,5 @@ __attribute__((visibility("hidden")))
 -(id)fullVariant;
 -(id)thumbnailVariant;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

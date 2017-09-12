@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "UICollectionViewDelegate.h"
-#import "vkclient-Structs.h"
-#import "UICollectionViewDataSource.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "UICollectionViewDelegate.h"
+#import "UICollectionViewDataSource.h"
 
 @class NSString;
 @protocol LargeEmojiSelectionViewDelegate;

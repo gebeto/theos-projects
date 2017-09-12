@@ -6,13 +6,13 @@
  */
 
 #import "VKMNavProxyDelegate.h"
-#import "VKMNavDelegate.h"
-#import "vkclient-Structs.h"
-#import "ModelRenderDelegate.h"
+#import "VKClient-Structs.h"
 #import "ModelObserver.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "ModelRenderDelegate.h"
+#import "VKMNavDelegate.h"
 
-@class VKMNavResolver, Model, VKSelector, UIBarButtonItem, MainModel, NSString;
+@class UIBarButtonItem, Model, MainModel, NSString, VKSelector, VKMNavResolver;
 
 __attribute__((visibility("hidden")))
 @interface VKMController : XXUnknownSuperclass <VKMNavDelegate, VKMNavProxyDelegate, ModelObserver, ModelRenderDelegate> {
@@ -38,6 +38,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) Model* model;
 @property(retain, nonatomic) MainModel* main;
 +(id)main:(id)main model:(id)model;
+-(void).cxx_destruct;
 -(BOOL)VKMControllerModalOnly;
 -(id)VKMControllerStatsRef;
 -(void)VKMActivateAfterWindowDismiss;
@@ -104,6 +105,5 @@ __attribute__((visibility("hidden")))
 -(id)setupTitle:(id)title;
 -(void)dealloc;
 -(id)initWithMain:(id)main andModel:(id)model;
--(id)VKMSegmentSelector;
 @end
 

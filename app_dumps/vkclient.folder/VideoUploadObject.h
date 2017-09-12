@@ -7,7 +7,7 @@
 
 #import "VKRenderable.h"
 
-@class VideoUploadEditAttachment, VKVideo;
+@class VKVideo, VideoUploadEditAttachment;
 
 __attribute__((visibility("hidden")))
 @interface VideoUploadObject : VKRenderable {
@@ -17,8 +17,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKVideo* resultVideo;
 @property(retain, nonatomic) VideoUploadEditAttachment* uploadAttachment;
 +(id)withAttach:(id)attach;
+-(void).cxx_destruct;
 -(BOOL)isUploadForOwner:(id)owner;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

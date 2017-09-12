@@ -9,7 +9,7 @@
 #import "NSObject.h"
 #import "VKAPIAppActivity.h"
 
-@class VKAPIAppActivity, NSDictionary, VKAPIApp, VKUser, NSNumber, NSString;
+@class VKAPIApp, NSNumber, VKUser, VKAPIAppActivity, NSDictionary, NSString;
 
 @protocol VKAPIAppActivity <NSObject>
 @property(readonly, retain, nonatomic) VKAPIAppActivity* domain;
@@ -44,8 +44,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSNumber* user_id;
 @property(retain, nonatomic) NSNumber* app_id;
 +(void)initialize;
+-(void).cxx_destruct;
 -(Class)rendererClass;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

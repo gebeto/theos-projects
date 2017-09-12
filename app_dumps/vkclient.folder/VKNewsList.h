@@ -18,7 +18,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int type;
 +(id)custom:(id)custom owner:(id)owner;
 +(id)type:(int)type owner:(id)owner;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

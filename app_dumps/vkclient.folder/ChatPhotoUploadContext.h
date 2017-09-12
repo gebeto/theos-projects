@@ -6,9 +6,9 @@
  */
 
 #import "PhotoUploadContext.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 
-@class NSDictionary, NSData, NSNumber;
+@class NSData, NSNumber, NSDictionary;
 
 __attribute__((visibility("hidden")))
 @interface ChatPhotoUploadContext : PhotoUploadContext {
@@ -22,6 +22,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSDictionary* cropParams;
 @property(assign, nonatomic) CGAffineTransform forcedCrop;
 +(id)photoContextWithSession:(id)session assetData:(id)data;
+-(void).cxx_destruct;
 -(id)createOperation;
 -(BOOL)handleResultServerData:(id)data uploadData:(id)data2 saveData:(id)data3;
 -(id)requestForSaving:(id)saving;
@@ -29,6 +30,5 @@ __attribute__((visibility("hidden")))
 -(id)requestForUploadServer;
 -(void)willUseImage:(id)image;
 -(void)loadUploadData:(id)data;
--(void)dealloc;
 @end
 

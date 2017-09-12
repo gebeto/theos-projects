@@ -6,10 +6,10 @@
  */
 
 #import "NSCopying.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class NSString, VKIdentity;
+@class VKIdentity, NSString;
 
 __attribute__((visibility("hidden")))
 @interface StoryIdentity : XXUnknownSuperclass <NSCopying> {

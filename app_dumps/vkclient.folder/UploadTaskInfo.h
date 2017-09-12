@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 #import "NSCoding.h"
 
-@class NSMutableData, NSError, NSData, NSString;
+@class NSError, NSData, NSString, NSMutableData;
 
 __attribute__((visibility("hidden")))
 @interface UploadTaskInfo : XXUnknownSuperclass <NSCoding> {

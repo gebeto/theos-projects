@@ -5,10 +5,9 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "DomainEditAttachment.h"
 
-@class VKLink, NSString;
+@class NSString, VKLink;
 
 __attribute__((visibility("hidden")))
 @interface LinkEditAttachment : DomainEditAttachment {
@@ -16,8 +15,8 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSString* originUrl;
 @property(retain, nonatomic) VKLink* domain;
+-(void).cxx_destruct;
 -(void)renderView:(id)view;
--(id)createViewForStyle:(XXStruct_9zIMjA)style;
--(void)dealloc;
+-(id)createViewForStyle:(id)style;
 @end
 

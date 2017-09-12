@@ -20,9 +20,9 @@ __attribute__((visibility("hidden")))
 @property(readonly, copy, nonatomic) id completionBlock;
 +(int)domainType;
 +(id)actionToInviteFriend:(id)inviteFriend toPlayGame:(id)playGame completionBlock:(id)block;
+-(void).cxx_destruct;
 -(BOOL)actionShowsFailureConfirmation;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
--(void)dealloc;
 @end
 

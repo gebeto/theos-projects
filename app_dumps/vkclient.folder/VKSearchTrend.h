@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "VKRenderable.h"
 #import "NSCopying.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
+#import "VKRenderable.h"
 
 @class NSString;
 

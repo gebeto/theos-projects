@@ -20,6 +20,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(readonly, assign, nonatomic) NSArray* stats;
 +(id)stats:(id)stats;
+-(void).cxx_destruct;
 -(void)tapLinkAttachment:(id)attachment ref:(id)ref;
 -(void)tapSnippetButton:(id)button ref:(id)ref;
 -(void)tapSnippet:(id)snippet ref:(id)ref;
@@ -27,6 +28,5 @@ __attribute__((visibility("hidden")))
 -(void)playAudio:(id)audio ref:(id)ref;
 -(void)action:(int)action context:(id)context;
 -(id)initWithStats:(id)stats;
--(void)dealloc;
 @end
 

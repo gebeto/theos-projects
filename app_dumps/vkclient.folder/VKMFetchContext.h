@@ -13,7 +13,8 @@ __attribute__((visibility("hidden")))
 @interface VKMFetchContext : VKMStoreContext {
 	id<UsersCacheHandler> _delegate;
 }
-@property(assign, nonatomic) id<UsersCacheHandler> delegate;
+@property(assign, nonatomic) __weak id<UsersCacheHandler> delegate;
+-(void).cxx_destruct;
 -(void)fetchMessagesForUpdate:(id)update complete:(id)complete;
 -(id)loadSortedMessages:(id)messages inDialog:(id)dialog userIds:(id)ids;
 -(id)loadSortedDialogs:(id)dialogs userIds:(id)ids;

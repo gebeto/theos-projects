@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "StoreUpdateModel.h"
 #import "ModelUpdateHandler.h"
+#import "StoreUpdateModel.h"
 
-@class MessagesUpdate, NSString, NSObject, NSNumber;
+@class MessagesUpdate, NSNumber, NSString, NSObject;
 
 __attribute__((visibility("hidden")))
 @interface MessagesListModel : StoreUpdateModel <ModelUpdateHandler> {
@@ -40,6 +40,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSNumber* refetchMID;
 @property(retain, nonatomic) NSNumber* firstPageMID;
 @property(retain, nonatomic) NSNumber* discovered;
+-(void).cxx_destruct;
 -(BOOL)updatedAllMessages;
 -(void)discoveredMid:(id)mid;
 -(void)activate;
@@ -56,7 +57,6 @@ __attribute__((visibility("hidden")))
 -(id)added:(id)added;
 -(id)removed:(id)removed;
 -(id)updated:(id)updated;
--(void)dealloc;
 -(id)initWithSession:(id)session index:(id)index;
 -(void)reset_;
 @end

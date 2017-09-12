@@ -5,15 +5,15 @@
  * Source: (null)
  */
 
-#import "VKMLiveSearchControllerDelegate.h"
-#import "vkclient-Structs.h"
-#import "AudioRendererDelegate.h"
+#import "AudioCellDelegate.h"
 #import "VKMTableController.h"
+#import "VKClient-Structs.h"
+#import "VKMLiveSearchControllerDelegate.h"
 
-@class NSMutableSet, TeaserViewConfig, NSMutableArray, UIBarButtonItem, VKMLiveSearchController, NSMutableDictionary, NSString, LoadingModel;
+@class NSMutableDictionary, UIBarButtonItem, NSMutableArray, VKMLiveSearchController, LoadingModel, TeaserViewConfig, NSString, NSMutableSet;
 
 __attribute__((visibility("hidden")))
-@interface VKMLiveController : VKMTableController <AudioRendererDelegate, VKMLiveSearchControllerDelegate> {
+@interface VKMLiveController : VKMTableController <AudioCellDelegate, VKMLiveSearchControllerDelegate> {
 	UIBarButtonItem* _editingExtraButton;
 	int _renderContext;
 	TeaserViewConfig* _teaserViewConfig;
@@ -39,6 +39,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSMutableSet* trackingBoundsViews;
 @property(retain, nonatomic) NSMutableArray* cells;
 @property(retain, nonatomic) NSMutableSet* pendingViewed;
+-(void).cxx_destruct;
 -(void)updateViewSubviewsViewControllerVisibilityIfNeeded:(id)needed visibilityState:(int)state;
 -(void)unregisterTrackingBoundsViewsFromCell:(id)cell;
 -(void)registerTrackingBoundsViewsFromCell:(id)cell;
@@ -61,9 +62,10 @@ __attribute__((visibility("hidden")))
 -(void)VKMLiveSearchWillDisplayCell:(id)vkmliveSearch indexPath:(id)path inTable:(id)table;
 -(void)VKMLiveSearchHandleDeselectCell:(id)cell;
 -(BOOL)VKMLiveSearchHandleCell:(id)cell select:(BOOL)select;
+-(id)VKMLiveAudioPlaylistIden;
 -(int)VKMLiveAudioContext;
 -(id)model:(id)model componentRenderContextForObject:(id)object context:(id)context;
--(void)audioRendererSelectedAudio:(id)audio cell:(id)cell quick:(BOOL)quick;
+-(void)audioCellSelectedAudio:(id)audio cell:(id)cell quick:(BOOL)quick;
 -(void)updatePan;
 -(void)setEditing:(BOOL)editing animated:(BOOL)animated;
 -(void)setEditing:(BOOL)editing;

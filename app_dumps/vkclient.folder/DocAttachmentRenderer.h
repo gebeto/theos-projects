@@ -14,8 +14,8 @@ __attribute__((visibility("hidden")))
 	NSNumber* _userId;
 }
 @property(readonly, retain, nonatomic) NSNumber* userId;
+-(void).cxx_destruct;
 -(void)render:(id)render layout:(id)layout reuse:(double)reuse;
 -(id)initWithMain:(id)main view:(id)view context:(int)context;
--(void)dealloc;
 @end
 

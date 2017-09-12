@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "UITableViewDelegate.h"
-#import "vkclient-Structs.h"
-#import "UITableViewDataSource.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "UITableViewDelegate.h"
+#import "UITableViewDataSource.h"
 
 @class VKPPService, NSString;
 

@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "UITextFieldDelegate.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
+#import "UITextFieldDelegate.h"
 
-@class UITextField, NSString, UIImageView;
+@class UITextField, UIImageView, NSString;
 
 __attribute__((visibility("hidden")))
 @interface CaptchaPrompt : XXUnknownSuperclass <UITextFieldDelegate> {

@@ -7,15 +7,15 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class AudioPlayer;
+@class VKAudioQueuePlayer;
 
 __attribute__((visibility("hidden")))
 @interface VMInteroperabilityManager : XXUnknownSuperclass {
 	BOOL _musicPlayerWasPlayingBefore;
-	AudioPlayer* _musicPlayer;
+	VKAudioQueuePlayer* _musicPlayer;
 }
 @property(assign, nonatomic) BOOL musicPlayerWasPlayingBefore;
-@property(retain, nonatomic) AudioPlayer* musicPlayer;
+@property(retain, nonatomic) VKAudioQueuePlayer* musicPlayer;
 -(void).cxx_destruct;
 -(void)resumeExternal;
 -(void)pauseExternal;

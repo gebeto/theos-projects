@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UITouch, UIView, UIColor;
+@class UIColor, UIView, UITouch;
 
 __attribute__((visibility("hidden")))
 @interface VKRangeSlider : XXUnknownSuperclass {
@@ -49,6 +49,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UITouch* upperHandleTouch;
 @property(retain, nonatomic) UIView* lowerHandle;
 @property(retain, nonatomic) UIView* upperHandle;
+-(void).cxx_destruct;
 -(void)layoutHighlightedPathView;
 -(void)layoutPathView;
 -(void)layoutSubviews;
@@ -80,6 +81,5 @@ __attribute__((visibility("hidden")))
 -(float)maxX;
 -(float)minX;
 -(id)initWithFrame:(CGRect)frame;
--(void)dealloc;
 @end
 

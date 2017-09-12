@@ -19,6 +19,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) NSOperationQueue* queue;
 @property(readonly, assign, nonatomic) int limit;
 @property(retain, nonatomic) NSMutableArray* mutableAttachments;
+-(void).cxx_destruct;
 -(void)notificationAttachment:(id)attachment;
 -(id)firstDomainAttachmentOfType:(int)type;
 -(void)changeLimit:(int)limit;

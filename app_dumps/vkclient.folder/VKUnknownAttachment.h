@@ -15,6 +15,6 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSString* type;
 +(id)parseUnknown:(id)unknown;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "StoryFullscreenViewModel.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "StoryFullscreenViewModel.h"
 
-@class StoryIdentity, UploadingStory, NSDate, UIImage, KVOObserver, AVURLAsset, NSString, NSURL, StoriesModel;
+@class NSURL, UIImage, KVOObserver, StoryIdentity, StoriesModel, NSDate, NSString, UploadingStory, AVURLAsset;
 @protocol VKSource;
 
 __attribute__((visibility("hidden")))

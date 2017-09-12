@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "VKMController.h"
+#import "VKClient-Structs.h"
 #import "UISearchBarDelegate.h"
 #import "MarketSearchBarPanelDelegate.h"
+#import "VKMController.h"
 
-@class MarketModel, EventThrottler, MarketSearchBarPanelView, MarketCollectionsController, MainModel, NSString;
+@class MarketCollectionsController, EventThrottler, MarketSearchBarPanelView, MainModel, NSString, MarketModel;
 @protocol MarketCollectionsAdapter;
 
 __attribute__((visibility("hidden")))
@@ -37,6 +37,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int trackSearchTextChanges;
 @property(retain, nonatomic) EventThrottler* eventThrottler;
 @property(retain, nonatomic) MarketSearchBarPanelView* searchBarPanel;
+-(void).cxx_destruct;
 -(void)stopSearchingThrottler;
 -(void)searchWithQuery:(id)query filter:(id)filter sort:(MarketSorting_t)sort;
 -(unsigned)indexOfSort:(unsigned)sort;

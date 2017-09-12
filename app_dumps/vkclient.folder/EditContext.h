@@ -23,10 +23,10 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL edit;
 @property(retain, nonatomic) VKDomain* domain;
 +(id)context;
+-(void).cxx_destruct;
 -(id)confirmAction:(id)action;
 -(Class)editControllerClass;
 -(id)withComplete:(id)complete;
 -(void)useDomain:(id)domain edit:(BOOL)edit;
--(void)dealloc;
 @end
 

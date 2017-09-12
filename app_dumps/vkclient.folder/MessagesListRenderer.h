@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
 @class NSNumber;
 
@@ -21,10 +21,10 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign, nonatomic) XXStruct_X102JB outgoingStrategy;
 @property(readonly, assign, nonatomic) XXStruct_X102JB incomingStrategy;
 @property(readonly, retain, nonatomic) NSNumber* owner;
+-(void).cxx_destruct;
 -(void)prerenderr:(id)prerenderr;
 -(id)sectionKeyForMessage:(id)message;
 -(unsigned)miscSections;
--(void)dealloc;
 -(id)initWithOwner:(id)owner;
 @end
 

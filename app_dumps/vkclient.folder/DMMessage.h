@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSNumber, NSString, NSData, DMDialog;
+@class DMDialog, NSData, NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface DMMessage : XXUnknownSuperclass {

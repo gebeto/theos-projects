@@ -5,7 +5,6 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 
@@ -19,7 +18,7 @@ __attribute__((visibility("hidden")))
 -(void)clearResources;
 -(id)createOperation;
 -(void)renderView:(id)view;
--(id)createViewForStyle:(XXStruct_9zIMjA)style;
+-(id)createViewForStyle:(id)style;
 -(void)startUploadInQueue:(id)queue;
 -(void)notifyRender;
 -(void)switchState:(int)state;

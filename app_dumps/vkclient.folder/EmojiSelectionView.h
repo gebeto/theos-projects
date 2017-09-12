@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
+#import <XXUnknownSuperclass.h> // Unknown library
 #import "ExtrasTabBarTabController.h"
 #import "UIScrollViewDelegate.h"
-#import "vkclient-Structs.h"
-#import <XXUnknownSuperclass.h> // Unknown library
 
-@class EmojiPopup, UIScrollView, EmojiGridView, NSString;
+@class EmojiPopup, UIScrollView, NSString, EmojiGridView;
 @protocol EmojiInputDelegate, ExtrasTabBarScrollingDelegate;
 
 __attribute__((visibility("hidden")))
@@ -30,6 +30,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIScrollView* scrollView;
 @property(retain, nonatomic) EmojiGridView* emojiGridView;
 @property(retain, nonatomic) EmojiPopup* emojiPopup;
+-(void).cxx_destruct;
 -(void)extrasTabBarActiveTabSelected;
 -(void)scrollViewWillEndDragging:(id)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint*)offset;
 -(void)scrollViewDidScroll:(id)scrollView;

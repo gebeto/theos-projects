@@ -18,8 +18,8 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) float textOffsetX;
 @property(assign, nonatomic) float textHeight;
 @property(readonly, retain, nonatomic) UILabel* myTextLabel;
+-(void).cxx_destruct;
 -(void)layoutSubviews;
 -(id)initWithReuseIdentifier:(id)reuseIdentifier;
--(void)dealloc;
 @end
 

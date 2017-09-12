@@ -19,7 +19,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UIImage* image;
 @property(readonly, copy, nonatomic) NSString* title;
 +(id)segmentWithTitle:(id)title image:(id)image multitapped:(BOOL)multitapped;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)initWithTitle:(id)title image:(id)image multitapped:(BOOL)multitapped;
 @end
 

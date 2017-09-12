@@ -5,12 +5,13 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "ExtraInputPanelView.h"
 #import "VMRecordingDelegate.h"
 #import "VMRaiseToRecordActivatorDelegate.h"
 #import "VMPushToTalkDelegate.h"
 
-@class VMRaiseToRecordActivator, UILabel, UIWindow, UIView, VMPushToTalkController, VMPushToTalkPreviewView, VMRecording, VMSessionManager, VMVoiceMessagePlayer, UIButton, UIViewController, NSString;
+@class VMRecording, VMVoiceMessagePlayer, UIButton, VMPushToTalkController, UILabel, UIView, NSString, VMPushToTalkPreviewView, VMSessionManager, UIViewController, VMRaiseToRecordActivator, UIWindow;
 @protocol RecordPanelDelegate;
 
 __attribute__((visibility("hidden")))
@@ -73,7 +74,7 @@ __attribute__((visibility("hidden")))
 -(void)showTextInput;
 -(void)hideTextInput;
 -(void)updateEmpty:(BOOL)empty;
--(id)initForComments:(BOOL)comments musicPlayer:(id)player voiceMessagePlayer:(id)player3 VMSessionManager:(id)manager;
+-(id)initForComments:(BOOL)comments voiceMessagePlayer:(id)player VMSessionManager:(id)manager;
 -(void)dealloc;
 @end
 

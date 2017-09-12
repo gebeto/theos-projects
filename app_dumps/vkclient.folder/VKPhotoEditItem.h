@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "VKDomainDerived.h"
 #import "VKPhotoEdit.h"
+#import "VKDomainDerived.h"
 
 @class VKPhoto, NSString;
 

@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "IGLTexture.h"
-#import "vkclient-Structs.h"
 #import "IGLResource.h"
 #import "IGLResource.h"
 

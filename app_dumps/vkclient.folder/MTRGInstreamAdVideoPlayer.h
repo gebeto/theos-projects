@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "MTRGInstreamAdPlayer.h"
 #import "MTRGVideoViewDelegate.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "MTRGInstreamAdPlayer.h"
 
-@class MTRGVideoData, UIView, NSString, MTRGVideoView, UIActivityIndicatorView, NSURL;
+@class NSURL, MTRGVideoView, UIView, MTRGVideoData, NSString, UIActivityIndicatorView;
 @protocol MTRGInstreamAdPlayerDelegate;
 
 @interface MTRGInstreamAdVideoPlayer : XXUnknownSuperclass <MTRGVideoViewDelegate, MTRGInstreamAdPlayer> {

@@ -7,7 +7,7 @@
 
 #import "VKMCell.h"
 
-@class GiftsCatalogVotesHint, MOCTLabel, UIView;
+@class GiftsCatalogVotesHint, UIView, MOCTLabel;
 
 __attribute__((visibility("hidden")))
 @interface GiftsCatalogVotesHintCell : VKMCell {
@@ -21,8 +21,8 @@ __attribute__((visibility("hidden")))
 +(id)boldAttributes;
 +(id)textAttributes;
 +(void)initialize;
+-(void).cxx_destruct;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
--(void)dealloc;
 @end
 

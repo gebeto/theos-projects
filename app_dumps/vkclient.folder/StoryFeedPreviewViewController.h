@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "VKMController.h"
+#import "VKClient-Structs.h"
 #import "UICollectionViewDelegate.h"
 #import "UICollectionViewDataSource.h"
+#import "VKMController.h"
 
-@class UICollectionView, NSString, NSArray;
+@class NSString, NSArray, UICollectionView;
 
 __attribute__((visibility("hidden")))
 @interface StoryFeedPreviewViewController : VKMController <UICollectionViewDataSource, UICollectionViewDelegate> {

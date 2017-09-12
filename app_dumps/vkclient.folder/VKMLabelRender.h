@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
 @class NSDictionary, NSString;
 
@@ -24,6 +24,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) CTFrameRef frame;
 +(id)injectCTAlignment:(unsigned char)alignment forAttributes:(id)attributes;
 +(id)renderForText:(id)text attributes:(id)attributes width:(float)width height:(float)height;
+-(void).cxx_destruct;
 -(id)duplicateRender:(id)render;
 -(void)dealloc;
 @end

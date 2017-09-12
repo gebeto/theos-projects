@@ -7,7 +7,7 @@
 
 #import "MTRGBanner.h"
 
-@class MTRGImageData, UIColor, NSNumber, NSString;
+@class UIColor, NSNumber, MTRGImageData, NSString;
 
 @interface MTRGAppwallBanner : MTRGBanner {
 	BOOL _hasNotification;

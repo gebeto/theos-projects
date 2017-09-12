@@ -15,7 +15,7 @@ __attribute__((visibility("hidden")))
 }
 @property(readonly, retain, nonatomic) NSString* text;
 +(id)eventWithText:(id)text inDialog:(id)dialog;
+-(void).cxx_destruct;
 -(id)eventText:(id)text;
--(void)dealloc;
 @end
 

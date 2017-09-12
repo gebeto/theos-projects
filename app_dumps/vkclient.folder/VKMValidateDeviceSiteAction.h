@@ -16,10 +16,10 @@ __attribute__((visibility("hidden")))
 }
 @property(copy, nonatomic) id handler;
 @property(retain, nonatomic) NSURL* url;
+-(void).cxx_destruct;
 -(BOOL)webView:(id)view shouldStartLoadWithRequest:(id)request navigationType:(int)type;
 -(void)complete:(int)complete;
 -(void)cancel;
 -(id)targetURL;
--(void)dealloc;
 @end
 

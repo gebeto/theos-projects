@@ -7,7 +7,7 @@
 
 #import "ListModel.h"
 
-@class AlbumPhotoFeedContext, VKPhotoAlbum;
+@class VKPhotoAlbum, AlbumPhotoFeedContext;
 
 __attribute__((visibility("hidden")))
 @interface PhotoAlbumModel : ListModel {
@@ -16,6 +16,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKPhotoAlbum* album;
 @property(retain, nonatomic) AlbumPhotoFeedContext* lastContext;
 +(BOOL)forceIsAdultCheck;
+-(void).cxx_destruct;
 -(id)indexPathForInfoCell;
 -(void)updateWithContext:(id)context;
 -(BOOL)isUserAlbum:(id)album;
@@ -34,6 +35,5 @@ __attribute__((visibility("hidden")))
 -(id)componentForObject:(id)object withContext:(id)context;
 -(id)countKey;
 -(id)setupPhotoAlbum:(id)album;
--(void)dealloc;
 @end
 

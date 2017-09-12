@@ -7,7 +7,7 @@
 
 #import "Component5.h"
 
-@class TextComponentInteractive, ThumbnailComponent;
+@class ThumbnailComponent, TextComponentInteractive;
 
 __attribute__((visibility("hidden")))
 @interface PhotoTagsTextComponent : Component5 {

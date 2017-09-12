@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "RangeModelContext.h"
-#import "vkclient-Structs.h"
 
-@class VKPoll, VKTopic;
+@class VKTopic, VKPoll;
 
 __attribute__((visibility("hidden")))
 @interface TopicModelContext : RangeModelContext {
@@ -17,7 +17,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) VKPoll* poll;
 @property(retain, nonatomic) VKTopic* topic;
+-(void).cxx_destruct;
 -(void)spawnCopy:(id)copy;
--(void)dealloc;
 @end
 

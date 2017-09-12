@@ -16,9 +16,9 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKPhoto* photo;
 @property(retain, nonatomic) VKIdentity* target;
 +(int)domainType;
+-(void).cxx_destruct;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
 -(id)title;
--(void)dealloc;
 @end
 

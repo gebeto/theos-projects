@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
+#import <XXUnknownSuperclass.h> // Unknown library
 #import "TapContext.h"
 #import "NSObject.h"
-#import <XXUnknownSuperclass.h> // Unknown library
 
 @class Component5RenderContext, NSString;
 @protocol VKMNavDelegate;

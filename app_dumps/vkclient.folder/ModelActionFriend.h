@@ -7,7 +7,7 @@
 
 #import "ModelAction.h"
 
-@class VKUser, VKFriend, NSNumber;
+@class VKFriend, StatsUploadHelper, NSNumber, VKUser;
 
 __attribute__((visibility("hidden")))
 @interface ModelActionFriend : ModelAction {
@@ -16,6 +16,7 @@ __attribute__((visibility("hidden")))
 	int _result;
 	int _res_counter_friends;
 	VKFriend* _res_friend;
+	StatsUploadHelper* _statsUpload;
 }
 @property(retain, nonatomic) VKFriend* res_friend;
 @property(assign, nonatomic) int res_counter_friends;
@@ -23,12 +24,13 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL add;
 @property(retain, nonatomic) VKUser* user;
 @property(retain, nonatomic) NSNumber* target;
+@property(retain, nonatomic) StatsUploadHelper* statsUpload;
 +(int)domainType;
+-(void).cxx_destruct;
 -(int)actionResultForFailedRequestResult:(id)failedRequestResult;
 -(void)actionHandleSuccessForData:(id)data context:(id)context;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
 -(id)add:(BOOL)add user:(id)user;
--(void)dealloc;
 @end
 

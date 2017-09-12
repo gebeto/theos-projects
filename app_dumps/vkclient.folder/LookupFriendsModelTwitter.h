@@ -19,6 +19,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) TwitterClient* twitterClient;
 @property(retain, nonatomic) TwitterProfile* myProfile;
 @property(retain, nonatomic) NSArray* friends;
+-(void).cxx_destruct;
 -(id)lookupResponseWithData:(id)data context:(id)context;
 -(id)requestForContext:(id)context;
 -(BOOL)shouldLoad:(id)load;
@@ -28,6 +29,5 @@ __attribute__((visibility("hidden")))
 -(void)reset;
 -(void)touch;
 -(id)initWithSession:(id)session;
--(void)dealloc;
 @end
 

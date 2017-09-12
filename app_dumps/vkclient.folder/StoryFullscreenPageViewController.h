@@ -5,16 +5,16 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "VKMController.h"
 #import "UIGestureRecognizerDelegate.h"
-#import "UICollectionViewDelegate.h"
-#import "StoryFullscreenViewControllerDataSource.h"
-#import "UICollectionViewDataSource.h"
+#import "VKClient-Structs.h"
 #import "PanGestureDrivenDismissableTransitionViewController.h"
+#import "StoryFullscreenViewControllerDataSource.h"
+#import "UICollectionViewDelegate.h"
 #import "StoryFullscreenViewControllerDelegate.h"
+#import "UICollectionViewDataSource.h"
+#import "VKMController.h"
 
-@class NSCache, StoryFullscreenCollectionView, NSDate, NSMutableDictionary, NSTimer, NSString, AppVolumeIndicatorView, UITapGestureRecognizer, NSArray;
+@class NSMutableDictionary, UITapGestureRecognizer, StoryFullscreenCollectionView, NSCache, AppVolumeIndicatorView, NSTimer, NSDate, NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface StoryFullscreenPageViewController : VKMController <UICollectionViewDelegate, UICollectionViewDataSource, StoryFullscreenViewControllerDelegate, UIGestureRecognizerDelegate, PanGestureDrivenDismissableTransitionViewController, StoryFullscreenViewControllerDataSource> {

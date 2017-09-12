@@ -11,8 +11,8 @@
 @protocol VKMNavRoot <UINavigationControllerDelegate>
 -(void)logout:(BOOL)logout;
 -(void)handleAudioMessage:(id)message;
--(void)shuffleList:(id)list context:(int)context;
--(void)handleAudio:(id)audio list:(id)list toggle:(BOOL)toggle context:(int)context;
+-(void)playNextAudios:(id)audios context:(int)context playlistIden:(id)iden;
+-(void)handleAudio:(id)audio list:(id)list toggle:(BOOL)toggle context:(int)context playlistIden:(id)iden;
 -(void)rootModalDismiss:(BOOL)dismiss;
 -(void)rootModal:(id)modal animated:(BOOL)animated;
 -(id)rootNavContext;

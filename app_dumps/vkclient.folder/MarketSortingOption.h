@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
 @class NSString;
 
@@ -18,7 +18,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, copy, nonatomic) NSString* title;
 @property(readonly, assign, nonatomic) MarketSorting_t sorting;
 +(id)sortingOptionWithKind:(MarketSorting_t)kind title:(id)title;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)initWithKind:(MarketSorting_t)kind title:(id)title;
 @end
 

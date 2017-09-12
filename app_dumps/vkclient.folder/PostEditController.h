@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "TextEditController.h"
 
-@class UILabel, WrapAttachmentsLayout, NSMutableSet, UIView, AttachmentsContainer, PostEditContext, LinkEditAttachment, UIButton, NSDataDetector, UIImageView, LayoutAwareView;
+@class NSDataDetector, UIButton, AttachmentsContainer, WrapAttachmentsLayout, LinkEditAttachment, UILabel, UIView, UIImageView, LayoutAwareView, PostEditContext, NSMutableSet;
 
 __attribute__((visibility("hidden")))
 @interface PostEditController : TextEditController {
@@ -48,6 +48,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) WrapAttachmentsLayout* attachmentsLayout;
 @property(retain, nonatomic) AttachmentsContainer* attachedContainer;
 +(void)lookupLocation:(int)location nav:(id)nav dismissAnimated:(BOOL)animated block:(id)block;
+-(void).cxx_destruct;
 -(void)notificationAttachmentEdit:(id)edit;
 -(void)notificationAttachmentsReady:(id)ready;
 -(void)notificationAttachmentsUpdated:(id)updated;

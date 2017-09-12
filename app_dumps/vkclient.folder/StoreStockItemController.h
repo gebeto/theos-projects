@@ -6,12 +6,12 @@
  */
 
 #import "VKMNavProxyDelegate.h"
+#import "VKClient-Structs.h"
 #import "PopupWindowController.h"
-#import "vkclient-Structs.h"
-#import "VKMController.h"
 #import "StoreStockItemViewDelegate.h"
+#import "VKMController.h"
 
-@class PopupWindow, StoreStockItemModel, VKStoreProductStickerReferrerContext, NSString, UIActivityIndicatorView, StoreStockItemView;
+@class StoreStockItemView, StoreStockItemModel, NSString, VKStoreProductStickerReferrerContext, UIActivityIndicatorView, PopupWindow;
 
 __attribute__((visibility("hidden")))
 @interface StoreStockItemController : VKMController <VKMNavProxyDelegate, StoreStockItemViewDelegate, PopupWindowController> {
@@ -32,6 +32,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIActivityIndicatorView* activityIndicatorView;
 @property(retain, nonatomic) StoreStockItemView* itemView;
 +(id)main:(id)main model:(id)model referrerContext:(id)context;
+-(void).cxx_destruct;
 -(id)currentNavDelegate;
 -(void)model:(id)model updated:(id)updated;
 -(void)modelLoadingChanged:(id)changed;

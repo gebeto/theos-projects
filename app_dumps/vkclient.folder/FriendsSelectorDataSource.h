@@ -20,8 +20,8 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign, nonatomic) id<VKSelectorOption> friendRequestsOption;
 @property(readonly, assign, nonatomic) id<VKSelectorOption> birthdaysOption;
 @property(readonly, assign, nonatomic) id<VKSelectorOption> friendsOption;
+-(void).cxx_destruct;
 -(id)optionsFromIndex:(id)index;
 -(id)initWithModel:(id)model;
--(void)dealloc;
 @end
 

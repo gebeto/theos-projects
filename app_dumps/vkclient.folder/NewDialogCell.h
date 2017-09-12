@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UILabel, VKMImageView, VKDialog, UIImageView, BackgroundView, UsersModel;
+@class UsersModel, UILabel, UIImageView, BackgroundView, VKMImageView, VKDialog;
 
 __attribute__((visibility("hidden")))
 @interface NewDialogCell : XXUnknownSuperclass {
@@ -39,6 +39,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UILabel* name;
 @property(readonly, retain, nonatomic) VKMImageView* photo;
 @property(readonly, retain, nonatomic) UsersModel* model;
+-(void).cxx_destruct;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)renderSender:(id)sender reuse:(double)reuse;
 -(void)prepareForReuse;

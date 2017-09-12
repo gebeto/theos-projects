@@ -5,6 +5,7 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKMLiveController.h"
 
 @class StoryViewersListModel;

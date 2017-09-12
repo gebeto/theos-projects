@@ -6,10 +6,10 @@
  */
 
 #import "VKDomain.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKAttachment.h"
 
-@class VKAudioThumb, VKIdentity, NSString, NSArray;
+@class VKIdentity, VKAudioThumb, NSArray, NSString;
 @protocol VKSource;
 
 __attribute__((visibility("hidden")))
@@ -26,13 +26,17 @@ __attribute__((visibility("hidden")))
 	NSArray* _thumbs;
 	unsigned _createTime;
 	unsigned _updateTime;
+	unsigned _followers;
 	unsigned _plays;
+	NSString* _mainArtist;
 	NSArray* _artists;
 	NSArray* _genres;
 }
 @property(retain, nonatomic) NSArray* genres;
 @property(retain, nonatomic) NSArray* artists;
+@property(retain, nonatomic) NSString* mainArtist;
 @property(assign, nonatomic) unsigned plays;
+@property(assign, nonatomic) unsigned followers;
 @property(assign, nonatomic) unsigned updateTime;
 @property(assign, nonatomic) unsigned createTime;
 @property(retain, nonatomic) NSArray* thumbs;
@@ -50,14 +54,13 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 +(id)oid:(id)oid iid:(id)iid accessKey:(id)key;
-+(id)filterStr:(int)str;
+-(void).cxx_destruct;
 -(void)acceptSources:(id)sources;
 -(BOOL)isCreator:(id)creator;
 -(id)pickImageUrlsForSize:(CGSize)size scale:(float)scale;
 -(BOOL)process:(id)process context:(id)context;
 -(Class)cellClass;
 -(void)domainOnEditCopy:(id)copy;
--(void)dealloc;
 -(id)artistStr;
 -(id)attributedStatus:(id)status;
 -(id)attachmentButtonTitle;

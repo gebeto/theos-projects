@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "VKMGroupedCell.h"
+#import "VKMCell.h"
 
 
 __attribute__((visibility("hidden")))
-@interface ProfileItemPageCell : VKMGroupedCell {
+@interface ProfileItemPageCell : VKMCell {
 }
 +(void)prerender:(id)prerender;
 -(void)attach:(id)attach expectedReuse:(double)reuse;

@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class NSCache, UIColor;
+@class UIColor, NSCache;
 
 __attribute__((visibility("hidden")))
 @interface PlaceholderImagesGeneratingCache : XXUnknownSuperclass {
@@ -19,11 +19,11 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign, nonatomic, getter=isOpaque) BOOL opaque;
 @property(readonly, retain, nonatomic) UIColor* color;
 @property(readonly, retain, nonatomic) NSCache* cache;
+-(void).cxx_destruct;
 -(id)storeCachedPlaceholderImage:(id)image forSize:(CGSize)size;
 -(id)createPlaceholderImageOfSize:(CGSize)size;
 -(id)cachedPlaceholderImageOfSize:(CGSize)size;
 -(id)obtainOrCreatePlaceholderImageOfSize:(CGSize)size;
--(void)dealloc;
 -(BOOL)hasAlphaInColor:(id)color;
 -(id)initWithColor:(id)color;
 @end

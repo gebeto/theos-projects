@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKMImageView.h"
-#import "vkclient-Structs.h"
 
 @class UIView, NSObject;
 @protocol OS_dispatch_queue;

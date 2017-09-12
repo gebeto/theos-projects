@@ -5,15 +5,15 @@
  * Source: (null)
  */
 
-#import "AudioPlayerObserver.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKMController.h"
 
-@class AudioPlayer, UILabel, AVPlayerItem, AVPlayer, UIButton, NSString, UISlider;
+@class UIButton, UISlider, AVPlayerItem, UILabel, AVPlayer, VKAudioQueuePlayer;
 
 __attribute__((visibility("hidden")))
-@interface AudioController : VKMController <AudioPlayerObserver> {
-	BOOL dragging;
+@interface AudioController : VKMController {
+	BOOL _dragging;
+	VKAudioQueuePlayer* _queuePlayer;
 	AVPlayer* _player;
 	AVPlayerItem* _playerItem;
 	id _observer;
@@ -32,11 +32,8 @@ __attribute__((visibility("hidden")))
 	UIButton* _broadcast;
 	UIButton* _turnOffAd;
 }
-@property(readonly, copy) NSString* debugDescription;
-@property(readonly, copy) NSString* description;
-@property(readonly, assign) Class superclass;
-@property(readonly, assign) unsigned hash;
-@property(retain, nonatomic) AudioPlayer* model;
+@property(retain, nonatomic) VKAudioQueuePlayer* queuePlayer;
+@property(assign, nonatomic) BOOL dragging;
 @property(retain, nonatomic) UIButton* turnOffAd;
 @property(retain, nonatomic) UIButton* broadcast;
 @property(retain, nonatomic) UIButton* add;
@@ -56,7 +53,7 @@ __attribute__((visibility("hidden")))
 @property(retain) AVPlayer* player;
 +(id)audioNavigationForController:(id)controller;
 +(id)alloc;
--(void)playerWillChangeItem:(id)player;
+-(void).cxx_destruct;
 -(void)playerChangedItem:(id)item;
 -(void)playerUpdated:(id)updated;
 -(void)actionBroadcast:(id)broadcast;
@@ -77,12 +74,12 @@ __attribute__((visibility("hidden")))
 -(BOOL)VKMControllerCustomized;
 -(void)done:(id)done;
 -(void)updateBroadcast;
--(void)updateRepeat;
 -(void)updateShuffle;
 -(void)update;
 -(void)updateSeek;
 -(void)attach:(id)attach;
 -(void)observeValueForKeyPath:(id)keyPath ofObject:(id)object change:(id)change context:(void*)context;
 -(void)dealloc;
+-(id)initWithMain:(id)main andModel:(id)model;
 @end
 

@@ -16,7 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(assign, nonatomic) int loadedAlbums;
 @property(retain, nonatomic) NSArray* albums;
+-(void).cxx_destruct;
 -(void)spawnCopy:(id)copy;
--(void)dealloc;
 @end
 

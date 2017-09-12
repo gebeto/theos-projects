@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "MFMailComposeViewControllerDelegate.h"
 #import "InvitationAction.h"
+#import "MFMailComposeViewControllerDelegate.h"
 
 @class NSString;
 
@@ -23,8 +23,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* message;
 @property(retain, nonatomic) NSString* subject;
 @property(retain, nonatomic) NSString* contact;
+-(void).cxx_destruct;
 -(void)mailComposeController:(id)controller didFinishWithResult:(int)result error:(id)error;
 -(void)runInContext:(id)context;
--(void)dealloc;
 @end
 

@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKMNavigationController, UIWindow, UIViewController;
+@class VKMNavigationController, UIViewController, UIWindow;
 @protocol NavWindowPresenterController;
 
 __attribute__((visibility("hidden")))
@@ -22,12 +22,12 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) VKMNavigationController* weakNavigation;
 @property(assign, nonatomic) UIViewController<NavWindowPresenterController>* weakController;
 +(id)presenterForPresentedWindow:(id)presentedWindow;
+-(void).cxx_destruct;
 -(void)togglePresented:(BOOL)presented keepInNav:(BOOL)nav;
 -(void)dismissAnimated:(BOOL)animated;
 -(void)presentAnimated;
 -(void)presentForNavigation:(id)navigation context:(id)context animated:(BOOL)animated;
 -(id)presentedWindow;
 -(BOOL)presented;
--(void)dealloc;
 @end
 

@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "UITextFieldDelegate.h"
 #import "BaseSectionedSettingsController.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
+#import "UITextFieldDelegate.h"
 
-@class UILabel, VKMInputTextCell, AuthModel, NSString;
+@class AuthModel, UILabel, NSString, VKMInputTextCell;
 
 __attribute__((visibility("hidden")))
 @interface SettingsChangePasswordController : BaseSectionedSettingsController <UITextFieldDelegate> {
@@ -28,6 +28,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKMInputTextCell* cellRepeatPassword;
 @property(retain, nonatomic) VKMInputTextCell* cellNewPassword;
 @property(retain, nonatomic) VKMInputTextCell* cellOldPassword;
+-(void).cxx_destruct;
 -(void)tableView:(id)view didSelectRowAtIndexPath:(id)indexPath;
 -(void)textFieldDidChange:(id)textField;
 -(BOOL)textFieldShouldReturn:(id)textField;
@@ -37,6 +38,5 @@ __attribute__((visibility("hidden")))
 -(void)viewDidAppear:(BOOL)view;
 -(void)viewDidLoad;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

@@ -5,23 +5,23 @@
  * Source: (null)
  */
 
-#import "StickerSelectionViewPhotoEditorModeDelegate.h"
-#import "PagingViewDataSource.h"
-#import "vkclient-Structs.h"
-#import "EmojiInputDelegate.h"
-#import "ExtrasTabBarScrollingDelegate.h"
-#import "UIScrollViewDelegate.h"
-#import "ExtrasTabBarDelegate.h"
-#import "UIInputViewAudioFeedback.h"
-#import "ModelObserver.h"
-#import <XXUnknownSuperclass.h> // Unknown library
-#import "StickerSelectionViewDelegate.h"
 #import "LargeEmojiSelectionViewDelegate.h"
 #import "PagingViewDelegate.h"
+#import "VKClient-Structs.h"
+#import "ModelObserver.h"
+#import "EmojiInputDelegate.h"
 #import "StickerSelectionViewScrollingDelegate.h"
+#import "StickerSelectionViewPhotoEditorModeDelegate.h"
+#import "PagingViewDataSource.h"
+#import "StickerSelectionViewDelegate.h"
+#import "ExtrasTabBarScrollingDelegate.h"
+#import "UIScrollViewDelegate.h"
+#import <XXUnknownSuperclass.h> // Unknown library
+#import "ExtrasTabBarDelegate.h"
+#import "UIInputViewAudioFeedback.h"
 
-@class PagingView, ExtrasInputViewRecentStickersTab, NSString, NSArray, ExtrasInputViewPhotoEditorStickersTab, StoreStockManager, ExtrasTabBarItem, PhotoEditorStickersModel, StickersLoadingManager, ExtrasTabBar, EmojiSelectionView, VKMImageView, UIView, LargeEmojiSelectionView, StoreActiveModel, MainModel;
-@protocol VKMNavDelegate, ExtraInputPanelViewPhotoEditorModeDelegate, ExtrasInputViewDelegate;
+@class ExtrasInputViewRecentStickersTab, VKMImageView, StoreActiveModel, ExtrasInputViewPhotoEditorStickersTab, PagingView, StickersLoadingManager, PhotoEditorStickersModel, LargeEmojiSelectionView, NSArray, StoreStockManager, EmojiSelectionView, ExtrasTabBarItem, ExtrasTabBar, UIView, MainModel, NSString;
+@protocol ExtraInputPanelViewPhotoEditorModeDelegate, ExtrasInputViewDelegate, VKMNavDelegate;
 
 __attribute__((visibility("hidden")))
 @interface ExtrasInputView : XXUnknownSuperclass <ExtrasTabBarDelegate, ModelObserver, StickerSelectionViewDelegate, StickerSelectionViewPhotoEditorModeDelegate, LargeEmojiSelectionViewDelegate, EmojiInputDelegate, ExtrasTabBarScrollingDelegate, UIScrollViewDelegate, StickerSelectionViewScrollingDelegate, UIInputViewAudioFeedback, PagingViewDataSource, PagingViewDelegate> {
@@ -84,6 +84,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) StoreActiveModel* stickersModel;
 @property(retain, nonatomic) MainModel* main;
 @property(assign, nonatomic) BOOL photoEditorMode;
+-(void).cxx_destruct;
 -(BOOL)canMakeOverlay;
 -(int)currentTabType;
 -(BOOL)selectStickerProductId:(id)anId;

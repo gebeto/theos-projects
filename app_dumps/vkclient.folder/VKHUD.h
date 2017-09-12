@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "RoundedProgressOverlayViewDelegate.h"
 #import "MBProgressHUD.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "MBProgressHUDDelegate.h"
+#import "RoundedProgressOverlayViewDelegate.h"
 
-@class NSOperation, NSMutableDictionary, NSString, UITapGestureRecognizer;
+@class NSMutableDictionary, UITapGestureRecognizer, NSOperation, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKHUD : MBProgressHUD <RoundedProgressOverlayViewDelegate, MBProgressHUDDelegate> {
@@ -43,6 +43,7 @@ __attribute__((visibility("hidden")))
 +(void)closeAll;
 +(id)hud;
 +(id)hudForWindow:(id)window;
+-(void).cxx_destruct;
 -(void)showCancelButtonAnimated:(BOOL)animated;
 -(void)showCancelButton;
 -(void)cleanupCancelDelayDelay;

@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "VKAPTabViewControllerProtocol.h"
+#import "VKClient-Structs.h"
 #import "VideoAlbumController.h"
+#import "VKAPTabViewControllerProtocol.h"
 
-@class VKVideoAlbum, VKAPModel, NSString;
+@class VKAPModel, VKVideoAlbum, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKAPVideoAlbumViewController : VideoAlbumController <VKAPTabViewControllerProtocol> {

@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "DefaultHighlightButton.h"
-#import "vkclient-Structs.h"
 
-@class CAShapeLayer, UIColor;
+@class UIColor, CAShapeLayer;
 
 __attribute__((visibility("hidden")))
 @interface AudioOverlayButton : DefaultHighlightButton {
@@ -25,9 +25,9 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) CGSize circleSize;
 @property(retain, nonatomic) CAShapeLayer* roundLayer;
 @property(retain, nonatomic) CAShapeLayer* overlayLayer;
+-(void).cxx_destruct;
 -(void)layoutSubviews;
 -(void)createSublayers;
 -(id)initWithFrame:(CGRect)frame;
--(void)dealloc;
 @end
 

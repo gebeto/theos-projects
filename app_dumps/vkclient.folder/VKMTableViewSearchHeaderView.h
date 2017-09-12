@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class UISegmentedControl;
@@ -15,9 +15,9 @@ __attribute__((visibility("hidden")))
 	UISegmentedControl* _scopes;
 }
 @property(retain, nonatomic) UISegmentedControl* scopes;
+-(void).cxx_destruct;
 -(void)layoutSubviews;
 -(void)setSegments:(id)segments;
 -(id)initWithFrame:(CGRect)frame;
--(void)dealloc;
 @end
 

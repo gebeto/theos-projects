@@ -6,7 +6,7 @@
  */
 
 #import "VKMCollectionController.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 
 @class GiftsCategoryModel;
 

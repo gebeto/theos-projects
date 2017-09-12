@@ -5,13 +5,13 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "UICollectionViewDelegate.h"
-#import "VKMScrollViewController.h"
+#import "VKClient-Structs.h"
 #import "UICollectionViewDelegateFlowLayout.h"
+#import "VKMScrollViewController.h"
+#import "UICollectionViewDelegate.h"
 #import "UICollectionViewDataSource.h"
 
-@class UICollectionView, NSMutableSet, UICollectionViewLayout, NSString, LoadingModel;
+@class LoadingModel, NSString, UICollectionViewLayout, UICollectionView, NSMutableSet;
 
 __attribute__((visibility("hidden")))
 @interface VKMCollectionController : VKMScrollViewController <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout> {
@@ -29,6 +29,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) LoadingModel* model;
 @property(retain, nonatomic) NSMutableSet* collectionViewCellClasses;
 @property(retain, nonatomic) UICollectionView* collectionView;
+-(void).cxx_destruct;
 -(void)collectionView:(id)view willDisplayCell:(id)cell forItemAtIndexPath:(id)indexPath;
 -(void)collectionView:(id)view didSelectItemAtIndexPath:(id)indexPath;
 -(id)collectionView:(id)view cellForItemAtIndexPath:(id)indexPath;

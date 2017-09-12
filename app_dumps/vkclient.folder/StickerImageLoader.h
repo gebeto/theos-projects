@@ -15,7 +15,7 @@ __attribute__((visibility("hidden")))
 }
 @property(copy, nonatomic) id handler;
 @property(assign, nonatomic) int attempts;
+-(void).cxx_destruct;
 -(void)complete:(id)complete cached:(BOOL)cached;
--(void)dealloc;
 @end
 

@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UIColor, UIImage, UIImageView;
+@class UIImage, UIColor, UIImageView;
 
 __attribute__((visibility("hidden")))
 @interface DeleteAreaView : XXUnknownSuperclass {

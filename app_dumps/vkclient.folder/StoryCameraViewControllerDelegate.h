@@ -11,8 +11,8 @@
 @protocol StoryCameraViewControllerDelegate <NSObject>
 -(void)storyCameraViewController:(id)controller setShouldShowHoldToRecordTip:(BOOL)showHoldToRecordTip;
 -(BOOL)shouldShowHoldToRecordTipForStoryCameraViewController:(id)storyCameraViewController;
--(void)storyCameraViewController:(id)controller didRecordAsset:(id)asset;
--(void)storyCameraViewController:(id)controller didCapturePhoto:(id)photo metadata:(id)metadata;
+-(void)storyCameraViewController:(id)controller didRecordAsset:(id)asset mask:(id)mask;
+-(void)storyCameraViewController:(id)controller didCapturePhoto:(id)photo metadata:(id)metadata mask:(id)mask;
 -(void)storyCameraViewControllerDidCancel:(id)storyCameraViewController;
 @end
 

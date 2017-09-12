@@ -23,10 +23,10 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKIdentity* target;
 +(id)repost:(id)repost messsage:(id)messsage group:(id)group;
 +(int)domainType;
+-(void).cxx_destruct;
 -(BOOL)hudSuccessEmptyVisible;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
--(void)dealloc;
 -(void)updatePost:(id)post;
 @end
 

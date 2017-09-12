@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "Model.h"
 #import "VKNearbyBrowserDelegate.h"
+#import "Model.h"
 
-@class VKRequest, VKUser, NSString, VKNearbyBrowser;
+@class VKRequest, VKUser, VKNearbyBrowser, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKLookupSourceMultipeer : Model <VKNearbyBrowserDelegate> {
@@ -25,6 +25,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKRequest* userRequest;
 @property(retain, nonatomic) VKUser* user;
 @property(retain, nonatomic) VKNearbyBrowser* browser;
+-(void).cxx_destruct;
 -(void)nearbyBrowser:(id)browser didFailWithError:(id)error;
 -(void)nearbyBrowser:(id)browser didFoundUser:(id)user;
 -(void)loadUsers:(id)users;

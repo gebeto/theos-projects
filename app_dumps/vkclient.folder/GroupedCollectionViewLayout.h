@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class NSString;
@@ -22,8 +22,9 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL shouldExtendContentSizeBySpacing;
 @property(assign, nonatomic) float intersectionSpacing;
 @property(assign, nonatomic) float verticalOffset;
-@property(readonly, assign, nonatomic) id<GroupedCollectionViewLayoutDelegate> delegate;
+@property(readonly, assign, nonatomic) __weak id<GroupedCollectionViewLayoutDelegate> delegate;
 @property(readonly, copy, nonatomic) NSString* decorationViewClassName;
+-(void).cxx_destruct;
 -(float)evaluateIntersectionSpacing;
 -(BOOL)evaluateShouldExtendContentSizeBySpacing;
 -(BOOL)shouldApplyDecoration;
@@ -38,6 +39,5 @@ __attribute__((visibility("hidden")))
 -(id)layoutAttributesForItemAtIndexPath:(id)indexPath;
 -(CGSize)collectionViewContentSize;
 -(id)initWithDecorationViewClass:(Class)decorationViewClass delegate:(id)delegate;
--(void)dealloc;
 @end
 

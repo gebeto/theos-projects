@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "PhotoAlbumsListController.h"
-#import "vkclient-Structs.h"
 #import "VKAPTabViewControllerProtocol.h"
 
 @class NSString;

@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "ChatController.h"
+#import "VKClient-Structs.h"
 
 @class NSNumber;
 @protocol VKSource;
@@ -19,8 +19,8 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) id<VKSource> source;
 @property(retain, nonatomic) NSNumber* uid;
+-(void).cxx_destruct;
 -(void)headerSelected;
--(void)selectedAdditionalUser:(id)user;
 -(void)notificationUserUpdated:(id)updated;
 -(void)loadUser;
 -(void)chatRefreshTitle;

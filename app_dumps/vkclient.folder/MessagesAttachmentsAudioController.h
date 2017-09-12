@@ -5,13 +5,15 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKMLiveController.h"
-#import "vkclient-Structs.h"
 
 
 __attribute__((visibility("hidden")))
 @interface MessagesAttachmentsAudioController : VKMLiveController {
 }
+-(id)VKMControllerStatsRef;
+-(int)VKMLiveAudioContext;
 -(void)actionShowMore:(id)more;
 -(id)tableView:(id)view cellForRowAtIndexPath:(id)indexPath;
 @end

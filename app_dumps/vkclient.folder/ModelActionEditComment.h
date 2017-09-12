@@ -7,7 +7,7 @@
 
 #import "ModelActionEdit.h"
 
-@class VKComment, VKIdentity;
+@class VKIdentity, VKComment;
 
 __attribute__((visibility("hidden")))
 @interface ModelActionEditComment : ModelActionEdit {
@@ -16,8 +16,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKIdentity* parentIdentity;
 @property(retain, nonatomic) VKComment* target;
 +(int)domainType;
+-(void).cxx_destruct;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
--(void)dealloc;
 @end
 

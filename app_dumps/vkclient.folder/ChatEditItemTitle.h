@@ -5,16 +5,16 @@
  * Source: (null)
  */
 
-#import "VKGroupedItem.h"
+#import "VKRenderable.h"
 
 @class NSString;
 
 __attribute__((visibility("hidden")))
-@interface ChatEditItemTitle : VKGroupedItem {
+@interface ChatEditItemTitle : VKRenderable {
 	NSString* _title;
 }
 @property(retain, nonatomic) NSString* title;
--(void)dealloc;
+-(void).cxx_destruct;
 -(Class)cellClass;
 @end
 

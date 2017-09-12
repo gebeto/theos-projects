@@ -14,8 +14,8 @@ __attribute__((visibility("hidden")))
 	NSIndexPath* _scrollToPath;
 }
 @property(retain, nonatomic) NSIndexPath* scrollToPath;
+-(void).cxx_destruct;
 -(void)applyForTableView:(id)tableView shouldReload:(BOOL)reload reload:(id)reload3;
 -(id)usePath:(id)path;
--(void)dealloc;
 @end
 

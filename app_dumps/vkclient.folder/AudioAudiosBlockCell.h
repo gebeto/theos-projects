@@ -7,7 +7,8 @@
 
 #import "VKMCell.h"
 
-@class AudioBlockCellHeaderView, AudioAudiosBlock, AudioAudiosPagingView;
+@class AudioAudiosPagingView, AudioAudiosBlock, AudioBlockCellHeaderView;
+@protocol AudioCellDelegate;
 
 __attribute__((visibility("hidden")))
 @interface AudioAudiosBlockCell : VKMCell {
@@ -15,6 +16,7 @@ __attribute__((visibility("hidden")))
 	AudioAudiosPagingView* _audiosPagingView;
 }
 @property(retain, nonatomic) AudioAudiosBlock* domain;
+@property(assign, nonatomic) __weak id<AudioCellDelegate> delegate;
 @property(retain, nonatomic) AudioAudiosPagingView* audiosPagingView;
 @property(retain, nonatomic) AudioBlockCellHeaderView* headerView;
 +(void)prerender:(id)prerender;

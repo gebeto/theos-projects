@@ -7,7 +7,7 @@
 
 #import "VKAppInternalNotification.h"
 
-@class VKRemoteImageAssetGroup, VKAppInternalNotificationButton, NSString, NSArray;
+@class VKRemoteImageAssetGroup, VKAppInternalNotificationButton, NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKAppInternalNotificationNewsfeed : VKAppInternalNotification {

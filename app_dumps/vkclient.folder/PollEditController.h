@@ -6,12 +6,12 @@
  */
 
 #import "UITextViewDelegate.h"
+#import "EditController.h"
+#import "VKClient-Structs.h"
 #import "UITableViewDelegate.h"
 #import "UITableViewDataSource.h"
-#import "vkclient-Structs.h"
-#import "EditController.h"
 
-@class UITableViewCell, PollEditTextCell, PollEditContext, UITableView, NSString;
+@class UITableView, UITableViewCell, PollEditTextCell, NSString, PollEditContext;
 
 __attribute__((visibility("hidden")))
 @interface PollEditController : EditController <UITableViewDataSource, UITableViewDelegate, UITextViewDelegate> {
@@ -20,7 +20,9 @@ __attribute__((visibility("hidden")))
 	UITableView* _tableView;
 	PollEditTextCell* _sampleCell;
 	PollEditTextCell* _titleCell;
+@private
 	UITableViewCell* _anonCell;
+@protected
 	UITableViewCell* _addCell;
 }
 @property(readonly, copy) NSString* debugDescription;
@@ -33,6 +35,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) PollEditTextCell* titleCell;
 @property(retain, nonatomic) PollEditTextCell* sampleCell;
 @property(retain, nonatomic) UITableView* tableView;
+-(void).cxx_destruct;
 -(void)tableView:(id)view commitEditingStyle:(int)style forRowAtIndexPath:(id)indexPath;
 -(int)tableView:(id)view editingStyleForRowAtIndexPath:(id)indexPath;
 -(void)tableView:(id)view didSelectRowAtIndexPath:(id)indexPath;

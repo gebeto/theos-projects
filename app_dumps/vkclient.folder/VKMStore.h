@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKMFetchContext, NSNumber, CoreDataFacade, VKMUpdateContext;
+@class CoreDataFacade, VKMUpdateContext, VKMFetchContext, NSNumber;
 
 __attribute__((visibility("hidden")))
 @interface VKMStore : XXUnknownSuperclass {

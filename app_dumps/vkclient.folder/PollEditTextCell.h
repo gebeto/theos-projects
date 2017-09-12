@@ -15,6 +15,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) UITextView* textView;
 +(void)initialize;
+-(void).cxx_destruct;
 -(float)heightWithText:(id)text forWidth:(float)width;
 -(void)dealloc;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;

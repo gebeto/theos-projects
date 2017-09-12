@@ -7,14 +7,16 @@
 
 #import "VKFeed.h"
 
-@class VKList;
+@class NSString, VKList;
 
 __attribute__((visibility("hidden")))
 @interface VKFeedVideo : VKFeed {
 	VKList* _videos;
+	NSString* _track_code;
 }
+@property(retain, nonatomic) NSString* track_code;
 @property(retain, nonatomic) VKList* videos;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

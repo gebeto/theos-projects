@@ -7,7 +7,7 @@
 
 #import "VKMCell.h"
 
-@class UILabel, VKMImageView, UIButton;
+@class UIButton, UILabel, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface BaseUserCell : VKMCell {
@@ -21,6 +21,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UILabel* last;
 @property(readonly, retain, nonatomic) UILabel* first;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)willTransitionToState:(unsigned)state;
 -(void)prepareForReuse;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;

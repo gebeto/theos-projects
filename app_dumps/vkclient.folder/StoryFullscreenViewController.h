@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKMController.h"
 
-@class StoryFullscreenView, KVOObserver, NSTimer, NSString, NSArray;
-@protocol StoryFullscreenViewModel, StoryFullscreenViewControllerDataSource, StoryFullscreenViewModelProvider, StoryFullscreenViewControllerDelegate;
+@class StoryFullscreenView, KVOObserver, NSTimer, NSArray, NSString;
+@protocol StoryFullscreenViewModel, StoryFullscreenViewModelProvider, StoryFullscreenViewControllerDataSource, StoryFullscreenViewControllerDelegate;
 
 __attribute__((visibility("hidden")))
 @interface StoryFullscreenViewController : VKMController {

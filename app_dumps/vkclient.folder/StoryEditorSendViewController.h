@@ -6,21 +6,24 @@
  */
 
 #import "UsersSelectionController.h"
+#import "VKClient-Structs.h"
 
-@class VKMGradientView, StoryStatContext, TitleView, MyStorySource, UIButton, NSArray;
-@protocol StoryEditorSendViewControllerDelegate, StoryEditorRenderingTask;
+@class UIButton, TitleView, MyStorySource, VKMGradientView, VKMask, NSArray, StoryStatContext;
+@protocol StoryEditorRenderingTask, StoryEditorSendViewControllerDelegate;
 
 __attribute__((visibility("hidden")))
 @interface StoryEditorSendViewController : UsersSelectionController {
 	StoryStatContext* _storyStatsContext;
 	id<StoryEditorSendViewControllerDelegate> _delegate;
 	id<StoryEditorRenderingTask> _renderingTask;
+	VKMask* _mask;
 	MyStorySource* _myStorySource;
 	UIButton* _sendButton;
 	VKMGradientView* _sendButtonGradientViewBackground;
 	TitleView* _titleView;
 	NSArray* _selectedFriendsInOrder;
 }
+@property(retain, nonatomic) VKMask* mask;
 @property(retain, nonatomic) id<StoryEditorRenderingTask> renderingTask;
 @property(assign, nonatomic) __weak id<StoryEditorSendViewControllerDelegate> delegate;
 @property(retain, nonatomic) StoryStatContext* storyStatsContext;

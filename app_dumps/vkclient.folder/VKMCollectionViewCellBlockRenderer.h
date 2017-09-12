@@ -24,11 +24,11 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) Class cellClass;
 @property(readonly, retain, nonatomic) Class modelClass;
 +(id)rendererWithModelClass:(Class)modelClass cellClass:(Class)aClass block:(id)block;
+-(void).cxx_destruct;
 -(id)collectionView:(id)view cellForObject:(id)object atIndexPath:(id)indexPath;
 -(void)registerToCollectionView:(id)collectionView;
 -(id)reuseIdentifier;
 -(BOOL)canRenderObject:(id)object;
 -(id)initWithModelClass:(Class)modelClass cellClass:(Class)aClass block:(id)block;
--(void)dealloc;
 @end
 

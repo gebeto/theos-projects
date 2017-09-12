@@ -8,7 +8,7 @@
 #import "UIWebViewDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSDate, NSString, UIWebView;
+@class UIWebView, NSString, NSDate;
 
 __attribute__((visibility("hidden")))
 @interface VKCountersUpdater : XXUnknownSuperclass <UIWebViewDelegate> {
@@ -21,6 +21,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) UIWebView* webView;
 @property(retain, nonatomic) NSDate* last;
+-(void).cxx_destruct;
 -(void)touch;
 -(void)update;
 -(void)webView:(id)view didFailLoadWithError:(id)error;

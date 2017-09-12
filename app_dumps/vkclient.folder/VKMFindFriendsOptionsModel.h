@@ -17,6 +17,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int introMask;
 @property(retain, nonatomic) NSArray* findFriendsOptions;
 +(int)introStep;
+-(void).cxx_destruct;
 -(void)handleAddFriend:(id)aFriend :(id)arg2;
 -(void)registerForEvents:(id)events;
 -(id)countKey;
@@ -25,6 +26,5 @@ __attribute__((visibility("hidden")))
 -(id)updatedIndex:(id)index data:(id)data context:(id)context;
 -(id)indexWithUsers:(id)users;
 -(id)initWithSession:(id)session;
--(void)dealloc;
 @end
 

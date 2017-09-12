@@ -7,7 +7,7 @@
 
 #import "VKDomain.h"
 
-@class GiftsStatContext, VKStoreProduct, NSNumber, NSString, VKGiftsContext, NSArray;
+@class VKGiftsContext, GiftsStatContext, VKStoreProduct, NSNumber, NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKStoreStockItem : VKDomain {
@@ -45,8 +45,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* descr;
 @property(retain, nonatomic) VKStoreProduct* product;
 +(id)stockItemIdentityForProductIdentity:(id)productIdentity;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "VKMGroupedCell.h"
+#import "VKMCell.h"
 
-@class UILabel, VKMImageView, UIButton;
+@class UIButton, UILabel, VKMImageView;
 
 __attribute__((visibility("hidden")))
-@interface ChatEditItemUserCell : VKMGroupedCell {
+@interface ChatEditItemUserCell : VKMCell {
 	VKMImageView* _image;
 	UILabel* _name;
 	UIButton* _online;
@@ -19,6 +19,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UILabel* name;
 @property(readonly, retain, nonatomic) VKMImageView* image;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)prepareForReuse;
 -(void)dealloc;

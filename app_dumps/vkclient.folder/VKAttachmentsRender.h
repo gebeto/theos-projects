@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKRenderable.h"
-#import "vkclient-Structs.h"
 
 @class VKAttachments;
 
@@ -34,9 +34,9 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) id photosSource;
 @property(retain, nonatomic) VKAttachments* attachments;
 +(id)attachments:(id)attachments source:(id)source imagesOnly:(BOOL)only albumIndex:(int)index selectable:(BOOL)selectable padding:(BOOL)padding fullscreen:(BOOL)fullscreen;
+-(void).cxx_destruct;
 -(id)photos;
 -(id)thumbnails;
 -(Class)rendererClass;
--(void)dealloc;
 @end
 

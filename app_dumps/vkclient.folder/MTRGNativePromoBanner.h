@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class MTRGImageData, NSNumber, NSString, NSArray;
+@class NSNumber, NSArray, MTRGImageData, NSString;
 
 @interface MTRGNativePromoBanner : XXUnknownSuperclass {
 	NSString* _advertisingLabel;

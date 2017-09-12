@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "PopupWindowController.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "PopupWindowController.h"
 
-@class PopupWindow, PopupWindowView, NSString;
+@class NSString, PopupWindow, PopupWindowView;
 
 __attribute__((visibility("hidden")))
 @interface VKLivePromoController : XXUnknownSuperclass <PopupWindowController> {

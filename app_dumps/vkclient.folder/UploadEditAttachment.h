@@ -5,10 +5,9 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "DomainEditAttachment.h"
 
-@class ClientBasedUploadOperation, UploadContext;
+@class UploadContext, ClientBasedUploadOperation;
 
 __attribute__((visibility("hidden")))
 @interface UploadEditAttachment : DomainEditAttachment {
@@ -21,6 +20,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UploadContext* context;
 @property(retain, nonatomic) ClientBasedUploadOperation* operation;
 +(id)uploadAttachmentWithContext:(id)context;
+-(void).cxx_destruct;
 -(void)observeValueForKeyPath:(id)keyPath ofObject:(id)object change:(id)change context:(void*)context;
 -(void)opProgress;
 -(void)opFinished;
@@ -29,7 +29,7 @@ __attribute__((visibility("hidden")))
 -(void)clearOperation;
 -(void)attachmentViewTapped;
 -(id)imageVariants;
--(id)createViewForStyle:(XXStruct_9zIMjA)style;
+-(id)createViewForStyle:(id)style;
 -(void)dealloc;
 @end
 

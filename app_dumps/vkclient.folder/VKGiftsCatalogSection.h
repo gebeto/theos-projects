@@ -7,7 +7,7 @@
 
 #import "VKDomain.h"
 
-@class Index, NSString, VKGiftsContext, NSArray;
+@class VKGiftsContext, Index, NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKGiftsCatalogSection : VKDomain {
@@ -22,9 +22,9 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSArray* catalogGifts;
 @property(retain, nonatomic) NSString* name;
 @property(retain, nonatomic) NSString* title;
+-(void).cxx_destruct;
 -(Class)cellClass;
 -(Class)giftItemClass;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

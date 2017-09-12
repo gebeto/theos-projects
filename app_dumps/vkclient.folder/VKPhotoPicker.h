@@ -8,7 +8,7 @@
 #import "UINavigationControllerDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKPPService, VKPPToolbar, VKPPSelector, NSString;
+@class VKPPService, VKPPToolbar, NSString, VKPPSelector;
 
 @interface VKPhotoPicker : XXUnknownSuperclass <UINavigationControllerDelegate> {
 	VKPPService* _service;

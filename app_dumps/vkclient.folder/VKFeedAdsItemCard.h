@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "VKImage.h"
 #import "VKDomain.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
+#import "VKImage.h"
 
-@class NSMutableDictionary, NSNumber, NSString, VKAdData;
+@class NSMutableDictionary, VKAdData, NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKFeedAdsItemCard : VKDomain <VKImage> {
@@ -44,6 +44,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSNumber* rating;
 @property(retain, nonatomic) NSString* title;
 @property(retain, nonatomic) NSString* card_id;
+-(void).cxx_destruct;
 -(id)messagesPlaceholder;
 -(XXStruct_UOIMaD)messagesRenderType;
 -(BOOL)forceZoom;
@@ -53,6 +54,5 @@ __attribute__((visibility("hidden")))
 -(id)thumbnailVariant;
 -(int)pickSizeForRatio:(float)ratio width:(float)width height:(float)height;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

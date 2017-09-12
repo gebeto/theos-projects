@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSAttributedString, NSString, NSArray, VKRenderedTextSettings;
+@class VKRenderedTextSettings, NSAttributedString, NSString, NSArray;
 
 __attribute__((visibility("hidden")))
 @interface VKRenderedText : XXUnknownSuperclass {

@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKMImageView, UIView, VKImageVariant, VKAVPlayerLayerView, AVPlayerLayer;
+@class AVPlayerLayer, VKAVPlayerLayerView, UIView, VKImageVariant, VKMImageView;
 @protocol AnimatingIndicator;
 
 __attribute__((visibility("hidden")))

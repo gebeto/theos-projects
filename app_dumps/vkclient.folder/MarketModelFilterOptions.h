@@ -6,10 +6,10 @@
  */
 
 #import "NSCopying.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class MarketModelFilter, VKMarketCollection, PriceRange, NSString, NSNumber, VKCurrency;
+@class MarketModelFilter, VKMarketCollection, PriceRange, VKCurrency, NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface MarketModelFilterOptions : XXUnknownSuperclass <NSCopying> {
@@ -28,9 +28,9 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSNumber* albumID;
 @property(retain, nonatomic) VKCurrency* filterCurrency;
 @property(retain, nonatomic) PriceRange* allowedPriceRange;
+-(void).cxx_destruct;
 -(id)copyWithNewAllowedPriceRange:(id)newAllowedPriceRange currency:(id)currency;
 -(id)copyWithZone:(NSZone*)zone;
 -(id)initWithAllowedPriceRange:(id)allowedPriceRange currency:(id)currency;
--(void)dealloc;
 @end
 

@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "VKGroupedItem.h"
+#import "VKRenderable.h"
 
 
 __attribute__((visibility("hidden")))
-@interface ChatEditItemAdd : VKGroupedItem {
+@interface ChatEditItemAdd : VKRenderable {
 }
 -(Class)cellClass;
 @end

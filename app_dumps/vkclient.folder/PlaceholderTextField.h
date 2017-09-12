@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class UIColor;
@@ -15,7 +15,7 @@ __attribute__((visibility("hidden")))
 	UIColor* _placeholderColor;
 }
 @property(retain, nonatomic) UIColor* placeholderColor;
+-(void).cxx_destruct;
 -(void)drawPlaceholderInRect:(CGRect)rect;
--(void)dealloc;
 @end
 

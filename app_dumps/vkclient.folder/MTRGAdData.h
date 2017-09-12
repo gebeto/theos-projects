@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSDictionary, NSMutableArray, MTRGNavigationHelper, NSString;
+@class MTRGNavigationHelper, NSMutableArray, NSDictionary, NSString;
 
 @interface MTRGAdData : XXUnknownSuperclass {
 	MTRGNavigationHelper* _navigationHelper;

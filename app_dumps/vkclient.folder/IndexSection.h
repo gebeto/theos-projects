@@ -18,8 +18,8 @@ __attribute__((visibility("hidden")))
 @property(readonly, copy, nonatomic) NSArray* items;
 +(id)sectionWithItems:(id)items title:(id)title;
 +(id)sectionWithItems:(id)items;
+-(void).cxx_destruct;
 -(id)initWithItems:(id)items title:(id)title;
 -(id)initWithItems:(id)items;
--(void)dealloc;
 @end
 

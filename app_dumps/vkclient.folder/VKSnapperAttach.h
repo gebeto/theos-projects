@@ -7,7 +7,7 @@
 
 #import "VKDomain.h"
 
-@class NSString, NSNumber;
+@class NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKSnapperAttach : VKDomain {
@@ -32,7 +32,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* src_blur;
 @property(retain, nonatomic) NSNumber* owner_id;
 @property(retain, nonatomic) NSNumber* id;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

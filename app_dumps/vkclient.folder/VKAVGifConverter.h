@@ -5,13 +5,13 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "VKGifAVWriterDelegate.h"
 #import "VKGifAVDecoderDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 #import "VKGifAVReaderDelegate.h"
 
-@class VKGifAVReader, NSURLSessionConfiguration, VKGifAVWriter, VKGifAVDecoder, NSString, NSURL;
+@class NSURL, VKGifAVReader, NSURLSessionConfiguration, NSString, VKGifAVWriter, VKGifAVDecoder;
 @protocol VKAVGifConverterDelegate;
 
 __attribute__((visibility("hidden")))

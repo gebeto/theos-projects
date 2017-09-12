@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "VKMController.h"
+#import "VKClient-Structs.h"
 #import "ExtraInputPanelViewPhotoEditorModeDelegate.h"
+#import "VKMController.h"
 
-@class ExtrasInputView, NSString;
+@class NSString, ExtrasInputView;
 
 __attribute__((visibility("hidden")))
 @interface TestStickersController : VKMController <ExtraInputPanelViewPhotoEditorModeDelegate> {

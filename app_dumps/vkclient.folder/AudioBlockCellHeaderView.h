@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UILabel, UIButton, NSString;
+@class UIButton, UILabel, NSString;
 
 __attribute__((visibility("hidden")))
 @interface AudioBlockCellHeaderView : XXUnknownSuperclass {

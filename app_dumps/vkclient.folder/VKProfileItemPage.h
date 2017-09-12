@@ -5,17 +5,17 @@
  * Source: (null)
  */
 
-#import "VKGroupedItem.h"
+#import "VKRenderable.h"
 
 @class VKWikiPage;
 
 __attribute__((visibility("hidden")))
-@interface VKProfileItemPage : VKGroupedItem {
+@interface VKProfileItemPage : VKRenderable {
 	VKWikiPage* _page;
 }
 @property(retain, nonatomic) VKWikiPage* page;
 +(id)page:(id)page;
+-(void).cxx_destruct;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

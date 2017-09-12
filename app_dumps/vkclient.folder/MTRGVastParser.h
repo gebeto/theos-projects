@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "NSXMLParserDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "NSXMLParserDelegate.h"
 
-@class MTRGVastCompanion, MTRGVastAdWrapper, MTRGVastObject, MTRGVastMediafile, MTRGVastCreativeLinear, NSXMLParser, MTRGError, MTRGVastCreative, MTRGVastExtension, MTRGVastImpression, MTRGVastAdInLine, NSMutableArray, MTRGVastVideoClick, NSString, MTRGVastTrackingEvent;
+@class MTRGVastExtension, MTRGVastImpression, MTRGVastAdInLine, MTRGVastVideoClick, NSMutableArray, MTRGVastTrackingEvent, MTRGVastCompanion, MTRGVastAdWrapper, MTRGVastObject, NSXMLParser, MTRGVastMediafile, MTRGVastCreativeLinear, NSString, MTRGError, MTRGVastCreative;
 
 @interface MTRGVastParser : XXUnknownSuperclass <NSXMLParserDelegate> {
 	id _logWarningBlock;

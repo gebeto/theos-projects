@@ -5,30 +5,32 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class CAShapeLayer;
+@class UIView, CAShapeLayer;
 
 __attribute__((visibility("hidden")))
 @interface CameraCaptureButton : XXUnknownSuperclass {
-	BOOL _inVideoRecordingMode;
-	CAShapeLayer* _outerCircleShapeLayer;
-	CAShapeLayer* _innerCircleShapeLayer;
+	unsigned _captureButtonState;
+	float _progress;
+	UIView* _containerView;
+	CAShapeLayer* _mainCircleLayer;
+	CAShapeLayer* _progressCircleLayer;
 }
-@property(readonly, assign, nonatomic, getter=isInVideoRecordingMode) BOOL inVideoRecordingMode;
-@property(retain, nonatomic) CAShapeLayer* innerCircleShapeLayer;
-@property(retain, nonatomic) CAShapeLayer* outerCircleShapeLayer;
+@property(retain, nonatomic) UIView* containerView;
+@property(assign, nonatomic) float progress;
+@property(assign, nonatomic) unsigned captureButtonState;
+@property(retain, nonatomic) CAShapeLayer* progressCircleLayer;
+@property(retain, nonatomic) CAShapeLayer* mainCircleLayer;
++(id)buttonWithDefaultFrameSize;
++(float)diameterForCaptureButtonState:(unsigned)captureButtonState;
++(float)lineWidthForCaptureButtonState:(unsigned)captureButtonState;
 -(void).cxx_destruct;
--(CGSize)outerCircleSize;
--(void)resetToPhotoStateAnimated:(BOOL)photoStateAnimated;
--(void)animateToVideoRecordingState;
 -(void)setHighlighted:(BOOL)highlighted;
--(id)innerCircleFillColorVideoRecordingState;
--(id)innerCircleFillColorNormalState;
--(CGRect)innerCircleFrameForNormalState;
--(CGRect)outerCircleFrameForNormalState;
+-(void)setCaptureButtonState:(unsigned)state animated:(BOOL)animated;
+-(id)bezierPathForCaptureButtonState:(unsigned)captureButtonState;
+-(id)bezierPathForCaptureButtonState:(unsigned)captureButtonState progress:(float)progress;
 -(id)initWithFrame:(CGRect)frame;
--(id)init;
 @end
 

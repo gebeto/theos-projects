@@ -7,7 +7,7 @@
 
 #import "ItemModel.h"
 
-@class VKVideoPlayerItem, VKIdentity;
+@class VKIdentity, VKVideoPlayerItem;
 
 __attribute__((visibility("hidden")))
 @interface VideoPlayerModel : ItemModel {

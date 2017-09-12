@@ -5,7 +5,6 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "EditAttachment.h"
 
 @class VKDomain;
@@ -16,9 +15,9 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) VKDomain* domain;
 +(id)attachmentForDomain:(id)domain;
+-(void).cxx_destruct;
 -(float)defaultAttachmentRenderHeight;
 -(id)imageVariants;
 -(float)domainAttachmentImageRatio;
--(void)dealloc;
 @end
 

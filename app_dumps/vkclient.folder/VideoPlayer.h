@@ -6,13 +6,13 @@
  */
 
 #import "UIWebViewDelegate.h"
+#import "VKClient-Structs.h"
 #import "UIGestureRecognizerDelegate.h"
-#import "vkclient-Structs.h"
-#import "VideoStatsContextDelegate.h"
-#import <XXUnknownSuperclass.h> // Unknown library
 #import "TimerTargetDelegate.h"
+#import <XXUnknownSuperclass.h> // Unknown library
+#import "VideoStatsContextDelegate.h"
 
-@class UILabel, VKSession, VideoStatsProvider, VKMImageView, UIView, VideoPlayerProgressStats, TimerTarget, UIButton, MPMoviePlayerController, VKVideo, NSString, UIWebView, UIActivityIndicatorView;
+@class TimerTarget, VKVideo, VKSession, UIButton, UILabel, UIView, MPMoviePlayerController, VideoStatsProvider, UIWebView, UIActivityIndicatorView, NSString, VideoPlayerProgressStats, VKMImageView;
 @protocol VKMNavDelegate;
 
 __attribute__((visibility("hidden")))
@@ -41,7 +41,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 @property(assign, nonatomic) XXStruct_pwHToB startPlaybackTime;
-@property(assign, nonatomic) id<VKMNavDelegate> navDelegate;
+@property(assign, nonatomic) __weak id<VKMNavDelegate> navDelegate;
 @property(assign, nonatomic) int quality;
 @property(retain, nonatomic) VKVideo* video;
 @property(retain, nonatomic) VKSession* session;
@@ -56,6 +56,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIWebView* webView;
 @property(retain, nonatomic) UIButton* play;
 @property(retain, nonatomic) MPMoviePlayerController* mp;
+-(void).cxx_destruct;
 -(void)videoStatsProvider:(id)provider qualityResult:(int)result;
 -(id)videoStatsProviderSession:(id)session;
 -(void)loader:(id)loader complete:(id)complete;

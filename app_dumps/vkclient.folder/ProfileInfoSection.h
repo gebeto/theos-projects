@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSString, NSArray;
+@class NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface ProfileInfoSection : XXUnknownSuperclass {
@@ -17,10 +17,10 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSArray* items;
 @property(copy, nonatomic) NSString* title;
 +(id)withTitle:(id)title;
+-(void).cxx_destruct;
 -(id)addItemWithTitle:(id)title subtitle:(id)subtitle photo:(id)photo routeTarget:(id)target;
 -(id)addItemWithTitle:(id)title subtitle:(id)subtitle photo:(id)photo;
 -(id)addItemWithTitle:(id)title subtitle:(id)subtitle;
 -(id)addItem:(id)item;
--(void)dealloc;
 @end
 

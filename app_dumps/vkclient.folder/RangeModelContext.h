@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "ModelContext.h"
-#import "vkclient-Structs.h"
 
 
 __attribute__((visibility("hidden")))

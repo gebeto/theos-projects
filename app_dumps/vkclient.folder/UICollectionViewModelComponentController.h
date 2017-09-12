@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "UICollectionViewComponentController.h"
-#import "vkclient-Structs.h"
-#import "ModelRenderDelegate.h"
 #import "ModelObserver.h"
+#import "VKClient-Structs.h"
+#import "ModelRenderDelegate.h"
+#import "UICollectionViewComponentController.h"
 
 @class NSSet, Model, NSString;
 

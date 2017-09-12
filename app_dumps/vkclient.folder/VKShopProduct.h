@@ -5,13 +5,13 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKSourceStatus.h"
-#import "vkclient-Structs.h"
 #import "VKDomain.h"
 #import "VKAttachment.h"
 #import "VKThumbnailable.h"
 
-@class VKPrice, VKProductCategory, NSString, NSArray;
+@class VKProductCategory, VKPrice, NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKShopProduct : VKDomain <VKSourceStatus, VKThumbnailable, VKAttachment> {
@@ -45,6 +45,7 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) NSString* desc;
 @property(copy, nonatomic) NSString* title;
 +(void)load;
+-(void).cxx_destruct;
 -(id)asLink;
 -(id)attachmentButtonTitle;
 -(id)attachmentIco;
@@ -56,6 +57,5 @@ __attribute__((visibility("hidden")))
 -(int)statusMask;
 -(id)statusForSource:(id)source;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

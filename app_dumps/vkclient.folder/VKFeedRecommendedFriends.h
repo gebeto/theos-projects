@@ -7,7 +7,7 @@
 
 #import "VKFeed.h"
 
-@class NSNumber, NSString, NSArray;
+@class NSNumber, NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKFeedRecommendedFriends : VKFeed {
@@ -22,7 +22,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) NSArray* friends;
 @property(readonly, retain, nonatomic) NSString* type;
 @property(readonly, retain, nonatomic) NSString* blockId;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

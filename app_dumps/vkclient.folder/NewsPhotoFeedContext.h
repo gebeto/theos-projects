@@ -15,10 +15,10 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) VKFeedPhoto* feed;
 +(id)contextWithFeedPhoto:(id)feedPhoto;
+-(void).cxx_destruct;
 -(BOOL)canContainPhotoIdentity:(id)identity;
 -(id)codeForNextPage;
 -(void)spawnCopy:(id)copy;
 -(void)addPhotos:(id)photos;
--(void)dealloc;
 @end
 

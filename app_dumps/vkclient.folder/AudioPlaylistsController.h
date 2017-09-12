@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKMLiveController.h"
-#import "vkclient-Structs.h"
 
 @class AudioSelection, AudioPlaylistsModel;
 
@@ -19,6 +19,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) AudioPlaylistsModel* model;
 @property(retain, nonatomic) AudioSelection* audioSelection;
 @property(assign, nonatomic) BOOL multi;
+-(void).cxx_destruct;
 -(void)actionAdd;
 -(void)actionShowMore:(id)more;
 -(void)tableView:(id)view moveRowAtIndexPath:(id)indexPath toIndexPath:(id)indexPath3;
@@ -38,6 +39,5 @@ __attribute__((visibility("hidden")))
 -(void)setupNavigationItemButtons:(BOOL)buttons;
 -(id)setupMulti:(BOOL)multi;
 -(id)setupAudioSelection:(id)selection;
--(void)dealloc;
 @end
 

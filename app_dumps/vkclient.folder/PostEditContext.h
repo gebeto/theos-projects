@@ -7,7 +7,7 @@
 
 #import "TextEditContext.h"
 
-@class AttachmentsContainer, NSDate, NSNumber, NSArray;
+@class AttachmentsContainer, NSNumber, NSDate, NSArray;
 @protocol VKPlaceDescription;
 
 __attribute__((visibility("hidden")))
@@ -30,6 +30,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) id<VKPlaceDescription> place;
 @property(retain, nonatomic) AttachmentsContainer* attachmentsContainer;
 +(int)attachmentsLimit;
+-(void).cxx_destruct;
 -(void)postOptionsChanged:(id)changed;
 -(id)buildPostOptions;
 -(id)uploadTarget;

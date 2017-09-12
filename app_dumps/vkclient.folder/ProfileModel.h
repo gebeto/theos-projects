@@ -15,6 +15,7 @@ __attribute__((visibility("hidden")))
 }
 @property(readonly, retain, nonatomic) VKProfile* item;
 @property(retain, nonatomic) StatContext* stats_context;
+-(void).cxx_destruct;
 -(void)handleGiftAdd:(id)add :(id)arg2;
 -(void)handleSubscribeLiveVideo:(id)video :(id)arg2;
 -(void)handleSubscribe:(id)subscribe :(id)arg2;
@@ -34,6 +35,5 @@ __attribute__((visibility("hidden")))
 -(id)process:(id)process context:(id)context;
 -(id)request;
 -(id)withStatsContext:(id)statsContext;
--(void)dealloc;
 @end
 

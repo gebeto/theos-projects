@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class AVAssetWriterInput, NSDictionary, AVAssetWriter, NSObject, NSURL;
+@class AVAssetWriter, NSURL, NSDictionary, NSObject, AVAssetWriterInput;
 @protocol MovieRecorderDelegate, OS_dispatch_queue;
 
 __attribute__((visibility("hidden")))

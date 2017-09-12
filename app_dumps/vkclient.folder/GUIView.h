@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UIView, StoryEditorNavigationBar, UIBarButtonItem, ColorPaletteView, UIImageView;
+@class UIBarButtonItem, StoryEditorNavigationBar, ColorPaletteView, UIView, UIImageView;
 
 __attribute__((visibility("hidden")))
 @interface GUIView : XXUnknownSuperclass {

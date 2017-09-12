@@ -7,7 +7,7 @@
 
 #import "Model.h"
 
-@class NSIndexPath, ModelContext, NSString, NSNumber, AFHTTPRequestOperation;
+@class AFHTTPRequestOperation, NSIndexPath, NSNumber, NSString, ModelContext;
 @protocol SearchModel;
 
 __attribute__((visibility("hidden")))
@@ -43,6 +43,7 @@ __attribute__((visibility("hidden")))
 +(id)parseUsers:(id)users to:(id)to handler:(id)handler;
 +(id)parseList:(id)list class:(Class)aClass handler:(id)handler;
 +(id)parseList:(id)list inverted:(BOOL)inverted class:(Class)aClass context:(id)context count:(id)count handler:(id)handler;
+-(void).cxx_destruct;
 -(id)lastUpdateDate;
 -(void)storeLastUpdate;
 -(void)updateModel:(id)model;

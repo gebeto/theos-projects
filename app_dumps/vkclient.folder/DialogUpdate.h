@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSMutableSet, NSNumber, NSArray;
+@class NSNumber, NSArray, NSMutableSet;
 
 __attribute__((visibility("hidden")))
 @interface DialogUpdate : XXUnknownSuperclass {
@@ -26,7 +26,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) NSMutableSet* messagesAdded;
 @property(readonly, retain, nonatomic) NSMutableSet* messagesUpdated;
 @property(readonly, retain, nonatomic) NSNumber* did;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)initWithDID:(id)did;
 @end
 

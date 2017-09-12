@@ -7,7 +7,7 @@
 
 #import "VKMCell.h"
 
-@class UILabel, VKMImageView, UIButton;
+@class UIButton, UILabel, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface VideoCell : VKMCell {
@@ -23,6 +23,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UIButton* durationButton;
 @property(readonly, retain, nonatomic) VKMImageView* thumbnailView;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)layoutSubviews;
 -(void)prepareForReuse;

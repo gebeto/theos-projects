@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class LookupProcessIndicatorLayer;
@@ -19,6 +19,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) float arcWidth;
 @property(assign, nonatomic) unsigned circlesCount;
 @property(retain, nonatomic) LookupProcessIndicatorLayer* circlesLayer;
+-(void).cxx_destruct;
 -(BOOL)isAnimating;
 -(void)stopAnimating;
 -(void)startAnimating;

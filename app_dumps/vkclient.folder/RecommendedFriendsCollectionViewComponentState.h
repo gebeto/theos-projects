@@ -7,7 +7,7 @@
 
 #import "UICollectionViewComponentState.h"
 
-@class NSSet, NSIndexPath, ListModelContext, VKFeedRecommendedFriends;
+@class VKFeedRecommendedFriends, NSIndexPath, NSSet, ListModelContext;
 
 __attribute__((visibility("hidden")))
 @interface RecommendedFriendsCollectionViewComponentState : UICollectionViewComponentState {

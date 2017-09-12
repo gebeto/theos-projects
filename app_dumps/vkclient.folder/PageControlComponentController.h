@@ -7,7 +7,7 @@
 
 #import "Component5Controller.h"
 
-@class PageControlComponent, UIPageControl;
+@class UIPageControl, PageControlComponent;
 
 __attribute__((visibility("hidden")))
 @interface PageControlComponentController : Component5Controller {

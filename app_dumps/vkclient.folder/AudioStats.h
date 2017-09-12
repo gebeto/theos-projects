@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "AudioStats.h"
-#import "NSObject.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "NSObject.h"
+#import "AudioStats.h"
 
 @class CommonStatsManager, NSString;
 
@@ -25,8 +25,8 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(readonly, assign, nonatomic) CommonStatsManager* statsManager;
 +(id)statsManager:(id)manager;
+-(void).cxx_destruct;
 -(void)playAudio:(id)audio ref:(id)ref;
 -(id)initWithStatsManager:(id)statsManager;
--(void)dealloc;
 @end
 

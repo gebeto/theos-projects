@@ -14,6 +14,7 @@ __attribute__((visibility("hidden")))
 	Renderer* _renderer;
 }
 @property(retain, nonatomic) Renderer* renderer;
+-(void).cxx_destruct;
 -(void)prepareForReuse;
 -(void)dealloc;
 @end

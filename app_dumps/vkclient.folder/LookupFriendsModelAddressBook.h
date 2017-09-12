@@ -14,12 +14,12 @@ __attribute__((visibility("hidden")))
 	AddressBook* _addressBook;
 }
 @property(retain, nonatomic) AddressBook* addressBook;
+-(void).cxx_destruct;
 -(id)updatedIndex:(id)index data:(id)data context:(id)context;
 -(id)lookupResponseWithData:(id)data context:(id)context;
 -(id)requestForContext:(id)context;
 -(id)recordsFromAddressBook:(id)addressBook;
 -(id)contactsForRecords:(id)records;
--(void)dealloc;
 -(BOOL)shouldLoad:(id)load;
 -(id)spawnContext:(id)context;
 @end

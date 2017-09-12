@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "Action.h"
 #import "DomainEvent.h"
+#import "Action.h"
 
 @class VKHUD, NSString;
 

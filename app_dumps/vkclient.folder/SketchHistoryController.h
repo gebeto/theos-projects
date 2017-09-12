@@ -6,9 +6,9 @@
  */
 
 #import "VKMCollectionController.h"
-#import "vkclient-Structs.h"
-#import "VKAPTabViewControllerProtocol.h"
+#import "VKClient-Structs.h"
 #import "SketchControllerDelegate.h"
+#import "VKAPTabViewControllerProtocol.h"
 #import "SketchPreviewControllerDelegate.h"
 
 @class UIButton, NSString;

@@ -20,9 +20,10 @@ __attribute__((visibility("hidden")))
 +(int)domainType;
 +(id)wallRepliesDisabled:(BOOL)disabled;
 +(id)displayMyPosts:(BOOL)posts;
++(id)adminCommentsEnabled:(BOOL)enabled;
+-(void).cxx_destruct;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
 -(id)initWithName:(id)name value:(id)value;
--(void)dealloc;
 @end
 

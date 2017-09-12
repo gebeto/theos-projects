@@ -40,14 +40,14 @@ typedef struct {
 
 typedef struct CGContext* CGContextRef;
 
-typedef struct opaqueCMSampleBuffer opaqueCMSampleBuffer;
-
 typedef struct UIEdgeInsets {
 	float top;
 	float left;
 	float bottom;
 	float right;
 } UIEdgeInsets;
+
+typedef struct opaqueCMSampleBuffer opaqueCMSampleBuffer;
 
 typedef struct {
 	unsigned long _field1;
@@ -66,11 +66,11 @@ typedef struct CGAffineTransform {
 } CGAffineTransform;
 
 typedef struct {
-	id _field1;
-	id _field2;
-	id _field3;
-	id _field4;
-} XXStruct_Xx1ZfA;
+	long long value;
+	int timescale;
+	unsigned flags;
+	long long epoch;
+} XXStruct_pwHToB;
 
 typedef struct {
 	int deleteSection;
@@ -82,6 +82,13 @@ typedef struct {
 } XXStruct_X102JB;
 
 typedef struct {
+	XXStruct_pwHToB start;
+	XXStruct_pwHToB duration;
+} XXStruct_yD8eWC;
+
+typedef struct __CTFrame* CTFrameRef;
+
+typedef struct {
 	CGSize size;
 	unsigned columns;
 	unsigned rows;
@@ -89,13 +96,6 @@ typedef struct {
 	float verticalSpacing;
 	float emojiSize;
 } XXStruct_0R9wYB;
-
-typedef struct {
-	long long value;
-	int timescale;
-	unsigned flags;
-	long long epoch;
-} XXStruct_pwHToB;
 
 typedef struct {
 	int count;
@@ -109,61 +109,63 @@ typedef struct {
 } XXStruct_uR0cxB;
 
 typedef struct {
+	int totalBytesRead;
+	int totalBytesExpectedToRead;
+} XXStruct_xAnk1C;
+
+typedef struct tm_zip_s {
+	unsigned _field1;
+	unsigned _field2;
+	unsigned _field3;
+	unsigned _field4;
+	unsigned _field5;
+	unsigned _field6;
+} tm_zip_s;
+
+typedef struct {
+	tm_zip_s _field1;
+	unsigned _field2;
+	unsigned _field3;
+	unsigned _field4;
+} XXStruct_z_NMMB;
+
+typedef struct {
 	int type;
 	int size;
 	BOOL outline;
 } XXStruct_m5P4pB;
 
-typedef struct CGPath* CGPathRef;
+typedef struct CCCubeCell {
+	unsigned hitCount;
+	double redAcc;
+	double greenAcc;
+	double blueAcc;
+} CCCubeCell;
+
+typedef struct opaqueCMFormatDescription opaqueCMFormatDescription;
+
+typedef struct __CVBuffer* CVBufferRef;
 
 typedef struct {
 	CGSize minSize;
 	CGSize maxSize;
 } XXStruct_JC2WWA;
 
-typedef struct _opaque_pthread_mutex_t {
-	long __sig;
-	BOOL __opaque[40];
-} opaque_pthread_mutex_t;
-
-typedef struct _opaque_pthread_cond_t {
-	long __sig;
-	BOOL __opaque[24];
-} opaque_pthread_cond_t;
-
-typedef struct __CVBuffer* CVBufferRef;
-
-typedef struct CGImage* CGImageRef;
-
-typedef struct opaqueCMFormatDescription opaqueCMFormatDescription;
-
-typedef struct __CTFrame* CTFrameRef;
+typedef struct {
+	CLLocationCoordinate2D center;
+	CLLocationCoordinate2D span;
+} XXStruct_zkbX1B;
 
 typedef struct {
-	CGSize _field1;
-	id _field2;
-	UIEdgeInsets _field3;
-	UIEdgeInsets _field4;
-	float _field5;
-	id _field6;
-	CGPoint _field7;
-	float _field8;
-	float _field9;
-	float _field10;
-	float _field11;
-	float _field12;
-	id _field13;
-	id _field14;
-	id _field15;
-	BOOL _field16;
-} XXStruct_9zIMjA;
+	BOOL playerItemPrepared;
+	BOOL shouldPlay;
+	BOOL readyToPlay;
+	BOOL startedPlaying;
+	BOOL stalled;
+	BOOL seeking;
+} XXStruct_1vgcKB;
 
-typedef struct CGGradient* CGGradientRef;
-
-typedef struct {
-	XXStruct_pwHToB start;
-	XXStruct_pwHToB duration;
-} XXStruct_yD8eWC;
+typedef struct CGPath* CGPathRef;
 
 typedef struct __SCNetworkReachability* SCNetworkReachabilityRef;
 
@@ -179,52 +181,56 @@ typedef struct sockaddr_in {
 	BOOL _field5[8];
 } sockaddr_in;
 
-template<>
-struct __compressed_pair<unsigned int *, std::__1::allocator<unsigned int> > {
-	unsigned* __first_;
-};
-
-template<>
-struct vector<unsigned int, std::__1::allocator<unsigned int> > {
-	unsigned* __begin_;
-	unsigned* __end_;
-	__compressed_pair<unsigned int *, std::__1::allocator<unsigned int> > __end_cap_;
-};
-
 typedef struct sqlite3 sqlite3;
 
-typedef struct {
-	int resizingMode;
-	int horizontalPosition;
-	int verticalPosition;
-} XXStruct_rO8FTC;
+typedef struct Thread Thread;
+
+typedef struct ViECaptureBuffer ViECaptureBuffer;
+
+typedef struct MaskObserverProxy MaskObserverProxy;
+
+typedef struct CriticalSection CriticalSection;
+
+typedef struct MaskEngine2Observer MaskEngine2Observer;
+
+typedef struct VideoFrame VideoFrame;
+
+typedef struct MaskEngine2 {
+	/*function-pointer*/ void** _field1;
+	Thread* _field2;
+	ViECaptureBuffer* _field3;
+	MaskObserverProxy* _field4;
+	CriticalSection* _field5;
+	MaskEngine2Observer* _field6;
+	VideoFrame* _field7;
+} MaskEngine2;
+
+typedef struct VideoData {
+	char* _field1;
+	unsigned _field2;
+	unsigned _field3;
+	bool _field4;
+	bool _field5;
+	unsigned _field6;
+} VideoData;
 
 typedef struct {
-	CLLocationCoordinate2D center;
-	CLLocationCoordinate2D span;
-} XXStruct_zkbX1B;
+	int FPS;
+	int currentFPS;
+	int currentSecond;
+} XXStruct_32J64A;
 
-typedef struct {
-	id _field1;
-	id _field2;
-	id _field3;
-} XXStruct_ZWQ3qD;
+typedef struct _opaque_pthread_mutex_t {
+	long __sig;
+	BOOL __opaque[40];
+} opaque_pthread_mutex_t;
 
-typedef struct CCCubeCell {
-	unsigned hitCount;
-	double redAcc;
-	double greenAcc;
-	double blueAcc;
-} CCCubeCell;
+typedef struct _opaque_pthread_cond_t {
+	long __sig;
+	BOOL __opaque[24];
+} opaque_pthread_cond_t;
 
-typedef struct {
-	BOOL playerItemPrepared;
-	BOOL shouldPlay;
-	BOOL readyToPlay;
-	BOOL startedPlaying;
-	BOOL stalled;
-	BOOL seeking;
-} XXStruct_1vgcKB;
+typedef struct CGImage* CGImageRef;
 
 typedef struct __CTLine* CTLineRef;
 

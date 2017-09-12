@@ -21,7 +21,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int width;
 @property(retain, nonatomic) UIImage* image;
 @property(copy, nonatomic) NSString* src;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

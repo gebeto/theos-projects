@@ -5,14 +5,14 @@
  * Source: (null)
  */
 
-#import "UITableViewDelegate.h"
-#import "UITableViewDataSource.h"
-#import "vkclient-Structs.h"
 #import "UISearchDisplayDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
+#import "UITableViewDelegate.h"
+#import "UITableViewDataSource.h"
 
 @class NSOperationQueue, ReusableViewsPool, LoadingFooterView, ScrollSpeed, NSString, NSArray;
-@protocol VKMNavDelegate, VKMSearchControllerDelegate;
+@protocol VKMSearchControllerDelegate, VKMNavDelegate;
 
 __attribute__((visibility("hidden")))
 @interface VKMSearchController : XXUnknownSuperclass <UISearchDisplayDelegate, UITableViewDataSource, UITableViewDelegate> {
@@ -29,11 +29,12 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 @property(readonly, retain, nonatomic) ReusableViewsPool* reusableViewsPool;
-@property(assign, nonatomic) id<VKMNavDelegate, VKMSearchControllerDelegate> searchDelegate;
+@property(assign, nonatomic) __weak id<VKMNavDelegate, VKMSearchControllerDelegate> searchDelegate;
 @property(retain, nonatomic) LoadingFooterView* footer;
 @property(readonly, retain, nonatomic) ScrollSpeed* speed;
 @property(retain, nonatomic) NSArray* results;
 @property(readonly, retain, nonatomic) NSOperationQueue* queue;
+-(void).cxx_destruct;
 -(void)tableView:(id)view didSelectRowAtIndexPath:(id)indexPath;
 -(id)tableView:(id)view cellForRowAtIndexPath:(id)indexPath;
 -(int)tableView:(id)view numberOfRowsInSection:(int)section;

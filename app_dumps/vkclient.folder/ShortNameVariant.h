@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "VKRenderable.h"
 #import "VKTitleable.h"
+#import "VKRenderable.h"
 
 @class NSString;
 
@@ -19,8 +19,8 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 @property(copy, nonatomic) NSString* title;
+-(void).cxx_destruct;
 -(BOOL)disclosure;
 -(Class)rendererClass;
--(void)dealloc;
 @end
 

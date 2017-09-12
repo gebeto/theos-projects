@@ -8,7 +8,7 @@
 #import "UISearchResultsUpdating.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSString, LoadingModel;
+@class LoadingModel, NSString;
 @protocol SearchModel;
 
 __attribute__((visibility("hidden")))
@@ -21,8 +21,8 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(readonly, retain, nonatomic) LoadingModel<SearchModel>* model;
 +(id)model:(id)model;
+-(void).cxx_destruct;
 -(void)updateSearchResultsForSearchController:(id)searchController;
 -(id)initWithSearchModel:(id)searchModel;
--(void)dealloc;
 @end
 

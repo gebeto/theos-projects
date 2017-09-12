@@ -14,6 +14,6 @@ __attribute__((visibility("hidden")))
 	MessageInvitationAction* _invitationOperation;
 }
 @property(retain, nonatomic) MessageInvitationAction* invitationOperation;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

@@ -16,10 +16,10 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) Index* index;
 +(id)builder:(BOOL)builder;
 +(id)builderWithIndex:(id)index;
+-(void).cxx_destruct;
 -(id)section:(int)section add:(id)add;
 -(id)add:(id)add;
 -(id)add:(id)add title:(id)title;
 -(id)buildIndex;
--(void)dealloc;
 @end
 

@@ -7,7 +7,7 @@
 
 #import "VKRenderable.h"
 
-@class VKComment, NSDictionary, NSArray;
+@class VKComment, NSArray, NSDictionary;
 
 __attribute__((visibility("hidden")))
 @interface VKNotification : VKRenderable {
@@ -29,9 +29,9 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int type;
 @property(retain, nonatomic) NSDictionary* sources;
 +(id)notification:(id)notification owner:(id)owner sources:(id)sources;
+-(void).cxx_destruct;
 -(id)selectTarget;
 -(id)thumbnailTarget;
 -(Class)rendererClass;
--(void)dealloc;
 @end
 

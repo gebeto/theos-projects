@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UIImage, NSBundle, NSString, NSArray;
+@class UIImage, NSBundle, NSArray, NSString;
 
 @interface VKPPGLFilter : XXUnknownSuperclass {
 	NSBundle* _bundle;

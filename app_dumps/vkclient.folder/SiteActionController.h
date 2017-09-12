@@ -6,10 +6,10 @@
  */
 
 #import "UIWebViewDelegate.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKMController.h"
 
-@class UILabel, UIScrollView, NSString, UIWebView, VKMSiteAction, UIActivityIndicatorView, NSURL;
+@class NSURL, UILabel, UIScrollView, UIWebView, VKMSiteAction, NSString, UIActivityIndicatorView;
 
 __attribute__((visibility("hidden")))
 @interface SiteActionController : VKMController <UIWebViewDelegate> {
@@ -30,6 +30,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UILabel* errorLabel;
 @property(retain, nonatomic) NSURL* targetURL;
 @property(retain, nonatomic) UIScrollView* webScrollView;
+-(void).cxx_destruct;
 -(void)actionCancel:(id)cancel;
 -(void)close;
 -(void)webView:(id)view didFailLoadWithError:(id)error;

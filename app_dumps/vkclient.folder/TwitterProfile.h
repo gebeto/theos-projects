@@ -20,7 +20,7 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) NSString* screenName;
 @property(copy, nonatomic) NSString* name;
 @property(copy, nonatomic) NSString* uid;
+-(void).cxx_destruct;
 -(id)initWithDictionary:(id)dictionary;
--(void)dealloc;
 @end
 

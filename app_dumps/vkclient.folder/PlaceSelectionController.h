@@ -5,13 +5,13 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "LocationCellDelegate.h"
 #import "MKMapViewDelegate.h"
-#import "VKMLiveController.h"
 #import "CLLocationManagerDelegate.h"
+#import "VKMLiveController.h"
 
-@class CLLocation, UIView, MKMapView, UIBarButtonItem, CLLocationManager, CLGeocoder, NSDate, NSString, PlacesSearchModel;
+@class UIBarButtonItem, PlacesSearchModel, MKMapView, CLLocationManager, CLGeocoder, UIView, NSString, NSDate, CLLocation;
 
 __attribute__((visibility("hidden")))
 @interface PlaceSelectionController : VKMLiveController <CLLocationManagerDelegate, MKMapViewDelegate, LocationCellDelegate> {
@@ -40,6 +40,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) MKMapView* mapView;
 @property(retain, nonatomic) UIView* header;
 @property(retain, nonatomic) CLLocationManager* locationManager;
+-(void).cxx_destruct;
 -(void)mapView:(id)view didUpdateUserLocation:(id)location;
 -(void)clearTimers;
 -(void)updateInaccurate;

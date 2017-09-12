@@ -24,6 +24,7 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) id onViewWillAppear;
 @property(copy, nonatomic) id onViewDidLoad;
 @property(readonly, retain, nonatomic) UIViewController* wrappedController;
+-(void).cxx_destruct;
 -(void)didReceiveMemoryWarning;
 -(void)didRotateFromInterfaceOrientation:(int)interfaceOrientation;
 -(void)willRotateToInterfaceOrientation:(int)interfaceOrientation duration:(double)duration;

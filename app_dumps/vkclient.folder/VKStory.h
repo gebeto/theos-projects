@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "VKImage.h"
 #import "VKDomain.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
+#import "VKImage.h"
 
-@class VKPhoto, NSMutableDictionary, VKVideo, NSString, NSNumber;
+@class NSMutableDictionary, VKVideo, VKPhoto, NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKStory : VKDomain <VKImage> {

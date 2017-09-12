@@ -14,11 +14,11 @@ __attribute__((visibility("hidden")))
 	NSNumber* _to;
 }
 @property(retain, nonatomic) NSNumber* to;
+-(void).cxx_destruct;
 -(BOOL)handleResultServerData:(id)data uploadData:(id)data2 saveData:(id)data3;
 -(id)requestForSaving:(id)saving;
 -(id)uploadBodyFieldName;
 -(id)requestForUploadServer;
 -(id)withToWall:(id)wall;
--(void)dealloc;
 @end
 

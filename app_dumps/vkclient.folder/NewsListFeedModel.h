@@ -15,9 +15,8 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) VKNewsList* list;
 +(int)handlesSourcesBans;
+-(void).cxx_destruct;
 -(id)feedStatContext;
 -(id)feedRequestBuilderForContext:(id)context;
--(id)sourceString;
--(void)dealloc;
 @end
 

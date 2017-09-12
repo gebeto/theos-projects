@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "VKMController.h"
+#import "VKClient-Structs.h"
 #import "UIScrollViewDelegate.h"
+#import "VKMController.h"
 
-@class UIScrollView, Index, TeaserView, UIRefreshControl, UINavigationBar, ScrollSpeed, LoadingFooterView, UINavigationController, NSString;
+@class UINavigationBar, LoadingFooterView, UINavigationController, Index, UIScrollView, UIRefreshControl, ScrollSpeed, TeaserView, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKMScrollViewController : VKMController <UIScrollViewDelegate> {
@@ -40,6 +40,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIRefreshControl* rptr;
 @property(retain, nonatomic) Index* index;
 @property(assign, nonatomic) UINavigationBar* assignedNavigationBar;
+-(void).cxx_destruct;
 -(void)VKMScrollInvalidateTeaserView;
 -(void)VKMScrollViewUpdateTeaserView;
 -(id)VKMScrollViewCreateTeaserView;

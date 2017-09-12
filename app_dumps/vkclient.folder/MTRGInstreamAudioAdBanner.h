@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSString, NSArray;
+@class NSArray, NSString;
 
 @interface MTRGInstreamAudioAdBanner : XXUnknownSuperclass {
 	BOOL _allowSeek;

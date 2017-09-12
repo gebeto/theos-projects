@@ -11,6 +11,26 @@
 __attribute__((visibility("hidden")))
 @interface ProfileInfoComponent : CompositionComponent {
 }
++(id)groupProfile:(id)profile delegate:(id)delegate;
++(id)groupCounters:(id)counters delegate:(id)delegate;
++(id)groupInfo:(id)info delegate:(id)delegate;
++(id)groupMoreInfo:(id)info styleSheet:(id)sheet delegate:(id)delegate;
++(id)groupInfoDescription:(id)description styleSheet:(id)sheet;
++(id)groupInfoMembers:(id)members styleSheet:(id)sheet;
++(id)groupButtons:(id)buttons delegate:(id)delegate;
++(id)groupHeader:(id)header delegate:(id)delegate;
++(id)userProfile:(id)profile delegate:(id)delegate;
++(id)userCounters:(id)counters;
++(id)userInfo:(id)info delegate:(id)delegate;
++(id)userInfoMore:(id)more styleSheet:(id)sheet delegate:(id)delegate;
++(id)userInfoBirthDay:(id)day styleSheet:(id)sheet;
++(id)userInfoHome:(id)home styleSheet:(id)sheet;
++(id)userInfoCareer:(id)career styleSheet:(id)sheet;
++(id)userInfoFollowers:(id)followers styleSheet:(id)sheet;
++(id)userInfoFriends:(id)friends styleSheet:(id)sheet;
++(id)userInfoStatus:(id)status styleSheet:(id)sheet;
++(id)userButtons:(id)buttons delegate:(id)delegate;
++(id)userHeader:(id)header delegate:(id)delegate;
 +(id)counterBlockForUsersGridWithImages:(id)images title:(id)title count:(int)count;
 +(id)counterBlockForVideo:(id)video count:(int)count owner:(id)owner;
 +(id)counterBlockForAudio:(id)audio count:(int)count owner:(id)owner;
@@ -35,25 +55,5 @@ __attribute__((visibility("hidden")))
 +(id)moreInfoTextStyle:(id)style;
 +(id)infoNumberTextStyle:(id)style;
 +(id)infoTextStyle:(id)style;
-+(id)userProfile:(id)profile delegate:(id)delegate;
-+(id)userCounters:(id)counters;
-+(id)userInfo:(id)info delegate:(id)delegate;
-+(id)userInfoMore:(id)more styleSheet:(id)sheet delegate:(id)delegate;
-+(id)userInfoBirthDay:(id)day styleSheet:(id)sheet;
-+(id)userInfoHome:(id)home styleSheet:(id)sheet;
-+(id)userInfoCareer:(id)career styleSheet:(id)sheet;
-+(id)userInfoFollowers:(id)followers styleSheet:(id)sheet;
-+(id)userInfoFriends:(id)friends styleSheet:(id)sheet;
-+(id)userInfoStatus:(id)status styleSheet:(id)sheet;
-+(id)userButtons:(id)buttons delegate:(id)delegate;
-+(id)userHeader:(id)header delegate:(id)delegate;
-+(id)groupProfile:(id)profile delegate:(id)delegate;
-+(id)groupCounters:(id)counters delegate:(id)delegate;
-+(id)groupInfo:(id)info delegate:(id)delegate;
-+(id)groupMoreInfo:(id)info styleSheet:(id)sheet delegate:(id)delegate;
-+(id)groupInfoDescription:(id)description styleSheet:(id)sheet;
-+(id)groupInfoMembers:(id)members styleSheet:(id)sheet;
-+(id)groupButtons:(id)buttons delegate:(id)delegate;
-+(id)groupHeader:(id)header delegate:(id)delegate;
 @end
 

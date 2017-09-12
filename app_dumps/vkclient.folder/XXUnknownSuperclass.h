@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class Component5Controller, WrapController, IIViewDeckController, UIViewController, AFImageRequestOperation;
+@class AFImageRequestOperation, WrapController, IIViewDeckController, Component5Controller, UIViewController;
 
 @interface XXUnknownSuperclass (StringUtil)
 +(id)URLWithPotentiallyUnescapedString:(id)potentiallyUnescapedString;
@@ -17,10 +17,6 @@
 @interface XXUnknownSuperclass (StringUtil)
 -(id)stringWithUppercasedFirstLetter;
 -(id)stringByReplacingSpacesWithNonBreakingSpaces;
-@end
-
-@interface XXUnknownSuperclass (CGRectBuilder)
--(id)vk_frameBuilder;
 @end
 
 @interface XXUnknownSuperclass (VKMController)
@@ -49,7 +45,7 @@
 @end
 
 @interface XXUnknownSuperclass (VKConvenience)
--(id)vkm_initWithAutofillingFrame:(CGRect)autofillingFrame;
+-(id)initWithAutofillingFrame_vkm:(CGRect)autofillingFrame_vkm;
 @end
 
 @interface XXUnknownSuperclass (MID)
@@ -57,34 +53,21 @@
 -(id)mid;
 @end
 
-@interface XXUnknownSuperclass (VKOpusRecordServerSamples)
--(id)serverSamples;
--(id)normalizeToServerFrom0To31IntFormat;
--(id)shrinkUpToServerLimitIfNeeded;
--(id)samplesWithSilenceThreshold;
--(id)floatizedSamples;
+@interface XXUnknownSuperclass (PunycodeAdditions)
+-(id)URLParts;
+-(id)IDNADecodedString;
+-(id)IDNAEncodedString;
+-(id)punycodeDecodedString;
+-(id)punycodeEncodedString;
+-(const unsigned*)longCharactersWithCount:(unsigned*)count;
 @end
 
 @interface XXUnknownSuperclass (VKMSize)
 -(int)vkm_imageBytesSize;
 @end
 
-@interface XXUnknownSuperclass (MCSMNSThreadCategory)
-+(void)MCSM_runBlock:(id)block;
-+(void)MCSM_performBlockInBackground:(id)background;
-+(void)MCSM_performBlockOnMainThread:(id)thread;
--(void)MCSM_performBlock:(id)block afterDelay:(double)delay;
--(void)MCSM_performBlock:(id)block waitUntilDone:(BOOL)done;
--(void)MCSM_performBlock:(id)block;
-@end
-
-@interface XXUnknownSuperclass (VMSession)
--(BOOL)vm_isCurrentInputBuiltInMic;
--(id)vm_currentInputPortType;
--(BOOL)vm_isCurrentOutputEarOrMainSpeaker;
--(BOOL)vm_isCurrentOutputMainSpeaker;
--(BOOL)vm_isCurrentOutputEarSpeaker;
--(id)vm_currentOutputPortType;
+@interface XXUnknownSuperclass (MarkerBrush)
+-(CGRect)boundsWithLineWidth;
 @end
 
 @interface XXUnknownSuperclass (VKM)
@@ -101,8 +84,63 @@
 -(void)text:(id)text constrained:(float)constrained;
 @end
 
+@interface XXUnknownSuperclass (Additions)
+-(id)mapRanges:(id)ranges;
+-(NSRange)lastRange;
+-(NSRange)firstRange;
+@end
+
 @interface XXUnknownSuperclass (LoadingModel)
 -(id)setupOwner:(id)owner;
+@end
+
+@interface XXUnknownSuperclass (VMEmptyHolder)
+-(BOOL)isEmpty;
+@end
+
+@interface XXUnknownSuperclass (Addition)
+-(CGSize)vkm_sizeThatFitsWidth:(float)width;
+@end
+
+@interface XXUnknownSuperclass (MCSMNSThreadCategory)
++(void)MCSM_runBlock:(id)block;
++(void)MCSM_performBlockInBackground:(id)background;
++(void)MCSM_performBlockOnMainThread:(id)thread;
+-(void)MCSM_performBlock:(id)block afterDelay:(double)delay;
+-(void)MCSM_performBlock:(id)block waitUntilDone:(BOOL)done;
+-(void)MCSM_performBlock:(id)block;
+@end
+
+@interface XXUnknownSuperclass (Sugar)
+-(id)componentsJoinedByAttributedString:(id)string;
+@end
+
+@interface XXUnknownSuperclass (Merge)
++(id)emptyImageWithSize:(CGSize)size scale:(float)scale color:(id)color;
+-(id)addImage:(id)image atPoint:(CGPoint)point alpha:(float)alpha;
+@end
+
+@interface XXUnknownSuperclass (VKConvenience)
++(id)vk_flexibleSpaceItem;
++(id)vk_fixedSpaceItemWithWidth:(float)width;
++(id)vk_itemWithImageNamed:(id)imageNamed target:(id)target action:(SEL)action;
+@end
+
+@interface XXUnknownSuperclass (VMSession)
+-(BOOL)vm_isCurrentInputBuiltInMic;
+-(id)vm_currentInputPortType;
+-(BOOL)vm_isCurrentOutputEarOrMainSpeaker;
+-(BOOL)vm_isCurrentOutputMainSpeaker;
+-(BOOL)vm_isCurrentOutputEarSpeaker;
+-(id)vm_currentOutputPortType;
+@end
+
+@interface XXUnknownSuperclass (VKNavigationBarAnimation)
+-(void)vk_setNavigationBarHiddenWithFadeAnimation:(BOOL)fadeAnimation;
+@end
+
+@interface XXUnknownSuperclass (VKMNavContext)
+@property(retain, nonatomic) UIViewController* navPendingModalController;
 @end
 
 @interface XXUnknownSuperclass (Video)
@@ -112,42 +150,9 @@
 -(BOOL)vkm_hasFullScreenVideo;
 @end
 
-@interface XXUnknownSuperclass (Additions)
-@end
-
-@interface XXUnknownSuperclass (Addition)
--(CGSize)vkm_sizeThatFitsWidth:(float)width;
-@end
-
-@interface XXUnknownSuperclass (VKConvenience)
-+(id)vk_flexibleSpaceItem;
-+(id)vk_fixedSpaceItemWithWidth:(float)width;
-+(id)vk_itemWithImageNamed:(id)imageNamed target:(id)target action:(SEL)action;
-@end
-
-@interface XXUnknownSuperclass (Merge)
-+(id)emptyImageWithSize:(CGSize)size scale:(float)scale color:(id)color;
--(id)addImage:(id)image atPoint:(CGPoint)point alpha:(float)alpha;
-@end
-
-@interface XXUnknownSuperclass (VMSamples)
--(id)normalize;
--(id)shrinkOrExpandToCount:(unsigned)count;
-@end
-
-@interface XXUnknownSuperclass (MOTextView)
--(void)withMOTextView:(id)motextView;
--(id)MOTextView;
-@end
-
-@interface XXUnknownSuperclass (VKMNavContext)
-@property(retain, nonatomic) UIViewController* navPendingModalController;
-@end
-
-@interface XXUnknownSuperclass (Additions)
--(id)mapRanges:(id)ranges;
--(NSRange)lastRange;
--(NSRange)firstRange;
+@interface XXUnknownSuperclass (DrawView)
+-(void)drawAtCenterPoint:(CGPoint)centerPoint blendMode:(int)mode alpha:(float)alpha scale:(float)scale;
+-(void)drawAtCenterPoint:(CGPoint)centerPoint blendMode:(int)mode alpha:(float)alpha;
 @end
 
 @interface XXUnknownSuperclass (VKBlocks)
@@ -158,17 +163,32 @@
 -(void)startInRunLoop:(id)runLoop mode:(id)mode;
 @end
 
-@interface XXUnknownSuperclass (DrawView)
--(void)drawAtCenterPoint:(CGPoint)centerPoint blendMode:(int)mode alpha:(float)alpha scale:(float)scale;
--(void)drawAtCenterPoint:(CGPoint)centerPoint blendMode:(int)mode alpha:(float)alpha;
-@end
-
 @interface XXUnknownSuperclass (VK)
 -(id)JSONString;
 @end
 
 @interface XXUnknownSuperclass (VK)
 -(id)JSONString;
+@end
+
+@interface XXUnknownSuperclass (TimeAgo)
++(id)timeAgoDateTimeAgoBundle;
+-(id)timeAgoGetLocaleFormatUnderscoresWithValue:(double)value;
+-(id)timeAgoWithLimit:(double)limit dateFormatter:(id)formatter;
+-(id)timeAgoWithLimit:(double)limit dateFormat:(unsigned)format andTimeFormat:(unsigned)format3;
+-(id)timeAgoWithLimit:(double)limit;
+-(id)stringFromFormat:(id)format withValue:(int)value;
+-(id)spelledTimeFormat:(id)format withValue:(int)value type:(int)type;
+-(id)dateTimeUntilNow;
+-(id)dateTimeAgo;
+-(id)timeAgo;
+-(id)timeAgoWithDeltaSeconds:(double)deltaSeconds;
+-(id)timeAgoSimple;
+@end
+
+@interface XXUnknownSuperclass (MOTextView)
+-(void)withMOTextView:(id)motextView;
+-(id)MOTextView;
 @end
 
 @interface XXUnknownSuperclass (_AFNetworking)
@@ -221,37 +241,13 @@
 -(id)wrapController_core;
 @end
 
+@interface XXUnknownSuperclass (VKFillColor)
+-(id)vk_imageWithColor:(id)color;
+@end
+
 @interface XXUnknownSuperclass (ObjectBuilder)
 +(id)OBBuild:(id)build;
 -(id)OBSetup:(id)setup;
-@end
-
-@interface XXUnknownSuperclass (TimeAgo)
-+(id)timeAgoDateTimeAgoBundle;
--(id)timeAgoGetLocaleFormatUnderscoresWithValue:(double)value;
--(id)timeAgoWithLimit:(double)limit dateFormatter:(id)formatter;
--(id)timeAgoWithLimit:(double)limit dateFormat:(unsigned)format andTimeFormat:(unsigned)format3;
--(id)timeAgoWithLimit:(double)limit;
--(id)stringFromFormat:(id)format withValue:(int)value;
--(id)spelledTimeFormat:(id)format withValue:(int)value type:(int)type;
--(id)dateTimeUntilNow;
--(id)dateTimeAgo;
--(id)timeAgo;
--(id)timeAgoWithDeltaSeconds:(double)deltaSeconds;
--(id)timeAgoSimple;
-@end
-
-@interface XXUnknownSuperclass (Wizard)
--(id)vkm_wizard;
-@end
-
-@interface XXUnknownSuperclass (PunycodeAdditions)
--(id)URLParts;
--(id)IDNADecodedString;
--(id)IDNAEncodedString;
--(id)punycodeDecodedString;
--(id)punycodeEncodedString;
--(const unsigned*)longCharactersWithCount:(unsigned*)count;
 @end
 
 @interface XXUnknownSuperclass (ObjectiveSugar)
@@ -319,10 +315,6 @@
 -(void)push:(id)push;
 @end
 
-@interface XXUnknownSuperclass (MarkerBrush)
--(CGRect)boundsWithLineWidth;
-@end
-
 @interface XXUnknownSuperclass (ObjectiveSugar)
 -(id)fromNow;
 -(id)until:(id)until;
@@ -366,8 +358,12 @@
 -(id)split;
 @end
 
-@interface XXUnknownSuperclass (VKNavigationBarAnimation)
--(void)vk_setNavigationBarHiddenWithFadeAnimation:(BOOL)fadeAnimation;
+@interface XXUnknownSuperclass (VKOpusRecordServerSamples)
+-(id)serverSamples;
+-(id)normalizeToServerFrom0To31IntFormat;
+-(id)shrinkUpToServerLimitIfNeeded;
+-(id)samplesWithSilenceThreshold;
+-(id)floatizedSamples;
 @end
 
 @interface XXUnknownSuperclass (GoogleOAuthClient)
@@ -377,8 +373,19 @@
 -(BOOL)isGoogleOAuthClientError;
 @end
 
+@interface XXUnknownSuperclass (Additions)
+@end
+
+@interface XXUnknownSuperclass (Wizard)
+-(id)vkm_wizard;
+@end
+
 @interface XXUnknownSuperclass (ComponentController)
 @property(retain, nonatomic) Component5Controller* component5_Controller;
+@end
+
+@interface XXUnknownSuperclass (CGRectBuilder)
+-(id)vk_frameBuilder;
 @end
 
 @interface XXUnknownSuperclass (VKTextStyle)
@@ -392,19 +399,16 @@
 -(void)addVKStyle:(id)style;
 @end
 
+@interface XXUnknownSuperclass (VMSamples)
+-(id)normalize;
+-(id)shrinkOrExpandToCount:(unsigned)count;
+@end
+
 @interface XXUnknownSuperclass (Addition)
 -(CGSize)vkm_sizeWithFont:(id)font constrainedToSize:(CGSize)size lineBreakMode:(int)mode;
 -(CGSize)vkm_sizeWithFont:(id)font constrainedToSize:(CGSize)size;
 -(CGSize)vkm_sizeWithFont:(id)font forWidth:(float)width lineBreakMode:(int)mode;
 -(CGSize)vkm_sizeWithFont:(id)font;
-@end
-
-@interface XXUnknownSuperclass (VMEmptyHolder)
--(BOOL)isEmpty;
-@end
-
-@interface XXUnknownSuperclass (VKFillColor)
--(id)vk_imageWithColor:(id)color;
 @end
 
 @interface XXUnknownSuperclass (Container)

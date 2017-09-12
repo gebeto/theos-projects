@@ -7,7 +7,7 @@
 
 #import "ModelContext.h"
 
-@class CLLocation, NSDate;
+@class NSDate, CLLocation;
 
 __attribute__((visibility("hidden")))
 @interface VKLookupSourceLocationContext : ModelContext {
@@ -16,6 +16,6 @@ __attribute__((visibility("hidden")))
 }
 @property(copy, nonatomic) NSDate* date;
 @property(retain, nonatomic) CLLocation* location;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

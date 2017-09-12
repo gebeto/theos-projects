@@ -5,14 +5,14 @@
  * Source: (null)
  */
 
-#import "ThumbnailViewDelegate.h"
 #import "NSObject.h"
+#import "ThumbnailViewDelegate.h"
 
 @class VKRenderable;
 @protocol VKMNavDelegate;
 
 @protocol IVKMCell <NSObject, ThumbnailViewDelegate>
-@property(assign, nonatomic) id<VKMNavDelegate> delegate;
+@property(assign, nonatomic) __weak id<VKMNavDelegate> delegate;
 @property(readonly, retain, nonatomic) VKRenderable* domain;
 +(void)prerender:(id)prerender;
 -(void)refresh;

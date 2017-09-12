@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "VKImageFilter.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
+#import "VKImageFilter.h"
 
 @class NSString;
 

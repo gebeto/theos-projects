@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSSet, NSMutableDictionary, NSObject;
+@class NSMutableDictionary, NSSet, NSObject;
 @protocol OS_dispatch_queue;
 
 __attribute__((visibility("hidden")))
@@ -18,13 +18,13 @@ __attribute__((visibility("hidden")))
 }
 @property(retain) NSMutableDictionary* adminLevel;
 @property(retain) NSSet* admin;
+-(void).cxx_destruct;
 -(void)setAdminLevel:(id)level level:(int)level2;
 -(id)single:(id)single;
 -(void)process:(id)process;
 -(void)include:(id)include exclude:(id)exclude;
 -(int)adminLevel:(id)level;
 -(BOOL)isAdmin:(id)admin;
--(void)dealloc;
 -(id)init;
 @end
 

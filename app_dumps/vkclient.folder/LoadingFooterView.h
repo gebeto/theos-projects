@@ -16,9 +16,9 @@ __attribute__((visibility("hidden")))
 }
 @property(readonly, retain, nonatomic) UILabel* label;
 @property(readonly, retain, nonatomic) UIActivityIndicatorView* anim;
+-(void).cxx_destruct;
 -(void)useText:(id)text;
 -(void)setLoading:(BOOL)loading;
--(void)dealloc;
 -(void)layoutSubviews;
 -(id)init;
 @end

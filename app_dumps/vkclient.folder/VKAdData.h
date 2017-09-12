@@ -6,10 +6,10 @@
  */
 
 #import "NSCopying.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class VKAdEvents, NSMutableDictionary, NSString;
+@class NSMutableDictionary, VKAdEvents, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKAdData : XXUnknownSuperclass <NSCopying> {
@@ -30,10 +30,10 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* card_id;
 @property(retain, nonatomic) NSString* id2;
 @property(retain, nonatomic) NSString* id1;
+-(void).cxx_destruct;
 -(id)copyWithZone:(NSZone*)zone;
 -(void)addCardEvents:(id)events;
 -(void)addAdEvents:(id)events;
 -(void)addBlockEvents:(id)events;
--(void)dealloc;
 @end
 

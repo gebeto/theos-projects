@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSMutableArray, NSNumber, NSString, NSArray;
+@class NSMutableArray, NSNumber, NSArray, NSString;
 
 @interface MTRGBanner : XXUnknownSuperclass {
 	NSMutableArray* _stats;

@@ -19,7 +19,7 @@ __attribute__((visibility("hidden")))
 +(id)query:(id)query session:(id)session;
 +(id)query:(id)query domain:(id)domain session:(id)session;
 +(id)query:(id)query ownerId:(id)anId session:(id)session;
+-(void).cxx_destruct;
 -(id)feedRequestBuilderForContext:(id)context;
--(void)dealloc;
 @end
 

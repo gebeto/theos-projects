@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "VideoPlayStats.h"
-#import "NSObject.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "NSObject.h"
+#import "VideoPlayStats.h"
 
 @class VKSession, VKVideo, StatsRef, NSString;
 
@@ -47,6 +47,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign, nonatomic) VKSession* session;
 @property(readonly, assign, nonatomic) BOOL autoplay;
 +(id)session:(id)session video:(id)video ref:(id)ref;
+-(void).cxx_destruct;
 -(void)trackVideoEvent:(id)event;
 -(void)trackPosition:(id)position;
 -(id)trackPositionEvent:(id)event;
@@ -62,6 +63,5 @@ __attribute__((visibility("hidden")))
 -(void)play:(BOOL)play;
 -(void)reset;
 -(id)initWithSession:(id)session video:(id)video ref:(id)ref;
--(void)dealloc;
 @end
 

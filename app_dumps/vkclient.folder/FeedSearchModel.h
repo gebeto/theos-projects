@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "FeedModel.h"
 #import "SearchModel.h"
+#import "FeedModel.h"
 
-@class NSString, NSArray;
+@class NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface FeedSearchModel : FeedModel <SearchModel> {
@@ -23,6 +23,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(assign, nonatomic) int searchScope;
 @property(copy, nonatomic) NSString* searchQuery;
+-(void).cxx_destruct;
 -(id)componentRenderContextForObject:(id)object context:(id)context;
 -(void)clearResults;
 -(void)searchWithScope:(int)scope;
@@ -33,6 +34,5 @@ __attribute__((visibility("hidden")))
 -(BOOL)shouldLoad:(id)load;
 -(id)spawnContext:(id)context;
 -(id)countKey;
--(void)dealloc;
 @end
 

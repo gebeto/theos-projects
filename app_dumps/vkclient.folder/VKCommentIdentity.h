@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKIdentity.h"
 
 @class NSNumber;
@@ -16,11 +16,11 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSNumber* cid;
 +(id)identityForHostItem:(id)hostItem;
+-(void).cxx_destruct;
 -(id)copyWithZone:(NSZone*)zone;
 -(BOOL)isEqual:(id)equal;
 -(id)itemIdentity;
 -(BOOL)isEqualToIdentity:(id)identity;
 -(id)description;
--(void)dealloc;
 @end
 

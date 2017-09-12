@@ -6,15 +6,15 @@
  */
 
 #import "UIKeyInput.h"
+#import "VKClient-Structs.h"
 #import "UITextInputTraits.h"
-#import "UICollectionViewDelegate.h"
-#import "vkclient-Structs.h"
-#import "MBContactCollectionViewDelegateFlowLayout.h"
-#import "UICollectionViewDataSource.h"
-#import "UITextFieldDelegateImproved.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "MBContactCollectionViewDelegateFlowLayout.h"
+#import "UITextFieldDelegateImproved.h"
+#import "UICollectionViewDelegate.h"
+#import "UICollectionViewDataSource.h"
 
-@class MBContactCollectionViewContactCell, NSIndexPath, NSMutableArray, MBContactCollectionViewPromptCell, NSString;
+@class NSIndexPath, NSMutableArray, MBContactCollectionViewPromptCell, MBContactCollectionViewContactCell, NSString;
 @protocol MBContactCollectionViewDelegate;
 
 __attribute__((visibility("hidden")))

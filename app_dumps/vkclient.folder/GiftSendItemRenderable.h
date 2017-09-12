@@ -7,7 +7,7 @@
 
 #import "VKRenderable.h"
 
-@class NSNumber, VKGiftsCatalogItem, NSArray;
+@class NSNumber, NSArray, VKGiftsCatalogItem;
 
 __attribute__((visibility("hidden")))
 @interface GiftSendItemRenderable : VKRenderable {
@@ -22,8 +22,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSNumber* guid;
 @property(retain, nonatomic) VKGiftsCatalogItem* giftItem;
 @property(retain, nonatomic) NSArray* recipients;
+-(void).cxx_destruct;
 -(id)fromModel:(id)model;
 -(Class)rendererClass;
--(void)dealloc;
 @end
 

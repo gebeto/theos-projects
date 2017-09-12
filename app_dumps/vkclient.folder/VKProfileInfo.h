@@ -7,16 +7,18 @@
 
 #import "VKDomain.h"
 
-@class VKNameRequest, VKCountry, VKUser, VKCity, NSDate, NSString;
+@class VKNameRequest, VKCountry, VKCity, VKUser, NSDate, NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKProfileInfo : VKDomain {
+	BOOL _relation_pending;
 	NSString* _first_name;
 	NSString* _last_name;
 	NSString* _maiden_name;
 	int _sex;
 	int _relation;
 	VKUser* _relation_partner;
+	NSArray* _relation_requests;
 	NSDate* _bdate;
 	int _bdate_visibility;
 	NSString* _home_town;
@@ -30,15 +32,17 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* home_town;
 @property(assign, nonatomic) int bdate_visibility;
 @property(retain, nonatomic) NSDate* bdate;
+@property(retain, nonatomic) NSArray* relation_requests;
+@property(assign, nonatomic) BOOL relation_pending;
 @property(retain, nonatomic) VKUser* relation_partner;
 @property(assign, nonatomic) int relation;
 @property(assign, nonatomic) int sex;
 @property(retain, nonatomic) NSString* maiden_name;
 @property(retain, nonatomic) NSString* last_name;
 @property(retain, nonatomic) NSString* first_name;
+-(void).cxx_destruct;
 -(BOOL)isEqual:(id)equal;
 -(BOOL)process:(id)process context:(id)context;
 -(void)domainOnEditCopy:(id)copy;
--(void)dealloc;
 @end
 

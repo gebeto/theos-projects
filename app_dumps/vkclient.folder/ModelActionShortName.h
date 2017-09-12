@@ -19,11 +19,11 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) NSString* nextShortName;
 @property(retain, nonatomic) VKShortNameCheckResult* result;
 +(int)domainType;
+-(void).cxx_destruct;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
 -(id)setupOnlyCheck:(BOOL)check;
 -(id)setupName:(id)name;
 -(BOOL)disableHUD;
--(void)dealloc;
 @end
 

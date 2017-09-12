@@ -18,12 +18,12 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKPhoto* profilePhoto;
 @property(retain, nonatomic) VKProfileInfo* item;
 +(id)profileInfoRequest;
+-(void).cxx_destruct;
 -(id)profilePhotoURL;
 -(void)resetWithInfo:(id)info;
 -(void)updateProfilePhoto:(id)photo;
 -(id)process:(id)process context:(id)context;
 -(void)readPhotoData:(id)data;
 -(id)requestForContext:(id)context;
--(void)dealloc;
 @end
 

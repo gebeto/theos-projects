@@ -18,7 +18,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSNumber* owner;
 @property(assign, nonatomic) int count;
 @property(assign, nonatomic) int type;
+-(void).cxx_destruct;
 -(Class)rendererClass;
--(void)dealloc;
 @end
 

@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 #import "UIScrollViewDelegate.h"
 #import "MOScrollPagingMediatorDelegate.h"
-#import <XXUnknownSuperclass.h> // Unknown library
 
-@class StoreStatusButton, UILabel, VKMImageView, UITextView, MOScrollPagingMediator, UIView, NSString, NSArray, VKStoreStockItem;
+@class UITextView, VKStoreStockItem, StoreStatusButton, UILabel, UIView, MOScrollPagingMediator, NSString, NSArray, VKMImageView;
 @protocol StoreStockItemViewDelegate;
 
 __attribute__((visibility("hidden")))
@@ -42,7 +42,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKMImageView* backgroundImageView;
 @property(retain, nonatomic) UIView* headerView;
 @property(retain, nonatomic) VKStoreStockItem* item;
-@property(assign, nonatomic) id<StoreStockItemViewDelegate> stockViewDelegate;
+@property(assign, nonatomic) __weak id<StoreStockItemViewDelegate> stockViewDelegate;
+-(void).cxx_destruct;
 -(void)sendGift:(id)gift;
 -(void)renderItem:(id)item;
 -(void)scrollViewDidScroll:(id)scrollView;

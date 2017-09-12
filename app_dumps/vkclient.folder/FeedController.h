@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "VKVideoStatsProvider.h"
 #import "UIScrollViewAccessibilityDelegate.h"
+#import "VKClient-Structs.h"
 #import "VKMLiveController.h"
+#import "VKVideoStatsProvider.h"
 
-@class NSString, UITableViewMiddleObjectTracker;
+@class UITableViewMiddleObjectTracker, NSString;
 
 __attribute__((visibility("hidden")))
 @interface FeedController : VKMLiveController <UIScrollViewAccessibilityDelegate, VKVideoStatsProvider> {
@@ -21,6 +21,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) UITableViewMiddleObjectTracker* midPostTracker;
+-(void).cxx_destruct;
 -(id)statsForVideo:(id)video;
 -(BOOL)accessibilityScroll:(int)scroll;
 -(float)tableView:(id)view heightForHeaderInSection:(int)section;
@@ -33,7 +34,7 @@ __attribute__((visibility("hidden")))
 -(void)viewDidAppear:(BOOL)view;
 -(void)notificationViewPostTime:(id)time;
 -(void)notificationTrackerResignActive:(id)active;
--(void)statsTrackViewPostTimeForPostId:(id)postId duration:(double)duration;
+-(void)statsTrackViewPostTimeForPostId:(id)postId duration:(double)duration trackCode:(id)code;
 -(void)statsTrackViewPostTimeForPost:(id)post duration:(double)duration;
 -(void)attachPostTracker:(id)tracker;
 -(void)detachPostTracker:(id)tracker;

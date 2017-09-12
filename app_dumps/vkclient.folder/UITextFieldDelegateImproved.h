@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "UITextFieldDelegate.h"
-#import "vkclient-Structs.h"
 
 
 @protocol UITextFieldDelegateImproved <UITextFieldDelegate>

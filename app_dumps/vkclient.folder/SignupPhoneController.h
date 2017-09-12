@@ -5,17 +5,18 @@
  * Source: (null)
  */
 
-#import "UITextFieldDelegate.h"
+#import "VKClient-Structs.h"
 #import "SignupController.h"
-#import "vkclient-Structs.h"
+#import "UITextFieldDelegate.h"
 
-@class UITableViewCell, CountryCallingCodesIndex, UITextField, NSString;
+@class CountryCallingCodesIndex, UITextField, UITableViewCell, NSString;
 
 __attribute__((visibility("hidden")))
 @interface SignupPhoneController : SignupController <UITextFieldDelegate> {
 	UITableViewCell* _cellCountry;
 	UITextField* _codeField;
 	UITextField* _numberField;
+	UITextField* _lastNameField;
 	CountryCallingCodesIndex* _index;
 }
 @property(readonly, copy) NSString* debugDescription;
@@ -23,20 +24,24 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) CountryCallingCodesIndex* index;
+@property(retain, nonatomic) UITextField* lastNameField;
 @property(retain, nonatomic) UITextField* numberField;
 @property(retain, nonatomic) UITextField* codeField;
 @property(retain, nonatomic) UITableViewCell* cellCountry;
+-(void).cxx_destruct;
 -(void)tableView:(id)view didSelectRowAtIndexPath:(id)indexPath;
 -(float)tableView:(id)view heightForFooterInSection:(int)section;
 -(id)tableView:(id)view titleForFooterInSection:(int)section;
 -(void)actionNext:(id)next;
 -(void)actionBackspace:(id)backspace;
+-(void)actionLastNameFieldChanged:(id)changed;
 -(void)notifyIncorrectFields:(id)fields;
+-(BOOL)textFieldShouldReturn:(id)textField;
 -(BOOL)textField:(id)field shouldChangeCharactersInRange:(NSRange)range replacementString:(id)string;
+-(void)updateNextButtonAvailability;
 -(void)render;
 -(void)tryDetectCallingCode;
 -(void)viewWillAppear:(BOOL)view;
 -(void)viewDidLoad;
--(void)dealloc;
 @end
 

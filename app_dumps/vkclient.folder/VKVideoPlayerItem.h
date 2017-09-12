@@ -7,7 +7,7 @@
 
 #import "VKDomain.h"
 
-@class VKLiveVideoSettings, VKVideo;
+@class VKVideo, VKLiveVideoSettings;
 
 __attribute__((visibility("hidden")))
 @interface VKVideoPlayerItem : VKDomain {

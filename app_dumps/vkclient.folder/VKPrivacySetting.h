@@ -7,7 +7,7 @@
 
 #import "VKDomain.h"
 
-@class NSString, NSArray;
+@class NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKPrivacySetting : VKDomain {
@@ -24,13 +24,12 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) NSString* section;
 @property(copy, nonatomic) NSString* title;
 @property(copy, nonatomic) NSString* key;
-+(id)parseOrNil:(id)aNil;
 +(id)defaultSupportedValues;
+-(void).cxx_destruct;
 -(id)stringValue;
 -(Class)rendererClass;
 -(BOOL)process:(id)process context:(id)context;
 -(void)domainOnEditCopy:(id)copy;
 -(void)domainOnEditCreate;
--(void)dealloc;
 @end
 

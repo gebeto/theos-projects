@@ -9,7 +9,7 @@
 #import "MBContactPickerModelProtocol.h"
 #import "VKSource.h"
 
-@class UIImage, NSString, NSNumber;
+@class UIImage, NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKUser : VKDomain <VKSource, MBContactPickerModelProtocol> {
@@ -60,6 +60,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* fullname;
 +(id)predicate:(id)predicate;
 +(id)linkIcon;
+-(void).cxx_destruct;
 -(id)shortName;
 -(BOOL)userDataEqual:(id)equal;
 -(BOOL)disclosure;
@@ -68,6 +69,5 @@ __attribute__((visibility("hidden")))
 -(BOOL)process:(id)process context:(id)context;
 -(Class)cellClass;
 -(id)iden;
--(void)dealloc;
 @end
 

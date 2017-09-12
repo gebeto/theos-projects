@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSMutableData, NSError, NSSet, NSInputStream, NSURLResponse, NSOutputStream, NSString, NSData, NSHTTPURLResponse, NSURLRequest, NSURLConnection, NSRecursiveLock;
+@class NSError, NSURLRequest, NSData, NSURLConnection, NSSet, NSRecursiveLock, NSInputStream, NSHTTPURLResponse, NSURLResponse, NSString, NSOutputStream, NSMutableData;
 
 __attribute__((visibility("hidden")))
 @interface AFURLConnectionOperation : XXUnknownSuperclass {

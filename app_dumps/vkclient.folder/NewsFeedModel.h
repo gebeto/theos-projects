@@ -14,6 +14,7 @@ __attribute__((visibility("hidden")))
 }
 +(int)newsFeedMaxPhotos;
 +(id)newsFeedMethod;
+-(void)handleReport:(id)report :(id)arg2;
 -(void)handleGroup:(id)group :(id)arg2;
 -(void)handleFriend:(id)aFriend :(id)arg2;
 -(void)processSourcesUpdate;

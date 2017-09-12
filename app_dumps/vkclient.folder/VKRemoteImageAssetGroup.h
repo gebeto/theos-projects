@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
 @class NSArray;
 
@@ -17,6 +17,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign, nonatomic) NSArray* assets;
 +(id)groupWithAssets:(id)assets;
 -(void).cxx_destruct;
+-(id)pickAssetForScaledSize:(CGSize)scaledSize;
 -(id)pickAssetForSize:(CGSize)size;
 -(id)initWithAssets:(id)assets;
 @end

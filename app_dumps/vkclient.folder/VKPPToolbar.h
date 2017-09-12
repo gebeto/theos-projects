@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "UITableViewDelegate.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
+#import "UITableViewDelegate.h"
 
-@class UILabel, VKPPModel, VKPPService, VKPPFiltersTableView, UIToolbar, UIView, VKPPBadge, NSMutableArray, VKPPSelector, NSString;
+@class NSMutableArray, VKPPModel, VKPPService, VKPPFiltersTableView, UIView, VKPPBadge, UILabel, NSString, UIToolbar, VKPPSelector;
 
 @interface VKPPToolbar : XXUnknownSuperclass <UITableViewDelegate> {
 	VKPPService* _service;

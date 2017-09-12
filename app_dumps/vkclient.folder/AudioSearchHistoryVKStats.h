@@ -17,9 +17,9 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) AudioSearchHistoryStorage* storage;
 @property(retain, nonatomic) VKStats* stats;
 +(id)stats:(id)stats;
+-(void).cxx_destruct;
 -(void)clear;
 -(void)save;
 -(id)initWithStats:(id)stats;
--(void)dealloc;
 @end
 

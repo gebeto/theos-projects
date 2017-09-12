@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "NotificationBannerWindowDelegate.h"
-#import <XXUnknownSuperclass.h> // Unknown library
 #import "NotificationHandler.h"
+#import <XXUnknownSuperclass.h> // Unknown library
+#import "NotificationBannerWindowDelegate.h"
 
 @class CommonBannerView, NSString, NotificationBannerWindow;
 @protocol NHandlerBannerDelegate;
@@ -22,16 +22,16 @@ __attribute__((visibility("hidden")))
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
-@property(assign, nonatomic) id<NHandlerBannerDelegate> delegate;
+@property(assign, nonatomic) __weak id<NHandlerBannerDelegate> delegate;
 @property(retain, nonatomic) CommonBannerView* commonView;
 @property(retain, nonatomic) NotificationBannerWindow* banner;
 +(id)sharedHandler;
+-(void).cxx_destruct;
 -(void)notificationBannerWindowDidHide;
 -(void)clearImmediatly;
 -(void)handle:(id)handle;
 -(void)actionBanner:(id)banner;
 -(void)actionClose:(id)close;
--(void)dealloc;
 -(id)init;
 @end
 

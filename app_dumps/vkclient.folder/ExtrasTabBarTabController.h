@@ -10,7 +10,7 @@
 @protocol ExtrasTabBarScrollingDelegate;
 
 @protocol ExtrasTabBarTabController <NSObject>
-@property(assign, nonatomic) id<ExtrasTabBarScrollingDelegate> scrollingDelegate;
+@property(assign, nonatomic) __weak id<ExtrasTabBarScrollingDelegate> scrollingDelegate;
 -(void)extrasTabBarActiveTabSelected;
 @end
 

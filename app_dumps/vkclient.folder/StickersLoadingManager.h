@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class NSSet, NSMutableSet, VKMImage, NSString;
+@class NSSet, VKMImage, NSString, NSMutableSet;
 
 __attribute__((visibility("hidden")))
 @interface StickersLoadingManager : XXUnknownSuperclass {
@@ -26,6 +26,7 @@ __attribute__((visibility("hidden")))
 +(BOOL)isNotification:(id)notification forProduct:(id)product;
 +(id)sharedManager;
 +(void)initialize;
+-(void).cxx_destruct;
 -(BOOL)setupLoader:(id)loader forImageType:(XXStruct_m5P4pB*)imageType productId:(id)anId stickerId:(id)anId4 remoteBaseUrl:(id)url;
 -(void)_clearCache;
 -(void)_clearLoadedList;
@@ -34,7 +35,6 @@ __attribute__((visibility("hidden")))
 -(int)loadingStateForProductId:(id)productId;
 -(void)notifyStickerProductId:(id)anId;
 -(void)modifyLoadedProductIds:(id)ids;
--(void)dealloc;
 -(id)init;
 @end
 

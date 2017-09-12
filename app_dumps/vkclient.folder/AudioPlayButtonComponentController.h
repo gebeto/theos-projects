@@ -6,27 +6,21 @@
  */
 
 #import "Component5Controller.h"
-#import "AudioPlayerObserver.h"
 
-@class AudioPlayer, UIButton, NSString, AudioPlayButtonComponent;
+@class UIButton, AudioPlayButtonComponent, VKAudioQueuePlayer;
 
 __attribute__((visibility("hidden")))
-@interface AudioPlayButtonComponentController : Component5Controller <AudioPlayerObserver> {
-	AudioPlayer* _player;
+@interface AudioPlayButtonComponentController : Component5Controller {
+	VKAudioQueuePlayer* _player;
 }
-@property(readonly, copy) NSString* debugDescription;
-@property(readonly, copy) NSString* description;
-@property(readonly, assign) Class superclass;
-@property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) AudioPlayButtonComponent* component;
 @property(readonly, assign, nonatomic) __weak UIButton* view;
-@property(readonly, assign, nonatomic) AudioPlayer* player;
+@property(readonly, assign, nonatomic) VKAudioQueuePlayer* player;
 +(id)createView;
 -(void).cxx_destruct;
 -(void)model:(id)model willStartLoadingWithContext:(id)context;
 -(void)modelLoadingChanged:(id)changed;
 -(void)model:(id)model updated:(id)updated;
--(void)playerWillChangeItem:(id)player;
 -(void)playerChangedItem:(id)item;
 -(void)playerUpdated:(id)updated;
 -(void)update;

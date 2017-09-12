@@ -5,23 +5,23 @@
  * Source: (null)
  */
 
-#import "UITextViewDelegate.h"
-#import "UIPopoverPresentationControllerDelegate.h"
-#import "VKSelectorDelegate.h"
-#import "ScrollToTopDetectionViewDelegate.h"
-#import "MessagesListModelObserver.h"
-#import "UIGestureRecognizerDelegate.h"
-#import "RecordPanelDelegate.h"
-#import "vkclient-Structs.h"
-#import "UsersModelObserver.h"
 #import "LayoutAwareViewDelegate.h"
-#import "VKMTableController.h"
-#import "VKSelectorDropdownPresentationDelegate.h"
+#import "RecordPanelDelegate.h"
 #import "ExtraInputPanelViewDelegate.h"
+#import "UsersModelObserver.h"
+#import "VKClient-Structs.h"
+#import "UITextViewDelegate.h"
+#import "UIGestureRecognizerDelegate.h"
+#import "UIPopoverPresentationControllerDelegate.h"
+#import "VKSelectorDropdownPresentationDelegate.h"
+#import "VKMTableController.h"
 #import "LandscapePresenterDelegate.h"
 #import "SendingModelObserver.h"
+#import "VKSelectorDelegate.h"
+#import "MessagesListModelObserver.h"
+#import "ScrollToTopDetectionViewDelegate.h"
 
-@class RootView, NSString, NSArray, Component5HostView, NSMutableDictionary, ChatListModel, ScrollToTopDetectionView, UIBarButtonItem, StatsRef, WrapAttachmentsLayout, RecordExtraInputPanelView, VKMImageButton, NSNumber, LayoutAwareView, LandscapePresenter, UIView, NSMutableArray, UIButton, VKSelectorDropdownPresentation, UIImageView, SendingModel;
+@class NSMutableDictionary, StatsRef, UIButton, WrapAttachmentsLayout, RootView, NSNumber, VKSelectorDropdownPresentation, NSMutableArray, SendingModel, ChatListModel, UIBarButtonItem, Component5HostView, NSArray, VKMImageButton, UIView, LayoutAwareView, NSString, RecordExtraInputPanelView, LandscapePresenter, ScrollToTopDetectionView;
 
 __attribute__((visibility("hidden")))
 @interface ChatController : VKMTableController <UITextViewDelegate, ExtraInputPanelViewDelegate, UIPopoverPresentationControllerDelegate, LayoutAwareViewDelegate, UIGestureRecognizerDelegate, LandscapePresenterDelegate, VKSelectorDelegate, VKSelectorDropdownPresentationDelegate, RecordPanelDelegate, SendingModelObserver, UsersModelObserver, ScrollToTopDetectionViewDelegate, MessagesListModelObserver> {
@@ -52,10 +52,6 @@ __attribute__((visibility("hidden")))
 	NSMutableDictionary* _drafts;
 	NSMutableDictionary* _selected;
 	RootView* _root;
-	UIImageView* _attachmentsHost;
-	UIButton* _buttonAttachPhoto;
-	UIButton* _buttonAttachLocation;
-	UIButton* _buttonAttachOther;
 	LandscapePresenter* _landscape;
 	ScrollToTopDetectionView* _scrollToTopDetection;
 	UIView* _editToolbar;
@@ -95,11 +91,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIView* editToolbar;
 @property(retain, nonatomic) ScrollToTopDetectionView* scrollToTopDetection;
 @property(retain, nonatomic) LandscapePresenter* landscape;
-@property(retain, nonatomic) UIButton* buttonAttachOther;
-@property(retain, nonatomic) UIButton* buttonAttachLocation;
-@property(retain, nonatomic) UIButton* buttonAttachPhoto;
 @property(retain, nonatomic) RecordExtraInputPanelView* inputPanel;
-@property(retain, nonatomic) UIImageView* attachmentsHost;
 @property(retain, nonatomic) RootView* root;
 @property(readonly, retain, nonatomic) NSMutableDictionary* selected;
 @property(readonly, retain, nonatomic) NSMutableDictionary* drafts;
@@ -107,6 +99,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) NSMutableArray* typing;
 @property(readonly, retain, nonatomic) SendingModel* sending;
 +(void)muteChatWithId:(id)anId time:(int)time session:(id)session success:(id)success failure:(id)failure;
+-(void).cxx_destruct;
 -(void)selectorDidChangeOptions:(id)selector;
 -(void)selector:(id)selector didSelectOption:(id)option;
 -(void)landscapePresenterDidCompleteRotation:(id)landscapePresenter;
@@ -164,18 +157,15 @@ __attribute__((visibility("hidden")))
 -(void)pendingRemoved:(id)removed;
 -(void)pendingUpdated:(id)updated reload:(id)reload;
 -(void)pendingAdded:(id)added;
--(void)selectedAdditionalUser:(id)user;
 -(id)extraInputPanelStickersGiftContext:(id)context;
 -(void)extraInputPanelViewDidAttemptToSend:(id)extraInputPanelView;
 -(void)extraInputPanelView:(id)view didSelectSticker:(id)sticker referrerContext:(id)context shouldClearText:(BOOL)text;
 -(void)sendImmediatelyAttachs:(id)attachs;
 -(void)send:(id)send;
 -(id)createVideoUploadContextWithAsset:(id)asset;
--(BOOL)checkCanAttachLocation;
 -(id)attachedLocation;
 -(void)toggle:(id)toggle;
 -(void)toggleModernWithSender:(id)sender;
--(BOOL)attachVideoInPicker;
 -(void)gestureAttachmentsTapped:(id)tapped;
 -(void)becomeFirstResponderAfterAttach;
 -(void)notificationAttachmentsUpdated:(id)updated;
@@ -212,7 +202,6 @@ __attribute__((visibility("hidden")))
 -(void)animate:(double)animate options:(unsigned)options;
 -(void)VKMControllerChromeInsetsApply;
 -(void)scrollToBottom:(BOOL)bottom;
--(int)tableState;
 -(void)scrollToTopDetectionViewDidScrollToTop:(id)scrollToTopDetectionView;
 -(void)updateEditSelected;
 -(void)updateEditingState:(BOOL)state;

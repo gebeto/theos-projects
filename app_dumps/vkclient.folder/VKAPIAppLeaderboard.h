@@ -27,8 +27,8 @@ __attribute__((visibility("hidden")))
 +(unsigned)leaderboardTypeFromString:(id)string;
 +(id)stringifyLeaderboardType:(unsigned)type;
 +(void)initialize;
+-(void).cxx_destruct;
 -(Class)cellClass;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

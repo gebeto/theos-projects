@@ -16,9 +16,9 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSMutableArray* stock;
 @property(assign, nonatomic) int renderStyle;
+-(void).cxx_destruct;
 -(id)updatedIndex:(id)index data:(id)data context:(id)context;
 -(id)requestForContext:(id)context;
 -(id)withRenderStyle:(int)renderStyle;
--(void)dealloc;
 @end
 

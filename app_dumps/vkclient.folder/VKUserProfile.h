@@ -22,8 +22,8 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int age;
 @property(retain, nonatomic) NSString* photo_big;
 @property(retain, nonatomic) VKUser* user;
+-(void).cxx_destruct;
 -(id)safeProfilePhoto;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

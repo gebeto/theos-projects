@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKMStoreUpdateData, MessagesUpdate;
+@class MessagesUpdate, VKMStoreUpdateData;
 
 __attribute__((visibility("hidden")))
 @interface VKMStoreLPSContext : XXUnknownSuperclass {
@@ -16,6 +16,6 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) MessagesUpdate* update;
 @property(retain, nonatomic) VKMStoreUpdateData* data;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

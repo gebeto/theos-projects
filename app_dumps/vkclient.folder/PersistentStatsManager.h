@@ -15,6 +15,7 @@ __attribute__((visibility("hidden")))
 	NSURL* _url;
 }
 @property(retain, nonatomic) NSURL* url;
+-(void).cxx_destruct;
 -(void)notificaitonResignActive:(id)active;
 -(void)persistIfNeeded;
 -(void)submittedData:(id)data success:(BOOL)success;

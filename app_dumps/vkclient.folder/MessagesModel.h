@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "StoreUpdateModel.h"
 #import "ModelUpdateHandler.h"
+#import "StoreUpdateModel.h"
 
-@class NSMutableSet, DialogsListModel, NSMutableDictionary, NSString, ActivityModel, UsersModel;
+@class NSMutableDictionary, ActivityModel, UsersModel, NSString, NSMutableSet, DialogsListModel;
 
 __attribute__((visibility("hidden")))
 @interface MessagesModel : StoreUpdateModel <ModelUpdateHandler> {
@@ -32,6 +32,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) NSMutableSet* readQueue;
 @property(readonly, retain, nonatomic) NSMutableDictionary* sending;
 @property(readonly, retain, nonatomic) NSMutableDictionary* chats;
+-(void).cxx_destruct;
 -(void)clearSendingForDialog:(id)dialog;
 -(id)sendingForDialog:(id)dialog;
 -(void)unregisterChatModel:(id)model;

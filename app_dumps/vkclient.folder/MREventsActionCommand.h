@@ -7,7 +7,7 @@
 
 #import "MRAsyncCommand.h"
 
-@class MRTrackerParams, NSString, MRTrackerDBHelper;
+@class MRTrackerDBHelper, MRTrackerParams, NSString;
 
 @interface MREventsActionCommand : MRAsyncCommand {
 	MRTrackerDBHelper* _dbHelper;

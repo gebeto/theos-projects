@@ -14,7 +14,7 @@ __attribute__((visibility("hidden")))
 	NSString* _query;
 }
 @property(retain, nonatomic) NSString* query;
+-(void).cxx_destruct;
 -(void)spawnCopy:(id)copy;
--(void)dealloc;
 @end
 

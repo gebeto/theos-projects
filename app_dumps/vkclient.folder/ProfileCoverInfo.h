@@ -16,7 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSArray* images;
 @property(assign, nonatomic) BOOL enabled;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

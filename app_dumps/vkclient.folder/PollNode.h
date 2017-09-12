@@ -7,7 +7,7 @@
 
 #import "Component5Node.h"
 
-@class TextComponent, TextStyle, NSArray;
+@class TextStyle, TextComponent, NSArray;
 
 __attribute__((visibility("hidden")))
 @interface PollNode : Component5Node {

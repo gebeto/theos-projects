@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSMutableArray, NSMutableDictionary, NSString;
+@class NSMutableDictionary, NSMutableArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKRequestBuilder : XXUnknownSuperclass {
@@ -26,7 +26,7 @@ __attribute__((visibility("hidden")))
 +(id)source:(id)source fieldsUser:(id)user fieldsGroup:(id)group nameCase:(id)aCase;
 +(id)builderWithRequest:(id)request;
 +(id)builder;
--(id)buildWithKeyValuePairsUntilMarker:(void*)keyValuePairsUntilMarker;
+-(void).cxx_destruct;
 -(void)setObject:(id)object forKeyedSubscript:(id)keyedSubscript;
 -(id)version:(int)version;
 -(id)addExtended;
@@ -36,6 +36,7 @@ __attribute__((visibility("hidden")))
 -(id)typeIdentity:(id)identity;
 -(id)fields:(id)fields;
 -(id):(id)arg1 text:(id)text;
+-(id)trackCode:(id)code;
 -(id)accessKey:(id)key;
 -(id)ownerSource:(id)source;
 -(id)owner:(id)owner;
@@ -54,6 +55,5 @@ __attribute__((visibility("hidden")))
 -(id)buildCodeFormat:(id)format;
 -(id)build;
 -(id)build:(id)build;
--(void)dealloc;
 @end
 

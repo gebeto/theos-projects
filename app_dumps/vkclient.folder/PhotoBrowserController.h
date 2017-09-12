@@ -7,13 +7,13 @@
 
 #import "NavWindowPresenterController.h"
 #import "PhotoHostViewDelegate.h"
-#import "vkclient-Structs.h"
-#import "VKMController.h"
-#import "UIScrollViewDelegate.h"
-#import "UIGestureRecognizerDelegate.h"
 #import "LayoutAwareViewDelegate.h"
+#import "UIGestureRecognizerDelegate.h"
+#import "VKClient-Structs.h"
+#import "UIScrollViewDelegate.h"
+#import "VKMController.h"
 
-@class UILabel, UIScrollView, UIToolbar, UIPanGestureRecognizer, UIBarButtonItem, PhotoHostView, UIButton, NSString, PhotoBrowsingModel, UITapGestureRecognizer, UIImageView, Component5HostView, LayoutAwareView, NSArray, NavWindowPresenter;
+@class UIBarButtonItem, PhotoHostView, PhotoBrowsingModel, UITapGestureRecognizer, Component5HostView, UIButton, UILabel, UIScrollView, UIImageView, NavWindowPresenter, NSString, UIPanGestureRecognizer, UIToolbar, LayoutAwareView, NSArray;
 @protocol VKImage;
 
 __attribute__((visibility("hidden")))
@@ -71,6 +71,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIScrollView* paging;
 @property(retain, nonatomic) LayoutAwareView* rootView;
 @property(retain, nonatomic) NSArray* photos;
+-(void).cxx_destruct;
+-(id)VKMControllerStatsRef;
 -(void)photoHost:(id)host didPlayGif:(id)gif;
 -(void)photoHostViewDidZoom:(id)photoHostView;
 -(void)notificationWillResignActive:(id)notification;

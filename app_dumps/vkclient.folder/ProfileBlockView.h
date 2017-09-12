@@ -19,8 +19,8 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int block;
 @property(retain, nonatomic) UILabel* label;
 +(id)profileBlockFor:(int)aFor;
+-(void).cxx_destruct;
 -(id)accessibilityLabel;
 -(void)renderCount:(int)count;
--(void)dealloc;
 @end
 

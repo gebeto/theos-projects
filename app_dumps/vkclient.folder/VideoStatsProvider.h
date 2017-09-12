@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import <XXUnknownSuperclass.h> // Unknown library
 #import "TimerTargetDelegate.h"
+#import <XXUnknownSuperclass.h> // Unknown library
 
-@class TimerTarget, MPMoviePlayerController, NSString, NSURLSession;
+@class TimerTarget, NSURLSession, MPMoviePlayerController, NSString;
 @protocol VideoStatsContextDelegate;
 
 __attribute__((visibility("hidden")))
@@ -41,13 +41,14 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(copy, nonatomic) NSString* host;
 @property(retain, nonatomic) MPMoviePlayerController* moviePlayer;
-@property(assign, nonatomic) id<VideoStatsContextDelegate> delegate;
+@property(assign, nonatomic) __weak id<VideoStatsContextDelegate> delegate;
 @property(assign, nonatomic) BOOL isQualityAdviserSupported;
 @property(assign, nonatomic) BOOL isQualityAdvised;
 @property(retain, nonatomic) NSURLSession* urlSession;
 @property(copy, nonatomic) NSString* vigoUserId;
 @property(copy, nonatomic) NSString* clientId;
 @property(retain, nonatomic) TimerTarget* vsTimer;
+-(void).cxx_destruct;
 -(void)processStatsURL:(id)url withResultBlock:(id)resultBlock;
 -(void)processStatsURL:(id)url;
 -(void)VSTimerCallback;

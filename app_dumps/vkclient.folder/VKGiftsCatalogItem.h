@@ -7,7 +7,7 @@
 
 #import "VKDomain.h"
 
-@class VKGift, NSString, NSNumber, VKGiftsContext;
+@class VKGiftsContext, VKGift, NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKGiftsCatalogItem : VKDomain {
@@ -30,8 +30,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* price_str;
 @property(retain, nonatomic) NSNumber* price;
 @property(retain, nonatomic) VKGift* gift;
+-(void).cxx_destruct;
 -(Class)cellClass;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

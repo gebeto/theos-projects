@@ -15,8 +15,8 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSCache* cache;
 +(id)provider;
+-(void).cxx_destruct;
 -(id)executeNamed:(id)named;
 -(id)init;
--(void)dealloc;
 @end
 

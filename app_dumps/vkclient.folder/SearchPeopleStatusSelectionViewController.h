@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "VKMTableController.h"
+#import "VKClient-Structs.h"
 
 @protocol SearchPeopleStatusSelectionViewControllerDelegate;
 
@@ -18,7 +18,8 @@ __attribute__((visibility("hidden")))
 }
 @property(assign, nonatomic) int sex;
 @property(assign, nonatomic) int selectedStatus;
-@property(assign, nonatomic) id<SearchPeopleStatusSelectionViewControllerDelegate> delegate;
+@property(assign, nonatomic) __weak id<SearchPeopleStatusSelectionViewControllerDelegate> delegate;
+-(void).cxx_destruct;
 -(void)tableView:(id)view didSelectRowAtIndexPath:(id)indexPath;
 -(id)tableView:(id)view cellForRowAtIndexPath:(id)indexPath;
 -(int)tableView:(id)view numberOfRowsInSection:(int)section;

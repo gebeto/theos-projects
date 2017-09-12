@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UIView, UIButton, UIImageView;
+@class UIButton, UIView, UIImageView;
 
 __attribute__((visibility("hidden")))
 @interface VMPushToTalkThumbView : XXUnknownSuperclass {

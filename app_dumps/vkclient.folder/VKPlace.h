@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "VKDomain.h"
-#import "vkclient-Structs.h"
 #import "VKPlaceDescription.h"
+#import "VKDomain.h"
+#import "VKClient-Structs.h"
 #import "MKAnnotation.h"
 
 @class NSNumber, NSString;
@@ -38,11 +38,11 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSNumber* group_id;
 @property(retain, nonatomic) NSString* fullTitle;
 @property(copy, nonatomic) NSString* title;
+-(void).cxx_destruct;
 -(id)placeDescription;
 -(id)placeTitle;
 -(id)descriptionVariantAtIndex:(unsigned)index;
 -(BOOL)process:(id)process context:(id)context;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

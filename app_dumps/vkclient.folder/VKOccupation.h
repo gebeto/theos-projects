@@ -7,7 +7,7 @@
 
 #import "VKDomain.h"
 
-@class NSString, VKGroup, NSNumber;
+@class VKGroup, NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKOccupation : VKDomain {
@@ -20,7 +20,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKGroup* occupation_group;
 @property(assign, nonatomic) int type;
 @property(retain, nonatomic) NSNumber* id;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class UIImage, UIImageView;
@@ -16,9 +16,9 @@ __attribute__((visibility("hidden")))
 }
 @property(copy, nonatomic) UIImage* image;
 @property(readonly, retain, nonatomic) UIImageView* imageView;
+-(void).cxx_destruct;
 -(void)prepareForReuse;
 -(id)createSubviews;
--(void)dealloc;
 -(id)initWithFrame:(CGRect)frame;
 @end
 

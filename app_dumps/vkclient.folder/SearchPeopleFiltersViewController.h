@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "SearchPeopleStatusSelectionViewControllerDelegate.h"
 #import "VKMTableController.h"
+#import "VKClient-Structs.h"
 
-@class SearchPeopleModel, NSString, SearchPeopleFiltersLoadingView, NSNumber;
+@class SearchPeopleModel, NSNumber, NSString, SearchPeopleFiltersLoadingView;
 
 __attribute__((visibility("hidden")))
 @interface SearchPeopleFiltersViewController : VKMTableController <SearchPeopleStatusSelectionViewControllerDelegate> {
@@ -25,6 +25,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSNumber* initialResultsCount;
 @property(retain, nonatomic) SearchPeopleFiltersLoadingView* loadingView;
 @property(assign, nonatomic) BOOL ageFilterEnabled;
+-(void).cxx_destruct;
 -(void)modelLoadingChanged:(id)changed;
 -(void)VKMTableDiscovered:(id)discovered cell:(id)cell;
 -(void)model:(id)model updated:(id)updated;
@@ -54,6 +55,5 @@ __attribute__((visibility("hidden")))
 -(UIEdgeInsets)VKMControllerChromeInsetsAdjust:(UIEdgeInsets)adjust;
 -(void)viewDidLoad;
 -(void)loadView;
--(void)dealloc;
 @end
 

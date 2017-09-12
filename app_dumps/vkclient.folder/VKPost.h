@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKSourceStatus.h"
-#import "vkclient-Structs.h"
 #import "VKDomain.h"
 #import "VKThumbnailable.h"
 
-@class VKText, VKGeo, VKAttachments, NSString, VKIdentity, NSNumber, VKAdData, VKPostSource, NSArray;
+@class VKGeo, VKAdData, VKIdentity, VKAttachments, VKPostSource, VKText, NSNumber, NSString, NSArray;
 @protocol VKSource;
 
 __attribute__((visibility("hidden")))
@@ -79,6 +79,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) unsigned date;
 @property(retain, nonatomic) NSNumber* from_id;
 +(void)initialize;
+-(void).cxx_destruct;
 -(void)updatePinned:(BOOL)pinned;
 -(void)acceptSources:(id)sources;
 -(void)offsetComments:(int)comments;
@@ -92,7 +93,6 @@ __attribute__((visibility("hidden")))
 -(id)thumbnailUrl;
 -(BOOL)process:(id)process context:(id)context;
 -(void)domainOnEditCopy:(id)copy;
--(void)dealloc;
 -(BOOL)canBeUsedAsInitialForDetail;
 @end
 

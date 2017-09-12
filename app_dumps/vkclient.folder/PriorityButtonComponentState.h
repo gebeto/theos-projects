@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UIFont, UIColor, UIImage, NSString;
+@class ActionButtonProperties, NSString;
 @protocol TapableComponentHandler;
 
 __attribute__((visibility("hidden")))
@@ -15,15 +15,9 @@ __attribute__((visibility("hidden")))
 	unsigned _priority;
 	NSString* _title;
 	id<TapableComponentHandler> _handler;
-	UIImage* _backgroundImage;
-	UIImage* _highlightedBackgroundImage;
-	UIColor* _titleColor;
-	UIFont* _titleFont;
+	ActionButtonProperties* _properties;
 }
-@property(readonly, assign, nonatomic) UIFont* titleFont;
-@property(readonly, assign, nonatomic) UIColor* titleColor;
-@property(readonly, assign, nonatomic) UIImage* highlightedBackgroundImage;
-@property(readonly, assign, nonatomic) UIImage* backgroundImage;
+@property(readonly, assign, nonatomic) ActionButtonProperties* properties;
 @property(readonly, assign, nonatomic) __weak id<TapableComponentHandler> handler;
 @property(readonly, copy, nonatomic) NSString* title;
 @property(readonly, assign, nonatomic) unsigned priority;

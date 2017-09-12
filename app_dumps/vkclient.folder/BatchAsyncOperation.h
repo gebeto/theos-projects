@@ -18,6 +18,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) AsyncOperation* currentOperation;
 @property(retain, nonatomic) NSArray* operations;
 +(id)operations:(id)operations;
+-(void).cxx_destruct;
 -(void)cancel;
 -(void)runAsync;
 -(void)runCurrent;

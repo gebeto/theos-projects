@@ -14,12 +14,12 @@ __attribute__((visibility("hidden")))
 	NSMutableArray* _audios;
 }
 @property(retain, nonatomic) NSMutableArray* audios;
+-(void).cxx_destruct;
 -(id)items;
 -(unsigned)count;
 -(BOOL)contains:(id)contains;
 -(void)remove:(id)remove;
 -(void)add:(id)add;
 -(id)init;
--(void)dealloc;
 @end
 

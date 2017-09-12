@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSString, NSNumber;
+@class NSNumber, NSString;
 
 @interface MTRGVastCompanion : XXUnknownSuperclass {
 	NSNumber* _width;

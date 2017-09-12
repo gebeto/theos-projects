@@ -7,12 +7,12 @@
 
 #import "ModelActionAdd.h"
 
-@class VKComment, NSDictionary, VKStickerReferrerContext, NSNumber, VKIdentity;
+@class VKStickerReferrerContext, VKIdentity, VKComment, NSNumber, NSDictionary;
 
 __attribute__((visibility("hidden")))
 @interface ModelActionAddComment : ModelActionAdd {
-	BOOL _from_group;
 	VKIdentity* _parentIdentity;
+	NSNumber* _from_group;
 	NSDictionary* _result;
 	NSNumber* _guid;
 	VKStickerReferrerContext* _stickerReferrerContext;
@@ -20,13 +20,13 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKStickerReferrerContext* stickerReferrerContext;
 @property(retain, nonatomic) NSNumber* guid;
 @property(retain, nonatomic) NSDictionary* result;
-@property(assign, nonatomic) BOOL from_group;
+@property(assign, nonatomic) NSNumber* from_group;
 @property(retain, nonatomic) VKIdentity* parentIdentity;
 @property(retain, nonatomic) VKComment* target;
 +(int)domainType;
+-(void).cxx_destruct;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
 -(id)singleSticker;
--(void)dealloc;
 @end
 

@@ -17,8 +17,8 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) NSDictionary* eventsMap;
 @property(readonly, retain, nonatomic) NSString* iden;
 +(id)iden:(id)iden events:(id)events;
+-(void).cxx_destruct;
 -(id)urlsForEvent:(int)event;
 -(id)initWithIden:(id)iden events:(id)events;
--(void)dealloc;
 @end
 

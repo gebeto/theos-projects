@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "NSObject.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "NSObject.h"
 #import "VKRequestValue.h"
 
 @class NSString;
@@ -32,8 +32,8 @@ __attribute__((visibility("hidden")))
 +(id)boolean:(BOOL)boolean;
 +(id)number:(id)number;
 +(id)value:(id)value type:(int)type;
+-(void).cxx_destruct;
 -(id)code;
 -(id)initWithValue:(id)value type:(int)type;
--(void)dealloc;
 @end
 

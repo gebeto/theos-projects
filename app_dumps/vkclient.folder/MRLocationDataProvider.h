@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "MRAbstractDataProvider.h"
 #import "CLLocationManagerDelegate.h"
+#import "MRAbstractDataProvider.h"
 
-@class CLLocationManager, NSString, NSNumber;
+@class CLLocationManager, NSNumber, NSString;
 
 @interface MRLocationDataProvider : MRAbstractDataProvider <CLLocationManagerDelegate> {
 	CLLocationManager* _locationManager;

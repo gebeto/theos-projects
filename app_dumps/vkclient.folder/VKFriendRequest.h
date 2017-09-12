@@ -7,7 +7,7 @@
 
 #import "VKDomain.h"
 
-@class NSDictionary, VKText, VKUser, NSString, NSArray;
+@class VKText, VKUser, NSDictionary, NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKFriendRequest : VKDomain {
@@ -30,8 +30,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKText* message;
 @property(retain, nonatomic) NSString* info;
 @property(retain, nonatomic) VKUser* user;
+-(void).cxx_destruct;
 -(id)iden;
 -(Class)rendererClass;
--(void)dealloc;
 @end
 

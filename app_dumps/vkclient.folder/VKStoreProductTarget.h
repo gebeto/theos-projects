@@ -7,7 +7,7 @@
 
 #import "VKRenderable.h"
 
-@class VKStoreProductStickerReferrerContext, NSNumber, NSString, VKIdentity;
+@class VKIdentity, NSNumber, VKStoreProductStickerReferrerContext, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKStoreProductTarget : VKRenderable {
@@ -23,6 +23,6 @@ __attribute__((visibility("hidden")))
 +(id)targetForSomeStickerId:(id)someStickerId;
 +(id)targetForStickerProductName:(id)stickerProductName;
 +(id)targetForIdentity:(id)identity;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

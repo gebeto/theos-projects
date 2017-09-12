@@ -14,7 +14,7 @@ __attribute__((visibility("hidden")))
 }
 @property(copy, nonatomic) id block;
 +(id)block:(id)block;
+-(void).cxx_destruct;
 -(void)runInContext:(id)context;
--(void)dealloc;
 @end
 

@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "StatsManagerDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "StatsManagerDelegate.h"
 
-@class ViewPostStatsManager, AdsStatsManager, NotificationsManager, VKClient, CommonStatsManager, VKConnectivityState, StickersRecentModel, VKOnlineStore, VKStats, VKPushSettings, VKGroupState, VideoUploadManager, ActivityModel, NSNumber, NSString, NSArray, StoreStockManager, ExternalAdsStatsManager, VKDB, VKMStore, NSURL;
+@class StoreStockManager, ViewPostStatsManager, CommonStatsManager, ActivityModel, NSURL, AdsStatsManager, VKDB, VKGroupState, VKConnectivityState, VKClient, ExternalAdsStatsManager, VKStats, VKMStore, VKPushSettings, VideoUploadManager, VKOnlineStore, NSNumber, NSArray, NSString, StickersRecentModel, NotificationsManager;
 
 __attribute__((visibility("hidden")))
 @interface VKSession : XXUnknownSuperclass <StatsManagerDelegate> {
@@ -83,6 +83,7 @@ __attribute__((visibility("hidden")))
 +(void)store:(id)store;
 +(id)sessionWithUserId:(id)userId andToken:(id)token;
 +(BOOL)open:(id)open;
+-(void).cxx_destruct;
 -(void)statsManager:(id)manager didRegisterEvent:(id)event;
 -(void)setSessionUser:(id)user;
 -(void)trackAuthEventForUser:(id)user withType:(int)type;
@@ -94,14 +95,14 @@ __attribute__((visibility("hidden")))
 -(BOOL)isOwner:(id)owner;
 -(void)dealloc;
 -(id)initWithUserId:(id)userId andToken:(id)token;
+-(BOOL)routeFeedAds:(id)ads;
+-(BOOL)routeFeedAds:(id)ads item:(id)item;
+-(BOOL)routeFeedAds:(id)ads item:(id)item card:(id)card;
 -(BOOL)routeToActivity:(id)activity context:(int)context;
 -(BOOL)routeToRequest:(id)request context:(int)context;
 -(BOOL)routeToApp:(id)app url:(id)url source:(id)source context:(int)context;
 -(BOOL)routeToAppId:(id)appId platfromId:(id)anId installed:(BOOL)installed installUrl:(id)url url:(id)url5 source:(id)source requestName:(id)name context:(int)context;
 -(void)openAppStoreForProductId:(id)productId source:(id)source;
--(BOOL)routeFeedAds:(id)ads;
--(BOOL)routeFeedAds:(id)ads item:(id)item;
--(BOOL)routeFeedAds:(id)ads item:(id)item card:(id)card;
 -(BOOL)routeSnapper:(id)snapper;
 @end
 

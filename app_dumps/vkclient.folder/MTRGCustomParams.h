@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSMutableDictionary, NSString, NSNumber;
+@class NSMutableDictionary, NSNumber, NSString;
 
 @interface MTRGCustomParams : XXUnknownSuperclass {
 	NSMutableDictionary* _customParams;

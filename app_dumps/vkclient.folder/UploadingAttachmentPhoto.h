@@ -6,10 +6,10 @@
  */
 
 #import "VKPhoto.h"
+#import "VKClient-Structs.h"
 #import "VKUploadingImage.h"
-#import "vkclient-Structs.h"
 
-@class UploadEditAttachment, NSMutableDictionary, NSString;
+@class NSMutableDictionary, NSString, UploadEditAttachment;
 
 __attribute__((visibility("hidden")))
 @interface UploadingAttachmentPhoto : VKPhoto <VKUploadingImage> {
@@ -23,6 +23,6 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) UploadEditAttachment* attachment;
 +(id)withAttachment:(id)attachment;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

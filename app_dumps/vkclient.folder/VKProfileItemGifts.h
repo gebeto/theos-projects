@@ -17,6 +17,6 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int total;
 @property(retain, nonatomic) NSArray* gifts;
 +(id)gifts:(id)gifts total:(int)total;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

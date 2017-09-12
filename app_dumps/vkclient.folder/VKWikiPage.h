@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "VKTextPage.h"
-#import "VKChildDomain.h"
 #import "VKDomain.h"
 #import "VKAttachment.h"
+#import "VKChildDomain.h"
+#import "VKTextPage.h"
 
 @class VKIdentity, NSString;
 
@@ -27,6 +27,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* title;
 +(id)ownerId:(id)anId pageId:(id)anId2;
 +(id)title:(id)title ownerId:(id)anId;
+-(void).cxx_destruct;
 -(id)attachmentButtonTitle;
 -(id)attachmentIco;
 -(id)attachmentImage;
@@ -36,6 +37,5 @@ __attribute__((visibility("hidden")))
 -(id)URLForTextPage;
 -(BOOL)process:(id)process context:(id)context;
 -(Class)rendererClass;
--(void)dealloc;
 @end
 

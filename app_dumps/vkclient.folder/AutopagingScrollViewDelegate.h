@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "UIScrollViewDelegate.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
+#import "UIScrollViewDelegate.h"
 
 @class NSString;
 
@@ -20,6 +20,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 @property(readonly, assign, nonatomic) id<UIScrollViewDelegate> underlyingDelegate;
+-(void).cxx_destruct;
 -(void)resumeAutopagingIfEnabledWithScrollView:(id)scrollView;
 -(void)scrollViewDidEndDecelerating:(id)scrollView;
 -(void)scrollViewDidEndDragging:(id)scrollView willDecelerate:(BOOL)decelerate;

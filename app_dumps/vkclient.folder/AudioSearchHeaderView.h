@@ -14,8 +14,8 @@ __attribute__((visibility("hidden")))
 	UIButton* _button;
 }
 @property(retain, nonatomic) UIButton* button;
+-(void).cxx_destruct;
 -(void)layoutSubviews;
 -(id)initWithReuseIdentifier:(id)reuseIdentifier;
--(void)dealloc;
 @end
 

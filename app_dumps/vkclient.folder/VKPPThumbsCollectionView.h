@@ -5,14 +5,14 @@
  * Source: (null)
  */
 
-#import "UICollectionViewDelegate.h"
+#import "VKClient-Structs.h"
 #import "UIGestureRecognizerDelegate.h"
-#import "vkclient-Structs.h"
-#import "UICollectionViewDataSource.h"
-#import "VKPPAssetPresenter.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKPPAssetPresenter.h"
+#import "UICollectionViewDelegate.h"
+#import "UICollectionViewDataSource.h"
 
-@class VKPPModel, NSMutableSet, NSString;
+@class VKPPModel, NSString, NSMutableSet;
 
 @interface VKPPThumbsCollectionView : XXUnknownSuperclass <UIGestureRecognizerDelegate, UICollectionViewDelegate, UICollectionViewDataSource, VKPPAssetPresenter> {
 	CGSize assetGridThumbnailSize;

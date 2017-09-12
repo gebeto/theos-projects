@@ -18,7 +18,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSDictionary* requestsUidsToPhotos;
 @property(retain, nonatomic) NSArray* requestsPhotosArray;
 @property(assign, nonatomic) unsigned requestsCount;
+-(void).cxx_destruct;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

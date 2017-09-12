@@ -29,7 +29,6 @@ __attribute__((visibility("hidden")))
 +(id)trimmedSendText:(id)text;
 +(id)mentionForSource:(id)source;
 +(id)mentionForUser:(id)user;
-+(id)executeString:(id)string;
 +(id)sendingBodyForText:(id)text;
 +(id)sendingBodyForRawText:(id)rawText;
 +(id)urlSchemeForAppId:(id)appId;
@@ -42,7 +41,7 @@ __attribute__((visibility("hidden")))
 +(id)dropTime:(id)time;
 +(id)dropYear:(id)year;
 +(BOOL)isServiceVKURL:(id)vkurl;
-+(id)safeBrowserURL:(id)url ref:(id)ref token:(id)token;
++(id)safeBrowserURL:(id)url ref:(id)ref;
 +(id)safeBrowserURL:(id)url;
 +(id)passwordRestoreURL;
 +(BOOL)isVKURLDomain:(id)domain;
@@ -53,6 +52,7 @@ __attribute__((visibility("hidden")))
 +(id)VKURLForSourceId:(int)sourceId;
 +(id)VKShortURLForScreenName:(id)screenName;
 +(id)VKURLForScreenName:(id)screenName;
++(id)sourceIDFromURL:(id)url;
 +(void)setup;
 @end
 

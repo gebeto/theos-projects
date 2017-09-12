@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "VKComment.h"
 #import "VKSourceStatus.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
+#import "VKComment.h"
 
 @class NSString;
 

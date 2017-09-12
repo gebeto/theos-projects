@@ -7,7 +7,7 @@
 
 #import "NSObject.h"
 
-@class VKDomain, UIImage;
+@class UIImage, VKDomain;
 @protocol VKThumbnailable;
 
 @protocol VKThumbnailView <NSObject>

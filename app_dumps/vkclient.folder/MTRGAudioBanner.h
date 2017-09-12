@@ -7,7 +7,7 @@
 
 #import "MTRGBanner.h"
 
-@class MTRGAudioData, NSMutableArray, NSString, NSArray;
+@class NSMutableArray, MTRGAudioData, NSArray, NSString;
 
 @interface MTRGAudioBanner : MTRGBanner {
 	NSMutableArray* _companionBanners;

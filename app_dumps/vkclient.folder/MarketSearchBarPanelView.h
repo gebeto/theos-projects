@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "UISearchBarDelegate.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "UISearchBarDelegate.h"
 
-@class UISearchBar, UIView, NSMutableArray, MultitappedSegmentedControl, UIButton, UITextField, NSString;
+@class UIButton, NSMutableArray, UISearchBar, UITextField, UIView, NSString, MultitappedSegmentedControl;
 @protocol MarketSearchBarPanelDelegate;
 
 __attribute__((visibility("hidden")))
@@ -29,10 +29,11 @@ __attribute__((visibility("hidden")))
 @property(readonly, copy, nonatomic) NSMutableArray* options;
 @property(readonly, retain, nonatomic) UIButton* searchBarCancelButton;
 @property(readonly, retain, nonatomic) UITextField* searchBarTextField;
-@property(readonly, assign, nonatomic) id<MarketSearchBarPanelDelegate> delegate;
+@property(readonly, assign, nonatomic) __weak id<MarketSearchBarPanelDelegate> delegate;
 @property(readonly, retain, nonatomic) UIView* separator;
 @property(readonly, retain, nonatomic) MultitappedSegmentedControl* searchOptionsSelector;
 @property(readonly, retain, nonatomic) UISearchBar* searchBar;
+-(void).cxx_destruct;
 -(BOOL)canResignFirstResponder;
 -(BOOL)canBecomeFirstResponder;
 -(BOOL)resignFirstResponder;
@@ -43,7 +44,6 @@ __attribute__((visibility("hidden")))
 -(void)searchBarCancelButtonClicked:(id)clicked;
 -(void)searchBarSearchButtonClicked:(id)clicked;
 -(void)searchBarTextDidEndEditing:(id)searchBarText;
--(void)dealloc;
 -(BOOL)endEditing:(BOOL)editing;
 -(void)layoutSubviews;
 -(float)separatorHeight;

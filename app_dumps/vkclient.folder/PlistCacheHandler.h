@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "ModelCacheHandler.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "ModelCacheHandler.h"
 
-@class Index, NSString, NSURL;
+@class NSURL, Index, NSString;
 
 __attribute__((visibility("hidden")))
 @interface PlistCacheHandler : XXUnknownSuperclass <ModelCacheHandler> {
@@ -27,9 +27,9 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) Index* index;
 +(id)indexFromPlistData:(id)plistData domainClass:(Class)aClass prerender:(BOOL)prerender;
 +(id)plistDataFromIndex:(id)index domainClass:(Class)aClass;
+-(void).cxx_destruct;
 -(void)_clear;
 -(void)handleUpdatedIndex:(id)index;
 -(void)loadIndex:(id)index;
--(void)dealloc;
 @end
 

@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "AudioOwnerProtocol.h"
 #import "VKGroup.h"
+#import "AudioOwnerProtocol.h"
 
 @class NSNumber, NSString;
 

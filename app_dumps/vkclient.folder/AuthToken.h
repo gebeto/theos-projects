@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
+#import <XXUnknownSuperclass.h> // Unknown library
 #import "NSObject.h"
 #import "AuthToken.h"
-#import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSString, NSNumber;
+@class NSNumber, NSString;
 
 @protocol AuthToken <NSObject>
 @property(readonly, copy, nonatomic) NSString* token;
@@ -28,7 +28,7 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) NSString* token;
 @property(retain, nonatomic) NSNumber* userID;
 +(id)authTokenWithUserID:(id)userID token:(id)token;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)initWithUserID:(id)userID token:(id)token;
 @end
 

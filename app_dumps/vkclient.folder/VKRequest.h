@@ -40,11 +40,11 @@ __attribute__((visibility("hidden")))
 +(id)searchPeopleRequestWithFilters:(id)filters parameters:(id)parameters;
 +(id)searchPeopleRequestFields;
 +(id)nearbyRequestWithParams:(id)params fields:(id)fields;
+-(void).cxx_destruct;
 -(id)buildCode;
 -(id)failure:(id)failure success:(id)success;
 -(id)success:(id)success failure:(id)failure;
 -(id)handler:(id)handler;
 -(id)description;
--(void)dealloc;
 @end
 

@@ -6,7 +6,7 @@
  */
 
 #import "BaseMarketCollectionsAdapter.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 
 @class NSArray;
 
@@ -15,6 +15,7 @@ __attribute__((visibility("hidden")))
 	NSArray* _segments;
 }
 @property(readonly, copy, nonatomic) NSArray* segments;
+-(void).cxx_destruct;
 -(void)configureCell:(id)cell withDomainItem:(id)domainItem;
 -(id)itemAtIndexPath:(id)indexPath;
 -(id)collectionsSectionHeaderForSection:(unsigned)section;
@@ -22,7 +23,6 @@ __attribute__((visibility("hidden")))
 -(id)viewForSupplementaryElementOfKind:(id)kind atIndexPath:(id)indexPath;
 -(CGSize)referenceSizeForFooterInSection:(int)section;
 -(CGSize)referenceSizeForHeaderInSection:(int)section;
--(void)dealloc;
 -(id)initWithController:(id)controller segments:(id)segments;
 @end
 

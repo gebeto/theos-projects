@@ -14,9 +14,9 @@ __attribute__((visibility("hidden")))
 	NSString* _title;
 }
 @property(copy, nonatomic) NSString* title;
+-(void).cxx_destruct;
 -(Class)cellClass;
 -(BOOL)process:(id)process context:(id)context;
 -(id)description;
--(void)dealloc;
 @end
 

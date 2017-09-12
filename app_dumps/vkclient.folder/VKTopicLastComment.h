@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKTopicComment.h"
 
 @class VKTopic;
@@ -16,7 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) VKTopic* topic;
 +(id)from:(id)from;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)initWithTopic:(id)topic;
 @end
 

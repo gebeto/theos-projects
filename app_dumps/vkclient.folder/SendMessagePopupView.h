@@ -6,10 +6,10 @@
  */
 
 #import "UITextViewDelegate.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UIToolbar, UITextView, UIBarButtonItem, UIImage, NSString, UIImageView;
+@class UIImage, UITextView, UIBarButtonItem, UIImageView, NSString, UIToolbar;
 
 __attribute__((visibility("hidden")))
 @interface SendMessagePopupView : XXUnknownSuperclass <UITextViewDelegate> {

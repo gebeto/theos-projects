@@ -30,11 +30,11 @@ __attribute__((visibility("hidden")))
 +(id)productIdWithType:(int)type apiId:(id)anId;
 +(void)parseProductId:(id)anId block:(id)block;
 +(void)initialize;
+-(void).cxx_destruct;
 -(id)storeDescription;
 -(void)writeData:(id)data;
 -(BOOL)process:(id)process context:(id)context;
 -(BOOL)isEqual:(id)equal;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

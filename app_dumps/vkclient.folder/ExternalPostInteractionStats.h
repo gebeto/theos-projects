@@ -8,7 +8,7 @@
 #import "FeedPostInteractionStats.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKPost, NSString, ExternalAdsStatsManager;
+@class VKPost, ExternalAdsStatsManager, NSString;
 
 __attribute__((visibility("hidden")))
 @interface ExternalPostInteractionStats : XXUnknownSuperclass <FeedPostInteractionStats> {
@@ -22,6 +22,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign, nonatomic) ExternalAdsStatsManager* statsManager;
 @property(readonly, assign, nonatomic) VKPost* post;
 +(id)post:(id)post statsManager:(id)manager;
+-(void).cxx_destruct;
 -(void)openImage:(id)image ref:(id)ref;
 -(void)playAudio:(id)audio ref:(id)ref;
 -(void)action:(int)action context:(id)context;
@@ -29,6 +30,5 @@ __attribute__((visibility("hidden")))
 -(void)tapSnippetButton:(id)button ref:(id)ref;
 -(void)tapSnippet:(id)snippet ref:(id)ref;
 -(id)initWithPost:(id)post statsManager:(id)manager;
--(void)dealloc;
 @end
 

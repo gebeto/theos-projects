@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKMImageButton.h"
 
 @class VKMImageLoader;
@@ -17,6 +17,7 @@ __attribute__((visibility("hidden")))
 }
 @property(assign, nonatomic) unsigned targetState;
 @property(readonly, retain, nonatomic) VKMImageLoader* loader2;
+-(void).cxx_destruct;
 -(void)reuse;
 -(void)loader:(id)loader complete:(id)complete;
 -(void)dealloc;

@@ -15,6 +15,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) id<VKTextPage> page;
 +(id)page:(id)page;
+-(void).cxx_destruct;
 -(void)reload;
 -(void)stop;
 -(void)load;
@@ -22,6 +23,5 @@ __attribute__((visibility("hidden")))
 -(id)targetURL;
 -(id)title;
 -(id)description;
--(void)dealloc;
 @end
 

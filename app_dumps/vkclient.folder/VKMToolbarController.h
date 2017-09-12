@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "VKMEditableController.h"
+#import "VKClient-Structs.h"
 
-@class UIToolbar, UISegmentedControl;
+@class UISegmentedControl, UIToolbar;
 
 __attribute__((visibility("hidden")))
 @interface VKMToolbarController : VKMEditableController {
@@ -17,6 +17,7 @@ __attribute__((visibility("hidden")))
 }
 @property(readonly, retain, nonatomic) UISegmentedControl* segment;
 @property(readonly, retain, nonatomic) UIToolbar* toolbar;
+-(void).cxx_destruct;
 -(void)update;
 -(unsigned)numberOfSegments;
 -(BOOL)isToolbarHidden;
@@ -25,6 +26,5 @@ __attribute__((visibility("hidden")))
 -(void)VKMTableUpdatedIndex;
 -(UIEdgeInsets)VKMControllerChromeInsetsAdjust:(UIEdgeInsets)adjust;
 -(void)loadView;
--(void)dealloc;
 @end
 

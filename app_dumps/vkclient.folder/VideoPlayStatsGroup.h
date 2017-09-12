@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "VideoPlayStats.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VideoPlayStats.h"
 
 @class NSString, NSArray;
 
@@ -20,6 +20,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(readonly, assign, nonatomic) NSArray* stats;
 +(id)stats:(id)stats;
+-(void).cxx_destruct;
 -(void)toggleFullscreen:(BOOL)fullscreen;
 -(void)toggleVolume:(BOOL)volume;
 -(void)progress:(double)progress;
@@ -28,6 +29,5 @@ __attribute__((visibility("hidden")))
 -(void)pause;
 -(void)play:(BOOL)play;
 -(id)initWithStats:(id)stats;
--(void)dealloc;
 @end
 

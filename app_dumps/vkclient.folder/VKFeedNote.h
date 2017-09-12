@@ -14,7 +14,7 @@ __attribute__((visibility("hidden")))
 	VKList* _notes;
 }
 @property(retain, nonatomic) VKList* notes;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

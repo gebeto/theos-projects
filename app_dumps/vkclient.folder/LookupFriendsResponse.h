@@ -20,7 +20,7 @@ __attribute__((visibility("hidden")))
 +(id)responseWithFacebookLookupResponse:(id)facebookLookupResponse;
 +(id)responseWithGmailLookupResponse:(id)gmailLookupResponse combinedWithFeed:(id)feed;
 +(id)responseWithTwitterLookupResponse:(id)twitterLookupResponse combinedWithFriends:(id)friends;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)initWithAddressBookLookupResponseWithData:(id)data combinedWithRecords:(id)records;
 -(id)initWithFacebookLookupResponse:(id)facebookLookupResponse;
 -(id)initWithGmailLookupResponse:(id)gmailLookupResponse combinedWithFeed:(id)feed;

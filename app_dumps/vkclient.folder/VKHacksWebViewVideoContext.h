@@ -16,8 +16,8 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UIWebView* webView;
 +(id)detail:(id)detail;
 +(id)contextForViewController:(id)viewController;
+-(void).cxx_destruct;
 -(void)dismiss:(id)dismiss;
 -(id)initWithWebView:(id)webView;
--(void)dealloc;
 @end
 

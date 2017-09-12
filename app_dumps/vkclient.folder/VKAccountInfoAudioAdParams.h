@@ -18,7 +18,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSArray* sections_allowed;
 @property(assign, nonatomic) int types_allowed;
 @property(assign, nonatomic) unsigned track_limit;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "VideoPlayStats.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VideoPlayStats.h"
 
-@class VKVideo, NSString, ExternalAdsStatsManager, VKAdData;
+@class VKVideo, ExternalAdsStatsManager, VKAdData, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VideoPlayExternalStats : XXUnknownSuperclass <VideoPlayStats> {
@@ -29,6 +29,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign, nonatomic) VKVideo* video;
 @property(readonly, assign, nonatomic) VKAdData* adData;
 +(id)adsStats:(id)stats video:(id)video adData:(id)data;
+-(void).cxx_destruct;
 -(void)toggleFullscreen:(BOOL)fullscreen;
 -(void)toggleVolume:(BOOL)volume;
 -(void)percent:(double)percent;
@@ -39,6 +40,5 @@ __attribute__((visibility("hidden")))
 -(void)play:(BOOL)play;
 -(void)trackEvent:(int)event;
 -(id)initWithAdsStats:(id)adsStats video:(id)video adData:(id)data;
--(void)dealloc;
 @end
 

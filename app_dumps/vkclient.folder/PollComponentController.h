@@ -7,7 +7,7 @@
 
 #import "Component5Controller.h"
 
-@class DomainEventObserver, PollComponent, PollNode;
+@class PollComponent, PollNode, DomainEventObserver;
 
 __attribute__((visibility("hidden")))
 @interface PollComponentController : Component5Controller {

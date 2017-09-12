@@ -7,8 +7,8 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSMutableArray, MainModel, NSObject, AFHTTPRequestOperation;
-@protocol VKMLoaderDelegate, OS_dispatch_queue;
+@class AFHTTPRequestOperation, NSMutableArray, MainModel, NSObject;
+@protocol OS_dispatch_queue, VKMLoaderDelegate;
 
 __attribute__((visibility("hidden")))
 @interface VKMLoader : XXUnknownSuperclass {
@@ -23,18 +23,18 @@ __attribute__((visibility("hidden")))
 	id<VKMLoaderDelegate> _delegate;
 	AFHTTPRequestOperation* _op;
 }
-@property(assign, nonatomic) id<VKMLoaderDelegate> delegate;
+@property(assign, nonatomic) __weak id<VKMLoaderDelegate> delegate;
 @property(readonly, assign, nonatomic) BOOL complete;
 @property(readonly, retain, nonatomic) MainModel* main;
 @property(retain, nonatomic) NSMutableArray* items;
 @property(retain, nonatomic) AFHTTPRequestOperation* op;
+-(void).cxx_destruct;
 -(void)cancel;
 -(void)discover:(int)discover;
 -(void)touch;
 -(void)load;
 -(id)processResultsInBackground:(id)background data:(id)data;
 -(id)requestForOffset:(int)offset count:(int)count success:(id)success failure:(id)failure;
--(void)dealloc;
 -(id)initWithMain:(id)main;
 @end
 

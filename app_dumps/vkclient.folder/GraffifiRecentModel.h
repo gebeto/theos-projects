@@ -11,7 +11,6 @@
 __attribute__((visibility("hidden")))
 @interface GraffifiRecentModel : LoadingModel {
 }
-+(void)updateBuilder:(id)builder enumerateIdentity:(id)identity withBlock:(id)block;
 -(id)countString;
 -(void)handleHideAction:(id)action :(id)arg2;
 -(void)registerForEvents:(id)events;

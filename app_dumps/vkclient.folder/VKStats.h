@@ -16,6 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSMutableDictionary* data;
 @property(readonly, retain, nonatomic) NSURL* fileUrl;
+-(void).cxx_destruct;
 -(void)checkAndStoreValue:(id)value forKey:(id)key;
 -(BOOL)richAlertStyleForKey:(id)key;
 -(int)alertStyleForKey:(id)key;

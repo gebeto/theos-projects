@@ -5,15 +5,15 @@
  * Source: (null)
  */
 
-#import "VKMController.h"
 #import "UIGestureRecognizerDelegate.h"
+#import "VKClient-Structs.h"
+#import "UIViewControllerTransitioningDelegate.h"
 #import "VKVideoPlayerHolder.h"
-#import "vkclient-Structs.h"
 #import "PanGestureDrivenDismissableTransitionViewController.h"
 #import "FullScreenVideoPlayerControlsViewDelegate.h"
-#import "UIViewControllerTransitioningDelegate.h"
+#import "VKMController.h"
 
-@class VKVideoPlayer, VideoPlayerModel, FullScreenVideoPlayerControlsView, VideoContainerView, VKVideo, NSString, KVOObserver, NSTimer, AppVolumeIndicatorView, UITapGestureRecognizer;
+@class VKVideo, KVOObserver, UITapGestureRecognizer, VideoPlayerModel, AppVolumeIndicatorView, FullScreenVideoPlayerControlsView, VKVideoPlayer, NSString, NSTimer, VideoContainerView;
 
 __attribute__((visibility("hidden")))
 @interface VideoPlayerViewController : VKMController <UIViewControllerTransitioningDelegate, FullScreenVideoPlayerControlsViewDelegate, UIGestureRecognizerDelegate, PanGestureDrivenDismissableTransitionViewController, VKVideoPlayerHolder> {
@@ -70,6 +70,7 @@ __attribute__((visibility("hidden")))
 -(void).cxx_destruct;
 -(void)modelLoadingChanged:(id)changed;
 -(void)model:(id)model updated:(id)updated;
+-(id)VKMControllerStatsRef;
 -(void)updateControlsViewWithVideo:(id)video;
 -(BOOL)gestureRecognizerShouldBegin:(id)gestureRecognizer;
 -(void)willFinishPanGestureDismissTransition;

@@ -16,11 +16,11 @@ __attribute__((visibility("hidden")))
 }
 @property(copy, nonatomic) id handler;
 @property(retain, nonatomic) NSURL* redirect_url;
+-(void).cxx_destruct;
 -(BOOL)webView:(id)view shouldStartLoadWithRequest:(id)request navigationType:(int)type;
 -(void)complete:(int)complete phone:(id)phone phoneStatus:(id)status;
 -(void)cancel;
 -(id)targetURL;
 -(id)initWithURL:(id)url handler:(id)handler;
--(void)dealloc;
 @end
 

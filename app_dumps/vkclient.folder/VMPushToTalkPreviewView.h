@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VMSessionManager, PreviewPlayerView, UIButton, VKOpusRecord;
+@class VKOpusRecord, UIButton, VMSessionManager, PreviewPlayerView;
 
 __attribute__((visibility("hidden")))
 @interface VMPushToTalkPreviewView : XXUnknownSuperclass {

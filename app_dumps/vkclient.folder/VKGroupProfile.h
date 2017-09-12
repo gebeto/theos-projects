@@ -8,7 +8,7 @@
 #import "VKDomain.h"
 #import "VKProfile.h"
 
-@class VKList, VKTopic, VKAudio, VKLiveVideoSettings, VKPlace, VKGroupAppButton, VKVideo, VKWikiPage, ProfileCoverInfo, NSString, VKGroup, NSArray;
+@class VKLiveVideoSettings, VKGroupAppButton, VKVideo, VKPlace, ProfileCoverInfo, VKAudio, VKWikiPage, VKGroup, VKTopic, VKList, NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKGroupProfile : VKDomain <VKProfile> {
@@ -101,6 +101,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKWikiPage* wiki_page;
 @property(readonly, assign, nonatomic) int profileMode;
 @property(retain, nonatomic) VKGroup* group;
+-(void).cxx_destruct;
 -(BOOL)canSuggest;
 -(void)profileBlocksForOwner:(BOOL)owner block:(id)block;
 -(void)profileUserStatus:(id)status;
@@ -109,6 +110,5 @@ __attribute__((visibility("hidden")))
 -(id)profileName;
 -(id)profilePhoto;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

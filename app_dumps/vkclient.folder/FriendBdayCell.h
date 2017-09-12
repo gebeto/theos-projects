@@ -7,7 +7,7 @@
 
 #import "VKMCell.h"
 
-@class UILabel, VKMImageView, StatContext, VKFriend, UIButton;
+@class VKFriend, UIButton, StatContext, UILabel, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface FriendBdayCell : VKMCell {
@@ -27,6 +27,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UILabel* name;
 @property(retain, nonatomic) VKMImageView* image;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)actionSendGift:(id)gift;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)prepareForReuse;

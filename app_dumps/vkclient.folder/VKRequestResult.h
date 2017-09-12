@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSDictionary, NSError, VKRequest;
+@class NSError, VKRequest, NSDictionary;
 
 __attribute__((visibility("hidden")))
 @interface VKRequestResult : XXUnknownSuperclass {
@@ -25,7 +25,7 @@ __attribute__((visibility("hidden")))
 +(id)resultWithJSONResponse:(id)jsonresponse request:(id)request;
 +(id)resultWithError:(id)error request:(id)request;
 +(id)resultWithResult:(int)result request:(id)request;
+-(void).cxx_destruct;
 -(int)resultWithExecuteErrors;
--(void)dealloc;
 @end
 

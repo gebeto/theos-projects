@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "VKDomainDerived.h"
 #import "VKAttachment.h"
+#import "VKDomainDerived.h"
 
 @class VKPost, NSString;
 

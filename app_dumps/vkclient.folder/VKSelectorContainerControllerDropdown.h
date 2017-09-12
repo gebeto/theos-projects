@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "VKSelectorDropdownPresentationDelegate.h"
 #import "VKSelectorContainerController.h"
+#import "VKSelectorDropdownPresentationDelegate.h"
 
-@class UIView, NavigationButtonView, UIViewController, NSString, VKSelectorDropdownPresentation;
+@class VKSelectorDropdownPresentation, NavigationButtonView, UIView, NSString, UIViewController;
 
 __attribute__((visibility("hidden")))
 @interface VKSelectorContainerControllerDropdown : VKSelectorContainerController <VKSelectorDropdownPresentationDelegate> {

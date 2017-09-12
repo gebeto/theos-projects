@@ -15,8 +15,8 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) VKIdentity* playlistIden;
 +(int)domainType;
+-(void).cxx_destruct;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
--(void)dealloc;
 @end
 

@@ -8,7 +8,7 @@
 #import "VKSelectorOptionViewController.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSString, VKFriendList;
+@class VKFriendList, NSString;
 
 __attribute__((visibility("hidden")))
 @interface FriendsSelectorMenuItem : XXUnknownSuperclass <VKSelectorOptionViewController> {
@@ -23,11 +23,11 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign, nonatomic) int type;
 +(id)list:(id)list;
 +(id)type:(int)type;
+-(void).cxx_destruct;
 -(id)icon;
 -(id)title;
 -(id)viewControllerWithMainModel:(id)mainModel;
 -(id)initWithList:(id)list;
 -(id)initWithType:(int)type;
--(void)dealloc;
 @end
 

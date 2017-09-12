@@ -5,18 +5,18 @@
  * Source: (null)
  */
 
-#import "VKGroupedItem.h"
+#import "VKRenderable.h"
 
 @class NSNumber;
 
 __attribute__((visibility("hidden")))
-@interface ChatEditItemPushMute : VKGroupedItem {
+@interface ChatEditItemPushMute : VKRenderable {
 	BOOL _enabled;
 	NSNumber* _disabled_until;
 }
 @property(retain, nonatomic) NSNumber* disabled_until;
 @property(assign, nonatomic) BOOL enabled;
+-(void).cxx_destruct;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

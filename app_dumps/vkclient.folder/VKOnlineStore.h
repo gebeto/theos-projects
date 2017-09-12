@@ -18,9 +18,9 @@ __attribute__((visibility("hidden")))
 @property(retain) NSDate* date;
 @property(retain) NSSet* online_mobile;
 @property(retain) NSSet* online;
+-(void).cxx_destruct;
 -(void)applyEnumerator:(id)enumerator;
 -(BOOL)fresh;
 -(void)resetOnline:(id)online mobile:(id)mobile;
--(void)dealloc;
 @end
 

@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
 @class UILabel, NSFormatter;
 
@@ -22,6 +22,7 @@
 @property(assign, nonatomic) UIEdgeInsets inset;
 +(void)initialize;
 -(void)setValue:(int)value animated:(BOOL)animated;
+-(void)setValue:(int)value animated:(BOOL)animated completion:(id)completion;
 -(void)actionTest:(id)test;
 -(void)dealloc;
 -(id)initWithImage:(id)image;

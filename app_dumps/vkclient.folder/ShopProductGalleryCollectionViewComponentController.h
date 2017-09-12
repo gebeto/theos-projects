@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "UICollectionViewComponentController.h"
-#import "vkclient-Structs.h"
 
 @class ShopProductGalleryCollectionViewComponent;
 

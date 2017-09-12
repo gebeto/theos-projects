@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "MTStatusBarOverlay.h"
-#import "vkclient-Structs.h"
 #import "NotificationHandler.h"
+#import "VKClient-Structs.h"
+#import "MTStatusBarOverlay.h"
 
 @class NSString;
 

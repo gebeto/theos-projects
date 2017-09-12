@@ -9,7 +9,7 @@
 #import <XXUnknownSuperclass.h> // Unknown library
 #import "AVAssetResourceLoaderDelegate.h"
 
-@class NSMutableData, NSMutableArray, NSHTTPURLResponse, NSObject, NSString, NSURLConnection;
+@class NSMutableArray, NSURLConnection, NSHTTPURLResponse, NSObject, NSString, NSMutableData;
 @protocol OS_dispatch_queue;
 
 __attribute__((visibility("hidden")))

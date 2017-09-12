@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
+#import <XXUnknownSuperclass.h> // Unknown library
 #import "VKSelector.h"
 #import "NSObject.h"
-#import <XXUnknownSuperclass.h> // Unknown library
 
 @class UIView, NSObject, NSString;
-@protocol VKSelectorOptionsProvider, VKSelectorOption, VKSelectorDelegate;
+@protocol VKSelectorOption, VKSelectorOptionsProvider, VKSelectorDelegate;
 
 @protocol VKSelector <NSObject>
 -(id)optionsProvider;
@@ -31,7 +31,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIView* view;
 @property(retain, nonatomic) id<VKSelectorOption> selectedOption;
 @property(retain, nonatomic) NSObject<VKSelectorOptionsProvider>* optionsProvider;
-@property(assign, nonatomic) id<VKSelectorDelegate> delegate;
+@property(assign, nonatomic) __weak id<VKSelectorDelegate> delegate;
 -(void).cxx_destruct;
 -(void)didSelectOption:(id)option;
 -(BOOL)willSelectOption:(id)option;

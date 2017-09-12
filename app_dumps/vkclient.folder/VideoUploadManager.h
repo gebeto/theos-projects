@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKSession, NSOperationQueue, NSMutableArray, NSObject;
+@class NSOperationQueue, VKSession, NSMutableArray, NSObject;
 @protocol OS_dispatch_queue;
 
 __attribute__((visibility("hidden")))
@@ -20,7 +20,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSOperationQueue* uploadOperationQueue;
 @property(retain, nonatomic) NSObject<OS_dispatch_queue>* attachQueue;
 @property(retain, nonatomic) NSMutableArray* activeUploadAttachments;
-@property(assign, nonatomic) VKSession* weakSession;
+@property(assign, nonatomic) __weak VKSession* weakSession;
+-(void).cxx_destruct;
 -(id)actionContext;
 -(void)finishUpload:(id)upload;
 -(void)loadResultVideoFor:(id)aFor;
@@ -31,6 +32,5 @@ __attribute__((visibility("hidden")))
 -(void)observeValueForKeyPath:(id)keyPath ofObject:(id)object change:(id)change context:(void*)context;
 -(void)addNewVideoUploadWithContext:(id)context;
 -(id)initWithSession:(id)session;
--(void)dealloc;
 @end
 

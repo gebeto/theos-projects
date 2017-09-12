@@ -16,8 +16,8 @@ __attribute__((visibility("hidden")))
 }
 @property(readonly, retain, nonatomic) NSPersistentStoreCoordinator* coordinator;
 @property(readonly, retain, nonatomic) NSManagedObjectModel* model;
+-(void).cxx_destruct;
 -(id)createContext;
--(void)dealloc;
 -(id)initWithModelFile:(id)modelFile andStoreURL:(id)url setNoBackup:(BOOL)backup;
 @end
 

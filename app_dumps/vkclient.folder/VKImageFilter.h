@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
+#import <XXUnknownSuperclass.h> // Unknown library
 #import "VKImageFilter.h"
-#import "vkclient-Structs.h"
 #import "NSObject.h"
 #import "VKImageFilter.h"
-#import <XXUnknownSuperclass.h> // Unknown library
 
 @class NSString;
 

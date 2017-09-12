@@ -7,7 +7,7 @@
 
 #import "MTRGAbstractDataProvider.h"
 
-@class MTRGEnvironmentDataProvider, MTRGNetworkDataProvider, MTRGLocationDataProvider, MTRGDeviceDataProvider;
+@class MTRGDeviceDataProvider, MTRGEnvironmentDataProvider, MTRGNetworkDataProvider, MTRGLocationDataProvider;
 
 @interface MTRGFingerprintDataProvider : MTRGAbstractDataProvider {
 	MTRGDeviceDataProvider* _deviceDataProvider;

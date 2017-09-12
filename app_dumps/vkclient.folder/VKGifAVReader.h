@@ -8,7 +8,7 @@
 #import "NSURLSessionDataDelegate.h"
 #import "VKGifAVWorker.h"
 
-@class NSOperationQueue, NSString, NSURLSessionTask, NSURLSession;
+@class NSOperationQueue, NSURLSessionTask, NSURLSession, NSString;
 @protocol VKGifAVReaderDelegate;
 
 __attribute__((visibility("hidden")))

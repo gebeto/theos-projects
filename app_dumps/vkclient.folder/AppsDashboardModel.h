@@ -7,7 +7,7 @@
 
 #import "LoadingModel.h"
 
-@class AppsDashboardModelContext, NSMutableArray, NSMutableDictionary, NSArray;
+@class AppsDashboardModelContext, NSMutableDictionary, NSMutableArray, NSArray;
 
 __attribute__((visibility("hidden")))
 @interface AppsDashboardModel : LoadingModel {
@@ -26,6 +26,7 @@ __attribute__((visibility("hidden")))
 +(unsigned)extractCountFromData:(id)data;
 +(id)requests;
 +(id)with:(id)with;
+-(void).cxx_destruct;
 -(void)reset;
 -(void)rebuildIndex;
 -(void)reload;

@@ -14,6 +14,6 @@ __attribute__((visibility("hidden")))
 	NSURL* _url;
 }
 @property(retain, nonatomic) NSURL* url;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

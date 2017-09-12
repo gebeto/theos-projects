@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "VKMLiveController.h"
+#import "VKClient-Structs.h"
 #import "MOScrollPagingMediatorDelegate.h"
-#import "vkclient-Structs.h"
+#import "VKMLiveController.h"
 #import "UIToolbarDelegate.h"
 
-@class UIToolbar, MOScrollPagingMediator, StoreStockItemsModel, UISegmentedControl, NSString;
+@class StoreStockItemsModel, UISegmentedControl, MOScrollPagingMediator, NSString, UIToolbar;
 
 __attribute__((visibility("hidden")))
 @interface StoreController : VKMLiveController <UIToolbarDelegate, MOScrollPagingMediatorDelegate> {
@@ -26,6 +26,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UISegmentedControl* segmentedControl;
 @property(retain, nonatomic) UIToolbar* toolbar;
 @property(retain, nonatomic) MOScrollPagingMediator* scrollPagingMediator;
+-(void).cxx_destruct;
 -(id)tableView:(id)view viewForHeaderInSection:(int)section;
 -(float)tableView:(id)view heightForHeaderInSection:(int)section;
 -(void)actionSettings:(id)settings;

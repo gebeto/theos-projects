@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
 @class ExtraInputPanelView;
 
@@ -15,7 +15,7 @@ __attribute__((visibility("hidden")))
 	ExtraInputPanelView* _inputPanelView;
 }
 @property(retain, nonatomic) ExtraInputPanelView* inputPanelView;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)hitTest:(CGPoint)test withEvent:(id)event;
 @end
 

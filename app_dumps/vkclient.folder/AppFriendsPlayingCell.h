@@ -7,7 +7,7 @@
 
 #import "VKMCell.h"
 
-@class VKAPIAppWithFriendsPlaying, UILabel, NSMutableArray;
+@class NSMutableArray, VKAPIAppWithFriendsPlaying, UILabel;
 
 __attribute__((visibility("hidden")))
 @interface AppFriendsPlayingCell : VKMCell {
@@ -18,11 +18,11 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) NSMutableArray* avatars;
 @property(readonly, retain, nonatomic) UILabel* friendsPlayingLabel;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)layoutSubviews;
 -(void)prepareForReuse;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(id)createSubviews;
--(void)dealloc;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
 @end
 

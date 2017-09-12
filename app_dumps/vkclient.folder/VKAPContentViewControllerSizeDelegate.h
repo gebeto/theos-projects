@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "NSObject.h"
-#import "vkclient-Structs.h"
 
 
 @protocol VKAPContentViewControllerSizeDelegate <NSObject>

@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "MKAnnotation.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
+#import "MKAnnotation.h"
 
 @class CLGeocoder, NSString;
 
@@ -26,6 +26,7 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) NSString* subtitle;
 @property(copy, nonatomic) NSString* title;
 @property(assign, nonatomic) CLLocationCoordinate2D coordinate;
+-(void).cxx_destruct;
 -(void)dealloc;
 -(id)initWithCoordinate:(CLLocationCoordinate2D)coordinate;
 @end

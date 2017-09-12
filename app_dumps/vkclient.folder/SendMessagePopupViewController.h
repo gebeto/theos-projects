@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
+#import <XXUnknownSuperclass.h> // Unknown library
 #import "UIViewControllerTransitioningDelegate.h"
 #import "KeyboardAppearanceEventHandler.h"
-#import <XXUnknownSuperclass.h> // Unknown library
 
-@class KeyboardAppearanceObserver, SendMessagePopupView, UIView, UIImage, NSString;
+@class SendMessagePopupView, UIImage, UIView, KeyboardAppearanceObserver, NSString;
 
 __attribute__((visibility("hidden")))
 @interface SendMessagePopupViewController : XXUnknownSuperclass <KeyboardAppearanceEventHandler, UIViewControllerTransitioningDelegate> {

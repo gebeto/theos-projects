@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UILabel, VideoPlayerScrubber, NSString;
+@class VideoPlayerScrubber, UILabel, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VideoPlayerPlaybackView : XXUnknownSuperclass {

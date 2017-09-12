@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "UIScrollViewDelegate.h"
 #import "VKMCell.h"
-#import "vkclient-Structs.h"
 #import "MOScrollPagingMediatorDelegate.h"
 
-@class MOScrollPagingMediator, AutopagingGalleryView, NSString, AppsListDomain;
+@class AutopagingGalleryView, AppsListDomain, MOScrollPagingMediator, NSString;
 
 __attribute__((visibility("hidden")))
 @interface AppsBannersGalleryCell : VKMCell <MOScrollPagingMediatorDelegate, UIScrollViewDelegate> {
@@ -27,6 +27,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) MOScrollPagingMediator* mediator;
 +(CGSize)cellSize;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)layoutSubviews;
 -(void)prepareForReuse;
 -(void)scrollerTapped:(id)tapped;
@@ -37,7 +38,6 @@ __attribute__((visibility("hidden")))
 -(BOOL)pagingMediatorShouldResetForScrollResize:(id)pagingMediator;
 -(id)createSubviews;
 -(id)createMediatorWithScroller:(id)scroller delegate:(id)delegate;
--(void)dealloc;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
 @end
 

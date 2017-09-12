@@ -17,12 +17,12 @@ __attribute__((visibility("hidden")))
 +(id)parseActivity:(id)activity allowSelection:(BOOL)selection;
 +(id)requestForAppWithID:(id)anId count:(int)count;
 +(id)requestFrom:(id)from count:(int)count;
+-(void).cxx_destruct;
 -(BOOL)shouldLoad:(id)load;
 -(id)updatedIndex:(id)index data:(id)data context:(id)context;
 -(id)requestForContext:(id)context;
 -(id)spawnContext:(id)context;
 -(id)countKey;
 -(id)forAppID:(id)appID;
--(void)dealloc;
 @end
 

@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "VKMLoaderDelegate.h"
+#import "VKClient-Structs.h"
 #import "VKMSearchController.h"
-#import "vkclient-Structs.h"
+#import "VKMLoaderDelegate.h"
 
-@class VKMLoader, LoadingFooterView, MainModel, NSString;
+@class LoadingFooterView, VKMLoader, MainModel, NSString;
 
 __attribute__((visibility("hidden")))
 @interface DialogsSearchController : VKMSearchController <VKMLoaderDelegate> {
@@ -31,6 +31,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKMLoader* nextLoader;
 @property(retain, nonatomic) VKMLoader* loader;
 @property(assign, nonatomic) BOOL messages;
+-(void).cxx_destruct;
 -(void)tableView:(id)view didSelectRowAtIndexPath:(id)indexPath;
 -(void)tableView:(id)view willDisplayCell:(id)cell forRowAtIndexPath:(id)indexPath;
 -(id)tableView:(id)view cellForRowAtIndexPath:(id)indexPath;

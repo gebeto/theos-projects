@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "UITextViewDelegate.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class UILabel, NSString;
@@ -22,8 +22,9 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) NSString* placeholder;
-@property(assign, nonatomic) id<UITextViewDelegate> parentDelegate;
+@property(assign, nonatomic) __weak id<UITextViewDelegate> parentDelegate;
 @property(retain, nonatomic) UILabel* textPlaceholder;
+-(void).cxx_destruct;
 -(id)forwardingTargetForSelector:(SEL)selector;
 -(BOOL)respondsToSelector:(SEL)selector;
 -(id)methodSignatureForSelector:(SEL)selector;

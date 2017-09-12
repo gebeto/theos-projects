@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "UITextFieldDelegate.h"
-#import "vkclient-Structs.h"
-#import "MKMapViewDelegate.h"
 #import "VKMTableController.h"
+#import "VKClient-Structs.h"
+#import "UITextFieldDelegate.h"
+#import "MKMapViewDelegate.h"
 
-@class SimpleAnnotation, UIView, MKMapView, VKPlace, CLGeocoder, NSString, UIActivityIndicatorView, TextFieldGroupedCell, NSArray;
+@class VKPlace, MKMapView, CLGeocoder, TextFieldGroupedCell, SimpleAnnotation, UIView, NSString, UIActivityIndicatorView, NSArray;
 
 __attribute__((visibility("hidden")))
 @interface AddPlaceController : VKMTableController <MKMapViewDelegate, UITextFieldDelegate> {
@@ -43,6 +43,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) SimpleAnnotation* annotation;
 @property(retain, nonatomic) MKMapView* mapView;
 @property(retain, nonatomic) UIView* header;
+-(void).cxx_destruct;
 -(id)tableView:(id)view cellForRowAtIndexPath:(id)indexPath;
 -(int)tableView:(id)view numberOfRowsInSection:(int)section;
 -(int)numberOfSectionsInTableView:(id)tableView;

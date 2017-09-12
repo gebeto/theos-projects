@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "SketchPreviewControllerDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "SketchPreviewControllerDelegate.h"
 
-@class NSString, SketchView;
+@class SketchView, NSString;
 @protocol SketchControllerDelegate;
 
 __attribute__((visibility("hidden")))

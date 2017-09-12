@@ -5,13 +5,13 @@
  * Source: (null)
  */
 
-#import "MBContactCollectionViewDelegate.h"
-#import "UITableViewDelegate.h"
-#import "vkclient-Structs.h"
-#import "UITableViewDataSource.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "UITableViewDelegate.h"
+#import "UITableViewDataSource.h"
+#import "MBContactCollectionViewDelegate.h"
 
-@class UIFont, UIView, MBContactCollectionView, NSString, NSArray;
+@class MBContactCollectionView, UIFont, UIView, NSArray, NSString;
 @protocol MBContactPickerDataSource, MBContactPickerDelegate;
 
 __attribute__((visibility("hidden")))

@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKRenderable.h"
-#import "vkclient-Structs.h"
 
 @class NSArray;
 
@@ -22,7 +22,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) id item;
 @property(assign, nonatomic) int type;
 +(id)feedComment:(id)comment;
+-(void).cxx_destruct;
 -(Class)rendererClass;
--(void)dealloc;
 @end
 

@@ -7,23 +7,26 @@
 
 #import "AFHTTPClient.h"
 
-@class NSMutableArray, NSMutableDictionary, NSString;
+@class NSMutableDictionary, NSMutableArray, NSString;
 @protocol VKClientDelegate;
 
 __attribute__((visibility("hidden")))
 @interface VKClient : AFHTTPClient {
 	BOOL tokenInvalidated;
 	id<VKClientDelegate> _delegate;
+@private
 	NSString* _token;
+@protected
 	NSMutableArray* _pending;
 	NSMutableDictionary* _queuesPool;
 }
-@property(assign, nonatomic) id<VKClientDelegate> delegate;
+@property(assign, nonatomic) __weak id<VKClientDelegate> delegate;
 @property(readonly, retain, nonatomic) NSMutableDictionary* queuesPool;
 @property(readonly, retain, nonatomic) NSMutableArray* pending;
 @property(retain, nonatomic) NSString* token;
 +(id)loginClient;
 +(id)sessionClient:(id)client;
+-(void).cxx_destruct;
 -(BOOL)isBusyQueue:(id)queue;
 -(id)process:(id)process key:(id)key;
 -(void)processWithoutThrottle:(id)throttle onOperationCreated:(id)created;

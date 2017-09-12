@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "TextComponentController.h"
 #import "TextKitLabelInteractiveDefaultBehaviorDelegate.h"
+#import "TextComponentController.h"
 
-@class TextKitLabelInteractiveDefaultBehavior, NSString, TextComponentInteractive;
+@class TextComponentInteractive, TextKitLabelInteractiveDefaultBehavior, NSString;
 @protocol TextKitLabelDelegate;
 
 __attribute__((visibility("hidden")))

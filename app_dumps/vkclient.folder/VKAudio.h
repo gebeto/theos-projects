@@ -12,6 +12,7 @@
 __attribute__((visibility("hidden")))
 @interface VKAudio : VKDomain {
 	BOOL _content_restricted;
+	BOOL _hq;
 	BOOL _added;
 	NSString* _performer;
 	NSString* _title;
@@ -23,6 +24,7 @@ __attribute__((visibility("hidden")))
 	VKAudioPlaylistAlbum* _album;
 }
 @property(assign, nonatomic) BOOL added;
+@property(assign, nonatomic, getter=isHQ) BOOL hq;
 @property(retain, nonatomic) VKAudioPlaylistAlbum* album;
 @property(retain, nonatomic) NSString* content_restricted_url;
 @property(retain, nonatomic) NSString* content_restricted_message;
@@ -32,12 +34,12 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int duration;
 @property(retain, nonatomic) NSString* title;
 @property(retain, nonatomic) NSString* performer;
+-(void).cxx_destruct;
 -(BOOL)canAdd:(id)add;
 -(void)updateUrl:(id)url;
 -(BOOL)isEqual:(id)equal;
 -(BOOL)process:(id)process context:(id)context;
--(Class)rendererClass;
+-(Class)cellClass;
 -(id)description;
--(void)dealloc;
 @end
 

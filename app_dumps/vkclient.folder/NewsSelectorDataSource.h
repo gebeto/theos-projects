@@ -18,8 +18,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) id<VKSelectorOption> newsSettingsOption;
 @property(retain, nonatomic) id<VKSelectorOption> suggestionsOption;
 @property(retain, nonatomic) id<VKSelectorOption> autoNewsFeedOption;
+-(void).cxx_destruct;
 -(id)optionsFromIndex:(id)index;
 -(id)initWithModel:(id)model;
--(void)dealloc;
 @end
 

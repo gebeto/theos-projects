@@ -7,7 +7,7 @@
 
 #import "VKDomain.h"
 
-@class NSDictionary, NSNumber;
+@class NSNumber, NSDictionary;
 
 __attribute__((visibility("hidden")))
 @interface VKPushSettings : VKDomain {
@@ -36,9 +36,9 @@ __attribute__((visibility("hidden")))
 +(BOOL)enabledType:(id)type inSettings:(id)settings;
 +(id)optionsForType:(id)type inSettings:(id)settings;
 +(id)initialSettings:(id)settings;
+-(void).cxx_destruct;
 -(id)updateWithSettings:(id)settings;
 -(void)_updateCounters;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

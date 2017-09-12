@@ -6,9 +6,9 @@
  */
 
 #import "PhotoUploadContext.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 
-@class NSDictionary, NSData, VKIdentity;
+@class NSData, VKIdentity, NSDictionary;
 
 __attribute__((visibility("hidden")))
 @interface AudioPlaylistCoverPhotoUploadContext : PhotoUploadContext {
@@ -22,6 +22,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSDictionary* cropParams;
 @property(assign, nonatomic) CGAffineTransform forcedCrop;
 +(id)photoContextWithSession:(id)session assetData:(id)data;
+-(void).cxx_destruct;
 -(id)createOperation;
 -(id)requestForSaving:(id)saving;
 -(BOOL)handleResultServerData:(id)data uploadData:(id)data2 saveData:(id)data3;
@@ -29,6 +30,5 @@ __attribute__((visibility("hidden")))
 -(id)requestForUploadServer;
 -(void)willUseImage:(id)image;
 -(void)loadUploadData:(id)data;
--(void)dealloc;
 @end
 

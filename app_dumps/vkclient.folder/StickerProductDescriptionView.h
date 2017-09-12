@@ -18,6 +18,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) StoreStatusButton* statusButton;
 @property(retain, nonatomic) UILabel* titleLabel;
 @property(retain, nonatomic) UILabel* authorLabel;
+-(void).cxx_destruct;
 -(id)stockItem;
 -(void)attach:(id)attach;
 -(void)layoutSubviews;

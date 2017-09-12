@@ -16,6 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(assign, nonatomic) BOOL needSystem;
 @property(retain, nonatomic) VideoAlbumContext* albumsContext;
+-(void).cxx_destruct;
 -(void)handleAdd:(id)add :(id)arg2;
 -(void)handleEdit:(id)edit :(id)arg2;
 -(void)handleDelete:(id)aDelete :(id)arg2;
@@ -25,6 +26,5 @@ __attribute__((visibility("hidden")))
 -(id)request:(int)request count:(int)count;
 -(id)countKey;
 -(int)defaultPage;
--(void)dealloc;
 @end
 

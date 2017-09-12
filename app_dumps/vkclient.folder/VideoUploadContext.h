@@ -8,7 +8,7 @@
 #import "IVideoUploadContext.h"
 #import "UploadContext.h"
 
-@class PHAsset, VKPrivacySetting, VKVideo, NSString, NSData, NSNumber, AVAssetExportSession, NSURL;
+@class VKPrivacySetting, VKVideo, NSURL, NSData, AVAssetExportSession, PHAsset, NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VideoUploadContext : UploadContext <IVideoUploadContext> {
@@ -43,6 +43,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) PHAsset* asset;
 @property(retain, nonatomic) VKVideo* video;
 @property(retain, nonatomic) NSURL* fileURL;
+-(void).cxx_destruct;
 -(void)saveVideoThumbnail;
 -(id)createOperation;
 -(BOOL)handleResultServerData:(id)data uploadData:(id)data2 saveData:(id)data3;

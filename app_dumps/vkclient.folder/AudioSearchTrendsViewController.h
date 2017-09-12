@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKMLiveController.h"
-#import "vkclient-Structs.h"
 
 @class SearchModelUpdater;
 
@@ -15,11 +15,11 @@ __attribute__((visibility("hidden")))
 	SearchModelUpdater* _searchUpdater;
 }
 @property(retain, nonatomic) SearchModelUpdater* searchUpdater;
+-(void).cxx_destruct;
 -(void)actionClearLocal:(id)local;
 -(id)tableView:(id)view viewForHeaderInSection:(int)section;
 -(id)VKMScrollViewIndexFromModel:(id)model;
 -(int)VKMTableStyle;
 -(void)viewDidLoad;
--(void)dealloc;
 @end
 

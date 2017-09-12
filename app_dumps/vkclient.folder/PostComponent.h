@@ -12,7 +12,7 @@ __attribute__((visibility("hidden")))
 @interface PostComponent : Component5 {
 }
 +(id)post:(id)post detail:(BOOL)detail;
-+(id)post:(id)post detail:(BOOL)detail expandedPosts:(id)posts;
++(id)post:(id)post detail:(BOOL)detail extra:(id)extra;
 +(id)componentWithState:(id)state;
 -(BOOL)isUtility;
 @end

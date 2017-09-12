@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class UILabel, UIView, NSString;
@@ -39,6 +39,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) id<MOTextViewLimit> limitMax;
 @property(retain, nonatomic) id<MOTextViewLimit> limitMin;
 +(void)initialize;
+-(void).cxx_destruct;
 -(void)autoresizeWithHeightFrom:(float)from to:(float)to;
 -(void)autoresizeWithLinesFrom:(unsigned)from to:(unsigned)to;
 -(void)autoresizeWithLimitFrom:(id)from to:(id)to;

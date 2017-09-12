@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class Index, NSIndexPath, NSMutableDictionary, IndexUpdate;
+@class NSMutableDictionary, IndexUpdate, NSIndexPath, Index;
 
 __attribute__((visibility("hidden")))
 @interface ModelUpdateBuilder : XXUnknownSuperclass {
@@ -31,6 +31,7 @@ __attribute__((visibility("hidden")))
 +(void)updateIndex:(id)index withContext:(id)context performing:(id)performing result:(id)result;
 +(id)updatedIndex:(id)index performing:(id)performing;
 +(id)builder:(id)builder;
+-(void).cxx_destruct;
 -(void)sectionAppend:(BOOL)append block:(id)block;
 -(void)withSection:(unsigned)section block:(id)block;
 -(void)deleteAllRows;
@@ -60,7 +61,6 @@ __attribute__((visibility("hidden")))
 -(id)buildUpdatedIndex;
 -(id)buildAnimated:(BOOL)animated;
 -(id)description;
--(void)dealloc;
 -(id)init;
 @end
 

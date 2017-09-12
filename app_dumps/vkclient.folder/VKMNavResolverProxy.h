@@ -13,8 +13,9 @@ __attribute__((visibility("hidden")))
 @interface VKMNavResolverProxy : VKMNavResolver {
 	id<VKMNavDelegate> _navDelegate;
 }
-@property(assign, nonatomic) id<VKMNavDelegate> navDelegate;
+@property(assign, nonatomic) __weak id<VKMNavDelegate> navDelegate;
 +(id)resolver:(id)resolver;
+-(void).cxx_destruct;
 -(BOOL)route:(id)route context:(id)context;
 @end
 

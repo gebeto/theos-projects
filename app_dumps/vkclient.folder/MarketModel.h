@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "ListModel.h"
+#import "VKClient-Structs.h"
 
-@class MarketModelFilterOptions, VKGroup, NSArray, MarketModelState;
+@class VKGroup, NSArray, MarketModelState, MarketModelFilterOptions;
 
 __attribute__((visibility("hidden")))
 @interface MarketModel : ListModel {
@@ -33,6 +33,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, copy, nonatomic) NSArray* goods;
 @property(retain, nonatomic) VKGroup* group;
 +(id)with:(id)with filterOptions:(id)options inMode:(unsigned)mode;
+-(void).cxx_destruct;
 -(BOOL)shouldLoad:(id)load;
 -(void)restoreState;
 -(void)saveState;
@@ -52,6 +53,5 @@ __attribute__((visibility("hidden")))
 -(id)requestForContext:(id)context;
 -(id)request:(int)request count:(int)count;
 -(id)asFavorites;
--(void)dealloc;
 @end
 

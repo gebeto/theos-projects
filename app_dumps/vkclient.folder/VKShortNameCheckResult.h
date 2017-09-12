@@ -7,7 +7,7 @@
 
 #import "VKDomain.h"
 
-@class NSString, NSNumber, NSArray;
+@class NSNumber, NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKShortNameCheckResult : VKDomain {
@@ -18,7 +18,7 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) NSArray* suggestions;
 @property(copy, nonatomic) NSString* reason;
 @property(retain, nonatomic) NSNumber* status;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

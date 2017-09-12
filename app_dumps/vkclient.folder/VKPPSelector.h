@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKPPLayout, NSMutableDictionary;
+@class NSMutableDictionary, VKPPLayout;
 
 @interface VKPPSelector : XXUnknownSuperclass {
 	float thumbScale;

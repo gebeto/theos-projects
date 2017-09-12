@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import <XXUnknownSuperclass.h> // Unknown library
 #import "MTRGInstreamAdAudioEngineDelegate.h"
+#import <XXUnknownSuperclass.h> // Unknown library
 
-@class MTRGInstreamAudioAdSection, MTRGInstreamAdAudioEngine, NSMutableDictionary, MTRGAdParams, MTRGCustomParams, NSNumber, NSString, NSArray;
+@class NSMutableDictionary, MTRGAdParams, MTRGCustomParams, NSNumber, MTRGInstreamAudioAdSection, NSArray, NSString, MTRGInstreamAdAudioEngine;
 @protocol MTRGInstreamAudioAdPlayer, MTRGInstreamAudioAdDelegate;
 
 @interface MTRGInstreamAudioAd : XXUnknownSuperclass <MTRGInstreamAdAudioEngineDelegate> {

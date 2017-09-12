@@ -26,7 +26,7 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) NSString* city_name;
 @property(copy, nonatomic) NSString* position;
 @property(copy, nonatomic) NSString* company;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

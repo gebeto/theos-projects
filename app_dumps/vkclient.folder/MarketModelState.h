@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class Index, MarketModelFilterOptions, ListModelContext, NSArray;
+@class Index, NSArray, ListModelContext, MarketModelFilterOptions;
 
 __attribute__((visibility("hidden")))
 @interface MarketModelState : XXUnknownSuperclass {
@@ -23,7 +23,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) ListModelContext* lastContext;
 @property(readonly, retain, nonatomic) Index* index;
 +(id)stateWithIndex:(id)index context:(id)context filterOptions:(id)options numberOfItemsInSections:(id)sections showMoreCollectionsVisible:(BOOL)visible;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)initWithIndex:(id)index context:(id)context filterOptions:(id)options numberOfItemsInSections:(id)sections showMoreCollectionsVisible:(BOOL)visible;
 @end
 

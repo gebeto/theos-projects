@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "AbstractMessagesAttachmentView.h"
 
-@class UILabel, VKMImageView, UIButton, UIImageView;
+@class UIButton, UILabel, UIImageView, VKMImageView;
 @protocol VKAttachment;
 
 __attribute__((visibility("hidden")))
@@ -26,6 +26,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIImageView* icoImageView;
 @property(retain, nonatomic) UILabel* statusLabel;
 @property(retain, nonatomic) UILabel* titleLabel;
+-(void).cxx_destruct;
 -(void)reuse;
 -(void)render:(id)render reuse:(double)reuse;
 -(id)initWithFrame:(CGRect)frame;

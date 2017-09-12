@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "MOCTLabelDelegate.h"
 #import "VKMLiveController.h"
-#import "vkclient-Structs.h"
 
-@class UIView, PaymentsBalanceModel, NSString;
+@class UIView, NSString, PaymentsBalanceModel;
 
 __attribute__((visibility("hidden")))
 @interface PaymentsBalanceController : VKMLiveController <MOCTLabelDelegate> {
@@ -25,6 +25,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) PaymentsBalanceModel* model;
 +(id)boldAttributes;
 +(id)textAttributes;
+-(void).cxx_destruct;
 -(void)moctlabel:(id)moctlabel linkClicked:(id)clicked;
 -(void)notificationPurchase:(id)purchase;
 -(void)notificationStore:(id)store;

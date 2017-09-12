@@ -21,7 +21,7 @@ __attribute__((visibility("hidden")))
 +(id)contextSuggestionWithKeyword:(id)keyword;
 +(id)contextKeyboard;
 +(id)contextStore;
+-(void).cxx_destruct;
 -(id)stringRepresentation;
--(void)dealloc;
 @end
 

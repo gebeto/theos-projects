@@ -26,6 +26,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL group_admin;
 @property(retain, nonatomic) VKPost* domain;
 +(int)attachmentsLimit;
+-(void).cxx_destruct;
 -(void)postOptionsChanged:(id)changed;
 -(BOOL)enabledAsCommunity;
 -(id)buildPostOptions;
@@ -44,6 +45,5 @@ __attribute__((visibility("hidden")))
 -(BOOL)isPublish;
 -(BOOL)targetUserOwner;
 -(BOOL)targetGroup;
--(void)dealloc;
 @end
 

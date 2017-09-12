@@ -14,10 +14,10 @@ __attribute__((visibility("hidden")))
 	VKCountry* _country;
 }
 @property(retain, nonatomic) VKCountry* country;
+-(void).cxx_destruct;
 -(id)countKey;
 -(id)process:(id)process;
 -(id)method;
 -(id)parameters:(id)parameters;
--(void)dealloc;
 @end
 

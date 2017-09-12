@@ -18,6 +18,6 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) NSString* imageUrlString;
 @property(copy, nonatomic) NSString* name;
 @property(copy, nonatomic) NSString* email;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

@@ -14,7 +14,7 @@ __attribute__((visibility("hidden")))
 	CLLocation* _location;
 }
 @property(retain, nonatomic) CLLocation* location;
+-(void).cxx_destruct;
 -(void)spawnCopy:(id)copy;
--(void)dealloc;
 @end
 

@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSMutableSet, NSOperationQueue, NSString, NSObject;
+@class NSOperationQueue, NSString, NSObject, NSMutableSet;
 @protocol OS_dispatch_queue;
 
 __attribute__((visibility("hidden")))
@@ -21,13 +21,13 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* userAgentString;
 @property(retain, nonatomic) NSMutableSet* onceIds;
 @property(retain) NSOperationQueue* operationQueue;
+-(void).cxx_destruct;
 -(void)registerAdData:(id)data event:(int)event;
 -(BOOL)registerAdsAuto:(id)auto event:(int)event;
 -(BOOL)registerAdsOnce:(id)once event:(int)event;
 -(BOOL)registerAds:(id)ads event:(int)event once:(BOOL)once;
 -(void)registerStats:(id)stats;
 -(void)processUrl:(id)url;
--(void)dealloc;
 -(id)init;
 @end
 

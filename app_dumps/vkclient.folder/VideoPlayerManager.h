@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class VKVideoPlayer, NSMutableSet, NSTimer;
+@class VKVideoPlayer, NSTimer, NSMutableSet;
 
 __attribute__((visibility("hidden")))
 @interface VideoPlayerManager : XXUnknownSuperclass {
@@ -40,7 +40,6 @@ __attribute__((visibility("hidden")))
 -(void)playVideoInPlayer:(id)player throttle:(BOOL)throttle force:(BOOL)force;
 -(void)playVideoInPlayer:(id)player throttle:(BOOL)throttle;
 -(void)playVideoInPlayer:(id)player;
--(void)dealloc;
 -(id)init;
 @end
 

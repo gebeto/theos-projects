@@ -5,16 +5,17 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "Component5StateListener.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "Component5StateListener.h"
 
-@class Component5, NSString;
+@class Component5, Component5Node, NSString;
 @protocol VKMNavDelegate;
 
 __attribute__((visibility("hidden")))
 @interface Component5HostView : XXUnknownSuperclass <Component5StateListener> {
 	Component5* _component;
+	Component5Node* _node;
 	id<VKMNavDelegate> _navDelegate;
 	CGPoint _componentOrigin;
 	UIEdgeInsets _componentInsets;
@@ -25,14 +26,19 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(assign, nonatomic) UIEdgeInsets componentInsets;
 @property(assign, nonatomic) CGPoint componentOrigin;
-@property(assign, nonatomic) id<VKMNavDelegate> navDelegate;
+@property(assign, nonatomic) __weak id<VKMNavDelegate> navDelegate;
+@property(retain, nonatomic) Component5Node* node;
 @property(retain, nonatomic) Component5* component;
-+(id)nodeForComponent:(id)component withSizeConstraints:(XXStruct_JC2WWA)sizeConstraints;
 -(void).cxx_destruct;
 -(void)component:(id)component didUpdateState:(id)state toState:(id)state3 animated:(BOOL)animated;
--(void)setComponent:(id)component withNode:(id)node;
 -(void)setFrame:(CGRect)frame;
--(void)updateComponent;
+-(CGSize)sizeThatFits:(CGSize)fits;
+-(id)nodeEnsure;
+-(CGRect)nodeRectForBounds:(CGRect)bounds;
+-(CGRect)nodeRect;
+-(id)nodeWithSize:(CGSize)size;
+-(void)layoutSubviews;
+-(void)setNeedsUpdateNode;
 -(void)dealloc;
 @end
 

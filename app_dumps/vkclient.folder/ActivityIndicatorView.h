@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class CAShapeLayer, UIColor, DisableAnimationsLayerDelegate, CALayer, UIImage, CABasicAnimation;
+@class UIImage, CALayer, DisableAnimationsLayerDelegate, UIColor, CABasicAnimation, CAShapeLayer;
 
 __attribute__((visibility("hidden")))
 @interface ActivityIndicatorView : XXUnknownSuperclass {
@@ -38,6 +38,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) CAShapeLayer* progressLayer;
 @property(readonly, retain, nonatomic) CAShapeLayer* traceLayer;
 +(id)defaultSizeIndicator;
+-(void).cxx_destruct;
 -(void)_test;
 -(void)setProgress:(float)progress animated:(BOOL)animated;
 -(void)layoutSubviews;

@@ -7,7 +7,7 @@
 
 #import "VKMCell.h"
 
-@class MOCTLabel, VKBalanceDetail;
+@class VKBalanceDetail, MOCTLabel;
 
 __attribute__((visibility("hidden")))
 @interface BalanceCompactDetailCell : VKMCell {
@@ -18,9 +18,9 @@ __attribute__((visibility("hidden")))
 +(void)prerender:(id)prerender;
 +(id)boldAttributes;
 +(id)textAttributes;
+-(void).cxx_destruct;
 -(void)layoutSubviews;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
--(void)dealloc;
 @end
 

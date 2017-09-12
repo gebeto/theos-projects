@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "UICollectionViewDelegateFlowLayout.h"
-#import "UICollectionViewDataSource.h"
 #import "VKMCell.h"
+#import "UICollectionViewDataSource.h"
 
-@class UICollectionView, TextKitLabelInteractive, PlaceholderImagesGeneratingCache, NSMutableDictionary, UIButton, NSString, VKAPIAppWithExpandableInfo;
+@class NSMutableDictionary, UIButton, VKAPIAppWithExpandableInfo, TextKitLabelInteractive, NSString, PlaceholderImagesGeneratingCache, UICollectionView;
 
 __attribute__((visibility("hidden")))
 @interface AppInfoCell : VKMCell <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout> {
@@ -36,6 +36,7 @@ __attribute__((visibility("hidden")))
 +(float)maxAvailableScreenshotHeightFromDomain:(id)domain boundedToSize:(CGSize)size;
 +(CGSize)cellSizeForDomain:(id)domain;
 +(id)renderedTextForDomain:(id)domain;
+-(void).cxx_destruct;
 -(id)screenshotAtIndex:(unsigned)index;
 -(CGSize)calculateCellSizeForScreenshotSize:(CGSize)screenshotSize;
 -(CGSize)collectionView:(id)view layout:(id)layout sizeForItemAtIndexPath:(id)indexPath;
@@ -46,7 +47,6 @@ __attribute__((visibility("hidden")))
 -(void)actionExpand:(id)expand;
 -(void)layoutSubviews;
 -(id)createSubviews;
--(void)dealloc;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
 @end
 

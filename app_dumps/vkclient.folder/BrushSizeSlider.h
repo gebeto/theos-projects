@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UIView, Brush, UISlider;
+@class UISlider, Brush, UIView;
 
 __attribute__((visibility("hidden")))
 @interface BrushSizeSlider : XXUnknownSuperclass {

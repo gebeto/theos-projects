@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "RoundedProgressOverlayViewDelegate.h"
-#import "vkclient-Structs.h"
 #import "ThumbnailEditAttachmentView.h"
+#import "VKClient-Structs.h"
+#import "RoundedProgressOverlayViewDelegate.h"
 
-@class UILabel, RoundedProgressOverlayView, UploadEditAttachment, NSString;
+@class UILabel, RoundedProgressOverlayView, NSString, UploadEditAttachment;
 
 __attribute__((visibility("hidden")))
 @interface UploadEditAttachmentView : ThumbnailEditAttachmentView <RoundedProgressOverlayViewDelegate> {
@@ -23,11 +23,12 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UILabel* failed;
 @property(retain, nonatomic) RoundedProgressOverlayView* progress;
 @property(readonly, retain, nonatomic) UploadEditAttachment* attachment;
+-(void).cxx_destruct;
 -(void)progressViewDidCancel:(id)progressView;
 -(void)renderFinish;
 -(void)renderFailed:(BOOL)failed;
 -(void)observeValueForKeyPath:(id)keyPath ofObject:(id)object change:(id)change context:(void*)context;
 -(void)dealloc;
--(id)initWithAttachment:(id)attachment style:(XXStruct_9zIMjA)style;
+-(id)initWithAttachment:(id)attachment style:(id)style;
 @end
 

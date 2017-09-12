@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "ChatCell.h"
-#import "vkclient-Structs.h"
 
-@class UIButton, UIActivityIndicatorView, PendingMessage;
+@class UIButton, PendingMessage, UIActivityIndicatorView;
 
 __attribute__((visibility("hidden")))
 @interface PendingChatCell : ChatCell {
@@ -19,10 +19,10 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIButton* warning;
 @property(retain, nonatomic) UIActivityIndicatorView* activity;
 @property(retain, nonatomic) PendingMessage* pending;
+-(void).cxx_destruct;
 -(void)attachPending:(id)pending expectedReuse:(double)reuse;
 -(void)update;
 -(void)actionWarning:(id)warning;
--(void)dealloc;
 -(id)initWithDelegate:(id)delegate selfdialog:(BOOL)selfdialog reuseIdentifier:(id)identifier;
 @end
 

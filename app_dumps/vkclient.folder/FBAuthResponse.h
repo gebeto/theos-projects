@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSString, NSArray;
+@class NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface FBAuthResponse : XXUnknownSuperclass {
@@ -18,7 +18,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* token;
 +(id)responseWithCallbackURL:(id)callbackURL error:(id*)error;
 +(id)responseWithToken:(id)token permissions:(id)permissions;
+-(void).cxx_destruct;
 -(id)description;
--(void)dealloc;
 @end
 

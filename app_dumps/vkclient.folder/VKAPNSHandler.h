@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSDictionary, MainModel;
+@class MainModel, NSDictionary;
 @protocol VKAPNSHandlerDelegate;
 
 __attribute__((visibility("hidden")))
@@ -22,6 +22,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) id<VKAPNSHandlerDelegate> strongDelegate;
 @property(retain, nonatomic) MainModel* main;
 +(id)userNotificationCategory;
+-(void).cxx_destruct;
 -(id)groupIdFromGroupId;
 -(id)userIdFromUid;
 -(void)notifyEventForGroupId:(id)groupId;
@@ -32,6 +33,5 @@ __attribute__((visibility("hidden")))
 -(void)handleActionIdentifier:(id)identifier completionHandler:(id)handler;
 -(void)notify;
 -(void)handle;
--(void)dealloc;
 @end
 

@@ -8,7 +8,7 @@
 #import "BaseSectionedSettingsController.h"
 #import "CLLocationManagerDelegate.h"
 
-@class UITableViewCell, SettingsSection, CLLocationManager, NSString;
+@class CLLocationManager, SettingsSection, UITableViewCell, NSString;
 
 __attribute__((visibility("hidden")))
 @interface ModernGeneralSettings : BaseSectionedSettingsController <CLLocationManagerDelegate> {
@@ -29,6 +29,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UITableViewCell* cellGifsAutoplay;
 @property(retain, nonatomic) UITableViewCell* cellLocationSettings;
 @property(retain, nonatomic) UITableViewCell* cellPhotoUploadCompressed;
+-(void).cxx_destruct;
 -(void)locationManager:(id)manager didChangeAuthorizationStatus:(int)status;
 -(void)updateLocationStatus:(int)status;
 -(void)tableView:(id)view didSelectRowAtIndexPath:(id)indexPath;
@@ -38,6 +39,5 @@ __attribute__((visibility("hidden")))
 -(void)switchUploadPhoto:(id)photo;
 -(void)render;
 -(void)resetSections;
--(void)dealloc;
 @end
 

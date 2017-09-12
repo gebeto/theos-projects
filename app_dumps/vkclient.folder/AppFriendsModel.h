@@ -21,6 +21,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) Index* friends;
 @property(copy, nonatomic) NSArray* friendsSorted;
 +(id)modelForAppID:(id)appID withSession:(id)session;
+-(void).cxx_destruct;
 -(void)handleSendInvite:(id)invite builder:(id)builder;
 -(void)handleFriend:(id)aFriend :(id)arg2;
 -(void)removeUser:(id)user :(id)arg2;
@@ -30,6 +31,5 @@ __attribute__((visibility("hidden")))
 -(id)requestForContext:(id)context;
 -(id)countKey;
 -(id)usersToBeExcludedByID:(id)beExcludedByID;
--(void)dealloc;
 @end
 

@@ -6,10 +6,10 @@
  */
 
 #import "UITextViewDelegate.h"
-#import "vkclient-Structs.h"
 #import "EditController.h"
+#import "VKClient-Structs.h"
 
-@class TextEditContext, MOTextView, NSString;
+@class MOTextView, TextEditContext, NSString;
 
 __attribute__((visibility("hidden")))
 @interface TextEditController : EditController <UITextViewDelegate> {
@@ -24,6 +24,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) MOTextView* textView;
 @property(retain, nonatomic) TextEditContext* context;
 @property(retain, nonatomic) NSString* textTitle;
+-(void).cxx_destruct;
 -(void)textViewDidChange:(id)textView;
 -(int)VKMEditDataState;
 -(void)VKMEditDataChanged:(BOOL)changed;

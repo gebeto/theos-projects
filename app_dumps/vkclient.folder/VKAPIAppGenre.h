@@ -18,7 +18,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign, nonatomic) unsigned count;
 @property(readonly, assign, nonatomic) unsigned type;
 @property(readonly, copy, nonatomic) NSString* name;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

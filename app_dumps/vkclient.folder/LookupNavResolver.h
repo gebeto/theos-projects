@@ -7,7 +7,7 @@
 
 #import "VKMNavResolver.h"
 
-@class NSMutableSet, NSArray;
+@class NSArray, NSMutableSet;
 
 __attribute__((visibility("hidden")))
 @interface LookupNavResolver : VKMNavResolver {

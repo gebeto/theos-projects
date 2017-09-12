@@ -7,7 +7,7 @@
 
 #import "VKDomain.h"
 
-@class VKPrice, NSString, NSNumber;
+@class VKPrice, NSNumber, NSString;
 @protocol VKSource;
 
 __attribute__((visibility("hidden")))
@@ -34,9 +34,10 @@ __attribute__((visibility("hidden")))
 +(id)policyURL;
 +(id)landingURL;
 +(id)amountFormatter;
-+(id)rusCurrencySymbol;
++(id)displayNameForCurrencyWithCode:(id)code;
 +(id)titleForStatus:(int)status;
 -(void).cxx_destruct;
+-(id)displayNameForCurrency;
 -(int)routeForOwner:(id)owner;
 -(BOOL)process:(id)process context:(id)context;
 @end

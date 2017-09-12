@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import <XXUnknownSuperclass.h> // Unknown library
 #import "NotificationHandler.h"
+#import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSDate, NSString;
+@class NSString, NSDate;
 
 __attribute__((visibility("hidden")))
 @interface NHandlerVibration : XXUnknownSuperclass <NotificationHandler> {
@@ -19,8 +19,8 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) NSDate* last;
+-(void).cxx_destruct;
 -(void)clearImmediatly;
 -(void)handle:(id)handle;
--(void)dealloc;
 @end
 

@@ -15,8 +15,8 @@ __attribute__((visibility("hidden")))
 }
 @property(copy, nonatomic) NSString* statName;
 +(id)contextWithStatName:(id)statName;
+-(void).cxx_destruct;
 -(id)statsEventWithAction:(id)action;
 -(id)statsEventWithParams:(id)params;
--(void)dealloc;
 @end
 

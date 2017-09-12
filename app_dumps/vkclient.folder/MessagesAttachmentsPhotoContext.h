@@ -14,10 +14,10 @@ __attribute__((visibility("hidden")))
 	NSString* _nextFrom;
 }
 @property(retain, nonatomic) NSString* nextFrom;
+-(void).cxx_destruct;
 -(id)parsePhotosData:(id)data;
 -(void)addPhotos:(id)photos withData:(id)data;
 -(id)codeForNextPage;
 -(void)spawnCopy:(id)copy;
--(void)dealloc;
 @end
 

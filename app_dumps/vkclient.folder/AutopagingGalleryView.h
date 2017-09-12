@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "UIScrollViewDelegate.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "UIScrollViewDelegate.h"
 
-@class AutopagingScrollViewDelegate, PlaceholderImagesGeneratingCache, NSString, NSTimer, NSArray;
+@class AutopagingScrollViewDelegate, NSString, PlaceholderImagesGeneratingCache, NSTimer, NSArray;
 
 __attribute__((visibility("hidden")))
 @interface AutopagingGalleryView : XXUnknownSuperclass <UIScrollViewDelegate> {
@@ -34,6 +34,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSTimer* autoscrollTimer;
 @property(readonly, assign, nonatomic) double autopagingInterval;
 @property(copy, nonatomic) NSArray* imageViews;
+-(void).cxx_destruct;
 -(unsigned)itemIndexForPoint:(CGPoint)point;
 -(void)loadImageAtPage:(unsigned)page;
 -(void)layoutSubviews;

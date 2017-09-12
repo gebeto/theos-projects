@@ -7,7 +7,7 @@
 
 #import "VKFeed.h"
 
-@class NSString, VKAdData, NSArray;
+@class VKAdData, NSString, NSArray;
 
 __attribute__((visibility("hidden")))
 @interface VKFeedAds : VKFeed {
@@ -24,11 +24,11 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* id1;
 @property(retain, nonatomic) NSString* ads_debug;
 @property(retain, nonatomic) NSArray* ads;
+-(void).cxx_destruct;
 -(id)statusForSource:(id)source;
 -(void)acceptSources:(id)sources;
 -(id)firstItem;
 -(int)type;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

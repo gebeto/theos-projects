@@ -5,15 +5,15 @@
  * Source: (null)
  */
 
-#import "AudioAttachmentDelegate.h"
-#import "SnapperViewDelegate.h"
-#import "ThumbnailViewDelegate.h"
 #import "AudioMessageAttachmentDelegate.h"
-#import "MessageRendererDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 #import "TextKitLabelInteractiveDefaultBehaviorDelegate.h"
+#import "AudioAttachmentDelegate.h"
+#import "ThumbnailViewDelegate.h"
+#import "SnapperViewDelegate.h"
+#import "MessageRendererDelegate.h"
 
-@class TextKitLabelInteractive, SnapperView, UITextView, UIView, VKMessage, TextKitLabelInteractiveDefaultBehavior, ThumbnailView, NSMutableArray, ImageAttachmentView, UIButton, NSString, NSNumber, UsersModel;
+@class UITextView, UIButton, NSMutableArray, ThumbnailView, UsersModel, SnapperView, TextKitLabelInteractive, UIView, VKMessage, TextKitLabelInteractiveDefaultBehavior, ImageAttachmentView, NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface MessageRenderer : XXUnknownSuperclass <TextKitLabelInteractiveDefaultBehaviorDelegate, MessageRendererDelegate, ThumbnailViewDelegate, AudioAttachmentDelegate, AudioMessageAttachmentDelegate, SnapperViewDelegate> {
@@ -35,6 +35,7 @@ __attribute__((visibility("hidden")))
 	NSMutableArray* _money;
 	NSMutableArray* _playlists;
 	NSMutableArray* _stories;
+	NSMutableArray* _masks;
 	NSMutableArray* _gift_panels;
 	ThumbnailView* _map;
 	NSMutableArray* _fwd;
@@ -51,6 +52,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSMutableArray* fwd;
 @property(retain, nonatomic) ThumbnailView* map;
 @property(retain, nonatomic) NSMutableArray* gift_panels;
+@property(retain, nonatomic) NSMutableArray* masks;
 @property(retain, nonatomic) NSMutableArray* stories;
 @property(retain, nonatomic) NSMutableArray* playlists;
 @property(retain, nonatomic) NSMutableArray* money;
@@ -62,7 +64,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) TextKitLabelInteractive* textKitLabel;
 @property(retain, nonatomic) UIView* stripe;
 @property(retain, nonatomic) ImageAttachmentView* author;
-@property(assign, nonatomic) id<MessageRendererDelegate> delegate;
+@property(assign, nonatomic) __weak id<MessageRendererDelegate> delegate;
 @property(retain) NSNumber* uid;
 @property(retain, nonatomic) VKMessage* message;
 @property(assign, nonatomic) BOOL disableGeo;
@@ -75,6 +77,7 @@ __attribute__((visibility("hidden")))
 +(void)prerenderDefaultMessage:(id)message level:(int)level width:(float)width detailView:(id)view layout:(id)layout startIndex:(inout unsigned*)index justBody:(inout BOOL*)body skipText:(BOOL)text;
 +(id)preparedBodyForMessage:(id)message;
 +(void)initialize;
+-(void).cxx_destruct;
 -(id)currentNavDelegate;
 -(void)snapperView:(id)view shouldOpenAttach:(id)attach;
 -(void)audioMessageView:(id)view selectedAudioMessage:(id)message;
@@ -87,6 +90,7 @@ __attribute__((visibility("hidden")))
 -(void)actionAuthor:(id)author;
 -(void)actionPlaylist:(id)playlist;
 -(void)actionMoney:(id)money;
+-(void)actionMask:(id)mask;
 -(void)actionStory:(id)story;
 -(void)actionLink:(id)link;
 -(void)playAudioMessage:(id)message toggle:(BOOL)toggle;

@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "PHPhotoLibraryChangeObserver.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "PHPhotoLibraryChangeObserver.h"
 
-@class NSDictionary, NSIndexPath, PHCollectionList, NSString, NSArray;
+@class NSIndexPath, PHCollectionList, NSDictionary, NSArray, NSString;
 @protocol VKPPAlbumsListDelegate;
 
 @interface VKPPAlbumListController : XXUnknownSuperclass <PHPhotoLibraryChangeObserver> {

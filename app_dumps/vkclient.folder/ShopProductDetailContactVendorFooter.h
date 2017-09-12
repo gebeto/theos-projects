@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UIColor, UIButton, NSString;
+@class UIButton, UIColor, NSString;
 @protocol ShopProductDetailContactVendorFooterDelegate;
 
 __attribute__((visibility("hidden")))
@@ -22,15 +22,15 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) NSString* title;
 @property(retain, nonatomic) UIColor* stickingColor;
 @property(retain, nonatomic) UIColor* floatingColor;
-@property(assign, nonatomic) id<ShopProductDetailContactVendorFooterDelegate> delegate;
+@property(assign, nonatomic) __weak id<ShopProductDetailContactVendorFooterDelegate> delegate;
 @property(assign, nonatomic) int headerState;
 @property(readonly, retain, nonatomic) UIButton* contactVendorButton;
+-(void).cxx_destruct;
 -(void)setFloating:(BOOL)floating animated:(BOOL)animated;
 -(void)applyBackgroundColorForState;
 -(void)layoutSubviews;
 -(void)contactVendorButtonTapped;
 -(id)createSubviews;
--(void)dealloc;
 -(id)initWithReuseIdentifier:(id)reuseIdentifier;
 @end
 

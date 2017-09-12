@@ -12,6 +12,8 @@ __attribute__((visibility("hidden")))
 @interface ModelActionDeleteAudioPlaylist : ModelActionDelete {
 }
 +(int)domainType;
+-(BOOL)hudSuccessEmptyVisible;
+-(BOOL)actionShowsSuccessConfirmation;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
 @end

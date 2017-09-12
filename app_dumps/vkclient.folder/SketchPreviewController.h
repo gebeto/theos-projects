@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "PopupWindowController.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "PopupWindowController.h"
 
-@class PopupWindow, PopupWindowView, VKDoc, UIImage, NSString, SketchPreviewView;
+@class UIImage, VKDoc, NSString, PopupWindow, SketchPreviewView, PopupWindowView;
 @protocol SketchPreviewControllerDelegate;
 
 __attribute__((visibility("hidden")))

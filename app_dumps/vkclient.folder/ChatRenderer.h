@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "MessagesListRenderer.h"
+#import "VKClient-Structs.h"
 
 @class UsersModel;
 
@@ -18,10 +18,10 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) UsersModel* usersModel;
 @property(assign, nonatomic) BOOL multi;
+-(void).cxx_destruct;
 -(void)prerenderr:(id)prerenderr;
 -(id)sectionKeyForMessage:(id)message;
 -(unsigned)miscSections;
--(void)dealloc;
 -(id)initWithOwner:(id)owner;
 @end
 

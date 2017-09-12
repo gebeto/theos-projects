@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 
@@ -19,6 +19,6 @@ __attribute__((visibility("hidden")))
 +(id)buttonWithNormalStateImageNamed:(id)normalStateImageNamed selectedStateImageNamed:(id)named hitTestAreaExtent:(UIEdgeInsets)extent;
 +(id)barButtonItemWithNormalStateImageNamed:(id)normalStateImageNamed selectedStateImageNamed:(id)named target:(id)target action:(SEL)action;
 +(id)barButtonItemWithImageNamed:(id)imageNamed target:(id)target action:(SEL)action;
-+(id)cancelButtonNavigationBarButtonItemWithTarget:(id)target action:(SEL)action;
++(id)fixedSpace:(float)space;
 @end
 

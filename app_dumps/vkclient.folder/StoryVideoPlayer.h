@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class StoryAssetResourceLoaderDelegate, NSError, AVAsset, AVPlayerItem, AVPlayer, KVOObserver;
+@class NSError, KVOObserver, StoryAssetResourceLoaderDelegate, AVAsset, AVPlayerItem, AVPlayer;
 
 __attribute__((visibility("hidden")))
 @interface StoryVideoPlayer : XXUnknownSuperclass {

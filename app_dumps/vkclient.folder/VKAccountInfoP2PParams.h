@@ -18,7 +18,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* currency;
 @property(assign, nonatomic) unsigned maxAmount;
 @property(assign, nonatomic) unsigned minAmount;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

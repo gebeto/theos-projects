@@ -6,10 +6,10 @@
  */
 
 #import "VKLookupSourceLocationDelegate.h"
+#import "VKClient-Structs.h"
 #import "VKMLiveController.h"
-#import "vkclient-Structs.h"
 
-@class UILabel, UIButton, LookupProcessIndicatorView;
+@class UIButton, UILabel, LookupProcessIndicatorView;
 
 __attribute__((visibility("hidden")))
 @interface LookupFriendsNearbyViewController : VKMLiveController <VKLookupSourceLocationDelegate> {
@@ -20,6 +20,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIButton* settingsButton;
 @property(retain, nonatomic) LookupProcessIndicatorView* lookupActivityView;
 @property(retain, nonatomic) UILabel* descriptionLabel;
+-(void).cxx_destruct;
 -(void)openSystemSettings;
 -(void)lookupSourceLocation:(id)location didBecomeAuthorized:(BOOL)authorized;
 -(void)updateHeaderView;

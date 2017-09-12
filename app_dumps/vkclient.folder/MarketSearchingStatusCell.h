@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "VKMCollectionCell.h"
+#import "VKClient-Structs.h"
 #import "MarketSizedCell.h"
+#import "VKMCollectionCell.h"
 
 @class VKShopProductSearchingDomain, UILabel, NSString, UIActivityIndicatorView;
 
@@ -25,6 +25,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UILabel* label;
 +(CGSize)cellSizeWithDomain:(id)domain widthConstraint:(float)constraint;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)setOpaque:(BOOL)opaque;
 -(void)setBackgroundColor:(id)color;
 -(void)switchToSearchingStatus;
@@ -35,7 +36,6 @@ __attribute__((visibility("hidden")))
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)prepareForReuse;
 -(id)createSubviews;
--(void)dealloc;
 -(id)initWithFrame:(CGRect)frame;
 @end
 

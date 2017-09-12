@@ -7,7 +7,7 @@
 
 #import "CameraConfig.h"
 
-@class NSString, NSArray;
+@class NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface MutableCameraConfig : CameraConfig {

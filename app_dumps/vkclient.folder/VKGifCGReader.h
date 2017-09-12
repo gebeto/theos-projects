@@ -30,6 +30,5 @@ __attribute__((visibility("hidden")))
 -(void)drop;
 -(void)readFileWithURL:(id)url;
 -(id)initWithConverter:(id)converter;
--(void)dealloc;
 @end
 

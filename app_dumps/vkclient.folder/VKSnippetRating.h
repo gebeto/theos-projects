@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSString, NSNumber;
+@class NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKSnippetRating : XXUnknownSuperclass {

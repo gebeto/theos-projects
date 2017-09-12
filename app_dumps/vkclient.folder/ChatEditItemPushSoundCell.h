@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "VKMGroupedCell.h"
+#import "VKMCell.h"
 
 
 __attribute__((visibility("hidden")))
-@interface ChatEditItemPushSoundCell : VKMGroupedCell {
+@interface ChatEditItemPushSoundCell : VKMCell {
 }
 +(void)prerender:(id)prerender;
 -(void)actionSwitch:(id)aSwitch;

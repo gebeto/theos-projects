@@ -21,7 +21,7 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) id<NSObject, NSCopying> currentKey;
 @property(retain, nonatomic) NSObject* currentMarker;
 @property(readonly, assign, nonatomic) double timeout;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)nextMarker;
 -(void)reset;
 -(void)throttleForKey:(id)key block:(id)block;

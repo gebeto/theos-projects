@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKMLiveController.h"
 
 @class NSOperationQueue, ProfileFriendsModel;
@@ -16,9 +16,10 @@ __attribute__((visibility("hidden")))
 	id<InlineFriendsControllerDelegate> _delegate;
 	NSOperationQueue* _searchQueue;
 }
-@property(assign, nonatomic) id<InlineFriendsControllerDelegate> delegate;
+@property(assign, nonatomic) __weak id<InlineFriendsControllerDelegate> delegate;
 @property(retain, nonatomic) ProfileFriendsModel* model;
 @property(retain, nonatomic) NSOperationQueue* searchQueue;
+-(void).cxx_destruct;
 -(void)filter:(id)filter handler:(id)handler;
 -(void)filter:(id)filter;
 -(BOOL)route:(id)route;
@@ -26,6 +27,5 @@ __attribute__((visibility("hidden")))
 -(int)VKMTableSearchMode;
 -(void)viewDidLoad;
 -(id)initWithMain:(id)main andModel:(id)model;
--(void)dealloc;
 @end
 

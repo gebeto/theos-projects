@@ -7,7 +7,7 @@
 
 #import "VKDomain.h"
 
-@class NSString, NSNumber;
+@class NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKPollAnswer : VKDomain {
@@ -22,9 +22,9 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int votes;
 @property(retain, nonatomic) NSString* text;
 @property(retain, nonatomic) NSNumber* id;
+-(void).cxx_destruct;
 -(void)updateWithAnswer:(id)answer;
 -(BOOL)process:(id)process context:(id)context;
 -(void)domainOnEditCopy:(id)copy;
--(void)dealloc;
 @end
 

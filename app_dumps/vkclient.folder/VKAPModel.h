@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class VKPPModel, VKPPService, NSDictionary, VKPPSelector, MainModel, NSNumber, VKGiftsContext;
+@class VKGiftsContext, VKPPModel, VKPPService, MainModel, NSNumber, VKPPSelector, NSDictionary;
 @protocol VKAPModelDelegate;
 
 __attribute__((visibility("hidden")))

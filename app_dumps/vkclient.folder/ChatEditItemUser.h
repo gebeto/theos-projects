@@ -5,13 +5,13 @@
  * Source: (null)
  */
 
-#import "VKGroupedItem.h"
+#import "VKRenderable.h"
 
 @class NSDictionary;
 @protocol VKSource;
 
 __attribute__((visibility("hidden")))
-@interface ChatEditItemUser : VKGroupedItem {
+@interface ChatEditItemUser : VKRenderable {
 	BOOL _admin;
 	id<VKSource> _source;
 	NSDictionary* _lastSeen;
@@ -21,6 +21,6 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) id<VKSource> inviter;
 @property(retain, nonatomic) NSDictionary* lastSeen;
 @property(retain, nonatomic) id<VKSource> source;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

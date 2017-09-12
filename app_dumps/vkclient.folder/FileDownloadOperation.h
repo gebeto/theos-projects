@@ -7,24 +7,22 @@
 
 #import "AsyncOperation.h"
 
-@class NSString, NSURL;
+@class NSURL, NSString;
 
 __attribute__((visibility("hidden")))
 @interface FileDownloadOperation : AsyncOperation {
 	BOOL _ignoreLocalCacheData;
-	BOOL _removeFileOnCompletion;
 	NSURL* _url;
 	NSString* _outputFilePath;
 }
-@property(assign, nonatomic) BOOL removeFileOnCompletion;
 @property(assign, nonatomic) BOOL ignoreLocalCacheData;
 @property(copy, nonatomic) NSString* outputFilePath;
 @property(copy, nonatomic) NSURL* url;
 +(id)generateRandomFilePathForURL:(id)url;
 +(id)operationWithURL:(id)url outputFilePath:(id)path;
+-(void).cxx_destruct;
 -(void)removeOutputFile;
 -(void)runAsync;
--(void)dealloc;
 -(id)initWithURL:(id)url outputFilePath:(id)path;
 @end
 

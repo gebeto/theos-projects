@@ -14,8 +14,8 @@ __attribute__((visibility("hidden")))
 	VKGroup* _group;
 }
 @property(retain, nonatomic) VKGroup* group;
+-(void).cxx_destruct;
 -(id)process:(id)process;
 -(id)request:(int)request count:(int)count;
--(void)dealloc;
 @end
 

@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "CLLocationManagerDelegate.h"
 #import "TimerTargetDelegate.h"
 #import "LoadingModel.h"
+#import "CLLocationManagerDelegate.h"
 
 @class TimerTarget, CLLocationManager, NSString;
 @protocol VKLookupSourceLocationDelegate;
@@ -24,9 +24,10 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(readonly, assign, nonatomic, getter=isAuthorizationDetermined) BOOL authorizationDetermined;
 @property(readonly, assign, nonatomic, getter=isAuthorized) BOOL authorized;
-@property(assign, nonatomic) id<VKLookupSourceLocationDelegate> locationSourceDelegate;
+@property(assign, nonatomic) __weak id<VKLookupSourceLocationDelegate> locationSourceDelegate;
 @property(retain, nonatomic) TimerTarget* updateTimer;
 @property(retain, nonatomic) CLLocationManager* locationManager;
+-(void).cxx_destruct;
 -(void)handleAddFriend:(id)aFriend :(id)arg2;
 -(void)registerForEvents:(id)events;
 -(void)timerTargetFired:(id)fired;

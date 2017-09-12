@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "NSDiscardableContent.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "NSDiscardableContent.h"
 
 @class UIImage;
 
@@ -16,6 +16,7 @@ __attribute__((visibility("hidden")))
 	UIImage* _image;
 }
 @property(readonly, retain, nonatomic) UIImage* image;
+-(void).cxx_destruct;
 -(BOOL)isContentDiscarded;
 -(void)discardContentIfPossible;
 -(void)endContentAccess;

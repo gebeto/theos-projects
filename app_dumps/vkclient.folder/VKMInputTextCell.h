@@ -5,19 +5,19 @@
  * Source: (null)
  */
 
-#import "VKMGroupedCell.h"
+#import "VKMCell.h"
 
 @class UITextField;
 
 __attribute__((visibility("hidden")))
-@interface VKMInputTextCell : VKMGroupedCell {
+@interface VKMInputTextCell : VKMCell {
 	UITextField* _inputText;
 	float _minTextWidth;
 }
 @property(assign, nonatomic) float minTextWidth;
 @property(retain, nonatomic) UITextField* inputText;
+-(void).cxx_destruct;
 -(void)layoutSubviews;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
--(void)dealloc;
 @end
 

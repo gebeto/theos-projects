@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "PlaceCell.h"
+#import "VKClient-Structs.h"
 
 
 __attribute__((visibility("hidden")))

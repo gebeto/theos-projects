@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "VKRenderable.h"
 #import "VKSourceStatus.h"
+#import "VKRenderable.h"
 
-@class NSString, NSNumber;
+@class NSNumber, NSString;
 @protocol VKSource;
 
 __attribute__((visibility("hidden")))
@@ -27,10 +27,11 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) unsigned date;
 @property(retain, nonatomic) NSNumber* source_id;
 +(id)feed:(id)feed;
++(id)_feed:(id)feed sources:(id)sources;
 +(id)feed:(id)feed sources:(id)sources;
+-(void).cxx_destruct;
 -(void)acceptSources:(id)sources;
 -(int)statusMask;
 -(id)statusForSource:(id)source;
--(void)dealloc;
 @end
 

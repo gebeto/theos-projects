@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class MainNewsFeedModelContext, Index, NSDate;
+@class Index, NSDate, MainNewsFeedModelContext;
 
 __attribute__((visibility("hidden")))
 @interface MainNewsFeedModelDeferredUpdate : XXUnknownSuperclass {
@@ -18,6 +18,6 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSDate* creationDate;
 @property(retain, nonatomic) MainNewsFeedModelContext* context;
 @property(retain, nonatomic) Index* index;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

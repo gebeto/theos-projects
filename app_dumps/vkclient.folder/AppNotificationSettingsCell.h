@@ -11,14 +11,15 @@
 
 __attribute__((visibility("hidden")))
 @interface AppNotificationSettingsCell : VKMCell {
+@private
 	UISwitch* _switchControl;
 }
 @property(retain, nonatomic) VKAPIAppNotificationSettings* domain;
 @property(readonly, retain, nonatomic) UISwitch* switchControl;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)actionNotificationSettingsSwitched:(id)switched;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
--(void)dealloc;
 @end
 

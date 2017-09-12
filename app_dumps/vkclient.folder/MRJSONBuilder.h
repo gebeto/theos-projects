@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSMutableArray, NSMutableDictionary, NSNumber, NSString, NSArray;
+@class NSMutableDictionary, NSMutableArray, NSNumber, NSArray, NSString;
 
 @interface MRJSONBuilder : XXUnknownSuperclass {
 	NSString* _userId;

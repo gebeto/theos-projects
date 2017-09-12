@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKMCell.h"
-#import "vkclient-Structs.h"
 
 @class VKAPIAppRequestsAll;
 

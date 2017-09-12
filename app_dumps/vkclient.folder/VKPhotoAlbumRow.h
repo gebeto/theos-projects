@@ -7,7 +7,7 @@
 
 #import "VKRenderable.h"
 
-@class AlbumPhotoFeedContext, VKPhotoAlbum;
+@class VKPhotoAlbum, AlbumPhotoFeedContext;
 
 __attribute__((visibility("hidden")))
 @interface VKPhotoAlbumRow : VKRenderable {
@@ -19,7 +19,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) AlbumPhotoFeedContext* context;
 @property(retain, nonatomic) VKPhotoAlbum* album;
 +(id)album:(id)album;
+-(void).cxx_destruct;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

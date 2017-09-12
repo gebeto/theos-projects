@@ -6,12 +6,12 @@
  */
 
 #import "UIWebViewDelegate.h"
-#import "vkclient-Structs.h"
-#import "VKMController.h"
 #import "CoalescedPerformerDelegate.h"
+#import "VKClient-Structs.h"
 #import "UIScrollViewDelegate.h"
+#import "VKMController.h"
 
-@class UILabel, TextPageModel, LandscapePresenter, CoalescedPerformer, UIScrollView, UIToolbar, UIBarButtonItem, NSMutableArray, UIButton, NSString, UIWebView, VKMBrowserTarget;
+@class UIBarButtonItem, UIButton, NSMutableArray, LandscapePresenter, TextPageModel, CoalescedPerformer, UIScrollView, UILabel, VKMBrowserTarget, UIWebView, NSString, UIToolbar;
 
 __attribute__((visibility("hidden")))
 @interface VKMBrowserController : VKMController <UIScrollViewDelegate, CoalescedPerformerDelegate, UIWebViewDelegate> {
@@ -56,6 +56,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UILabel* headerTitle;
 @property(retain, nonatomic) VKMBrowserTarget* target;
 @property(retain, nonatomic) NSMutableArray* stack;
+-(void).cxx_destruct;
 -(void)actionStop;
 -(void)actionReload;
 -(void)actionSafari:(id)safari;

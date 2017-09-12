@@ -15,10 +15,10 @@ __attribute__((visibility("hidden")))
 }
 @property(readonly, retain, nonatomic) NSNumber* dialogId;
 +(id)eventWithDialogId:(id)dialogId;
+-(void).cxx_destruct;
 -(id)controlerForEvent:(id)event;
 -(id)eventText:(id)text;
 -(id)eventSource:(id)source;
 -(void)renderWithSession:(id)session;
--(void)dealloc;
 @end
 

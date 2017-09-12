@@ -14,7 +14,7 @@ __attribute__((visibility("hidden")))
 	NSArray* _photos;
 }
 @property(retain, nonatomic) NSArray* photos;
+-(void).cxx_destruct;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

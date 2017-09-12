@@ -7,7 +7,7 @@
 
 #import "NSObject.h"
 
-@class NSString, NSURL;
+@class NSURL, NSString;
 
 @protocol StoryEditorRenderingTask <NSObject>
 @property(readonly, copy, nonatomic) NSString* localIdentifier;

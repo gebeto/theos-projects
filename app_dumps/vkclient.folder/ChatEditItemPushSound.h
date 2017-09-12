@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "VKGroupedItem.h"
+#import "VKRenderable.h"
 
 
 __attribute__((visibility("hidden")))
-@interface ChatEditItemPushSound : VKGroupedItem {
+@interface ChatEditItemPushSound : VKRenderable {
 	BOOL _enabled;
 	BOOL _on;
 }

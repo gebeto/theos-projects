@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "UITableViewDelegate.h"
-#import "vkclient-Structs.h"
-#import "UITableViewDataSource.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "UITableViewDelegate.h"
+#import "UITableViewDataSource.h"
 
-@class VKMImageView, ChatEditItemTitleCell, ChatEditItemTitle, UITableView, UIButton, NSString;
+@class UITableView, UIButton, ChatEditItemTitleCell, NSString, VKMImageView, ChatEditItemTitle;
 
 __attribute__((visibility("hidden")))
 @interface ChatEditHeaderView : XXUnknownSuperclass <UITableViewDataSource, UITableViewDelegate> {
@@ -29,13 +29,13 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) ChatEditItemTitleCell* cell;
 @property(retain, nonatomic) ChatEditItemTitle* item;
 @property(retain, nonatomic) UITableView* table;
+-(void).cxx_destruct;
 -(void)tableView:(id)view didSelectRowAtIndexPath:(id)indexPath;
 -(id)tableView:(id)view cellForRowAtIndexPath:(id)indexPath;
 -(float)tableView:(id)view heightForRowAtIndexPath:(id)indexPath;
 -(int)tableView:(id)view numberOfRowsInSection:(int)section;
 -(id)tableView:(id)view viewForHeaderInSection:(int)section;
 -(float)tableView:(id)view heightForHeaderInSection:(int)section;
--(void)dealloc;
 -(id)initWithFrame:(CGRect)frame;
 @end
 

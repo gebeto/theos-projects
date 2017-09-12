@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "UIScrollViewDelegate.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "UIScrollViewDelegate.h"
 
 @class UIScrollView, NSString;
 @protocol PagingViewDelegate, PagingViewDataSource;
@@ -28,8 +28,9 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UIScrollView* scrollView;
 @property(assign, nonatomic) int currentPage;
 @property(assign, nonatomic) int numberOfPages;
-@property(assign, nonatomic) id<PagingViewDelegate> delegate;
-@property(assign, nonatomic) id<PagingViewDataSource> dataSource;
+@property(assign, nonatomic) __weak id<PagingViewDelegate> delegate;
+@property(assign, nonatomic) __weak id<PagingViewDataSource> dataSource;
+-(void).cxx_destruct;
 -(id)prepareViewForPagePosition:(int)pagePosition;
 -(void)moveViewFromPosition:(int)position toPosition:(int)position2;
 -(CGRect)frameForPagePosition:(int)pagePosition;

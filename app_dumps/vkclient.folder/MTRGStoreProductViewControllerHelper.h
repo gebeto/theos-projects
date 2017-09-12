@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "SKStoreProductViewControllerDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "SKStoreProductViewControllerDelegate.h"
 
-@class UIViewController, MTRGSKStoreProductViewController, NSString;
+@class MTRGSKStoreProductViewController, NSString, UIViewController;
 
 @interface MTRGStoreProductViewControllerHelper : XXUnknownSuperclass <SKStoreProductViewControllerDelegate> {
 	id _closeBlock;

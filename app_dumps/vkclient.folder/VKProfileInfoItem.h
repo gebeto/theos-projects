@@ -11,8 +11,10 @@
 
 __attribute__((visibility("hidden")))
 @interface VKProfileInfoItem : VKRenderable {
+@private
 	NSAttributedString* _title;
 	NSAttributedString* _value;
+@protected
 	NSString* _photo;
 	NSString* _textCopyTarget;
 	NSString* _leftIconName;
@@ -28,6 +30,6 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) NSString* photo;
 @property(copy, nonatomic) NSAttributedString* value;
 @property(copy, nonatomic) NSAttributedString* title;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

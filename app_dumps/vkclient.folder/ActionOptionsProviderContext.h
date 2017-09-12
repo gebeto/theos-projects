@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
+#import <XXUnknownSuperclass.h> // Unknown library
 #import "ActionOptionsProviderContext.h"
 #import "NSObject.h"
-#import <XXUnknownSuperclass.h> // Unknown library
 
 @class VKSession, ActionContext, NSString;
 

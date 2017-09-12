@@ -7,12 +7,12 @@
 
 #import "UISearchControllerDelegate.h"
 #import "VKMSearchControllerDelegate.h"
-#import "UITableViewDelegate.h"
 #import "VKMScrollViewController.h"
+#import "VKClient-Structs.h"
+#import "UITableViewDelegate.h"
 #import "UITableViewDataSource.h"
-#import "vkclient-Structs.h"
 
-@class VKSearchController, UIColor, ReusableViewsPool, VKMSearchController, UITableView, NSString, VKMTableViewSearchHeaderView;
+@class UITableView, ReusableViewsPool, UIColor, VKMTableViewSearchHeaderView, VKSearchController, VKMSearchController, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKMTableController : VKMScrollViewController <UITableViewDataSource, UITableViewDelegate, VKMSearchControllerDelegate, UISearchControllerDelegate> {
@@ -33,6 +33,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIColor* separatorColor;
 @property(retain, nonatomic) VKMTableViewSearchHeaderView* searchHeader;
 @property(retain, nonatomic) UITableView* tableView;
+-(void).cxx_destruct;
 -(void)didDismissSearchController:(id)controller;
 -(void)willDismissSearchController:(id)controller;
 -(void)didPresentSearchController:(id)controller;

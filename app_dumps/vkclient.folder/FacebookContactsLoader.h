@@ -16,10 +16,10 @@ __attribute__((visibility("hidden")))
 @property(readonly, copy, nonatomic) NSString* token;
 +(id)loaderWithFacebookAuth:(id)facebookAuth;
 +(id)loaderWithFacebookToken:(id)facebookToken;
+-(void).cxx_destruct;
 -(void)loadFriendsIdentifiersWithCompletion:(id)completion;
 -(id)friendIdentifiersWithData:(id)data;
 -(id)initWithFacebookAuth:(id)facebookAuth;
 -(id)initWithFacebookToken:(id)facebookToken;
--(void)dealloc;
 @end
 

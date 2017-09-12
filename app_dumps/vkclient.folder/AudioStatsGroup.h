@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "AudioStats.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "AudioStats.h"
 
 @class NSString, NSArray;
 
@@ -20,8 +20,8 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(readonly, assign, nonatomic) NSArray* stats;
 +(id)stats:(id)stats;
+-(void).cxx_destruct;
 -(void)playAudio:(id)audio ref:(id)ref;
 -(id)initWithStats:(id)stats;
--(void)dealloc;
 @end
 

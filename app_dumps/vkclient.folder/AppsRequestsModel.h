@@ -21,6 +21,7 @@ __attribute__((visibility("hidden")))
 +(id)parseApps:(id)apps;
 +(id)request:(int)request filterType:(int)type forAppWithID:(id)anId;
 +(id)request:(int)request filterType:(int)type;
+-(void).cxx_destruct;
 -(unsigned)markReadModelRequests:(id)requests inSetOfIDs:(id)ids;
 -(void)handleMarkAsRead:(id)read withBuilder:(id)builder;
 -(void)handleDelete:(id)aDelete withBuilder:(id)builder;
@@ -28,7 +29,6 @@ __attribute__((visibility("hidden")))
 -(id)updatedIndex:(id)index data:(id)data context:(id)context;
 -(id)requestForContext:(id)context;
 -(id)countKey;
--(void)dealloc;
 -(id)forAppID:(id)appID andType:(int)type;
 @end
 

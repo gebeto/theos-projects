@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKMCell.h"
 
-@class UILabel, VKMImageView, VKMenuSubtitleItem, UIButton, UIImageView;
+@class VKMenuSubtitleItem, UIButton, UILabel, UIImageView, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface MenuSubtitleCell : VKMCell {
@@ -25,6 +25,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UILabel* name;
 @property(readonly, retain, nonatomic) VKMImageView* image;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)prepareForReuse;
 -(void)dealloc;
 -(float)photoSize;

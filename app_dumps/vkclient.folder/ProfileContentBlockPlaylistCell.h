@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class UILabel, VKMImageView;
@@ -19,10 +19,10 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UILabel* artistLabel;
 @property(retain, nonatomic) UILabel* titleLabel;
 @property(retain, nonatomic) VKMImageView* imageView;
+-(void).cxx_destruct;
 -(void)attach:(id)attach;
 -(void)layoutSubviews;
 -(void)prepareForReuse;
 -(id)initWithFrame:(CGRect)frame;
--(void)dealloc;
 @end
 

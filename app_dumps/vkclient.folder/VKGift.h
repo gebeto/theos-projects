@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "VKImage.h"
 #import "VKDomain.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
+#import "VKImage.h"
 
-@class NSMutableDictionary, NSString, NSNumber;
+@class NSMutableDictionary, NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKGift : VKDomain <VKImage> {
@@ -24,6 +24,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSNumber* stickers_product_id;
 @property(assign, nonatomic) float ratio;
 @property(retain, nonatomic) NSMutableDictionary* variants;
+-(void).cxx_destruct;
 -(id)thumbnailUrl;
 -(id)messagesPlaceholder;
 -(XXStruct_UOIMaD)messagesRenderType;
@@ -33,6 +34,5 @@ __attribute__((visibility("hidden")))
 -(id)fullVariant;
 -(id)thumbnailVariant;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

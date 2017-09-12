@@ -22,6 +22,7 @@ __attribute__((visibility("hidden")))
 +(void)requestLookupFriendsWithNavDelegate:(id)navDelegate;
 +(void)lookupFriendsWithNavDelegate:(id)navDelegate;
 +(void)lookupFriendsWithAddressBook:(id)addressBook navDelegate:(id)delegate;
+-(void).cxx_destruct;
 -(id)lazyRecords;
 -(void)dealloc;
 -(id)initWithAddressBook:(void*)addressBook;

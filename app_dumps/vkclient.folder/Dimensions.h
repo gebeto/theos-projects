@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "NSMutableCopying.h"
 #import "NSCopying.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
+#import "NSMutableCopying.h"
 
 
 __attribute__((visibility("hidden")))

@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKPPBadge, UIToolbar, UIView, UIButton, VKAPModel;
+@class UIButton, VKAPModel, VKPPBadge, UIView, UIToolbar;
 
 __attribute__((visibility("hidden")))
 @interface VKAPBottomToolbar : XXUnknownSuperclass {

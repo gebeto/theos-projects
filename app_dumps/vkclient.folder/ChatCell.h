@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "MessageCell.h"
 #import "MessageRendererDelegate.h"
 
-@class UILabel, VKMImageView, NSString, UIImageView, MessageRenderer;
+@class MessageRenderer, UILabel, UIImageView, NSString, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface ChatCell : MessageCell <MessageRendererDelegate> {
@@ -32,6 +32,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKMImageView* avatar;
 +(void)prerender:(id)prerender multi:(BOOL)multi;
 +(void)initialize;
+-(void).cxx_destruct;
 -(id)messageNavigation;
 -(void)actionMultiUserTapped:(id)tapped;
 -(void)messageUpdated:(id)updated;

@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "ThumbnailEditAttachmentView.h"
+#import "VKClient-Structs.h"
 
 @class UILabel;
 
@@ -17,8 +17,8 @@ __attribute__((visibility("hidden")))
 }
 @property(readonly, retain, nonatomic) UILabel* subtitleLabel;
 @property(readonly, retain, nonatomic) UILabel* titleLabel;
+-(void).cxx_destruct;
 -(void)renderTitle:(id)title subtitle:(id)subtitle;
--(id)initWithAttachment:(id)attachment style:(XXStruct_9zIMjA)style enableDeletion:(BOOL)deletion;
--(void)dealloc;
+-(id)initWithAttachment:(id)attachment style:(id)style enableDeletion:(BOOL)deletion;
 @end
 

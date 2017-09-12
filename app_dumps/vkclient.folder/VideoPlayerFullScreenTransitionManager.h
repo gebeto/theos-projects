@@ -6,10 +6,10 @@
  */
 
 #import "UIGestureRecognizerDelegate.h"
-#import "UIViewControllerTransitioningDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "UIViewControllerTransitioningDelegate.h"
 
-@class VKMScrollViewController, VideoPlayerFromFullScreenTransitionAnimationController, UIPanGestureRecognizer, UIViewController, NSString;
+@class VKMScrollViewController, NSString, UIPanGestureRecognizer, UIViewController, VideoPlayerFromFullScreenTransitionAnimationController;
 @protocol VKVideoPlayerHolder, PanGestureDrivenDismissableTransitionViewController, VideoPlayerToFullScreenTransitionDelegate;
 
 __attribute__((visibility("hidden")))

@@ -5,20 +5,23 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "VKMTableController.h"
+#import "VKClient-Structs.h"
 
-@class NSDictionary, ModernPushSettingsModel, UIActivityIndicatorView;
+@class ModernPushSettingsModel, UIActivityIndicatorView, NSDictionary;
 
 __attribute__((visibility("hidden")))
 @interface ModernPushSettingsController : VKMTableController {
 	BOOL syncing;
 	NSDictionary* _presentationSettings;
 	UIActivityIndicatorView* _indicatorView;
+	unsigned _notificationsStyle;
 }
 @property(retain, nonatomic) ModernPushSettingsModel* model;
+@property(assign, nonatomic) unsigned notificationsStyle;
 @property(retain, nonatomic) UIActivityIndicatorView* indicatorView;
 @property(retain, nonatomic) NSDictionary* presentationSettings;
+-(void).cxx_destruct;
 -(void)tableView:(id)view didSelectRowAtIndexPath:(id)indexPath;
 -(id)tableView:(id)view cellForRowAtIndexPath:(id)indexPath;
 -(id)tableView:(id)view titleForFooterInSection:(int)section;
@@ -29,6 +32,5 @@ __attribute__((visibility("hidden")))
 -(id)VKMScrollViewIndexFromModel:(id)model;
 -(void)viewDidLoad;
 -(int)VKMTableStyle;
--(void)dealloc;
 @end
 

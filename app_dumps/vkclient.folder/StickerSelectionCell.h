@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class VKMImageView;
@@ -15,6 +15,7 @@ __attribute__((visibility("hidden")))
 	VKMImageView* _imageView;
 }
 @property(retain, nonatomic) VKMImageView* imageView;
+-(void).cxx_destruct;
 -(void)prepareForReuse;
 -(void)setSelected:(BOOL)selected;
 -(id)initWithFrame:(CGRect)frame;

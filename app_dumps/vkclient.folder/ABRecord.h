@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UIImage, NSString, NSArray;
+@class UIImage, NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface ABRecord : XXUnknownSuperclass {
@@ -32,7 +32,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL isOrganization;
 @property(copy, nonatomic) NSString* lastName;
 @property(copy, nonatomic) NSString* firstName;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)initWithRecordRef:(void*)recordRef;
 @end
 

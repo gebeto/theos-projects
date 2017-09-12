@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKFeedPhoto, NSArray, VKFeedVideo;
+@class VKFeedPhoto, VKFeedVideo, NSArray;
 @protocol PhotoStats;
 
 __attribute__((visibility("hidden")))

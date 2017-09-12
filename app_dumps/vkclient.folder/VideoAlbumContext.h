@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VideoAlbumsInfo, VKVideoAlbum;
+@class VKVideoAlbum, VideoAlbumsInfo;
 
 __attribute__((visibility("hidden")))
 @interface VideoAlbumContext : XXUnknownSuperclass {
@@ -25,8 +25,8 @@ __attribute__((visibility("hidden")))
 +(id)contextWithAlbum:(id)album showAlbumsInfo:(BOOL)info loadedInfo:(id)info3;
 +(id)contextWithAlbum:(id)album showAlbumsInfo:(BOOL)info;
 +(id)contextWithAlbum:(id)album;
+-(void).cxx_destruct;
 -(id)setupPrimaryIfOwner:(id)owner;
 -(id)contextWithAlbum:(id)album;
--(void)dealloc;
 @end
 

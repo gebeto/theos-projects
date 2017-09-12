@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKMLiveController.h"
-#import "vkclient-Structs.h"
 
 
 __attribute__((visibility("hidden")))
@@ -18,6 +18,8 @@ __attribute__((visibility("hidden")))
 -(float)tableView:(id)view heightForFooterInSection:(int)section;
 -(float)tableView:(id)view heightForHeaderInSection:(int)section;
 -(BOOL)_vkm_emptySection:(int)section;
+-(id)VKMControllerStatsRef;
+-(int)VKMLiveAudioContext;
 -(int)VKMTableSearchMode;
 -(int)VKMTableStyle;
 -(void)viewDidLoad;

@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "IndexUpdate.h"
+#import "VKClient-Structs.h"
 
 @class NSMutableArray;
 
@@ -16,6 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSMutableArray* elements;
 +(int)addToInfo:(id)info sectionTo:(int)to sectionFrom:(int)from to:(id)to4 from:(id)from5 comparator:(id)comparator limit:(int*)limit onSame:(id)same;
+-(void).cxx_destruct;
 -(id)indexPathsForReplacedRowUpdates;
 -(BOOL)hasNonReloadChanges;
 -(BOOL)hasListChanges;
@@ -25,6 +26,5 @@ __attribute__((visibility("hidden")))
 -(id)elementForStrategy:(XXStruct_X102JB)strategy;
 -(void)applyForTableView:(id)tableView shouldReload:(BOOL)reload reload:(id)reload3;
 -(id)description;
--(void)dealloc;
 @end
 

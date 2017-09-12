@@ -19,10 +19,10 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) id blockResult;
 @property(retain, nonatomic) NSArray* subnodes;
 +(id)node;
+-(void).cxx_destruct;
 -(id)nodes:(id)nodes;
 -(id)result:(id)result;
 -(id)match:(id)match;
 -(id)apply:(id)apply;
--(void)dealloc;
 @end
 

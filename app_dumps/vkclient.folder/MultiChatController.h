@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "MultiImageLoaderDelegate.h"
+#import "VKClient-Structs.h"
 #import "MessagesModelObserver.h"
 #import "ChatController.h"
-#import "MultiImageLoaderDelegate.h"
 
-@class VKDialog, NSString, VKMMultiLoader;
+@class VKDialog, VKMMultiLoader, NSString;
 
 __attribute__((visibility("hidden")))
 @interface MultiChatController : ChatController <MultiImageLoaderDelegate, MessagesModelObserver> {
@@ -25,9 +25,9 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(readonly, retain, nonatomic) VKMMultiLoader* multiloader;
 @property(retain, nonatomic) VKDialog* dialog;
+-(void).cxx_destruct;
 -(void)modelUpdatedDialogsData:(id)data;
 -(void)headerSelected;
--(void)selectedAdditionalUser:(id)user;
 -(void)notificationUserUpdated:(id)updated;
 -(BOOL)isChatParticipant;
 -(void)loadDialogImage;

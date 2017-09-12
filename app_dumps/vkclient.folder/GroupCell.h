@@ -19,6 +19,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UILabel* name;
 @property(retain, nonatomic) VKMImageView* imageLoadingView;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)willTransitionToState:(unsigned)state;
 -(void)prepareForReuse;

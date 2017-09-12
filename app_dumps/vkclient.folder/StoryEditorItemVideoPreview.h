@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "StoryEditorItemPreview.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "StoryEditorItemPreview.h"
 
-@class AVAsset, AVPlayerItem, AVPlayer, NSString, KVOObserver, UIImageView, AVPlayerLayer, StoryEditorItemVideo;
+@class KVOObserver, AVPlayerLayer, AVAsset, AVPlayerItem, UIImageView, StoryEditorItemVideo, NSString, AVPlayer;
 
 __attribute__((visibility("hidden")))
 @interface StoryEditorItemVideoPreview : XXUnknownSuperclass <StoryEditorItemPreview> {

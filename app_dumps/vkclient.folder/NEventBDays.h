@@ -15,7 +15,7 @@ __attribute__((visibility("hidden")))
 }
 @property(copy, nonatomic) NSArray* friends;
 +(id)eventWithFriends:(id)friends today:(BOOL)today;
+-(void).cxx_destruct;
 -(id)controlerForEvent:(id)event;
--(void)dealloc;
 @end
 

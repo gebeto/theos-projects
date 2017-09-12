@@ -18,9 +18,9 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) MOCTRender* labelRender;
 @property(assign, nonatomic) int style;
 @property(assign, nonatomic) unsigned balance;
+-(void).cxx_destruct;
 -(Class)cellClass;
 -(id)withStyle:(int)style;
 -(id)withBalance:(unsigned)balance;
--(void)dealloc;
 @end
 

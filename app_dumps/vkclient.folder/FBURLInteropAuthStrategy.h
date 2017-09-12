@@ -19,10 +19,10 @@ __attribute__((visibility("hidden")))
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
-@property(readonly, retain, nonatomic) id<URLInteropHandler> interopHandler;
+@property(readonly, assign, nonatomic) id<URLInteropHandler> interopHandler;
+-(void).cxx_destruct;
 -(id)targetURLForRequest:(id)request;
 -(void)attemptAuth:(id)auth handler:(id)handler;
--(void)dealloc;
 -(id)initWithInteropHandler:(id)interopHandler;
 @end
 

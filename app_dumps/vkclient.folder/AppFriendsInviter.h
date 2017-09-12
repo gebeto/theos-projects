@@ -8,7 +8,7 @@
 #import "PrivacyUsersSelectionControllerDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKMController, ActionContext, AppFriendsModel, NSNumber;
+@class AppFriendsModel, ActionContext, NSNumber, VKMController;
 
 __attribute__((visibility("hidden")))
 @interface AppFriendsInviter : XXUnknownSuperclass <PrivacyUsersSelectionControllerDelegate> {
@@ -23,6 +23,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) ActionContext* actionContext;
 @property(readonly, assign, nonatomic, getter=isMultiselect) BOOL multiselect;
 @property(readonly, retain, nonatomic) NSNumber* appID;
+-(void).cxx_destruct;
 -(void)usersSelectionController:(id)controller didSelectObjects:(id)objects;
 -(void)usersSelectionControllerDidCancel:(id)usersSelectionController;
 -(id)selectionControllerWithMainModel:(id)mainModel;

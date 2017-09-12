@@ -5,14 +5,14 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "UICollectionViewDelegate.h"
-#import "UICollectionViewDelegateFlowLayout.h"
-#import "UICollectionViewDataSource.h"
-#import "VKMCell.h"
 #import "ModelObserver.h"
+#import "VKClient-Structs.h"
+#import "UICollectionViewDelegateFlowLayout.h"
+#import "VKMCell.h"
+#import "UICollectionViewDelegate.h"
+#import "UICollectionViewDataSource.h"
 
-@class UILabel, UICollectionView, PhotoAlbumRowModel, VKPhotoAlbumRow, ScrollSpeed, NSString;
+@class PhotoAlbumRowModel, UILabel, ScrollSpeed, NSString, VKPhotoAlbumRow, UICollectionView;
 
 __attribute__((visibility("hidden")))
 @interface PhotoAlbumRowCell : VKMCell <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, ModelObserver> {
@@ -34,6 +34,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UICollectionView* collection;
 +(void)prerender:(id)prerender;
 +(void)initialize;
+-(void).cxx_destruct;
 -(void)collectionView:(id)view willDisplayCell:(id)cell forItemAtIndexPath:(id)indexPath;
 -(id)collectionView:(id)view cellForItemAtIndexPath:(id)indexPath;
 -(CGSize)collectionView:(id)view layout:(id)layout sizeForItemAtIndexPath:(id)indexPath;

@@ -16,6 +16,6 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) NSArray* requests;
 @property(readonly, retain, nonatomic) VKAPIApp* domain;
 +(id)from:(id)from requests:(id)requests;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

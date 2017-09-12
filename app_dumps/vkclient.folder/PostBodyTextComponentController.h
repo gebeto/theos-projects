@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "PostBodyTextLabelBehaviorDelegate.h"
 #import "TextComponentInteractiveController.h"
+#import "PostBodyTextLabelBehaviorDelegate.h"
 
-@class PostBodyTextComponent, NSString;
+@class NSString, PostBodyTextComponent;
 
 __attribute__((visibility("hidden")))
 @interface PostBodyTextComponentController : TextComponentInteractiveController <PostBodyTextLabelBehaviorDelegate> {

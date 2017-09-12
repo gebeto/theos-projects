@@ -5,16 +5,16 @@
  * Source: (null)
  */
 
-#import "UIWebViewDelegate.h"
-#import "vkclient-Structs.h"
+#import "WKNavigationDelegate.h"
+#import "VKClient-Structs.h"
 #import "VKMController.h"
 
-@class WebAppTarget, UIView, NSString, UIWebView;
+@class WKWebView, WebAppTarget, UIView, NSString;
 
 __attribute__((visibility("hidden")))
-@interface WebAppBrowserController : VKMController <UIWebViewDelegate> {
+@interface WebAppBrowserController : VKMController <WKNavigationDelegate> {
 	WebAppTarget* _target;
-	UIWebView* _webView;
+	WKWebView* _webView;
 	UIView* _loadingTitleView;
 }
 @property(readonly, copy) NSString* debugDescription;
@@ -23,12 +23,18 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) WebAppTarget* target;
 @property(retain, nonatomic) UIView* loadingTitleView;
-@property(retain, nonatomic) UIWebView* webView;
+@property(retain, nonatomic) WKWebView* webView;
 -(void).cxx_destruct;
--(void)webView:(id)view didFailLoadWithError:(id)error;
--(void)webViewDidFinishLoad:(id)webView;
--(void)webViewDidStartLoad:(id)webView;
--(void)VKMNavigationBarUpdate;
+-(void)setupTitleLoading;
+-(void)setupTitleFail;
+-(void)setupTitleNormal;
+-(void)webView:(id)view decidePolicyForNavigationAction:(id)navigationAction decisionHandler:(id)handler;
+-(void)webView:(id)view didFailNavigation:(id)navigation withError:(id)error;
+-(void)webView:(id)view didFinishNavigation:(id)navigation;
+-(void)webView:(id)view didFailProvisionalNavigation:(id)navigation withError:(id)error;
+-(void)webView:(id)view didStartProvisionalNavigation:(id)navigation;
+-(int)VKMControllerStatusBarStyle;
+-(int)VKMNavigationBarStyle;
 -(void)actionActions:(id)actions;
 -(void)actionCancel:(id)cancel;
 -(void)viewDidLoad;

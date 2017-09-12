@@ -7,7 +7,7 @@
 
 #import "ModelAction.h"
 
-@class VKPost, VKAttachments, VKIdentity, NSNumber, NSString;
+@class VKPost, VKIdentity, VKAttachments, NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface ModelActionAddPost : ModelAction {
@@ -41,6 +41,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKIdentity* target;
 +(id)fakeEditAction:(id)action;
 +(int)domainType;
+-(void).cxx_destruct;
 -(id)actionSuccessMessage:(id)message;
 -(int)actionResultForFailedRequestResult:(id)failedRequestResult;
 -(BOOL)actionResultForData:(id)data context:(id)context;
@@ -48,6 +49,5 @@ __attribute__((visibility("hidden")))
 -(BOOL)isEditAction;
 -(BOOL)isPublishAction;
 -(id)title;
--(void)dealloc;
 @end
 

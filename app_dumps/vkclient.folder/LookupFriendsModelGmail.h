@@ -16,12 +16,12 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) GmailContactsLoader* loader;
 @property(retain, nonatomic) GoogleContactsFeed* contactsFeed;
+-(void).cxx_destruct;
 -(id)lookupResponseWithData:(id)data context:(id)context;
 -(id)requestForContext:(id)context;
 -(BOOL)shouldLoad:(id)load;
 -(void)loadFeed;
 -(void)activate;
 -(void)reset;
--(void)dealloc;
 @end
 

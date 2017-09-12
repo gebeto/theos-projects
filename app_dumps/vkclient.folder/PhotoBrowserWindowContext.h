@@ -19,7 +19,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) NSArray* thumbnails;
+-(void).cxx_destruct;
 -(BOOL)hasThumbnails;
--(void)dealloc;
 @end
 

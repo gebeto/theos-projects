@@ -6,9 +6,9 @@
  */
 
 #import "Component5.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 
-@class NSAttributedString, VKPost, VKIdentity;
+@class VKPost, VKIdentity, NSAttributedString;
 @protocol PostInteractionStats;
 
 __attribute__((visibility("hidden")))

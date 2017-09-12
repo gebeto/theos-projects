@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "UITextFieldDelegate.h"
 #import "BaseSectionedSettingsController.h"
+#import "VKClient-Structs.h"
+#import "UITextFieldDelegate.h"
 #import "MOCTLabelDelegate.h"
-#import "vkclient-Structs.h"
 
-@class UILabel, VKMInputTextCell, MOCTLabel, NSRegularExpression, VKShortNameCheckResult, NSString;
+@class NSRegularExpression, VKShortNameCheckResult, UILabel, NSString, MOCTLabel, VKMInputTextCell;
 
 __attribute__((visibility("hidden")))
 @interface SettingsChangeShortnameController : BaseSectionedSettingsController <UITextFieldDelegate, MOCTLabelDelegate> {
@@ -34,6 +34,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UILabel* errorLabel;
 @property(retain, nonatomic) NSRegularExpression* regexpMatcher;
 @property(retain, nonatomic) VKMInputTextCell* cellShortName;
+-(void).cxx_destruct;
 -(void)tableView:(id)view didSelectRowAtIndexPath:(id)indexPath;
 -(float)tableView:(id)view heightForHeaderInSection:(int)section;
 -(float)tableView:(id)view heightForFooterInSection:(int)section;

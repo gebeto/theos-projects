@@ -7,7 +7,7 @@
 
 #import "ListModelContext.h"
 
-@class NSDictionary, VKPhoto, VKDomain, NSNumber, NSArray;
+@class VKPhoto, VKDomain, NSNumber, NSDictionary, NSArray;
 @protocol VKBrowsableImage;
 
 __attribute__((visibility("hidden")))
@@ -31,6 +31,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKDomain<VKBrowsableImage>* initialPhoto;
 +(id)contextForPhoto:(id)photo list:(id)list source:(id)source;
 +(id)duplicate:(id)duplicate;
+-(void).cxx_destruct;
 -(id)parsePhotosData:(id)data;
 -(BOOL)canContainPhotoIdentity:(id)identity;
 -(id)codeForNextPage;
@@ -41,6 +42,5 @@ __attribute__((visibility("hidden")))
 -(void)addPhotos:(id)photos withData:(id)data;
 -(void)addPhotos:(id)photos;
 -(void)setupInitial:(id)initial;
--(void)dealloc;
 @end
 

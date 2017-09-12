@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "PHPhotoLibraryChangeObserver.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "PHPhotoLibraryChangeObserver.h"
 
-@class VKPPService, PHAssetCollection, NSOperationQueue, VKPPSelector, NSString, PHFetchResult, NSObject, NSArray;
+@class NSOperationQueue, PHFetchResult, VKPPService, NSString, NSArray, VKPPSelector, NSObject, PHAssetCollection;
 @protocol OS_dispatch_queue;
 
 @interface VKPPModel : XXUnknownSuperclass <PHPhotoLibraryChangeObserver> {

@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "MOTextView.h"
+#import "VKClient-Structs.h"
 
 @protocol InputPanelViewTextViewDelegate;
 
@@ -16,7 +16,8 @@ __attribute__((visibility("hidden")))
 	id<InputPanelViewTextViewDelegate> _interactionDelegate;
 }
 @property(assign, nonatomic) BOOL overlayEnabled;
-@property(assign, nonatomic) id<InputPanelViewTextViewDelegate> interactionDelegate;
+@property(assign, nonatomic) __weak id<InputPanelViewTextViewDelegate> interactionDelegate;
+-(void).cxx_destruct;
 -(void)actionSend:(id)send;
 -(id)keyCommands;
 -(CGRect)caretRectForPosition:(id)position;

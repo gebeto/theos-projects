@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class UILabel, NSString;
@@ -15,7 +15,7 @@ __attribute__((visibility("hidden")))
 	NSString* _title;
 	UILabel* _label;
 }
-@property(readonly, assign, nonatomic) UILabel* label;
+@property(retain, nonatomic) UILabel* label;
 @property(copy, nonatomic) NSString* title;
 -(void).cxx_destruct;
 -(void)layoutSubviews;

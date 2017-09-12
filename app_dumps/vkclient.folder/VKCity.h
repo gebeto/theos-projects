@@ -20,10 +20,10 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) NSString* areaName;
 @property(copy, nonatomic) NSString* title;
 @property(assign, nonatomic) BOOL important;
+-(void).cxx_destruct;
 -(Class)cellClass;
 -(BOOL)process:(id)process context:(id)context;
 -(id)description;
--(void)dealloc;
 -(id)details;
 @end
 

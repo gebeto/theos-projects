@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class PHAsset, VKPPGLImageProcessor, VKPPAssetData, UIImage;
+@class UIImage, PHAsset, VKPPGLImageProcessor, VKPPAssetData;
 
 @interface VKPPProcessingOperation : XXUnknownSuperclass {
 	BOOL _tryTextureCache;

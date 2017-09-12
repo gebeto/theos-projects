@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
 
 __attribute__((visibility("hidden")))
@@ -15,7 +15,6 @@ __attribute__((visibility("hidden")))
 +(void)clearSharedCookies;
 +(int)supportedMapsMask;
 +(int)deviceHardwareGeneration;
-+(void)image:(id)image didFinishSavingWithError:(id)error contextInfo:(void*)info;
 +(void)saveImage:(id)image handler:(id)handler;
 +(void)clearNotificationsCenter;
 +(id)SHA256:(id)a256;

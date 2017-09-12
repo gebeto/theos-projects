@@ -16,6 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(copy, nonatomic) id handlerIsoCode;
 @property(retain, nonatomic) CountryCallingCodesIndex* index;
+-(void).cxx_destruct;
 -(void)tableView:(id)view didSelectRowAtIndexPath:(id)indexPath;
 -(id)tableView:(id)view cellForRowAtIndexPath:(id)indexPath;
 -(id)tableView:(id)view titleForHeaderInSection:(int)section;
@@ -25,6 +26,5 @@ __attribute__((visibility("hidden")))
 -(int)numberOfSectionsInTableView:(id)tableView;
 -(void)actionCancel:(id)cancel;
 -(void)viewDidLoad;
--(void)dealloc;
 @end
 

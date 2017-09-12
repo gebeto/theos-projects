@@ -14,7 +14,7 @@ __attribute__((visibility("hidden")))
 	VKSearchBarNoCancel* _vk_searchBar;
 }
 @property(retain, nonatomic) VKSearchBarNoCancel* vk_searchBar;
--(void)dealloc;
+-(void).cxx_destruct;
 -(int)preferredStatusBarStyle;
 @end
 

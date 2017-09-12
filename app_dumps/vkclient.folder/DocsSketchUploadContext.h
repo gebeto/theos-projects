@@ -15,8 +15,8 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) UIImage* image;
 +(id)docsSketchContextWithSession:(id)session image:(id)image;
+-(void).cxx_destruct;
 -(void)loadUploadData:(id)data;
 -(id)requestForUploadServer;
--(void)dealloc;
 @end
 

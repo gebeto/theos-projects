@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class Index, IndexUpdate;
+@class IndexUpdate, Index;
 
 __attribute__((visibility("hidden")))
 @interface ModelUpdate : XXUnknownSuperclass {

@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "VKTextPage.h"
 #import "VKDomain.h"
+#import "VKTextPage.h"
 
-@class NSString, VKLink, NSURL;
+@class NSURL, NSString, VKLink;
 
 __attribute__((visibility("hidden")))
 @interface VKLinkPage : VKDomain <VKTextPage> {
@@ -22,7 +22,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSURL* url;
 @property(retain, nonatomic) VKLink* link;
 +(id)pageForLink:(id)link;
+-(void).cxx_destruct;
 -(id)URLForTextPage;
--(void)dealloc;
 @end
 

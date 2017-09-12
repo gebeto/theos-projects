@@ -13,6 +13,6 @@ __attribute__((visibility("hidden")))
 }
 +(id)promotedApplicationSlider:(id)slider;
 +(id)promotedApplications:(id)applications;
-+(id)promotedPost:(id)post expandedPosts:(id)posts stats:(id)stats;
++(id)promotedPost:(id)post extra:(id)extra stats:(id)stats;
 @end
 

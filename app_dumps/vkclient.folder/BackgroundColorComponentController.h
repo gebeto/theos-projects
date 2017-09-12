@@ -7,7 +7,7 @@
 
 #import "Component5Controller.h"
 
-@class UIView, BackgroundColorComponent;
+@class BackgroundColorComponent, UIView;
 
 __attribute__((visibility("hidden")))
 @interface BackgroundColorComponentController : Component5Controller {

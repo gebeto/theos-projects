@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSDictionary, NSArray;
+@class NSArray, NSDictionary;
 
 __attribute__((visibility("hidden")))
 @interface CountryCallingCodesIndex : XXUnknownSuperclass {
@@ -23,7 +23,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) NSDictionary* codeToIso;
 @property(readonly, retain, nonatomic) NSDictionary* isoToCode;
 +(id)instance;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)initWithIsoToCodeMap:(id)codeMap;
 -(id)initDefaultInstance;
 @end

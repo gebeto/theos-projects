@@ -23,11 +23,11 @@ __attribute__((visibility("hidden")))
 +(id)requestForType:(int)type aid:(id)aid owner:(id)owner offset:(int)offset count:(int)count rev:(BOOL)rev forceIsAdultCheck:(BOOL)check;
 +(id)requestForType:(int)type aid:(id)aid owner:(id)owner offset:(int)offset count:(int)count rev:(BOOL)rev;
 +(id)contextForProfilePhotos:(id)profilePhotos;
+-(void).cxx_destruct;
 -(BOOL)isStrongOrderAvailable;
 -(BOOL)canContainPhotoIdentity:(id)identity;
 -(id)codeForNextPage;
 -(void)spawnCopy:(id)copy;
 -(void)updateAlbum:(id)album;
--(void)dealloc;
 @end
 

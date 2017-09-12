@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKDoc, NSURLSessionTask;
+@class NSURLSessionTask, VKDoc;
 @protocol VKMGifLoaderDelegate;
 
 __attribute__((visibility("hidden")))
@@ -27,6 +27,5 @@ __attribute__((visibility("hidden")))
 -(void)cancel;
 -(void)complete:(id)complete;
 -(void)progress:(double)progress;
--(void)dealloc;
 @end
 

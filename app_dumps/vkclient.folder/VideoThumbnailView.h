@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "RoundedProgressOverlayViewDelegate.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "ThumbnailView.h"
+#import "RoundedProgressOverlayViewDelegate.h"
 
-@class UILabel, RoundedProgressOverlayView, UIView, UploadEditAttachment, NSString, UIImageView;
+@class UIView, UILabel, UIImageView, RoundedProgressOverlayView, NSString, UploadEditAttachment;
 
 __attribute__((visibility("hidden")))
 @interface VideoThumbnailView : ThumbnailView <RoundedProgressOverlayViewDelegate> {
@@ -34,6 +34,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIImageView* videoPlayIcon;
 @property(retain, nonatomic) UploadEditAttachment* uploadingAttachment;
 @property(retain, nonatomic) RoundedProgressOverlayView* progressView;
+-(void).cxx_destruct;
 -(void)observeValueForKeyPath:(id)keyPath ofObject:(id)object change:(id)change context:(void*)context;
 -(void)uploadStateChanged:(id)changed;
 -(void)progressViewDidCancel:(id)progressView;

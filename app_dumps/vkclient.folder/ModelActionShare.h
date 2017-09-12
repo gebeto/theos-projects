@@ -7,7 +7,7 @@
 
 #import "ModelAction.h"
 
-@class NSString, NSURL;
+@class NSURL, NSString;
 
 __attribute__((visibility("hidden")))
 @interface ModelActionShare : ModelAction {
@@ -16,7 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSString* text;
 @property(retain, nonatomic) NSURL* url;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)defaultTitle;
 -(BOOL)actionShowsSuccessConfirmation;
 -(void)runInContext:(id)context;

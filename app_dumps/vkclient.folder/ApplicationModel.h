@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "FeedModel.h"
 #import "TimerTargetDelegate.h"
+#import "FeedModel.h"
 
-@class NSSet, VKAPIApp, TimerTarget, NSString, NSNumber, ApplicationModelContext;
+@class TimerTarget, NSSet, ApplicationModelContext, VKAPIApp, NSNumber, NSString;
 @protocol ApplicationModelDelegate;
 
 __attribute__((visibility("hidden")))

@@ -7,7 +7,7 @@
 
 #import "Renderer.h"
 
-@class VKPostExtraResponse, UIButton;
+@class UIButton, VKPostExtraResponse;
 
 __attribute__((visibility("hidden")))
 @interface PostExtraResponseRenderer : Renderer {
@@ -18,10 +18,10 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIButton* buttonPublish;
 @property(retain, nonatomic) VKPostExtraResponse* domain;
 +(void)prepareLayout:(id)layout;
+-(void).cxx_destruct;
 -(void)actionDecline:(id)decline;
 -(void)actionPublish:(id)publish;
 -(void)renderCell:(id)cell;
 -(void)setupCell:(id)cell;
--(void)dealloc;
 @end
 

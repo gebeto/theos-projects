@@ -17,7 +17,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, copy, nonatomic) NSArray* requests;
 @property(readonly, assign, nonatomic) BOOL largeRepresentation;
 +(id)contextWithRequests:(id)requests isLarge:(BOOL)large;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)initWithRequests:(id)requests isLarge:(BOOL)large;
 @end
 

@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "DetailModel.h"
 #import "TapableComponentHandler.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
+#import "DetailModel.h"
 
 @class ShopProductDetailContext, ShopProductStatsContext, NSString;
 
@@ -25,6 +25,7 @@ __attribute__((visibility("hidden")))
 +(id)sourceForIdentity:(id)identity;
 +(id)shopProductWithIdentity:(id)identity;
 +(void)buildItemAndSource:(id)source detail:(id)detail;
+-(void).cxx_destruct;
 -(id)buildTargetForDialog;
 -(void)handleToggleExpand:(id)expand builder:(id)builder;
 -(void)registerForEvents:(id)events;
@@ -47,6 +48,5 @@ __attribute__((visibility("hidden")))
 -(void)activate;
 -(id)spawnContext:(id)context;
 -(id)shopProduct;
--(void)dealloc;
 @end
 

@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "IVKMCell.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "IVKMCell.h"
 
 @class VKRenderable, NSString;
 @protocol VKMNavDelegate;
@@ -20,9 +20,10 @@ __attribute__((visibility("hidden")))
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
-@property(assign, nonatomic) id<VKMNavDelegate> delegate;
+@property(assign, nonatomic) __weak id<VKMNavDelegate> delegate;
 @property(retain, nonatomic) VKRenderable* domain;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)thumbnailView:(id)view selected:(id)selected;
 -(void)refresh;
 -(BOOL)selected;
@@ -30,6 +31,5 @@ __attribute__((visibility("hidden")))
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)addOpaque:(id)opaque;
 -(void)prepareForReuse;
--(void)dealloc;
 @end
 

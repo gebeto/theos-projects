@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "Component5StateListener.h"
 #import "Component5.h"
+#import "Component5StateListener.h"
 
-@class PhotoTagsOverlayComponent, ThumbnailsComponent, NSString, PhotoTagsTextComponent, ThumbnailComponent;
+@class ThumbnailsComponent, ThumbnailComponent, PhotoTagsTextComponent, NSString, PhotoTagsOverlayComponent;
 
 __attribute__((visibility("hidden")))
 @interface PhotoTagsComponent : Component5 <Component5StateListener> {

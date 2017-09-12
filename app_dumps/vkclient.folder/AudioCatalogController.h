@@ -6,7 +6,6 @@
  */
 
 #import "VKMLiveController.h"
-#import "vkclient-Structs.h"
 
 @class AudioCatalogModel;
 
@@ -14,10 +13,11 @@ __attribute__((visibility("hidden")))
 @interface AudioCatalogController : VKMLiveController {
 }
 @property(retain, nonatomic) AudioCatalogModel* model;
+-(int)VKMLiveAudioContext;
+-(id)VKMControllerStatsRef;
 -(void)model:(id)model updated:(id)updated;
 -(void)actionSearch:(id)search;
 -(BOOL)VKMRoute:(id)route context:(id)context;
--(id)audioAudiosSpecialBlockHeaderView;
 -(void)viewDidLoad;
 -(id)initWithMain:(id)main andModel:(id)model;
 @end

@@ -17,6 +17,6 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* title;
 @property(retain, nonatomic) id value;
 +(id)value:(id)value title:(id)title;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

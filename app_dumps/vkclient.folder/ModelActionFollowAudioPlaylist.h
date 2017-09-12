@@ -18,8 +18,9 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKAudioPlaylist* added;
 @property(retain, nonatomic) VKAudioPlaylist* target;
 +(int)domainType;
+-(void).cxx_destruct;
+-(BOOL)hudSuccessEmptyVisible;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
--(void)dealloc;
 @end
 

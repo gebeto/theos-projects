@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UITableViewCell, UIDatePicker;
+@class UIDatePicker, UITableViewCell;
 @protocol TimePickerControllerDelegate;
 
 __attribute__((visibility("hidden")))
@@ -16,9 +16,10 @@ __attribute__((visibility("hidden")))
 	UITableViewCell* _selected;
 	UIDatePicker* _picker;
 }
-@property(assign, nonatomic) id<TimePickerControllerDelegate> delegate;
+@property(assign, nonatomic) __weak id<TimePickerControllerDelegate> delegate;
 @property(retain, nonatomic) UIDatePicker* picker;
 @property(retain, nonatomic) UITableViewCell* selected;
+-(void).cxx_destruct;
 -(int)preferredStatusBarStyle;
 -(void)tableView:(id)view didSelectRowAtIndexPath:(id)indexPath;
 -(id)tableView:(id)view cellForRowAtIndexPath:(id)indexPath;
@@ -29,6 +30,5 @@ __attribute__((visibility("hidden")))
 -(void)done:(id)done;
 -(void)viewWillAppear:(BOOL)view;
 -(void)viewDidLoad;
--(void)dealloc;
 @end
 

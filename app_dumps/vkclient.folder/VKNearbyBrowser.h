@@ -10,7 +10,7 @@
 #import "MCNearbyServiceAdvertiserDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class MCPeerID, MCNearbyServiceBrowser, NSMutableArray, MCNearbyServiceAdvertiser, VKUser, NSString, NSObject;
+@class NSMutableArray, MCPeerID, MCNearbyServiceBrowser, VKUser, NSString, NSObject, MCNearbyServiceAdvertiser;
 @protocol OS_dispatch_queue, VKNearbyBrowserDelegate;
 
 __attribute__((visibility("hidden")))
@@ -27,7 +27,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
-@property(assign, nonatomic) id<VKNearbyBrowserDelegate> delegate;
+@property(assign, nonatomic) __weak id<VKNearbyBrowserDelegate> delegate;
 @property(retain, nonatomic) NSMutableArray* sessions;
 @property(retain, nonatomic) NSObject<OS_dispatch_queue>* sessionsQueue;
 @property(retain, nonatomic) MCPeerID* localPeerID;
@@ -35,6 +35,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) MCNearbyServiceAdvertiser* advertiser;
 @property(retain, nonatomic) VKUser* user;
 +(BOOL)isAvailable;
+-(void).cxx_destruct;
 -(void)session:(id)session didFinishReceivingResourceWithName:(id)name fromPeer:(id)peer atURL:(id)url withError:(id)error;
 -(void)session:(id)session didStartReceivingResourceWithName:(id)name fromPeer:(id)peer withProgress:(id)progress;
 -(void)session:(id)session didReceiveStream:(id)stream withName:(id)name fromPeer:(id)peer;

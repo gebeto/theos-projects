@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "VKRenderable.h"
 #import "VKRemoteAction.h"
+#import "VKRenderable.h"
 
-@class VKRemoteActionOpenUrl, NSString, VKRemoteActionJoinGroup;
+@class VKRemoteActionJoinGroup, VKRemoteActionOpenUrl, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKRemoteActionJoinGroupOpenUrl : VKRenderable <VKRemoteAction> {

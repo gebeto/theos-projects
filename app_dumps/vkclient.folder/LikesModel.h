@@ -27,6 +27,7 @@ __attribute__((visibility("hidden")))
 +(id)likesListRequestBuilderForIdentity:(id)identity filter:(int)filter;
 +(id)likesIdentityParameters:(id)parameters;
 +(id)likesIdentityParametersDict:(id)dict;
+-(void).cxx_destruct;
 -(void)changeFilter:(int)filter;
 -(BOOL)shouldLoad:(id)load;
 -(id)updatedIndex:(id)index data:(id)data context:(id)context;
@@ -34,6 +35,5 @@ __attribute__((visibility("hidden")))
 -(id)spawnContext:(id)context;
 -(id)countKey;
 -(id)withIdentity:(id)identity;
--(void)dealloc;
 @end
 

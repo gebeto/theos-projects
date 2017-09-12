@@ -8,7 +8,7 @@
 #import "UIWebViewDelegate.h"
 #import "SimpleBrowserController.h"
 
-@class VKHUD, NSString, NSTimer, NSURL;
+@class VKHUD, NSURL, NSString, NSTimer;
 
 __attribute__((visibility("hidden")))
 @interface HiddenAdsBrowserController : SimpleBrowserController <UIWebViewDelegate> {
@@ -25,6 +25,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKHUD* hud;
 @property(retain, nonatomic) NSTimer* destructionTimer;
 @property(retain, nonatomic) NSURL* targetLink;
+-(void).cxx_destruct;
 -(void)webView:(id)view didFailLoadWithError:(id)error;
 -(void)webViewDidFinishLoad:(id)webView;
 -(void)finish:(BOOL)finish;

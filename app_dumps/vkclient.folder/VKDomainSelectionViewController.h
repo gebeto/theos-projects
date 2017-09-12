@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKMLiveController.h"
-#import "vkclient-Structs.h"
 
 @class VKDomain;
 
@@ -15,6 +15,7 @@ __attribute__((visibility("hidden")))
 	VKDomain* _selectedObject;
 }
 @property(retain, nonatomic) VKDomain* selectedObject;
+-(void).cxx_destruct;
 -(void)didSelectObject:(id)object;
 -(BOOL)VKMLiveSearchHandleCell:(id)cell select:(BOOL)select;
 -(void)VKMLiveSearchWillDisplayCell:(id)vkmliveSearch indexPath:(id)path inTable:(id)table;
@@ -26,6 +27,5 @@ __attribute__((visibility("hidden")))
 -(Class)expectedClass;
 -(id)makeCheckmarkView;
 -(void)viewDidLoad;
--(void)dealloc;
 @end
 

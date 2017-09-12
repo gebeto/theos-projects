@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UIColor, NSMutableArray, UIBezierPath, UIImage;
+@class UIImage, NSMutableArray, UIColor, UIBezierPath;
 @protocol SketchDrawViewDelegate;
 
 __attribute__((visibility("hidden")))

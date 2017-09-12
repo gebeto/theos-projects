@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "VKMImageLoaderDelegate.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKMImageLoaderDelegate.h"
 
 @class VKMImageLoader, NSString;
 
@@ -20,6 +20,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 @property(readonly, retain, nonatomic) VKMImageLoader* loader;
+-(void).cxx_destruct;
 -(void)reuse;
 -(void)loader:(id)loader complete:(id)complete;
 -(void)layoutSubviews;

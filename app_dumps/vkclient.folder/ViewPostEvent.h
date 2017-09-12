@@ -14,18 +14,20 @@ __attribute__((visibility("hidden")))
 @interface ViewPostEvent : XXUnknownSuperclass <StatsEvent> {
 	NSString* _postId;
 	StatsRef* _ref;
+	NSString* _track_code;
 	double _duration;
 }
 @property(readonly, copy) NSString* debugDescription;
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
+@property(readonly, copy, nonatomic) NSString* track_code;
 @property(readonly, copy, nonatomic) StatsRef* ref;
 @property(readonly, assign, nonatomic) double duration;
 @property(readonly, copy, nonatomic) NSString* postId;
 +(id)post:(id)post duration:(double)duration ref:(id)ref;
-+(id)postId:(id)anId duration:(double)duration ref:(id)ref;
--(id)initWithPostId:(id)postId duration:(double)duration ref:(id)ref;
--(void)dealloc;
++(id)postId:(id)anId duration:(double)duration ref:(id)ref trackCode:(id)code;
+-(void).cxx_destruct;
+-(id)initWithPostId:(id)postId duration:(double)duration ref:(id)ref trackCode:(id)code;
 @end
 

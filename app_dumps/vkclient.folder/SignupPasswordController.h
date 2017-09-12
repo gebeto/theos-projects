@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "UITextFieldDelegate.h"
+#import "VKClient-Structs.h"
 #import "SignupController.h"
-#import "vkclient-Structs.h"
+#import "UITextFieldDelegate.h"
 
 @class UITextField, NSString;
 
@@ -20,6 +20,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) UITextField* passwordField;
+-(void).cxx_destruct;
 -(float)tableView:(id)view heightForFooterInSection:(int)section;
 -(id)tableView:(id)view titleForFooterInSection:(int)section;
 -(id)tableView:(id)view viewForHeaderInSection:(int)section;

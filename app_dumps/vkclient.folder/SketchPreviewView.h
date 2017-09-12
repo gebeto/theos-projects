@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKMImageView, VKDoc, UIImage, UIButton, UIActivityIndicatorView;
+@class UIImage, UIButton, VKDoc, UIActivityIndicatorView, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface SketchPreviewView : XXUnknownSuperclass {

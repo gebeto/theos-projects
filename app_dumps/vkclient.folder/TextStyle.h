@@ -20,6 +20,7 @@ __attribute__((visibility("hidden")))
 -(void).cxx_destruct;
 -(id)initWithAttributes:(id)attributes;
 -(id)description;
+-(id)withRegularFont;
 -(id)withMeduimFont;
 -(id)withBoldFont;
 -(id)withFontTraitsRemoved:(unsigned)fontTraitsRemoved;

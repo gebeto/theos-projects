@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UILabel, VKMImageView, UIButton, NSString;
+@class UIButton, UILabel, NSString, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface StoryHighlightableSourceView : XXUnknownSuperclass {

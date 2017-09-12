@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "VKMCollectionCell.h"
 #import "MultiImageLoaderDelegate.h"
+#import "VKClient-Structs.h"
+#import "VKMCollectionCell.h"
 
-@class UILabel, VKMImageView, VKMMultiImagePlaylistLoader, NSString;
+@class UIColor, UILabel, VKMMultiImagePlaylistLoader, NSString, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface AudioPlaylistInlineCell : VKMCollectionCell <MultiImageLoaderDelegate> {
@@ -17,11 +17,13 @@ __attribute__((visibility("hidden")))
 	UILabel* _titleLabel;
 	UILabel* _subtitleLabel;
 	VKMMultiImagePlaylistLoader* _multiloader;
+	UIColor* _overlayColor;
 }
 @property(readonly, copy) NSString* debugDescription;
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
+@property(readonly, retain, nonatomic) UIColor* overlayColor;
 @property(readonly, retain, nonatomic) VKMMultiImagePlaylistLoader* multiloader;
 @property(readonly, retain, nonatomic) UILabel* subtitleLabel;
 @property(readonly, retain, nonatomic) UILabel* titleLabel;
@@ -29,6 +31,7 @@ __attribute__((visibility("hidden")))
 +(UIEdgeInsets)sectionInset;
 +(float)interitemSpace;
 +(CGSize)cellSize;
+-(void).cxx_destruct;
 -(void)forceExpandedPlaylistTitle:(id)title subtitle:(id)subtitle;
 -(void)multiImageLoader:(id)loader complete:(id)complete;
 -(void)setHighlighted:(BOOL)highlighted;

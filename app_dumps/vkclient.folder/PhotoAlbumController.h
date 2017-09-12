@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "VKMLiveController.h"
 #import "PhotoSeletionDelegate.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
+#import "VKMLiveController.h"
 
-@class PhotoAlbumModel, NSString;
+@class NSString, PhotoAlbumModel;
 
 __attribute__((visibility("hidden")))
 @interface PhotoAlbumController : VKMLiveController <PhotoSeletionDelegate> {

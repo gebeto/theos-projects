@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "VKMLiveController.h"
-#import "vkclient-Structs.h"
 #import "ApplicationModelDelegate.h"
+#import "VKClient-Structs.h"
+#import "VKMLiveController.h"
 
-@class AppFriendsInviter, NSString, ApplicationModel;
+@class AppFriendsInviter, ApplicationModel, NSString;
 
 __attribute__((visibility("hidden")))
 @interface AppBaseController : VKMLiveController <ApplicationModelDelegate> {

@@ -8,7 +8,7 @@
 #import "MTRGInstreamAudioAdPlayer.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class AVPlayerItem, AVPlayer, NSString;
+@class AVPlayerItem, NSString, AVPlayer;
 @protocol MTRGInstreamAudioAdPlayerDelegate;
 
 __attribute__((visibility("hidden")))

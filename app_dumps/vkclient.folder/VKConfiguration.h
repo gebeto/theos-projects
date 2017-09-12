@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "VKConfigurationReader.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKConfigurationReader.h"
 #import "VKConfigurationWriter.h"
 
-@class NSString, NSUserDefaults;
+@class NSUserDefaults, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKConfiguration : XXUnknownSuperclass <VKConfigurationWriter, VKConfigurationReader> {
@@ -23,6 +23,7 @@ __attribute__((visibility("hidden")))
 +(id)suiteName;
 +(id)sharedInstance;
 +(id)privateInstance;
+-(void).cxx_destruct;
 -(id)dictionary;
 -(void)writeSavingWithBlock:(id)block;
 -(BOOL)boolForKey:(id)key;
@@ -34,7 +35,6 @@ __attribute__((visibility("hidden")))
 -(id)initShared;
 -(id)initPrivate;
 -(id)initWithSuiteName:(id)suiteName;
--(void)dealloc;
 -(id)init;
 @end
 

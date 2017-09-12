@@ -15,10 +15,10 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) StatContext* statContext;
 +(id)indexFromSortedFriends:(id)sortedFriends statContext:(id)context;
+-(void).cxx_destruct;
 -(id)withStatContext:(id)statContext;
 -(void)cachedIndexForContext:(id)context withCompletion:(id)completion;
 -(id)updatedIndex:(id)index data:(id)data context:(id)context;
 -(id)requestForContext:(id)context;
--(void)dealloc;
 @end
 

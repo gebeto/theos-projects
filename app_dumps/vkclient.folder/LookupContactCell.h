@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKMSubtitleCell.h"
-#import "vkclient-Structs.h"
 
 @class UIButton, UIImageView;
 
@@ -19,11 +19,11 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UIImageView* verifiedIconView;
 @property(readonly, retain, nonatomic) UIImageView* checkmarkImageView;
 @property(readonly, retain, nonatomic) UIButton* inviteButton;
+-(void).cxx_destruct;
 -(void)showCheckmarkAnimated;
 -(void)layoutSubviews;
 -(void)prepareForReuse;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
--(void)dealloc;
 -(void)makeFriends;
 -(id)makeInviteButton;
 @end

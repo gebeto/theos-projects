@@ -8,7 +8,7 @@
 #import "UploadContext.h"
 #import "DomainEvent.h"
 
-@class VKDoc, NSString, NSNumber;
+@class VKDoc, NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface DocsUploadContext : UploadContext <DomainEvent> {
@@ -23,11 +23,11 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSNumber* gid;
 @property(retain, nonatomic) VKDoc* result;
 +(int)domainType;
+-(void).cxx_destruct;
 -(BOOL)handleResultServerData:(id)data uploadData:(id)data2 saveData:(id)data3;
 -(id)requestForSaving:(id)saving;
 -(id)uploadBodyFieldName;
 -(id)requestForUploadServer;
 -(id)withGid:(id)gid;
--(void)dealloc;
 @end
 

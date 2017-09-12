@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class VKMLabelRender;
@@ -17,10 +17,10 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) VKMLabelRender* renderHighlighted;
 @property(retain, nonatomic) VKMLabelRender* render;
+-(void).cxx_destruct;
 -(id)accessibilityLabel;
 -(BOOL)isAccessibilityElement;
 -(void)drawRect:(CGRect)rect;
 -(void)render:(id)render;
--(void)dealloc;
 @end
 

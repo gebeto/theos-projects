@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "NSMutableCopying.h"
 #import "NSCopying.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
+#import "NSMutableCopying.h"
 
-@class NSString, NSArray;
+@class NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface CameraConfig : XXUnknownSuperclass <NSCopying, NSMutableCopying> {

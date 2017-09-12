@@ -31,6 +31,6 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL on;
 @property(assign, nonatomic) unsigned tag;
 +(void)lookupOptions:(id)options block:(id)block;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

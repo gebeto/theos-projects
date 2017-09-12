@@ -17,8 +17,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) GoogleOAuthClient* client;
 @property(retain, nonatomic) GoogleOAuthAuthorization* authorization;
 +(id)loaderWithClient:(id)client authorization:(id)authorization;
+-(void).cxx_destruct;
 -(void)loadContactsWithCompletion:(id)completion;
 -(id)initWithClient:(id)client authorization:(id)authorization;
--(void)dealloc;
 @end
 

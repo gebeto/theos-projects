@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "VKMCell.h"
 #import "MultiImageLoaderDelegate.h"
+#import "VKClient-Structs.h"
+#import "VKMCell.h"
 
-@class UILabel, VKMImageView, VKMMultiImagePlaylistLoader, NSString;
+@class UIColor, UILabel, VKMMultiImagePlaylistLoader, NSString, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface AudioPlaylistCell : VKMCell <MultiImageLoaderDelegate> {
@@ -18,17 +18,20 @@ __attribute__((visibility("hidden")))
 	UILabel* _artistLabel;
 	UILabel* _subtitleLabel;
 	VKMMultiImagePlaylistLoader* _multiloader;
+	UIColor* _overlayColor;
 }
 @property(readonly, copy) NSString* debugDescription;
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
+@property(readonly, retain, nonatomic) UIColor* overlayColor;
 @property(readonly, retain, nonatomic) VKMMultiImagePlaylistLoader* multiloader;
 @property(readonly, retain, nonatomic) UILabel* subtitleLabel;
 @property(readonly, retain, nonatomic) UILabel* artistLabel;
 @property(readonly, retain, nonatomic) UILabel* titleLabel;
 @property(retain, nonatomic) VKMImageView* coverImageView;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)multiImageLoader:(id)loader complete:(id)complete;
 -(void)loadPlaylistImage:(id)image expectedReuse:(double)reuse;
 -(void)layoutSubviews;

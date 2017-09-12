@@ -21,11 +21,11 @@ __attribute__((visibility("hidden")))
 +(id)uploadedVideoFor:(id)aFor;
 +(id)allVideoFor:(id)aFor;
 +(id)owner:(id)owner album:(id)album;
+-(void).cxx_destruct;
 -(BOOL)isUserAlbum;
 -(BOOL)isUploadedVideo;
 -(BOOL)isAllVideo;
 -(Class)cellClass;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

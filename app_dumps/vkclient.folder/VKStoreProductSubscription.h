@@ -7,7 +7,7 @@
 
 #import "VKStoreProduct.h"
 
-@class NSString, NSNumber;
+@class NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKStoreProductSubscription : VKStoreProduct {
@@ -20,7 +20,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* subtitle;
 @property(retain, nonatomic) NSString* merchant;
 @property(retain, nonatomic) NSNumber* expires_date;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

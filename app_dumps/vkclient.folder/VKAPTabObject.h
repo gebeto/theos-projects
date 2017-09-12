@@ -25,7 +25,6 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) NSString* title;
 +(id)createVkApTabsWithOptions:(int)options model:(id)model stats:(id)stats;
 -(void).cxx_destruct;
--(void)dealloc;
 -(id)initWithTitle:(id)title imageName:(id)name tabType:(int)type controller:(id)controller;
 @end
 

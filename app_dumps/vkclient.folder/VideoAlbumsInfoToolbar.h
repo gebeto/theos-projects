@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VideoAlbumContext, UISegmentedControl;
+@class UISegmentedControl, VideoAlbumContext;
 
 __attribute__((visibility("hidden")))
 @interface VideoAlbumsInfoToolbar : XXUnknownSuperclass {
@@ -17,11 +17,11 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UISegmentedControl* segmentedControl;
 @property(retain, nonatomic) VideoAlbumContext* context;
 +(id)toolbarForAlbumsInfo;
+-(void).cxx_destruct;
 -(void)handleSegmentActionWithContext:(id)context;
 -(id)controllerForSection:(int)section main:(id)main;
 -(void)selectSection:(int)section;
 -(void)enumerateSegments:(id)segments;
 -(void)renderAlbumsContext:(id)context;
--(void)dealloc;
 @end
 

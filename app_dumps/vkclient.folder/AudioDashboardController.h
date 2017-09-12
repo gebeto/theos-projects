@@ -7,7 +7,7 @@
 
 #import "VKMLiveController.h"
 
-@class SearchModelUpdater, AudioDashboardModel, AudioPlaylistsInlineController, VKMImageButton;
+@class AudioDashboardModel, SearchModelUpdater, VKMImageButton, AudioPlaylistsInlineController;
 @protocol VKSource;
 
 __attribute__((visibility("hidden")))
@@ -23,6 +23,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) id<VKSource> avatarOwnerSource;
 @property(retain, nonatomic) SearchModelUpdater* searchUpdater;
 @property(retain, nonatomic) AudioPlaylistsInlineController* playlistsController;
+-(void).cxx_destruct;
 -(void)actionAvatarOwnerButton:(id)button;
 -(void)setupAvatarRightBarButtonItemWithSource:(id)source;
 -(void)actionTeaserButton:(id)button;
@@ -40,6 +41,5 @@ __attribute__((visibility("hidden")))
 -(void)viewDidLoad;
 -(id)createPlaylistsController;
 -(id)initWithMain:(id)main andModel:(id)model;
--(void)dealloc;
 @end
 

@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class UIView;
@@ -15,10 +15,10 @@ __attribute__((visibility("hidden")))
 	UIView* _contentView;
 }
 @property(retain, nonatomic) UIView* contentView;
+-(void).cxx_destruct;
 -(void)layoutSubviews;
 -(CGSize)intrinsicContentSize;
 -(CGSize)sizeThatFits:(CGSize)fits;
 -(id)initWithFrame:(CGRect)frame;
--(void)dealloc;
 @end
 

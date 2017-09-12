@@ -29,7 +29,7 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) NSString* religion;
 @property(copy, nonatomic) NSArray* langs;
 +(id)personalsMap;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

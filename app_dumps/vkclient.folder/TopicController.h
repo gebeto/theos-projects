@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "FeedController.h"
+#import "VKClient-Structs.h"
 
-@class UIRefreshControl, LoadingFooterView, TopicModel;
+@class LoadingFooterView, UIRefreshControl, TopicModel;
 
 __attribute__((visibility("hidden")))
 @interface TopicController : FeedController {
@@ -18,6 +18,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) TopicModel* model;
 @property(retain, nonatomic) UIRefreshControl* bottomRefresh;
 @property(retain, nonatomic) LoadingFooterView* topFooter;
+-(void).cxx_destruct;
 -(void)model:(id)model updated:(id)updated;
 -(void)updateTitle;
 -(void)updateTopFooter;
@@ -33,6 +34,5 @@ __attribute__((visibility("hidden")))
 -(float)tableView:(id)view heightForHeaderInSection:(int)section;
 -(int)VKMTableStyle;
 -(Class)VKMTableViewClass;
--(void)dealloc;
 @end
 

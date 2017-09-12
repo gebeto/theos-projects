@@ -8,7 +8,7 @@
 #import "VKLPSUpdateVisitor.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSMutableSet, NSMutableDictionary, NSString, NSNumber;
+@class NSMutableDictionary, NSNumber, NSString, NSMutableSet;
 
 __attribute__((visibility("hidden")))
 @interface VKMStoreUpdateData : XXUnknownSuperclass <VKLPSUpdateVisitor> {
@@ -38,6 +38,7 @@ __attribute__((visibility("hidden")))
 +(id)data;
 +(id)dataWithMessages:(id)messages inDialog:(id)dialog owner:(id)owner;
 +(id)dataWithDialogs:(id)dialogs owner:(id)owner;
+-(void).cxx_destruct;
 -(BOOL)readStateForMessage:(id)message withPeer:(id)peer incoming:(BOOL)incoming context:(id)context;
 -(void)messagesCounter:(id)counter;
 -(void)user:(id)user typingInChat:(id)chat context:(id)context;
@@ -48,6 +49,5 @@ __attribute__((visibility("hidden")))
 -(void)messageRemoved:(id)removed context:(id)context;
 -(void)messageUpdated:(id)updated read:(BOOL)read context:(id)context;
 -(BOOL)hasUpdates;
--(void)dealloc;
 @end
 

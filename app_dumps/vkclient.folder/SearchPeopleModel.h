@@ -15,6 +15,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) SearchPeopleModelContext* lastContext;
 @property(retain, nonatomic) SearchPeopleFilterRenderable* filterRenderable;
+-(void).cxx_destruct;
 -(id)countString;
 -(void)handleAddFriend:(id)aFriend :(id)arg2;
 -(void)registerForEvents:(id)events;
@@ -28,6 +29,5 @@ __attribute__((visibility("hidden")))
 -(id)spawnContext:(id)context;
 -(id)updatedIndex:(id)index data:(id)data context:(id)context;
 -(id)initWithSession:(id)session;
--(void)dealloc;
 @end
 

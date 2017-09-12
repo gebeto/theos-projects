@@ -19,6 +19,6 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) id object;
 @property(retain, nonatomic) NSIndexPath* path;
 +(id)row:(id)row object:(id)object animation:(int)animation;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

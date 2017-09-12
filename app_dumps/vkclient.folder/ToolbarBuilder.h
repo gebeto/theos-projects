@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class UIBarButtonItem, NSMutableArray;
@@ -18,12 +18,12 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSMutableArray* items;
 @property(retain, nonatomic) UIBarButtonItem* flex;
 +(id)builder;
+-(void).cxx_destruct;
 -(id)flexible;
 -(id)fixed:(float)fixed;
 -(id)add:(id)add size:(float)size;
 -(id)add:(id)add;
 -(void)clear;
 -(id)build:(CGRect)build;
--(void)dealloc;
 @end
 

@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "ShopProductDetailContactVendorFooterDelegate.h"
+#import "VKClient-Structs.h"
 #import "DetailController.h"
 
-@class ShopProductDetailModel, ShopProductDetailContactVendorFooter, NSString;
+@class ShopProductDetailContactVendorFooter, ShopProductDetailModel, NSString;
 
 __attribute__((visibility("hidden")))
 @interface ShopProductDetailViewController : DetailController <ShopProductDetailContactVendorFooterDelegate> {

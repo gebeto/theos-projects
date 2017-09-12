@@ -5,13 +5,13 @@
  * Source: (null)
  */
 
+#import "ModelObserver.h"
+#import "VKClient-Structs.h"
 #import "ModelRenderDelegate.h"
 #import "VKMSearchController.h"
-#import "ModelObserver.h"
-#import "vkclient-Structs.h"
 
-@class NSMutableArray, NSObject, NSString, LoadingModel;
-@protocol VKMNavDelegate, SearchModel, VKMLiveSearchControllerDelegate;
+@class NSMutableArray, LoadingModel, NSObject, NSString;
+@protocol SearchModel, VKMLiveSearchControllerDelegate, VKMNavDelegate;
 
 __attribute__((visibility("hidden")))
 @interface VKMLiveSearchController : VKMSearchController <ModelObserver, ModelRenderDelegate> {
@@ -26,13 +26,14 @@ __attribute__((visibility("hidden")))
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
-@property(assign, nonatomic) id<VKMNavDelegate, VKMLiveSearchControllerDelegate> searchDelegate;
+@property(assign, nonatomic) __weak id<VKMNavDelegate, VKMLiveSearchControllerDelegate> searchDelegate;
 @property(assign, nonatomic) int renderContext;
 @property(retain, nonatomic) NSMutableArray* cells;
 @property(retain, nonatomic) Class operationClass;
 @property(retain, nonatomic) NSString* query;
 @property(retain, nonatomic) NSObject* searchDelayMarker;
 @property(retain, nonatomic) LoadingModel<SearchModel>* model;
+-(void).cxx_destruct;
 -(int)tableView:(id)view editingStyleForRowAtIndexPath:(id)indexPath;
 -(void)tableView:(id)view didDeselectRowAtIndexPath:(id)indexPath;
 -(void)tableView:(id)view didSelectRowAtIndexPath:(id)indexPath;

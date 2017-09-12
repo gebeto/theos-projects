@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class NSNumberFormatter, UILabel, VKMImageView, UIView, VKMoneyTransferAttachment, UIButton, NSString, UIImageView;
+@class VKMoneyTransferAttachment, UIButton, NSNumberFormatter, UIView, UILabel, UIImageView, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface VKP2PDetailedView : XXUnknownSuperclass {
@@ -30,12 +30,10 @@ __attribute__((visibility("hidden")))
 	UIView* _userInfo;
 	UIView* _separator;
 	UIView* _buttonsSeparator;
-	NSString* _currency;
 	NSNumberFormatter* _numberFormatter;
 }
 @property(assign, nonatomic) BOOL sizeFromStatus;
 @property(retain, nonatomic) NSNumberFormatter* numberFormatter;
-@property(copy, nonatomic) NSString* currency;
 @property(retain, nonatomic) UIView* buttonsSeparator;
 @property(retain, nonatomic) UIView* separator;
 @property(retain, nonatomic) UIButton* transferRepeatButton;

@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "ColorPaletteViewDelegate.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "ColorPaletteViewDelegate.h"
 
-@class DrawView, UIBarButtonItem, UIButton, BrushSizeSlider, NSString, ColorPaletteView, NSArray;
+@class UIBarButtonItem, UIButton, ColorPaletteView, NSString, BrushSizeSlider, NSArray, DrawView;
 
 __attribute__((visibility("hidden")))
 @interface SketchView : XXUnknownSuperclass <ColorPaletteViewDelegate> {

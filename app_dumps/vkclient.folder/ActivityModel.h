@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "Model.h"
 #import "TimerTargetDelegate.h"
+#import "Model.h"
 
-@class VKTimeout, VKUserProfile, VKAccountInfo, LocationTracker, TimerTarget, VKAccountInfoSubscriptions, AutoplayStats, NSString, NSNumber, NSArray;
+@class VKTimeout, TimerTarget, VKMobileSupport, AutoplayStats, LocationTracker, VKAccountInfo, NSNumber, NSString, NSArray, VKAccountInfoSubscriptions, VKUserProfile;
 
 __attribute__((visibility("hidden")))
 @interface ActivityModel : Model <TimerTargetDelegate> {
@@ -24,6 +24,7 @@ __attribute__((visibility("hidden")))
 	LocationTracker* _locationTracker;
 	VKTimeout* _stickersHasNewItemsTimeout;
 	AutoplayStats* _autoplayStats;
+	VKMobileSupport* _vkMobileSupport;
 }
 @property(readonly, copy) NSString* debugDescription;
 @property(readonly, copy) NSString* description;
@@ -34,6 +35,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSArray* bdaysTomorrowFriends;
 @property(retain, nonatomic) NSArray* bdaysTodayFriends;
 @property(retain) VKUserProfile* profile;
+@property(retain, nonatomic) VKMobileSupport* vkMobileSupport;
 @property(retain, nonatomic) AutoplayStats* autoplayStats;
 @property(retain, nonatomic) VKTimeout* stickersHasNewItemsTimeout;
 @property(retain, nonatomic) LocationTracker* locationTracker;
@@ -42,7 +44,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) TimerTarget* timer;
 +(BOOL)activityUpdated:(id)updated counter:(int)counter;
 +(int)activityUpdate:(id)update;
--(void)saveMusicIntroState:(BOOL)state;
+-(void).cxx_destruct;
 -(void)saveIntroState:(int)state;
 -(unsigned)total;
 -(void)safeCounter:(int)counter set:(unsigned)set;

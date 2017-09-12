@@ -20,6 +20,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int admin;
 @property(retain, nonatomic) Index* events;
 @property(retain, nonatomic) Index* groups;
+-(void).cxx_destruct;
 -(void)resetInvites;
 -(void)handleGroup:(id)group :(id)arg2;
 -(void)deleteGroup:(id)group b:(id)b;
@@ -32,6 +33,5 @@ __attribute__((visibility("hidden")))
 -(id)requestForContext:(id)context;
 -(id)spawnContext:(id)context;
 -(id)countKey;
--(void)dealloc;
 @end
 

@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "VKMLiveController.h"
 #import "MessagesModelObserver.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
+#import "VKMLiveController.h"
 
-@class ChatEditModel, ChatEditHeaderView, NSDate, NSString;
+@class ChatEditModel, ChatEditHeaderView, NSString, NSDate;
 
 __attribute__((visibility("hidden")))
 @interface ChatEditController : VKMLiveController <MessagesModelObserver> {
@@ -25,6 +25,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL realEditing;
 @property(retain, nonatomic) NSDate* ownUpdate;
 @property(retain, nonatomic) ChatEditHeaderView* header;
+-(void).cxx_destruct;
 -(void)tableView:(id)view commitEditingStyle:(int)style forRowAtIndexPath:(id)indexPath;
 -(BOOL)tableView:(id)view shouldIndentWhileEditingRowAtIndexPath:(id)indexPath;
 -(int)tableView:(id)view editingStyleForRowAtIndexPath:(id)indexPath;

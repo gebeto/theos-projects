@@ -7,7 +7,7 @@
 
 #import "Index.h"
 
-@class NSDictionary, MessagesListRenderer;
+@class MessagesListRenderer, NSDictionary;
 
 __attribute__((visibility("hidden")))
 @interface MessagesIndex : Index {
@@ -17,9 +17,9 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSDictionary* justSent;
 @property(retain, nonatomic) MessagesListRenderer* renderer;
 +(id)indexWithRenderer:(id)renderer initial:(BOOL)initial;
+-(void).cxx_destruct;
 -(id)indexByReseting;
 -(id)sectionAtIndex:(int)index;
 -(id)indexWithUpdate:(id*)update updating:(id)updating removing:(id)removing addingDESC:(id)desc allowAppend:(BOOL)append pending:(BOOL)pending;
--(void)dealloc;
 @end
 

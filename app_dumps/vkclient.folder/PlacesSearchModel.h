@@ -7,7 +7,7 @@
 
 #import "SearchModel.h"
 
-@class VKPlaceAdd, CLLocation, VKPlaceMap, PlacesSearchModelContext;
+@class PlacesSearchModelContext, VKPlaceAdd, VKPlaceMap, CLLocation;
 
 __attribute__((visibility("hidden")))
 @interface PlacesSearchModel : SearchModel {
@@ -19,12 +19,12 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKPlaceAdd* placeAdd;
 @property(retain, nonatomic) VKPlaceMap* placeCurrent;
 @property(retain, nonatomic) CLLocation* location;
+-(void).cxx_destruct;
 -(void)updateAddress:(id)address searching:(BOOL)searching;
 -(id)updatedIndex:(id)index data:(id)data context:(id)context;
 -(id)requestForContext:(id)context;
 -(id)spawnContext:(id)context;
 -(void)touch;
 -(id)setupCurrent:(BOOL)current add:(BOOL)add;
--(void)dealloc;
 @end
 

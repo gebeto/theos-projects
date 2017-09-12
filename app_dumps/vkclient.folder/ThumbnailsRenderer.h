@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "AudioAttachmentDelegate.h"
 #import "Renderer.h"
+#import "AudioAttachmentDelegate.h"
 
 @class VKAttachmentsRender, NSMutableArray, NSString;
 
@@ -29,6 +29,7 @@ __attribute__((visibility("hidden")))
 +(id)layout:(id)layout;
 +(void)t;
 +(id)rendererElements;
+-(void).cxx_destruct;
 -(void)audioView:(id)view selectedAudio:(id)audio;
 -(void)actionAudio:(id)audio;
 -(void)actionPlaylist:(id)playlist;

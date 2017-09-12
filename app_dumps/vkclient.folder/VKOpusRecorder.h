@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSMutableData, NSMutableArray;
+@class NSMutableArray, NSMutableData;
 
 @interface VKOpusRecorder : XXUnknownSuperclass {
 	char* _feedBuffer;

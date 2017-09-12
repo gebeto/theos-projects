@@ -7,7 +7,7 @@
 
 #import "VKMCell.h"
 
-@class UILabel, VKMImageView, VKAPIAppLeaderboard, UIButton;
+@class UIButton, VKAPIAppLeaderboard, UILabel, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface AppLeaderboardCell : VKMCell {
@@ -23,11 +23,11 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UIButton* userNameButton;
 +(id)plainNumberFormatter;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)userNameTapped;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)layoutSubviews;
 -(id)createSubviews;
--(void)dealloc;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
 @end
 

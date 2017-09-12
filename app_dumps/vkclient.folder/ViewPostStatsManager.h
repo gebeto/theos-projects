@@ -12,6 +12,6 @@ __attribute__((visibility("hidden")))
 @interface ViewPostStatsManager : StatsManager {
 }
 -(void)viewPost:(id)post duration:(double)duration ref:(id)ref;
--(void)viewPostId:(id)anId duration:(double)duration ref:(id)ref;
+-(void)viewPostId:(id)anId duration:(double)duration ref:(id)ref trackCode:(id)code;
 @end
 

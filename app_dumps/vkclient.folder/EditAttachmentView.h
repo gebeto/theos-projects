@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class UIView, EditAttachment, UIButton, UIImageView;
+@class UIButton, UIView, UIImageView, EditAttachment;
 
 __attribute__((visibility("hidden")))
 @interface EditAttachmentView : XXUnknownSuperclass {
@@ -22,12 +22,13 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) EditAttachment* attachment;
 @property(retain, nonatomic) UIButton* cancelButton;
 +(id)createRenderView;
+-(void).cxx_destruct;
 -(BOOL)pointInside:(CGPoint)inside withEvent:(id)event;
 -(void)notificationRender:(id)render;
 -(void)actionDelete:(id)aDelete;
 -(void)actionTapped:(id)tapped;
 -(void)dealloc;
--(id)initWithAttachment:(id)attachment style:(XXStruct_9zIMjA)style;
--(id)initWithAttachment:(id)attachment style:(XXStruct_9zIMjA)style enableDeletion:(BOOL)deletion;
+-(id)initWithAttachment:(id)attachment style:(id)style;
+-(id)initWithAttachment:(id)attachment style:(id)style enableDeletion:(BOOL)deletion;
 @end
 

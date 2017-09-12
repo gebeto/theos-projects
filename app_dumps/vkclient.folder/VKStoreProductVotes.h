@@ -14,9 +14,9 @@ __attribute__((visibility("hidden")))
 	NSNumber* _votes;
 }
 @property(retain, nonatomic) NSNumber* votes;
+-(void).cxx_destruct;
 -(id)storeDescription;
 -(void)writeData:(id)data;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

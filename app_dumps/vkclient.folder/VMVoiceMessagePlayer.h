@@ -5,18 +5,17 @@
  * Source: (null)
  */
 
-#import "AudioPlayerObserver.h"
-#import "Model.h"
 #import "VMPlayingSessionDelegate.h"
+#import "Model.h"
 #import "VKAudioMessagePlayerDelegate.h"
 
-@class AudioPlayer, VMSessionManager, VKAudioMessagePlayer, NSString, NSNumber;
+@class VKAudioMessagePlayer, NSNumber, NSString, VMSessionManager, VKAudioQueuePlayer;
 
 __attribute__((visibility("hidden")))
-@interface VMVoiceMessagePlayer : Model <VKAudioMessagePlayerDelegate, VMPlayingSessionDelegate, AudioPlayerObserver> {
+@interface VMVoiceMessagePlayer : Model <VKAudioMessagePlayerDelegate, VMPlayingSessionDelegate> {
 	NSNumber* _currentDialogId;
 	VMSessionManager* _VMSessionManager;
-	AudioPlayer* _musicPlayer;
+	VKAudioQueuePlayer* _musicPlayer;
 	VKAudioMessagePlayer* _audioMessagePlayer;
 }
 @property(readonly, copy) NSString* debugDescription;
@@ -26,14 +25,12 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign, nonatomic) unsigned state;
 @property(retain, nonatomic) NSNumber* currentDialogId;
 @property(retain, nonatomic) VKAudioMessagePlayer* audioMessagePlayer;
-@property(retain, nonatomic) AudioPlayer* musicPlayer;
+@property(retain, nonatomic) VKAudioQueuePlayer* musicPlayer;
 @property(retain, nonatomic) VMSessionManager* VMSessionManager;
 -(void).cxx_destruct;
 -(void)model:(id)model willStartLoadingWithContext:(id)context;
 -(void)modelLoadingChanged:(id)changed;
 -(void)model:(id)model updated:(id)updated;
--(void)playerWillChangeItem:(id)player;
--(void)playerChangedItem:(id)item;
 -(void)playerUpdated:(id)updated;
 -(void)audioMessagePlayerChangingCurrentTime:(id)time;
 -(void)audioMessagePlayerStateChanged:(id)changed;

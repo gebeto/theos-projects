@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
+#import "VKMCell.h"
 #import "UICollectionViewDelegate.h"
 #import "UICollectionViewDataSource.h"
-#import "VKMCell.h"
-#import "vkclient-Structs.h"
 
-@class AudioBlock, UICollectionView, AudioBlockCellHeaderView, NSString;
+@class AudioBlock, NSString, UICollectionView, AudioBlockCellHeaderView;
 
 __attribute__((visibility("hidden")))
 @interface AudioBlockCellWithCollectionView : VKMCell <UICollectionViewDataSource, UICollectionViewDelegate> {

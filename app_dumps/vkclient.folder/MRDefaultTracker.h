@@ -8,7 +8,7 @@
 #import "MRTracker.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class MRTrackerParams, NSString, NSTimer, MRTrackerDBHelper;
+@class MRTrackerDBHelper, MRTrackerParams, NSString, NSTimer;
 
 @interface MRDefaultTracker : XXUnknownSuperclass <MRTracker> {
 	MRTrackerDBHelper* _dbHelper;

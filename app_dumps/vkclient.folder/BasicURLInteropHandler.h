@@ -19,6 +19,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 @property(copy, nonatomic) id handler;
+-(void).cxx_destruct;
 -(BOOL)handleOpenURL:(id)url;
 -(BOOL)openURL:(id)url handler:(id)handler;
 -(void)notificationAppActive:(id)active;

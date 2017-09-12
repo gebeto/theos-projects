@@ -5,13 +5,13 @@
  * Source: (null)
  */
 
-#import "VMSeekingViewDelegate.h"
-#import "VKOpusPlayerDelegate.h"
-#import "vkclient-Structs.h"
-#import "VMPlayingSessionDelegate.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKOpusPlayerDelegate.h"
+#import "VMPlayingSessionDelegate.h"
+#import "VMSeekingViewDelegate.h"
 
-@class VMSeekingView, UILabel, VMPreviewSamplesView, VMSessionManager, VKOpusPlayer, UIButton, NSString;
+@class UIButton, VMSeekingView, VMPreviewSamplesView, UILabel, NSString, VMSessionManager, VKOpusPlayer;
 
 __attribute__((visibility("hidden")))
 @interface PreviewPlayerView : XXUnknownSuperclass <VKOpusPlayerDelegate, VMSeekingViewDelegate, VMPlayingSessionDelegate> {

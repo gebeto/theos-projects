@@ -5,7 +5,6 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "UploadEditAttachment.h"
 
 @class VideoUploadContext;
@@ -16,6 +15,6 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VideoUploadContext* context;
 -(BOOL)longOperation;
 -(float)domainAttachmentImageRatio;
--(id)createViewForStyle:(XXStruct_9zIMjA)style;
+-(id)createViewForStyle:(id)style;
 @end
 

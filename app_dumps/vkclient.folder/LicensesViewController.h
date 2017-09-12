@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKMController.h"
 
 @class UITextView, NSURL;
@@ -18,7 +18,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UITextView* licenseTextView;
 @property(readonly, retain, nonatomic) NSURL* licenseFileURL;
 +(id)controllerWithMain:(id)main licenseFileURL:(id)url;
--(void)dealloc;
+-(void).cxx_destruct;
 -(void)viewWillAppear:(BOOL)view;
 -(void)viewDidLoad;
 -(void)loadView;

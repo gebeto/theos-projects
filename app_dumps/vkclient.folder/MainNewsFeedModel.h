@@ -7,7 +7,7 @@
 
 #import "NewsFeedModel.h"
 
-@class MainNewsFeedModelDeferredUpdate, MainNewsFeedModelContext, NSDate, NSNumber;
+@class MainNewsFeedModelDeferredUpdate, NSNumber, MainNewsFeedModelContext, NSDate;
 
 __attribute__((visibility("hidden")))
 @interface MainNewsFeedModel : NewsFeedModel {
@@ -23,6 +23,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSDate* lastNotificationsSync;
 +(int)handlesSourcesBans;
 +(id)newsFeedMethod;
+-(void).cxx_destruct;
 -(id)feedStatContext;
 -(BOOL)canInsertPost:(id)post;
 -(void)discovered:(id)discovered;
@@ -51,6 +52,5 @@ __attribute__((visibility("hidden")))
 -(BOOL)isSameModel:(id)model;
 -(id)spawnContext:(id)context;
 -(BOOL)isEmpty;
--(void)dealloc;
 @end
 

@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKComment.h"
-#import "vkclient-Structs.h"
 
 
 __attribute__((visibility("hidden")))

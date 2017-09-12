@@ -15,8 +15,8 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) VKPoll* original;
 @property(retain, nonatomic) VKPoll* domain;
+-(void).cxx_destruct;
 -(id)confirmAction:(id)action;
 -(Class)editControllerClass;
--(void)dealloc;
 @end
 

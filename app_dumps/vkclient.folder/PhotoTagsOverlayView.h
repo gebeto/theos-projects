@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UIView, VKPhotoTags, VKPhotoTag, NSArray;
+@class VKPhotoTags, VKPhotoTag, UIView, NSArray;
 @protocol PhotoTagsOverlayViewDelegate;
 
 __attribute__((visibility("hidden")))

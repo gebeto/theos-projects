@@ -7,7 +7,7 @@
 
 #import "Component5.h"
 
-@class UIColor, UIImage, NSNumber;
+@class UIImage, UIColor, NSNumber;
 @protocol VKImageFilter;
 
 __attribute__((visibility("hidden")))

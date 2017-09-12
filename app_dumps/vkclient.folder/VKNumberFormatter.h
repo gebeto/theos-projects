@@ -21,6 +21,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL groupingEnabled;
 @property(retain, nonatomic) NSNumberFormatter* numberFormatter;
 +(id)prettyFormatter;
+-(void).cxx_destruct;
 -(id)attributedStringFromNumber:(id)number numberAttributes:(id)attributes withSuffixKey:(id)suffixKey suffixAttributes:(id)attributes4;
 -(id)suffixForNumber:(id)number key:(id)key;
 -(id)stringFromNumber:(id)number withSuffixKey:(id)suffixKey;
@@ -28,6 +29,5 @@ __attribute__((visibility("hidden")))
 -(id)stringForObjectValue:(id)objectValue;
 -(id)attributedStringForObjectValue:(id)objectValue withDefaultAttributes:(id)defaultAttributes;
 -(id)init;
--(void)dealloc;
 @end
 

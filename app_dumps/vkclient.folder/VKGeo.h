@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "VKRenderable.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKAttachment.h"
+#import "VKRenderable.h"
 #import "VKLinkable.h"
 
 @class VKPlace, NSString;
@@ -27,6 +27,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) CLLocationCoordinate2D coordinate;
 +(id)linkIcon;
 +(id)geo:(id)geo;
+-(void).cxx_destruct;
 -(id)attachmentButtonTitle;
 -(id)attachmentIco;
 -(id)attachmentImage;
@@ -35,6 +36,5 @@ __attribute__((visibility("hidden")))
 -(id)attachmentPlaceholder;
 -(id)linkText;
 -(Class)rendererClass;
--(void)dealloc;
 @end
 

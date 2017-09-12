@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
 @class NSDictionary;
 
@@ -16,9 +16,9 @@ __attribute__((visibility("hidden")))
 	NSDictionary* _rectsForVisibleRows;
 }
 @property(retain, nonatomic) NSDictionary* rectsForVisibleRows;
+-(void).cxx_destruct;
 -(CGPoint)vk_newContentOffsetAfterUpdates;
 -(void)_setupCellAnimations;
 -(void)_endCellAnimationsWithContext:(id)context;
--(void)dealloc;
 @end
 

@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "Component5Controller.h"
 #import "FeedVideoViewDelegate.h"
+#import "Component5Controller.h"
 
 @class NSString;
 
@@ -25,6 +25,5 @@ __attribute__((visibility("hidden")))
 -(void)feedVideoViewDidTap:(id)feedVideoView;
 -(void)didEndDisplaying;
 -(void)setNode:(id)node;
--(void)dealloc;
 @end
 

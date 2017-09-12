@@ -21,7 +21,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* titleKey;
 @property(retain, nonatomic) NSString* imageName;
 +(id)image:(id)image title:(id)title text:(id)text button:(id)button;
+-(void).cxx_destruct;
 -(id)createTeaserView;
--(void)dealloc;
 @end
 

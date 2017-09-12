@@ -14,6 +14,6 @@ __attribute__((visibility("hidden")))
 	VKIdentity* _photoIden;
 }
 @property(retain, nonatomic) VKIdentity* photoIden;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

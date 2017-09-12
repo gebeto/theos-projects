@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "VKAPTabViewControllerProtocol.h"
+#import "VKClient-Structs.h"
 #import "GiftsCatalogController.h"
+#import "VKAPTabViewControllerProtocol.h"
 
 @class NSString;
 

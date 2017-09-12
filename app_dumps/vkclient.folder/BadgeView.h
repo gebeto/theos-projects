@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class UIFont, UIColor, NSString;
@@ -27,6 +27,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIColor* textColor;
 @property(retain, nonatomic) UIFont* font;
 @property(copy, nonatomic) NSString* text;
+-(void).cxx_destruct;
 -(void)drawRect:(CGRect)rect;
 -(void)useTextColor:(id)color;
 -(void)useTintColor:(id)color;
@@ -36,6 +37,5 @@ __attribute__((visibility("hidden")))
 -(void)awakeFromNib;
 -(id)initWithFrame:(CGRect)frame;
 -(void)_configureDefaults;
--(void)dealloc;
 @end
 

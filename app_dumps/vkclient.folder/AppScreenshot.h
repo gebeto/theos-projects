@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class NSString, NSNumber;
+@class NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface AppScreenshot : XXUnknownSuperclass {
@@ -20,7 +20,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, copy, nonatomic) NSString* URL;
 @property(readonly, retain, nonatomic) NSNumber* ID;
 +(id)screenshotWithPhoto:(id)photo;
+-(void).cxx_destruct;
 -(id)initWithPhoto:(id)photo;
--(void)dealloc;
 @end
 

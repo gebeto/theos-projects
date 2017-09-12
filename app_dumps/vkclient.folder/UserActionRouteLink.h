@@ -15,9 +15,9 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSString* linkTitle;
 @property(retain, nonatomic) NSString* target;
+-(void).cxx_destruct;
 -(void)runInContext:(id)context;
 -(id)title;
 -(id)withLinkTitle:(id)linkTitle;
--(void)dealloc;
 @end
 

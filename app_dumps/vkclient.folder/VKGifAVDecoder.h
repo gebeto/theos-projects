@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKGifAVWorker.h"
 
-@class NSMutableData, NSObject, AnimatedGifFrame;
-@protocol OS_dispatch_queue, VKGifAVDecoderDelegate;
+@class AnimatedGifFrame, NSObject, NSMutableData;
+@protocol VKGifAVDecoderDelegate, OS_dispatch_queue;
 
 __attribute__((visibility("hidden")))
 @interface VKGifAVDecoder : VKGifAVWorker {

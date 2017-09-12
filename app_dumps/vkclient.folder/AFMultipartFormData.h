@@ -8,7 +8,7 @@
 #import <XXUnknownSuperclass.h> // Unknown library
 #import "AFMultipartFormData.h"
 
-@class NSMutableData, NSData;
+@class NSData, NSMutableData;
 
 @protocol AFMultipartFormData
 -(void)appendString:(id)string;

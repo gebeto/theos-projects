@@ -16,6 +16,6 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSString* cellStatId;
 @property(copy, nonatomic) id select;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

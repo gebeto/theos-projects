@@ -17,6 +17,6 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int visibility;
 @property(retain, nonatomic) NSDate* date;
 +(id)birthDateWithAPIString:(id)apistring;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

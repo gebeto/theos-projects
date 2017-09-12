@@ -5,9 +5,10 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "BaseSectionedSettingsController.h"
 
-@class UITableViewCell, SettingsSection, NewsfeedSettingsModel, UIActivityIndicatorView;
+@class SettingsSection, UITableViewCell, NewsfeedSettingsModel, UIActivityIndicatorView;
 
 __attribute__((visibility("hidden")))
 @interface NewsfeedSettingsController : BaseSectionedSettingsController {

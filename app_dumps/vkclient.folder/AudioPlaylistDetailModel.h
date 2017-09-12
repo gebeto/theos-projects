@@ -7,7 +7,7 @@
 
 #import "ListModel.h"
 
-@class AudioPlaylistDetailContext, VKAudioPlaylist, VKIdentity;
+@class AudioPlaylistDetailContext, VKIdentity, VKAudioPlaylist;
 @protocol AudioPlaylistDetailModelDelegate;
 
 __attribute__((visibility("hidden")))
@@ -16,10 +16,11 @@ __attribute__((visibility("hidden")))
 	VKIdentity* _playlistIden;
 	id<AudioPlaylistDetailModelDelegate> _delegate;
 }
-@property(assign, nonatomic) id<AudioPlaylistDetailModelDelegate> delegate;
+@property(assign, nonatomic) __weak id<AudioPlaylistDetailModelDelegate> delegate;
 @property(retain, nonatomic) VKIdentity* playlistIden;
 @property(retain, nonatomic) AudioPlaylistDetailContext* lastContext;
 @property(readonly, retain, nonatomic) VKAudioPlaylist* playlist;
+-(void).cxx_destruct;
 -(void)setEditing:(BOOL)editing animated:(BOOL)animated;
 -(void)fillAudioActionsForBuilder:(id)builder item:(id)item;
 -(void)fillActions:(id)actions;
@@ -46,6 +47,5 @@ __attribute__((visibility("hidden")))
 -(id)source;
 -(id)spawnContext:(id)context;
 -(id)setupAudioPlaylistIden:(id)iden;
--(void)dealloc;
 @end
 

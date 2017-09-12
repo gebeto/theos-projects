@@ -5,16 +5,15 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "AttachmentsLayout.h"
 
-@class UIFont, NSString;
 
 __attribute__((visibility("hidden")))
 @interface WrapAttachmentsLayout : AttachmentsLayout {
-	int padding;
-	int cols;
-	int width;
+	int _padding;
+	int _cols;
+	int _width;
 	float _attachment_size;
 	float _attachment_padding_x;
 	float _attachment_padding_y;
@@ -28,6 +27,6 @@ __attribute__((visibility("hidden")))
 -(void)alignAttachments:(id)attachments;
 -(void)refresh;
 -(int)indexForPoint:(CGPoint)point;
--(id)initWithContainer:(id)container style:(XXStruct_9zIMjA)style;
+-(id)initWithContainer:(id)container style:(id)style;
 @end
 

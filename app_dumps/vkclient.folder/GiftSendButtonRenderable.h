@@ -16,7 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) GiftsStatContext* stats_context;
 @property(retain, nonatomic) NSNumber* owner_id;
+-(void).cxx_destruct;
 -(Class)rendererClass;
--(void)dealloc;
 @end
 

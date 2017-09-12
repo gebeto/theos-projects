@@ -15,7 +15,7 @@ __attribute__((visibility("hidden")))
 +(id)safariSupport;
 +(id)snapsterSupport;
 +(id)instagramSupport;
-+(void)presentAppStoreProductWithId:(id)anId fromViewController:(id)viewController source:(id)source;
++(void)presentAppStoreProductWithId:(id)anId fromViewController:(id)viewController campaignToken:(id)token providerToken:(id)token4;
 +(void)presentAppStoreProductWithId:(id)anId fromViewController:(id)viewController unformattedSource:(id)source;
 +(id)urlForAppStoreApplicationWithProductId:(id)productId;
 +(BOOL)openExternalUrl:(id)url;

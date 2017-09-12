@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "UIGestureRecognizerDelegate.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UIPinchGestureRecognizer, UIView, UIRotationGestureRecognizer, UIPanGestureRecognizer, NSMutableArray, DeleteAreaView, NSString;
-@protocol StoryEditorDraggableAttachmentsContainerViewDelegate, DraggableAttachment;
+@class UIRotationGestureRecognizer, NSMutableArray, DeleteAreaView, UIView, NSString, UIPanGestureRecognizer, UIPinchGestureRecognizer;
+@protocol DraggableAttachment, StoryEditorDraggableAttachmentsContainerViewDelegate;
 
 __attribute__((visibility("hidden")))
 @interface StoryEditorDraggableAttachmentsContainerView : XXUnknownSuperclass <UIGestureRecognizerDelegate> {

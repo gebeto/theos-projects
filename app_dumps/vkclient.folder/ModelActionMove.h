@@ -17,6 +17,6 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSNumber* to;
 @property(retain, nonatomic) NSNumber* from;
 @property(retain, nonatomic) VKDomain* target;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

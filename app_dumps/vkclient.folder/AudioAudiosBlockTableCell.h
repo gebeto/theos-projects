@@ -5,40 +5,19 @@
  * Source: (null)
  */
 
-#import "VKMCell.h"
-#import "ModelObserver.h"
+#import "AudioCell.h"
 
-@class AudioPlayer, VKMImageView, VKAudio, AudioOverlayButton, NSString;
+@class VKAudio;
 
 __attribute__((visibility("hidden")))
-@interface AudioAudiosBlockTableCell : VKMCell <ModelObserver> {
-	VKMImageView* _coverView;
-	AudioOverlayButton* _playPauseButton;
-	AudioPlayer* _player;
+@interface AudioAudiosBlockTableCell : AudioCell {
 }
-@property(readonly, copy) NSString* debugDescription;
-@property(readonly, copy) NSString* description;
-@property(readonly, assign) Class superclass;
-@property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) VKAudio* domain;
-@property(retain, nonatomic) AudioPlayer* player;
-@property(retain, nonatomic) AudioOverlayButton* playPauseButton;
-@property(retain, nonatomic) VKMImageView* coverView;
 +(float)height;
 +(float)coverSide;
--(void).cxx_destruct;
--(void)model:(id)model willStartLoadingWithContext:(id)context;
--(void)modelLoadingChanged:(id)changed;
--(void)model:(id)model updated:(id)updated;
--(void)playerWillChangeItem:(id)player;
--(void)playerChangedItem:(id)item;
--(void)playerUpdated:(id)updated;
--(void)actionAccessoryButton:(id)button;
--(void)actionPlayPauseButton:(id)button;
+-(void)togglePlayPause:(id)pause;
 -(void)update;
--(void)attach:(id)attach expectedReuse:(double)reuse;
--(void)layoutSubviews;
+-(void)actionAccessoryButton:(id)button;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
--(void)dealloc;
 @end
 

@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "PopupWindowController.h"
 #import "PaymentsPopupViewDelegate.h"
+#import "PopupWindowController.h"
+#import "VKClient-Structs.h"
 #import "VKMLiveController.h"
-#import "vkclient-Structs.h"
 
-@class PopupWindow, PaymentsPopupView, PaymentsBalanceModel, NSString, UIActivityIndicatorView;
+@class PaymentsPopupView, NSString, UIActivityIndicatorView, PopupWindow, PaymentsBalanceModel;
 
 __attribute__((visibility("hidden")))
 @interface PaymentsPopupController : VKMLiveController <PaymentsPopupViewDelegate, PopupWindowController> {
@@ -32,6 +32,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL result;
 @property(retain, nonatomic) UIActivityIndicatorView* activityIndicatorView;
 @property(retain, nonatomic) PaymentsPopupView* itemView;
+-(void).cxx_destruct;
 -(void)paymentViewShouldClose;
 -(void)popupWindow:(id)window present:(BOOL)present animated:(BOOL)animated completion:(id)completion;
 -(void)notificationPurchase:(id)purchase;

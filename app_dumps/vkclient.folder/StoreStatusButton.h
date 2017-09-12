@@ -6,9 +6,9 @@
  */
 
 #import "DefaultHighlightButton.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 
-@class VKSession, UIView, ActivityIndicatorView, VKStoreProductStickerReferrerContext, VKStoreStockItem;
+@class VKStoreStockItem, VKSession, ActivityIndicatorView, UIView, VKStoreProductStickerReferrerContext;
 @protocol VKMNavProxyDelegate;
 
 __attribute__((visibility("hidden")))
@@ -23,7 +23,7 @@ __attribute__((visibility("hidden")))
 	int _loadingState;
 	VKStoreProductStickerReferrerContext* _referrerContext;
 }
-@property(assign, nonatomic) id<VKMNavProxyDelegate> navProxyDelegate;
+@property(assign, nonatomic) __weak id<VKMNavProxyDelegate> navProxyDelegate;
 @property(assign, nonatomic) float fixedWidth;
 @property(assign, nonatomic) int downloadDisplayMode;
 @property(retain, nonatomic) VKStoreStockItem* item;
@@ -37,6 +37,7 @@ __attribute__((visibility("hidden")))
 +(id)titleLabelFont;
 +(id)buttonWithSession:(id)session referrerContext:(id)context;
 +(void)initialize;
+-(void).cxx_destruct;
 -(void)attach:(id)attach;
 -(void)sizeToFit;
 -(void)actionAction:(id)action;

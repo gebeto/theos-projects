@@ -24,6 +24,7 @@ __attribute__((visibility("hidden")))
 	ImageResource* _recommendationsHide;
 	ImageResource* _recommendationsCheck;
 	ImageResource* _recommendationsAddFriend;
+	ImageResource* _recommendationsAddGroup;
 	ImageResource* _watermarkYoutube;
 	ImageResource* _watermarkCoub;
 	ImageResource* _watermarkRutube;
@@ -35,6 +36,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) ImageResource* watermarkRutube;
 @property(retain, nonatomic) ImageResource* watermarkCoub;
 @property(retain, nonatomic) ImageResource* watermarkYoutube;
+@property(retain, nonatomic) ImageResource* recommendationsAddGroup;
 @property(retain, nonatomic) ImageResource* recommendationsAddFriend;
 @property(retain, nonatomic) ImageResource* recommendationsCheck;
 @property(retain, nonatomic) ImageResource* recommendationsHide;

@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class Action, NSMutableArray, NSMutableDictionary, NSString;
+@class NSMutableDictionary, NSMutableArray, Action, NSString;
 
 __attribute__((visibility("hidden")))
 @interface ActionsBuilder : XXUnknownSuperclass {
@@ -26,6 +26,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSMutableArray* actions;
 +(void)textAlertPrompt:(id)prompt confirmText:(id)text block:(id)block;
 +(void)serviceRestrictedAlert:(id)alert canOpenMessage:(id)message;
++(void)serviceRestrictedAlert:(id)alert canOpenMessage:(id)message cancel:(id)cancel;
 +(void)deleteAlertPrompt:(id)prompt kind:(int)kind block:(id)block;
 +(id)confirmedDeleteForDomain:(int)domain block:(id)block;
 +(id)confirmedDeleteItem:(id)item kind:(int)kind block:(id)block;
@@ -46,15 +47,14 @@ __attribute__((visibility("hidden")))
 +(id)builder;
 -(id)destructivePromptedForDomain:(int)domain block:(id)block;
 -(id)destructivePromptedForItem:(id)item kind:(int)kind block:(id)block;
--(void)report:(id)report handler:(id)handler;
 -(void)report:(id)report;
 -(void)commonShareActions:(id)actions editAttachment:(id)attachment sendImmediately:(BOOL)immediately supportSystemShare:(BOOL)share;
 -(void)audioShareActions:(id)actions;
--(void)audioPlaylistAudioActions:(id)actions downloadAvailable:(BOOL)available;
+-(void)audioPlaylistAudioActions:(id)actions downloadAvailable:(BOOL)available playlistIden:(id)iden;
 -(void)audioPlaylistShareActions:(id)actions;
 -(void)audioPlaylistUnfollowAction:(id)action;
--(void)audioPlaylistActions:(id)actions owner:(id)owner session:(id)session;
--(void)audioActions:(id)actions session:(id)session owner:(id)owner canDelete:(BOOL)aDelete;
+-(void)audioPlaylistActions:(id)actions owner:(id)owner preloadedAudios:(id)audios session:(id)session;
+-(void)audioActions:(id)actions session:(id)session owner:(id)owner canDelete:(BOOL)aDelete playlistIden:(id)iden;
 -(void)docShareActions:(id)actions sendImmediately:(BOOL)immediately;
 -(void)profilePhotoActions:(id)actions handler:(id)handler;
 -(void)photoActions:(id)actions session:(id)session;

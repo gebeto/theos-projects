@@ -13,6 +13,7 @@ __attribute__((visibility("hidden")))
 @interface StoreUpdateModel : Model {
 	id<ModelUpdateHandler> _handler;
 }
-@property(assign, nonatomic) id<ModelUpdateHandler> handler;
+@property(assign, nonatomic) __weak id<ModelUpdateHandler> handler;
+-(void).cxx_destruct;
 @end
 

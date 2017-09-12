@@ -6,10 +6,10 @@
  */
 
 #import "UIGestureRecognizerDelegate.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class UIPanGestureRecognizer, VKAPModel, NSString;
+@class VKAPModel, NSString, UIPanGestureRecognizer;
 @protocol VKAPContentViewControllerSizeDelegate;
 
 __attribute__((visibility("hidden")))

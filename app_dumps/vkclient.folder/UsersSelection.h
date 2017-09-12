@@ -16,7 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSString* title;
 @property(retain, nonatomic) NSArray* users;
+-(void).cxx_destruct;
 -(id)mapUsers;
--(void)dealloc;
 @end
 

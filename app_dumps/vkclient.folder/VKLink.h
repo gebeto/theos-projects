@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "VKChildDomain.h"
 #import "VKDomain.h"
+#import "VKChildDomain.h"
 
-@class VKShopProduct, VKPhoto, VKRating, VKIdentity, NSString, VKLinkButton;
+@class VKLinkButton, VKPhoto, VKShopProduct, VKRating, VKIdentity, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKLink : VKDomain <VKChildDomain> {
@@ -44,8 +44,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* url;
 @property(retain, nonatomic) NSString* id;
 +(id)linkWithURL:(id)url;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

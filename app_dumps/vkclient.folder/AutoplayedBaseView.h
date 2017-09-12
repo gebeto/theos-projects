@@ -5,14 +5,14 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "TrackingBoundsView.h"
-#import "VKVideoPlayerViewDelegate.h"
-#import "vkclient-Structs.h"
 #import "VKThumbnailView.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKVideoPlayerViewDelegate.h"
 
-@class VKMImageView, RoundedProgressOverlayView, VKDomain, VKAVVideoPlayerView, UIImage, NSString, NSURL, UIActivityIndicatorView;
-@protocol AutoplayedVideoViewDelegate, VKThumbnailable;
+@class UIImage, NSURL, VKDomain, RoundedProgressOverlayView, NSString, UIActivityIndicatorView, VKAVVideoPlayerView, VKMImageView;
+@protocol VKThumbnailable, AutoplayedVideoViewDelegate;
 
 __attribute__((visibility("hidden")))
 @interface AutoplayedBaseView : XXUnknownSuperclass <VKVideoPlayerViewDelegate, VKThumbnailView, TrackingBoundsView> {

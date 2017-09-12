@@ -5,7 +5,6 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "DomainEditAttachment.h"
 
 
@@ -13,6 +12,6 @@ __attribute__((visibility("hidden")))
 @interface GeneralEditAttachment : DomainEditAttachment {
 }
 -(void)renderView:(id)view;
--(id)createViewForStyle:(XXStruct_9zIMjA)style;
+-(id)createViewForStyle:(id)style;
 @end
 

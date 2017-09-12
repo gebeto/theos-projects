@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSDictionary, NSNumber, NSString, NSArray;
+@class NSNumber, NSArray, NSDictionary, NSString;
 
 @interface MREvent : XXUnknownSuperclass {
 	NSString* _type;

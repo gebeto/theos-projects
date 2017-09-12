@@ -22,6 +22,7 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) id handler;
 @property(assign, nonatomic) BOOL comments_disabled;
 @property(retain, nonatomic) VKVideo* domain;
+-(void).cxx_destruct;
 -(id)commentsDisabledTitle;
 -(void)setCommentsDisabled:(BOOL)disabled;
 -(BOOL)commentsDisabled;
@@ -36,6 +37,5 @@ __attribute__((visibility("hidden")))
 -(BOOL)editPrivacy;
 -(void)useDomain:(id)domain edit:(BOOL)edit;
 -(id)confirmAction:(id)action;
--(void)dealloc;
 @end
 

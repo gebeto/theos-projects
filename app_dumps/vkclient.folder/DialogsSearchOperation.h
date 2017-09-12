@@ -16,7 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSSet* dids;
 @property(retain, nonatomic) NSDictionary* users;
+-(void).cxx_destruct;
 -(void)main;
--(void)dealloc;
 @end
 

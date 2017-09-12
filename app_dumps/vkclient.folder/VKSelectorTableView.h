@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "UITableViewDelegate.h"
 #import "UITableViewDataSource.h"
 #import "VKSelector.h"
-#import "vkclient-Structs.h"
 
 @class UITableView, NSString;
 

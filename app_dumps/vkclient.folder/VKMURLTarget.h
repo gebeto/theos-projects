@@ -18,7 +18,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL safe;
 +(id)url:(id)url safe:(BOOL)safe safeRef:(id)ref;
 +(id)url:(id)url safe:(BOOL)safe;
--(void)dealloc;
+-(void).cxx_destruct;
 -(void)reload;
 -(id)targetURL;
 -(id)title;

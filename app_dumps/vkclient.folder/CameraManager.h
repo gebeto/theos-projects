@@ -5,27 +5,30 @@
  * Source: (null)
  */
 
+#import "MaskEngineWrapper2Delegate.h"
 #import "MovieRecorderDelegate.h"
 #import "AVCaptureAudioDataOutputSampleBufferDelegate.h"
-#import "vkclient-Structs.h"
-#import "AVCaptureVideoDataOutputSampleBufferDelegate.h"
-#import "AVCaptureFileOutputRecordingDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "AVCaptureVideoDataOutputSampleBufferDelegate.h"
+#import "VKClient-Structs.h"
 
-@class AVCaptureConnection, NSDictionary, AVCaptureStillImageOutput, AVCaptureAudioDataOutput, AVCaptureVideoDataOutput, CameraConfig, AVCaptureDeviceInput, AVCaptureDevice, NSString, KVOObserver, AVCaptureSession, NSObject, MovieRecorder, NSURL;
-@protocol OS_dispatch_queue, CameraManagerDelegate;
+@class NSURL, AVCaptureSession, AVSampleBufferDisplayLayer, KVOObserver, AVCaptureConnection, MaskEngineWrapper2, AVCaptureStillImageOutput, CameraConfig, AVCaptureAudioDataOutput, UILabel, AVCaptureVideoDataOutput, FPSMeasurer, NSString, NSDictionary, AVCaptureDeviceInput, NSObject, AVCaptureDevice, MovieRecorder;
+@protocol CameraManagerDelegate, OS_dispatch_queue;
 
 __attribute__((visibility("hidden")))
-@interface CameraManager : XXUnknownSuperclass <AVCaptureFileOutputRecordingDelegate, AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureAudioDataOutputSampleBufferDelegate, MovieRecorderDelegate> {
-	BOOL _shouldRecord;
+@interface CameraManager : XXUnknownSuperclass <AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureAudioDataOutputSampleBufferDelegate, MovieRecorderDelegate, MaskEngineWrapper2Delegate> {
+	BOOL _videoRecordingInProgress;
+	BOOL _freezeSampleBufferDisplayLayer;
 	BOOL _recording;
 	BOOL _recorededFirstFrameOfVideo;
-	BOOL _startRecordingWhenAudioFormatDescriptionReady;
+	BOOL _maskEngineLoadingOrLoaded;
 	unsigned _captureSessionSetupResult;
 	CameraConfig* _cameraConfig;
 	id<CameraManagerDelegate> _delegate;
 	unsigned _cameraPosition;
 	float _zoomFactor;
+	UILabel* _measurementsLabel;
+	FPSMeasurer* _fpsMeasurer;
 	MovieRecorder* _recorder;
 	NSObject<OS_dispatch_queue>* _sessionQueue;
 	NSObject<OS_dispatch_queue>* _videoDataOutputQueue;
@@ -47,34 +50,37 @@ __attribute__((visibility("hidden")))
 	KVOObserver* _stillImageOutputKVOObserver;
 	KVOObserver* _currentDeviceKVOObserver;
 	unsigned _backgroundRecordingId;
-	CVBufferRef _currentPreviewPixelBuffer;
 	opaqueCMFormatDescription* _outputVideoFormatDescription;
 	opaqueCMFormatDescription* _outputAudioFormatDescription;
 	int _videoBufferOrientation;
 	NSDictionary* _videoCompressionSettings;
 	NSDictionary* _audioCompressionSettings;
 	NSURL* _recordingURL;
+	MaskEngineWrapper2* _maskEngine;
+	AVSampleBufferDisplayLayer* _sampleBufferDisplayLayer;
 }
 @property(readonly, copy) NSString* debugDescription;
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
+@property(retain, nonatomic) UILabel* measurementsLabel;
+@property(assign, nonatomic) BOOL freezeSampleBufferDisplayLayer;
 @property(assign, nonatomic) float zoomFactor;
 @property(readonly, assign, nonatomic) BOOL videoRecordingInProgress;
 @property(readonly, assign, nonatomic) BOOL currentCameraDeviceHasTorch;
 @property(readonly, assign, nonatomic) BOOL currentCameraDeviceHasFlash;
 @property(assign, nonatomic) __weak id<CameraManagerDelegate> delegate;
-@property(assign, nonatomic) BOOL startRecordingWhenAudioFormatDescriptionReady;
+@property(retain, nonatomic) AVSampleBufferDisplayLayer* sampleBufferDisplayLayer;
+@property(assign, nonatomic) BOOL maskEngineLoadingOrLoaded;
+@property(retain, nonatomic) MaskEngineWrapper2* maskEngine;
 @property(assign, nonatomic) BOOL recorededFirstFrameOfVideo;
 @property(assign, nonatomic) BOOL recording;
-@property(assign, nonatomic) BOOL shouldRecord;
 @property(copy, nonatomic) NSURL* recordingURL;
 @property(retain, nonatomic) NSDictionary* audioCompressionSettings;
 @property(retain, nonatomic) NSDictionary* videoCompressionSettings;
 @property(assign, nonatomic) int videoBufferOrientation;
 @property(retain, nonatomic) opaqueCMFormatDescription* outputAudioFormatDescription;
 @property(retain, nonatomic) opaqueCMFormatDescription* outputVideoFormatDescription;
-@property(retain, nonatomic) CVBufferRef currentPreviewPixelBuffer;
 @property(assign, nonatomic) unsigned cameraPosition;
 @property(assign, nonatomic) unsigned backgroundRecordingId;
 @property(retain, nonatomic) KVOObserver* currentDeviceKVOObserver;
@@ -99,6 +105,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) MovieRecorder* recorder;
 @property(retain, nonatomic) CameraConfig* cameraConfig;
 @property(assign, nonatomic) unsigned captureSessionSetupResult;
+@property(retain, nonatomic) FPSMeasurer* fpsMeasurer;
 +(BOOL)backfacingCameraDeviceAvailable;
 +(BOOL)frontfacingCameraDeviceAvailable;
 +(id)sessionPresetForStoryFrontfacingCamera;
@@ -106,12 +113,21 @@ __attribute__((visibility("hidden")))
 +(id)sessionPresetForStoryCameraForPosition:(unsigned)position;
 +(id)cameraDeviceWithPosition:(int)position;
 -(void).cxx_destruct;
+-(void)stopApplyingMask;
+-(void)applyMaskWithJsonFilePath:(id)jsonFilePath;
+-(void)loadMaskEngineWithAssetsPathIfNotAlready:(id)assetsPathIfNotAlready;
 -(void)movieRecorderDidFinishPreparing:(id)movieRecorder;
 -(void)movieRecorder:(id)recorder didFailWithError:(id)error;
 -(void)movieRecorderDidFinishRecording:(id)movieRecorder;
+-(void)appendAudioSampleBufferToRecorderIfNeeded:(opaqueCMSampleBuffer*)recorderIfNeeded;
+-(void)appendVideoSampleBufferToRecorderIfNeeded:(opaqueCMSampleBuffer*)recorderIfNeeded;
 -(void)captureOutput:(id)output didOutputSampleBuffer:(opaqueCMSampleBuffer*)buffer fromConnection:(id)connection;
--(void)captureOutput:(id)output didFinishRecordingToOutputFileAtURL:(id)url fromConnections:(id)connections error:(id)error;
--(void)captureOutput:(id)output didStartRecordingToOutputFileAtURL:(id)url fromConnections:(id)connections;
+-(void)receiveSampleBufferWithApplyingMask:(opaqueCMSampleBuffer*)applyingMask;
+-(void)maskEngineWrapper2:(id)a2 pixelBufferReady:(char*)ready width:(unsigned)width height:(unsigned)height backCamera:(BOOL)camera photo:(BOOL)photo timestampMs:(unsigned)ms;
+-(void)maskEngineWrapper2:(id)a2 maskLoadStatusChanged:(id)changed maskLoadStatus:(unsigned)status;
+-(void)maskEngineWrapper2:(id)a2 renderLoadStatusChanged:(BOOL)changed;
+-(void)maskEngineWrapper2:(id)a2 modelLoadStatusChanged:(BOOL)changed;
+-(void)maskEngineWrapper2:(id)a2 changedMaskLoaded:(BOOL)loaded;
 -(CGAffineTransform)transformFromVideoBufferOrientationToOrientation:(int)orientation withAutoMirroring:(BOOL)autoMirroring;
 -(void)addInputToSessionIfPossible:(id)sessionIfPossible input:(id)input;
 -(void)removeInputFromSessionIfExists:(id)sessionIfExists input:(id)input;
@@ -128,16 +144,15 @@ __attribute__((visibility("hidden")))
 -(void)startAudioSession;
 -(void)stopVideoRecording;
 -(void)startVideoRecording;
--(void)capturePhotoWithSampleBufferProcessor:(id)sampleBufferProcessor;
+-(void)capturePhoto;
 -(void)setCameraConfig:(id)config asyncWithCompletion:(id)completion;
 -(id)createKVOObserverForCurrentDevice:(id)currentDevice;
 -(void)setupFocusAndExposureForDevice:(id)device;
 -(void)applyCameraPosition:(unsigned)position;
 -(void)applyConfiguration:(id)configuration lockSessionForConfiguration:(BOOL)configuration2;
 -(id)createKVOObserverForStillImageOutput:(id)stillImageOutput;
--(void)initializeDevices;
--(void)initializeAndStartSessionWithConfig:(id)config requestCameraPermissionIfNeeded:(BOOL)needed requestMicrophonePermissionIfNeeded:(BOOL)needed3 attachSessionToCameraPreviewLayer:(id)cameraPreviewLayer completion:(id)completion;
--(void)dealloc;
+-(void)initializeAndStartSessionWithConfig:(id)config requestCameraPermissionIfNeeded:(BOOL)needed requestMicrophonePermissionIfNeeded:(BOOL)needed3 sampleBufferDisplayLayer:(id)layer completion:(id)completion;
 -(id)init;
+-(void)dealloc;
 @end
 

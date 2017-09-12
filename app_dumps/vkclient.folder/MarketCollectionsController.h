@@ -7,10 +7,10 @@
 
 #import "GroupedCollectionViewLayoutDelegate.h"
 #import "VKMCollectionController.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "MarketCollectionsControllerDefaults.h"
 
-@class MarketModel, NSString;
+@class NSString, MarketModel;
 @protocol MarketCollectionsAdapter;
 
 __attribute__((visibility("hidden")))
@@ -28,6 +28,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL mustScrollToTopAfterUpdate;
 @property(assign, nonatomic) unsigned selectedSortingIndex;
 @property(retain, nonatomic) id<MarketCollectionsAdapter> modeAdapter;
+-(void).cxx_destruct;
 -(void)VKMCollectionUpdatedIndex;
 -(void)VKMScrollViewReset;
 -(void)VKMScrollViewReloadData;
@@ -59,6 +60,5 @@ __attribute__((visibility("hidden")))
 -(id)titleForSortingOption:(MarketSorting_t)sortingOption;
 -(id)segments;
 -(void)viewDidLoad;
--(void)dealloc;
 @end
 

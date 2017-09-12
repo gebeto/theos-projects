@@ -7,7 +7,7 @@
 
 #import "Component5Controller.h"
 
-@class VKMImageView, UIView, UIImageView;
+@class UIView, UIImageView, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface ProfileInfoComponentController : Component5Controller {

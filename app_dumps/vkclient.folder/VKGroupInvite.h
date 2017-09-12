@@ -7,7 +7,7 @@
 
 #import "VKDomain.h"
 
-@class VKUser, VKPlace, VKGroup;
+@class VKPlace, VKGroup, VKUser;
 
 __attribute__((visibility("hidden")))
 @interface VKGroupInvite : VKDomain {
@@ -26,9 +26,9 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKUser* invited_by;
 @property(retain, nonatomic) VKPlace* place;
 @property(retain, nonatomic) VKGroup* group;
+-(void).cxx_destruct;
 -(id)iden;
 -(Class)rendererClass;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

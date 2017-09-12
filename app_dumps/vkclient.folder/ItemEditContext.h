@@ -20,6 +20,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKPrivacySetting* privacy_view;
 @property(retain, nonatomic) NSString* descr;
 @property(retain, nonatomic) NSString* title;
+-(void).cxx_destruct;
 -(int)descrMax;
 -(int)descrMin;
 -(int)titleMax;
@@ -29,6 +30,5 @@ __attribute__((visibility("hidden")))
 -(BOOL)editPrivacy;
 -(id)editTitle;
 -(Class)editControllerClass;
--(void)dealloc;
 @end
 

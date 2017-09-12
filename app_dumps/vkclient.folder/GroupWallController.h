@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "ProfileWallController.h"
 #import "VKProfileContentBlockViewDelegate.h"
+#import "ProfileWallController.h"
+#import "VKClient-Structs.h"
 
 @class VKHUD, GroupModel, NSString;
 
@@ -22,6 +22,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) VKHUD* actionHUD;
 @property(retain, nonatomic) GroupModel* profile;
+-(void).cxx_destruct;
 -(BOOL)VKMRoute:(id)route context:(id)context;
 -(void)profileContentBlockView:(id)view didSelectItem:(id)item;
 -(void)profileContentBlockViewShowAll:(id)all;

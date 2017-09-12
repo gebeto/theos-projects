@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "UIViewControllerAnimatedTransitioning.h"
 #import "UIViewControllerInteractiveTransitioning.h"
+#import "UIViewControllerAnimatedTransitioning.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UIView, StoryFeedPreviewAvatarCell, NSString, StoryFeedPreviewViewController;
+@class StoryFeedPreviewAvatarCell, UIView, NSString, StoryFeedPreviewViewController;
 @protocol UIViewControllerContextTransitioning;
 
 __attribute__((visibility("hidden")))

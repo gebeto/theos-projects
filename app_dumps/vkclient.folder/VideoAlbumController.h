@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKMLiveController.h"
 
-@class VideoAlbumModel, VideoAlbumsInfoToolbar;
+@class VideoAlbumsInfoToolbar, VideoAlbumModel;
 
 __attribute__((visibility("hidden")))
 @interface VideoAlbumController : VKMLiveController {
@@ -16,6 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) VideoAlbumModel* model;
 @property(retain, nonatomic) VideoAlbumsInfoToolbar* toolbar;
+-(void).cxx_destruct;
 -(void)tableView:(id)view commitEditingStyle:(int)style forRowAtIndexPath:(id)indexPath;
 -(BOOL)tableView:(id)view canEditRowAtIndexPath:(id)indexPath;
 -(BOOL)VKMRoute:(id)route context:(id)context;
@@ -28,6 +29,5 @@ __attribute__((visibility("hidden")))
 -(void)setupNavigationItemButtons:(BOOL)buttons;
 -(void)viewDidLoad;
 -(void)loadView;
--(void)dealloc;
 @end
 

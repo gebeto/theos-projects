@@ -33,11 +33,11 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKGift* gift;
 @property(retain, nonatomic) NSNumber* from_id;
 +(id)objectFromSendAction:(id)sendAction profile:(id)profile;
+-(void).cxx_destruct;
 -(int)statusMask;
 -(id)statusForSource:(id)source;
 -(id)renderWithSources:(id)sources;
 -(Class)rendererClass;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

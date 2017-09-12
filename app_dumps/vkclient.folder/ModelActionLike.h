@@ -7,7 +7,7 @@
 
 #import "ModelAction.h"
 
-@class NSNumber, VKIdentity;
+@class VKIdentity, NSNumber;
 
 __attribute__((visibility("hidden")))
 @interface ModelActionLike : ModelAction {
@@ -23,11 +23,11 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKIdentity* target;
 +(id)like:(BOOL)like item:(id)item companion:(id)companion known_count:(id)count;
 +(int)domainType;
+-(void).cxx_destruct;
 -(void)actionHandleResult:(id)result;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
 -(id)actionQueueKey;
 -(id)likeItemId;
--(void)dealloc;
 @end
 

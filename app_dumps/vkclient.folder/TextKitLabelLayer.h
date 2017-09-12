@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class CALayer, TextKitLayer;
+@class TextKitLayer, CALayer;
 
 __attribute__((visibility("hidden")))
 @interface TextKitLabelLayer : XXUnknownSuperclass {

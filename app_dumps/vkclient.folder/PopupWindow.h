@@ -16,6 +16,5 @@ __attribute__((visibility("hidden")))
 -(void)setHidden:(BOOL)hidden;
 -(void)setRootViewController:(id)controller;
 -(id)popupWindowController;
--(void)dealloc;
 @end
 

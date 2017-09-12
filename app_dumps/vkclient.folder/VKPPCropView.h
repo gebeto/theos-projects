@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "UIGestureRecognizerDelegate.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class PHAsset, VKPPCropBorderView, NSString, UIImageView;
+@class PHAsset, VKPPCropBorderView, UIImageView, NSString;
 @protocol VKPPAssetPresenter;
 
 @interface VKPPCropView : XXUnknownSuperclass <UIGestureRecognizerDelegate> {

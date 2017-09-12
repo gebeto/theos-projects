@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@protocol StatsManagerDelegate, StatsData;
+@protocol StatsData, StatsManagerDelegate;
 
 __attribute__((visibility("hidden")))
 @interface StatsManager : XXUnknownSuperclass {
@@ -17,16 +17,16 @@ __attribute__((visibility("hidden")))
 	id<StatsData> _pendingData;
 	id<StatsData> _nextData;
 }
-@property(assign, nonatomic) id<StatsManagerDelegate> delegate;
+@property(assign, nonatomic) __weak id<StatsManagerDelegate> delegate;
 @property(retain, nonatomic) id<StatsData> nextData;
 @property(retain, nonatomic) id<StatsData> pendingData;
 @property(retain, nonatomic) id<StatsData> currentData;
 @property(retain, nonatomic) Class dataClass;
+-(void).cxx_destruct;
 -(BOOL)isPending;
 -(void)submittedData:(id)data success:(BOOL)success;
 -(id)collectData;
 -(void)registerEvent:(id)event batch:(BOOL)batch;
--(void)dealloc;
 -(id)initWithDataClass:(Class)dataClass;
 @end
 

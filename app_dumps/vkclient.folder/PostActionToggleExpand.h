@@ -17,7 +17,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKIdentity* target;
 +(int)domainType;
 +(id)target:(id)target host:(id)host;
+-(void).cxx_destruct;
 -(void)runInContext:(id)context;
--(void)dealloc;
 @end
 

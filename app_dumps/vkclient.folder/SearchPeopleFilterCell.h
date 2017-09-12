@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "VKMCell.h"
 #import "SearchPeopleFiltersViewDelegate.h"
+#import "VKMCell.h"
 
 @class SearchPeopleFiltersView, NSString;
 
@@ -20,6 +20,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) SearchPeopleFiltersView* filtersView;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)searchPeopleFiltersViewDidClearFilter:(id)searchPeopleFiltersView;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;

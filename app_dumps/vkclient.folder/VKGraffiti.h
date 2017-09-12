@@ -7,7 +7,7 @@
 
 #import "VKBrowsableImage.h"
 #import "VKDomain.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 
 @class NSMutableDictionary, NSString;
 
@@ -21,6 +21,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) NSMutableDictionary* variants;
+-(void).cxx_destruct;
 -(id)thumbnailUrl;
 -(BOOL)isVideo;
 -(id)messagesPlaceholder;
@@ -31,6 +32,5 @@ __attribute__((visibility("hidden")))
 -(id)fullVariant;
 -(id)thumbnailVariant;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

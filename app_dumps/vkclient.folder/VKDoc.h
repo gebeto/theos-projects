@@ -7,10 +7,10 @@
 
 #import "VKBrowsableImage.h"
 #import "VKDomain.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKAttachment.h"
 
-@class NSMutableDictionary, VKIdentity, VKDocSketchPreview, NSNumber, NSString, VKDocVideoPreview;
+@class NSMutableDictionary, VKIdentity, VKDocSketchPreview, VKDocVideoPreview, NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKDoc : VKDomain <VKAttachment, VKBrowsableImage> {
@@ -47,6 +47,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int size;
 @property(retain, nonatomic) NSString* title;
 @property(retain, nonatomic) NSMutableDictionary* variants;
+-(void).cxx_destruct;
 -(BOOL)isVideo;
 -(id)messagesFilterForSize:(CGSize)size isFirst:(BOOL)first isLast:(BOOL)last;
 -(id)thumbnailUrl;
@@ -68,6 +69,5 @@ __attribute__((visibility("hidden")))
 -(id)sizeString;
 -(BOOL)process:(id)process context:(id)context;
 -(Class)rendererClass;
--(void)dealloc;
 @end
 

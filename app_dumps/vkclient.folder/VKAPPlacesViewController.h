@@ -5,15 +5,15 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "UITableViewDelegate.h"
+#import "CLLocationManagerDelegate.h"
+#import "MKMapViewDelegate.h"
 #import "VKAPTabViewControllerProtocol.h"
 #import "UITableViewDataSource.h"
-#import "vkclient-Structs.h"
-#import "MKMapViewDelegate.h"
 #import "VKMLiveController.h"
-#import "CLLocationManagerDelegate.h"
 
-@class UIView, CLLocation, TGLocationMapView, VKAPLocationStorage, CLLocationManager, UIButton, CLGeocoder, TGLocationAnnotation, NSString, PlacesSearchModel, TGLocationPinView, VKPPNoAccessView;
+@class TGLocationMapView, PlacesSearchModel, VKPPNoAccessView, UIButton, VKAPLocationStorage, TGLocationPinView, TGLocationAnnotation, CLLocationManager, CLGeocoder, UIView, NSString, CLLocation;
 
 __attribute__((visibility("hidden")))
 @interface VKAPPlacesViewController : VKMLiveController <UITableViewDataSource, UITableViewDelegate, MKMapViewDelegate, CLLocationManagerDelegate, VKAPTabViewControllerProtocol> {

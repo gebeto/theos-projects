@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class MTRGVastCreativeLinear, NSMutableArray, NSString, NSArray;
+@class NSMutableArray, NSArray, MTRGVastCreativeLinear, NSString;
 
 @interface MTRGVastCreative : XXUnknownSuperclass {
 	NSMutableArray* _companionAds;

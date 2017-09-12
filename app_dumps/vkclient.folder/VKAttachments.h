@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKPoll, VKPhotosListAttach, VKMarketCollection, VKSnapperAttach, NSMutableArray;
+@class VKPhotosListAttach, VKMarketCollection, NSMutableArray, VKSnapperAttach, VKPoll;
 
 __attribute__((visibility("hidden")))
 @interface VKAttachments : XXUnknownSuperclass {
@@ -19,6 +19,7 @@ __attribute__((visibility("hidden")))
 	NSMutableArray* _linked;
 	NSMutableArray* _money;
 	NSMutableArray* _stories;
+	NSMutableArray* _masks;
 	NSMutableArray* _gifts;
 	NSMutableArray* _playlists;
 	VKPoll* _poll;
@@ -39,6 +40,7 @@ __attribute__((visibility("hidden")))
 	int _count_products;
 	int _count_money_transfer;
 	int _count_stories;
+	int _count_masks;
 	int _count_links;
 	int _count_audioMessages;
 	int _count_sketches;
@@ -46,6 +48,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int count_sketches;
 @property(assign, nonatomic) int count_audioMessages;
 @property(assign, nonatomic) int count_links;
+@property(assign, nonatomic) int count_masks;
 @property(assign, nonatomic) int count_stories;
 @property(assign, nonatomic) int count_money_transfer;
 @property(assign, nonatomic) int count_products;
@@ -66,6 +69,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKPoll* poll;
 @property(retain, nonatomic) NSMutableArray* playlists;
 @property(retain, nonatomic) NSMutableArray* gifts;
+@property(retain, nonatomic) NSMutableArray* masks;
 @property(retain, nonatomic) NSMutableArray* stories;
 @property(retain, nonatomic) NSMutableArray* money;
 @property(retain, nonatomic) NSMutableArray* linked;
@@ -78,6 +82,7 @@ __attribute__((visibility("hidden")))
 +(int)attachmentTypeForObject:(id)object;
 +(id)parseAttachments:(id)attachments source:(id)source;
 +(void)initialize;
+-(void).cxx_destruct;
 -(void)updatePoll:(id)poll;
 -(void)useVideo:(id)video;
 -(void)usePhotos:(id)photos;
@@ -88,6 +93,5 @@ __attribute__((visibility("hidden")))
 -(id)singleAttachmentOfClass:(Class)aClass;
 -(id)editAttachmentsParameter;
 -(void)_build:(id)build;
--(void)dealloc;
 @end
 

@@ -5,10 +5,9 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "EditAttachment.h"
 
-@class NSMutableSet, NSMutableArray;
+@class NSMutableArray, NSMutableSet;
 
 __attribute__((visibility("hidden")))
 @interface FwdEditAttachment : EditAttachment {
@@ -17,9 +16,9 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSMutableArray* messages;
 @property(retain, nonatomic) NSMutableSet* mids;
+-(void).cxx_destruct;
 -(void)addMessages:(id)messages;
 -(void)renderView:(id)view;
--(id)createViewForStyle:(XXStruct_9zIMjA)style;
--(void)dealloc;
+-(id)createViewForStyle:(id)style;
 @end
 

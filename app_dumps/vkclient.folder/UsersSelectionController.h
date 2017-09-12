@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKMLiveController.h"
-#import "vkclient-Structs.h"
 
-@class NSDictionary, UIImage, NSMutableDictionary;
+@class UIImage, NSMutableDictionary, NSDictionary;
 
 __attribute__((visibility("hidden")))
 @interface UsersSelectionController : VKMLiveController {
@@ -27,6 +27,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIImage* checkSelect;
 @property(retain, nonatomic) UIImage* check;
 @property(retain, nonatomic) NSMutableDictionary* selectedUsers;
+-(void).cxx_destruct;
 -(void)tableView:(id)view willDisplayCell:(id)cell forRowAtIndexPath:(id)indexPath;
 -(void)VKMLiveSearchWillDisplayCell:(id)vkmliveSearch indexPath:(id)path inTable:(id)table;
 -(void)updateCell:(id)cell;
@@ -44,6 +45,5 @@ __attribute__((visibility("hidden")))
 -(void)VKMControllerSetAutocloseButton:(id)button;
 -(void)viewDidLoad;
 -(void)customizeTable:(id)table;
--(void)dealloc;
 @end
 

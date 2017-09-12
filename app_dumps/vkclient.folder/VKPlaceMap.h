@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "VKRenderable.h"
-#import "vkclient-Structs.h"
 #import "VKPlaceDescription.h"
+#import "VKClient-Structs.h"
+#import "VKRenderable.h"
 
 @class NSString;
 
@@ -25,9 +25,9 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* address;
 @property(assign, nonatomic) CLLocationCoordinate2D coordinate;
 +(id)placeMapWithCoordinates:(CLLocationCoordinate2D)coordinates address:(id)address;
+-(void).cxx_destruct;
 -(id)placeDescription;
 -(id)placeTitle;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

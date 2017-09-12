@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSOperationQueue, NSMutableSet, NSMutableDictionary;
+@class NSOperationQueue, NSMutableDictionary, NSMutableSet;
 
 __attribute__((visibility("hidden")))
 @interface AudioITunesMatcher : XXUnknownSuperclass {
@@ -21,11 +21,11 @@ __attribute__((visibility("hidden")))
 +(BOOL)isNotification:(id)notification forAudioIdentity:(id)audioIdentity;
 +(id)encodedSearchTermForAudio:(id)audio withTitle:(BOOL)title;
 +(id)sharedMatcher;
+-(void).cxx_destruct;
 -(id)fullSizeCoverUrl:(id)url;
 -(void)openITunes:(id)tunes;
 -(void)match:(id)match;
 -(BOOL)untouched:(id)untouched;
--(void)dealloc;
 -(id)init;
 @end
 

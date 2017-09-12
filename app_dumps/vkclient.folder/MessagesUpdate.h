@@ -7,7 +7,7 @@
 
 #import "StoreUpdate.h"
 
-@class NSDictionary, NSMutableSet, NSMutableDictionary, UsersUpdate, NSNumber, NSArray;
+@class NSMutableDictionary, UsersUpdate, NSNumber, NSDictionary, NSArray, NSMutableSet;
 
 __attribute__((visibility("hidden")))
 @interface MessagesUpdate : StoreUpdate {
@@ -45,8 +45,8 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) NSMutableSet* headsRemoved;
 @property(readonly, retain, nonatomic) NSMutableSet* dialogsUpdated;
 @property(readonly, retain, nonatomic) NSMutableSet* dialogsDataUpdated;
+-(void).cxx_destruct;
 -(id)updateForDialog:(id)dialog;
--(void)dealloc;
 -(id)init;
 @end
 

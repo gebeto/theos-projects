@@ -7,7 +7,7 @@
 
 #import "LoadingModel.h"
 
-@class VKCommentIdentity, DetailContext, VKItemDetail;
+@class VKItemDetail, VKCommentIdentity, DetailContext;
 
 __attribute__((visibility("hidden")))
 @interface DetailModel : LoadingModel {
@@ -19,6 +19,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) DetailContext* lastContext;
 +(void)buildComments:(id)comments identity:(id)identity offset:(int)offset count:(int)count;
 +(void)buildItemAndSource:(id)source detail:(id)detail;
+-(void).cxx_destruct;
 -(void)viewed:(id)viewed;
 -(BOOL)requireViewed;
 -(void)handleLikeComment:(id)comment :(id)arg2;
@@ -56,6 +57,5 @@ __attribute__((visibility("hidden")))
 -(id)sourceFor:(id)aFor data:(id)data;
 -(id)countKey;
 -(id)setupInitial:(id)initial;
--(void)dealloc;
 @end
 

@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "MessageCell.h"
 
-@class VKMImageView, MOCTLabel, UsersModel;
+@class UsersModel, VKMImageView, MOCTLabel;
 
 __attribute__((visibility("hidden")))
 @interface ChatActionCell : MessageCell {
@@ -22,6 +22,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UsersModel* usersModel;
 +(void)prerender:(id)prerender users:(id)users;
 +(void)initialize;
+-(void).cxx_destruct;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)notificationUserUpdated:(id)updated;
 -(void)prepareForReuse;

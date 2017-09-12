@@ -7,17 +7,15 @@
 
 #import "ListModel.h"
 
-@class NSNumberFormatter, NSString, NSNumber;
+@class NSNumberFormatter, NSNumber;
 
 __attribute__((visibility("hidden")))
 @interface VKP2PListModel : ListModel {
 	BOOL _showSendP2PButton;
 	NSNumber* _dialog_id;
 	NSNumberFormatter* _amountFormatter;
-	NSString* _currencySymbol;
 }
 @property(assign, nonatomic) BOOL showSendP2PButton;
-@property(copy, nonatomic) NSString* currencySymbol;
 @property(retain, nonatomic) NSNumberFormatter* amountFormatter;
 @property(retain, nonatomic) NSNumber* dialog_id;
 +(id)with:(id)with dialogId:(id)anId sendP2PButton:(BOOL)button;

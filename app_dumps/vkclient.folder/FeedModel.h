@@ -13,7 +13,7 @@ __attribute__((visibility("hidden")))
 @interface FeedModel : LoadingModel {
 }
 @property(retain, nonatomic) FeedModelContext* lastContext;
-+(void)updateBuilder:(id)builder enumerateIdentity:(id)identity withBlock:(id)block;
++(void)updateBuilder:(id)builder enumerateIdentityWithBlock:(id)block;
 +(void)updateBuilder:(id)builder enumeratePost:(id)post withBlock:(id)block;
 +(void)updateBuilder:(id)builder enumerateAdsWithBlock:(id)block;
 +(void)updateBuilder:(id)builder enumeratePostsWithBlock:(id)block;
@@ -25,6 +25,9 @@ __attribute__((visibility("hidden")))
 -(void)statsViewAds:(id)ads atIndexPath:(id)indexPath;
 -(void)statsLoadedAds:(id)ads;
 -(id)feedStatContext;
+-(void)handleFriend:(id)aFriend :(id)arg2;
+-(void)handleGroup:(id)group :(id)arg2;
+-(void)updateBuilder:(id)builder handleSubscribed:(BOOL)subscribed target:(id)target;
 -(void)handleHideAdsBlock:(id)block :(id)arg2;
 -(void)handleReportAds:(id)ads :(id)arg2;
 -(void)handleHideAds:(id)ads :(id)arg2;

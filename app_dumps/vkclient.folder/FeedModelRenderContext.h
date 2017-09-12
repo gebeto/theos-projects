@@ -5,32 +5,28 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "ModelRenderContext.h"
+#import "VKClient-Structs.h"
 
-@class FeedModelStatContext, NSSet, NSDictionary;
+@class FeedModelStatContext, FeedExtras, NSDictionary;
 
 __attribute__((visibility("hidden")))
 @interface FeedModelRenderContext : ModelRenderContext {
 	BOOL _photoPostWithText;
 	BOOL _canIgnoreItems;
 	NSDictionary* _sources;
-	NSDictionary* _activities;
-	NSDictionary* _postCaptions;
 	FeedModelStatContext* _statContext;
-	NSSet* _expandedPosts;
 	unsigned _maxPhotos;
 	int _banSourceType;
+	FeedExtras* _feedExtras;
 }
+@property(copy, nonatomic) FeedExtras* feedExtras;
 @property(assign, nonatomic) int banSourceType;
 @property(assign, nonatomic) BOOL canIgnoreItems;
 @property(assign, nonatomic) BOOL photoPostWithText;
 @property(assign, nonatomic) unsigned maxPhotos;
-@property(retain, nonatomic) NSSet* expandedPosts;
 @property(retain, nonatomic) FeedModelStatContext* statContext;
-@property(retain, nonatomic) NSDictionary* postCaptions;
-@property(retain, nonatomic) NSDictionary* activities;
 @property(retain, nonatomic) NSDictionary* sources;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

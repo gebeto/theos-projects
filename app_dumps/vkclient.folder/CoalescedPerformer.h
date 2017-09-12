@@ -17,9 +17,10 @@ __attribute__((visibility("hidden")))
 	id<CoalescedPerformerDelegate> _delegate;
 	double _interval;
 }
-@property(assign, nonatomic) id<CoalescedPerformerDelegate> delegate;
+@property(assign, nonatomic) __weak id<CoalescedPerformerDelegate> delegate;
 @property(copy, nonatomic) id block;
 @property(assign, nonatomic) double interval;
+-(void).cxx_destruct;
 -(void)clear;
 -(void)invalidate;
 -(void)resetDelay;
@@ -27,6 +28,5 @@ __attribute__((visibility("hidden")))
 -(void)perform:(BOOL)perform;
 -(void)perform;
 -(void)_perform:(id)perform;
--(void)dealloc;
 @end
 

@@ -6,11 +6,11 @@
  */
 
 #import "UISearchControllerDelegate.h"
+#import "VKClient-Structs.h"
 #import "VKMViewControllerContainer.h"
 #import "UISearchBarDelegate.h"
-#import "vkclient-Structs.h"
 
-@class AudioSearchHistoryVKStats, UISearchController, SearchModelUpdater, VKMNavResolverProxy, AudioSearchHintsViewController, NSString, AudioSearchTrendsViewController, NSNumber;
+@class SearchModelUpdater, AudioSearchHistoryVKStats, VKMNavResolverProxy, UISearchController, NSNumber, NSString, AudioSearchHintsViewController, AudioSearchTrendsViewController;
 @protocol SearchModel;
 
 __attribute__((visibility("hidden")))
@@ -37,6 +37,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) AudioSearchTrendsViewController* trends;
 @property(retain, nonatomic) NSNumber* owner;
 +(id)main:(id)main ownerId:(id)anId;
+-(void).cxx_destruct;
 -(BOOL)VKMRoute:(id)route context:(id)context;
 -(void)search:(id)search scope:(int)scope;
 -(void)searchBarSearchButtonClicked:(id)clicked;

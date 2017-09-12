@@ -8,7 +8,7 @@
 #import "StreamCollectionController.h"
 #import "ThumbnailViewDelegate.h"
 
-@class NSString, PhotoStreamModel;
+@class PhotoStreamModel, NSString;
 
 __attribute__((visibility("hidden")))
 @interface PhotoStreamController : StreamCollectionController <ThumbnailViewDelegate> {

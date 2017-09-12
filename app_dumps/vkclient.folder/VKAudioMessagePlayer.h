@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "VKOpusPlayerDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKOpusPlayerDelegate.h"
 
-@class VKSession, VKAudioMessage, VKOpusPlayer, AFHTTPRequestOperation;
+@class VKSession, VKAudioMessage, AFHTTPRequestOperation, VKOpusPlayer;
 @protocol VKAudioMessagePlayerDelegate;
 
 __attribute__((visibility("hidden")))

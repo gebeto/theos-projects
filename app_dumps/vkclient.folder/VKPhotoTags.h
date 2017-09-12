@@ -15,6 +15,6 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSArray* tags;
 +(id)parseTags:(id)tags;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

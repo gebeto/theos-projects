@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKMessage, UIButton;
+@class UIButton, VKMessage;
 @protocol VKMNavDelegate;
 
 __attribute__((visibility("hidden")))
@@ -22,9 +22,10 @@ __attribute__((visibility("hidden")))
 }
 @property(readonly, assign, nonatomic) BOOL selfdialog;
 @property(readonly, assign, nonatomic) BOOL multidialog;
-@property(assign, nonatomic) id<VKMNavDelegate> delegate;
+@property(assign, nonatomic) __weak id<VKMNavDelegate> delegate;
 @property(retain, nonatomic) VKMessage* message;
 @property(retain, nonatomic) UIButton* checkmark;
+-(void).cxx_destruct;
 -(void)copyMessage:(id)message;
 -(void)deleteMessage:(id)message;
 -(void)replyMessage:(id)message;
@@ -42,7 +43,6 @@ __attribute__((visibility("hidden")))
 -(void)didTransitionToState:(unsigned)state;
 -(void)willTransitionToState:(unsigned)state;
 -(void)prepareForReuse;
--(void)dealloc;
 -(id)initWithDelegate:(id)delegate multidialog:(BOOL)multidialog selfdialog:(BOOL)selfdialog identifier:(id)identifier;
 @end
 

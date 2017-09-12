@@ -5,14 +5,14 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
+#import <XXUnknownSuperclass.h> // Unknown library
+#import "StickerPopupDelegate.h"
 #import "UICollectionViewDelegate.h"
 #import "UICollectionViewDataSource.h"
-#import "StickerPopupDelegate.h"
-#import <XXUnknownSuperclass.h> // Unknown library
 
-@class UILabel, UICollectionView, StickersLoadingManager, UIScrollView, UIView, StickerPopup, NSString;
-@protocol StickerSelectionViewPhotoEditorModeDelegate, StickerSelectionViewDataSource, StickerSelectionViewDelegate, StickerSelectionViewScrollingDelegate;
+@class StickersLoadingManager, UIScrollView, UILabel, UIView, StickerPopup, UICollectionView, NSString;
+@protocol StickerSelectionViewDataSource, StickerSelectionViewScrollingDelegate, StickerSelectionViewDelegate, StickerSelectionViewPhotoEditorModeDelegate;
 
 __attribute__((visibility("hidden")))
 @interface StickerSelectionView : XXUnknownSuperclass <UICollectionViewDelegate, UICollectionViewDataSource, StickerPopupDelegate> {
@@ -44,6 +44,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) StickerPopup* stickerPopup;
 @property(retain, nonatomic) StickersLoadingManager* stickersLoadingManager;
 @property(retain, nonatomic) UICollectionView* collectionView;
+-(void).cxx_destruct;
 -(void)setHeaderView:(id)view animated:(BOOL)animated;
 -(void)collectionView:(id)view didSelectItemAtIndexPath:(id)indexPath;
 -(void)scrollViewWillEndDragging:(id)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint*)offset;

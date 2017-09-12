@@ -8,7 +8,7 @@
 #import <XXUnknownSuperclass.h> // Unknown library
 #import "StoryFeedPreviewAvatarCellViewModel.h"
 
-@class StoryIdentity, NSString, StoriesModel;
+@class StoryIdentity, StoriesModel, NSString;
 @protocol VKSource;
 
 __attribute__((visibility("hidden")))

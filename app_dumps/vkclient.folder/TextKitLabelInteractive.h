@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "TextKitLabel.h"
+#import "VKClient-Structs.h"
 #import "UIGestureRecognizerDelegate.h"
-#import "vkclient-Structs.h"
+#import "TextKitLabel.h"
 
-@class CAShapeLayer, NSSet, VKRenderedTextAttributeValue, CALayer, NSString, TextKitLayer, UILongPressGestureRecognizer;
+@class TextKitLayer, UILongPressGestureRecognizer, CALayer, NSSet, CAShapeLayer, NSString, VKRenderedTextAttributeValue;
 @protocol TextKitLabelDelegate;
 
 __attribute__((visibility("hidden")))

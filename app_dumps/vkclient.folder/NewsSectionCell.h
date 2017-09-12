@@ -18,10 +18,10 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) id<NewsSectionCellDelegate> newsSectionDelegate;
 @property(readonly, retain, nonatomic) UISwitch* switchView;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)actionSwitch:(id)aSwitch;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)layoutSubviews;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
--(void)dealloc;
 @end
 

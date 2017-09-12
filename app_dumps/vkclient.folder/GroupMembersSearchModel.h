@@ -15,7 +15,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSNumber* group_id;
 +(id)withSession:(id)session groupId:(id)anId;
+-(void).cxx_destruct;
 -(id)parameters:(id)parameters;
--(void)dealloc;
 @end
 

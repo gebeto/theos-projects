@@ -18,11 +18,11 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) NSArray* preparedValue;
 @property(copy, nonatomic) NSArray* privacyValue;
 +(int)domainType;
+-(void).cxx_destruct;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
 -(id)init;
 -(id)setupPreparedValue:(id)value;
 -(id)setupNewValue:(id)value;
--(void)dealloc;
 @end
 

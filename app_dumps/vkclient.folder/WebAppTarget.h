@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSString, NSNumber, NSURL;
+@class NSURL, NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface WebAppTarget : XXUnknownSuperclass {

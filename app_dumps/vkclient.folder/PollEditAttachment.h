@@ -5,7 +5,6 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "DomainEditAttachment.h"
 
 @class VKPoll;
@@ -15,6 +14,6 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) VKPoll* domain;
 -(void)renderView:(id)view;
--(id)createViewForStyle:(XXStruct_9zIMjA)style;
+-(id)createViewForStyle:(id)style;
 @end
 

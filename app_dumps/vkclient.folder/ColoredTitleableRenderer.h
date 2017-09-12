@@ -16,6 +16,5 @@ __attribute__((visibility("hidden")))
 +(void)t;
 +(id)rendererElements;
 -(void)renderCell:(id)cell;
--(void)dealloc;
 @end
 

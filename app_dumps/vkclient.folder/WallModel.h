@@ -7,7 +7,7 @@
 
 #import "FeedModel.h"
 
-@class VKWallMode, WallModelContext;
+@class WallModelContext, VKWallMode;
 
 __attribute__((visibility("hidden")))
 @interface WallModel : FeedModel {
@@ -16,6 +16,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKWallMode* mode;
 @property(retain, nonatomic) WallModelContext* lastContext;
 +(id)wallCode:(id)code filter:(id)filter offset:(id)offset count:(int)count;
+-(void).cxx_destruct;
 -(id)feedStatContext;
 -(void)handlePin:(id)pin :(id)arg2;
 -(void)handlePhotoUpload:(id)upload :(id)arg2;
@@ -36,6 +37,5 @@ __attribute__((visibility("hidden")))
 -(id)spawnContext:(id)context;
 -(id)countKey;
 -(int)resultDomain;
--(void)dealloc;
 @end
 

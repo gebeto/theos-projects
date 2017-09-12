@@ -18,7 +18,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) TwitterClient* client;
 @property(copy, nonatomic) NSString* message;
 @property(retain, nonatomic) NSString* screenName;
+-(void).cxx_destruct;
 -(void)runInContext:(id)context;
--(void)dealloc;
 @end
 

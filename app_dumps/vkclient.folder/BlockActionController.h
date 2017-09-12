@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "ActionSheetProvider.h"
-#import "vkclient-Structs.h"
-#import "ActionDialogProvider.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "ActionSheetProvider.h"
+#import "ActionDialogProvider.h"
 
 @class NSString;
 
@@ -34,6 +34,5 @@ __attribute__((visibility("hidden")))
 -(void)setDestructiveButtonWithTitle:(id)title block:(id)block;
 -(void)setCancelButtonWithTitle:(id)title block:(id)block;
 -(void)setActionSheetStyle:(int)style;
--(void)dealloc;
 @end
 

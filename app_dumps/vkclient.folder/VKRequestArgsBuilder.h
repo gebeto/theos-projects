@@ -16,10 +16,10 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSMutableDictionary* args;
 +(id)builder;
 +(id)builder:(id)builder;
+-(void).cxx_destruct;
 -(id)build;
 -(void)setObject:(id)object forKeyedSubscript:(id)keyedSubscript;
 -(id)objectForKeyedSubscript:(id)keyedSubscript;
 -(id)initWithArgs:(id)args;
--(void)dealloc;
 @end
 

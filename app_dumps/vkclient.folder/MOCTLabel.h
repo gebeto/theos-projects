@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class NSTextCheckingResult, MOCTRender;
@@ -18,9 +18,10 @@ __attribute__((visibility("hidden")))
 	id<MOCTLabelDelegate> _delegate;
 	NSTextCheckingResult* _activeLink;
 }
-@property(assign, nonatomic) id<MOCTLabelDelegate> delegate;
+@property(assign, nonatomic) __weak id<MOCTLabelDelegate> delegate;
 @property(retain, nonatomic) NSTextCheckingResult* activeLink;
 @property(retain, nonatomic) MOCTRender* render;
+-(void).cxx_destruct;
 -(unsigned long long)accessibilityTraits;
 -(id)accessibilityLabel;
 -(void)touchesCancelled:(id)cancelled withEvent:(id)event;
@@ -31,11 +32,11 @@ __attribute__((visibility("hidden")))
 -(void)setAttributedText:(id)text;
 -(void)setText:(id)text;
 -(void)render:(id)render force:(BOOL)force;
+-(void)resizeAndRender:(id)render force:(BOOL)force;
 -(void)activateLink:(id)link;
 -(void)updateWithText:(id)text;
 -(void)layoutSubviews;
 -(void)drawRect:(CGRect)rect;
--(void)dealloc;
 -(id)initWithFrame:(CGRect)frame;
 @end
 

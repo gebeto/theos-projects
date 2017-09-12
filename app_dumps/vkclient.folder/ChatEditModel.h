@@ -7,7 +7,7 @@
 
 #import "LoadingModel.h"
 
-@class ChatEditModelContext, NSSet, NSNumber, NSString;
+@class NSSet, ChatEditModelContext, NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface ChatEditModel : LoadingModel {
@@ -25,6 +25,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) ChatEditModelContext* lastContext;
 +(void)fillMuteVariants:(id)variants withCompleteVariant:(id)completeVariant;
 +(id)requestForEditChat:(id)editChat title:(id)title add:(id)add remove:(id)remove sound:(id)sound mute:(id)mute deviceId:(id)anId;
+-(void).cxx_destruct;
 -(void)invalidateChatUsers;
 -(void)updateTitle:(id)title add:(id)add remove:(id)remove sound:(id)sound mute:(id)mute;
 -(void)handleUserKick:(id)kick :(id)arg2;
@@ -34,6 +35,5 @@ __attribute__((visibility("hidden")))
 -(id)requestForContext:(id)context;
 -(id)spawnContext:(id)context;
 -(void)registerForEvents:(id)events;
--(void)dealloc;
 @end
 

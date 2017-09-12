@@ -19,7 +19,7 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) id cancel;
 @property(copy, nonatomic) id dismiss;
 +(id)alertViewWithTitle:(id)title message:(id)message prompt:(id)prompt cancelButtonTitle:(id)title4 otherButtonTitles:(id)titles dismiss:(id)dismiss cancel:(id)cancel;
+-(void).cxx_destruct;
 -(void)alertView:(id)view didDismissWithButtonIndex:(int)buttonIndex;
--(void)dealloc;
 @end
 

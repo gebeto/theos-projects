@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "AttachmentView.h"
 
-@class VKMImageView, UIImageView;
+@class UIImageView, VKMImageView;
 @protocol VKAttachment;
 
 __attribute__((visibility("hidden")))
@@ -21,6 +21,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) id<VKAttachment> attachment;
 @property(retain, nonatomic) UIImageView* ico;
 @property(retain, nonatomic) VKMImageView* image;
+-(void).cxx_destruct;
 -(void)reuse;
 -(void)render:(id)render reuse:(double)reuse;
 -(void)dealloc;

@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSNumberFormatter, IndexRestriction, NSString, NSDateFormatter;
+@class NSDateFormatter, IndexRestriction, NSNumberFormatter, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKMDateFormatterImpl : XXUnknownSuperclass {
@@ -117,6 +117,7 @@ __attribute__((visibility("hidden")))
 +(id)futureServerDate:(id)date;
 +(id)applicationPreferredLanguage;
 +(id)supportedLanguages;
+-(void).cxx_destruct;
 -(id)distance:(double)distance;
 -(int)age:(id)age;
 -(id)birthday:(id)birthday isShort:(BOOL)aShort;
@@ -138,7 +139,6 @@ __attribute__((visibility("hidden")))
 -(unsigned)fakeAPITime;
 -(unsigned)localUTCOffset;
 -(void)syncWithServerTime:(unsigned)serverTime;
--(void)dealloc;
 -(id)initWithLang:(id)lang locale:(id)locale bundle:(id)bundle;
 @end
 

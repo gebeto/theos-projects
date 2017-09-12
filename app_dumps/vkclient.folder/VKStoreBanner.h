@@ -7,7 +7,7 @@
 
 #import "VKRenderable.h"
 
-@class NSString, VKStoreStockItem;
+@class VKStoreStockItem, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKStoreBanner : VKRenderable {
@@ -20,7 +20,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* section;
 @property(retain, nonatomic) VKStoreStockItem* stock_item;
 @property(assign, nonatomic) int bannerType;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

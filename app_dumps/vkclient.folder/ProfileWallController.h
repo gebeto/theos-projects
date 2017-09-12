@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "UITextFieldDelegate.h"
-#import "vkclient-Structs.h"
 #import "FeedController.h"
+#import "VKClient-Structs.h"
+#import "UITextFieldDelegate.h"
 
-@class WallModel, ProfileView, UIButton, NSString, UIImageView;
+@class WallModel, ProfileView, UIButton, UIImageView, NSString;
 
 __attribute__((visibility("hidden")))
 @interface ProfileWallController : FeedController <UITextFieldDelegate> {
@@ -28,6 +28,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) ProfileView* profileView;
 @property(retain, nonatomic) UIImageView* shadow;
 @property(retain, nonatomic) WallModel* model;
+-(void).cxx_destruct;
 -(void)scrollViewDidScroll:(id)scrollView;
 -(void)VKMTableUpdatedIndex;
 -(void)viewWillAppear:(BOOL)view;
@@ -41,6 +42,5 @@ __attribute__((visibility("hidden")))
 -(void)actionProfileViewPost:(id)post;
 -(id)postIdentity;
 -(id)postContext;
--(void)dealloc;
 @end
 

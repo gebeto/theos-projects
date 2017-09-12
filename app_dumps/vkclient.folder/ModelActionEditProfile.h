@@ -7,7 +7,7 @@
 
 #import "ModelAction.h"
 
-@class NSDictionary, VKNameRequest, VKProfileInfo, NSNumber;
+@class VKNameRequest, VKProfileInfo, NSNumber, NSDictionary;
 
 __attribute__((visibility("hidden")))
 @interface ModelActionEditProfile : ModelAction {
@@ -20,9 +20,9 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSNumber* cancel_request_id;
 @property(retain, nonatomic) NSDictionary* target;
 +(int)domainType;
+-(void).cxx_destruct;
 -(BOOL)actionShowsFailureConfirmation;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
--(void)dealloc;
 @end
 

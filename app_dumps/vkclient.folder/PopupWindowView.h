@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UIView, UIPanGestureRecognizer, UITapGestureRecognizer;
+@class UITapGestureRecognizer, UIView, UIPanGestureRecognizer;
 
 __attribute__((visibility("hidden")))
 @interface PopupWindowView : XXUnknownSuperclass {
@@ -18,12 +18,12 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UIPanGestureRecognizer* swipeToCloseGestureRecognizer;
 @property(readonly, retain, nonatomic) UITapGestureRecognizer* tapToCloseGestureRecognizer;
 @property(readonly, assign, nonatomic) UIView* contentView;
+-(void).cxx_destruct;
 -(void)present:(BOOL)present animated:(BOOL)animated animations:(id)animations completion:(id)completion;
 -(void)gesturePan:(id)pan;
 -(void)gestureTap:(id)tap;
 -(id)popupWindow;
 -(void)layoutSubviews;
--(void)dealloc;
 -(id)initWithContentView:(id)contentView;
 @end
 

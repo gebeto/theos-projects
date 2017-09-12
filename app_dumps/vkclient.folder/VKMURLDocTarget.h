@@ -15,6 +15,7 @@ __attribute__((visibility("hidden")))
 }
 @property(readonly, retain, nonatomic) VKDoc* document;
 +(id)withDoc:(id)doc;
+-(void).cxx_destruct;
 -(void)fillShareActions:(id)actions;
 -(BOOL)canShare;
 -(void)reload;
@@ -23,6 +24,5 @@ __attribute__((visibility("hidden")))
 -(void)stop;
 -(void)load;
 -(id)description;
--(void)dealloc;
 @end
 

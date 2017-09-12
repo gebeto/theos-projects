@@ -8,7 +8,7 @@
 #import "VKSelectorOptionViewController.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKMController, NSString;
+@class NSString, VKMController;
 
 __attribute__((visibility("hidden")))
 @interface VKSelectorOptionViewControllerCacheable : XXUnknownSuperclass <VKSelectorOptionViewController> {

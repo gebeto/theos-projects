@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class NSPointerArray, NSString;
+@class NSString, NSPointerArray;
 @protocol Component5Delegate;
 
 __attribute__((visibility("hidden")))

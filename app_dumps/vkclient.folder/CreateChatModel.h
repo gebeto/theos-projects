@@ -7,7 +7,7 @@
 
 #import "ModelAction.h"
 
-@class NSString, NSArray;
+@class NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface CreateChatModel : ModelAction {
@@ -19,9 +19,9 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSArray* users;
 @property(copy, nonatomic) NSString* chatTitle;
 +(int)domainType;
+-(void).cxx_destruct;
 -(id)resultMessage;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
--(void)dealloc;
 @end
 

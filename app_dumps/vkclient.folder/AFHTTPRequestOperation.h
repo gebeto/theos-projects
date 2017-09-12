@@ -7,7 +7,7 @@
 
 #import "AFURLConnectionOperation.h"
 
-@class NSError, NSSet, NSIndexSet, NSHTTPURLResponse, NSObject;
+@class NSError, NSSet, NSHTTPURLResponse, NSObject, NSIndexSet;
 @protocol OS_dispatch_queue;
 
 __attribute__((visibility("hidden")))

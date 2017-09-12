@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKMCollectionCell.h"
 
-@class UILabel, VKMImageView, VKGiftsCatalogItem;
+@class UILabel, VKGiftsCatalogItem, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface GiftsCatalogItemCell : VKMCollectionCell {
@@ -21,10 +21,10 @@ __attribute__((visibility("hidden")))
 +(void)prerender:(id)prerender;
 +(float)cellRenderHeight;
 +(void)initialize;
+-(void).cxx_destruct;
 -(void)setHighlighted:(BOOL)highlighted;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)prepareForReuse;
 -(id)initWithFrame:(CGRect)frame;
--(void)dealloc;
 @end
 

@@ -22,6 +22,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSArray* optionsIndex;
 +(id)controllerWithSelectedItem:(id)selectedItem index:(id)index handler:(id)handler;
 +(id)controller;
+-(void).cxx_destruct;
 -(id)childViewControllerForStatusBarStyle;
 -(id)tableView:(id)view titleForFooterInSection:(int)section;
 -(void)tableView:(id)view didSelectRowAtIndexPath:(id)indexPath;
@@ -30,6 +31,5 @@ __attribute__((visibility("hidden")))
 -(int)numberOfSectionsInTableView:(id)tableView;
 -(void)completeWithItem:(id)item;
 -(id)itemAtIndexPath:(id)indexPath;
--(void)dealloc;
 @end
 

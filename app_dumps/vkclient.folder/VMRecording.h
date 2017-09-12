@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "VMRecordingSessionDelegate.h"
-#import <XXUnknownSuperclass.h> // Unknown library
 #import "TimerTargetDelegate.h"
+#import <XXUnknownSuperclass.h> // Unknown library
+#import "VMRecordingSessionDelegate.h"
 
-@class AVAudioPlayer, TimerTarget, VMSessionManager, VKOpusRecorder, NSString;
+@class TimerTarget, VKOpusRecorder, NSString, VMSessionManager, AVAudioPlayer;
 @protocol VMRecordingDelegate;
 
 __attribute__((visibility("hidden")))

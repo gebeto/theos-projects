@@ -17,7 +17,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) id<VKSource> source;
 @property(retain, nonatomic) VKAudioPlaylist* playlist;
+-(void).cxx_destruct;
 -(void)spawnCopy:(id)copy;
--(void)dealloc;
 @end
 

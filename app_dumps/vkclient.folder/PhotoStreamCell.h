@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKMCollectionCell.h"
 
 @class ThumbnailView;
@@ -16,9 +16,10 @@ __attribute__((visibility("hidden")))
 	ThumbnailView* _thumbImage;
 	id<ThumbnailViewDelegate> _photoDelegate;
 }
-@property(assign, nonatomic) id<ThumbnailViewDelegate> photoDelegate;
+@property(assign, nonatomic) __weak id<ThumbnailViewDelegate> photoDelegate;
 @property(readonly, retain, nonatomic) ThumbnailView* thumbImage;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)thumbnailView:(id)view selected:(id)selected;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)prepareForReuse;

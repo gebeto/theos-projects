@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKMImageView, VKUser, UIImageView;
+@class VKUser, UIImageView, VKMImageView;
 @protocol VKMNavDelegate;
 
 __attribute__((visibility("hidden")))
@@ -19,7 +19,8 @@ __attribute__((visibility("hidden")))
 	VKUser* _user;
 }
 @property(retain, nonatomic) VKUser* user;
-@property(assign, nonatomic) id<VKMNavDelegate> delegate;
+@property(assign, nonatomic) __weak id<VKMNavDelegate> delegate;
+-(void).cxx_destruct;
 -(void)actionMultiUserTapped:(id)tapped;
 -(void)attach:(id)attach;
 -(void)prepareForReuse;

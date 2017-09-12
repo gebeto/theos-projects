@@ -6,20 +6,19 @@
  */
 
 #import "IIViewDeckControllerDelegate.h"
-#import "vkclient-Structs.h"
-#import "VKMSearchControllerDelegate.h"
-#import "AudioPlayerObserver.h"
 #import "VKMNavRoot.h"
+#import "VKClient-Structs.h"
+#import "VKMSearchControllerDelegate.h"
 #import "VKClientDelegate.h"
 #import "VKAPNSHandlerDelegate.h"
 #import "VKMLiveController.h"
 #import "NotificationsManagerDelegate.h"
 
-@class UITableViewCell, HintsSearchDisplayController, VKMController, MainMenuPlayer, CaptchaPrompt, TitleMenuCell, UIView, NSIndexPath, UserMenuCell, UINavigationController, NSString, MenuNotificationCell, BadgedBarButtonItem, VKAPNSManager, NSArray;
+@class MainMenuPlayer, CaptchaPrompt, NSIndexPath, VKAPNSManager, UserMenuCell, UINavigationController, UITableViewCell, UIView, HintsSearchDisplayController, NSString, MenuNotificationCell, TitleMenuCell, NSArray, BadgedBarButtonItem, VKMController;
 @protocol MainControllerDelegate;
 
 __attribute__((visibility("hidden")))
-@interface VKMMainController : VKMLiveController <VKAPNSHandlerDelegate, VKClientDelegate, VKMNavRoot, AudioPlayerObserver, IIViewDeckControllerDelegate, VKMSearchControllerDelegate, NotificationsManagerDelegate> {
+@interface VKMMainController : VKMLiveController <VKAPNSHandlerDelegate, VKClientDelegate, VKMNavRoot, IIViewDeckControllerDelegate, VKMSearchControllerDelegate, NotificationsManagerDelegate> {
 	BOOL panDisabled;
 	VKAPNSManager* _apns;
 	id<MainControllerDelegate> _delegate;
@@ -97,8 +96,8 @@ __attribute__((visibility("hidden")))
 -(void)apnsHandler:(id)handler openController:(id)controller;
 -(void)actionShowAudioPlayer:(id)player;
 -(void)actionPhoto:(id)photo;
--(void)shuffleList:(id)list context:(int)context;
--(void)handleAudio:(id)audio list:(id)list toggle:(BOOL)toggle context:(int)context;
+-(void)playNextAudios:(id)audios context:(int)context playlistIden:(id)iden;
+-(void)handleAudio:(id)audio list:(id)list toggle:(BOOL)toggle context:(int)context playlistIden:(id)iden;
 -(void)handleAudioMessage:(id)message;
 -(id)rootNavContext;
 -(void)selectorSelected:(id)selected;
@@ -125,7 +124,6 @@ __attribute__((visibility("hidden")))
 -(BOOL)tableView:(id)view canPerformAction:(SEL)action forRowAtIndexPath:(id)indexPath withSender:(id)sender;
 -(BOOL)tableView:(id)view shouldShowMenuForRowAtIndexPath:(id)indexPath;
 -(void)tableView:(id)view didSelectRowAtIndexPath:(id)indexPath;
--(void)actionNewAudioPromoContinueButton:(id)button;
 -(void)handleCellSelect:(id)select badge:(BOOL)badge reset:(BOOL)reset;
 -(id)tableView:(id)view cellForRowAtIndexPath:(id)indexPath;
 -(int)tableView:(id)view numberOfRowsInSection:(int)section;
@@ -133,7 +131,6 @@ __attribute__((visibility("hidden")))
 -(int)numberOfSectionsInTableView:(id)tableView;
 -(void)viewDeckControllerDidCloseLeftView:(id)viewDeckController animated:(BOOL)animated;
 -(BOOL)viewDeckControllerWillOpenLeftView:(id)viewDeckController animated:(BOOL)animated;
--(void)playerWillChangeItem:(id)player;
 -(void)playerChangedItem:(id)item;
 -(void)playerUpdated:(id)updated;
 -(void)cancelAudio;

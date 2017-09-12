@@ -17,10 +17,10 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) double timeout;
 @property(retain, nonatomic) NSDate* lastUpdateDate;
 +(id)timeoutWithTimeoutInterval:(double)timeoutInterval startImmediately:(BOOL)immediately;
+-(void).cxx_destruct;
 -(BOOL)isTimedOut;
 -(void)updateNow;
 -(id)initWithTimeoutInterval:(double)timeoutInterval startImmediately:(BOOL)immediately;
 -(id)initWithTimeoutInterval:(double)timeoutInterval;
--(void)dealloc;
 @end
 

@@ -14,6 +14,7 @@ __attribute__((visibility("hidden")))
 	VKWallExtra* _extra;
 }
 @property(retain, nonatomic) VKWallExtra* extra;
+-(void).cxx_destruct;
 -(void)handleAdd:(id)add :(id)arg2;
 -(void)registerForEvents:(id)events;
 -(id)process:(id)process context:(id)context statContext:(id)context3;
@@ -21,6 +22,5 @@ __attribute__((visibility("hidden")))
 -(int)resultDomain;
 -(id)countKey;
 -(id)withExtra:(id)extra;
--(void)dealloc;
 @end
 

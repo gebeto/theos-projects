@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "VKMLiveSearchController.h"
+#import "VKClient-Structs.h"
 
-@class HintsSearchModel, UIView, VKMenuHintsLinkItem, NSDataDetector;
+@class NSDataDetector, UIView, VKMenuHintsLinkItem, HintsSearchModel;
 
 __attribute__((visibility("hidden")))
 @interface HintsSearchDisplayController : VKMLiveSearchController {
@@ -20,6 +20,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIView* transitionalBackgroundView;
 @property(retain, nonatomic) VKMenuHintsLinkItem* link;
 @property(retain, nonatomic) NSDataDetector* detector;
+-(void).cxx_destruct;
 -(id)tableView:(id)view cellForRowAtIndexPath:(id)indexPath;
 -(id)tableView:(id)view viewForHeaderInSection:(int)section;
 -(float)tableView:(id)view heightForHeaderInSection:(int)section;
@@ -33,7 +34,6 @@ __attribute__((visibility("hidden")))
 -(void)searchDisplayController:(id)controller willShowSearchResultsTableView:(id)view;
 -(void)searchDisplayControllerWillBeginSearch:(id)searchDisplayController;
 -(BOOL)searchDisplayController:(id)controller shouldReloadTableForSearchString:(id)searchString;
--(void)dealloc;
 -(id)initWithSearchBar:(id)searchBar contentsController:(id)controller;
 @end
 

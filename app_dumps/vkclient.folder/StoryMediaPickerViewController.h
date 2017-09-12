@@ -5,14 +5,14 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "UICollectionViewDelegate.h"
-#import "UICollectionViewDelegateFlowLayout.h"
-#import "UICollectionViewDataSource.h"
-#import "PHPhotoLibraryChangeObserver.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
+#import "UICollectionViewDelegateFlowLayout.h"
+#import "PHPhotoLibraryChangeObserver.h"
+#import "UICollectionViewDelegate.h"
+#import "UICollectionViewDataSource.h"
 
-@class UICollectionView, EmptyStateView, StoryEditorNavigationBar, NSString, PHFetchResult;
+@class EmptyStateView, PHFetchResult, StoryEditorNavigationBar, NSString, UICollectionView;
 @protocol StoryMediaPickerViewControllerDelegate;
 
 __attribute__((visibility("hidden")))
@@ -27,7 +27,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
-@property(readonly, assign, nonatomic) StoryEditorNavigationBar* customNavigationBar;
+@property(retain, nonatomic) StoryEditorNavigationBar* customNavigationBar;
 @property(assign, nonatomic) __weak id<StoryMediaPickerViewControllerDelegate> delegate;
 @property(retain, nonatomic) EmptyStateView* emptyStateView;
 @property(retain, nonatomic) PHFetchResult* fetchResult;

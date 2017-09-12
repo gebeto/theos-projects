@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "Model.h"
-#import "vkclient-Structs.h"
 #import "VKLongPollServiceDelegate.h"
+#import "VKClient-Structs.h"
+#import "Model.h"
 
-@class StickersSuggestionsModel, AudioPlayer, CountrySelectionModel, VMSessionManager, VMVoiceMessagePlayer, VKLongPollService, NSString, PhotoEditorStickersModel, ActivityModel, StoriesModel, StoreActiveModel, MessagesModel, UsersModel;
+@class ActivityModel, VMVoiceMessagePlayer, UsersModel, StoriesModel, MessagesModel, StoreActiveModel, VKLongPollService, NSString, CommentPostSourceModel, CountrySelectionModel, VMSessionManager, PhotoEditorStickersModel, StickersSuggestionsModel, VKAudioQueuePlayer;
 
 __attribute__((visibility("hidden")))
 @interface MainModel : Model <VKLongPollServiceDelegate> {
@@ -17,7 +17,7 @@ __attribute__((visibility("hidden")))
 	UsersModel* _users;
 	MessagesModel* _messages;
 	ActivityModel* _activity;
-	AudioPlayer* _player;
+	VKAudioQueuePlayer* _player;
 	VMVoiceMessagePlayer* _voiceMessagePlayer;
 	StoreActiveModel* _stickersModel;
 	StickersSuggestionsModel* _stickersSuggestionsModel;
@@ -25,23 +25,27 @@ __attribute__((visibility("hidden")))
 	PhotoEditorStickersModel* _photoEditorStickersModel;
 	VMSessionManager* _VMSessionManager;
 	CountrySelectionModel* _countrySelectionModel;
+	CommentPostSourceModel* _commentPostSourceModel;
 }
 @property(readonly, copy) NSString* debugDescription;
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
-@property(readonly, retain, nonatomic) VMSessionManager* VMSessionManager;
-@property(readonly, retain, nonatomic) PhotoEditorStickersModel* photoEditorStickersModel;
-@property(readonly, retain, nonatomic) StoriesModel* storiesModel;
-@property(readonly, retain, nonatomic) StickersSuggestionsModel* stickersSuggestionsModel;
-@property(readonly, retain, nonatomic) StoreActiveModel* stickersModel;
-@property(readonly, retain, nonatomic) VMVoiceMessagePlayer* voiceMessagePlayer;
-@property(readonly, retain, nonatomic) AudioPlayer* player;
-@property(readonly, retain, nonatomic) ActivityModel* activity;
-@property(readonly, retain, nonatomic) MessagesModel* messages;
-@property(readonly, retain, nonatomic) UsersModel* users;
-@property(readonly, retain, nonatomic) VKLongPollService* lps;
+@property(readonly, assign, nonatomic) VMSessionManager* VMSessionManager;
+@property(readonly, assign, nonatomic) PhotoEditorStickersModel* photoEditorStickersModel;
+@property(readonly, assign, nonatomic) StoriesModel* storiesModel;
+@property(readonly, assign, nonatomic) StickersSuggestionsModel* stickersSuggestionsModel;
+@property(readonly, assign, nonatomic) StoreActiveModel* stickersModel;
+@property(readonly, assign, nonatomic) VMVoiceMessagePlayer* voiceMessagePlayer;
+@property(readonly, assign, nonatomic) VKAudioQueuePlayer* player;
+@property(readonly, assign, nonatomic) ActivityModel* activity;
+@property(readonly, assign, nonatomic) MessagesModel* messages;
+@property(readonly, assign, nonatomic) UsersModel* users;
+@property(readonly, assign, nonatomic) VKLongPollService* lps;
+@property(retain, nonatomic) CommentPostSourceModel* commentPostSourceModel;
 @property(retain, nonatomic) CountrySelectionModel* countrySelectionModel;
+-(void).cxx_destruct;
+-(id)lazyCommentPostSourceModel;
 -(id)lazyCountrySelectionModel;
 -(void)processLPSUpdates:(id)updates;
 -(void)dealloc;
@@ -79,6 +83,7 @@ __attribute__((visibility("hidden")))
 -(id)photoBrowser:(id)browser;
 -(id)videoPlayer:(id)player createPlayer:(BOOL)player2;
 -(id)videoPlayerIden:(id)iden createPlayer:(BOOL)player;
+-(id)shares:(id)shares;
 -(id)likesFriends:(id)friends;
 -(id)likes:(id)likes;
 -(id)likes:(id)likes filter:(int)filter;
@@ -87,27 +92,24 @@ __attribute__((visibility("hidden")))
 -(id)comment:(id)comment;
 -(id)videoAlbums:(id)albums albumContext:(id)context withClass:(Class)aClass needSystem:(BOOL)system;
 -(id)videoAlbums:(id)albums albumContext:(id)context;
--(id)audioAlbums:(id)albums;
 -(id)primaryVideo;
 -(id)videoAlbumWithContext:(id)context class:(Class)aClass;
 -(id)attachVideoAlbumWithContext:(id)context;
 -(id)videoAlbumWithContext:(id)context;
 -(id)audioCatalog;
--(id)audioList:(id)list multi:(BOOL)multi playlist:(id)playlist audioSelection:(id)selection;
--(id)audioList:(id)list multi:(BOOL)multi playlist:(id)playlist;
--(id)audioList:(id)list multi:(BOOL)multi;
+-(id)audioList:(id)list multi:(BOOL)multi playlist:(id)playlist audioSelection:(id)selection playlistFilterIden:(id)iden;
+-(id)audioList:(id)list multi:(BOOL)multi playlist:(id)playlist playlistFilterIden:(id)iden;
+-(id)audioList:(id)list multi:(BOOL)multi playlistFilterIden:(id)iden;
 -(id)audioDashboard:(id)dashboard;
--(id)audioAlbum:(id)album withClass:(Class)aClass modelClass:(Class)aClass3 extra:(BOOL)extra;
 -(id)attachAudio;
--(id)audioAlbum:(id)album extra:(BOOL)extra;
 -(id)photoAlbumsEdit:(id)edit;
 -(id)photoAlbumEdit:(id)edit;
 -(id)photoAlbum:(id)album;
 -(id)audioSearchResults:(id)results query:(id)query scope:(int)scope;
 -(id)audioSearch:(id)search query:(id)query scope:(int)scope;
 -(id)audioSearch:(id)search;
--(id)audioPlaylistsForAudioAttach:(id)audioAttach multi:(BOOL)multi audioSelection:(id)selection;
--(id)audioPlaylistsAttach:(id)attach;
+-(id)audioPlaylistsForAudioAttach:(id)audioAttach multi:(BOOL)multi audioSelection:(id)selection filterIden:(id)iden;
+-(id)audioPlaylistsAttach:(id)attach filterIden:(id)iden;
 -(id)audioPlaylists:(id)playlists filter:(int)filter;
 -(id)audioPlaylists:(id)playlists;
 -(id)audioPlaylistsModel:(id)model;
@@ -153,12 +155,14 @@ __attribute__((visibility("hidden")))
 -(id)wallSearch:(id)search ownerId:(id)anId;
 -(id)wallSearchWithModel:(id)model;
 -(id)newsComments;
+-(id)audioSimilar:(id)similar;
 -(id)selectorAudio;
 -(id)selectorFeedback;
 -(id)selectorContainerControllerWithOptions:(id)options;
 -(id)newsFeedback;
 -(id)newsPhotos;
 -(id)newsSuggestions;
+-(id)promotedFeedList:(id)list;
 -(id)newsFeedList:(id)list;
 -(id)newsfeedSettings;
 -(id)newsFeed;
@@ -181,7 +185,6 @@ __attribute__((visibility("hidden")))
 -(id)groupCatalogSelectorWithInfo:(id)info;
 -(id)groupRequests;
 -(id)selectorGroups;
--(id)audioRecommendations:(id)recommendations;
 -(id)photos:(id)photos userOnly:(BOOL)only class:(Class)aClass;
 -(id)attachPhotos:(id)photos userOnly:(BOOL)only;
 -(id)photos:(id)photos userOnly:(BOOL)only;

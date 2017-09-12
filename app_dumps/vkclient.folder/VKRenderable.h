@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "VKRenderable.h"
-#import "NSObject.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "NSObject.h"
+#import "VKRenderable.h"
 
 @class NSString;
 
@@ -33,6 +33,7 @@ __attribute__((visibility("hidden")))
 +(id)parse:(id)parse;
 +(id)parseIfNotNil:(id)aNil;
 +(id)clear;
+-(void).cxx_destruct;
 -(id)domainData;
 -(void)writeData:(id)data;
 -(BOOL)process:(id)process context:(id)context;
@@ -41,6 +42,5 @@ __attribute__((visibility("hidden")))
 -(Class)rendererClass;
 -(BOOL)isEqualItemId:(id)anId;
 -(BOOL)isEqualIdentity:(id)identity;
--(void)dealloc;
 @end
 

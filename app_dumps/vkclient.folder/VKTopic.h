@@ -39,11 +39,11 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSNumber* created_by;
 @property(retain, nonatomic) NSString* title;
 +(id)previewFromFeed:(id)feed;
+-(void).cxx_destruct;
 -(id)thumbnailUrl;
 -(int)statusMask;
 -(id)statusForSource:(id)source;
 -(BOOL)process:(id)process context:(id)context;
 -(BOOL)valid;
--(void)dealloc;
 @end
 

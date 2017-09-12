@@ -7,7 +7,7 @@
 
 #import "ModelAction.h"
 
-@class StatsUploadHelper, NSNumber, NSString, VKGroup;
+@class VKGroup, StatsUploadHelper, NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface ModelActionGroup : ModelAction {
@@ -30,11 +30,11 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL invite;
 @property(assign, nonatomic) BOOL result;
 +(int)domainType;
+-(void).cxx_destruct;
 -(id)shouldStay:(BOOL)stay;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
 -(id)notSure:(BOOL)sure;
 -(id)add:(BOOL)add group:(id)group;
--(void)dealloc;
 @end
 

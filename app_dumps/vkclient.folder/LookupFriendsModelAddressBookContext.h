@@ -16,6 +16,6 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSArray* contacts;
 @property(retain, nonatomic) NSArray* records;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

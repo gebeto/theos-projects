@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
 @class StyleSheet;
 
@@ -18,6 +18,7 @@ __attribute__((visibility("hidden")))
 +(void)prepare;
 +(id)builderWithStyleSheet:(id)styleSheet;
 -(void).cxx_destruct;
+-(id)highlightBoldInText:(id)text;
 -(id)highlightSearchString:(id)string inText:(id)text;
 -(id)truncateURLsInString:(id)string maxSize:(CGSize)size;
 -(void)detectAddressesInText:(id)text;

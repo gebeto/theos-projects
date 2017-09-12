@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class PostEditContext, UIDatePicker;
+@class UIDatePicker, PostEditContext;
 
 __attribute__((visibility("hidden")))
 @interface PostEditOptionsController : XXUnknownSuperclass {
@@ -16,6 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) PostEditContext* context;
 @property(retain, nonatomic) UIDatePicker* timerPicker;
+-(void).cxx_destruct;
 -(id)tableView:(id)view cellForRowAtIndexPath:(id)indexPath;
 -(id)tableView:(id)view titleForHeaderInSection:(int)section;
 -(float)tableView:(id)view heightForRowAtIndexPath:(id)indexPath;
@@ -28,6 +29,5 @@ __attribute__((visibility("hidden")))
 -(void)actionDone:(id)done;
 -(void)viewWillAppear:(BOOL)view;
 -(void)viewDidLoad;
--(void)dealloc;
 @end
 

@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "PhotoStreamCell.h"
-#import "vkclient-Structs.h"
 
 @class UILabel, UIImageView;
 
@@ -18,8 +18,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UILabel* titleLabel;
 @property(retain, nonatomic) UIImageView* storyIconImageView;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
--(void)dealloc;
 -(void)layoutSubviews;
 -(id)initWithFrame:(CGRect)frame;
 @end

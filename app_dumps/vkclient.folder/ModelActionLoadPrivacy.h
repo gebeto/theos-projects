@@ -21,10 +21,10 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL loadLists;
 @property(retain, nonatomic) NSMutableSet* userIds;
 +(int)domainType;
+-(void).cxx_destruct;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
 -(id)addPrivacyToLoad:(id)load;
 -(BOOL)disableHUD;
--(void)dealloc;
 @end
 

@@ -18,6 +18,6 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int serviceType;
 @property(copy, nonatomic) NSString* contact;
 @property(copy, nonatomic) NSString* label;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

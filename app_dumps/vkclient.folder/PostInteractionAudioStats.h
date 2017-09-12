@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "AudioStats.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "AudioStats.h"
 
-@class CommonStatsManager, NSString, VKIdentity;
+@class CommonStatsManager, VKIdentity, NSString;
 
 __attribute__((visibility("hidden")))
 @interface PostInteractionAudioStats : XXUnknownSuperclass <AudioStats> {
@@ -22,8 +22,8 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign, nonatomic) CommonStatsManager* statsManager;
 @property(readonly, assign, nonatomic) VKIdentity* post;
 +(id)post:(id)post statsManager:(id)manager;
+-(void).cxx_destruct;
 -(void)playAudio:(id)audio ref:(id)ref;
 -(id)initWithPost:(id)post statsManager:(id)manager;
--(void)dealloc;
 @end
 

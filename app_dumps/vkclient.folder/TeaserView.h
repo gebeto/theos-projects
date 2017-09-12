@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class UILabel, UIButton, UIImageView;
+@class UIButton, UILabel, UIImageView;
 
 __attribute__((visibility("hidden")))
 @interface TeaserView : XXUnknownSuperclass {
@@ -23,6 +23,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UILabel* labelText;
 @property(retain, nonatomic) UILabel* labelTitle;
 @property(retain, nonatomic) UIButton* button;
+-(void).cxx_destruct;
 -(int)indexOfAccessibilityElement:(id)accessibilityElement;
 -(id)accessibilityElementAtIndex:(int)index;
 -(int)accessibilityElementCount;
@@ -30,6 +31,5 @@ __attribute__((visibility("hidden")))
 -(CGSize)sizeThatFits:(CGSize)fits;
 -(void)layoutSubviews;
 -(id)initWithImage:(id)image title:(id)title text:(id)text buttonTitle:(id)title4;
--(void)dealloc;
 @end
 

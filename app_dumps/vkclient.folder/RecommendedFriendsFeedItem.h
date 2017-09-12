@@ -6,12 +6,12 @@
  */
 
 #import "Component5.h"
+#import "VKClient-Structs.h"
 
 
 __attribute__((visibility("hidden")))
 @interface RecommendedFriendsFeedItem : Component5 {
 }
 +(id)friends:(id)friends;
-+(id)detailsButtonComponentWithTitle:(id)title;
 @end
 

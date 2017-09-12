@@ -13,6 +13,6 @@ __attribute__((visibility("hidden")))
 @interface VKAudioAttach : VKDomainDerived {
 }
 @property(readonly, retain, nonatomic) VKAudio* domain;
--(Class)rendererClass;
+-(Class)cellClass;
 @end
 

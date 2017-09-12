@@ -7,7 +7,7 @@
 
 #import "MultiIndexModel.h"
 
-@class NSDictionary, GiftsStatContext, VKGiftsContext, NSArray;
+@class VKGiftsContext, GiftsStatContext, NSDictionary, NSArray;
 
 __attribute__((visibility("hidden")))
 @interface StoreStockItemsModel : MultiIndexModel {
@@ -23,6 +23,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int productType;
 @property(retain) NSDictionary* indexesMap;
 +(id)stockSections;
+-(void).cxx_destruct;
 -(void)handleGift:(id)gift :(id)arg2;
 -(void)handleActivate:(id)activate :(id)arg2;
 -(void)registerForEvents:(id)events;
@@ -32,6 +33,5 @@ __attribute__((visibility("hidden")))
 -(id)updatedIndex:(id)index data:(id)data context:(id)context;
 -(id)requestForContext:(id)context;
 -(id)withProductType:(int)productType;
--(void)dealloc;
 @end
 

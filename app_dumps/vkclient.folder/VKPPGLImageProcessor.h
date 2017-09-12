@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class EAGLContext, NSMutableDictionary, NSObject, VKPPGLFilter, NSArray;
+@class NSMutableDictionary, VKPPGLFilter, EAGLContext, NSArray, NSObject;
 @protocol OS_dispatch_queue;
 
 @interface VKPPGLImageProcessor : XXUnknownSuperclass {

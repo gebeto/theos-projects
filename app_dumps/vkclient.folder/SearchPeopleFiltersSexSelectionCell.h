@@ -5,16 +5,16 @@
  * Source: (null)
  */
 
-#import "VKMGroupedCell.h"
+#import "VKMCell.h"
 
 @class SearchPeopleSexSelectionSegmentedControl;
 
 __attribute__((visibility("hidden")))
-@interface SearchPeopleFiltersSexSelectionCell : VKMGroupedCell {
+@interface SearchPeopleFiltersSexSelectionCell : VKMCell {
 	SearchPeopleSexSelectionSegmentedControl* _sexSegmentedControl;
 }
 @property(retain, nonatomic) SearchPeopleSexSelectionSegmentedControl* sexSegmentedControl;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
 @end
 

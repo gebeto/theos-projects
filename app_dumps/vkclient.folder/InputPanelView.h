@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import <XXUnknownSuperclass.h> // Unknown library
 #import "InputPanelViewTextViewDelegate.h"
+#import "VKClient-Structs.h"
+#import <XXUnknownSuperclass.h> // Unknown library
 
-@class InputPanelViewTextView, UIView, VKPPBadge, UIColor, UIButton, NSString, UIImageView;
+@class UIButton, UIColor, UIView, VKPPBadge, UIImageView, NSString, InputPanelViewTextView;
 @protocol InputPanelViewDelegate;
 
 __attribute__((visibility("hidden")))
@@ -24,13 +24,15 @@ __attribute__((visibility("hidden")))
 	id<InputPanelViewDelegate> _inputPanelDelegate;
 	float _targetHeight;
 	UIColor* _shadowColor;
+	UIEdgeInsets _inset;
 }
 @property(readonly, copy) NSString* debugDescription;
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 @property(assign, nonatomic) float targetHeight;
-@property(assign, nonatomic) id<InputPanelViewDelegate> inputPanelDelegate;
+@property(assign, nonatomic) __weak id<InputPanelViewDelegate> inputPanelDelegate;
+@property(assign, nonatomic) UIEdgeInsets inset;
 @property(retain, nonatomic) UIView* overlay;
 @property(retain, nonatomic) UIImageView* background;
 @property(retain, nonatomic) VKPPBadge* badge;
@@ -39,13 +41,18 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIButton* toggle;
 @property(retain, nonatomic) InputPanelViewTextView* textPanel;
 @property(retain, nonatomic) UIColor* shadowColor;
+-(void).cxx_destruct;
+-(void)inputPanelViewTextViewResignFirstResponder:(BOOL)responder;
+-(void)inputPanelViewTextViewBecomeFirstResponder:(BOOL)responder;
 -(void)inputPanelViewTextViewAttemptToSend:(id)send;
 -(void)inputPanelViewTextViewAttemptToBecomeFirstResponder:(id)becomeFirstResponder;
 -(void)updateCount:(int)count animated:(BOOL)animated;
 -(void)updateEmpty:(BOOL)empty;
 -(void)inputEnable:(BOOL)enable;
 -(void)dealloc;
+-(CGRect)textPanelFrame;
 -(void)layoutSubviews;
 -(id)initForComments:(BOOL)comments;
+-(id)initWithFrame:(CGRect)frame inset:(UIEdgeInsets)inset forComments:(BOOL)comments;
 @end
 

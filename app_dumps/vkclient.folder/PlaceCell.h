@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKMCell.h"
 
-@class VKRenderable, UILabel, VKMImageView;
+@class UILabel, VKRenderable, VKMImageView;
 @protocol LocationCellDelegate;
 
 __attribute__((visibility("hidden")))
@@ -18,13 +18,14 @@ __attribute__((visibility("hidden")))
 	UILabel* _status;
 	UILabel* _checkins;
 }
-@property(assign, nonatomic) id<LocationCellDelegate> delegate;
+@property(assign, nonatomic) __weak id<LocationCellDelegate> delegate;
 @property(retain, nonatomic) VKRenderable* domain;
 @property(readonly, retain, nonatomic) UILabel* checkins;
 @property(readonly, retain, nonatomic) UILabel* status;
 @property(readonly, retain, nonatomic) UILabel* title;
 @property(readonly, retain, nonatomic) VKMImageView* image;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)prepareForReuse;
 -(void)dealloc;

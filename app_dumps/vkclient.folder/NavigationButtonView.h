@@ -16,11 +16,11 @@ __attribute__((visibility("hidden")))
 }
 @property(readonly, retain, nonatomic) UIImageView* arrow;
 @property(readonly, retain, nonatomic) UIButton* button;
+-(void).cxx_destruct;
 -(void)setTitle:(id)title;
 -(void)layoutSubviews;
 -(void)observeValueForKeyPath:(id)keyPath ofObject:(id)object change:(id)change context:(void*)context;
 -(void)setArrowFlipped:(BOOL)flipped;
--(void)dealloc;
 -(id)initButton;
 @end
 

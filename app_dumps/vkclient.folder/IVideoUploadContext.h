@@ -7,7 +7,7 @@
 
 #import "NSObject.h"
 
-@class VKVideo, NSData, NSURL;
+@class VKVideo, NSURL, NSData;
 
 @protocol IVideoUploadContext <NSObject>
 @optional

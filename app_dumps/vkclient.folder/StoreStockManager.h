@@ -8,7 +8,7 @@
 #import "SKPaymentTransactionObserver.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSNumberFormatter, VKSession, NSMutableSet, NSMutableDictionary, NSString;
+@class NSMutableDictionary, VKSession, NSNumberFormatter, NSString, NSMutableSet;
 
 __attribute__((visibility("hidden")))
 @interface StoreStockManager : XXUnknownSuperclass <SKPaymentTransactionObserver> {
@@ -39,6 +39,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSMutableSet* pendingSKProductIds;
 +(void)handlePurchaseNotification:(id)notification withProductType:(int)productType quite:(BOOL)quite;
 +(BOOL)stateNotification:(id)notification updatesStockItem:(id)item;
+-(void).cxx_destruct;
 -(void)restoreProducts;
 -(void)handleStoreError:(id)error;
 -(void)runActionForStock:(id)stock referrerContext:(id)context;

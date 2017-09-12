@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "AbstractMessagesAttachmentView.h"
 
-@class UILabel, VKMImageView, VKSnapperAttach;
+@class UILabel, VKSnapperAttach, VKMImageView;
 @protocol SnapperViewDelegate;
 
 __attribute__((visibility("hidden")))
@@ -21,13 +21,14 @@ __attribute__((visibility("hidden")))
 	UILabel* _openLabel;
 	VKSnapperAttach* _attach;
 }
-@property(assign, nonatomic) id<SnapperViewDelegate> delegate;
+@property(assign, nonatomic) __weak id<SnapperViewDelegate> delegate;
 @property(retain, nonatomic) VKSnapperAttach* attach;
 @property(retain, nonatomic) UILabel* openLabel;
 @property(retain, nonatomic) UILabel* textLabel;
 @property(retain, nonatomic) UILabel* appNameLabel;
 @property(retain, nonatomic) VKMImageView* logoView;
 @property(retain, nonatomic) VKMImageView* imageView;
+-(void).cxx_destruct;
 -(void)openSnapper:(id)snapper;
 -(void)renderSnapper:(id)snapper reuse:(double)reuse;
 -(id)initWithFrame:(CGRect)frame;

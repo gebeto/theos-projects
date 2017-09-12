@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "IGLTexture.h"
+#import "VKClient-Structs.h"
 #import "IGLResource.h"
 
 @class NSString;

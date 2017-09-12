@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKMCollectionCell.h"
 
-@class VKMImageView, GraffitiHistoryItem;
+@class GraffitiHistoryItem, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface SkethHistoryCollectionCell : VKMCollectionCell {
@@ -16,12 +16,12 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) GraffitiHistoryItem* domain;
 @property(readonly, assign, nonatomic) VKMImageView* itemImage;
+-(void).cxx_destruct;
 -(void)delete:(id)aDelete;
 -(void)setHighlighted:(BOOL)highlighted;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)layoutSubviews;
 -(void)prepareForReuse;
 -(id)initWithFrame:(CGRect)frame;
--(void)dealloc;
 @end
 

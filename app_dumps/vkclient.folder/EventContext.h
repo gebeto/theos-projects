@@ -15,6 +15,6 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) id delayedModel;
 @property(assign, nonatomic) BOOL delayForegroundUpdate;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

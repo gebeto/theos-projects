@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSString, NSArray;
+@class NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface MarketSectionItemsGroup : XXUnknownSuperclass {
@@ -19,7 +19,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign, nonatomic) unsigned numberOfItems;
 @property(readonly, copy, nonatomic) NSString* title;
 +(id)groupWithTitle:(id)title numberOfItems:(unsigned)items items:(id)items3;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)initWithTitle:(id)title numberOfItems:(unsigned)items items:(id)items3;
 @end
 

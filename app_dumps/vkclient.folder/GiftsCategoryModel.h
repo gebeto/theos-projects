@@ -7,7 +7,7 @@
 
 #import "ItemModel.h"
 
-@class VKGiftsCatalogSection, NSString, VKGiftsContext;
+@class VKGiftsContext, NSString, VKGiftsCatalogSection;
 
 __attribute__((visibility("hidden")))
 @interface GiftsCategoryModel : ItemModel {
@@ -17,10 +17,10 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKGiftsContext* giftContext;
 @property(retain, nonatomic) VKGiftsCatalogSection* item;
 @property(retain, nonatomic) NSString* categoryName;
+-(void).cxx_destruct;
 -(id)process:(id)process context:(id)context;
 -(id)request;
 -(id)withContext:(id)context;
 -(id)withName:(id)name;
--(void)dealloc;
 @end
 

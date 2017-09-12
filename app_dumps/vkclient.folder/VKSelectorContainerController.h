@@ -8,7 +8,7 @@
 #import "VKMViewControllerContainer.h"
 #import "VKSelectorDelegate.h"
 
-@class VKSelector, NSString;
+@class NSString, VKSelector;
 
 __attribute__((visibility("hidden")))
 @interface VKSelectorContainerController : VKMViewControllerContainer <VKSelectorDelegate> {

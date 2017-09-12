@@ -6,9 +6,9 @@
  */
 
 #import "ModelRenderContext.h"
-#import "vkclient-Structs.h"
-#import "NSObject.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
+#import "NSObject.h"
 
 @class NSDictionary, NSString;
 

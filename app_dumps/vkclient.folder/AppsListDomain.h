@@ -7,7 +7,7 @@
 
 #import "VKDomain.h"
 
-@class Index, UIColor, NSString;
+@class UIColor, Index, NSString;
 
 __attribute__((visibility("hidden")))
 @interface AppsListDomain : VKDomain {
@@ -21,9 +21,9 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UIColor* galleryBackgroundColor;
 @property(copy, nonatomic) NSString* title;
 @property(retain, nonatomic) Index* applications;
+-(void).cxx_destruct;
 -(Class)cellClass;
 -(id)domainFilteredWithPredicate:(id)predicate;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

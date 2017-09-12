@@ -7,7 +7,7 @@
 
 #import "ItemModel.h"
 
-@class NSNumber, NSString, VKIdentity, VKStoreStockItem;
+@class VKStoreStockItem, VKIdentity, NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface StoreStockItemModel : ItemModel {
@@ -19,12 +19,12 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* productName;
 @property(retain, nonatomic) VKIdentity* product;
 @property(readonly, retain, nonatomic) VKStoreStockItem* item;
+-(void).cxx_destruct;
 -(id)process:(id)process context:(id)context;
 -(id)request;
 -(id)withItem:(id)item;
 -(id)withSomeStickerId:(id)someStickerId;
 -(id)withProductName:(id)productName;
 -(id)withProduct:(id)product;
--(void)dealloc;
 @end
 

@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "StickerSelectionView.h"
 #import "StickerSelectionViewDataSource.h"
+#import "VKClient-Structs.h"
+#import "StickerSelectionView.h"
 
-@class VKStoreProductSticker, MainModel, NSString, StoreStockManager;
+@class StoreStockManager, VKStoreProductSticker, MainModel, NSString;
 
 __attribute__((visibility("hidden")))
 @interface StickerSelectionViewAttachable : StickerSelectionView <StickerSelectionViewDataSource> {
@@ -24,6 +24,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) MainModel* mainModel;
 @property(retain, nonatomic) StoreStockManager* storeStockManager;
 @property(retain, nonatomic) VKStoreProductSticker* product;
+-(void).cxx_destruct;
 -(id)stickerSelectionViewProductId:(id)anId;
 -(id)stickerSelectionViewBaseUrl:(id)url;
 -(id)stickerSelectionViewStickerIds:(id)ids;

@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKStickerReferrerContext, VKMessage, BackgroundTaskWrapper, NSString, NSArray;
+@class BackgroundTaskWrapper, VKStickerReferrerContext, VKMessage, NSString, NSArray;
 
 __attribute__((visibility("hidden")))
 @interface PendingMessage : XXUnknownSuperclass {
@@ -38,6 +38,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign, nonatomic) unsigned messageNumber;
 +(id)messageWithBody:(id)body sendeer:(id)sendeer attachments:(id)attachments;
 +(void)initialize;
+-(void).cxx_destruct;
 -(void)updateAttachments;
 -(void)dealloc;
 -(id)init;

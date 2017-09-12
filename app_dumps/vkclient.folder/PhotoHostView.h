@@ -5,14 +5,14 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "TrackingBoundsView.h"
-#import "vkclient-Structs.h"
+#import <XXUnknownSuperclass.h> // Unknown library
 #import "UIScrollViewDelegate.h"
 #import "AutoplayedVideoViewDelegate.h"
-#import <XXUnknownSuperclass.h> // Unknown library
 
-@class AutoplayedGifView, UIScrollView, VKImageVariant, PhotoHostProgressView, NSString, AFImageRequestOperation, UIActivityIndicatorView, UIImageView;
-@protocol VKBrowsableImage, PhotoHostViewDelegate;
+@class AFImageRequestOperation, AutoplayedGifView, UIScrollView, VKImageVariant, UIImageView, NSString, UIActivityIndicatorView, PhotoHostProgressView;
+@protocol PhotoHostViewDelegate, VKBrowsableImage;
 
 __attribute__((visibility("hidden")))
 @interface PhotoHostView : XXUnknownSuperclass <AutoplayedVideoViewDelegate, UIScrollViewDelegate, TrackingBoundsView> {
@@ -46,13 +46,14 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) AutoplayedGifView* gifView;
 @property(retain, nonatomic) UIImageView* image;
 @property(retain, nonatomic) UIScrollView* scrollView;
-@property(assign, nonatomic) id<PhotoHostViewDelegate> delegate;
+@property(assign, nonatomic) __weak id<PhotoHostViewDelegate> delegate;
 @property(retain, nonatomic) AFImageRequestOperation* imageOperation;
 @property(retain, nonatomic) PhotoHostProgressView* progressView;
 @property(retain, nonatomic) VKImageVariant* maxVariant;
 @property(retain, nonatomic) VKImageVariant* currentVariant;
 @property(retain, nonatomic) VKImageVariant* initialVariant;
 @property(retain, nonatomic) id<VKBrowsableImage> renderedImage;
+-(void).cxx_destruct;
 -(id)navDelegate;
 -(void)videoViewBecameHidden:(id)hidden;
 -(BOOL)videoViewToggleFullscreen:(id)fullscreen;

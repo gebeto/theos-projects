@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class UIScrollView, UIPageControl;
+@class UIPageControl, UIScrollView;
 @protocol MOScrollPagingMediatorDelegate;
 
 __attribute__((visibility("hidden")))
@@ -24,11 +24,12 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) UIScrollView* parallaxScrollView;
 @property(assign, nonatomic) CGAffineTransform parallaxTransform;
-@property(assign, nonatomic) id<MOScrollPagingMediatorDelegate> delegate;
+@property(assign, nonatomic) __weak id<MOScrollPagingMediatorDelegate> delegate;
 @property(assign, nonatomic) unsigned reusablePages;
 @property(readonly, assign, nonatomic) int currentScrollPage;
 @property(retain, nonatomic) UIPageControl* pageControl;
 @property(retain, nonatomic) UIScrollView* scrollView;
+-(void).cxx_destruct;
 -(void)reset;
 -(void)actionPageChange:(id)change;
 -(void)observeValueForKeyPath:(id)keyPath ofObject:(id)object change:(id)change context:(void*)context;

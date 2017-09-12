@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class NSMutableIndexSet, NSMutableArray;
+@class NSMutableArray, NSMutableIndexSet;
 
 __attribute__((visibility("hidden")))
 @interface IndexUpdateElement : XXUnknownSuperclass {
@@ -27,7 +27,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSMutableIndexSet* insertSections;
 @property(retain, nonatomic) NSMutableIndexSet* reloadSections;
 @property(retain, nonatomic) NSMutableIndexSet* deleteSections;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)initWithStrategy:(XXStruct_X102JB)strategy;
 @end
 

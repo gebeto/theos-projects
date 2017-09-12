@@ -7,20 +7,23 @@
 
 #import "VKRenderable.h"
 
-@class NSString, NSNumber, NSArray;
+@class NSNumber, NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface AudioBlock : VKRenderable {
 	NSNumber* _blockId;
 	NSString* _title;
 	NSString* _subtitle;
+	NSString* _source;
 	float _contentOffsetXForRestoringInReusableCell;
 }
 @property(assign, nonatomic) float contentOffsetXForRestoringInReusableCell;
 @property(readonly, assign, nonatomic) NSArray* items;
+@property(copy, nonatomic) NSString* source;
 @property(copy, nonatomic) NSString* subtitle;
 @property(copy, nonatomic) NSString* title;
 @property(retain, nonatomic) NSNumber* blockId;
 -(void).cxx_destruct;
+-(BOOL)process:(id)process context:(id)context;
 @end
 

@@ -9,8 +9,8 @@
 #import "AsyncOperation.h"
 #import "NSCoding.h"
 
-@class NSMutableDictionary, UILocalNotification, NSObject, NSString, NSFileHandle, NSArray, NSURL, NSURLSession;
-@protocol OS_dispatch_queue, VideoUploadTaskDelegate;
+@class NSMutableDictionary, NSURL, UILocalNotification, NSFileHandle, NSURLSession, NSArray, NSObject, NSString;
+@protocol VideoUploadTaskDelegate, OS_dispatch_queue;
 
 __attribute__((visibility("hidden")))
 @interface VideoUploadTask : AsyncOperation <NSCoding, NSURLSessionDataDelegate> {

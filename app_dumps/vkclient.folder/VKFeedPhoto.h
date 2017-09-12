@@ -7,18 +7,22 @@
 
 #import "VKFeed.h"
 
-@class VKList, NSString;
+@class VKPhoto, VKIdentity, NSString, VKList;
 
 __attribute__((visibility("hidden")))
 @interface VKFeedPhoto : VKFeed {
 	VKList* _photos;
 	NSString* _ext_id;
+	NSString* _track_code;
 }
+@property(retain, nonatomic) NSString* track_code;
 @property(retain, nonatomic) NSString* ext_id;
 @property(retain, nonatomic) VKList* photos;
+@property(readonly, retain, nonatomic) VKPhoto* singlePhoto;
+@property(readonly, retain, nonatomic) VKIdentity* iden;
+-(void).cxx_destruct;
 -(id)feedPhotoType;
 -(id)statusForSource:(id)source;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

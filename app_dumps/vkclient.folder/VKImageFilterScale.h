@@ -5,25 +5,25 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKImageFilter.h"
 
 
 __attribute__((visibility("hidden")))
 @interface VKImageFilterScale : VKImageFilter {
 	CGSize _size;
-	XXStruct_rO8FTC _settings;
+	XXStruct_32J64A _settings;
 }
-@property(readonly, assign, nonatomic) XXStruct_rO8FTC settings;
+@property(readonly, assign, nonatomic) XXStruct_32J64A settings;
 @property(readonly, assign, nonatomic) CGSize size;
 +(CGRect)rectToDrawImageWithSize:(CGSize)size canvasSize:(CGSize)size2 mode:(int)mode;
-+(CGRect)rectToDrawImageWithSize:(CGSize)size canvasSize:(CGSize)size2 settings:(XXStruct_rO8FTC)settings;
++(CGRect)rectToDrawImageWithSize:(CGSize)size canvasSize:(CGSize)size2 settings:(XXStruct_32J64A)settings;
 +(id)scaleToSize:(CGSize)size withMode:(int)mode;
-+(id)scaleToSize:(CGSize)size withSettings:(XXStruct_rO8FTC)settings;
++(id)scaleToSize:(CGSize)size withSettings:(XXStruct_32J64A)settings;
 -(id)infoString;
 -(void)process:(id)process inDrawingContext:(CGContextRef)drawingContext;
 -(id)contextForImage:(id)image;
 -(id)initWithSize:(CGSize)size mode:(int)mode;
--(id)initWithSize:(CGSize)size settings:(XXStruct_rO8FTC)settings;
+-(id)initWithSize:(CGSize)size settings:(XXStruct_32J64A)settings;
 @end
 

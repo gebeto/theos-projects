@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "FBAuthRequest.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "FBAuthRequest.h"
 
-@class NSString, NSArray;
+@class NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface FBBasicAuthRequest : XXUnknownSuperclass <FBAuthRequest> {
@@ -25,7 +25,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* appId;
 +(id)requestWithAppId:(id)appId permissions:(id)permissions apiVersion:(id)version;
 +(id)requestWithAppId:(id)appId permissions:(id)permissions;
+-(void).cxx_destruct;
 -(id)authParameters;
--(void)dealloc;
 @end
 

@@ -5,13 +5,13 @@
  * Source: (null)
  */
 
-#import "UIGestureRecognizerDelegate.h"
-#import "vkclient-Structs.h"
 #import "AnimatingIndicator.h"
 #import "MBProgressHUDCustomView.h"
+#import "VKClient-Structs.h"
+#import "UIGestureRecognizerDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UILabel, RoundedProgressOverlayLayer, UIColor, RoundedProgressOverlayCircle, NSString, UIImageView;
+@class UIColor, UILabel, UIImageView, RoundedProgressOverlayLayer, NSString, RoundedProgressOverlayCircle;
 @protocol RoundedProgressOverlayViewDelegate;
 
 __attribute__((visibility("hidden")))
@@ -73,6 +73,5 @@ __attribute__((visibility("hidden")))
 -(void)setUp;
 -(id)initWithFrame:(CGRect)frame;
 -(id)initWithCoder:(id)coder;
--(void)dealloc;
 @end
 

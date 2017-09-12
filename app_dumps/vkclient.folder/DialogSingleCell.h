@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "NewDialogCell.h"
 
 @class UIButton;
@@ -18,6 +18,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain) UIButton* online;
 @property(retain) id<VKSource> source;
+-(void).cxx_destruct;
 -(void)attach:(id)attach source:(id)source expectedReuse:(double)reuse;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)attachUserExpectedReuse:(double)reuse;

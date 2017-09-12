@@ -14,9 +14,9 @@ __attribute__((visibility("hidden")))
 	NSMutableArray* _mHistory;
 }
 @property(readonly, retain, nonatomic) NSArray* history;
+-(void).cxx_destruct;
 -(void)clear;
 -(void)addSearchQuery:(id)query;
 -(id)initWithHistory:(id)history;
--(void)dealloc;
 @end
 

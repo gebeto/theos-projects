@@ -13,7 +13,6 @@ __attribute__((visibility("hidden")))
 }
 +(id)generalUrlScheme;
 +(id)fbAppIdFromURLScheme;
-+(id)sdkScheme;
 +(id)authScheme;
 +(id)routeScheme;
 +(id)loadSchemas;

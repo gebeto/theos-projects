@@ -6,10 +6,10 @@
  */
 
 #import "EKEventEditViewDelegate.h"
+#import "VKClient-Structs.h"
 #import "VKMLiveController.h"
-#import "vkclient-Structs.h"
 
-@class ProfileView, NSString, DefaultProfileModel;
+@class ProfileView, DefaultProfileModel, NSString;
 
 __attribute__((visibility("hidden")))
 @interface ProfileInfoController : VKMLiveController <EKEventEditViewDelegate> {
@@ -21,6 +21,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) ProfileView* profileView;
 @property(readonly, retain, nonatomic) DefaultProfileModel* model;
+-(void).cxx_destruct;
 -(id)safeProfileItemAtIndexPath:(id)indexPath;
 -(void)tableView:(id)view performAction:(SEL)action forRowAtIndexPath:(id)indexPath withSender:(id)sender;
 -(BOOL)tableView:(id)view canPerformAction:(SEL)action forRowAtIndexPath:(id)indexPath withSender:(id)sender;
@@ -38,6 +39,5 @@ __attribute__((visibility("hidden")))
 -(id)VKMScrollViewIndexFromModel:(id)model;
 -(void)VKMControllerTouch;
 -(int)VKMTableStyle;
--(void)dealloc;
 @end
 

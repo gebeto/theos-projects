@@ -7,7 +7,7 @@
 
 #import "MTRGNativeBanner.h"
 
-@class MTRGImageData, UIColor;
+@class UIColor, MTRGImageData;
 
 @interface MTRGFSPromoBanner : MTRGNativeBanner {
 	BOOL _extendedClickArea;

@@ -21,6 +21,6 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSNumber* mid;
 @property(retain, nonatomic) NSNumber* peer_id;
 +(id)update:(id)update;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class UIColor, UISlider, NSArray;
+@class UISlider, UIColor, NSArray;
 @protocol SketchBrushViewControllerDelegate;
 
 __attribute__((visibility("hidden")))

@@ -8,7 +8,7 @@
 #import "StoryEditorItem.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class AVAsset, UIImage, NSString;
+@class UIImage, AVAsset, NSString;
 
 __attribute__((visibility("hidden")))
 @interface StoryEditorItemVideo : XXUnknownSuperclass <StoryEditorItem> {

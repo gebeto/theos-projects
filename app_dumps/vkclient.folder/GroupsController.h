@@ -6,6 +6,7 @@
  */
 
 #import "VKMMultiIndexController.h"
+#import "VKClient-Structs.h"
 
 @class UIBarButtonItem;
 
@@ -14,6 +15,7 @@ __attribute__((visibility("hidden")))
 	UIBarButtonItem* _buttonCatalog;
 }
 @property(retain, nonatomic) UIBarButtonItem* buttonCatalog;
+-(void).cxx_destruct;
 -(void)VKMTableUpdatedIndex;
 -(id)VKMScrollViewBackgroundColor;
 -(float)tableView:(id)view heightForFooterInSection:(int)section;

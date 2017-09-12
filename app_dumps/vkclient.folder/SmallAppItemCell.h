@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "AppItemCell.h"
+#import "VKClient-Structs.h"
 
 @class UILabel;
 
@@ -18,9 +18,9 @@ __attribute__((visibility("hidden")))
 +(float)interitemSpace;
 +(UIEdgeInsets)sectionInset;
 +(CGSize)cellSize;
+-(void).cxx_destruct;
 -(void)layoutSubviews;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(id)createSubviews;
--(void)dealloc;
 @end
 

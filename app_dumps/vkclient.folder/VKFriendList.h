@@ -15,9 +15,9 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSString* name;
 +(id)list:(id)list owner:(id)owner;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
 -(void)domainOnEditCopy:(id)copy;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

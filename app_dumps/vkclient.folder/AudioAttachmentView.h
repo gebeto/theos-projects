@@ -5,38 +5,33 @@
  * Source: (null)
  */
 
-#import "AudioPlayerObserver.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "AttachmentView.h"
 
-@class UILabel, AudioPlayer, VKAudio, VKCircleProgressView, UIButton, NSString;
+@class VKCircleProgressView, UIButton, VKAudio, UILabel, VKAudioQueuePlayer;
 @protocol AudioAttachmentDelegate;
 
 __attribute__((visibility("hidden")))
-@interface AudioAttachmentView : AttachmentView <AudioPlayerObserver> {
+@interface AudioAttachmentView : AttachmentView {
 	VKAudio* _audio;
 	id<AudioAttachmentDelegate> _delegate;
-	AudioPlayer* _player;
+	VKAudioQueuePlayer* _player;
 	UIButton* _button;
 	UILabel* _duration;
 	VKCircleProgressView* _progressView;
 	id _observer;
 }
-@property(readonly, copy) NSString* debugDescription;
-@property(readonly, copy) NSString* description;
-@property(readonly, assign) Class superclass;
-@property(readonly, assign) unsigned hash;
-@property(assign, nonatomic) id<AudioAttachmentDelegate> delegate;
+@property(assign, nonatomic) __weak id<AudioAttachmentDelegate> delegate;
 @property(retain, nonatomic) VKAudio* audio;
 @property(retain, nonatomic) id observer;
 @property(retain, nonatomic) VKCircleProgressView* progressView;
 @property(retain, nonatomic) UILabel* duration;
 @property(retain, nonatomic) UIButton* button;
-@property(retain, nonatomic) AudioPlayer* player;
+@property(retain, nonatomic) VKAudioQueuePlayer* player;
+-(void).cxx_destruct;
 -(void)model:(id)model willStartLoadingWithContext:(id)context;
 -(void)modelLoadingChanged:(id)changed;
 -(void)model:(id)model updated:(id)updated;
--(void)playerWillChangeItem:(id)player;
 -(void)playerChangedItem:(id)item;
 -(void)playerUpdated:(id)updated;
 -(void)updateProgressForProgressView:(float)progressView;

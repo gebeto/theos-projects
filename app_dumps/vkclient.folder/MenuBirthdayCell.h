@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "MenuHintsCell.h"
+#import "VKClient-Structs.h"
 
 @class UIButton;
 
@@ -17,6 +17,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIButton* giftButton;
 +(void)prerender:(id)prerender;
 +(void)initialize;
+-(void).cxx_destruct;
 -(void)layoutSubviews;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)actionSendGift:(id)gift;
@@ -24,6 +25,5 @@ __attribute__((visibility("hidden")))
 -(float)photoSize;
 -(float)photoPaddingTop;
 -(UIEdgeInsets)labelEdgeInsets;
--(void)dealloc;
 @end
 

@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "UIScrollViewDelegate.h"
-#import "vkclient-Structs.h"
 
 
 @protocol UICollectionViewDelegate <UIScrollViewDelegate>

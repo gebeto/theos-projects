@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class UILabel;
@@ -15,10 +15,10 @@ __attribute__((visibility("hidden")))
 	UILabel* _label;
 }
 @property(retain, nonatomic) UILabel* label;
+-(void).cxx_destruct;
 -(id)badgeValue;
 -(void)setBadgeValue:(id)value;
 -(CGSize)sizeThatFits:(CGSize)fits;
 -(id)initWithFrame:(CGRect)frame;
--(void)dealloc;
 @end
 

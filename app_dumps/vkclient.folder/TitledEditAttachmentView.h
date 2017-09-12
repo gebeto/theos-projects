@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "EditAttachmentView.h"
-#import "vkclient-Structs.h"
 
 @class UILabel;
 
@@ -20,8 +20,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UILabel* title;
 @property(retain, nonatomic) UILabel* type;
 +(id)createRenderView;
+-(void).cxx_destruct;
 -(void)renderType:(id)type title:(id)title subtitle:(id)subtitle;
--(void)dealloc;
--(id)initWithAttachment:(id)attachment style:(XXStruct_9zIMjA)style;
+-(id)initWithAttachment:(id)attachment style:(id)style;
 @end
 

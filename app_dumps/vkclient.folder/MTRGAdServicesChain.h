@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class MTRGAdData, MTRGAdParams, NSArray;
+@class MTRGAdParams, NSArray, MTRGAdData;
 
 @interface MTRGAdServicesChain : XXUnknownSuperclass {
 	NSArray* _services;

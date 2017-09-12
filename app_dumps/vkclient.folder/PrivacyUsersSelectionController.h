@@ -6,7 +6,7 @@
  */
 
 #import "UsersSelectionController.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 
 @protocol PrivacyUsersSelectionControllerDelegate;
 
@@ -16,7 +16,8 @@ __attribute__((visibility("hidden")))
 	id<PrivacyUsersSelectionControllerDelegate> _delegate;
 }
 @property(assign, nonatomic) BOOL shouldAutoclose;
-@property(assign, nonatomic) id<PrivacyUsersSelectionControllerDelegate> delegate;
+@property(assign, nonatomic) __weak id<PrivacyUsersSelectionControllerDelegate> delegate;
+-(void).cxx_destruct;
 -(id)setupWithMulti:(BOOL)multi shouldAutoclose:(BOOL)autoclose;
 -(void)VKMDismissModalSelfAnimated;
 -(void)routeUsers:(id)users;

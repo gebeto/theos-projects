@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class UILabel, UIImageView;
@@ -17,8 +17,8 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) UILabel* label;
 @property(retain, nonatomic) UIImageView* decorationView;
+-(void).cxx_destruct;
 -(void)setEmoji:(id)emoji;
 -(id)initWithFrame:(CGRect)frame;
--(void)dealloc;
 @end
 

@@ -7,7 +7,7 @@
 
 #import "Component5Controller.h"
 
-@class VKMImageView, ImageLoaderComponent;
+@class ImageLoaderComponent, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface ImageLoaderComponentController : Component5Controller {

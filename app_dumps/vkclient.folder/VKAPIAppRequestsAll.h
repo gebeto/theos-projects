@@ -21,7 +21,7 @@ __attribute__((visibility("hidden")))
 +(id)allRequestsWithCount:(unsigned)count appID:(id)anId type:(int)type;
 +(id)allInvitesWithCount:(unsigned)count appID:(id)anId;
 +(id)allRequestsWithCount:(unsigned)count appID:(id)anId;
+-(void).cxx_destruct;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "ThumbnailView.h"
 
-@class UIView, VKPhotoTags;
+@class VKPhotoTags, UIView;
 @protocol PhotoTagsViewDelegate;
 
 __attribute__((visibility("hidden")))
@@ -18,10 +18,11 @@ __attribute__((visibility("hidden")))
 	UIView* _overlay;
 	UIView* _viewport;
 }
-@property(assign, nonatomic) id<PhotoTagsViewDelegate> delegate;
+@property(assign, nonatomic) __weak id<PhotoTagsViewDelegate> delegate;
 @property(retain, nonatomic) VKPhotoTags* tags;
 @property(retain, nonatomic) UIView* viewport;
 @property(retain, nonatomic) UIView* overlay;
+-(void).cxx_destruct;
 -(void)touchesEnded:(id)ended withEvent:(id)event;
 -(void)highlight:(unsigned)highlight;
 -(id)tagAtIndex:(unsigned)index;
@@ -30,7 +31,6 @@ __attribute__((visibility("hidden")))
 -(void)setImage:(id)image;
 -(void)update;
 -(void)lazy;
--(void)dealloc;
 -(id)initWithFrame:(CGRect)frame;
 @end
 

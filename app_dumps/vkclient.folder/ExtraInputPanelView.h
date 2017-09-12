@@ -6,11 +6,11 @@
  */
 
 #import "StickerSuggestionsViewDelegate.h"
-#import "InputPanelView.h"
+#import "VKClient-Structs.h"
 #import "ExtrasInputViewDelegate.h"
-#import "vkclient-Structs.h"
+#import "InputPanelView.h"
 
-@class ExtrasInputView, StickerSuggestionsView, UIButton, NSString;
+@class UIButton, StickerSuggestionsView, NSString, ExtrasInputView;
 @protocol ExtraInputPanelViewDelegate;
 
 __attribute__((visibility("hidden")))
@@ -24,9 +24,10 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) StickerSuggestionsView* stickerSuggestionsView;
-@property(assign, nonatomic) id<ExtraInputPanelViewDelegate> inputPanelDelegate;
+@property(assign, nonatomic) __weak id<ExtraInputPanelViewDelegate> inputPanelDelegate;
 @property(retain, nonatomic) UIButton* inputViewButton;
 @property(retain, nonatomic) ExtrasInputView* inputView;
+-(void).cxx_destruct;
 -(void)stickerSuggestionsView:(id)view didSelectSticker:(id)sticker referrerContext:(id)context promoted:(BOOL)promoted;
 -(id)hitTest:(CGPoint)test withEvent:(id)event;
 -(void)inputPanelViewTextViewResignFirstResponder:(BOOL)responder;
@@ -48,7 +49,9 @@ __attribute__((visibility("hidden")))
 -(void)updateOverlay;
 -(void)updateInputViewButton;
 -(void)inputEnable:(BOOL)enable;
+-(CGRect)textPanelFrame;
 -(void)dealloc;
+-(void)createSubviews;
 -(id)initForComments:(BOOL)comments;
 @end
 

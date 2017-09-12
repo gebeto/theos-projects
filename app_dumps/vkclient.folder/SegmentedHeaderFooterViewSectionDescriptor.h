@@ -17,7 +17,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, copy, nonatomic) id action;
 @property(readonly, copy, nonatomic) NSString* title;
 +(id)descriptorWithTitle:(id)title action:(id)action;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)initWithTitle:(id)title action:(id)action;
 @end
 

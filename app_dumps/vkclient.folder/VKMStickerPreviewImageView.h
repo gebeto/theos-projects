@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKMImageView.h"
-#import "vkclient-Structs.h"
 
 @class ActivityIndicatorView;
 
@@ -15,12 +15,12 @@ __attribute__((visibility("hidden")))
 	ActivityIndicatorView* _loadingIndicator;
 }
 @property(retain, nonatomic) ActivityIndicatorView* loadingIndicator;
+-(void).cxx_destruct;
 -(void)reuse;
 -(void)stopLoadingAnimation;
 -(void)startLoadingAnimation;
 -(void)loader:(id)loader complete:(id)complete;
 -(void)layoutSubviews;
 -(id)initWithFrame:(CGRect)frame;
--(void)dealloc;
 @end
 

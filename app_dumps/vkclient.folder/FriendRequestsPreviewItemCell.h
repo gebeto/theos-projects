@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "VKMImageLoaderDelegate.h"
 #import "VKMCell.h"
+#import "VKMImageLoaderDelegate.h"
 
-@class FriendRequestsPreviewItem, BadgeAccessoryView, VKMImageView, VKMImageLoader, NSString;
+@class VKMImageLoader, BadgeAccessoryView, FriendRequestsPreviewItem, NSString, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface FriendRequestsPreviewItemCell : VKMCell <VKMImageLoaderDelegate> {
@@ -28,6 +28,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) VKMImageView* imageLoadingView;
 @property(retain, nonatomic) FriendRequestsPreviewItem* domain;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)loadNextImage;
 -(void)loadCurrentImage;

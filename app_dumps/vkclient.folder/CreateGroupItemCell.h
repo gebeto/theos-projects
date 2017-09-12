@@ -13,7 +13,6 @@ __attribute__((visibility("hidden")))
 }
 +(void)prerender:(id)prerender;
 -(void)layoutSubviews;
--(void)dealloc;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
 @end
 

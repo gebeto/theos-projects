@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class NSNumberFormatter, UILabel, VKPPAlbumListControllerItem, UIImageView;
+@class NSNumberFormatter, UILabel, UIImageView, VKPPAlbumListControllerItem;
 
 @interface VKPPAlbumsListTableViewCell : XXUnknownSuperclass {
 	BOOL _select;

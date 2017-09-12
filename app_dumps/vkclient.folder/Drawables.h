@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSCache, UIImage;
+@class UIImage, NSCache;
 
 __attribute__((visibility("hidden")))
 @interface Drawables : XXUnknownSuperclass {

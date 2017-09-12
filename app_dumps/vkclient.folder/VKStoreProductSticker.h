@@ -16,10 +16,10 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSString* stickers_base_url;
 @property(retain, nonatomic) NSArray* sticker_ids;
+-(void).cxx_destruct;
 -(id)storeDescription;
 -(void)writeData:(id)data;
 -(BOOL)process:(id)process context:(id)context;
 -(BOOL)isEqual:(id)equal;
--(void)dealloc;
 @end
 

@@ -24,6 +24,7 @@ __attribute__((visibility("hidden")))
 @property(retain) Index* initial;
 @property(retain) NSString* qfiltered;
 @property(retain, nonatomic) NSString* qpending;
+-(void).cxx_destruct;
 -(void)filter:(id)filter;
 -(void)changeIndex:(id)index withUpdate:(id)update;
 -(BOOL)shouldLoad:(id)load;
@@ -31,6 +32,5 @@ __attribute__((visibility("hidden")))
 -(id)parameters:(id)parameters;
 -(id)countString;
 -(id)method;
--(void)dealloc;
 @end
 

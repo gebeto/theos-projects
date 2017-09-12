@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "VKMTableController.h"
+#import "VKClient-Structs.h"
 
 @class NSDate;
 
@@ -15,17 +15,17 @@ __attribute__((visibility("hidden")))
 	NSDate* _lastUpdate;
 }
 @property(retain, nonatomic) NSDate* lastUpdate;
+-(void).cxx_destruct;
 -(id)tableView:(id)view cellForRowAtIndexPath:(id)indexPath;
 -(int)tableView:(id)view numberOfRowsInSection:(int)section;
 -(int)numberOfSectionsInTableView:(id)tableView;
 -(void)render;
--(id)settingsCellWithTitle:(id)title style:(int)style position:(int)position switch:(SEL)aSwitch;
+-(id)settingsCellWithTitle:(id)title style:(int)style switch:(SEL)aSwitch;
 -(Class)cellClass;
 -(void)VKMScrollViewSetFooter:(id)footer;
 -(BOOL)VKMScrollViewDisablePTR;
 -(int)VKMTableStyle;
 -(void)VKMControllerChromeInsetsApply;
 -(void)viewWillAppear:(BOOL)view;
--(void)dealloc;
 @end
 

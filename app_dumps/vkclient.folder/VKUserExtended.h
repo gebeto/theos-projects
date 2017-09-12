@@ -14,7 +14,7 @@ __attribute__((visibility("hidden")))
 	NSDictionary* _last_seen;
 }
 @property(copy, nonatomic) NSDictionary* last_seen;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

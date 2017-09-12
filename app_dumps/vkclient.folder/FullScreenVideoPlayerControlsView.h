@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "VideoPlayerScrubberDelegate.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VideoPlayerScrubberDelegate.h"
 
-@class UILabel, ToolbarButtonWithCounterItem, FinishedVideoActionsOverlayView, VideoPlayerPlaybackView, UIView, UIToolbar, UINavigationBar, UIBarButtonItem, UIButton, NSString, UIImageView, VideoPlayerErrorOverlayView;
+@class UINavigationBar, UIBarButtonItem, UIButton, VideoPlayerErrorOverlayView, ToolbarButtonWithCounterItem, UILabel, VideoPlayerPlaybackView, UIView, FinishedVideoActionsOverlayView, UIImageView, UIToolbar, NSString;
 @protocol FullScreenVideoPlayerControlsViewDelegate;
 
 __attribute__((visibility("hidden")))

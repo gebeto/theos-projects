@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UIRefreshControl, UITableView;
+@class UITableView, UIRefreshControl;
 
 __attribute__((visibility("hidden")))
 @interface BottomRefreshView : XXUnknownSuperclass {
@@ -20,6 +20,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) UITableView* weakTableView;
 +(void)tableView:(id)view adjustInsets:(id)insets;
 +(void)initialize;
+-(void).cxx_destruct;
 -(void)didMoveToSuperview;
 -(void)layoutSubviews;
 -(void)setContentInset:(UIEdgeInsets)inset;
@@ -27,7 +28,6 @@ __attribute__((visibility("hidden")))
 -(void)setFrame:(CGRect)frame;
 -(double)_verticalVelocity;
 -(BOOL)isTracking;
--(void)dealloc;
 -(id)initWithFrame:(CGRect)frame;
 @end
 

@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKMLiveController.h"
 
 @class VideoAlbumsModel, VideoAlbumsInfoToolbar;
@@ -16,6 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) VideoAlbumsModel* model;
 @property(retain, nonatomic) VideoAlbumsInfoToolbar* toolbar;
+-(void).cxx_destruct;
 -(void)tableView:(id)view commitEditingStyle:(int)style forRowAtIndexPath:(id)indexPath;
 -(BOOL)VKMRoute:(id)route context:(id)context;
 -(void)actionAdd:(id)add;
@@ -25,6 +26,5 @@ __attribute__((visibility("hidden")))
 -(void)viewDidLoad;
 -(void)VKMControllerSetAutocloseButton:(id)button;
 -(void)loadView;
--(void)dealloc;
 @end
 

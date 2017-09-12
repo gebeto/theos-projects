@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "UIScrollViewDelegate.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
+#import "UIScrollViewDelegate.h"
 
 @class NSString;
 @protocol ScrollToTopDetectionViewDelegate;
@@ -20,7 +20,8 @@ __attribute__((visibility("hidden")))
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
-@property(assign, nonatomic) id<ScrollToTopDetectionViewDelegate> scrollToTopDelegate;
+@property(assign, nonatomic) __weak id<ScrollToTopDetectionViewDelegate> scrollToTopDelegate;
+-(void).cxx_destruct;
 -(BOOL)scrollViewShouldScrollToTop:(id)scrollView;
 -(void)dealloc;
 -(id)initDetectionViewWithWidth:(float)width;

@@ -25,8 +25,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSArray* likesUsers;
 @property(retain, nonatomic) VKIdentity* identity;
 +(id)identity:(id)identity likes:(id)likes user:(id)user;
+-(void).cxx_destruct;
 -(id)displayNameForFirstName:(id)firstName lastName:(id)name abbreviation:(BOOL)abbreviation;
 -(id)previewText;
--(void)dealloc;
 @end
 

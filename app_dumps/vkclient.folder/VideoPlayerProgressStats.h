@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import <XXUnknownSuperclass.h> // Unknown library
 #import "TimerTargetDelegate.h"
+#import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSMutableIndexSet, AVPlayer, TimerTarget, NSIndexSet, MPMoviePlayerController, NSString;
+@class TimerTarget, MPMoviePlayerController, NSMutableIndexSet, NSString, NSIndexSet, AVPlayer;
 
 __attribute__((visibility("hidden")))
 @interface VideoPlayerProgressStats : XXUnknownSuperclass <TimerTargetDelegate> {

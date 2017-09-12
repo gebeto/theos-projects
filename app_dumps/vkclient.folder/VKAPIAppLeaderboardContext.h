@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSDictionary, NSNumber;
+@class NSNumber, NSDictionary;
 
 __attribute__((visibility("hidden")))
 @interface VKAPIAppLeaderboardContext : XXUnknownSuperclass {
@@ -21,6 +21,6 @@ __attribute__((visibility("hidden")))
 @property(readonly, copy, nonatomic) NSDictionary* usersByIDs;
 @property(readonly, retain, nonatomic) NSNumber* currentUserID;
 +(id)contextWithType:(unsigned)type usersByIDs:(id)ids currentUserID:(id)anId placeProvider:(id)provider;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

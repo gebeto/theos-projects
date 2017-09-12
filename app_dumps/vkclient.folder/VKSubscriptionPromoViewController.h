@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "PopupWindowController.h"
-#import "vkclient-Structs.h"
 #import "VKMController.h"
 
-@class VKSubscriptionItemModel, PopupWindow, PopupWindowView, UIButton, NSString, UIActivityIndicatorView;
+@class UIButton, NSString, UIActivityIndicatorView, PopupWindow, VKSubscriptionItemModel, PopupWindowView;
 
 __attribute__((visibility("hidden")))
 @interface VKSubscriptionPromoViewController : VKMController <PopupWindowController> {

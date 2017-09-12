@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKUser, VKFriendList;
+@class VKFriendList, VKUser;
 
 __attribute__((visibility("hidden")))
 @interface VKPrivacyValue : XXUnknownSuperclass {
@@ -20,7 +20,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKFriendList* list;
 @property(retain, nonatomic) VKUser* user;
 @property(retain, nonatomic) id objectValue;
+-(void).cxx_destruct;
 -(id)targetObject;
--(void)dealloc;
 @end
 

@@ -20,8 +20,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSNumber* total;
 @property(assign, nonatomic) int page;
 @property(assign, nonatomic) int offset;
+-(void).cxx_destruct;
 -(BOOL)shouldLoad:(int)load;
 -(void)spawnCopy:(id)copy;
--(void)dealloc;
 @end
 

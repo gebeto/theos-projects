@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSMutableSet, NSMutableDictionary;
+@class NSMutableDictionary, NSMutableSet;
 
 __attribute__((visibility("hidden")))
 @interface ActivityUpdate : XXUnknownSuperclass {
@@ -23,7 +23,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSMutableSet* offline;
 @property(retain, nonatomic) NSMutableSet* online;
 +(id)update;
+-(void).cxx_destruct;
 -(id)description;
--(void)dealloc;
 @end
 

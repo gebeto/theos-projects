@@ -8,7 +8,7 @@
 #import "VKMessage.h"
 #import "VKDomain.h"
 
-@class VKMessage, NSString, NSNumber, NSArray;
+@class VKMessage, NSNumber, NSArray, NSString;
 @protocol VKSource;
 
 __attribute__((visibility("hidden")))
@@ -49,6 +49,7 @@ __attribute__((visibility("hidden")))
 +(id)dialogWithAPIData:(id)apidata ownder:(id)ownder;
 +(id)dialogWithSearchAPIData:(id)searchAPIData;
 +(id)dialogWithStoreData:(id)storeData owner:(id)owner;
+-(void).cxx_destruct;
 -(id)activePhotosWithUsers:(id)users mainUser:(id)user;
 -(BOOL)knowsUser:(id)user;
 -(void)updatedFromMessage:(id)message;
@@ -57,6 +58,5 @@ __attribute__((visibility("hidden")))
 -(unsigned)date;
 -(id)body;
 -(id)mid;
--(void)dealloc;
 @end
 

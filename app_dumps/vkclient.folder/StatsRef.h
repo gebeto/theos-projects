@@ -6,8 +6,8 @@
  */
 
 #import "NSCopying.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
 @class NSString;
 
@@ -32,6 +32,7 @@ __attribute__((visibility("hidden")))
 +(id)identity:(id)identity;
 +(id)topic:(id)topic;
 +(id)feedSearch:(id)search;
++(id)promotedFeedList:(id)list;
 +(id)feedList:(id)list;
 +(id)feedPhoto;
 +(id)feedRecommended;
@@ -46,6 +47,7 @@ __attribute__((visibility("hidden")))
 +(id)name:(id)name;
 +(id)name:(id)name audioContext:(int)context;
 +(id)name:(id)name context:(id)context audioContext:(int)context3;
+-(void).cxx_destruct;
 -(id)copyWithZone:(NSZone*)zone;
 -(unsigned)hash;
 -(BOOL)isEqual:(id)equal;
@@ -53,6 +55,5 @@ __attribute__((visibility("hidden")))
 -(id)initWithName:(id)name;
 -(id)initWithName:(id)name context:(id)context audioContext:(int)context3;
 -(id)initWithName:(id)name context:(id)context audioContext:(int)context3 source:(id)source;
--(void)dealloc;
 @end
 

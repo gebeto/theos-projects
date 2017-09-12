@@ -14,7 +14,7 @@ __attribute__((visibility("hidden")))
 	SearchPeopleFilter* _filter;
 }
 @property(retain, nonatomic) SearchPeopleFilter* filter;
+-(void).cxx_destruct;
 -(void)spawnCopy:(id)copy;
--(void)dealloc;
 @end
 

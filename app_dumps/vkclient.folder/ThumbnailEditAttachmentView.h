@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "EditAttachmentView.h"
-#import "vkclient-Structs.h"
 
 @class VKMImageView;
 @protocol VKImageFilter;
@@ -18,9 +18,10 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) id<VKImageFilter> imageFilter;
 @property(readonly, retain, nonatomic) VKMImageView* renderView;
 +(id)createRenderView;
+-(void).cxx_destruct;
 -(void)renderImage:(id)image;
 -(void)renderUrl:(id)url;
 -(void)dealloc;
--(id)initWithAttachment:(id)attachment style:(XXStruct_9zIMjA)style;
+-(id)initWithAttachment:(id)attachment style:(id)style;
 @end
 

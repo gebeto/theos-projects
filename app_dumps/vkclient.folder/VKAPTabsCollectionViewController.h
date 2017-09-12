@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class UIView, VKAPModel;
+@class VKAPModel, UIView;
 
 __attribute__((visibility("hidden")))
 @interface VKAPTabsCollectionViewController : XXUnknownSuperclass {

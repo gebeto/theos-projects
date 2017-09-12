@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSOperationQueue, NSMutableArray, NSMutableDictionary, NSURL;
+@class NSOperationQueue, NSMutableDictionary, NSURL, NSMutableArray;
 
 __attribute__((visibility("hidden")))
 @interface AFHTTPClient : XXUnknownSuperclass {

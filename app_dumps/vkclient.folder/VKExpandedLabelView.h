@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class UILabel, NSString;
@@ -32,13 +32,13 @@ __attribute__((visibility("hidden")))
 +(id)expandLabelCaption;
 +(int)descriptionLabelLineBreakMode;
 +(id)descriptionLabelFont;
+-(void).cxx_destruct;
 -(BOOL)shouldCutoff;
 -(void)layoutSubviews;
 -(CGSize)sizeThatFits:(CGSize)fits;
 -(void)setExpandButtonVisible:(BOOL)visible;
 -(void)updateTextDisplay;
 -(id)createSubviews;
--(void)dealloc;
 -(id)initWithFrame:(CGRect)frame briefTextLengthBound:(unsigned)bound;
 @end
 

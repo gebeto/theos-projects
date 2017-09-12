@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "UICollectionViewDelegate.h"
-#import "vkclient-Structs.h"
-#import "UICollectionViewDataSource.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "UICollectionViewDelegate.h"
+#import "UICollectionViewDataSource.h"
 
-@class UICollectionView, ExtrasTabBarItem, NSString, NSArray;
+@class ExtrasTabBarItem, NSString, UICollectionView, NSArray;
 @protocol ExtrasTabBarDelegate;
 
 __attribute__((visibility("hidden")))
@@ -26,8 +26,9 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) ExtrasTabBarItem* selectedItem;
 @property(retain, nonatomic) NSArray* items;
-@property(assign, nonatomic) id<ExtrasTabBarDelegate> delegate;
+@property(assign, nonatomic) __weak id<ExtrasTabBarDelegate> delegate;
 @property(retain, nonatomic) UICollectionView* collectionView;
+-(void).cxx_destruct;
 -(BOOL)collectionView:(id)view shouldSelectItemAtIndexPath:(id)indexPath;
 -(void)setSelectedItem:(id)item animated:(BOOL)animated;
 -(void)collectionView:(id)view didSelectItemAtIndexPath:(id)indexPath;
@@ -38,6 +39,5 @@ __attribute__((visibility("hidden")))
 -(void)layoutSubviews;
 -(BOOL)shouldSelectItem:(id)item;
 -(id)initWithFrame:(CGRect)frame shouldBlur:(BOOL)blur;
--(void)dealloc;
 @end
 

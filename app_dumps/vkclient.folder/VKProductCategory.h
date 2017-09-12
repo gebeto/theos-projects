@@ -7,7 +7,7 @@
 
 #import "VKRenderable.h"
 
-@class NSString, NSNumber;
+@class NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKProductCategory : VKRenderable {
@@ -21,7 +21,7 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) NSString* name;
 @property(retain, nonatomic) NSNumber* ID;
 +(void)load;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

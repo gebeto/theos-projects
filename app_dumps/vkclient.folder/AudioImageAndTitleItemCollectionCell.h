@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "VKMCollectionCell.h"
 #import "AudioBlockCellWithCollectionViewItemCell.h"
+#import "VKClient-Structs.h"
+#import "VKMCollectionCell.h"
 
-@class UILabel, VKMImageView, NSString;
+@class UILabel, NSString, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface AudioImageAndTitleItemCollectionCell : VKMCollectionCell <AudioBlockCellWithCollectionViewItemCell> {

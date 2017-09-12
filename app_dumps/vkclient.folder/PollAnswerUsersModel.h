@@ -14,10 +14,10 @@ __attribute__((visibility("hidden")))
 	VKPollAnswerInPoll* _answer;
 }
 @property(retain, nonatomic) VKPollAnswerInPoll* answer;
+-(void).cxx_destruct;
 -(id)process:(id)process;
 -(id)request:(int)request count:(int)count;
 -(id)countKey;
 -(id)withAnswer:(id)answer;
--(void)dealloc;
 @end
 

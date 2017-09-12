@@ -7,7 +7,7 @@
 
 #import "VKDomain.h"
 
-@class NSString, NSNumber;
+@class NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKPhotoTag : VKDomain {
@@ -30,7 +30,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSNumber* placer_id;
 @property(retain, nonatomic) NSNumber* tag_id;
 @property(retain, nonatomic) NSNumber* uid;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

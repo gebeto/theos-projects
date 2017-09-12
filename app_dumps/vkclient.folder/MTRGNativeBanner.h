@@ -7,7 +7,7 @@
 
 #import "MTRGBanner.h"
 
-@class MTRGImageData, MTRGVideoBanner, NSNumber, NSString, NSArray;
+@class MTRGVideoBanner, NSNumber, NSArray, MTRGImageData, NSString;
 
 @interface MTRGNativeBanner : MTRGBanner {
 	NSString* _title;

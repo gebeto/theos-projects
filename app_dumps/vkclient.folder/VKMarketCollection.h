@@ -25,8 +25,8 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) unsigned count;
 @property(retain, nonatomic) VKPhoto* photo;
 @property(copy, nonatomic) NSString* title;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 -(id)attachmentButtonTitle;
 -(id)attachmentIco;
 -(id)attachmentImage;

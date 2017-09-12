@@ -7,7 +7,7 @@
 
 #import "VKDomainDerived.h"
 
-@class VKPlace, NSString, VKGroup, NSArray;
+@class VKPlace, VKGroup, NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKPlaceDetail : VKDomainDerived {
@@ -19,6 +19,6 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* groupActivity;
 @property(retain, nonatomic) VKGroup* group;
 @property(retain, nonatomic) VKPlace* domain;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

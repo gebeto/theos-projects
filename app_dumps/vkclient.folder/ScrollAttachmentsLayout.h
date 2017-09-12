@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "AttachmentsLayout.h"
 
-@class UIFont, UIScrollView, NSString;
+@class UIScrollView;
 
 __attribute__((visibility("hidden")))
 @interface ScrollAttachmentsLayout : AttachmentsLayout {
@@ -17,6 +17,6 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIScrollView* view;
 -(void)alignAttachments:(id)attachments;
 -(int)indexForPoint:(CGPoint)point;
--(id)initWithContainer:(id)container style:(XXStruct_9zIMjA)style;
+-(id)initWithContainer:(id)container style:(id)style;
 @end
 

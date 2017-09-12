@@ -7,7 +7,7 @@
 
 #import "VKRenderable.h"
 
-@class NSString, NSNumber;
+@class NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKWallMode : VKRenderable {
@@ -26,7 +26,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL show_post;
 @property(retain, nonatomic) NSString* user_name_case;
 @property(retain, nonatomic) NSNumber* owner;
+-(void).cxx_destruct;
 -(Class)rendererClass;
--(void)dealloc;
 @end
 

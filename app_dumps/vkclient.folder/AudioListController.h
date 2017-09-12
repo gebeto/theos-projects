@@ -5,19 +5,22 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKMLiveController.h"
-#import "vkclient-Structs.h"
 
-@class AudioListModel, AudioSelection;
+@class AudioSelection, AudioListModel, VKIdentity;
 
 __attribute__((visibility("hidden")))
 @interface AudioListController : VKMLiveController {
 	BOOL _multi;
 	AudioSelection* _audioSelection;
+	VKIdentity* _playlistFilterIden;
 }
 @property(retain, nonatomic) AudioListModel* model;
+@property(retain, nonatomic) VKIdentity* playlistFilterIden;
 @property(retain, nonatomic) AudioSelection* audioSelection;
 @property(assign, nonatomic) BOOL multi;
+-(void).cxx_destruct;
 -(id)audioFromCell:(id)cell;
 -(void)VKMLiveSearchWillDisplayCell:(id)vkmliveSearch indexPath:(id)path inTable:(id)table;
 -(void)VKMLiveSearchHandleDeselectCell:(id)cell;
@@ -41,6 +44,7 @@ __attribute__((visibility("hidden")))
 -(void)customizeTable:(id)table;
 -(void)actionDone:(id)done;
 -(void)viewDidLoad;
+-(id)setupPlaylistFilterIden:(id)iden;
 -(id)setupAudioSelection:(id)selection;
 -(id)setupMulti:(BOOL)multi;
 -(id)initWithMain:(id)main andModel:(id)model;

@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKMImageView.h"
-#import "vkclient-Structs.h"
 
 @class UIActivityIndicatorView;
 
@@ -15,7 +15,7 @@ __attribute__((visibility("hidden")))
 	UIActivityIndicatorView* _activityView;
 }
 @property(retain, nonatomic) UIActivityIndicatorView* activityView;
+-(void).cxx_destruct;
 -(void)setImage:(id)image;
--(void)dealloc;
 @end
 

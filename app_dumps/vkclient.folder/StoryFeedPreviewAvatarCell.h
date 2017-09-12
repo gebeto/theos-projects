@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UILabel, VKMImageView, UIImageView;
+@class UILabel, UIImageView, VKMImageView;
 @protocol StoryFeedPreviewAvatarCellViewModel;
 
 __attribute__((visibility("hidden")))

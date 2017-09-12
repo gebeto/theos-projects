@@ -6,10 +6,10 @@
  */
 
 #import "Component5Delegate.h"
-#import "Component5StateListener.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "Component5StateListener.h"
 
-@class Component5ControllerContext, UIView, NSMutableSet, Component5, NSString, Component5Node;
+@class Component5, UIView, Component5Node, NSString, Component5ControllerContext, NSMutableSet;
 
 __attribute__((visibility("hidden")))
 @interface Component5Controller : XXUnknownSuperclass <Component5StateListener, Component5Delegate> {

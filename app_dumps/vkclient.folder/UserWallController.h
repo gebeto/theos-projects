@@ -7,7 +7,7 @@
 
 #import "ProfileWallController.h"
 
-@class VKHUD, UIBarButtonItem, PhotoStreamController, ProfileModel;
+@class UIBarButtonItem, VKHUD, ProfileModel, PhotoStreamController;
 
 __attribute__((visibility("hidden")))
 @interface UserWallController : ProfileWallController {
@@ -21,6 +21,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKHUD* actionHUD;
 @property(retain, nonatomic) PhotoStreamController* stream;
 @property(retain, nonatomic) ProfileModel* profile;
+-(void).cxx_destruct;
 -(void)modelLoadingChanged:(id)changed;
 -(void)model:(id)model updated:(id)updated;
 -(void)actionGift:(id)gift;

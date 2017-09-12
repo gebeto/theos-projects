@@ -7,7 +7,7 @@
 
 #import "VKDomain.h"
 
-@class NSString, NSArray;
+@class NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface PhotoEditorStickersItem : VKDomain {

@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "MTRGInstreamAdVideoEngineDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "MTRGInstreamAdVideoEngineDelegate.h"
 
-@class MTRGInstreamAdVideoEngine, NSMutableDictionary, MTRGAdParams, MTRGCustomParams, NSNumber, NSString, NSArray, MTRGInstreamAdSection;
+@class NSMutableDictionary, MTRGAdParams, MTRGCustomParams, MTRGInstreamAdSection, NSNumber, NSArray, NSString, MTRGInstreamAdVideoEngine;
 @protocol MTRGInstreamAdDelegate, MTRGInstreamAdPlayer;
 
 @interface MTRGInstreamAd : XXUnknownSuperclass <MTRGInstreamAdVideoEngineDelegate> {

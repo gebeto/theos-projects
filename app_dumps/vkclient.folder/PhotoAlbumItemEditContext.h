@@ -8,7 +8,7 @@
 #import "VKSwitchEditItemContext.h"
 #import "ItemEditContext.h"
 
-@class NSString, VKPhotoAlbum;
+@class VKPhotoAlbum, NSString;
 
 __attribute__((visibility("hidden")))
 @interface PhotoAlbumItemEditContext : ItemEditContext <VKSwitchEditItemContext> {

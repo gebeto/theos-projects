@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
 @class NSMutableArray;
 @protocol VKMessage;
@@ -24,6 +24,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) id<VKMessage> head;
 +(id)sectionWithSection:(id)section;
 +(id)sectionWithMessages:(id)messages key:(id)key;
+-(void).cxx_destruct;
 -(id)lastObject;
 -(unsigned)indexOfObject:(id)object inSortedRange:(NSRange)sortedRange options:(unsigned)options usingComparator:(id)comparator;
 -(id)objectAtIndex:(unsigned)index;
@@ -37,6 +38,5 @@ __attribute__((visibility("hidden")))
 -(id)printMessages;
 -(id)mid;
 -(void)reset;
--(void)dealloc;
 @end
 

@@ -7,7 +7,7 @@
 
 #import "Component5Node.h"
 
-@class TextComponent, UIColor, VKRenderedText;
+@class UIColor, VKRenderedText, TextComponent;
 
 __attribute__((visibility("hidden")))
 @interface TextComponentNode : Component5Node {

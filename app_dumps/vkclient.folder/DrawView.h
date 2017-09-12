@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UniformContext, UndoHelper, LayerDrawer, NSMutableArray, Brush, UIImage, Bezier, NSArray;
+@class UndoHelper, UIImage, Bezier, NSMutableArray, LayerDrawer, UniformContext, Brush, NSArray;
 
 __attribute__((visibility("hidden")))
 @interface DrawView : XXUnknownSuperclass {

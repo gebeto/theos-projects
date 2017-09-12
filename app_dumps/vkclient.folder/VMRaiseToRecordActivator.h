@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@protocol VMRaiseToRecordActivatorDelegate, RaiseManager;
+@protocol RaiseManager, VMRaiseToRecordActivatorDelegate;
 
 __attribute__((visibility("hidden")))
 @interface VMRaiseToRecordActivator : XXUnknownSuperclass {

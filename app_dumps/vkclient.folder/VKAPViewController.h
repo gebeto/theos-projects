@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "VKAPModelDelegate.h"
-#import "vkclient-Structs.h"
-#import "VKAPContentViewControllerSizeDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
+#import "VKAPModelDelegate.h"
+#import "VKAPContentViewControllerSizeDelegate.h"
 
-@class UIView, VKAPTabsCollectionViewController, VKAPTabsContentViewController, VKAPModel, NSString, VKAPBottomToolbar, UIImageView;
+@class VKAPTabsContentViewController, VKAPModel, VKAPBottomToolbar, UIView, VKAPTabsCollectionViewController, UIImageView, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKAPViewController : XXUnknownSuperclass <VKAPContentViewControllerSizeDelegate, VKAPModelDelegate> {
@@ -65,7 +65,6 @@ __attribute__((visibility("hidden")))
 -(void)vkapModelNeedDismissPicker:(id)picker;
 -(void)vkapModel:(id)model shouldUpdateTitle:(id)title;
 -(void)vkapModel:(id)model didChangeTab:(int)tab;
--(void)dealloc;
 -(id)initWithModel:(id)model options:(int)options;
 @end
 

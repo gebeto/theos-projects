@@ -14,8 +14,8 @@ __attribute__((visibility("hidden")))
 	NSMutableArray* _options;
 }
 @property(retain, nonatomic) NSMutableArray* options;
+-(void).cxx_destruct;
 -(int)selectedQuality;
 -(void)renderVideo:(id)video quality:(int)quality;
--(void)dealloc;
 @end
 

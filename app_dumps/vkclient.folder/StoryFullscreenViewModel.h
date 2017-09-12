@@ -7,7 +7,7 @@
 
 #import "NSObject.h"
 
-@class StoryIdentity, NSDate, UIImage, AVURLAsset, NSString, NSURL;
+@class NSURL, UIImage, StoryIdentity, NSDate, NSString, AVURLAsset;
 @protocol VKSource;
 
 @protocol StoryFullscreenViewModel <NSObject>

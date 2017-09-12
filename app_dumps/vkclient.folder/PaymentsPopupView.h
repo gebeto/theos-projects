@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "UIToolbarDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "UIToolbarDelegate.h"
 
-@class UIToolbar, UITableView, NSString;
+@class UITableView, NSString, UIToolbar;
 @protocol PaymentsPopupViewDelegate;
 
 __attribute__((visibility("hidden")))
@@ -21,12 +21,12 @@ __attribute__((visibility("hidden")))
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
-@property(assign, nonatomic) id<PaymentsPopupViewDelegate> delegate;
+@property(assign, nonatomic) __weak id<PaymentsPopupViewDelegate> delegate;
 @property(retain, nonatomic) UIToolbar* topToolbar;
 @property(retain, nonatomic) UITableView* tableView;
+-(void).cxx_destruct;
 -(int)positionForBar:(id)bar;
 -(void)actionCancel:(id)cancel;
 -(id)initWithDelegate:(id)delegate;
--(void)dealloc;
 @end
 

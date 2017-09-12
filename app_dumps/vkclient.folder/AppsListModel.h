@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "ListModel.h"
 
 @class NSNumber;
@@ -21,6 +21,7 @@ __attribute__((visibility("hidden")))
 +(id)requestWithFilter:(unsigned)filter inRange:(NSRange)range ofGenreID:(id)genreID;
 +(id)requestWithFilter:(unsigned)filter inRange:(NSRange)range;
 +(id)requestWithFilter:(unsigned)filter;
+-(void).cxx_destruct;
 -(void)handleRemove:(id)remove :(id)arg2;
 -(void)registerForEvents:(id)events;
 -(id)process:(id)process;
@@ -28,6 +29,5 @@ __attribute__((visibility("hidden")))
 -(int)defaultPage;
 -(id)withGenreID:(id)genreID;
 -(id)filtered:(unsigned)filtered;
--(void)dealloc;
 @end
 

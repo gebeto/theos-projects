@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class CAShapeLayer;
@@ -14,9 +14,9 @@ __attribute__((visibility("hidden")))
 @interface CheckmarkView : XXUnknownSuperclass {
 	CAShapeLayer* _maskLayer;
 }
+-(void).cxx_destruct;
 -(void)reset;
 -(void)startCheckmarkAnimation:(float)animation;
 -(id)initWithFrame:(CGRect)frame;
--(void)dealloc;
 @end
 

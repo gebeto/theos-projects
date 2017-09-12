@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "UITextFieldDelegate.h"
 #import "VKMLiveController.h"
-#import "vkclient-Structs.h"
 
-@class UsersSelection, NSString, TextFieldGroupedCell;
+@class TextFieldGroupedCell, NSString, UsersSelection;
 
 __attribute__((visibility("hidden")))
 @interface CreateDialogController : VKMLiveController <UITextFieldDelegate> {
@@ -22,6 +22,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) UsersSelection* selection;
 @property(retain, nonatomic) TextFieldGroupedCell* cellTitle;
+-(void).cxx_destruct;
 -(id)tableView:(id)view cellForRowAtIndexPath:(id)indexPath;
 -(float)tableView:(id)view heightForHeaderInSection:(int)section;
 -(void)scrollViewWillBeginDragging:(id)scrollView;
@@ -31,6 +32,5 @@ __attribute__((visibility("hidden")))
 -(void)viewDidLoad;
 -(BOOL)VKMScrollViewDisablePTR;
 -(int)VKMTableStyle;
--(void)dealloc;
 @end
 

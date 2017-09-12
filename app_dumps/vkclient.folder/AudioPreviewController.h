@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "PopupWindowController.h"
-#import "vkclient-Structs.h"
 #import "VKMController.h"
 
-@class UILabel, PopupWindow, PopupWindowView, VKAudio, AVPlayer, UIButton, NSString, AudioCoverImageView;
+@class UIButton, VKAudio, AudioCoverImageView, UILabel, NSString, PopupWindow, PopupWindowView, AVPlayer;
 
 __attribute__((visibility("hidden")))
 @interface AudioPreviewController : VKMController <PopupWindowController> {
@@ -38,6 +38,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UILabel* titleLabel;
 @property(retain, nonatomic) AudioCoverImageView* imageView;
 @property(retain, nonatomic) PopupWindowView* view;
+-(void).cxx_destruct;
 -(void)popupWindow:(id)window present:(BOOL)present animated:(BOOL)animated completion:(id)completion;
 -(void)actionButton:(id)button;
 -(void)playURL:(id)url stop:(BOOL)stop;

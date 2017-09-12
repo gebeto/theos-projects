@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "StoreUpdateModel.h"
-#import "ModelUpdateHandler.h"
 #import "UsersCacheHandler.h"
+#import "ModelUpdateHandler.h"
+#import "StoreUpdateModel.h"
 
-@class NSDictionary, NSString;
+@class NSString, NSDictionary;
 
 __attribute__((visibility("hidden")))
 @interface UsersModel : StoreUpdateModel <ModelUpdateHandler, UsersCacheHandler> {
@@ -20,12 +20,12 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 @property(retain) NSDictionary* users;
+-(void).cxx_destruct;
 -(void)process:(id)process;
 -(void)sourcesCacheLoadUsers:(id)users;
 -(void)sourcesCacheAddUsersSync:(id)sync;
 -(void)update:(id)update;
 -(void)updateActivity:(id)activity;
 -(void)processSyncAdd:(id)add online:(id)online online_mobile:(id)mobile offline:(id)offline usersLookup:(id)lookup;
--(void)dealloc;
 @end
 

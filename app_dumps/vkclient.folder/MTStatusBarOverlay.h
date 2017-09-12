@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "UITableViewDataSource.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "UITableViewDataSource.h"
 
-@class UILabel, UITextView, UIView, UITableView, NSMutableArray, UIViewController, UIImage, NSString, UIActivityIndicatorView, UIImageView;
+@class UITableView, UITextView, UIImage, NSMutableArray, UILabel, UIView, UIImageView, UIViewController, NSString, UIActivityIndicatorView;
 @protocol MTStatusBarOverlayDelegate;
 
 __attribute__((visibility("hidden")))

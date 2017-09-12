@@ -18,9 +18,9 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKGroupsCatalogInfo* catalog;
 @property(assign, nonatomic) int totalInvites;
 @property(assign, nonatomic) int totalGroups;
+-(void).cxx_destruct;
 -(id)titleForSection:(unsigned)section;
 -(id)groupSections;
 -(void)spawnCopy:(id)copy;
--(void)dealloc;
 @end
 

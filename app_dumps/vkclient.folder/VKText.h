@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "VKTextCopy.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKTextCopy.h"
 
 @class NSString;
 
@@ -24,8 +24,8 @@ __attribute__((visibility("hidden")))
 +(id)textWithEdit:(id)edit;
 +(id)text:(id)text allowEmpty:(BOOL)empty;
 +(id)text:(id)text;
+-(void).cxx_destruct;
 -(id)textCopy;
 -(id)textWithMentions;
--(void)dealloc;
 @end
 

@@ -19,8 +19,8 @@ __attribute__((visibility("hidden")))
 +(id)identityFromString:(id)string;
 +(id)linkForIdentity:(id)identity mobile:(BOOL)mobile;
 +(id)shared;
+-(void).cxx_destruct;
 -(id)routeURL:(id)url main:(id)main navContext:(id)context;
 -(id)routeLink:(id)link main:(id)main navContext:(id)context;
--(void)dealloc;
 @end
 

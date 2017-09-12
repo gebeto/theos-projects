@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "VideoPlayStats.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VideoPlayStats.h"
 
-@class VKClient, NSString, VKIdentity;
+@class VKClient, VKIdentity, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VideoPlayLiveStats : XXUnknownSuperclass <VideoPlayStats> {
@@ -23,6 +23,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign, nonatomic) VKIdentity* video;
 @property(readonly, assign, nonatomic) VKClient* client;
 +(id)video:(id)video client:(id)client;
+-(void).cxx_destruct;
 -(void)toggleFullscreen:(BOOL)fullscreen;
 -(void)toggleVolume:(BOOL)volume;
 -(void)progress:(double)progress;
@@ -32,6 +33,5 @@ __attribute__((visibility("hidden")))
 -(void)play:(BOOL)play;
 -(void)heartbeat;
 -(id)initWithVideo:(id)video client:(id)client;
--(void)dealloc;
 @end
 

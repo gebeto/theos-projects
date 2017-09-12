@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "GoogleOauthClientConfiguration.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "GoogleOauthClientConfiguration.h"
 
 @class NSString;
 
@@ -23,6 +23,6 @@ __attribute__((visibility("hidden")))
 @property(copy, nonatomic) NSString* clientSecret;
 @property(copy, nonatomic) NSString* clientIdentifier;
 @property(copy, nonatomic) NSString* redirectUri;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

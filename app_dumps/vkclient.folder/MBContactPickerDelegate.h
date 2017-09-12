@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "MBContactCollectionViewDelegate.h"
-#import "vkclient-Structs.h"
 
 
 @protocol MBContactPickerDelegate <MBContactCollectionViewDelegate>

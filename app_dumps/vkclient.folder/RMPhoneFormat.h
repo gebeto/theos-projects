@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSMutableDictionary, NSString, NSData;
+@class NSMutableDictionary, NSData, NSString;
 
 __attribute__((visibility("hidden")))
 @interface RMPhoneFormat : XXUnknownSuperclass {

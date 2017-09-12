@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "VKMCollectionCell.h"
 
 @class VKDomainWithCustomCellClass, UILabel, MarketGalleryImageView;
@@ -26,6 +26,7 @@ __attribute__((visibility("hidden")))
 +(CGSize)imageSize;
 +(CGSize)cellSizeWithDomain:(id)domain widthConstraint:(float)constraint;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)setHighlighted:(BOOL)highlighted;
 -(void)attachEntity:(id)entity expectedReuse:(double)reuse;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
@@ -34,7 +35,6 @@ __attribute__((visibility("hidden")))
 -(void)setBackgroundColor:(id)color;
 -(void)customizeSubviews;
 -(id)createSubviews;
--(void)dealloc;
 -(id)createImageFilter;
 -(id)initWithFrame:(CGRect)frame;
 @end

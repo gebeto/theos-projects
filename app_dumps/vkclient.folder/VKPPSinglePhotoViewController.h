@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKPPModel, VKPPCropView, VKPPListView;
+@class VKPPListView, VKPPModel, VKPPCropView;
 
 @interface VKPPSinglePhotoViewController : XXUnknownSuperclass {
 	BOOL _hiddenStatusBar;

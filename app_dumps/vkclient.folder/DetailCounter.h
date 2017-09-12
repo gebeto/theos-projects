@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UILabel, UIImage;
+@class UIImage, UILabel;
 
 __attribute__((visibility("hidden")))
 @interface DetailCounter : XXUnknownSuperclass {
@@ -19,7 +19,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIImage* normal;
 @property(retain, nonatomic) UILabel* title;
 +(float)widthWithTitle:(id)title;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)initWithImageName:(id)imageName;
 @end
 

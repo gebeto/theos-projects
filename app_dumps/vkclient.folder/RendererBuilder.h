@@ -15,8 +15,8 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSMutableArray* elements;
 +(id)builder;
+-(void).cxx_destruct;
 -(id)add:(id)add;
 -(id)build;
--(void)dealloc;
 @end
 

@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSIndexPath, UITableView, NSDate;
+@class UITableView, NSIndexPath, NSDate;
 
 __attribute__((visibility("hidden")))
 @interface UITableViewMiddleObjectTracker : XXUnknownSuperclass {
@@ -18,6 +18,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSIndexPath* lastIndexPath;
 @property(retain, nonatomic) NSDate* lastDate;
 @property(readonly, assign, nonatomic) UITableView* tableView;
+-(void).cxx_destruct;
 -(void)start;
 -(void)stop;
 -(void)trackIndexPath:(id)path;

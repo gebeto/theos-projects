@@ -8,14 +8,15 @@
 #import "VKSelectorOptionViewController.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKNewsList, UIImage, NSString;
+@class UIImage, PromotedNewsList, VKNewsList, NSString;
 
 __attribute__((visibility("hidden")))
 @interface NewsSelectorMenuItem : XXUnknownSuperclass <VKSelectorOptionViewController> {
 	NSString* _title;
 	UIImage* _icon;
 	int _type;
-	VKNewsList* _list;
+	VKNewsList* _newsList;
+	PromotedNewsList* _promotedNewsList;
 }
 @property(readonly, copy) NSString* debugDescription;
 @property(readonly, copy) NSString* description;
@@ -23,13 +24,16 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(readonly, retain, nonatomic) UIImage* icon;
 @property(readonly, copy, nonatomic) NSString* title;
-@property(readonly, retain, nonatomic) VKNewsList* list;
+@property(readonly, retain, nonatomic) PromotedNewsList* promotedNewsList;
+@property(readonly, retain, nonatomic) VKNewsList* newsList;
 @property(readonly, assign, nonatomic) int type;
-+(id)list:(id)list;
++(id)promotedNewsList:(id)list;
++(id)newsList:(id)list;
 +(id)type:(int)type;
+-(void).cxx_destruct;
 -(id)viewControllerWithMainModel:(id)mainModel;
--(id)initWithList:(id)list;
+-(id)initWithPromotedNewsList:(id)promotedNewsList;
+-(id)initWithNewsList:(id)newsList;
 -(id)initWithType:(int)type;
--(void)dealloc;
 @end
 

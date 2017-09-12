@@ -5,16 +5,16 @@
  * Source: (null)
  */
 
+#import "ViewControllerAppearanceStateHandler.h"
+#import "VKClient-Structs.h"
 #import "TrackingBoundsView.h"
-#import "vkclient-Structs.h"
-#import "VKVideoPlayerHolder.h"
 #import "VKThumbnailView.h"
-#import "VideoPlayerToFullScreenTransitionDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 #import "VideoPlayerFromFullScreenTransitionVideoViewDestination.h"
-#import "ViewControllerAppearanceStateHandler.h"
+#import "VKVideoPlayerHolder.h"
+#import "VideoPlayerToFullScreenTransitionDelegate.h"
 
-@class VKVideoPlayer, FinishedVideoActionsOverlayView, VKImageVariant, FeedVideoIndicatorView, UIImage, VKVideo, NSString, NSTimer, KVOObserver, VideoPlayerErrorOverlayView, UIImageView, NSURL;
+@class UIImage, NSURL, VKVideo, KVOObserver, VideoPlayerErrorOverlayView, FinishedVideoActionsOverlayView, VKImageVariant, UIImageView, FeedVideoIndicatorView, VKVideoPlayer, NSString, NSTimer;
 @protocol FeedVideoViewDelegate;
 
 __attribute__((visibility("hidden")))

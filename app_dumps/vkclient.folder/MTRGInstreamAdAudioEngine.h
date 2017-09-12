@@ -6,10 +6,10 @@
  */
 
 #import "MTRGInstreamAudioAdPlayerDelegate.h"
-#import "MTRGNavigationHelperDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "MTRGNavigationHelperDelegate.h"
 
-@class MTRGAudioData, MTRGAdData, MTRGInstreamAudioAdBanner, MTRGAudioBanner, NSMutableArray, NSTimer, NSString, MTRGAudioSection, NSArray;
+@class NSMutableArray, MTRGAudioSection, MTRGAudioData, NSTimer, NSString, NSArray, MTRGAdData, MTRGInstreamAudioAdBanner, MTRGAudioBanner;
 @protocol MTRGInstreamAudioAdPlayer, MTRGInstreamAdAudioEngineDelegate;
 
 @interface MTRGInstreamAdAudioEngine : XXUnknownSuperclass <MTRGNavigationHelperDelegate, MTRGInstreamAudioAdPlayerDelegate> {

@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "MTRGAbstractDataProvider.h"
 #import "CLLocationManagerDelegate.h"
+#import "MTRGAbstractDataProvider.h"
 
 @class CLLocationManager, NSString;
 

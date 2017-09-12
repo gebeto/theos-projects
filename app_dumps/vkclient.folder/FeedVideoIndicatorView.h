@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UILabel, RoundedProgressOverlayView, VKLiveVideoGradientView, VideoAutoplayEqualizerIndicatorView, UIImageView;
+@class VKLiveVideoGradientView, UILabel, RoundedProgressOverlayView, UIImageView, VideoAutoplayEqualizerIndicatorView;
 
 __attribute__((visibility("hidden")))
 @interface FeedVideoIndicatorView : XXUnknownSuperclass {

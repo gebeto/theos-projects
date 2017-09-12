@@ -18,7 +18,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSMutableArray* items;
 @property(retain, nonatomic) NSNumber* sourceId;
 @property(assign, nonatomic) int type;
+-(void).cxx_destruct;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

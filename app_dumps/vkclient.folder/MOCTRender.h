@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class NSAttributedString;
@@ -26,6 +26,7 @@ __attribute__((visibility("hidden")))
 +(id)attributesForLink:(id)link inactive:(id)inactive active:(id)active;
 +(id)render:(id)render width:(float)width;
 +(id)render:(id)render limit:(CGSize)limit;
+-(void).cxx_destruct;
 -(id)linkAtIndex:(long)index;
 -(long)characterIndexAtPoint:(CGPoint)point;
 -(void)drawInContext:(CGContextRef)context;

@@ -14,6 +14,6 @@ __attribute__((visibility("hidden")))
 	MailInvitationAction* _invitationOperation;
 }
 @property(retain, nonatomic) MailInvitationAction* invitationOperation;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

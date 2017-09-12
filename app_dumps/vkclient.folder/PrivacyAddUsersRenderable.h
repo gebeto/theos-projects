@@ -19,6 +19,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) VKPrivacySetting* privacy;
+-(void).cxx_destruct;
 -(id)setupPrivacy:(id)privacy;
 -(BOOL)disclosure;
 -(id)title;
@@ -26,6 +27,5 @@ __attribute__((visibility("hidden")))
 -(id)titleFont;
 -(float)titleOffsetX;
 -(Class)rendererClass;
--(void)dealloc;
 @end
 

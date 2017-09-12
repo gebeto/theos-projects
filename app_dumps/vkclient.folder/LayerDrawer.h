@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UniformContext, UIImage, Bezier;
+@class UIImage, Bezier, UniformContext;
 
 __attribute__((visibility("hidden")))
 @interface LayerDrawer : XXUnknownSuperclass {

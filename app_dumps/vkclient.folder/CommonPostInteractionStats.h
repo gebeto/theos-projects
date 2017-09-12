@@ -8,7 +8,7 @@
 #import "FeedPostInteractionStats.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class CommonStatsManager, NSString, VKIdentity, VKAdData;
+@class CommonStatsManager, VKAdData, VKIdentity, NSString;
 
 __attribute__((visibility("hidden")))
 @interface CommonPostInteractionStats : XXUnknownSuperclass <FeedPostInteractionStats> {
@@ -25,6 +25,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign, nonatomic) VKIdentity* post;
 +(BOOL)validTarget:(id)target;
 +(id)post:(id)post adData:(id)data statsManager:(id)manager;
+-(void).cxx_destruct;
 -(void)tapLinkAttachment:(id)attachment ref:(id)ref;
 -(void)tapSnippetButton:(id)button ref:(id)ref;
 -(void)tapSnippet:(id)snippet ref:(id)ref;
@@ -32,6 +33,5 @@ __attribute__((visibility("hidden")))
 -(void)playAudio:(id)audio ref:(id)ref;
 -(void)action:(int)action context:(id)context;
 -(id)initWithPost:(id)post adData:(id)data statsManager:(id)manager;
--(void)dealloc;
 @end
 

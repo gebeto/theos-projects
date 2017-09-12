@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKStoreProductSticker, UIImage, NSString;
+@class UIImage, VKStoreProductSticker, NSString;
 
 __attribute__((visibility("hidden")))
 @interface ExtrasTabBarItem : XXUnknownSuperclass {
@@ -28,7 +28,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* customClassTag;
 @property(retain, nonatomic) NSString* title;
 @property(retain, nonatomic) NSString* badgeValue;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)init;
 @end
 

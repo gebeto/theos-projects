@@ -16,6 +16,6 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSNumber* disabled_until;
 @property(assign, nonatomic) BOOL sound;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

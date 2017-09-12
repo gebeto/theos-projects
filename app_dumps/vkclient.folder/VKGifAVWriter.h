@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKGifAVWorker.h"
-#import "vkclient-Structs.h"
 
-@class AVAssetWriterInputPixelBufferAdaptor, AVAssetWriterInput, NSDictionary, AVAssetWriter, NSMutableArray, NSObject, NSURL;
+@class AVAssetWriter, NSURL, NSMutableArray, AVAssetWriterInputPixelBufferAdaptor, NSDictionary, NSObject, AVAssetWriterInput;
 @protocol VKGifAVWriterDelegate, OS_dispatch_semaphore, OS_dispatch_queue;
 
 __attribute__((visibility("hidden")))

@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "InvitationAction.h"
 #import "MFMessageComposeViewControllerDelegate.h"
+#import "InvitationAction.h"
 
 @class NSString;
 
@@ -21,8 +21,8 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) NSString* message;
 @property(retain, nonatomic) NSString* contact;
+-(void).cxx_destruct;
 -(void)messageComposeViewController:(id)controller didFinishWithResult:(int)result;
 -(void)runInContext:(id)context;
--(void)dealloc;
 @end
 

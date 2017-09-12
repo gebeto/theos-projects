@@ -9,7 +9,7 @@
 #import "NSObject.h"
 #import "VKProfile.h"
 
-@class VKMultinameUser, NSDictionary, VKPhoto, VKAudio, VKLiveVideoSettings, VKUser, VKVideo, NSString, VKProfilePersonal, VKBirthDate, NSArray, VKOccupation;
+@class VKPhoto, VKVideo, VKLiveVideoSettings, VKAudio, VKBirthDate, VKProfilePersonal, VKOccupation, VKUser, NSString, VKMultinameUser, NSArray, NSDictionary;
 
 @protocol VKProfile <NSObject>
 @property(assign, nonatomic) int access_mode;
@@ -175,6 +175,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKUser* user;
 @property(readonly, assign, nonatomic) int profileMode;
 +(id)profilePreviewWithUser:(id)user;
+-(void).cxx_destruct;
 -(void)profileBlocksForOwner:(BOOL)owner block:(id)block;
 -(void)profileUserStatus:(id)status;
 -(id)profileStatus;
@@ -183,6 +184,5 @@ __attribute__((visibility("hidden")))
 -(id)profilePhoto;
 -(BOOL)allCounts;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

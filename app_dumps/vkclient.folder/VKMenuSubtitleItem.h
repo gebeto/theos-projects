@@ -18,6 +18,6 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL verified;
 @property(retain, nonatomic) NSString* subtitle;
 @property(retain, nonatomic) VKDomain<VKSource>* domain;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

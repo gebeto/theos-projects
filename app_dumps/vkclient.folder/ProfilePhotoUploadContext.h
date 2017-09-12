@@ -6,8 +6,8 @@
  */
 
 #import "PhotoUploadContext.h"
-#import "vkclient-Structs.h"
 #import "DomainEvent.h"
+#import "VKClient-Structs.h"
 
 @class NSString;
 
@@ -24,6 +24,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) CGAffineTransform forcedCrop;
 +(int)domainType;
 +(id)photoContextWithSession:(id)session assetData:(id)data;
+-(void).cxx_destruct;
 -(BOOL)forceHighQuality;
 -(BOOL)handleResultServerData:(id)data uploadData:(id)data2 saveData:(id)data3;
 -(id)requestForSaving:(id)saving;
@@ -31,6 +32,5 @@ __attribute__((visibility("hidden")))
 -(id)uploadURLToUse:(id)use;
 -(void)willUseImage:(id)image;
 -(id)requestForUploadServer;
--(void)dealloc;
 @end
 

@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "UISearchBarDelegate.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
+#import "UISearchBarDelegate.h"
 
-@class UISearchBar, VKMController, UIView, UIViewController, NSString;
+@class UISearchBar, UIView, NSString, UIViewController, VKMController;
 @protocol VKMSearchDisplayControllerDelegate;
 
 __attribute__((visibility("hidden")))
@@ -24,11 +24,12 @@ __attribute__((visibility("hidden")))
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
-@property(assign, nonatomic) id<VKMSearchDisplayControllerDelegate> delegate;
+@property(assign, nonatomic) __weak id<VKMSearchDisplayControllerDelegate> delegate;
 @property(retain, nonatomic) VKMController* resultsListViewController;
 @property(retain, nonatomic) UIView* searchContentsView;
 @property(retain, nonatomic) UIViewController* contentsController;
 @property(retain, nonatomic) UISearchBar* searchBar;
+-(void).cxx_destruct;
 -(void)setResultsListVisible:(BOOL)visible;
 -(void)setSearchPanelVisible:(BOOL)visible;
 -(void)endSearching;
@@ -39,6 +40,5 @@ __attribute__((visibility("hidden")))
 -(void)searchBarTextDidBeginEditing:(id)searchBarText;
 -(void)searchBar:(id)bar textDidChange:(id)text;
 -(id)initWithSearchBar:(id)searchBar contentsController:(id)controller searchResultsController:(id)controller3;
--(void)dealloc;
 @end
 

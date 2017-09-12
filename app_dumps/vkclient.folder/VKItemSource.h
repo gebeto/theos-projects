@@ -20,6 +20,6 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) id<VKSourceStatus> item;
 @property(retain, nonatomic) id<VKSource> source;
 +(id)item:(id)item source:(id)source statContext:(id)context;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "UISearchBarDelegate.h"
 #import "FeedController.h"
+#import "VKClient-Structs.h"
+#import "UISearchBarDelegate.h"
 
-@class UISearchBar, NSString, LoadingModel;
+@class UISearchBar, LoadingModel, NSString;
 @protocol SearchModel;
 
 __attribute__((visibility("hidden")))
@@ -22,12 +22,12 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) unsigned hash;
 @property(retain, nonatomic) LoadingModel<SearchModel>* model;
 @property(retain, nonatomic) UISearchBar* searchBar;
+-(void).cxx_destruct;
 -(void)searchBarSearchButtonClicked:(id)clicked;
 -(void)searchBarCancelButtonClicked:(id)clicked;
 -(void)searchBar:(id)bar textDidChange:(id)text;
 -(void)VKMScrollViewRefreshLoading;
 -(BOOL)VKMScrollViewDisablePTR;
 -(void)viewDidLoad;
--(void)dealloc;
 @end
 

@@ -17,6 +17,6 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) EventContext* eventContext;
 @property(retain, nonatomic) VKSession* session;
 +(id)contextWithSession:(id)session;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

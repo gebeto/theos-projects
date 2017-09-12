@@ -5,23 +5,21 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UILabel, UIButton;
+@class UIButton;
 
 __attribute__((visibility("hidden")))
 @interface VKAudioMoreButton : XXUnknownSuperclass {
-	UILabel* _durationLabel;
 	UIButton* _moreButton;
 }
 @property(retain, nonatomic) UIButton* moreButton;
-@property(retain, nonatomic) UILabel* durationLabel;
+-(void).cxx_destruct;
 -(BOOL)pointInside:(CGPoint)inside withEvent:(id)event;
 -(CGSize)sizeThatFits:(CGSize)fits;
 -(void)layoutSubviews;
 -(id)createSubviews;
 -(id)initWithFrame:(CGRect)frame;
--(void)dealloc;
 @end
 

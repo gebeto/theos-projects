@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKMImageView.h"
-#import "vkclient-Structs.h"
 
 @class UIView, UIImageView;
 
@@ -17,8 +17,8 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) UIView* overlayView;
 @property(retain, nonatomic) UIImageView* scrimView;
+-(void).cxx_destruct;
 -(void)changeImage:(id)image animated:(BOOL)animated;
 -(id)initWithFrame:(CGRect)frame;
--(void)dealloc;
 @end
 

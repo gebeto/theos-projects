@@ -19,9 +19,9 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIWindow* presentedWindow;
 @property(readonly, assign, nonatomic) int vkm_currentOperation;
 +(BOOL)isNavigationWithPresentedWindow:(id)presentedWindow;
+-(void).cxx_destruct;
 -(id)popViewControllerAnimated:(BOOL)animated;
 -(unsigned)supportedInterfaceOrientations;
--(void)dealloc;
 -(id)initWithRootViewController:(id)rootViewController;
 @end
 

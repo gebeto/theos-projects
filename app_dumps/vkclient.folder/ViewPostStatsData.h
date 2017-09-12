@@ -5,32 +5,29 @@
  * Source: (null)
  */
 
-#import "StatsData.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
+#import "StatsData.h"
 
-@class NSMutableDictionary, NSString;
+@class NSMutableArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface ViewPostStatsData : XXUnknownSuperclass <StatsData> {
-	NSMutableDictionary* _data;
+	NSMutableArray* _events;
 }
 @property(readonly, copy) NSString* debugDescription;
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
-@property(retain, nonatomic) NSMutableDictionary* data;
--(void)enumeratePostIdsAndDurationsForRef:(id)ref withBlock:(id)block;
--(void)enumerateRefsWithBlock:(id)block;
--(id)allRefs;
+@property(retain, nonatomic) NSMutableArray* events;
+-(void).cxx_destruct;
 -(id)request;
 -(id)copyWithZone:(NSZone*)zone;
 -(BOOL)hasEvents;
 -(id)JSONRepresentation;
--(void)viewPostWithId:(id)anId duration:(double)duration ref:(id)ref;
+-(void)viewPostWithId:(id)anId duration:(double)duration ref:(id)ref trackCode:(id)code;
 -(void)viewPost:(id)post duration:(double)duration ref:(id)ref;
 -(void)registerEvent:(id)event batch:(BOOL)batch;
 -(id)init;
--(void)dealloc;
 @end
 

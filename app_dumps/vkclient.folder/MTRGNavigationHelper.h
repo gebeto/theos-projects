@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "SFSafariViewControllerDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "SFSafariViewControllerDelegate.h"
 
-@class MTRGBanner, MTRGStoreProductViewControllerHelper, UIViewController, NSString;
+@class MTRGStoreProductViewControllerHelper, MTRGBanner, NSString, UIViewController;
 @protocol MTRGNavigationHelperDelegate;
 
 @interface MTRGNavigationHelper : XXUnknownSuperclass <SFSafariViewControllerDelegate> {

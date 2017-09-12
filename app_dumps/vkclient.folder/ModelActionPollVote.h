@@ -7,7 +7,7 @@
 
 #import "ModelAction.h"
 
-@class VKPoll, VKIdentity, NSNumber;
+@class VKIdentity, NSNumber, VKPoll;
 
 __attribute__((visibility("hidden")))
 @interface ModelActionPollVote : ModelAction {
@@ -20,9 +20,9 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL board;
 @property(retain, nonatomic) VKIdentity* target;
 +(int)domainType;
+-(void).cxx_destruct;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
 -(BOOL)actionShowsSuccessConfirmation;
--(void)dealloc;
 @end
 

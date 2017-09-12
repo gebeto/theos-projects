@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKImage.h"
-#import "vkclient-Structs.h"
 
 @class UploadEditAttachment;
 

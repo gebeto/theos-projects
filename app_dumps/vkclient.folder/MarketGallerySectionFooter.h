@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UIView, UIButton, NSString;
+@class UIButton, UIView, NSString;
 
 __attribute__((visibility("hidden")))
 @interface MarketGallerySectionFooter : XXUnknownSuperclass {
@@ -22,12 +22,12 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UIButton* button;
 @property(readonly, retain, nonatomic) UIView* bottomSeparator;
 @property(readonly, retain, nonatomic) UIView* separator;
+-(void).cxx_destruct;
 -(void)layoutSubviews;
 -(void)setOpaque:(BOOL)opaque;
 -(void)setBackgroundColor:(id)color;
 -(void)buttonTapped;
 -(id)createSubviews;
--(void)dealloc;
 -(id)initWithFrame:(CGRect)frame;
 @end
 

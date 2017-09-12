@@ -7,13 +7,13 @@
 
 #import "VKDomain.h"
 
-@class VKAccountInfoP2PParams, NSDictionary, VKAccountInfoAudioAdParams, NSString, VKAccountInfoVKLiveParams;
+@class VKAccountInfoAudioAdParams, VKAccountInfoVKLiveParams, VKAccountInfoP2PParams, NSString, NSDictionary;
 
 __attribute__((visibility("hidden")))
 @interface VKAccountInfo : VKDomain {
 	BOOL _no_wall_replies;
 	BOOL _own_posts_default;
-	BOOL _music_intro;
+	BOOL _community_comments;
 	int _intro;
 	NSDictionary* _globalSettings;
 	NSString* _support_url;
@@ -27,7 +27,6 @@ __attribute__((visibility("hidden")))
 	VKAccountInfoVKLiveParams* _liveParams;
 	VKAccountInfoAudioAdParams* _audioAdParams;
 }
-@property(assign, nonatomic) BOOL music_intro;
 @property(retain, nonatomic) VKAccountInfoAudioAdParams* audioAdParams;
 @property(retain, nonatomic) VKAccountInfoVKLiveParams* liveParams;
 @property(retain, nonatomic) VKAccountInfoP2PParams* p2pParams;
@@ -39,10 +38,11 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* phone;
 @property(retain, nonatomic) NSString* support_url;
 @property(retain, nonatomic) NSDictionary* globalSettings;
+@property(assign, nonatomic) BOOL community_comments;
 @property(assign, nonatomic) BOOL own_posts_default;
 @property(assign, nonatomic) BOOL no_wall_replies;
 @property(assign, nonatomic) int intro;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

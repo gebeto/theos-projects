@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "UploadEditAttachmentView.h"
+#import "VKClient-Structs.h"
 
-@class UILabel, VideoUploadEditAttachment;
+@class VideoUploadEditAttachment, UILabel;
 
 __attribute__((visibility("hidden")))
 @interface VideoEditAttachmentView : UploadEditAttachmentView {
@@ -16,11 +16,12 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) VideoUploadEditAttachment* attachment;
 @property(retain, nonatomic) UILabel* durationLabel;
+-(void).cxx_destruct;
 -(void)renderFinish;
 -(void)renderFailed:(BOOL)failed;
 -(void)renderDuration:(float)duration;
 -(void)notificationThumbnail:(id)thumbnail;
 -(void)dealloc;
--(id)initWithAttachment:(id)attachment style:(XXStruct_9zIMjA)style;
+-(id)initWithAttachment:(id)attachment style:(id)style;
 @end
 

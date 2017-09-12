@@ -7,14 +7,18 @@
 
 #import "VKMMultiLoader.h"
 
+@class UIColor;
 
 __attribute__((visibility("hidden")))
 @interface VKMMultiImagePlaylistLoader : VKMMultiLoader {
 	float _size;
 	float _cornerRadius;
+	UIColor* _overlayColor;
 }
+@property(retain, nonatomic) UIColor* overlayColor;
 @property(assign, nonatomic) float cornerRadius;
 @property(assign, nonatomic) float size;
+-(void).cxx_destruct;
 -(void)multiImage:(id)image handler:(id)handler;
 -(id)multiImageUrlsKey:(id)key;
 @end

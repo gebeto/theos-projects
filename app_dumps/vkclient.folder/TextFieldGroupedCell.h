@@ -5,16 +5,16 @@
  * Source: (null)
  */
 
-#import "VKMGroupedCell.h"
+#import "VKMCell.h"
 
 @class UITextField;
 
 __attribute__((visibility("hidden")))
-@interface TextFieldGroupedCell : VKMGroupedCell {
+@interface TextFieldGroupedCell : VKMCell {
 	UITextField* _textField;
 }
 @property(retain, nonatomic) UITextField* textField;
-+(id)cellPosition:(int)position class:(Class)aClass placeholder:(id)placeholder bold:(BOOL)bold;
--(void)dealloc;
++(id)class:(Class)aClass placeholder:(id)placeholder bold:(BOOL)bold;
+-(void).cxx_destruct;
 @end
 

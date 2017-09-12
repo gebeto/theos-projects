@@ -6,10 +6,10 @@
  */
 
 #import "NSCopying.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class NSString, NSNumber;
+@class NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKIdentity : XXUnknownSuperclass <NSCopying> {
@@ -18,7 +18,9 @@ __attribute__((visibility("hidden")))
 	NSNumber* _iid;
 	NSString* _access_key;
 	NSString* _context;
+	NSString* _track_code;
 }
+@property(retain, nonatomic) NSString* track_code;
 @property(retain, nonatomic) NSString* context;
 @property(retain, nonatomic) NSString* access_key;
 @property(retain, nonatomic) NSNumber* iid;
@@ -26,6 +28,12 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int type;
 +(id)parse:(id)parse withType:(int)type;
 +(id)type:(int)type oid:(id)oid iid:(id)iid;
++(id)identityFromUrl:(id)url;
++(id)identityFromString:(id)string;
++(id)source:(id)source;
++(id)group:(id)group;
++(id)user:(id)user;
+-(void).cxx_destruct;
 -(BOOL)isOwner:(id)owner;
 -(id)titleShort;
 -(id)title;
@@ -34,6 +42,5 @@ __attribute__((visibility("hidden")))
 -(id)copyWithZone:(NSZone*)zone;
 -(BOOL)isEqual:(id)equal;
 -(id)description;
--(void)dealloc;
 @end
 

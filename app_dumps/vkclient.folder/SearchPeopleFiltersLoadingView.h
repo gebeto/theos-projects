@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class UIButton, UIActivityIndicatorView;
@@ -17,13 +17,13 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) UIButton* button;
 @property(retain, nonatomic) UIActivityIndicatorView* activityIndicator;
+-(void).cxx_destruct;
 -(void)stopLoadingWithNumber:(unsigned)number;
 -(void)stopLoadingWithoutNumber;
 -(void)stopLoadingWithErrorMessage:(id)errorMessage;
 -(void)beginLoading;
 -(void)setLoading:(BOOL)loading;
 -(void)layoutSubviews;
--(void)dealloc;
 -(id)initWithFrame:(CGRect)frame;
 @end
 

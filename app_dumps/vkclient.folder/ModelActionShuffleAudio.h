@@ -7,7 +7,7 @@
 
 #import "ModelAction.h"
 
-@class NSNumber, VKIdentity, NSArray;
+@class VKIdentity, NSNumber, NSArray;
 
 __attribute__((visibility("hidden")))
 @interface ModelActionShuffleAudio : ModelAction {
@@ -18,8 +18,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKIdentity* playlistIden;
 @property(retain, nonatomic) NSNumber* target;
 +(int)domainType;
+-(void).cxx_destruct;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
--(void)dealloc;
 @end
 

@@ -17,10 +17,10 @@ __attribute__((visibility("hidden")))
 @property(retain) id serverData;
 @property(assign) double timeout;
 @property(assign) double timestamp;
+-(void).cxx_destruct;
 -(id)freshServerData;
 -(void)invalidate:(id)invalidate;
 -(void)useServerData:(id)data timeout:(double)timeout;
 -(void)useServerData:(id)data;
--(void)dealloc;
 @end
 

@@ -6,10 +6,10 @@
  */
 
 #import "UIGestureRecognizerDelegate.h"
-#import "UIViewControllerTransitioningDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "UIViewControllerTransitioningDelegate.h"
 
-@class StoryFromFullscreenDismissTransitionAnimationController, UIPanGestureRecognizer, UIViewController, NSString;
+@class StoryFromFullscreenDismissTransitionAnimationController, NSString, UIPanGestureRecognizer, UIViewController;
 @protocol PanGestureDrivenDismissableTransitionViewController;
 
 __attribute__((visibility("hidden")))
@@ -38,7 +38,6 @@ __attribute__((visibility("hidden")))
 -(id)animationControllerForDismissedController:(id)dismissedController;
 -(id)interactionControllerForDismissal:(id)dismissal;
 -(id)animationControllerForPresentedController:(id)presentedController presentingController:(id)controller sourceController:(id)controller3;
--(void)dealloc;
 -(id)init;
 @end
 

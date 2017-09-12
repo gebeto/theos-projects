@@ -22,9 +22,9 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSCharacterSet* latin;
 @property(retain, nonatomic) NSCharacterSet* language;
 @property(retain, nonatomic) NSCharacterSet* locale;
+-(void).cxx_destruct;
 -(int)compareSectionKeys:(id)keys :(id)arg2;
 -(id)sectionKeyForLastName:(id)lastName;
--(void)dealloc;
 -(id)init;
 @end
 

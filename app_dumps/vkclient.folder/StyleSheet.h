@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "NSMutableCopying.h"
 #import "NSCopying.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
+#import "NSMutableCopying.h"
 
-@class Resources, Dimensions, Colors, TextStyle, Drawables;
+@class Dimensions, Colors, TextStyle, Drawables, Resources;
 
 __attribute__((visibility("hidden")))
 @interface StyleSheet : XXUnknownSuperclass <NSCopying, NSMutableCopying> {
@@ -26,6 +26,7 @@ __attribute__((visibility("hidden")))
 	TextStyle* _profileNameTextStyle;
 	TextStyle* _recommendationsTitleTextStyle;
 	TextStyle* _linkTextStyle;
+	TextStyle* _mentionTextStyle;
 	TextStyle* _snippetButtonTitleTextStyle;
 	TextStyle* _primaryButtonTitleTextStyle;
 	TextStyle* _secondaryButtonTitleTextStyle;
@@ -45,6 +46,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) TextStyle* secondaryButtonTitleTextStyle;
 @property(retain, nonatomic) TextStyle* primaryButtonTitleTextStyle;
 @property(retain, nonatomic) TextStyle* snippetButtonTitleTextStyle;
+@property(retain, nonatomic) TextStyle* mentionTextStyle;
 @property(retain, nonatomic) TextStyle* linkTextStyle;
 @property(retain, nonatomic) TextStyle* recommendationsTitleTextStyle;
 @property(retain, nonatomic) TextStyle* profileNameTextStyle;

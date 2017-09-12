@@ -19,6 +19,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UILabel* albumTitleLabel;
 @property(readonly, retain, nonatomic) VKMImageView* thumbnailView;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)layoutSubviews;
 -(void)prepareForReuse;

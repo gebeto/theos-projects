@@ -7,12 +7,12 @@
 
 #import "NSObject.h"
 
-@class NSString, NSArray;
+@class NSArray, NSString;
 
 @protocol FBAuthRequest <NSObject>
-@property(readonly, retain, nonatomic) NSString* apiVersion;
-@property(readonly, retain, nonatomic) NSArray* permissions;
-@property(readonly, retain, nonatomic) NSString* appId;
+@property(readonly, assign, nonatomic) NSString* apiVersion;
+@property(readonly, assign, nonatomic) NSArray* permissions;
+@property(readonly, assign, nonatomic) NSString* appId;
 -(id)authParameters;
 @end
 

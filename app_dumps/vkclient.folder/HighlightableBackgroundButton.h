@@ -14,9 +14,9 @@ __attribute__((visibility("hidden")))
 	NSMutableDictionary* _backgroundColorsForState;
 }
 @property(retain, nonatomic) NSMutableDictionary* backgroundColorsForState;
+-(void).cxx_destruct;
 -(void)setHighlighted:(BOOL)highlighted;
 -(void)updateBackgroundColor;
 -(void)setBackgroundColor:(id)color forState:(unsigned)state;
--(void)dealloc;
 @end
 

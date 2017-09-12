@@ -5,19 +5,19 @@
  * Source: (null)
  */
 
-#import "UITableViewDelegate.h"
-#import "vkclient-Structs.h"
-#import "UITableViewDataSource.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "UITableViewDelegate.h"
+#import "UITableViewDataSource.h"
 
 @class UITableView, NSString, NSArray;
-@protocol VKMNavDelegate, PageCellWithTableViewDidSelectAudioDelegate;
+@protocol AudioCellDelegate, PageCellWithTableViewDidSelectAudioDelegate;
 
 __attribute__((visibility("hidden")))
 @interface PageCellWithTableView : XXUnknownSuperclass <UITableViewDataSource, UITableViewDelegate> {
 	NSArray* _audios;
 	UITableView* _tableView;
-	id<VKMNavDelegate> _navDelegate;
+	id<AudioCellDelegate> _audioDelegate;
 	id<PageCellWithTableViewDidSelectAudioDelegate> _delegate;
 }
 @property(readonly, copy) NSString* debugDescription;
@@ -25,7 +25,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
 @property(assign, nonatomic) __weak id<PageCellWithTableViewDidSelectAudioDelegate> delegate;
-@property(assign, nonatomic) __weak id<VKMNavDelegate> navDelegate;
+@property(assign, nonatomic) __weak id<AudioCellDelegate> audioDelegate;
 @property(retain, nonatomic) UITableView* tableView;
 @property(retain, nonatomic) NSArray* audios;
 -(void).cxx_destruct;

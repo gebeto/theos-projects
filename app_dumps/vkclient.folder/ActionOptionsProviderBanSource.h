@@ -7,14 +7,16 @@
 
 #import "ActionOptionsProviderActionBuilder.h"
 
-@class NSString, NSNumber;
+@class NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface ActionOptionsProviderBanSource : ActionOptionsProviderActionBuilder {
 	BOOL _fastBan;
 	NSNumber* _sourceId;
 	NSString* _title;
+	NSString* _track_code;
 }
+@property(retain, nonatomic) NSString* track_code;
 @property(readonly, assign, nonatomic) BOOL fastBan;
 @property(readonly, copy, nonatomic) NSString* title;
 @property(readonly, assign, nonatomic) NSNumber* sourceId;

@@ -8,7 +8,7 @@
 #import "ExtrasInputViewStickersTab.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class StickerSelectionView, ExtrasTabBarItem, NSString, PhotoEditorStickersModel, NSArray;
+@class ExtrasTabBarItem, NSString, NSArray, StickerSelectionView, PhotoEditorStickersModel;
 
 __attribute__((visibility("hidden")))
 @interface ExtrasInputViewPhotoEditorStickersTab : XXUnknownSuperclass <ExtrasInputViewStickersTab> {

@@ -6,10 +6,10 @@
  */
 
 #import "PersistentStatsData.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class NSMutableArray, NSMutableDictionary, NSString;
+@class NSMutableDictionary, NSMutableArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface BasicStatsData : XXUnknownSuperclass <PersistentStatsData> {
@@ -24,6 +24,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSMutableDictionary* batchedKeys;
 @property(retain, nonatomic) NSMutableDictionary* batchedEvents;
 @property(retain, nonatomic) NSMutableArray* events;
+-(void).cxx_destruct;
 -(void)loadFromJSONRepresentation:(id)jsonrepresentation;
 -(id)request;
 -(id)JSONRepresentation;
@@ -33,7 +34,6 @@ __attribute__((visibility("hidden")))
 -(int)eventsLimit;
 -(id)batchKey;
 -(id)copyWithZone:(NSZone*)zone;
--(void)dealloc;
 -(id)init;
 @end
 

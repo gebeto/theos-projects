@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "VKMGroupedCell.h"
+#import "VKMCell.h"
 
-@class UILabel, VKMImageView, VKProfileItemUser;
+@class VKProfileItemUser, UILabel, VKMImageView;
 
 __attribute__((visibility("hidden")))
-@interface ProfileItemUserCell : VKMGroupedCell {
+@interface ProfileItemUserCell : VKMCell {
 	VKMImageView* _image;
 	UILabel* _name;
 	UILabel* _status;
@@ -20,6 +20,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UILabel* name;
 @property(readonly, retain, nonatomic) VKMImageView* image;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(void)prepareForReuse;
 -(void)dealloc;

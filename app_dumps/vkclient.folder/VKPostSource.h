@@ -7,7 +7,7 @@
 
 #import "VKDomain.h"
 
-@class NSDictionary, VKLink, NSString;
+@class NSDictionary, NSString, VKLink;
 
 __attribute__((visibility("hidden")))
 @interface VKPostSource : VKDomain {
@@ -24,7 +24,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* platformString;
 @property(assign, nonatomic) int platform;
 @property(assign, nonatomic) int type;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

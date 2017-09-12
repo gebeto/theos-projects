@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "HighlightableBackgroundButton.h"
 
-@class UILabel, VKMImageView, UIButton;
+@class UIButton, UILabel, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface NewsFeedPostCreationButton : HighlightableBackgroundButton {
@@ -19,9 +19,9 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIButton* cameraButton;
 @property(retain, nonatomic) UILabel* label;
 @property(retain, nonatomic) VKMImageView* avatarView;
+-(void).cxx_destruct;
 -(void)renderPhotoWithUrl:(id)url;
 -(void)layoutSubviews;
 -(id)initWithFrame:(CGRect)frame;
--(void)dealloc;
 @end
 

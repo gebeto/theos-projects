@@ -16,7 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) UIColor* preservedTextColor;
 @property(retain, nonatomic) UIColor* preservedShadowColor;
+-(void).cxx_destruct;
 -(void)setHighlighted:(BOOL)highlighted;
--(void)dealloc;
 @end
 

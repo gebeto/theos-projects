@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKMNavContext, NSDictionary, MainModel, NSMutableDictionary, NSURL;
+@class NSMutableDictionary, NSURL, MainModel, NSDictionary, VKMNavContext;
 
 __attribute__((visibility("hidden")))
 @interface RoutingContext : XXUnknownSuperclass {
@@ -29,11 +29,11 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSURL* targetURL;
 @property(retain, nonatomic) NSURL* originalURL;
 +(id)contextForVKURL:(id)vkurl main:(id)main navContext:(id)context;
+-(void).cxx_destruct;
 -(void)read:(id)read;
 -(id)p:(id)p;
 -(id)get:(id)get;
 -(void)set:(id)set key:(id)key;
 -(id)ownerOrUser:(id)user;
--(void)dealloc;
 @end
 

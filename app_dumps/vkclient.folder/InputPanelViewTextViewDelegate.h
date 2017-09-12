@@ -6,7 +6,7 @@
  */
 
 #import "UITextViewDelegate.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 
 
 @protocol InputPanelViewTextViewDelegate <UITextViewDelegate>

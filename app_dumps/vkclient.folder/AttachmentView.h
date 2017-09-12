@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "AbstractMessagesAttachmentView.h"
 
 @class UILabel;
@@ -20,7 +20,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL condensed;
 @property(retain, nonatomic) UILabel* status;
 @property(retain, nonatomic) UILabel* title;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)initWithFrame:(CGRect)frame;
 @end
 

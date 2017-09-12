@@ -8,11 +8,11 @@
 #import "PrivacyUsersSelectionControllerDelegate.h"
 #import "InlineFriendsControllerDelegate.h"
 #import "MBContactPickerDataSource.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "MBContactPickerDelegate.h"
 #import "VKMLiveController.h"
 
-@class UITableViewCell, GiftSendItemRenderable, UIView, GiftsSendModel, UIButton, NSString, GiftsSendMessageCell, NSArray, InlineFriendsController, MBContactPicker;
+@class GiftsSendModel, MBContactPicker, UIButton, InlineFriendsController, UITableViewCell, UIView, GiftsSendMessageCell, NSString, GiftSendItemRenderable, NSArray;
 
 __attribute__((visibility("hidden")))
 @interface GiftSendController : VKMLiveController <MBContactPickerDelegate, MBContactPickerDataSource, InlineFriendsControllerDelegate, PrivacyUsersSelectionControllerDelegate> {
@@ -40,6 +40,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIView* headerView;
 @property(retain, nonatomic) InlineFriendsController* friendsController;
 @property(retain, nonatomic) MBContactPicker* contactsPicker;
+-(void).cxx_destruct;
 -(void)usersSelectionControllerDidCancel:(id)usersSelectionController;
 -(void)usersSelectionController:(id)controller didSelectObjects:(id)objects;
 -(void)addRecipientsFromFriends:(id)friends;

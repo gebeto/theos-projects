@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import <XXUnknownSuperclass.h> // Unknown library
 #import "NSCacheDelegate.h"
+#import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class NSCache, NSOperationQueue, NSString, NSObject;
+@class NSOperationQueue, NSCache, NSString, NSObject;
 @protocol OS_dispatch_queue;
 
 __attribute__((visibility("hidden")))
@@ -26,8 +26,9 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) NSOperationQueue* queue;
 +(id)operationForImage:(id)image cacheResponse:(BOOL)response forceScale:(id)scale;
 +(id)shared;
+-(void).cxx_destruct;
 -(void)imageWithURL:(id)url complete:(id)complete;
--(void)multiPlaylistImage:(id)image size:(float)size cornerRadius:(float)radius handler:(id)handler;
+-(void)multiPlaylistImage:(id)image size:(float)size cornerRadius:(float)radius overlayColor:(id)color handler:(id)handler;
 -(void)multidialogImage:(id)image handler:(id)handler;
 -(void)load:(id)load filter:(id)filter reuse:(double)reuse;
 -(void)load:(id)load type:(XXStruct_UOIMaD)type reuse:(double)reuse;

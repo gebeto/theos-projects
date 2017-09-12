@@ -7,17 +7,20 @@
 
 #import "ListModel.h"
 
+@class VKIdentity;
 
 __attribute__((visibility("hidden")))
 @interface AudioPlaylistsModel : ListModel {
 	BOOL _attachMode;
 	int _filter;
+	VKIdentity* _filterIden;
 }
+@property(retain, nonatomic) VKIdentity* filterIden;
 @property(assign, nonatomic, getter=isAudioAttachMode) BOOL attachMode;
 @property(assign, nonatomic) int filter;
 +(id)requestWithOwner:(id)owner filter:(int)filter;
 +(id)requestWithOwner:(id)owner;
--(void)fillActionsForBuilder:(id)builder playlist:(id)playlist;
+-(void).cxx_destruct;
 -(void)editPlaylist:(id)playlist builder:(id)builder;
 -(void)deletePlaylist:(id)playlist builder:(id)builder;
 -(void)updateUnfollowPlaylist:(id)playlist builder:(id)builder;
@@ -30,10 +33,12 @@ __attribute__((visibility("hidden")))
 -(void)handleDeleteAudioPlaylist:(id)playlist :(id)arg2;
 -(void)handleFollowAudioPlaylist:(id)playlist :(id)arg2;
 -(void)registerForEvents:(id)events;
+-(void)fillActionsForBuilder:(id)builder playlist:(id)playlist;
 -(id)updatedIndex:(id)index data:(id)data context:(id)context;
 -(id)process:(id)process;
 -(id)request:(int)request count:(int)count;
 -(id)countKey;
+-(id)setupFilterWithIden:(id)iden;
 -(id)setupAttachMode;
 -(id)setupSearch;
 -(id)setupFilter:(int)filter;

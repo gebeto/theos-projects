@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "UIScrollViewDelegate.h"
-#import "VKPPAssetPresenter.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKPPAssetPresenter.h"
+#import "UIScrollViewDelegate.h"
 
-@class VKPPModel, VKPPToolbar, UIScrollView, UIView, VKPPSelectButton, NSString, NSArray;
+@class VKPPModel, VKPPToolbar, UIScrollView, UIView, NSString, NSArray, VKPPSelectButton;
 
 @interface VKPPListView : XXUnknownSuperclass <UIScrollViewDelegate, VKPPAssetPresenter> {
 	float bottomInset;

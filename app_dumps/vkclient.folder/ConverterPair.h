@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKMGifLoader, VKAVGifConverter, VKDoc;
+@class VKDoc, VKAVGifConverter, VKMGifLoader;
 
 __attribute__((visibility("hidden")))
 @interface ConverterPair : XXUnknownSuperclass {
@@ -21,6 +21,5 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKAVGifConverter* converter;
 @property(retain, nonatomic) VKMGifLoader* loader;
 -(void).cxx_destruct;
--(void)dealloc;
 @end
 

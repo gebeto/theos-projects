@@ -22,7 +22,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) BOOL syncMode;
 @property(assign, nonatomic) int mode;
 @property(assign, nonatomic) double resetTimeout;
+-(void).cxx_destruct;
 -(void)spawnCopy:(id)copy;
--(void)dealloc;
 @end
 

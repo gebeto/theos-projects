@@ -5,13 +5,13 @@
  * Source: (null)
  */
 
-#import "SketchBrushViewControllerDelegate.h"
-#import "UIPopoverPresentationControllerDelegate.h"
-#import "SketchPreviewControllerDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "UIPopoverPresentationControllerDelegate.h"
 #import "SketchDrawViewDelegate.h"
+#import "SketchPreviewControllerDelegate.h"
+#import "SketchBrushViewControllerDelegate.h"
 
-@class SketchDrawView, UIButton, NSString, NSArray;
+@class UIButton, SketchDrawView, NSString, NSArray;
 @protocol SketchViewControllerDelegate;
 
 __attribute__((visibility("hidden")))

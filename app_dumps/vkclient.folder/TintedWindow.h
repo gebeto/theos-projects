@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class UIView;
@@ -15,7 +15,7 @@ __attribute__((visibility("hidden")))
 	UIView* _tintView;
 }
 @property(retain, nonatomic) UIView* tintView;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)initWithFrame:(CGRect)frame;
 @end
 

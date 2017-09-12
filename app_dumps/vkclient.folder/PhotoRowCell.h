@@ -18,6 +18,7 @@ __attribute__((visibility("hidden")))
 +(void)prerender:(id)prerender;
 +(id)renderPhotosRow:(id)row max:(int)max width:(float)width height:(float)height padding:(float)padding zoomMax:(float)max6 zoomMin:(float)min;
 +(void)initialize;
+-(void).cxx_destruct;
 -(id)visibleThumbnails;
 -(void)thumbnailView:(id)view selected:(id)selected;
 -(void)attach:(id)attach expectedReuse:(double)reuse;

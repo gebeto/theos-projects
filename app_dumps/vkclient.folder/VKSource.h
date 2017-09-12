@@ -8,7 +8,7 @@
 #import "VKTitleable.h"
 #import "VKLinkable.h"
 
-@class NSString, NSNumber;
+@class NSNumber, NSString;
 
 @protocol VKSource <VKLinkable, VKTitleable>
 @property(readonly, assign, nonatomic) BOOL verified;

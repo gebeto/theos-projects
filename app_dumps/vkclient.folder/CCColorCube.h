@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
 
 __attribute__((visibility("hidden")))
@@ -29,7 +29,6 @@ __attribute__((visibility("hidden")))
 -(id)filterDistinctMaxima:(id)maxima threshold:(float)threshold;
 -(id)findAndSortMaximaInImage:(id)image flags:(unsigned)flags;
 -(id)findLocalMaximaInImage:(id)image flags:(unsigned)flags;
--(void)dealloc;
 -(id)init;
 @end
 

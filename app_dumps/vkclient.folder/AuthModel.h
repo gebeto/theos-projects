@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "VKClientDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClientDelegate.h"
 
-@class CaptchaPrompt, RMPhoneFormat, VKClient, NSDate, NSMutableDictionary, NSString, UIAlertView;
+@class CaptchaPrompt, NSMutableDictionary, RMPhoneFormat, VKClient, UIAlertView, NSDate, NSString;
 
 __attribute__((visibility("hidden")))
 @interface AuthModel : XXUnknownSuperclass <VKClientDelegate> {
@@ -44,10 +44,13 @@ __attribute__((visibility("hidden")))
 +(id)base64ReceiptString;
 +(void)resetDeviceTrustedHash;
 +(void)handleAuthError:(id)error block:(id)block;
--(void)oauth:(id)oauth success:(id)success failure:(id)failure;
++(id)secondFAAuthModelWithData:(id)data login:(id)login password:(id)password sid:(id)sid;
+-(void).cxx_destruct;
+-(void)oauth:(id)oauth showHUDMessage:(BOOL)message success:(id)success failure:(id)failure;
 -(void)facebook:(id)facebook code:(id)code success:(id)success failure:(id)failure;
 -(void)restore:(id)restore code:(id)code success:(id)success failure:(id)failure;
 -(void)login:(id)login password:(id)password code:(id)code success:(id)success failure:(id)failure;
+-(void)login:(id)login password:(id)password code:(id)code showHUDMessage:(BOOL)message success:(id)success failure:(id)failure;
 -(id)oauthParams;
 -(id)messageForOAuthError:(int)oauthError;
 -(void)changePasswordWithText:(id)text success:(id)success failure:(id)failure;
@@ -60,6 +63,7 @@ __attribute__((visibility("hidden")))
 -(void)client:(id)client requestedValidation:(id)validation complete:(id)complete;
 -(void)client:(id)client requestedCaptcha:(id)captcha complete:(id)complete;
 -(void)clientEncounteredAuthProblem:(id)problem;
+-(id)validateRestore;
 -(id)validatePasswordStage;
 -(id)validateCodeStage;
 -(id)validatePhoneStage;

@@ -8,7 +8,7 @@
 #import "MessagesListModelObserver.h"
 #import "VKMTableController.h"
 
-@class DialogsListModel, NSString;
+@class NSString, DialogsListModel;
 
 __attribute__((visibility("hidden")))
 @interface DialogsController : VKMTableController <MessagesListModelObserver> {
@@ -39,7 +39,6 @@ __attribute__((visibility("hidden")))
 -(void)viewDidDisappear:(BOOL)view;
 -(void)viewDidAppear:(BOOL)view;
 -(void)viewDidLoad;
--(void)dealloc;
 -(id)initWithMain:(id)main;
 @end
 

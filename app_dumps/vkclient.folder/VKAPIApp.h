@@ -7,7 +7,7 @@
 
 #import "VKDomain.h"
 
-@class NSNumber, NSString, NSArray;
+@class NSNumber, NSArray, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKAPIApp : VKDomain {
@@ -46,8 +46,8 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* genre;
 @property(retain, nonatomic) NSNumber* genreID;
 @property(retain, nonatomic) NSString* title;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
 -(Class)rendererClass;
--(void)dealloc;
 @end
 

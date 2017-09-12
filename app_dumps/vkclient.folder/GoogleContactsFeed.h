@@ -17,6 +17,6 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) GoogleContact* author;
 @property(retain, nonatomic) NSArray* contacts;
 +(id)feedWithDictionary:(id)dictionary error:(id*)error;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

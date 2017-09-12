@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class UIButton, NSArray;
@@ -26,8 +26,8 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int options;
 @property(retain, nonatomic) NSArray* separatorLines;
 +(id)withFrame:(CGRect)frame options:(int)options;
+-(void).cxx_destruct;
 -(id)createButtonWithTitle:(id)title imageName:(id)name;
--(void)dealloc;
 -(void)layoutSubviews;
 -(id)initWithFrame:(CGRect)frame options:(int)options;
 @end

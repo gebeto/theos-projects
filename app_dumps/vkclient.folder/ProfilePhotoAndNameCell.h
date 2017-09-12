@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
-#import "ForcedSeparatorCell.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "UITableViewDelegate.h"
 #import "UITableViewDataSource.h"
+#import "ForcedSeparatorCell.h"
 
-@class VKMImageView, UITableView, UIButton, UITextField, NSString, UIControl, NSArray;
+@class UITableView, UIButton, UITextField, UIControl, NSString, NSArray, VKMImageView;
 
 __attribute__((visibility("hidden")))
 @interface ProfilePhotoAndNameCell : ForcedSeparatorCell <UITableViewDataSource, UITableViewDelegate> {
@@ -33,6 +33,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIControl* photoControl;
 @property(retain, nonatomic) UIButton* photoButton;
 @property(retain, nonatomic) VKMImageView* photoImageView;
+-(void).cxx_destruct;
 -(id)tableView:(id)view cellForRowAtIndexPath:(id)indexPath;
 -(int)tableView:(id)view numberOfRowsInSection:(int)section;
 -(void)actionPhoto:(id)photo;

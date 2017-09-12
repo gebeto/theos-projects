@@ -6,10 +6,10 @@
  */
 
 #import "PrivacyUsersSelectionControllerDelegate.h"
+#import "VKClient-Structs.h"
 #import "VKMLiveController.h"
-#import "vkclient-Structs.h"
 
-@class VKPrivacySetting, PrivacyVariant, NSMutableArray, NSArray;
+@class VKPrivacySetting, NSMutableArray, NSArray, PrivacyVariant;
 
 __attribute__((visibility("hidden")))
 @interface PrivacyEditController : VKMLiveController <PrivacyUsersSelectionControllerDelegate> {
@@ -26,6 +26,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSMutableArray* objectsAllowed;
 @property(retain, nonatomic) NSArray* currentPrivacyValues;
 @property(retain, nonatomic) PrivacyVariant* selectedPrivacyVariant;
+-(void).cxx_destruct;
 -(void)usersSelectionController:(id)controller didSelectObjects:(id)objects;
 -(void)usersSelectionControllerDidCancel:(id)usersSelectionController;
 -(void)setNewPrivacyValueForVariant:(id)variant;
@@ -48,6 +49,5 @@ __attribute__((visibility("hidden")))
 -(void)viewDidLoad;
 -(id)setupWhiteBar:(BOOL)bar;
 -(id)setupPrivacy:(id)privacy;
--(void)dealloc;
 @end
 

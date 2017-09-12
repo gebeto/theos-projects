@@ -8,7 +8,7 @@
 #import "UIGestureRecognizerDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKMStickerPreviewImageView, StickersLoadingManager, UICollectionView, UIWindow, NSIndexPath, NSString, UILongPressGestureRecognizer;
+@class UILongPressGestureRecognizer, NSIndexPath, StickersLoadingManager, NSString, UICollectionView, VKMStickerPreviewImageView, UIWindow;
 @protocol StickerPopupDelegate;
 
 __attribute__((visibility("hidden")))
@@ -34,6 +34,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSIndexPath* previouslyHighlightedIndexPath;
 @property(retain, nonatomic) StickersLoadingManager* stickersLoadingManager;
 @property(retain, nonatomic) UICollectionView* collectionView;
+-(void).cxx_destruct;
 -(void)hidePopupWindow;
 -(void)showPopupWindow;
 -(void)updateStickerAtIndexPath:(id)indexPath;

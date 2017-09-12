@@ -5,12 +5,12 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VMSeekingViewDelegate.h"
 #import "VMVoiceMessagePlayerObserver.h"
-#import "vkclient-Structs.h"
 #import "AttachmentView.h"
 
-@class VMSeekingView, UILabel, VKAudioMessage, VMSamplesView, VMVoiceMessagePlayer, UIButton, NSString;
+@class VKAudioMessage, VMVoiceMessagePlayer, UIButton, VMSeekingView, VMSamplesView, UILabel, NSString;
 @protocol AudioMessageAttachmentDelegate;
 
 __attribute__((visibility("hidden")))

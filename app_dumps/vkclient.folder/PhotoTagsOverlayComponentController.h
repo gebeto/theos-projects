@@ -5,9 +5,9 @@
  * Source: (null)
  */
 
-#import "Component5Controller.h"
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "PhotoTagsOverlayViewDelegate.h"
+#import "Component5Controller.h"
 
 @class NSString;
 

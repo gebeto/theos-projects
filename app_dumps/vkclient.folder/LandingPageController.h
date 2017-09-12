@@ -12,15 +12,20 @@
 __attribute__((visibility("hidden")))
 @interface LandingPageController : XXUnknownSuperclass {
 	AuthModel* _model;
+	unsigned _sharedWebCredentialAvailability;
 }
 @property(retain, nonatomic) AuthModel* model;
+@property(assign, nonatomic) unsigned sharedWebCredentialAvailability;
+-(void).cxx_destruct;
 -(void)actionLogIn:(id)anIn;
 -(void)actionFacebook:(id)facebook;
 -(void)actionSignUp:(id)up;
+-(void)showLoginController;
 -(int)preferredStatusBarStyle;
 -(BOOL)shouldAutorotate;
+-(void)tryToLoginWithLogin:(id)login password:(id)password;
+-(void)viewDidAppear:(BOOL)view;
 -(void)viewWillAppear:(BOOL)view;
 -(void)viewDidLoad;
--(void)dealloc;
 @end
 

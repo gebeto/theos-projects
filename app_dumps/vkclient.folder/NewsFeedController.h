@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
 #import "FeedController.h"
+#import "VKClient-Structs.h"
 
 @class FeedModel;
 
@@ -20,6 +20,5 @@ __attribute__((visibility("hidden")))
 -(id)postContext;
 -(void)viewDidLoad;
 -(void)loadView;
--(void)dealloc;
 @end
 

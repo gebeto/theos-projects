@@ -7,7 +7,7 @@
 
 #import "ModelAction.h"
 
-@class NSNumber, NSString, VKGiftsCatalogItem, NSArray;
+@class NSNumber, NSString, NSArray, VKGiftsCatalogItem;
 
 __attribute__((visibility("hidden")))
 @interface ModelActionSendGift : ModelAction {
@@ -24,6 +24,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSArray* users;
 @property(retain, nonatomic) NSNumber* guid;
 +(int)domainType;
+-(void).cxx_destruct;
 -(BOOL)actionShowsFailureConfirmation;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
@@ -31,6 +32,5 @@ __attribute__((visibility("hidden")))
 -(id)withMessage:(id)message;
 -(id)withGuid:(id)guid;
 -(id)withRecipientUsers:(id)recipientUsers;
--(void)dealloc;
 @end
 

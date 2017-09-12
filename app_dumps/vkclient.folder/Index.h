@@ -30,6 +30,7 @@ __attribute__((visibility("hidden")))
 +(id)sections:(unsigned)sections titles:(BOOL)titles build:(id)build;
 +(id)single:(id)single;
 +(id)enums:(unsigned)enums when:(id)when;
+-(void).cxx_destruct;
 -(id)enumerator;
 -(id)indexByRemovingEmptySections;
 -(id)map:(id)map;
@@ -48,7 +49,5 @@ __attribute__((visibility("hidden")))
 -(id)sectionTitleAtIndex:(int)index;
 -(id)safeSectionAtIndex:(int)index;
 -(id)sectionAtIndex:(int)index;
--(void)dealloc;
--(id)prepareGroupedItemsIndex;
 @end
 

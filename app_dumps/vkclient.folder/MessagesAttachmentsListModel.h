@@ -16,10 +16,10 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSNumber* dialogId;
 +(id)requestBuilderForNextFrom:(id)from page:(int)page mediaType:(id)type dialogId:(id)anId;
 +(id)with:(id)with dialogId:(id)anId;
+-(void).cxx_destruct;
 -(void)updateContext:(id)context withLoadedItems:(id)loadedItems andData:(id)data;
 -(id)spawnContext:(id)context;
 -(id)mediaType;
 -(id)requestForContext:(id)context;
--(void)dealloc;
 @end
 

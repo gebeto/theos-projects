@@ -5,8 +5,8 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "AutoplayedBaseView.h"
-#import "vkclient-Structs.h"
 
 @class UILabel, UIImageView;
 

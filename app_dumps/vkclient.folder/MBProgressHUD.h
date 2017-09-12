@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UILabel, UIFont, MBProgressHUDBackgroundLayer, UIView, UIColor, NSDate, UIVisualEffectView, NSTimer, NSString;
+@class UIFont, MBProgressHUDBackgroundLayer, UIColor, UIVisualEffectView, UIView, UILabel, NSDate, NSTimer, NSString;
 @protocol MBProgressHUDDelegate;
 
 __attribute__((visibility("hidden")))
@@ -75,7 +75,7 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) float opacity;
 @property(copy, nonatomic) NSString* detailsLabelText;
 @property(copy, nonatomic) NSString* labelText;
-@property(assign, nonatomic) id<MBProgressHUDDelegate> delegate;
+@property(assign, nonatomic) __weak id<MBProgressHUDDelegate> delegate;
 @property(retain, nonatomic) UIView* customView;
 @property(assign, nonatomic) int animationType;
 @property(assign, nonatomic) int mode;
@@ -91,6 +91,7 @@ __attribute__((visibility("hidden")))
 +(unsigned)hideAllHUDsForView:(id)view animated:(BOOL)animated;
 +(BOOL)hideHUDForView:(id)view animated:(BOOL)animated;
 +(id)showHUDAddedTo:(id)to animated:(BOOL)animated;
+-(void).cxx_destruct;
 -(void)actionClose:(id)close;
 -(void)setTransformForOrientation:(int)orientation animated:(BOOL)animated;
 -(void)deviceOrientationDidChange:(id)deviceOrientation;

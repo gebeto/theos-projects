@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "NHandlerBannerDelegate.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "NHandlerBannerDelegate.h"
 #import "MTStatusBarOverlayDelegate.h"
 
-@class NotificationEvent, VKStats, NHandlerBanner, NHandlerStatus, NSString, NSNumber;
+@class NHandlerStatus, VKStats, NHandlerBanner, NotificationEvent, NSNumber, NSString;
 @protocol NotificationHandler, NotificationsManagerDelegate;
 
 __attribute__((visibility("hidden")))
@@ -29,7 +29,7 @@ __attribute__((visibility("hidden")))
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
-@property(assign, nonatomic) id<NotificationsManagerDelegate> delegate;
+@property(assign, nonatomic) __weak id<NotificationsManagerDelegate> delegate;
 @property(retain, nonatomic) NHandlerBanner* handlerBanner;
 @property(retain, nonatomic) NHandlerStatus* handlerStatus;
 @property(retain, nonatomic) id<NotificationHandler> handlerVisual;
@@ -38,6 +38,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NotificationEvent* lastEvent;
 @property(readonly, retain, nonatomic) VKStats* stats;
 @property(retain) NSNumber* activeDialog;
+-(void).cxx_destruct;
 -(void)handle:(id)handle;
 -(void)changeActiveDialog:(id)dialog;
 -(void)deattach;

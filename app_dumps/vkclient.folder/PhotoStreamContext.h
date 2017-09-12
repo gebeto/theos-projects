@@ -7,7 +7,7 @@
 
 #import "AlbumPhotoFeedContext.h"
 
-@class NSMutableSet, NSMutableDictionary, NSArray;
+@class NSMutableDictionary, NSArray, NSMutableSet;
 
 __attribute__((visibility("hidden")))
 @interface PhotoStreamContext : AlbumPhotoFeedContext {
@@ -19,9 +19,9 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSArray* stories;
 @property(retain, nonatomic) NSMutableSet* photosIdens;
 +(id)duplicate:(id)duplicate;
+-(void).cxx_destruct;
 -(void)spawnCopy:(id)copy;
 -(void)addPhotos:(id)photos;
--(void)dealloc;
 -(id)init;
 @end
 

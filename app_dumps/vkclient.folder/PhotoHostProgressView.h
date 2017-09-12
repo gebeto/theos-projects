@@ -5,7 +5,7 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
 @class UIActivityIndicatorView;
@@ -19,9 +19,9 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic, getter=isAnnular) BOOL annular;
 @property(assign, nonatomic) float progress;
 @property(retain, nonatomic) UIActivityIndicatorView* indeterminateActivity;
+-(void).cxx_destruct;
 -(void)drawRect:(CGRect)rect;
 -(void)setIndeterminate:(BOOL)indeterminate;
 -(id)initWithFrame:(CGRect)frame;
--(void)dealloc;
 @end
 

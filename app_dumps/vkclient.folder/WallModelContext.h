@@ -14,7 +14,7 @@ __attribute__((visibility("hidden")))
 	NSMutableSet* _knownPostIds;
 }
 @property(retain, nonatomic) NSMutableSet* knownPostIds;
+-(void).cxx_destruct;
 -(void)spawnCopy:(id)copy;
--(void)dealloc;
 @end
 

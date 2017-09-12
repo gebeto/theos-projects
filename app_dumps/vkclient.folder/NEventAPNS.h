@@ -15,6 +15,6 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSDictionary* payload;
 +(id)eventForPayload:(id)payload;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

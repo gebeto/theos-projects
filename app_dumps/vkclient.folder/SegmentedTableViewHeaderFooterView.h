@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UIView, NSMutableArray, UISegmentedControl, NSArray;
+@class NSMutableArray, UIView, UISegmentedControl, NSArray;
 
 __attribute__((visibility("hidden")))
 @interface SegmentedTableViewHeaderFooterView : XXUnknownSuperclass {
@@ -22,13 +22,13 @@ __attribute__((visibility("hidden")))
 @property(readonly, retain, nonatomic) UIView* customSeparator;
 @property(readonly, copy, nonatomic) NSMutableArray* descriptors;
 @property(readonly, retain, nonatomic) UISegmentedControl* segmentedControl;
+-(void).cxx_destruct;
 -(void)layoutSubviews;
 -(void)removeAllSectionDescriptors;
 -(void)selectSectionDescriptorAtIndex:(unsigned)index;
 -(void)addSectionDescriptors:(id)descriptors;
 -(void)segmentToggled:(id)toggled;
 -(id)createSubviews;
--(void)dealloc;
 -(id)initWithReuseIdentifier:(id)reuseIdentifier;
 @end
 

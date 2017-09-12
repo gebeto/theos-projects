@@ -5,13 +5,13 @@
  * Source: (null)
  */
 
-#import "UICollectionViewDelegate.h"
-#import "vkclient-Structs.h"
-#import "UICollectionViewDataSource.h"
-#import "StickerPopupDelegate.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "StickerPopupDelegate.h"
+#import "UICollectionViewDelegate.h"
+#import "UICollectionViewDataSource.h"
 
-@class UICollectionView, StickersLoadingManager, NSSet, NSString, StickerPopup, BoxView, NSArray;
+@class NSSet, StickersLoadingManager, StickerPopup, BoxView, NSString, NSArray, UICollectionView;
 @protocol StickerSuggestionsViewDelegate;
 
 __attribute__((visibility("hidden")))
@@ -42,6 +42,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) BoxView* boxView;
 @property(retain, nonatomic) StickersLoadingManager* stickersLoadingManager;
 +(float)cellSide;
+-(void).cxx_destruct;
 -(id)stickerPopup:(id)popup imageInsteadOfActivityIndicatorForIndexPath:(id)indexPath;
 -(id)stickerPopup:(id)popup stickerBaseUrlForIndexPath:(id)indexPath;
 -(id)stickerPopup:(id)popup stickerIdForIndexPath:(id)indexPath;

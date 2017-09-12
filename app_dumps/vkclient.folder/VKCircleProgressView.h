@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class CAShapeLayer, UIColor;
+@class UIColor, CAShapeLayer;
 
 __attribute__((visibility("hidden")))
 @interface VKCircleProgressView : XXUnknownSuperclass {

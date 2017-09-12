@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "MOCTLabelDelegate.h"
 #import "VKMLiveController.h"
-#import "vkclient-Structs.h"
 
-@class UIView, NSString, SubscriptionsSettingsModel;
+@class SubscriptionsSettingsModel, UIView, NSString;
 
 __attribute__((visibility("hidden")))
 @interface SubscriptionsSettingsViewController : VKMLiveController <MOCTLabelDelegate> {

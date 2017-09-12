@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKPPAssetImageView.h"
-#import "vkclient-Structs.h"
 
-@class UILabel, UIView, UIImage, VKPPSelectButton, NSDateFormatter, UIImageView;
+@class UIImage, NSDateFormatter, UIView, UILabel, UIImageView, VKPPSelectButton;
 
 @interface VKPPThumbnailView : VKPPAssetImageView {
 	VKPPSelectButton* _buttonSelect;

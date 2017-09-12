@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class NSPointerArray, VKSession, NSDictionary, Index, NSDate, NSObject;
+@class VKSession, Index, NSDictionary, NSDate, NSObject, NSPointerArray;
 @protocol ModelRenderDelegate, OS_dispatch_queue;
 
 __attribute__((visibility("hidden")))
@@ -29,6 +29,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSDate* lastUpdateDate;
 @property(retain, nonatomic) NSDictionary* eventsDispatch;
 +(void)updateBuilder:(id)builder enumerateIdentity:(id)identity withBlock:(id)block;
++(void)updateBuilder:(id)builder enumerateIdentityWithBlock:(id)block;
 +(void)updateBuilder:(id)builder enumerateObjectsOfClass:(Class)aClass withBlock:(id)block;
 +(void)updateBuilder:(id)builder enumerateObjectsWithBlock:(id)block;
 +(id)with:(id)with;

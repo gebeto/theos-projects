@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "Model.h"
 #import "StoryFullscreenViewModelProvider.h"
+#import "Model.h"
 
-@class NSDictionary, NSMutableSet, NSMutableDictionary, NSString, NSArray;
+@class NSMutableDictionary, NSString, NSDictionary, NSArray, NSMutableSet;
 
 __attribute__((visibility("hidden")))
 @interface StoriesModel : Model <StoryFullscreenViewModelProvider> {

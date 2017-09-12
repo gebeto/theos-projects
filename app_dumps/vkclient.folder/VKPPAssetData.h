@@ -6,10 +6,10 @@
  */
 
 #import "NSCopying.h"
-#import "vkclient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "VKClient-Structs.h"
 
-@class VKPPService, UIImage, NSString, NSURL;
+@class NSURL, UIImage, VKPPService, NSString;
 
 @interface VKPPAssetData : XXUnknownSuperclass <NSCopying> {
 	BOOL _cropForced;

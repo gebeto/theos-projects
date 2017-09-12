@@ -7,7 +7,7 @@
 
 #import "VKDomainDerived.h"
 
-@class NSString, VKStoreStockItem;
+@class VKStoreStockItem, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKStoreStockVotesItem : VKDomainDerived {
@@ -15,7 +15,7 @@ __attribute__((visibility("hidden")))
 }
 @property(copy, nonatomic) NSString* coinImageName;
 @property(retain, nonatomic) VKStoreStockItem* domain;
+-(void).cxx_destruct;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

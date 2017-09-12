@@ -17,11 +17,11 @@ __attribute__((visibility("hidden")))
 +(id)domainCopy:(id)copy;
 +(id)domainEditCopy:(id)copy;
 +(id)domainEditCreate:(id)create;
+-(void).cxx_destruct;
 -(void)domainOnEditCopy:(id)copy;
 -(void)domainOnEditCreate;
 -(BOOL)isEqual:(id)equal;
 -(BOOL)isEqualItemId:(id)anId;
 -(BOOL)isEqualIdentity:(id)identity;
--(void)dealloc;
 @end
 

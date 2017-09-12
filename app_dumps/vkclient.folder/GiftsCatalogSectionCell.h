@@ -5,13 +5,13 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "UICollectionViewDelegate.h"
-#import "UICollectionViewDataSource.h"
+#import "VKClient-Structs.h"
 #import "UICollectionViewDelegateFlowLayout.h"
 #import "VKMCell.h"
+#import "UICollectionViewDelegate.h"
+#import "UICollectionViewDataSource.h"
 
-@class UICollectionView, UILabel, NSString, VKGiftsCatalogSection;
+@class UILabel, NSString, UICollectionView, VKGiftsCatalogSection;
 
 __attribute__((visibility("hidden")))
 @interface GiftsCatalogSectionCell : VKMCell <UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDataSource> {
@@ -27,6 +27,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UILabel* titleLabel;
 +(void)prerender:(id)prerender;
 +(void)initialize;
+-(void).cxx_destruct;
 -(void)collectionView:(id)view didSelectItemAtIndexPath:(id)indexPath;
 -(id)collectionView:(id)view cellForItemAtIndexPath:(id)indexPath;
 -(int)collectionView:(id)view numberOfItemsInSection:(int)section;

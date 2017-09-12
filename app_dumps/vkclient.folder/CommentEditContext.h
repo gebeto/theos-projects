@@ -7,17 +7,20 @@
 
 #import "PostEditContext.h"
 
-@class VKComment, VKStickerReferrerContext, VKIdentity;
+@class VKStickerReferrerContext, VKIdentity, VKComment, NSNumber;
 
 __attribute__((visibility("hidden")))
 @interface CommentEditContext : PostEditContext {
 	VKIdentity* _parentIdentity;
 	VKStickerReferrerContext* _stickerReferrerContext;
+	NSNumber* _fromGroup;
 }
+@property(retain, nonatomic) NSNumber* fromGroup;
 @property(retain, nonatomic) VKStickerReferrerContext* stickerReferrerContext;
 @property(retain, nonatomic) VKIdentity* parentIdentity;
 @property(retain, nonatomic) VKComment* domain;
 +(int)attachmentsLimit;
+-(void).cxx_destruct;
 -(unsigned)textLengthMax;
 -(unsigned)textLengthMin;
 -(id)title;
@@ -26,7 +29,7 @@ __attribute__((visibility("hidden")))
 -(id)uploadTarget;
 -(BOOL)autoDetectLinks;
 -(id)confirmAction:(id)action;
+-(id)withGroup:(id)group;
 -(id)withParentIdentity:(id)parentIdentity;
--(void)dealloc;
 @end
 

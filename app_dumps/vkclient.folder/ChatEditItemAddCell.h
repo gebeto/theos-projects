@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "VKMGroupedCell.h"
+#import "VKMCell.h"
 
 
 __attribute__((visibility("hidden")))
-@interface ChatEditItemAddCell : VKMGroupedCell {
+@interface ChatEditItemAddCell : VKMCell {
 }
 +(void)prerender:(id)prerender;
 -(void)attach:(id)attach expectedReuse:(double)reuse;

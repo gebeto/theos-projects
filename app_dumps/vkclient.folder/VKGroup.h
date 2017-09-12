@@ -8,7 +8,7 @@
 #import "VKDomain.h"
 #import "VKSource.h"
 
-@class VKGroupMarketInfo, NSString, NSNumber;
+@class VKGroupMarketInfo, NSNumber, NSString;
 
 __attribute__((visibility("hidden")))
 @interface VKGroup : VKDomain <VKSource> {
@@ -52,6 +52,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSNumber* source_id;
 +(id)predicate:(id)predicate;
 +(id)linkIcon;
+-(void).cxx_destruct;
 -(BOOL)disclosure;
 -(id)title;
 -(id)linkText;
@@ -63,6 +64,5 @@ __attribute__((visibility("hidden")))
 -(BOOL)process:(id)process context:(id)context;
 -(void)domainOnEditCopy:(id)copy;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

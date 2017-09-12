@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UILabel, UIButton;
+@class UIButton, UILabel;
 
 __attribute__((visibility("hidden")))
 @interface MainMenuPlayer : XXUnknownSuperclass {
@@ -21,6 +21,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UILabel* playerPerformer;
 @property(retain, nonatomic) UIButton* playerTouch;
 @property(retain, nonatomic) UIButton* playerButton;
+-(void).cxx_destruct;
 -(void)highlightUpdated;
 -(void)observeValueForKeyPath:(id)keyPath ofObject:(id)object change:(id)change context:(void*)context;
 -(void)clear;

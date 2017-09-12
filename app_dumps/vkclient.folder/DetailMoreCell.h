@@ -14,8 +14,8 @@ __attribute__((visibility("hidden")))
 	UILabel* _label;
 }
 @property(retain, nonatomic) UILabel* label;
+-(void).cxx_destruct;
 -(void)renderMore:(int)more total:(int)total;
--(void)dealloc;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
 @end
 

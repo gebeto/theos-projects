@@ -26,7 +26,7 @@ __attribute__((visibility("hidden")))
 +(id)authorizationObjectWithDictionary:(id)dictionary;
 +(void)removeStoredAuthorization;
 +(id)storedAuthorization;
--(void)dealloc;
+-(void).cxx_destruct;
 -(id)initWithCoder:(id)coder;
 -(void)encodeWithCoder:(id)coder;
 -(id)initWithDictionary:(id)dictionary;

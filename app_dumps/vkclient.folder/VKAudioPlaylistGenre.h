@@ -14,7 +14,7 @@ __attribute__((visibility("hidden")))
 	NSString* _name;
 }
 @property(retain, nonatomic) NSString* name;
+-(void).cxx_destruct;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

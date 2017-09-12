@@ -16,13 +16,13 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) VKDomainWithCustomCellClass* application;
 @property(readonly, retain, nonatomic) NSNumber* appID;
+-(void).cxx_destruct;
 -(id)processActivities:(id)activities;
 -(id)processApplications:(id)applications;
 -(id)requestForContext:(id)context;
 -(id)requestBuilderForContext:(id)context;
 -(id)applicationRequestKey;
 -(id)applicationRequestForAppID:(id)appID;
--(void)dealloc;
 -(id)forAppID:(id)appID;
 @end
 

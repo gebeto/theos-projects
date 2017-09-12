@@ -16,6 +16,6 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSString* title;
 @property(retain, nonatomic) NSString* html;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 

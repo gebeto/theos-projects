@@ -7,10 +7,10 @@
 
 #import "NSURLSessionDataDelegate.h"
 #import "NSURLSessionTaskDelegate.h"
-#import "MTRGURLRequestProtocol.h"
 #import <XXUnknownSuperclass.h> // Unknown library
+#import "MTRGURLRequestProtocol.h"
 
-@class NSMutableDictionary, NSString, NSURLSession;
+@class NSMutableDictionary, NSURLSession, NSString;
 
 @interface MTRGURLSessionRequest : XXUnknownSuperclass <NSURLSessionTaskDelegate, NSURLSessionDataDelegate, MTRGURLRequestProtocol> {
 	NSURLSession* _session;

@@ -5,34 +5,37 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
-#import "VKMController.h"
-#import "UIGestureRecognizerDelegate.h"
-#import "PHPhotoLibraryChangeObserver.h"
 #import "StoryMediaPickerViewControllerDelegate.h"
+#import "VKClient-Structs.h"
+#import "CameraPreviewViewDelegate.h"
+#import "MaskLoaderObserver.h"
 #import "CameraManagerDelegate.h"
+#import "UIGestureRecognizerDelegate.h"
+#import "MaskAssetsLoaderDelegate.h"
+#import "VKMController.h"
+#import "MasksContainerControllerDelegate.h"
+#import "MaskLoaderDimProgressViewDelegate.h"
 
-@class UIImpactFeedbackGenerator, CameraControlsView, UIPinchGestureRecognizer, UIView, StoryEditorNavigationBar, CameraManager, NSDate, NSString, KVOObserver, NSTimer, UILongPressGestureRecognizer, UITapGestureRecognizer, VideoRecordingProgressView, CameraPreviewLayerView;
+@class UIButton, KVOObserver, VKMask, NSTimer, UILabel, MaskLoaderDimProgressView, CameraManager, NSDate, MasksButton, UISwipeGestureRecognizer, CameraCaptureButton, MaskAssetsLoader, MaskLoader, MasksContainerController, MaskAuthorView, UIView, CameraPreviewView, UIImpactFeedbackGenerator, NSString, UILongPressGestureRecognizer, MasksSectionsModel;
 @protocol StoryCameraViewControllerDelegate;
 
 __attribute__((visibility("hidden")))
-@interface StoryCameraViewController : VKMController <CameraManagerDelegate, StoryMediaPickerViewControllerDelegate, PHPhotoLibraryChangeObserver, UIGestureRecognizerDelegate> {
+@interface StoryCameraViewController : VKMController <CameraManagerDelegate, StoryMediaPickerViewControllerDelegate, UIGestureRecognizerDelegate, MasksContainerControllerDelegate, MaskLoaderObserver, CameraPreviewViewDelegate, MaskLoaderDimProgressViewDelegate, MaskAssetsLoaderDelegate> {
 	BOOL _trackVolumeButtonForCapture;
-	BOOL _canFlipCamera;
 	BOOL _skipVolumeChange;
 	id<StoryCameraViewControllerDelegate> _delegate;
-	StoryEditorNavigationBar* _customNavigationBar;
+	CameraCaptureButton* _captureButton;
+	UIButton* _cancelButton;
+	UIButton* _flashModeButton;
+	UIButton* _settingsButton;
 	CameraManager* _cameraManager;
-	CameraPreviewLayerView* _cameraPreview;
-	CameraControlsView* _cameraControlsView;
-	VideoRecordingProgressView* _recordingProgressView;
-	UIView* _shutterBlinkOverlay;
-	UITapGestureRecognizer* _focusTapGestureRecognizer;
-	UITapGestureRecognizer* _flipCameraDoubleTapGestureRecognizer;
-	UIPinchGestureRecognizer* _zoomPinchGesture;
-	float _zoomFactorAtContinuedChangeBeginning;
-	UILongPressGestureRecognizer* _captureLongPressGestureRecognizer;
+	CameraPreviewView* _cameraPreviewView;
+	UIButton* _photoLibraryButton;
+	UIButton* _flipCameraButton;
+	UIView* _insertNoAccessViewAboveMeView;
+	UILongPressGestureRecognizer* _captureButtonLongPressGesture;
 	float _captureLongPressGestureBeginY;
+	float _zoomFactorAtContinuedChangeBeginning;
 	UIImpactFeedbackGenerator* _feedbackGenerator;
 	NSTimer* _recordingProgressUpdateTimer;
 	NSDate* _videoRecordingStartTime;
@@ -40,61 +43,115 @@ __attribute__((visibility("hidden")))
 	KVOObserver* _audioSessionObserver;
 	float _initialSystemVolume;
 	UIView* _volumeView;
+	MasksSectionsModel* _masksSectionModel;
+	MasksContainerController* _masksContainerController;
+	MaskLoader* _maskLoader;
+	MaskLoaderDimProgressView* _maskLoaderDimProgressView;
+	MasksButton* _masksButton;
+	UIButton* _masksRemoveButton;
+	UISwipeGestureRecognizer* _maskPanelShowSwipeGesture;
+	UISwipeGestureRecognizer* _maskPanelHideSwipeGesture;
+	UILabel* _maskHintLabel;
+	VKMask* _startingMask;
+	MaskAssetsLoader* _maskAssetsLoader;
+	MaskAuthorView* _maskAuthorView;
 }
 @property(readonly, copy) NSString* debugDescription;
 @property(readonly, copy) NSString* description;
 @property(readonly, assign) Class superclass;
 @property(readonly, assign) unsigned hash;
+@property(retain, nonatomic) CameraCaptureButton* captureButton;
 @property(assign, nonatomic) __weak id<StoryCameraViewControllerDelegate> delegate;
+@property(retain, nonatomic) MaskAuthorView* maskAuthorView;
+@property(retain, nonatomic) MaskAssetsLoader* maskAssetsLoader;
+@property(retain, nonatomic) VKMask* startingMask;
+@property(retain, nonatomic) UILabel* maskHintLabel;
+@property(retain, nonatomic) UISwipeGestureRecognizer* maskPanelHideSwipeGesture;
+@property(retain, nonatomic) UISwipeGestureRecognizer* maskPanelShowSwipeGesture;
+@property(retain, nonatomic) UIButton* masksRemoveButton;
+@property(retain, nonatomic) MasksButton* masksButton;
+@property(retain, nonatomic) MaskLoaderDimProgressView* maskLoaderDimProgressView;
+@property(retain, nonatomic) MaskLoader* maskLoader;
+@property(retain, nonatomic) MasksContainerController* masksContainerController;
+@property(retain, nonatomic) MasksSectionsModel* masksSectionModel;
 @property(retain, nonatomic) UIView* volumeView;
 @property(assign, nonatomic) BOOL skipVolumeChange;
 @property(assign, nonatomic) float initialSystemVolume;
 @property(retain, nonatomic) KVOObserver* audioSessionObserver;
-@property(assign, nonatomic) BOOL canFlipCamera;
 @property(retain, nonatomic) NSDate* videoRecordingStopTime;
 @property(retain, nonatomic) NSDate* videoRecordingStartTime;
 @property(retain, nonatomic) NSTimer* recordingProgressUpdateTimer;
 @property(assign, nonatomic) BOOL trackVolumeButtonForCapture;
 @property(retain, nonatomic) UIImpactFeedbackGenerator* feedbackGenerator;
-@property(assign, nonatomic) float captureLongPressGestureBeginY;
-@property(retain, nonatomic) UILongPressGestureRecognizer* captureLongPressGestureRecognizer;
 @property(assign, nonatomic) float zoomFactorAtContinuedChangeBeginning;
-@property(retain, nonatomic) UIPinchGestureRecognizer* zoomPinchGesture;
-@property(retain, nonatomic) UITapGestureRecognizer* flipCameraDoubleTapGestureRecognizer;
-@property(retain, nonatomic) UITapGestureRecognizer* focusTapGestureRecognizer;
-@property(retain, nonatomic) UIView* shutterBlinkOverlay;
-@property(retain, nonatomic) VideoRecordingProgressView* recordingProgressView;
-@property(retain, nonatomic) CameraControlsView* cameraControlsView;
-@property(retain, nonatomic) CameraPreviewLayerView* cameraPreview;
+@property(assign, nonatomic) float captureLongPressGestureBeginY;
+@property(retain, nonatomic) UILongPressGestureRecognizer* captureButtonLongPressGesture;
+@property(retain, nonatomic) UIView* insertNoAccessViewAboveMeView;
+@property(retain, nonatomic) UIButton* flipCameraButton;
+@property(retain, nonatomic) UIButton* photoLibraryButton;
+@property(retain, nonatomic) CameraPreviewView* cameraPreviewView;
 @property(retain, nonatomic) CameraManager* cameraManager;
-@property(retain, nonatomic) StoryEditorNavigationBar* customNavigationBar;
+@property(retain, nonatomic) UIButton* settingsButton;
+@property(retain, nonatomic) UIButton* flashModeButton;
+@property(retain, nonatomic) UIButton* cancelButton;
 -(void).cxx_destruct;
--(void)photoLibraryDidChange:(id)photoLibrary;
+-(void)hideMaskHintLabel;
+-(void)showMaskHintLabelWithText:(id)text;
+-(void)showOrHideMaskHintLabelForMask:(id)mask;
+-(void)model:(id)model willStartLoadingWithContext:(id)context;
+-(void)modelLoadingChanged:(id)changed;
+-(void)model:(id)model updated:(id)updated;
+-(void)tryInitializeMaskAssetsLoaderIfNotAlready;
+-(BOOL)statsMasksModelURLandModelVersionAreReady;
+-(id)statsMasksModelVersion;
+-(id)statsMasksModelURL;
+-(void)dismissMaskLoaderDimProgressViewAndAttachSwipeGesturesToPreview;
+-(void)presentMaskLoaderDimProgressViewAndAttachSwipeGesturesToIt;
+-(void)tryEnableMasksButtonAndSwipeGestures;
+-(void)applyMask:(id)mask withJsonPath:(id)jsonPath;
+-(void)applyMaskAndDismissProgressIfBothAssetsAndMaskAreReady;
+-(void)maskAssetsLoaderHandleFailedOrCanceled;
+-(void)maskAssetsLoaderCanceled:(id)canceled;
+-(void)maskAssetsLoaderFailed:(id)failed;
+-(void)maskAssetsLoaderFinished:(id)finished;
+-(void)maskAssetsLoaderUpdatedProgress:(id)progress;
+-(void)maskLoader:(id)loader masksCacheCleanedMaskWithIden:(id)iden;
+-(void)maskLoader:(id)loader canceledLoadingMask:(id)mask;
+-(void)maskLoader:(id)loader failedLoadingMask:(id)mask;
+-(void)maskLoader:(id)loader finishLoadingMask:(id)mask;
+-(void)maskLoader:(id)loader loadingMask:(id)mask updatedProgress:(id)progress;
+-(void)updateDimProgressViewProgress;
+-(void)maskLoader:(id)loader startLoadingMask:(id)mask;
+-(void)maskLoader:(id)loader changeCurrentMask:(id)mask;
+-(void)masksContainerController:(id)controller didSelectMask:(id)mask;
+-(void)changeMask:(id)mask;
 -(BOOL)gestureRecognizer:(id)recognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(id)gestureRecognizer;
 -(void)storyMediaPickerViewController:(id)controller didFinishWithAsset:(id)asset;
+-(void)cameraManager:(id)manager changedMaskLoaded:(BOOL)loaded;
 -(void)cameraManager:(id)manager didFinishRecordingToOutputFileAtURL:(id)url error:(id)error;
 -(void)cameraManager:(id)manager didStarRecordingToOutputFileAtURL:(id)url;
 -(void)cameraManager:(id)manager didProcessCapturedPhoto:(id)photo metadata:(id)metadata;
 -(void)cameraManagerDidCapturePhoto:(id)cameraManager;
 -(void)cameraManagerWillCapturePhoto:(id)cameraManager;
--(void)handleSettingsButtonTap;
--(void)handleGrantCameraAndMicAccessButtonTap;
--(void)handleVolumeButtonPress;
--(void)actionZoomPinchGesture:(id)gesture;
--(void)handleCaptureButtonLongPressGesture:(id)gesture;
--(void)handleCameraDoubleTap:(id)tap;
--(void)handleFocusTapGesture:(id)gesture;
--(void)handleCapturePhotoTap:(id)tap;
--(void)handlePhotoLibraryButtonTap;
--(void)handleFlipCameraButtonTap;
--(void)handleFlashModeButtonTap:(id)tap;
--(void)handleCancelButtonTap;
+-(void)actionSettingsButton:(id)button;
+-(void)actionGrantCameraAndMicAccessButton:(id)button;
+-(void)animateToVideoRecordingState;
+-(void)actionCaptureButtonLongPressGesture:(id)gesture;
+-(void)actionCaptureButton:(id)button;
+-(void)actionPhotoLibraryButton:(id)button;
+-(void)actionFlipCameraButton:(id)button;
+-(void)actionFlashModeButton:(id)button;
+-(void)actionCancelButton:(id)button;
+-(void)hideMaskPanel;
+-(void)actionCameraPreviewTapGestureWhileMasksPanelIsShown:(id)shown;
+-(void)showMasksPanelGUI;
+-(void)actionMaskButtonOrSwipe:(id)swipe;
+-(void)loadAssetsIntoMaskEngineIfTheyAreReady;
+-(void)actionMasksRemoveButton:(id)button;
 -(void)getLastPhoto:(id)photo;
 -(void)showNeedsPhotosPermissionAlert;
 -(void)presentMediaPickerViewController;
--(void)updatePhotoLibraryButton;
 -(void)resetUIAfterRecording;
--(void)setupUIForVideoRecordingStart;
 -(void)updateVideoRecordingProgress;
 -(void)stopRecordingProgressUpdateTimer;
 -(void)startRecordingProgressUpdateTimer;
@@ -106,28 +163,36 @@ __attribute__((visibility("hidden")))
 -(void)switchFlashMode;
 -(void)flipCamera;
 -(void)updateFlashModeAndFlipCameraButtonsAppearanceForCurrentCameraDevice;
--(void)setupTargetActionsForCameraControlsView;
 -(void)setSystemVolume:(float)volume;
--(void)enableVolumeHUD;
--(void)disableVolumeHUD;
--(void)handleVolumeChange:(id)change;
+-(void)removeMPVolumeViewHidingSystemVolumeHUD;
+-(void)addMPVolumeViewHidingSystemVolumeHUD;
+-(void)notificationSystemVolumeDidChange:(id)notificationSystemVolume;
 -(void)tearDownVolumeButtonHandler;
 -(void)setupVolumeButtonHandler;
 -(id)initialCameraConfig;
--(void)initializeRecordingProgressView;
--(void)setupNavigationBar;
--(void)initializeScrims;
--(void)initializeCameraPreviewAndCameraManager;
+-(void)maskLoaderDimProgressViewBlankTap:(id)tap;
+-(void)maskLoaderDimProgressViewPressCancel:(id)cancel;
+-(void)cameraPreviewViewAttemptToFlipCamera:(id)flipCamera;
+-(void)cameraPreviewView:(id)view attemptToFocusAtPoint:(CGPoint)point;
+-(void)cameraPreviewView:(id)view attemptToZoomWithScale:(float)scale;
 -(unsigned)supportedInterfaceOrientations;
 -(int)preferredStatusBarUpdateAnimation;
 -(int)preferredStatusBarStyle;
 -(BOOL)prefersStatusBarHidden;
+-(void)showNoAccessView;
+-(void)setPhotoLibraryButtonHidden:(BOOL)hidden animated:(BOOL)animated;
+-(void)setFlipCameraButtonHidden:(BOOL)hidden animated:(BOOL)animated;
+-(void)setFlashModeButtonHidden:(BOOL)hidden animated:(BOOL)animated;
 -(void)viewDidDisappear:(BOOL)view;
 -(void)viewWillDisappear:(BOOL)view;
 -(void)viewWillAppear:(BOOL)view;
 -(void)viewDidAppear:(BOOL)view;
+-(void)maskPanelSwipeGesture:(id)gesture;
+-(void)actionMaskAuthorButton:(id)button;
 -(void)viewDidLoad;
+-(BOOL)masksAvailable;
+-(void)notificationUIApplicationWillEnterForeground:(id)notificationUIApplication;
+-(id)initWithMain:(id)main andModel:(id)model startingMask:(id)mask;
 -(void)dealloc;
--(id)initWithMain:(id)main andModel:(id)model;
 @end
 

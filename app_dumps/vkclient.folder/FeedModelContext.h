@@ -7,7 +7,7 @@
 
 #import "ListModelContext.h"
 
-@class NSMutableSet, NSIndexPath, NSMutableDictionary;
+@class NSMutableDictionary, NSIndexPath, FeedExtras, NSMutableSet;
 
 __attribute__((visibility("hidden")))
 @interface FeedModelContext : ListModelContext {
@@ -15,26 +15,22 @@ __attribute__((visibility("hidden")))
 	BOOL _canIgnoreItems;
 	id _from;
 	NSIndexPath* _reloadPath;
-	NSMutableSet* _expandedPosts;
+	FeedExtras* _feedExtras;
 	NSMutableDictionary* _sources;
-	NSMutableDictionary* _activities;
-	NSMutableDictionary* _postCaptions;
 	NSMutableDictionary* _videoPlayStats;
 	NSMutableSet* _viewPosts;
 }
 @property(retain, nonatomic) NSMutableSet* viewPosts;
 @property(retain, nonatomic) NSMutableDictionary* videoPlayStats;
-@property(retain, nonatomic) NSMutableDictionary* postCaptions;
-@property(retain, nonatomic) NSMutableDictionary* activities;
 @property(retain, nonatomic) NSMutableDictionary* sources;
 @property(assign, nonatomic) BOOL canIgnoreItems;
 @property(assign, nonatomic) BOOL cache;
-@property(retain, nonatomic) NSMutableSet* expandedPosts;
+@property(retain, nonatomic) FeedExtras* feedExtras;
 @property(retain, nonatomic) NSIndexPath* reloadPath;
 @property(retain, nonatomic) id from;
+-(void).cxx_destruct;
 -(void)addSources:(id)sources;
 -(void)spawnCopy:(id)copy;
 -(id)init;
--(void)dealloc;
 @end
 

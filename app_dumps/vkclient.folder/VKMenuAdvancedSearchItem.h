@@ -14,7 +14,7 @@ __attribute__((visibility("hidden")))
 	NSString* _searchString;
 }
 @property(retain, nonatomic) NSString* searchString;
+-(void).cxx_destruct;
 -(Class)cellClass;
--(void)dealloc;
 @end
 

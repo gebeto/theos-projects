@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import "AttachmentView.h"
 
-@class ImageAttachmentView, NSNumber;
+@class NSNumber, ImageAttachmentView;
 
 __attribute__((visibility("hidden")))
 @interface LinkAttachmentView : AttachmentView {
@@ -17,12 +17,12 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) ImageAttachmentView* imageView;
 @property(readonly, retain, nonatomic) NSNumber* userId;
+-(void).cxx_destruct;
 -(id)attachment;
 -(void)render:(id)render reuse:(double)reuse;
 -(void)setHighlighted:(BOOL)highlighted;
 -(void)setSelected:(BOOL)selected;
 -(id)initWithFrame:(CGRect)frame currentUserId:(id)anId;
 -(id)initWithFrame:(CGRect)frame;
--(void)dealloc;
 @end
 

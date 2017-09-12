@@ -15,14 +15,14 @@ __attribute__((visibility("hidden")))
 	MainModel* _main;
 	id<VKAPNSHandlerDelegate> _delegate;
 }
-@property(assign, nonatomic) id<VKAPNSHandlerDelegate> delegate;
+@property(assign, nonatomic) __weak id<VKAPNSHandlerDelegate> delegate;
 @property(retain, nonatomic) MainModel* main;
 +(id)userNotificationsCategories;
 +(void)initialize;
+-(void).cxx_destruct;
 -(void)handle:(id)handle action:(BOOL)action;
 -(void)handle:(id)handle actionIdentifier:(id)identifier responseInfo:(id)info completionHandler:(id)handler;
 -(void)handle:(id)handle actionIdentifier:(id)identifier completionHandler:(id)handler;
 -(id)handlerWithClass:(Class)aClass payload:(id)payload;
--(void)dealloc;
 @end
 

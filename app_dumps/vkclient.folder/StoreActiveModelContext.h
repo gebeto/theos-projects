@@ -16,7 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(assign, nonatomic) BOOL skipMarkAsViewed;
 @property(retain, nonatomic) VKTimeout* checkForNewItemsTimeout;
+-(void).cxx_destruct;
 -(void)spawnCopy:(id)copy;
--(void)dealloc;
 @end
 

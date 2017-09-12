@@ -16,12 +16,12 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) FacebookContactsLoader* loader;
 @property(retain, nonatomic) NSArray* friendIdentifiers;
+-(void).cxx_destruct;
 -(void)loadFriendsIdentifiers;
 -(id)lookupResponseWithData:(id)data context:(id)context;
 -(id)requestForContext:(id)context;
 -(BOOL)shouldLoad:(id)load;
 -(void)activate;
 -(void)reset;
--(void)dealloc;
 @end
 

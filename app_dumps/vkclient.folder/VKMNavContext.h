@@ -7,7 +7,7 @@
 
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class VKMController, StatContext, UINavigationController, MainModel, StatsRef, VKIdentity;
+@class StatsRef, StatContext, VKIdentity, UINavigationController, MainModel, VKMController;
 @protocol VKMNavRoot;
 
 __attribute__((visibility("hidden")))
@@ -32,6 +32,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) id<VKMNavRoot> rootNav;
 @property(retain, nonatomic) MainModel* main;
 +(id)applicationNavRoot;
+-(void).cxx_destruct;
 -(id)prevViewController;
 -(id)topViewController;
 -(BOOL)routeSource:(id)source context:(id)context;
@@ -44,7 +45,7 @@ __attribute__((visibility("hidden")))
 -(void)webAppBrowser:(id)browser;
 -(void)browser:(id)browser;
 -(void)presentStoryFullscreenControllerWithUsersStoryIdens:(id)usersStoryIdens startFromPage:(int)page fromSource:(id)source;
--(void)presentStoriesEditorViewController;
+-(void)presentStoriesEditorViewControllerWithMask:(id)mask;
 -(void)presentVideoPlayerViewControllerForVideo:(id)video fromFeedVideoView:(id)feedVideoView navDelegate:(id)delegate;
 -(void)presentVideoPlayerViewControllerForVideo:(id)video;
 -(void)photoFeed:(id)feed thumbnails:(id)thumbnails;
@@ -69,6 +70,5 @@ __attribute__((visibility("hidden")))
 -(void)clearModals;
 -(id)foregroundModel;
 -(BOOL)isCurrentContext;
--(void)dealloc;
 @end
 

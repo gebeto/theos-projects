@@ -16,11 +16,11 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) VKGiftsContext* giftContext;
 @property(assign, nonatomic) unsigned balance;
+-(void).cxx_destruct;
 -(void)handleBalance:(id)balance :(id)arg2;
 -(void)registerForEvents:(id)events;
 -(id)updatedIndex:(id)index data:(id)data context:(id)context;
 -(id)requestForContext:(id)context;
 -(id)withContext:(id)context;
--(void)dealloc;
 @end
 

@@ -7,7 +7,7 @@
 
 #import "ModelAction.h"
 
-@class VKUser, NSNumber;
+@class NSNumber, VKUser;
 
 __attribute__((visibility("hidden")))
 @interface ModelActionChangeFriendList : ModelAction {
@@ -18,10 +18,10 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) VKUser* user;
 @property(retain, nonatomic) NSNumber* target;
 +(int)domainType;
+-(void).cxx_destruct;
 -(void)actionHandleSuccessForData:(id)data context:(id)context;
 -(BOOL)actionResultForData:(id)data context:(id)context;
 -(id)actionRequestForContext:(id)context;
 -(id)user:(id)user add:(BOOL)add;
--(void)dealloc;
 @end
 

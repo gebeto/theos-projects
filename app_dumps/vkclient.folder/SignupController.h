@@ -16,6 +16,7 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSArray* cells;
 @property(retain, nonatomic) AuthModel* data;
+-(void).cxx_destruct;
 -(int)preferredStatusBarStyle;
 -(id)tableView:(id)view cellForRowAtIndexPath:(id)indexPath;
 -(id)tableView:(id)view viewForFooterInSection:(int)section;
@@ -25,6 +26,5 @@ __attribute__((visibility("hidden")))
 -(void)notifyIncorrectFields:(id)fields;
 -(void)viewWillAppear:(BOOL)view;
 -(void)viewDidLoad;
--(void)dealloc;
 @end
 

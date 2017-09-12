@@ -5,6 +5,7 @@
  * Source: (null)
  */
 
+#import "VKClient-Structs.h"
 #import "VKMLiveController.h"
 
 @class UITableViewCell;
@@ -14,6 +15,7 @@ __attribute__((visibility("hidden")))
 	UITableViewCell* _cellSuggestionsEnabled;
 }
 @property(retain, nonatomic) UITableViewCell* cellSuggestionsEnabled;
+-(void).cxx_destruct;
 -(void)tableView:(id)view moveRowAtIndexPath:(id)indexPath toIndexPath:(id)indexPath3;
 -(id)tableView:(id)view targetIndexPathForMoveFromRowAtIndexPath:(id)indexPath toProposedIndexPath:(id)proposedIndexPath;
 -(BOOL)tableView:(id)view canMoveRowAtIndexPath:(id)indexPath;
@@ -34,6 +36,5 @@ __attribute__((visibility("hidden")))
 -(void)viewWillDisappear:(BOOL)view;
 -(void)viewDidLoad;
 -(void)viewWillAppear:(BOOL)view;
--(void)dealloc;
 @end
 

@@ -5,11 +5,11 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class AVAssetWriterInputPixelBufferAdaptor, AVAudioMix, AVAssetWriterInput, NSDictionary, AVVideoComposition, NSError, AVAssetWriter, AVAsset, AVAssetReaderAudioMixOutput, NSObject, AVAssetReaderVideoCompositionOutput, NSString, AVAssetReader, NSArray, NSURL;
-@protocol SDAVAssetExportSessionDelegate, OS_dispatch_queue;
+@class AVAssetWriter, NSURL, NSError, AVAssetReaderAudioMixOutput, AVAssetReaderVideoCompositionOutput, AVAsset, AVAssetReader, AVAudioMix, AVVideoComposition, NSObject, AVAssetWriterInputPixelBufferAdaptor, NSArray, NSDictionary, NSString, AVAssetWriterInput;
+@protocol OS_dispatch_queue, SDAVAssetExportSessionDelegate;
 
 __attribute__((visibility("hidden")))
 @interface SDAVAssetExportSession : XXUnknownSuperclass {

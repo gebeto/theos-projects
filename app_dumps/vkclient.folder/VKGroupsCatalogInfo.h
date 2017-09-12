@@ -16,8 +16,8 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) NSArray* categories;
 @property(assign, nonatomic) BOOL enabled;
+-(void).cxx_destruct;
 -(id)categoryIds;
 -(BOOL)process:(id)process context:(id)context;
--(void)dealloc;
 @end
 

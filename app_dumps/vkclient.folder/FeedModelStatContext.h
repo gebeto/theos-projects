@@ -19,7 +19,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSString* reference;
 @property(assign, nonatomic) int position;
 +(id)type:(id)type position:(int)position;
+-(void).cxx_destruct;
 -(id)initWithType:(id)type position:(int)position;
--(void)dealloc;
 @end
 

@@ -5,10 +5,10 @@
  * Source: (null)
  */
 
-#import "vkclient-Structs.h"
+#import "VKClient-Structs.h"
 #import <XXUnknownSuperclass.h> // Unknown library
 
-@class UILabel, RoundedProgressOverlayView, UIButton, UIVisualEffectView;
+@class UIButton, UIVisualEffectView, UILabel, RoundedProgressOverlayView;
 
 __attribute__((visibility("hidden")))
 @interface StoryFullscreenFooterView : XXUnknownSuperclass {

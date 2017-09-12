@@ -16,9 +16,9 @@ __attribute__((visibility("hidden")))
 }
 @property(retain, nonatomic) VKCity* selectedCity;
 @property(retain, nonatomic) VKCountry* country;
+-(void).cxx_destruct;
 -(id)countKey;
 -(id)process:(id)process;
 -(id)requestForContext:(id)context;
--(void)dealloc;
 @end
 

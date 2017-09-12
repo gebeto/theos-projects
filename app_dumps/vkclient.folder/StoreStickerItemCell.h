@@ -6,11 +6,11 @@
  */
 
 #import "VKMNavProxyDelegate.h"
-#import "VKMImageLoaderDelegate.h"
-#import "VKMCell.h"
 #import "StoreProductItemCell.h"
+#import "VKMCell.h"
+#import "VKMImageLoaderDelegate.h"
 
-@class StoreStatusButton, VKMImageLoader, NSString, VKStoreStockItem, UIImageView;
+@class VKStoreStockItem, VKMImageLoader, StoreStatusButton, UIImageView, NSString;
 
 __attribute__((visibility("hidden")))
 @interface StoreStickerItemCell : VKMCell <VKMImageLoaderDelegate, VKMNavProxyDelegate, StoreProductItemCell> {
@@ -27,6 +27,7 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) UIImageView* indicatorNew;
 @property(retain, nonatomic) VKMImageLoader* loader;
 +(void)prerender:(id)prerender;
+-(void).cxx_destruct;
 -(id)currentNavDelegate;
 -(void)attach:(id)attach expectedReuse:(double)reuse;
 -(float)centerOffsetX;

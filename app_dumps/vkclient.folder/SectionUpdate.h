@@ -23,6 +23,6 @@ __attribute__((visibility("hidden")))
 @property(retain, nonatomic) NSArray* objects;
 @property(assign, nonatomic) unsigned idx;
 +(id)section:(unsigned)section objects:(id)objects title:(id)title indexTitle:(id)title4 animation:(int)animation;
--(void)dealloc;
+-(void).cxx_destruct;
 @end
 
