@@ -1,5 +1,7 @@
 include $(THEOS)/makefiles/common.mk
 
+# TARGET_IPHONEOS_DEPLOYMENT_VERSION = 10.0
+
 export THEOS_DEVICE_IP=192.168.0.107
 
 TWEAK_NAME = VKVideoURLS
