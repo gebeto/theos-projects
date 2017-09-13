@@ -1,45 +1,59 @@
-%hook VSCOStoreProductPurchaser
+#import <UIKit/UIKit.h>
 
--(void)purchaseAndDownloadProduct:(id)arg1 purchaseCompletion:(/*^block*/id)arg2
+// VSCOLibraryDataSource
+%hook VSCOSync
+
+-(BOOL) enabled
 {
-	%log(arg1, arg2);
-	%orig;
+	%log(@"ENABLED?");
+	return false;
 }
 
--(void)storePurchaseCompleted:(id)arg1
-{
-	%log(arg1);
-	%orig;
-}
 
--(void)makePurchaseWithProduct:(id)arg1
+-(BOOL) enabledOverCellular
 {
-	%log(arg1);
-	%orig;
+	%log(@"ENABLED?");
+	return false;
 }
 
 %end
 
 
-%hook VSCOStore
+%hook VSCOEdit
 
--(NSMutableArray *)activeProductsRequests
+-(NSString*) key
 {
-	NSMutableArray* res = %orig;
+	id res = %orig;
 	%log(res);
 	return res;
 }
 
--(void)setActiveProductsRequests:(NSMutableArray *)arg1
+-(NSString*) value
 {
-	%log(arg1);
-	%orig;
+	id res = %orig;
+	%log(res);
+	return res;
 }
-// -(void)addPurchaseCompletionBlock:(/*^block*/id)arg1 forProductID:(id)arg2 ;
-// -(NSMutableDictionary *)purchaseCompletionBlocks;
-// -(void)purchaseProductWithID:(id)arg1 completion:(/*^block*/id)arg2 ;
-// -(void)setPurchaseCompletionBlocks:(NSMutableDictionary *)arg1 ;
-// -(void)setActiveProductsRequests:(NSMutableArray *)arg1 ;
-// -(void)productsRequest:(id)arg1 didReceiveResponse:(id)arg2 ;
 
 %end
+
+
+
+// %hook AppDelegate
+
+// -(BOOL)application:(id)arg1 didFinishLaunchingWithOptions:(id)arg2
+// {
+// 	BOOL result = %orig(arg1, arg2);
+// 	dispatch_async(dispatch_get_main_queue(), ^{
+// 		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"CRACKED!"
+// 												 	message:@"Cracked by Slavik Nychkalo"
+// 												 	delegate:nil
+// 												 	cancelButtonTitle:@"Thanks!"
+// 												 	otherButtonTitles:nil];
+// 		[alert show];
+// 		[alert release];
+// 	});
+// 	return result;
+// }
+
+// %end
