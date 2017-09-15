@@ -20,7 +20,10 @@
 
         [navCtrl setDelegate:delegate];
 
+        // UIImageView *iconMusic = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+        // iconMusic.image = [UIImage imageNamed:@"7_messages_group"];
         UIImage *iconMusic = [UIImage imageNamed:@"7_messages_group"];
+
         UIImage *selectedIconMusic = [UIImage imageNamed:@"7_messages_group"];
         UITabBarItem *itemAudio = [[UITabBarItem alloc] initWithTitle:@"" image:iconMusic selectedImage:selectedIconMusic];
         [navCtrl performSelector:@selector(setTabBarItem:) withObject: itemAudio];
