@@ -1,6 +1,8 @@
 #import <UIKit/UIKit.h>
 
 
+
+
 %hook VKMMainController
 - (void)setupTabBarControllers {
     %orig;
@@ -32,6 +34,19 @@
         [viewControllers insertObject:navCtrl atIndex:3];
     }
     ctrl.viewControllers = viewControllers;
+}
+
+%end
+
+
+%hook NewsSelectorController
+
+-(UIScrollView*) transitionScrollView {
+    UIScrollView* res = %orig;
+    %log(res);
+    // res.allowedTouchTypesForScrolling = @[];
+    res.scrollEnabled = NO;
+    return res;
 }
 
 %end
