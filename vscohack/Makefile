@@ -1,6 +1,6 @@
-include $(THEOS)/makefiles/common.mk
+ include $(THEOS)/makefiles/common.mk
 
-export THEOS_DEVICE_IP=192.168.0.105
+export THEOS_DEVICE_IP=192.168.0.101
 
 TWEAK_NAME = VSCOHack
 VSCOHack_FILES = Tweak.xm

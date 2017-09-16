@@ -1,10 +1,10 @@
-Package: com.slaviknychkalo.vscohack
-Name: VSCO Hack
+Package: com.slaviknychkalo.vsconew
+Name: VSCOHackNew
 Depends: mobilesubstrate
 Architecture: iphoneos-arm
 Description: An awesome MobileSubstrate tweak!
-Maintainer: SlavikNychkalo
-Author: SlavikNychkalo
+Maintainer: slaviknychkalo
+Author: slaviknychkalo
 Section: Tweaks
-Version: 0.0.1-4+debug
+Version: 0.0.1-5+debug
 Installed-Size: 121

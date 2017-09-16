@@ -1,22 +1,37 @@
 #import <UIKit/UIKit.h>
 
-// VSCOLibraryDataSource
-%hook VSCOSync
 
--(BOOL) enabled
-{
-	%log(@"ENABLED?");
-	return false;
-}
+%hook VSCOLibraryDataSource
 
-
--(BOOL) enabledOverCellular
-{
-	%log(@"ENABLED?");
-	return false;
+-(NSArray*) filters {
+	NSArray* res = %orig;
+	%log(res);
+	return res;
 }
 
 %end
+
+%hook VSCOLibrarySelectionViewController
+
+-(id) dataSource {
+	id res = %orig;
+	%log(res);
+	return res;
+}
+
+%end
+
+%hook VSPSQLFilter
+
+-(id) init {
+	id res = %orig;
+	%log(res);
+	return res;
+}
+
+%end
+
+
 
 
 
