@@ -1,5 +1,5 @@
 include $(THEOS)/makefiles/common.mk
-export THEOS_DEVICE_IP=192.168.0.101
+export THEOS_DEVICE_IP=192.168.0.106
 
 TWEAK_NAME = NewVKAppTabBarMode
 NewVKAppTabBarMode_FILES = Tweak.xm
