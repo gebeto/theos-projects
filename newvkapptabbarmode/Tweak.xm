@@ -88,6 +88,10 @@ CGPoint currentlocation = CGPointMake(0.0, 0.0);
     ctrl.viewControllers = viewControllers;
 }
 
+%end
+
+
+
 
 %hook NewsSelectorController
 
