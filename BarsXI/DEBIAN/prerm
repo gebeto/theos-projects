@@ -1,0 +1,2 @@
+#!/bin/sh
+mv /System/Library/Frameworks/UIKit.framework/Artwork.bundle/BAK/Assets.carBAK /System/Library/Frameworks/UIKit.framework/Artwork.bundle/Assets.car

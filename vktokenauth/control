@@ -1,0 +1,9 @@
+Package: com.slavik.nychkalo.vktokenauth
+Name: OnTen
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Test Tweak for me, please don't install anything from here!!!!!!!!
+Maintainer: SlavikNychkalo
+Author: SlavikNychkalo
+Section: Tweaks

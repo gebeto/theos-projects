@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo "Hello from Slavik Nychkalo :D"
+echo "Running uicache..."
+uicache
+echo "REMOVING SUCCESS"
+killall backboardd

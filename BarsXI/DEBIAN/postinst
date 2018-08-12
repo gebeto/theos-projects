@@ -1,0 +1,11 @@
+#!/bin/sh
+
+cp /System/Library/Frameworks/UIKit.framework/Artwork.bundle/Assets.car /System/Library/Frameworks/UIKit.framework/Artwork.bundle/BAK/Assets.carBAK
+
+cp /System/Library/Frameworks/UIKit.framework/Artwork.bundle/BAK/Assets.carNEW /System/Library/Frameworks/UIKit.framework/Artwork.bundle/Assets.car
+
+echo "Hello from Slavik Nychkalo :D"
+echo "Running uicache..."
+uicache
+echo "INSTALLATION SUCCESS"
+killall backboardd

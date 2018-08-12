@@ -1,0 +1,10 @@
+Package: com.gebeto.barsxi
+Name: BarsXI
+Architecture: iphoneos-arm
+Description: Status bar from IOS11
+Depiction: http://google.com
+Website: http://google.com
+Maintainer: SlavikNychkalo
+Section: System
+dev: gebeto
+Version: 0.0.1

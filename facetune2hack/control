@@ -1,0 +1,9 @@
+Package: com.facetune2.slaviknychkalo
+Name: Facetune 2 Hack
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: SlavikNychkalo
+Author: SlavikNychkalo
+Section: Tweaks
