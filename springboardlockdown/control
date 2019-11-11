@@ -1,0 +1,9 @@
+Package: com.yourcompany.springboardlockdown
+Name: springboardlockdown
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Slavik Nychkalo
+Author: Slavik Nychkalo
+Section: Tweaks
