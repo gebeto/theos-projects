@@ -1,0 +1,9 @@
+Package: com.yourcompany.testtt
+Name: testtt
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: gebeto
+Author: gebeto
+Section: Tweaks
